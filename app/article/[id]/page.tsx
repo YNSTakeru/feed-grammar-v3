@@ -32,25 +32,49 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     notFound();
   }
 
-  let article: ArticleData;
-  let thumbnail: Thumbnail;
+  // Function to fix malformed JSON escape sequences
+  function fixJsonEscaping(jsonString: string): string {
+    // Replace instances of \" that are not properly escaped
+    // This handles cases like: "...\"text\"..." inside a JSON string value
+    // We need to find \" that appears inside string values and escape them properly
 
+    // First, let's try a different approach: manually fix common patterns
+    let fixed = jsonString;
+
+    // Replace \\\\ with \\ (unescape doubled backslashes first)
+    // Then properly escape quotes inside string values
+
+    // Try to fix the specific pattern: \\\"text\\\" should become \\\\\"text\\\\\"
+    fixed = fixed.replace(/\\\\\"/g, '\\\\\\"');
+
+    return fixed;
+  }
+
+  // Parse article_text on the server side
+  let article: ArticleData;
   try {
     if (typeof item.article_text === "string") {
-      // The JSON string may contain literal line breaks which are invalid JSON
-      // Remove only the literal control characters that break JSON parsing
-      const cleanedText = item.article_text
-        .replace(/[\x00-\x1F\x7F]/g, ''); // Remove all control characters
-      
-      article = JSON.parse(cleanedText);
+      let articleText = item.article_text;
+
+      // Try to fix common escaping issues
+      try {
+        article = JSON.parse(articleText) as ArticleData;
+      } catch (firstError) {
+        console.log("First parse failed, attempting to fix escaping...");
+        articleText = fixJsonEscaping(articleText);
+        article = JSON.parse(articleText) as ArticleData;
+      }
     } else {
-      article = item.article_text;
+      article = item.article_text as ArticleData;
     }
   } catch (error) {
     console.error("Failed to parse article_text:", error);
     console.error("Article ID:", item.id);
+    console.error("Raw article_text:", item.article_text?.substring(0, 1000));
     notFound();
   }
+
+  let thumbnail: Thumbnail;
 
   try {
     thumbnail =

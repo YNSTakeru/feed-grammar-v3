@@ -191,6 +191,19 @@ export function ArticleContent({
             </section>
           </div>
 
+          {article.keywords && article.keywords.length > 0 && (
+            <div className="mt-8 pt-8 border-t">
+              <h3 className="text-sm font-semibold mb-3">キーワード</h3>
+              <div className="flex flex-wrap gap-2">
+                {article.keywords.map((keyword, index) => (
+                  <Badge key={index} variant="secondary">
+                    {keyword}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Navigation Buttons */}
           {(prevId || nextId) && (
             <div className="mt-6 flex justify-between gap-4">
@@ -214,18 +227,6 @@ export function ArticleContent({
               )}
             </div>
           )}
-
-          {/* Keywords */}
-          <div className="mt-8 pt-8 border-t">
-            <h3 className="text-sm font-semibold mb-3">キーワード</h3>
-            <div className="flex flex-wrap gap-2">
-              {article.keywords.map((keyword, index) => (
-                <Badge key={index} variant="secondary">
-                  {keyword}
-                </Badge>
-              ))}
-            </div>
-          </div>
         </>
       )}
     </div>

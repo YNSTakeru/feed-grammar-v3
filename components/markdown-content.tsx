@@ -1,10 +1,10 @@
 "use client";
 
+import "katex/dist/katex.min.css";
 import ReactMarkdown from "react-markdown";
+import rehypeKatex from "rehype-katex";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
-import rehypeKatex from "rehype-katex";
-import "katex/dist/katex.min.css";
 
 interface MarkdownContentProps {
   content: string;
@@ -15,6 +15,15 @@ export function MarkdownContent({
   content,
   className = "",
 }: MarkdownContentProps) {
+  // Unescape markdown characters if they were double-escaped
+  // and fix spacing issues around ** for Japanese text
+  const processedContent = content
+    .replaceAll("\\n", "\n") // Handle \\n (double backslash from JSON)
+    .replaceAll("\n", "\n") // Handle \n (single backslash, fallback)
+    .replace(/\\\*/g, "*") // Fix escaped asterisks
+    .replace(/\*\*([^\s])/g, "** $1") // Add space after ** if missing
+    .replace(/([^\s])\*\*/g, "$1 **"); // Add space before ** if missing
+
   return (
     <div className={className}>
       <ReactMarkdown
@@ -22,7 +31,7 @@ export function MarkdownContent({
         rehypePlugins={[rehypeKatex]}
         components={{
           strong: ({ children }) => (
-            <strong className="font-bold">{children}</strong>
+            <strong className="font-bold text-foreground">{children}</strong>
           ),
           em: ({ children }) => <em className="italic">{children}</em>,
           p: ({ children }) => <p className="mb-4">{children}</p>,
