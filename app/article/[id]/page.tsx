@@ -136,8 +136,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       <article className="container mx-auto px-4 py-8 max-w-4xl">
         <ArticleContent
           videoId={videoId}
-          startTime={parseInt(item.start_time)}
-          endTime={parseInt(item.end_time)}
+          startTime={parseFloat(item.start_time)}
+          endTime={parseFloat(item.end_time)}
           question={item.question}
           questionKatakana={item.question_katakana}
           youtubeUrl={youtubeUrl}

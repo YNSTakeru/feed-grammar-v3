@@ -47,9 +47,16 @@ export function YouTubePlayer({
 
   const duration = endTime - startTime;
 
+  // 【機能】プログレスバーの更新と現在時刻の表示を管理
+  // 100msごとに呼ばれて、現在の再生位置を取得し、プログレスバーを更新
   const updateProgress = useCallback(() => {
     if (playerRef.current && playerRef.current.getCurrentTime) {
       const current = playerRef.current.getCurrentTime();
+      console.log(
+        `[updateProgress] 現在時刻: ${current.toFixed(
+          2
+        )}s (範囲: ${startTime}s - ${endTime}s)`
+      );
       setCurrentTime(current);
 
       if (current >= startTime && current <= endTime) {
@@ -59,12 +66,18 @@ export function YouTubePlayer({
     }
   }, [startTime, endTime, duration]);
 
+  // 【機能】再生ボタンが押された時の処理
+  // 現在位置がendTimeを超えているか、startTimeより前なら、startTimeに巻き戻してから再生
   const handlePlay = useCallback(() => {
     if (playerRef.current) {
       const current = playerRef.current.getCurrentTime();
+      console.log(
+        `[handlePlay] 再生ボタン押下 現在時刻: ${current.toFixed(2)}s`
+      );
 
       // If video is at or past the end time, restart from beginning
       if (current >= endTime - 0.5 || current < startTime) {
+        console.log(`[handlePlay] 範囲外のため ${startTime}s にシーク`);
         playerRef.current.seekTo(startTime, true);
       }
 
@@ -78,8 +91,11 @@ export function YouTubePlayer({
     }
   }, []);
 
+  // 【機能】最初からボタンが押された時の処理
+  // startTimeに巻き戻して再生開始
   const handleRestart = useCallback(() => {
     if (playerRef.current) {
+      console.log(`[handleRestart] 最初から再生: ${startTime}s にシーク`);
       playerRef.current.seekTo(startTime, true);
       playerRef.current.playVideo();
     }
@@ -116,28 +132,61 @@ export function YouTubePlayer({
             cc_lang_pref: "en",
           },
           events: {
+            // 【イベント】プレイヤーの準備が完了した時
+            // ローディング状態を解除し、autoPlayがtrueなら自動再生開始
             onReady: (event: any) => {
+              console.log(
+                `[onReady] プレイヤー準備完了 (autoPlay: ${autoPlay})`
+              );
               setIsLoading(false);
               if (autoPlay) {
                 event.target.playVideo();
               }
             },
+            // 【イベント】プレイヤーの状態が変化した時（再生/一時停止/終了など）
             onStateChange: (event: any) => {
               const state = event.data;
+              const stateNames = {
+                [-1]: "UNSTARTED",
+                [0]: "ENDED",
+                [1]: "PLAYING",
+                [2]: "PAUSED",
+                [3]: "BUFFERING",
+                [5]: "CUED",
+              };
+              console.log(
+                `[onStateChange] 状態変化: ${
+                  stateNames[state as keyof typeof stateNames]
+                }`
+              );
               setIsPlaying(state === PlayerState.PLAYING);
 
               // Handle loop
+              // 【機能】再生中の場合、100msごとにendTimeをチェックしてループ処理
               if (state === PlayerState.PLAYING) {
                 if (!intervalRef.current) {
+                  console.log(
+                    "[onStateChange] 100msインターバル開始 (endTime監視)"
+                  );
                   intervalRef.current = setInterval(() => {
                     if (playerRef.current && playerRef.current.getCurrentTime) {
                       const current = playerRef.current.getCurrentTime();
 
                       // Loop back to start when reaching end time
+                      // 【ループ判定】現在時刻がendTimeの0.1秒手前に到達したらループ
                       if (current >= endTime - 0.1) {
+                        console.log(
+                          `[Loop Check] endTime到達! 現在: ${current.toFixed(
+                            2
+                          )}s, endTime: ${endTime}s`
+                        );
                         if (loop) {
+                          console.log(
+                            `[Loop] ${startTime}s にシークしてループ再生`
+                          );
                           playerRef.current.seekTo(startTime, true);
                         } else {
+                          console.log("[Loop] ループ無効のため一時停止");
                           playerRef.current.pauseVideo();
                         }
                       }
@@ -147,7 +196,9 @@ export function YouTubePlayer({
                   }, 100);
                 }
               } else {
+                // 【機能】再生停止時はインターバルをクリア
                 if (intervalRef.current) {
+                  console.log("[onStateChange] インターバル停止");
                   clearInterval(intervalRef.current);
                   intervalRef.current = null;
                 }
