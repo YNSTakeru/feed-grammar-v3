@@ -19,15 +19,18 @@ export function MarkdownContent({
 
   // Step 1: Replace quadruple backslashes
   processedContent = processedContent.replace(/\\\\\\\\/g, "\\\\");
-  
+
   // Step 2: Handle \text{...} with special Unicode combining characters
   // These need to be converted to plain text outside of math mode
   // Match pattern: $\\text{...}$ where content has combining diacritics
-  processedContent = processedContent.replace(/\$\\\\text\{([^}]*[̀-ͯ][^}]*)\}\$/g, (match, content) => {
-    // Return as plain text in a span (not in math mode)
-    return content;
-  });
-  
+  processedContent = processedContent.replace(
+    /\$\\\\text\{([^}]*[̀-ͯ][^}]*)\}\$/g,
+    (match, content) => {
+      // Return as plain text in a span (not in math mode)
+      return content;
+    }
+  );
+
   // Step 3: Protect remaining LaTeX \text{...} commands
   const textCommandPattern = /\\\\text\{[^}]*\}/g;
   const textPlaceholders: string[] = [];

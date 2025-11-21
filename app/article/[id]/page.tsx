@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-const typedFeedData = feedData as FeedItem[];
+const typedFeedData = feedData as unknown as FeedItem[];
 
 interface ArticlePageProps {
   params: Promise<{
@@ -70,7 +70,12 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   } catch (error) {
     console.error("Failed to parse article_text:", error);
     console.error("Article ID:", item.id);
-    console.error("Raw article_text:", item.article_text?.substring(0, 1000));
+    console.error(
+      "Raw article_text:",
+      typeof item.article_text === "string"
+        ? item.article_text.substring(0, 1000)
+        : JSON.stringify(item.article_text).substring(0, 1000)
+    );
     notFound();
   }
 

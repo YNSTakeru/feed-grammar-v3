@@ -38,7 +38,7 @@ export interface FeedItem {
   updated_at: string;
   question: string;
   question_katakana: string;
-  article_text: string;
+  article_text: string | ArticleData;
   category: string;
   thumbnail: string;
   theme: string;
