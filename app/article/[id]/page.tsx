@@ -100,6 +100,15 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   );
   const videoId = videoIdMatch ? videoIdMatch[1] : "";
 
+  // Validate YouTube video ID
+  if (!videoId || videoId.length !== 11) {
+    console.error(`Invalid YouTube URL for article ID ${item.id}: ${item.url}`);
+    console.error(
+      `Video ID: ${videoId} (length: ${videoId.length}, expected: 11)`
+    );
+    notFound();
+  }
+
   // Find next and previous article IDs
   const currentIndex = typedFeedData.findIndex((i) => i.id === item.id);
   const prevId = currentIndex > 0 ? typedFeedData[currentIndex - 1].id : null;
