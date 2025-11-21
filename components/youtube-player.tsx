@@ -122,7 +122,7 @@ export function YouTubePlayer({
           videoId: videoId,
           playerVars: {
             start: startTime,
-            autoplay: autoPlay ? 1 : 0,
+            autoplay: 1,
             controls: 0,
             modestbranding: 1,
             rel: 0,
@@ -130,6 +130,7 @@ export function YouTubePlayer({
             disablekb: 1,
             hl: "en",
             cc_lang_pref: "en",
+            mute: 0,
           },
           events: {
             // 【イベント】プレイヤーの準備が完了した時
@@ -139,8 +140,12 @@ export function YouTubePlayer({
                 `[onReady] プレイヤー準備完了 (autoPlay: ${autoPlay})`
               );
               setIsLoading(false);
+              // Ensure video starts playing
+              event.target.seekTo(startTime, true);
               if (autoPlay) {
-                event.target.playVideo();
+                setTimeout(() => {
+                  event.target.playVideo();
+                }, 100);
               }
             },
             // 【イベント】プレイヤーの状態が変化した時（再生/一時停止/終了など）

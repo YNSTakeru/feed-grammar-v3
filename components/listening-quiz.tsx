@@ -3,7 +3,14 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, RotateCcw, Volume2, XCircle } from "lucide-react";
+import {
+  CheckCircle2,
+  Eye,
+  EyeOff,
+  RotateCcw,
+  Volume2,
+  XCircle,
+} from "lucide-react";
 import { useEffect, useState } from "react";
 
 interface ListeningQuizProps {
@@ -21,6 +28,7 @@ export function ListeningQuiz({
   const [selectedWords, setSelectedWords] = useState<string[]>([]);
   const [showAnswer, setShowAnswer] = useState(false);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+  const [showKatakana, setShowKatakana] = useState(false);
 
   useEffect(() => {
     // Split question into words and shuffle them
@@ -60,6 +68,7 @@ export function ListeningQuiz({
     setSelectedWords([]);
     setShowAnswer(false);
     setIsCorrect(null);
+    setShowKatakana(false);
   };
 
   return (
@@ -74,6 +83,40 @@ export function ListeningQuiz({
         </p>
       </CardHeader>
       <CardContent className="space-y-4">
+        {/* Katakana Hint Button - Prominent */}
+        {!showAnswer && (
+          <Button
+            onClick={() => setShowKatakana(!showKatakana)}
+            variant={showKatakana ? "default" : "secondary"}
+            size="lg"
+            className="w-full font-bold text-lg py-6 shadow-lg"
+          >
+            {showKatakana ? (
+              <>
+                <EyeOff className="h-5 w-5 mr-2" />
+                カタカナを隠す
+              </>
+            ) : (
+              <>
+                <Eye className="h-5 w-5 mr-2" />
+                カタカナで確認する
+              </>
+            )}
+          </Button>
+        )}
+
+        {/* Katakana Display */}
+        {showKatakana && !showAnswer && (
+          <div className="p-6 rounded-lg bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 border-2 border-blue-300 dark:border-blue-700 shadow-md">
+            <p className="text-sm font-medium text-muted-foreground mb-2 text-center">
+              カタカナ表記
+            </p>
+            <p className="text-2xl font-bold text-center text-blue-900 dark:text-blue-100">
+              {questionKatakana}
+            </p>
+          </div>
+        )}
+
         {/* Selected Words Area */}
         <div className="min-h-24 p-4 border-2 border-dashed rounded-lg bg-muted/50">
           <div className="flex flex-wrap gap-2">
