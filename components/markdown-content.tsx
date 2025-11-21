@@ -34,8 +34,16 @@ export function MarkdownContent({
 
   // Now process other escaped characters
   processedContent = processedContent
-    .replace(/\\\\n/g, "\n") // Handle \\n (double backslash from JSON)
-    .replace(/\\\*/g, "*"); // Fix escaped asterisks
+    // Handle literal \n strings (when article_text is an object, not a JSON string)
+    .replace(/\\n\\n\*/g, "\n\n*") // \n\n* for bullet lists
+    .replace(/\\n\\n/g, "\n\n") // \n\n for paragraph breaks
+    .replace(/\\n/g, "\n") // \n for line breaks
+    // Handle \\n (double backslash from JSON string)
+    .replace(/\\\\n/g, "\n")
+    // Fix escaped asterisks
+    .replace(/\\\*/g, "*")
+    // Fix literal backslash sequences in LaTeX that weren't caught by control char fixes
+    .replace(/\\\\/g, "\\"); // \\ to \
 
   return (
     <div className={className}>
