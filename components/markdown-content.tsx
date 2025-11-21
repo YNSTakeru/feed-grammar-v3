@@ -15,14 +15,27 @@ export function MarkdownContent({
   content,
   className = "",
 }: MarkdownContentProps) {
-  // Unescape markdown characters if they were double-escaped
-  // and fix spacing issues around ** for Japanese text
-  const processedContent = content
-    .replaceAll("\\n", "\n") // Handle \\n (double backslash from JSON)
-    .replaceAll("\n", "\n") // Handle \n (single backslash, fallback)
-    .replace(/\\\*/g, "*") // Fix escaped asterisks
-    .replace(/\*\*([^\s])/g, "** $1") // Add space after ** if missing
-    .replace(/([^\s])\*\*/g, "$1 **"); // Add space before ** if missing
+  // Fix the issue where \r and \t in LaTeX commands get interpreted as control characters
+  let processedContent = content;
+
+  // The problem: JSON.parse interprets escape sequences in strings
+  // "\rightarrow" becomes "\r" (carriage return) + "ightarrow"
+  // "\text" becomes "\t" (tab) + "ext"
+
+  // Solution: Detect these patterns and restore the backslash
+  // Pattern 1: Carriage return followed by common LaTeX commands starting with 'r'
+  processedContent = processedContent
+    .replace(/\r(ightarrow|ho|ule|angle|ight)/g, "\\r$1")
+    // Pattern 2: Tab followed by common LaTeX commands starting with 't'
+    .replace(/\t(ext|imes|o|heta)/g, "\\t$1")
+    // Pattern 3: Handle any remaining control characters before lowercase letters (likely LaTeX)
+    .replace(/\r([a-z])/g, "\\r$1")
+    .replace(/\t([a-z])/g, "\\t$1");
+
+  // Now process other escaped characters
+  processedContent = processedContent
+    .replace(/\\\\n/g, "\n") // Handle \\n (double backslash from JSON)
+    .replace(/\\\*/g, "*"); // Fix escaped asterisks
 
   return (
     <div className={className}>
@@ -59,7 +72,7 @@ export function MarkdownContent({
           ),
         }}
       >
-        {content}
+        {processedContent}
       </ReactMarkdown>
     </div>
   );
