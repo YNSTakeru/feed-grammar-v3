@@ -34,6 +34,9 @@ export function MarkdownContent({
 
   // Now process other escaped characters
   processedContent = processedContent
+    // Handle multiple backslashes in LaTeX (e.g., \\\\rightarrow -> \rightarrow)
+    .replace(/\\\\\\\\([a-z]+)/g, "\\$1") // 4 backslashes to 1
+    .replace(/\\\\([a-z]+)/g, "\\$1") // 2 backslashes to 1
     // Handle literal \n strings (when article_text is an object, not a JSON string)
     .replace(/\\n\\n\*/g, "\n\n*") // \n\n* for bullet lists
     .replace(/\\n\\n/g, "\n\n") // \n\n for paragraph breaks
@@ -41,9 +44,7 @@ export function MarkdownContent({
     // Handle \\n (double backslash from JSON string)
     .replace(/\\\\n/g, "\n")
     // Fix escaped asterisks
-    .replace(/\\\*/g, "*")
-    // Fix literal backslash sequences in LaTeX that weren't caught by control char fixes
-    .replace(/\\\\/g, "\\"); // \\ to \
+    .replace(/\\\*/g, "*");
 
   return (
     <div className={className}>
@@ -77,6 +78,28 @@ export function MarkdownContent({
             >
               {children}
             </a>
+          ),
+          table: ({ children }) => (
+            <div className="overflow-x-auto my-6">
+              <table className="min-w-full border-collapse border border-border">
+                {children}
+              </table>
+            </div>
+          ),
+          thead: ({ children }) => (
+            <thead className="bg-muted">{children}</thead>
+          ),
+          tbody: ({ children }) => <tbody>{children}</tbody>,
+          tr: ({ children }) => (
+            <tr className="border-b border-border">{children}</tr>
+          ),
+          th: ({ children }) => (
+            <th className="border border-border px-4 py-2 text-left font-semibold">
+              {children}
+            </th>
+          ),
+          td: ({ children }) => (
+            <td className="border border-border px-4 py-2">{children}</td>
           ),
         }}
       >
