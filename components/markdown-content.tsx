@@ -15,42 +15,67 @@ export function MarkdownContent({
   content,
   className = "",
 }: MarkdownContentProps) {
-  // Fix the issue where \r and \t in LaTeX commands get interpreted as control characters
   let processedContent = content;
 
-  // The problem: JSON.parse interprets escape sequences in strings
-  // "\rightarrow" becomes "\r" (carriage return) + "ightarrow"
-  // "\text" becomes "\t" (tab) + "ext"
+  // Step 1: Replace quadruple backslashes
+  processedContent = processedContent.replace(/\\\\\\\\/g, "\\\\");
+  
+  // Step 2: Handle \text{...} with special Unicode combining characters
+  // These need to be converted to plain text outside of math mode
+  // Match pattern: $\\text{...}$ where content has combining diacritics
+  processedContent = processedContent.replace(/\$\\\\text\{([^}]*[̀-ͯ][^}]*)\}\$/g, (match, content) => {
+    // Return as plain text in a span (not in math mode)
+    return content;
+  });
+  
+  // Step 3: Protect remaining LaTeX \text{...} commands
+  const textCommandPattern = /\\\\text\{[^}]*\}/g;
+  const textPlaceholders: string[] = [];
+  processedContent = processedContent.replace(textCommandPattern, (match) => {
+    const placeholder = `___TEXT_CMD_${textPlaceholders.length}___`;
+    textPlaceholders.push(match.replace(/\\\\/g, "\\"));
+    return placeholder;
+  });
 
-  // Solution: Detect these patterns and restore the backslash
-  // Pattern 1: Carriage return followed by common LaTeX commands starting with 'r'
+  // Step 4: Handle remaining double backslashes
+  processedContent = processedContent.replace(/\\\\/g, "\\");
+
+  // Step 5: Fix control characters
   processedContent = processedContent
     .replace(/\r(ightarrow|ho|ule|angle|ight)/g, "\\r$1")
-    // Pattern 2: Tab followed by common LaTeX commands starting with 't'
     .replace(/\t(ext|imes|o|heta)/g, "\\t$1")
-    // Pattern 3: Handle any remaining control characters before lowercase letters (likely LaTeX)
     .replace(/\r([a-z])/g, "\\r$1")
     .replace(/\t([a-z])/g, "\\t$1");
 
-  // Now process other escaped characters
+  // Step 6: Restore protected commands
+  textPlaceholders.forEach((original, index) => {
+    const placeholder = `___TEXT_CMD_${index}___`;
+    processedContent = processedContent.replace(placeholder, original);
+  });
+
+  // Step 7: Handle other escaped characters
   processedContent = processedContent
-    // Handle multiple backslashes in LaTeX (e.g., \\\\rightarrow -> \rightarrow)
-    .replace(/\\\\\\\\([a-z]+)/g, "\\$1") // 4 backslashes to 1
-    .replace(/\\\\([a-z]+)/g, "\\$1") // 2 backslashes to 1
-    // Handle literal \n strings (when article_text is an object, not a JSON string)
-    .replace(/\\n\\n\*/g, "\n\n*") // \n\n* for bullet lists
-    .replace(/\\n\\n/g, "\n\n") // \n\n for paragraph breaks
-    .replace(/\\n/g, "\n") // \n for line breaks
-    // Handle \\n (double backslash from JSON string)
-    .replace(/\\\\n/g, "\n")
-    // Fix escaped asterisks
+    .replace(/\\n\\n\*/g, "\n\n*")
+    .replace(/\\n\\n/g, "\n\n")
+    .replace(/\\n/g, "\n")
     .replace(/\\\*/g, "*");
 
   return (
     <div className={className}>
       <ReactMarkdown
         remarkPlugins={[remarkGfm, remarkMath]}
-        rehypePlugins={[rehypeKatex]}
+        rehypePlugins={[
+          [
+            rehypeKatex,
+            {
+              throwOnError: false,
+              errorColor: "#cc0000",
+              strict: false,
+              trust: true,
+              maxExpand: 1000,
+            },
+          ],
+        ]}
         components={{
           strong: ({ children }) => (
             <strong className="font-bold text-foreground">{children}</strong>
