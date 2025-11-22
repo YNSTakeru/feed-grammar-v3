@@ -1,4 +1,5 @@
 import { ArticleContent } from "@/app/article/[id]/article-content";
+import NinjaAdMax from "@/components/ninja-admax";
 import { Button } from "@/components/ui/button";
 import feedData from "@/lib/data/feed-data.json";
 import { ArticleData, FeedItem, Thumbnail } from "@/types";
@@ -122,6 +123,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       ? typedFeedData[currentIndex + 1].id
       : null;
 
+  // 忍者AdMaxの広告スポットIDを環境変数から取得
+  const adSpotId = process.env.NEXT_PUBLIC_ADMAX_SPOT_ID;
+
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b">
@@ -148,6 +152,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       </header>
 
       <article className="container mx-auto px-4 py-8 max-w-4xl">
+        {/* 記事上部の広告 */}
+        {adSpotId && <NinjaAdMax adSpotId={adSpotId} />}
+
         <ArticleContent
           videoId={videoId}
           startTime={parseFloat(item.start_time)}
@@ -161,6 +168,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           prevId={prevId}
           nextId={nextId}
         />
+
+        {/* 記事下部の広告 */}
+        {adSpotId && <NinjaAdMax adSpotId={adSpotId} />}
       </article>
     </div>
   );

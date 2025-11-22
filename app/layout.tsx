@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  other: {
+    "google-adsense-account": "ca-pub-XXXXXXXXXXXXXXXX", // 必要に応じて更新
+  },
 };
 
 export default function RootLayout({
