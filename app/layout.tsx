@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description:
     "YouTubeから学ぶ英語の発音とリスニング。ネイティブの自然な発音変化を理解して、リスニング力を向上させましょう。",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/logo.svg",
   },
   other: {
     "google-adsense-account": "ca-pub-XXXXXXXXXXXXXXXX", // 必要に応じて更新
