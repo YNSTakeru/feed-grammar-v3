@@ -159,28 +159,40 @@ export function ArticleContent({
 
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4">
-                {article.section_1.heading}
+                <MarkdownContent
+                  content={article.section_1.heading}
+                  className="inline"
+                />
               </h2>
               <MarkdownContent content={article.section_1.content} />
             </section>
 
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4">
-                {article.section_2.heading}
+                <MarkdownContent
+                  content={article.section_2.heading}
+                  className="inline"
+                />
               </h2>
               <MarkdownContent content={article.section_2.content} />
             </section>
 
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4">
-                {article.section_3.heading}
+                <MarkdownContent
+                  content={article.section_3.heading}
+                  className="inline"
+                />
               </h2>
               <MarkdownContent content={article.section_3.content} />
             </section>
 
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4">
-                {article.section_4.heading}
+                <MarkdownContent
+                  content={article.section_4.heading}
+                  className="inline"
+                />
               </h2>
               <MarkdownContent content={article.section_4.content} />
             </section>

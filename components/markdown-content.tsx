@@ -43,12 +43,27 @@ export function MarkdownContent({
   // Step 4: Handle remaining double backslashes
   processedContent = processedContent.replace(/\\\\/g, "\\");
 
-  // Step 5: Fix control characters
+  // Step 5: Fix control characters - protect LaTeX commands first
+  // Protect common LaTeX commands that start with \r or \t (now single backslash after Step 4)
+  const latexCommandPattern =
+    /\\(rightarrow|rho|rule|rangle|right|leftarrow|theta|text|times|to)\b/g;
+  const latexPlaceholders: string[] = [];
+  processedContent = processedContent.replace(latexCommandPattern, (match) => {
+    const placeholder = `___LATEX_${latexPlaceholders.length}___`;
+    latexPlaceholders.push(match);
+    return placeholder;
+  });
+
+  // Now fix any remaining control characters (but only actual control chars, not in LaTeX)
   processedContent = processedContent
-    .replace(/\r(ightarrow|ho|ule|angle|ight)/g, "\\r$1")
-    .replace(/\t(ext|imes|o|heta)/g, "\\t$1")
-    .replace(/\r([a-z])/g, "\\r$1")
-    .replace(/\t([a-z])/g, "\\t$1");
+    .replace(/\r(?![a-z])/g, "\\r")
+    .replace(/\t(?![a-z])/g, "\\t");
+
+  // Restore LaTeX commands
+  latexPlaceholders.forEach((original, index) => {
+    const placeholder = `___LATEX_${index}___`;
+    processedContent = processedContent.replace(placeholder, original);
+  });
 
   // Step 6: Restore protected commands
   textPlaceholders.forEach((original, index) => {
