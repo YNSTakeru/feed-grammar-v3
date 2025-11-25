@@ -1,6 +1,5 @@
 "use client";
 
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -17,6 +16,107 @@ interface ListeningQuizProps {
   question: string;
   questionKatakana: string;
   onComplete?: (correct: boolean) => void;
+}
+
+// カタカナ表記をパースして強弱を視覚化する関数
+function parseKatakana(text: string) {
+  const parts: { text: string; isStrong: boolean; isWeak: boolean }[] = [];
+  let currentText = "";
+  let insideBracket = false;
+  let insideAngleBracket = false;
+  let bracketType: "strong" | "weak" | null = null;
+
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+
+    if (char === "【") {
+      if (currentText) {
+        parts.push({ text: currentText, isStrong: false, isWeak: false });
+        currentText = "";
+      }
+      insideBracket = true;
+      bracketType = "strong";
+    } else if (char === "】") {
+      if (currentText) {
+        parts.push({ text: currentText, isStrong: true, isWeak: false });
+        currentText = "";
+      }
+      insideBracket = false;
+      bracketType = null;
+    } else if (char === "〈") {
+      if (currentText) {
+        parts.push({ text: currentText, isStrong: false, isWeak: false });
+        currentText = "";
+      }
+      insideAngleBracket = true;
+      bracketType = "weak";
+    } else if (char === "〉") {
+      if (currentText) {
+        parts.push({ text: currentText, isStrong: false, isWeak: true });
+        currentText = "";
+      }
+      insideAngleBracket = false;
+      bracketType = null;
+    } else if (char === " ") {
+      if (insideBracket || insideAngleBracket) {
+        currentText += char;
+      } else {
+        if (currentText) {
+          parts.push({ text: currentText, isStrong: false, isWeak: false });
+          currentText = "";
+        }
+        // スペースは無視
+      }
+    } else {
+      currentText += char;
+    }
+  }
+
+  if (currentText) {
+    parts.push({
+      text: currentText,
+      isStrong: insideBracket,
+      isWeak: insideAngleBracket,
+    });
+  }
+
+  return parts;
+}
+
+// カタカナ表示コンポーネント
+function KatakanaDisplay({ text }: { text: string }) {
+  const parts = parseKatakana(text);
+
+  return (
+    <div className="flex flex-wrap items-center gap-1 justify-center leading-relaxed">
+      {parts.map((part, index) => (
+        <span
+          key={index}
+          className={`
+            inline-block
+            ${
+              part.isStrong
+                ? "font-bold text-2xl text-blue-900 dark:text-blue-100"
+                : ""
+            }
+            ${
+              part.isWeak
+                ? "font-normal text-xl text-blue-400 dark:text-blue-400 opacity-60"
+                : ""
+            }
+            ${
+              !part.isStrong && !part.isWeak
+                ? "font-semibold text-2xl text-blue-700 dark:text-blue-200"
+                : ""
+            }
+            transition-all duration-200
+          `}
+        >
+          {part.text}
+        </span>
+      ))}
+    </div>
+  );
 }
 
 export function ListeningQuiz({
@@ -108,12 +208,26 @@ export function ListeningQuiz({
         {/* Katakana Display */}
         {showKatakana && !showAnswer && (
           <div className="p-6 rounded-lg bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-950 dark:to-purple-950 border-2 border-blue-300 dark:border-blue-700 shadow-md">
-            <p className="text-sm font-medium text-muted-foreground mb-2 text-center">
+            <p className="text-sm font-medium text-muted-foreground mb-3 text-center">
               カタカナ表記
             </p>
-            <p className="text-2xl font-bold text-center text-blue-900 dark:text-blue-100">
-              {questionKatakana}
-            </p>
+            <div className="mb-3">
+              <KatakanaDisplay text={questionKatakana} />
+            </div>
+            <div className="flex items-center justify-center gap-4 text-xs text-muted-foreground pt-3 border-t border-blue-200 dark:border-blue-800">
+              <div className="flex items-center gap-1">
+                <span className="font-bold text-blue-900 dark:text-blue-100">
+                  強
+                </span>
+                <span>= 強い発音</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <span className="font-normal text-blue-400 dark:text-blue-400 opacity-60">
+                  弱
+                </span>
+                <span>= 弱い発音</span>
+              </div>
+            </div>
           </div>
         )}
 
@@ -215,9 +329,9 @@ export function ListeningQuiz({
                   <p className="text-sm font-medium text-muted-foreground mb-1">
                     カタカナ表記:
                   </p>
-                  <Badge variant="secondary" className="text-sm">
-                    {questionKatakana}
-                  </Badge>
+                  <div className="p-3 rounded bg-white dark:bg-gray-900">
+                    <KatakanaDisplay text={questionKatakana} />
+                  </div>
                 </div>
               </div>
             </div>
@@ -244,9 +358,9 @@ export function ListeningQuiz({
                   <p className="text-sm font-medium text-muted-foreground mb-1">
                     カタカナ表記:
                   </p>
-                  <Badge variant="secondary" className="text-sm">
-                    {questionKatakana}
-                  </Badge>
+                  <div className="p-3 rounded bg-white dark:bg-gray-900">
+                    <KatakanaDisplay text={questionKatakana} />
+                  </div>
                 </div>
               </div>
             </div>

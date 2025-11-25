@@ -21,7 +21,7 @@ export default function NinjaAdMax({
     // グローバルな admaxads 配列を初期化
     if (typeof window !== "undefined") {
       (window as any).admaxads = (window as any).admaxads || [];
-      
+
       // 広告を配列にプッシュ
       (window as any).admaxads.push({
         admax_id: adSpotId,
@@ -42,7 +42,9 @@ export default function NinjaAdMax({
   }, [adSpotId]);
 
   return (
-    <div className={`ninja-admax-container flex justify-center my-4 ${className}`}>
+    <div
+      className={`ninja-admax-container flex justify-center my-4 ${className}`}
+    >
       <div
         className="admax-ads"
         data-admax-id={adSpotId}

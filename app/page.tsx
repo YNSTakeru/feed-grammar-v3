@@ -1,8 +1,8 @@
+import NinjaAdMax from "@/components/ninja-admax";
 import feedData from "@/lib/data/feed-data.json";
 import Image from "next/image";
 import Link from "next/link";
 import FeedList from "./feed-list";
-import NinjaAdMax from "@/components/ninja-admax";
 
 export default function Home() {
   return (
@@ -47,7 +47,7 @@ export default function Home() {
       <main className="container mx-auto px-4 py-8">
         {/* 忍者AdMax 広告 */}
         <NinjaAdMax adSpotId="143d07eee51fc057088eb62107bae0a3" />
-        
+
         <FeedList items={feedData} />
       </main>
     </div>
