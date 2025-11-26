@@ -167,6 +167,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           currentId={item.id}
           prevId={prevId}
           nextId={nextId}
+          kugiriEng={item.kugiri_eng}
+          kugiriJp={item.kugiri_jp}
         />
 
         {/* 記事下部の広告 */}

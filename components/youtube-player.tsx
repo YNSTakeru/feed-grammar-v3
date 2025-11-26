@@ -1,5 +1,6 @@
 "use client";
 
+import { FloatingVideoControls } from "@/components/floating-video-controls";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Pause, Play, RotateCcw } from "lucide-react";
@@ -38,6 +39,7 @@ export function YouTubePlayer({
 }: YouTubePlayerProps) {
   const playerRef = useRef<any>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const videoContainerRef = useRef<HTMLDivElement>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const [isLoading, setIsLoading] = useState(true);
@@ -226,56 +228,75 @@ export function YouTubePlayer({
   }, [videoId, startTime, endTime, autoPlay, loop, updateProgress]);
 
   return (
-    <div className="space-y-4">
-      <div className="relative w-full aspect-video bg-muted rounded-md overflow-hidden">
-        {isLoading && (
-          <div className="absolute inset-0 flex items-center justify-center z-10">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-          </div>
-        )}
-        <div ref={containerRef} className="w-full h-full" />
-      </div>
+    <>
+      {/* Floating Controls */}
+      <FloatingVideoControls
+        isPlaying={isPlaying}
+        progress={progress}
+        currentTime={currentTime}
+        duration={duration}
+        startTime={startTime}
+        loop={loop}
+        onPlay={handlePlay}
+        onPause={handlePause}
+        onRestart={handleRestart}
+        videoElementRef={videoContainerRef}
+      />
 
-      {/* Progress Bar */}
-      <div className="space-y-2">
-        <Progress value={progress} className="h-2" />
-        <div className="flex items-center justify-between text-xs text-muted-foreground">
-          <span>
-            {Math.max(0, currentTime - startTime).toFixed(1)}s /{" "}
-            {duration.toFixed(1)}s
-          </span>
-          {loop && (
-            <span className="flex items-center gap-1">
-              <RotateCcw className="h-3 w-3" />
-              ループ再生中
-            </span>
+      <div ref={videoContainerRef}>
+        <div className="relative w-full aspect-video bg-muted rounded-md overflow-hidden">
+          {isLoading && (
+            <div className="absolute inset-0 flex items-center justify-center z-10">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+            </div>
           )}
+          <div ref={containerRef} className="w-full h-full" />
+        </div>
+
+        {/* Static Progress Bar and Controls - shown when in viewport */}
+        <div className="mt-4 space-y-3">
+          {/* Progress Bar */}
+          <div className="space-y-2">
+            <Progress value={progress} className="h-2" />
+            <div className="flex items-center justify-between text-xs text-muted-foreground">
+              <span>
+                {Math.max(0, currentTime - startTime).toFixed(1)}s /{" "}
+                {duration.toFixed(1)}s
+              </span>
+              {loop && (
+                <span className="flex items-center gap-1">
+                  <RotateCcw className="h-3 w-3" />
+                  ループ再生中
+                </span>
+              )}
+            </div>
+          </div>
+
+          {/* Controls */}
+          <div className="flex gap-2 justify-center">
+            {!isPlaying ? (
+              <Button onClick={handlePlay} size="lg" className="min-w-32">
+                <Play className="h-5 w-5 mr-2" />
+                再生
+              </Button>
+            ) : (
+              <Button
+                onClick={handlePause}
+                variant="secondary"
+                size="lg"
+                className="min-w-32"
+              >
+                <Pause className="h-5 w-5 mr-2" />
+                一時停止
+              </Button>
+            )}
+            <Button onClick={handleRestart} variant="outline" size="lg">
+              <RotateCcw className="h-5 w-5 mr-2" />
+              最初から
+            </Button>
+          </div>
         </div>
       </div>
-
-      {/* Controls */}
-      <div className="flex gap-2 justify-center">
-        {!isPlaying ? (
-          <Button onClick={handlePlay} size="lg" className="min-w-32">
-            <Play className="h-5 w-5 mr-2" />
-            再生
-          </Button>
-        ) : (
-          <Button
-            onClick={handlePause}
-            variant="secondary"
-            size="lg"
-            className="min-w-32"
-          >
-            <Pause className="h-5 w-5 mr-2" />
-            一時停止
-          </Button>
-        )}
-        <Button onClick={handleRestart} variant="outline" size="lg">
-          <RotateCcw className="h-5 w-5 mr-2" />
-          最初から
-        </Button>
-      </div>
-    </div>
+    </>
   );
 }

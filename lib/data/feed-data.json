@@ -4,34 +4,54 @@
     "url": "https://www.youtube.com/watch?v=Ij1o5zGDCeE",
     "start_time": "8",
     "end_time": "11",
-    "updated_at": "2025-11-22T10:21:52.850Z",
+    "updated_at": "2025-11-26T14:48:25.144Z",
     "question": "Some of us don’t want to think back to our childhoods",
-    "question_katakana": "【サ】〈マ〉【ヴァス】 【ドン】 【モア】 【スィンク】 【バック】 〈ワ〉 【チャイルド】〈ウッズ〉",
+    "question_katakana": "【サマ】〈ヴァス〉 【ドン】 【モア (モナ)】 【スィンク】 【バック】 〈ワ〉 【チャイルドウッズ】",
     "article_text": {
-      "title": "ネイティブの発音はこう聞こえる！「Some of us don’t want to…」の劇的変化とリスニングの極意",
-      "meta_description": "「Some of us don't want to...」が「サマヴァス ドン モア...」に聞こえる理由を解説。英語特有の音の脱落や連結（リエゾン）の仕組みを理解して、リスニング力を劇的に向上させましょう。",
-      "katakana_weak_strong": "【サ】〈マ〉【ヴァス】 【ドン】 【モア】 【スィンク】 【バック】 〈ワ〉 【チャイルド】〈ウッズ〉",
-      "introduction": "「簡単な単語の並びなのに、なぜか聞き取れない…」そんな経験はありませんか？\n\n実は、学校で習った発音と、ネイティブが自然な会話で話す音には大きなギャップがあります。単語同士がつながったり、音が消えたりすることで、全く別の言葉のように聞こえてしまうのです。\n\n今回は、「Some of us don't want to think back to our childhoods」という一文を使って、英語の音がどのように変化するのか、その秘密を紐解いていきましょう。この法則を知るだけで、リスニングが一気に楽になりますよ。",
+      "title": "ネイティブの発音はこう聞こえる！「Some of us don’t want to…」のリエゾンと弱化の秘密",
+      "meta_description": "英語学習者が驚く「Some of us don’t want to think back to our childhoods」の自然な発音を解説。リエゾン、弱化、脱落の法則を知り、リスニング力を飛躍的に向上させましょう。",
+      "katakana_weak_strong": "【サマ】〈ヴァス〉 【ドン】 【モア (モナ)】 【スィンク】 【バック】 〈ワ〉 【チャイルドウッズ】",
+      "kugiri_eng": "Some of us / don't / want to / think / back / ＜to＞ our / childhoods",
+      "kugiri_jp": "【サマ】〈ヴァス〉 / 【ドン】 / 【モア (モナ)】 / 【スィンク】 / 【バック】 / 〈ワ〉 / 【チャイルドウッズ】",
+      "translated": "私たちの中には、自分の子供時代を思い出したくない人もいる。",
+      "tsukkomi": [
+        {
+          "question": "of us で なんで ヴァス！？",
+          "answer": "of usが「ヴァス」に聞こえるのは、ofの母音が弱化（シュワ音化）して、続くusとリエゾン（音の連結）を起こすためです。機能語であるofは弱く発音されるため、fの音も弱くなり、ほぼ「アヴ」や「ヴァ」のように聞こえ、それがusとつながることで「ヴァス」のように聞こえます。これは英語のリズムの特徴で、重要でない語（機能語）は弱くなる傾向があります。"
+        },
+        {
+          "question": "want to が なんで モア (モナ)！？",
+          "answer": "want toが「モア（モナ）」に聞こえるのは、toの母音が極端に弱化してシュワ音（/ə/）になり、wantの語尾の[t]音とつながって、さらに短縮された結果です。特に[nt]の後に続くtoは、t音が脱落して「wanna（ワナ）」に近い音になり、さらに短縮されて「モア」や「モナ」のように聞こえます（t-dropping現象）。これは非常に頻繁に使われるカジュアルな発音です。"
+        },
+        {
+          "question": "to が消えて、our が ワだけ！？",
+          "answer": "to ourのtoがほとんど消えてourが「ワ」に聞こえるのは、ここでもtoが機能語として極度に弱化・脱落（to-dropping）し、ourもまた機能語として弱形（シュワ音や/aər/の弱形）になるためです。toが消え、ourの最初の母音も弱化することで、「トゥアワー」ではなく、一気に「ワ」や「アワー」の弱形のように聞こえます。これは、次に強調される語（childhoods）へ向かって機能語を素早く発音する英語特有の現象です。"
+        }
+      ],
+      "remember": "「Some of us」（私たちの中には〜な人もいる）は、意見が分かれる時や、グループ内の一部の人の意見を述べる際に便利な表現です。\\n例：Some of us prefer working from home, others need the office.（私たちの中には在宅勤務を好む人もいれば、オフィスが必要な人もいる）\\n\\n「don't want to」（〜したくない）は、日常で頻出する意思の否定表現です。\\n例：I don't want to talk about it right now.（今はそれについて話したくない）\\n\\n「think back to A」（Aを思い出す/振り返る）は、過去の出来事について考えるときに役立つフレーズです。\\n例：She often thinks back to her college days.（彼女はよく大学時代を振り返る）",
+      "introduction": "英語のリスニングで「知っているはずの単語なのに、全然聞き取れない！」と驚いた経験はありませんか？その原因の多くは、単語同士が繋がったり、音が弱くなったりする「音の変化」にあります。特にネイティブの会話は、学校で習う一語一語を区切った発音とはまるで違います。\n\n今回の例文「Some of us don't want to think back to our childhoods」は、まさに音の変化の\"宝庫\"。この一文をマスターするだけで、あなたのリスニング力は飛躍的に向上するはずです！",
       "section_1": {
-        "heading": "今回の例文と意味",
-        "content": "まずは、今回のターゲットとなる英文と、その意味を確認しましょう。\n\n **例文：** \nSome of us don’t want to think back to our childhoods.\n\n **意味：** \n私たちの中には、子供時代を振り返りたくない人もいる。\n\n誰しも楽しい思い出ばかりではありませんよね。過去をあまり思い出したくない、という少しシリアスな心情を表すフレーズです。この文章、文字で見ると簡単ですが、耳で聞くと「サマヴァス ドン モア スィンク バック ワ チャイルドウッズ」のように聞こえることがあります。"
+        "heading": "例文と意味",
+        "content": "今回の教材となる例文は、\\n **Some of us don’t want to think back to our childhoods** \\nです。\n\n直訳すると「私たちの中には、自分の子供時代を思い出したくない人もいる」という意味になります。少しシリアスな内容ですが、この短い一文の中に、英語のナチュラルなリズムを作る重要な要素が詰まっています。"
       },
       "section_2": {
-        "heading": "発音のポイント：なぜ「モア」や「ワ」に聞こえる？",
-        "content": "ここからは、音がどう変化しているのか具体的に見ていきましょう。\n\n **1. Some of us → 【サマヴァス】** \nここでは「リエゾン（音の連結）」が起きています。\n- **Some of** : [m]と[o]がつながり、「サマ」のように聞こえます。\n- **of us** : [f]（または[v]）と[u]がつながり、「ヴァス」となります。\nこれらが一塊になって「サマヴァス」という一つの単語のように発音されます。\n\n **2. don't want to → 【ドン モア】** \nここが最大の難関です。\n- **don't** : 末尾の[t]は発音されず、喉で音を止めるため「ドン」となります。\n- **want to** : 通常は「ワナ (wanna)」と変化しますが、会話のスピードや話者の口の動きによっては、「ワ」の唇を丸める動きが強調され、こもった音になり、日本語耳には「モア」に近い音として聞こえることがあります。\n\n **3. to our → 【ワ】** \n- **think back** : [k]と次の音がぶつかり、「ク」はほとんど聞こえません。\n- **to our** : ここの to はほぼ消滅し、our [ɑər] が前の音と混ざり合って、弱く短い「ワ」のような音だけが残ります。"
+        "heading": "驚愕の発音変化を徹底解説",
+        "content": "学習者の皆さんが最も驚くであろう発音のポイントを、実際の音とともにもう一度見てみましょう。\n\n* **Some of us** $\\\\rightarrow$ **【サマ】〈ヴァス〉** \n    * 「of us で なんで ヴァス！？」というツッコミの通り、ofの[f]音が弱化し、前のsomeの母音とofの母音がつながり（リエゾン）、最終的にofの母音が弱化して[f]音が脱落し、usとつながって「ヴァス」のように聞こえます。強く発音されるのは内容語の **【Some】** の部分です。\n* **don't want to** $\\\\rightarrow$ **【ドン】 【モア (モナ)】** \n    * 「want to が なんで モア (モナ)！？」\n    * don't のtは発音されず、want to はお馴染みの「wanna（ワナ）」よりもさらに短縮されて **【モア (モナ)】** のように聞こえています。これは、否定形の **【don't】** 、そして動詞の **【want】** に強勢があるため、toの部分は極限まで弱化するからです。\n* **to our** $\\\\rightarrow$ **〈ワ〉** \n    * 「to が消えて、our が ワだけ！？」\n    * **to** が消え（脱落）、 **our** も「アワー」の弱形として **〈ワ〉** に近い音になっています。これは、その後に続く内容語 **【childhoods】** に向かって一気に発音を速めるための現象です。"
       },
       "section_3": {
-        "heading": "なぜそう聞こえるの？英語のリズムの秘密",
-        "content": "なぜネイティブはこんなに音を省略したり繋げたりするのでしょうか？それは、英語が **「ストレス（強弱）のリズム」** を重視する言語だからです。\n\n英語には、相手に伝えたい重要な言葉（内容語）は **【強く・長く・はっきり】** 、文法的なつなぎ言葉（機能語）は **〈弱く・短く・曖昧に〉** 発音するという鉄則があります。\n\n- **強く言う場所：** Some, don't, want, think, back, childhoods\n- **弱く言う場所：** of, us, to, our\n\nこの強弱の波を作るために、弱い部分は徹底的に「省エネ」で発音されます。その結果、of や to が前の単語にくっついたり、音が消えたりして、今回のような「カタカナ表記とは全く違う音」が生まれるのです。"
+        "heading": "なぜそう聞こえるの？英語のリズムの法則",
+        "content": "これらの驚くべき音の変化は、ネイティブが効率よく、かつ心地よいリズムで話すための「法則」に基づいています。鍵となるのは「強弱」と「機能語の弱化」です。\n\n1.  **機能語の弱化（Reduction/Weak Forms）：** 英語では、文の主要な意味を担う内容語（名詞、動詞、形容詞、副詞）を強く、文法的な役割を担う機能語（前置詞: *of, to*、冠詞: *a, the*、助動詞: *do, be*）を弱く発音します。 **of** や **to** が極限まで弱くなり、母音がシュワ音（/ə/）になったり、脱落したりするのはこのためです。\n2.  **リエゾン（Linking）：** 前の単語の語尾の音と、次の単語の語頭の音が繋がる現象です。*Some of us*が **【サマ】〈ヴァス〉** になるのは、 **of** の[f]音が弱化した後、*of*の母音が*us*と繋がるリエゾンの一種です。\n3.  **tの脱落（T-dropping）：** *want to* $\\\\rightarrow$ **【モア (モナ)】** のように、[n]や[t]の音の後に続く[t]音が脱落する現象は非常によく見られます。これは発音を楽にするための「音の同化・脱落」の一種で、結果として **wanna** のような短縮形が生まれます。"
       },
       "section_4": {
-        "heading": "学習のコツ：聞こえた通りに真似てみよう",
-        "content": "この発音をマスターするための近道は、文字を見ながらきれいに読むことではなく、 **「聞こえた音をそのまま口に出す（コピーする）」** ことです。\n\n以下のステップで練習してみましょう。\n\n1. **「モア」を受け入れる：** \n「want to だから ウォント トゥ」という先入観を捨ててください。「ドン モア」と聞こえるなら、その通りに「ドン モア」と言ってみましょう。\n\n2. **強弱を意識する：** \n【サ】マ【ヴァス】、【ドン】【モア】、【スィンク】【バック】〈ワ〉【チャイルド】ウッズ\nこのように、太字の部分にグッと力を入れ、それ以外は力を抜いて添えるように発音します。\n\n3. **一息で言う：** \n単語ごとに切らず、全てを一筆書きのように繋げて発音します。最初はゆっくり、徐々にスピードを上げていきましょう。"
+        "heading": "リスニングと発音を上達させる学習のコツ",
+        "content": "この音の変化をマスターする学習法は、ズバリ「シャドーイング」と「音の視覚化」です。\n\n* **1. 徹底したシャドーイング（音真似）：** ネイティブの音声を聞きながら、一語遅れて完全に同じ発音（【サマ】〈ヴァス〉 【ドン】 【モア】など）を真似て発音します。機能語は弱く、内容語は強く、というリズムを体で覚えることが重要です。\n* **2. 区切りと強弱の意識：** 記事の **kugiri_eng** と **kugiri_jp** を見て、どこで意味が区切られ、どこに強勢（【】）があるかを意識してください。英語は、強勢のある音節から次の強勢のある音節までをほぼ一定の時間で話す「強勢拍子（Stress-timed rhythm）」の言語です。このリズムを意識するだけでも、リスニングの精度は格段に上がります。"
       },
-      "conclusion": "英語の音の変化（リエゾンやリダクション）は、最初は戸惑うかもしれませんが、ルールを知ればパズルのように解明できます。「サマヴァス」や「モア」のように聞こえる現象を楽しめるようになれば、あなたのリスニング力は確実にレベルアップしています。ぜひ、今日のフレーズを口ずさんで、ネイティブのリズムを体感してみてくださいね。",
+      "conclusion": "英語の音の変化は、最初こそ「だまされた！」と感じるかもしれませんが、その法則を知ると、リスニングが一気に楽になります。そして、あなたがこの音の変化を使えるようになれば、あなたの英語は一気にネイティブらしく、自然に聞こえるようになります。\n\n今回学んだリエゾン、弱化、脱落の法則を意識して、ぜひ様々な英語の音源に挑戦してみてください。音の変化は、英語を流暢に話すための楽しい発見になりますよ！",
       "keywords": [
         "英語発音",
         "リエゾン",
+        "弱化",
+        "脱落",
         "リスニング",
         "英語学習",
         "Some of us",
@@ -42,7 +62,26 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/Ij1o5zGDCeE/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/Ij1o5zGDCeE/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/Ij1o5zGDCeE/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/Ij1o5zGDCeE/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/Ij1o5zGDCeE/maxresdefault.jpg\"}",
     "theme": "want to",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": "Some of us は サマヴァス に聴こえる。 don't は ドン に聴こえる。 want to は モア (モナ) に聴こえる。 to ourのto の音が聴こえない。 our　は ワ に聴こえる。",
+    "tsukkomi": [
+      {
+        "question": "of us で なんで ヴァス！？",
+        "answer": "of usが「ヴァス」に聞こえるのは、ofの母音が弱化（シュワ音化）して、続くusとリエゾン（音の連結）を起こすためです。機能語であるofは弱く発音されるため、fの音も弱くなり、ほぼ「アヴ」や「ヴァ」のように聞こえ、それがusとつながることで「ヴァス」のように聞こえます。これは英語のリズムの特徴で、重要でない語（機能語）は弱くなる傾向があります。"
+      },
+      {
+        "question": "want to が なんで モア (モナ)！？",
+        "answer": "want toが「モア（モナ）」に聞こえるのは、toの母音が極端に弱化してシュワ音（/ə/）になり、wantの語尾の[t]音とつながって、さらに短縮された結果です。特に[nt]の後に続くtoは、t音が脱落して「wanna（ワナ）」に近い音になり、さらに短縮されて「モア」や「モナ」のように聞こえます（t-dropping現象）。これは非常に頻繁に使われるカジュアルな発音です。"
+      },
+      {
+        "question": "to が消えて、our が ワだけ！？",
+        "answer": "to ourのtoがほとんど消えてourが「ワ」に聞こえるのは、ここでもtoが機能語として極度に弱化・脱落（to-dropping）し、ourもまた機能語として弱形（シュワ音や/aər/の弱形）になるためです。toが消え、ourの最初の母音も弱化することで、「トゥアワー」ではなく、一気に「ワ」や「アワー」の弱形のように聞こえます。これは、次に強調される語（childhoods）へ向かって機能語を素早く発音する英語特有の現象です。"
+      }
+    ],
+    "kugiri_eng": "Some of us / don't / want to / think / back / ＜to＞ our / childhoods",
+    "kugiri_jp": "【サマ】〈ヴァス〉 / 【ドン】 / 【モア (モナ)】 / 【スィンク】 / 【バック】 / 〈ワ〉 / 【チャイルドウッズ】",
+    "translated": "私たちの中には、自分の子供時代を思い出したくない人もいる。",
+    "remember": "「Some of us」（私たちの中には〜な人もいる）は、意見が分かれる時や、グループ内の一部の人の意見を述べる際に便利な表現です。\\n例：Some of us prefer working from home, others need the office.（私たちの中には在宅勤務を好む人もいれば、オフィスが必要な人もいる）\\n\\n「don't want to」（〜したくない）は、日常で頻出する意思の否定表現です。\\n例：I don't want to talk about it right now.（今はそれについて話したくない）\\n\\n「think back to A」（Aを思い出す/振り返る）は、過去の出来事について考えるときに役立つフレーズです。\\n例：She often thinks back to her college days.（彼女はよく大学時代を振り返る）"
   },
   {
     "id": 2,
@@ -87,7 +126,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/DjcZrtcBZi4/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/DjcZrtcBZi4/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/DjcZrtcBZi4/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/DjcZrtcBZi4/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/DjcZrtcBZi4/maxresdefault.jpg\"}",
     "theme": "have to",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 3,
@@ -133,7 +174,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/Zx8uYIfUvh4/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/Zx8uYIfUvh4/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/Zx8uYIfUvh4/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/Zx8uYIfUvh4/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/Zx8uYIfUvh4/maxresdefault.jpg\"}",
     "theme": "can't wait to",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 4,
@@ -179,7 +222,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/12shZLmvAko/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/12shZLmvAko/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/12shZLmvAko/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/12shZLmvAko/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/12shZLmvAko/maxresdefault.jpg\"}",
     "theme": "Feel free to",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 5,
@@ -200,7 +245,7 @@
       },
       "section_2": {
         "heading": "発音のポイント",
-        "content": "このフレーズが「ハウ バウト ディース メリア フェイシズ」のように聞こえるのは、主に以下の2つの発音変化が起きているからです。\n\n **1. aboutの弱形とTの脱落：「How about」 $\\\\rightarrow$ 「ハウ バウト」** \n* 機能語である「about」は弱く発音されることが多く、特に頭の「a」の音が弱まり、〈ア〉に近いシュワ音になる傾向があります。さらに「How」の[w]と「about」の[ə]が繋がります。\n* しかし、今回の例では **about** の **b** の後にストレスが移り「 **バウト** 」と聞こえています。これは、「about」の[ə]が次の[b]と共に弱く、第二音節の[aʊt]が強く発音されるパターンです。\n* また、「about」の語尾の[t]は次の単語の「these」の頭の[ð]と繋がるか、あるいは発音されずに脱落（ストップT）するため、「バウ **ト** 」の「ト」は非常に弱くなります。\n\n **2. 子音・母音の連結とR音の変化：「these familiar」 $\\\\rightarrow$ 「ディース メリア」** \n* 「these」の語尾[z]と「familiar」の頭の母音[ə]（または弱められた[f]の後の[ə]）がくっつき、スムーズに流れるため、「ディーズァメリア」のように聞こえることがありますが、今回の例では、 **「familiar」の[f]の音が脱落しやすく、** 「fə」がごっそり抜け落ちたように聞こえ、 **「メリア」** と聞こえています。特に速い会話では、このような音の脱落（エリジオン）は頻繁に起こります。\n* 「familiar」の「fami」の部分が弱く発音され、「-liar」の[lɪər]に強勢が置かれることで、カタカナ表記では「メリア」のように聞こえ、強く発音される「-liar」の **-li** （【メ】）の部分に強勢がくる形になります。\n\n **【強弱をつけたカタカナ表記】** \n【ハウ】〈バウ〉ト 【ディース】【メ】リア 【フェイシズ}"
+        "content": "このフレーズが「ハウ バウト ディース メリア フェイシズ」のように聞こえるのは、主に以下の2つの発音変化が起きているからです。\n\n **1. aboutの弱形とTの脱落：「How about」 $\rightarrow$ 「ハウ バウト」** \n* 機能語である「about」は弱く発音されることが多く、特に頭の「a」の音が弱まり、〈ア〉に近いシュワ音になる傾向があります。さらに「How」の[w]と「about」の[ə]が繋がります。\n* しかし、今回の例では **about** の **b** の後にストレスが移り「 **バウト** 」と聞こえています。これは、「about」の[ə]が次の[b]と共に弱く、第二音節の[aʊt]が強く発音されるパターンです。\n* また、「about」の語尾の[t]は次の単語の「these」の頭の[ð]と繋がるか、あるいは発音されずに脱落（ストップT）するため、「バウ **ト** 」の「ト」は非常に弱くなります。\n\n **2. 子音・母音の連結とR音の変化：「these familiar」 $\rightarrow$ 「ディース メリア」** \n* 「these」の語尾[z]と「familiar」の頭の母音[ə]（または弱められた[f]の後の[ə]）がくっつき、スムーズに流れるため、「ディーズァメリア」のように聞こえることがありますが、今回の例では、 **「familiar」の[f]の音が脱落しやすく、** 「fə」がごっそり抜け落ちたように聞こえ、 **「メリア」** と聞こえています。特に速い会話では、このような音の脱落（エリジオン）は頻繁に起こります。\n* 「familiar」の「fami」の部分が弱く発音され、「-liar」の[lɪər]に強勢が置かれることで、カタカナ表記では「メリア」のように聞こえ、強く発音される「-liar」の **-li** （【メ】）の部分に強勢がくる形になります。\n\n **【強弱をつけたカタカナ表記】** \n【ハウ】〈バウ〉ト 【ディース】【メ】リア 【フェイシズ}"
       },
       "section_3": {
         "heading": "なぜそう聞こえるの？",
@@ -226,7 +271,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/DjcZrtcBZi4/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/DjcZrtcBZi4/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/DjcZrtcBZi4/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/DjcZrtcBZi4/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/DjcZrtcBZi4/maxresdefault.jpg\"}",
     "theme": "How about",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 6,
@@ -274,7 +321,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/eoE-Um-r4kU/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/eoE-Um-r4kU/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/eoE-Um-r4kU/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/eoE-Um-r4kU/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/eoE-Um-r4kU/maxresdefault.jpg\"}",
     "theme": "I'm not sure if",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 7,
@@ -321,7 +370,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/DZNnKzVS1Yw/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/DZNnKzVS1Yw/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/DZNnKzVS1Yw/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/DZNnKzVS1Yw/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/DZNnKzVS1Yw/maxresdefault.jpg\"}",
     "theme": "I don't feel like -ing",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 8,
@@ -366,7 +417,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/kTSLpT__Wts/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/kTSLpT__Wts/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/kTSLpT__Wts/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/kTSLpT__Wts/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/kTSLpT__Wts/maxresdefault.jpg\"}",
     "theme": "to be honest",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 9,
@@ -411,7 +464,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/oKtALHe3Y9Q/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/oKtALHe3Y9Q/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/oKtALHe3Y9Q/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/oKtALHe3Y9Q/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/oKtALHe3Y9Q/maxresdefault.jpg\"}",
     "theme": "Do you want me to...?",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 10,
@@ -456,7 +511,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/OsIzZHEoqvA/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/OsIzZHEoqvA/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/OsIzZHEoqvA/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/OsIzZHEoqvA/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/OsIzZHEoqvA/maxresdefault.jpg\"}",
     "theme": "I'm excited about...",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 11,
@@ -501,7 +558,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/_8xhdL8BPvU/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/_8xhdL8BPvU/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/_8xhdL8BPvU/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/_8xhdL8BPvU/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/_8xhdL8BPvU/maxresdefault.jpg\"}",
     "theme": "Let me see...",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 12,
@@ -546,7 +605,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/TdcAUQdgdPo/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/TdcAUQdgdPo/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/TdcAUQdgdPo/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/TdcAUQdgdPo/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/TdcAUQdgdPo/maxresdefault.jpg\"}",
     "theme": "I'm getting used to ...",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 13,
@@ -591,7 +652,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/mAnFBEokfrw/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/mAnFBEokfrw/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/mAnFBEokfrw/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/mAnFBEokfrw/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/mAnFBEokfrw/maxresdefault.jpg\"}",
     "theme": "I'm good at...",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 14,
@@ -636,14 +699,16 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/_waBFUg_oT8/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/_waBFUg_oT8/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/_waBFUg_oT8/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/_waBFUg_oT8/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/_waBFUg_oT8/maxresdefault.jpg\"}",
     "theme": "I used to...",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 15,
     "url": "https://www.youtube.com/watch?v=Yzoj18RNxlQ&t=45s",
     "start_time": "42",
     "end_time": "45.6",
-    "updated_at": "2025-11-24T14:24:24.130Z",
+    "updated_at": "2025-11-25T09:08:36.428Z",
     "question": "for some reason, women really had a hard time cracking mainstream",
     "question_katakana": "〈サム〉 【リーズン】、 【ウィメン】 【リアリィ】 【ハダ】 【ハード】 【タイム】 【クラッキング】 【メインストリーム】",
     "article_text": {
@@ -681,14 +746,16 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/Yzoj18RNxlQ/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/Yzoj18RNxlQ/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/Yzoj18RNxlQ/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/Yzoj18RNxlQ/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/Yzoj18RNxlQ/maxresdefault.jpg\"}",
     "theme": "For some reason,...",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 16,
     "url": "https://www.youtube.com/watch?v=87AEeLpodnE",
     "start_time": "423.5",
     "end_time": "427",
-    "updated_at": "2025-11-24T14:29:21.216Z",
+    "updated_at": "2025-11-25T09:09:51.229Z",
     "question": "It sounds like Milton Friedman or Ronald Regan.",
     "question_katakana": "【サウンズ】 【ライク】 【ノン】 【フリーグメン】 〈ォ〉 【ロアゥロ】 【ライゲン】",
     "article_text": {
@@ -726,7 +793,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/87AEeLpodnE/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/87AEeLpodnE/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/87AEeLpodnE/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/87AEeLpodnE/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/87AEeLpodnE/maxresdefault.jpg\"}",
     "theme": "It sounds like...",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 17,
@@ -771,7 +840,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/xrmOtfZllrU/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/xrmOtfZllrU/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/xrmOtfZllrU/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/xrmOtfZllrU/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/xrmOtfZllrU/maxresdefault.jpg\"}",
     "theme": "It takes  (時間) to...",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 18,
@@ -818,7 +889,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/PROwoXrumn4/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/PROwoXrumn4/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/PROwoXrumn4/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/PROwoXrumn4/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/PROwoXrumn4/maxresdefault.jpg\"}",
     "theme": "It seems to me that...",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 19,
@@ -864,7 +937,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/sQ0zS0NPBIo/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/sQ0zS0NPBIo/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/sQ0zS0NPBIo/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/sQ0zS0NPBIo/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/sQ0zS0NPBIo/maxresdefault.jpg\"}",
     "theme": "It seems to me that...",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 20,
@@ -911,7 +986,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/JFwfiRI6eys/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/JFwfiRI6eys/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/JFwfiRI6eys/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/JFwfiRI6eys/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/JFwfiRI6eys/maxresdefault.jpg\"}",
     "theme": "I'm on my way to...",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 21,
@@ -958,7 +1035,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/L4IbF0wNPKc/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/L4IbF0wNPKc/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/L4IbF0wNPKc/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/L4IbF0wNPKc/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/L4IbF0wNPKc/maxresdefault.jpg\"}",
     "theme": "Let me know if...",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 22,
@@ -979,11 +1058,11 @@
       },
       "section_2": {
         "heading": "発音のポイント：音が劇的に変わる箇所",
-        "content": "この例文には、特に音が変化する重要なポイントがいくつも含まれています。それぞれを詳しく見ていきましょう。\n\n* **just in $\\\\rightarrow$ 【ジャスティン】** \n    「just」の末尾の /t/ と「in」の母音がつながり、「ジャスティン」のように聞こえます。これは **リエゾン** の一種です。また、「in」は機能語（文法的な役割を持つ単語）なので、通常は弱く発音されますが、ここでは前の「just」とくっついて一つのまとまりとして発音され、全体として強めに（【ジャスティン】）聞こえます。\n\n* **end up $\\\\rightarrow$ 【エンダッ】** \n    「end」の末尾の /d/ と「up」の母音が結合し、/d/ の音が次の母音に移って「エンダッ」のように聞こえます。これも **リエゾン** です。動詞の「end」が内容語（意味を伝える単語）であるため、強く発音される傾向にあります。\n\n* **needing to $\\\\rightarrow$ 【ニード】〈トゥ〉** \n    「needing」は「ニード」のように聞こえます。文中のカタカナ表記「ニード」は、 **「needing」の語尾の -ing の発音が省略・弱化** され、 **/d/ の音が強調** された状態を示しています。「to」は機能語で、 **弱形** の〈トゥ〉（シュワ音がかった音 /tə/）として弱く発音されます。\n\n* **recut $\\\\rightarrow$ 【リィカッ】** \n    「recut」は動詞で、再編集するという重要な意味を持つため、強く（【リィカッ】）発音されます。\n\n* **later on $\\\\rightarrow$ 【レドロン】** \n    「later」の /t/ 音が母音に挟まれて **フラップT** （日本語の「ラ行」に近い音）になり、「on」とつながって「レドロン」のように聞こえます。フラップTは北米英語の重要な特徴です。「on」も機能語ですが、直前の音とつながってリズムを保ちます。"
+        "content": "この例文には、特に音が変化する重要なポイントがいくつも含まれています。それぞれを詳しく見ていきましょう。\n\n* **just in $\rightarrow$ 【ジャスティン】** \n    「just」の末尾の /t/ と「in」の母音がつながり、「ジャスティン」のように聞こえます。これは **リエゾン** の一種です。また、「in」は機能語（文法的な役割を持つ単語）なので、通常は弱く発音されますが、ここでは前の「just」とくっついて一つのまとまりとして発音され、全体として強めに（【ジャスティン】）聞こえます。\n\n* **end up $\rightarrow$ 【エンダッ】** \n    「end」の末尾の /d/ と「up」の母音が結合し、/d/ の音が次の母音に移って「エンダッ」のように聞こえます。これも **リエゾン** です。動詞の「end」が内容語（意味を伝える単語）であるため、強く発音される傾向にあります。\n\n* **needing to $\rightarrow$ 【ニード】〈トゥ〉** \n    「needing」は「ニード」のように聞こえます。文中のカタカナ表記「ニード」は、 **「needing」の語尾の -ing の発音が省略・弱化** され、 **/d/ の音が強調** された状態を示しています。「to」は機能語で、 **弱形** の〈トゥ〉（シュワ音がかった音 /tə/）として弱く発音されます。\n\n* **recut $\rightarrow$ 【リィカッ】** \n    「recut」は動詞で、再編集するという重要な意味を持つため、強く（【リィカッ】）発音されます。\n\n* **later on $\rightarrow$ 【レドロン】** \n    「later」の /t/ 音が母音に挟まれて **フラップT** （日本語の「ラ行」に近い音）になり、「on」とつながって「レドロン」のように聞こえます。フラップTは北米英語の重要な特徴です。「on」も機能語ですが、直前の音とつながってリズムを保ちます。"
       },
       "section_3": {
         "heading": "なぜそう聞こえるの？：英語のリズムと音響の理由",
-        "content": "これらの音の変化は、ネイティブが楽に、そして流れるように話すための **「省エネ」テクニック** のようなものです。\n\n1.  **コンテンツワード（内容語）とファンクションワード（機能語）の強弱:** \n    英語は **強弱アクセント** を持つ言語です。単語の中でも特に **意味を伝える「内容語」** （【just】、【end】、【recut】、【piece】など）は強く、 **文法的な役割を担う「機能語」** （in、I、to、this、onなど）は **弱く** 発音されます。弱く発音される機能語は、〈トゥ〉のように母音が **シュワ音（/ə/）** に変化したり、子音の音が省略されたり（例: needing $\\\\rightarrow$ ニード）します。\n\n2.  **音の連結（リエゾン）とリズムの統一:** \n    英語は、単語の切れ目を意識せず、一定のリズム（強勢のある音節から次の強勢のある音節までの間隔）で話そうとします。このリズムを保つために、子音で終わる単語の直後に母音で始まる単語が来ると、その子音が次の単語の頭にくっついて発音されます。これが「just in $\\\\rightarrow$ ジャスティン」や「end up $\\\\rightarrow$ エンダッ」が起こる理由です。これにより、言葉が途切れず、スムーズな「音の波」となって聞こえるのです。 "
+        "content": "これらの音の変化は、ネイティブが楽に、そして流れるように話すための **「省エネ」テクニック** のようなものです。\n\n1.  **コンテンツワード（内容語）とファンクションワード（機能語）の強弱:** \n    英語は **強弱アクセント** を持つ言語です。単語の中でも特に **意味を伝える「内容語」** （【just】、【end】、【recut】、【piece】など）は強く、 **文法的な役割を担う「機能語」** （in、I、to、this、onなど）は **弱く** 発音されます。弱く発音される機能語は、〈トゥ〉のように母音が **シュワ音（/ə/）** に変化したり、子音の音が省略されたり（例: needing $\rightarrow$ ニード）します。\n\n2.  **音の連結（リエゾン）とリズムの統一:** \n    英語は、単語の切れ目を意識せず、一定のリズム（強勢のある音節から次の強勢のある音節までの間隔）で話そうとします。このリズムを保つために、子音で終わる単語の直後に母音で始まる単語が来ると、その子音が次の単語の頭にくっついて発音されます。これが「just in $\rightarrow$ ジャスティン」や「end up $\rightarrow$ エンダッ」が起こる理由です。これにより、言葉が途切れず、スムーズな「音の波」となって聞こえるのです。 "
       },
       "section_4": {
         "heading": "学習のコツ：変化した音に慣れる練習法",
@@ -1004,7 +1083,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/NWL5QN4TfY0/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/NWL5QN4TfY0/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/NWL5QN4TfY0/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/NWL5QN4TfY0/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/NWL5QN4TfY0/maxresdefault.jpg\"}",
     "theme": "Just in case.",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 23,
@@ -1050,7 +1131,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/HAnw168huqA/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/HAnw168huqA/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/HAnw168huqA/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/HAnw168huqA/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/HAnw168huqA/maxresdefault.jpg\"}",
     "theme": "I'd love to...",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 24,
@@ -1071,7 +1154,7 @@
       },
       "section_2": {
         "heading": "発音のポイント",
-        "content": "このフレーズが「【ブレクシット】 〈ウッ〉 〈ビ〉 【ミニモ】 〈ア〉 〈ウィ〉 〈ウ〉 【ジャスト】 【ゴ】 〈アヘ〉」と聞こえるのは、いくつかの重要な発音ルールが関わっているからです。\n\n* **弱形 (Weak Forms)：** \n    * **would** と **be** は、文の中で「ウッ ビ」のように **弱く** 発音されます。特に助動詞の *would* は、多くの場合、短縮形 *'d* や **弱形** $\\\\rightarrow$ 〈ウッ〉 の音になります。\n    * **we** や 2つ目の **would** も同様に、〈ウィ〉〈ウ〉と弱く発音され、文のリズムを支えます。\n\n* **子音の脱落と母音の弱化：** \n    * **minimal** は、本来「ミニマル」に近い発音ですが、文の流れの中では早く、弱く発音されることが多く、最後の **[l]** の前の母音が曖昧になり、 **「ミニモ」** のように聞こえることがあります。この音の変化は、英語の **「音節の脱落」** や **「母音の弱化」** の代表例です。\n    * **and** は最も弱形になりやすい単語の一つで、ここでは **「ア」** と **シュワ音** に近い極端な弱形になっています。\n    * **ahead** は、先頭の /a/ が弱化して **「アヘ」** のように聞こえることが多いです。\n\n **強く発音される単語（内容語）：** \n **Brexit** 、 **minimal** 、 **just** 、 **go** 、 **ahead** のように、文の **意味の核** となる単語は、 **【】** で囲まれたように **強く、はっきりと** 発音されます。この強弱のコントラストが、英語の自然なリズムを生み出しているのです。"
+        "content": "このフレーズが「【ブレクシット】 〈ウッ〉 〈ビ〉 【ミニモ】 〈ア〉 〈ウィ〉 〈ウ〉 【ジャスト】 【ゴ】 〈アヘ〉」と聞こえるのは、いくつかの重要な発音ルールが関わっているからです。\n\n* **弱形 (Weak Forms)：** \n    * **would** と **be** は、文の中で「ウッ ビ」のように **弱く** 発音されます。特に助動詞の *would* は、多くの場合、短縮形 *'d* や **弱形** $\rightarrow$ 〈ウッ〉 の音になります。\n    * **we** や 2つ目の **would** も同様に、〈ウィ〉〈ウ〉と弱く発音され、文のリズムを支えます。\n\n* **子音の脱落と母音の弱化：** \n    * **minimal** は、本来「ミニマル」に近い発音ですが、文の流れの中では早く、弱く発音されることが多く、最後の **[l]** の前の母音が曖昧になり、 **「ミニモ」** のように聞こえることがあります。この音の変化は、英語の **「音節の脱落」** や **「母音の弱化」** の代表例です。\n    * **and** は最も弱形になりやすい単語の一つで、ここでは **「ア」** と **シュワ音** に近い極端な弱形になっています。\n    * **ahead** は、先頭の /a/ が弱化して **「アヘ」** のように聞こえることが多いです。\n\n **強く発音される単語（内容語）：** \n **Brexit** 、 **minimal** 、 **just** 、 **go** 、 **ahead** のように、文の **意味の核** となる単語は、 **【】** で囲まれたように **強く、はっきりと** 発音されます。この強弱のコントラストが、英語の自然なリズムを生み出しているのです。"
       },
       "section_3": {
         "heading": "なぜそう聞こえるの？（英語のリズムと強弱）",
@@ -1097,7 +1180,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/F8Rwz3KWFHA/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/F8Rwz3KWFHA/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/F8Rwz3KWFHA/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/F8Rwz3KWFHA/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/F8Rwz3KWFHA/maxresdefault.jpg\"}",
     "theme": "Go ahead.",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 25,
@@ -1142,7 +1227,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/u_qZcT7v9_Q/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/u_qZcT7v9_Q/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/u_qZcT7v9_Q/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/u_qZcT7v9_Q/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/u_qZcT7v9_Q/maxresdefault.jpg\"}",
     "theme": "I appreciate...",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 26,
@@ -1188,7 +1275,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/fuU3zNe-71g/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/fuU3zNe-71g/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/fuU3zNe-71g/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/fuU3zNe-71g/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/fuU3zNe-71g/maxresdefault.jpg\"}",
     "theme": "It's my fault.",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 27,
@@ -1233,7 +1322,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/w4RLfVxTGH4/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/w4RLfVxTGH4/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/w4RLfVxTGH4/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/w4RLfVxTGH4/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/w4RLfVxTGH4/maxresdefault.jpg\"}",
     "theme": "Never mind.",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 28,
@@ -1278,7 +1369,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/qc6ctN5-xX0/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/qc6ctN5-xX0/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/qc6ctN5-xX0/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/qc6ctN5-xX0/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/qc6ctN5-xX0/maxresdefault.jpg\"}",
     "theme": "You know what?",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 29,
@@ -1299,11 +1392,11 @@
       },
       "section_2": {
         "heading": "発音のポイント",
-        "content": "この例文には、英語の自然な発音が詰まっています。\n\n* **It'll $\\\\rightarrow$ ソクド** : 「It will」の短縮形です。本来の[ɪtl]という発音から大きく変化し、 **「イ」の音がほとんど消え** 、[t]の音は **D音** に近い音（ **フラップT** と呼ばれる現象が起こることがある）、そして[l]が続いた結果、聞き手には「ソクド」のように聞こえることがあります。機能語は強く発音されません。\n* **being in $\\\\rightarrow$ ビーング** : 「in」の[n]が前の「being」の[ŋ]と音が繋がる **リエゾン** が起こり、「ビーイングィン」ではなく「ビーング」のように **鼻音(n/m/ŋ)が連続する音** として聞こえることがあります。この場合、聞こえる音は「ビーング」のように「in」の母音がほとんど聞こえない弱形になっています。\n* **the flow の the** : the のような **機能語** は弱く発音されるため、今回は「ザ」の音が **完全に脱落** して聞こえています。\n* **where you're not really $\\\\rightarrow$ ゥウェナ ウニュウ** : この部分に最大の秘密が隠されています。次章で詳しく解説します。"
+        "content": "この例文には、英語の自然な発音が詰まっています。\n\n* **It'll $\rightarrow$ ソクド** : 「It will」の短縮形です。本来の[ɪtl]という発音から大きく変化し、 **「イ」の音がほとんど消え** 、[t]の音は **D音** に近い音（ **フラップT** と呼ばれる現象が起こることがある）、そして[l]が続いた結果、聞き手には「ソクド」のように聞こえることがあります。機能語は強く発音されません。\n* **being in $\rightarrow$ ビーング** : 「in」の[n]が前の「being」の[ŋ]と音が繋がる **リエゾン** が起こり、「ビーイングィン」ではなく「ビーング」のように **鼻音(n/m/ŋ)が連続する音** として聞こえることがあります。この場合、聞こえる音は「ビーング」のように「in」の母音がほとんど聞こえない弱形になっています。\n* **the flow の the** : the のような **機能語** は弱く発音されるため、今回は「ザ」の音が **完全に脱落** して聞こえています。\n* **where you're not really $\rightarrow$ ゥウェナ ウニュウ** : この部分に最大の秘密が隠されています。次章で詳しく解説します。"
       },
       "section_3": {
         "heading": "なぜそう聞こえるの？（ゥウェナ ウニュウの謎）",
-        "content": "「where you're not really」が「 **ゥウェナ ウニュウ** 」のように聞こえるのは、複数の発音変化が組み合わさっているからです。\n\n1.  **where you're $\\\\rightarrow$ ゥウェナ** : \n    * 「where you're」の「you're」は **機能語** なので、弱形[jər]または[jə]となり、母音が弱まり **シュワ(schwa)音** に近くなります。\n    * 前の「where」の最後の **r** の音と「you're」の **y** の音がつながり、「 **ゥウェヤ** 」のような音になります。\n    * この変化した「you're」の弱形がさらに速く発音されると、まるで「 **ナ** 」のような短く弱い音に聞こえることがあります。\n2.  **not really $\\\\rightarrow$ ウニュウ** : \n    * 「not really」の「not」は通常強い語ですが、ここでは文脈や発話速度により弱まり、 **tの音が脱落** し、母音も弱まり「 **ヌ** 」のような **鼻音** に聞こえています。\n    * 「not」の **tの脱落** と「really」の **r** が相まって、非常に **鼻にかかった** 「 **ウニュウ** 」のような特殊な音に聞こえています。\n\n **英語は** 単語の強弱がハッキリした **強勢拍リズム** の言語です。内容語（名詞、動詞、形容詞、副詞など）は強く長く、機能語（冠詞、前置詞、代名詞など）は弱く短く発音されるため、 **機能語の母音が脱落** したり、 **音が融合** したりするのです。\n\n（英語の強勢拍リズムと日本語の音節拍リズムの違いの図）"
+        "content": "「where you're not really」が「 **ゥウェナ ウニュウ** 」のように聞こえるのは、複数の発音変化が組み合わさっているからです。\n\n1.  **where you're $\rightarrow$ ゥウェナ** : \n    * 「where you're」の「you're」は **機能語** なので、弱形[jər]または[jə]となり、母音が弱まり **シュワ(schwa)音** に近くなります。\n    * 前の「where」の最後の **r** の音と「you're」の **y** の音がつながり、「 **ゥウェヤ** 」のような音になります。\n    * この変化した「you're」の弱形がさらに速く発音されると、まるで「 **ナ** 」のような短く弱い音に聞こえることがあります。\n2.  **not really $\rightarrow$ ウニュウ** : \n    * 「not really」の「not」は通常強い語ですが、ここでは文脈や発話速度により弱まり、 **tの音が脱落** し、母音も弱まり「 **ヌ** 」のような **鼻音** に聞こえています。\n    * 「not」の **tの脱落** と「really」の **r** が相まって、非常に **鼻にかかった** 「 **ウニュウ** 」のような特殊な音に聞こえています。\n\n **英語は** 単語の強弱がハッキリした **強勢拍リズム** の言語です。内容語（名詞、動詞、形容詞、副詞など）は強く長く、機能語（冠詞、前置詞、代名詞など）は弱く短く発音されるため、 **機能語の母音が脱落** したり、 **音が融合** したりするのです。\n\n（英語の強勢拍リズムと日本語の音節拍リズムの違いの図）"
       },
       "section_4": {
         "heading": "学習のコツ：自然な発音をマスターするために",
@@ -1326,7 +1419,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/MbTVrki9lVM/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/MbTVrki9lVM/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/MbTVrki9lVM/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/MbTVrki9lVM/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/MbTVrki9lVM/maxresdefault.jpg\"}",
     "theme": "Not really.",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 30,
@@ -1371,7 +1466,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/1pkjwQA8KuY/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/1pkjwQA8KuY/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/1pkjwQA8KuY/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/1pkjwQA8KuY/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/1pkjwQA8KuY/maxresdefault.jpg\"}",
     "theme": "That make sense.",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 31,
@@ -1396,7 +1493,7 @@
       },
       "section_3": {
         "heading": "なぜそう聞こえるの？",
-        "content": "ネイティブがこのような発音をする主な理由は、英語の **リズム** と **効率性** にあります。英語は **ストレス・タイミング言語** （Stress-Timed Language）と呼ばれ、日本語のように一音一音を同じ長さで発音する **シラブル・タイミング言語** （Syllable-Timed Language）とは異なります。\n\n1.  **リズム：** 英語は、意味の重要な部分（内容語）が発音される間隔を一定に保とうとする傾向があります。このため、間に挟まれる重要度の低い機能語（to, are, theなど）は、 **速く、短く、弱く** 発音され、しばしば **シュワ音** （$ə$）などに変化します。これが弱形（〈〉で示した部分）の正体です。\n2.  **効率性：** 語尾の子音と次の語頭の母音が連結するリエゾン（It's $\\\\rightarrow$ up $\\\\rightarrow$ 「イッツァ ップ」）は、口の動きを最小限に抑え、スムーズに話すための自然な結果です。これにより、流暢で自然なスピーチが生まれます。 "
+        "content": "ネイティブがこのような発音をする主な理由は、英語の **リズム** と **効率性** にあります。英語は **ストレス・タイミング言語** （Stress-Timed Language）と呼ばれ、日本語のように一音一音を同じ長さで発音する **シラブル・タイミング言語** （Syllable-Timed Language）とは異なります。\n\n1.  **リズム：** 英語は、意味の重要な部分（内容語）が発音される間隔を一定に保とうとする傾向があります。このため、間に挟まれる重要度の低い機能語（to, are, theなど）は、 **速く、短く、弱く** 発音され、しばしば **シュワ音** （$ə$）などに変化します。これが弱形（〈〉で示した部分）の正体です。\n2.  **効率性：** 語尾の子音と次の語頭の母音が連結するリエゾン（It's $\rightarrow$ up $\rightarrow$ 「イッツァ ップ」）は、口の動きを最小限に抑え、スムーズに話すための自然な結果です。これにより、流暢で自然なスピーチが生まれます。 "
       },
       "section_4": {
         "heading": "学習のコツ",
@@ -1418,7 +1515,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/EVHwpXklScE/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/EVHwpXklScE/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/EVHwpXklScE/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/EVHwpXklScE/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/EVHwpXklScE/maxresdefault.jpg\"}",
     "theme": "It's up to you.",
     "noIndex": 0,
-    "is_similar": 0
+    "is_similar": 0,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 32,
@@ -1465,7 +1564,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/7n9IOH0NvyY/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/7n9IOH0NvyY/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/7n9IOH0NvyY/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/7n9IOH0NvyY/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/7n9IOH0NvyY/maxresdefault.jpg\"}",
     "theme": "want to",
     "noIndex": 0,
-    "is_similar": 1
+    "is_similar": 1,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 33,
@@ -1511,7 +1612,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/o1Z4F4e2Bw4/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/o1Z4F4e2Bw4/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/o1Z4F4e2Bw4/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/o1Z4F4e2Bw4/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/o1Z4F4e2Bw4/maxresdefault.jpg\"}",
     "theme": "want to",
     "noIndex": 0,
-    "is_similar": 1
+    "is_similar": 1,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 34,
@@ -1557,7 +1660,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/SEAIQ62rydI/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/SEAIQ62rydI/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/SEAIQ62rydI/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/SEAIQ62rydI/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/SEAIQ62rydI/maxresdefault.jpg\"}",
     "theme": "want to",
     "noIndex": 0,
-    "is_similar": 1
+    "is_similar": 1,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 36,
@@ -1582,7 +1687,7 @@
       },
       "section_3": {
         "heading": "なぜそう聞こえるの？：英語の「リズム」と「効率」",
-        "content": "これらの音の変化は、英語の根本的な **リズム** と **発音の効率** に基づいています。\n\n1.  **強勢のタイミング（Stress-Timed Rhythm）** ：英語は、文全体で **強く発音される単語** （内容語）の間隔をできるだけ均等に保とうとする特徴があります。これを「強勢拍子」と呼びます。このリズムを保つために、 **弱く発音される単語** （機能語：I, want to, by, aboutなど）は急いで発音され、結果として音が短縮されたり（弱形）、他の音とくっついたり（リエゾン）します。\n\n2.  **発音の経済性（Efficiency）** ：特に「want to $\\\\rightarrow$ wanna」の変化は、口の動きを最小限に抑えようとする結果です。舌や唇の動きを減らすことで、 **より速く、より楽に** 話すことができるようになります。これは、私たち日本人が「〜している」を「〜してる」と発音するのと同じ原理です。\n\nこれらの原則により、「I want to finish...」は、「〈I〉〈wanna〉【finish】...」というリズムになり、さらに密接に音がつながることで「〈モナ〉【フィニッシュ】...」という自然な流れになるのです。 "
+        "content": "これらの音の変化は、英語の根本的な **リズム** と **発音の効率** に基づいています。\n\n1.  **強勢のタイミング（Stress-Timed Rhythm）** ：英語は、文全体で **強く発音される単語** （内容語）の間隔をできるだけ均等に保とうとする特徴があります。これを「強勢拍子」と呼びます。このリズムを保つために、 **弱く発音される単語** （機能語：I, want to, by, aboutなど）は急いで発音され、結果として音が短縮されたり（弱形）、他の音とくっついたり（リエゾン）します。\n\n2.  **発音の経済性（Efficiency）** ：特に「want to $\rightarrow$ wanna」の変化は、口の動きを最小限に抑えようとする結果です。舌や唇の動きを減らすことで、 **より速く、より楽に** 話すことができるようになります。これは、私たち日本人が「〜している」を「〜してる」と発音するのと同じ原理です。\n\nこれらの原則により、「I want to finish...」は、「〈I〉〈wanna〉【finish】...」というリズムになり、さらに密接に音がつながることで「〈モナ〉【フィニッシュ】...」という自然な流れになるのです。 "
       },
       "section_4": {
         "heading": "📈 学習のコツ：リスニングと発音を同時に強化",
@@ -1604,7 +1709,9 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/RcGyVTAoXEU/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/RcGyVTAoXEU/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/RcGyVTAoXEU/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/RcGyVTAoXEU/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/RcGyVTAoXEU/maxresdefault.jpg\"}",
     "theme": "want to",
     "noIndex": 0,
-    "is_similar": 1
+    "is_similar": 1,
+    "pron_memo": null,
+    "tsukkomi": null
   },
   {
     "id": 37,
@@ -1625,11 +1732,11 @@
       },
       "section_2": {
         "heading": "発音のポイント：リエゾン（音のつながり）と弱形",
-        "content": "この短い一文には、英語の自然な発音のエッセンスが凝縮されています。特に目立つ音の変化を詳しく見ていきましょう。\n\n### 1. I listen to your $\\\\rightarrow$ 〈ア ディスポ アイラシ〉\n* **I $\\\\rightarrow$ 〈ア〉** ：文頭の「I」は通常強く発音されますが、ここでは後の動詞「listen」に続くため、やや弱く **〈ア〉** のような音になりがちです。\n* **listen to your $\\\\rightarrow$ 〈ディスポ アイラシ〉** ：「listen to」の「t」が脱落し、「listen」の語尾の「n」が母音のように聞こえる「i」に影響し、さらに「to」が極端な **弱形** の **〈ディスポ〉** に近い音（/tn̩/ と /ə/ が連続するような音）になります。さらに「your」も機能語として弱形となり、「listen to your」全体で **〈ディスポ アイラシ〉** という一連の音のように聞こえます。非常に早い発音では、個々の単語の境界線がほとんどなくなります。\n\n### 2. planet that I $\\\\rightarrow$ 【プラネタラ】\n* **that I $\\\\rightarrow$ $\\\\rightarrow$ 〈タラ〉** ：「that」の語尾の **/t/ 音** と、次の単語「I」の **/aɪ/ 音** が繋がります。さらにアメリカ英語では、/t/ や /d/ が母音に挟まれると **フラッピング（Flapping）** と呼ばれる現象を起こし、日本語のラ行に近い音（ **/ɾ/ - tap sound** ）に変化します。この結果、「that I」は **〈タラ〉** のような音になり、前の「planet」と繋がって【プラネタラ】のように聞こえるのです。\n\n### 3. want to $\\\\rightarrow$ 【ウォナ】\n* **want to $\\\\rightarrow$ 【ウォナ】** ：「want to」は非常に一般的な **非公式な短縮形** で、「wanna」と綴られることもあります。特に日常会話や歌では「t」が脱落し、「ウォン」に「ア」の音が繋がり、 **【ウォナ】** と発音されます。これは「going to $\\\\rightarrow$ gonna」や「got to $\\\\rightarrow$ gotta」と同じメカニズムです。"
+        "content": "この短い一文には、英語の自然な発音のエッセンスが凝縮されています。特に目立つ音の変化を詳しく見ていきましょう。\n\n### 1. I listen to your $\rightarrow$ 〈ア ディスポ アイラシ〉\n* **I $\rightarrow$ 〈ア〉** ：文頭の「I」は通常強く発音されますが、ここでは後の動詞「listen」に続くため、やや弱く **〈ア〉** のような音になりがちです。\n* **listen to your $\rightarrow$ 〈ディスポ アイラシ〉** ：「listen to」の「t」が脱落し、「listen」の語尾の「n」が母音のように聞こえる「i」に影響し、さらに「to」が極端な **弱形** の **〈ディスポ〉** に近い音（/tn̩/ と /ə/ が連続するような音）になります。さらに「your」も機能語として弱形となり、「listen to your」全体で **〈ディスポ アイラシ〉** という一連の音のように聞こえます。非常に早い発音では、個々の単語の境界線がほとんどなくなります。\n\n### 2. planet that I $\rightarrow$ 【プラネタラ】\n* **that I $\rightarrow$ $\rightarrow$ 〈タラ〉** ：「that」の語尾の **/t/ 音** と、次の単語「I」の **/aɪ/ 音** が繋がります。さらにアメリカ英語では、/t/ や /d/ が母音に挟まれると **フラッピング（Flapping）** と呼ばれる現象を起こし、日本語のラ行に近い音（ **/ɾ/ - tap sound** ）に変化します。この結果、「that I」は **〈タラ〉** のような音になり、前の「planet」と繋がって【プラネタラ】のように聞こえるのです。\n\n### 3. want to $\rightarrow$ 【ウォナ】\n* **want to $\rightarrow$ 【ウォナ】** ：「want to」は非常に一般的な **非公式な短縮形** で、「wanna」と綴られることもあります。特に日常会話や歌では「t」が脱落し、「ウォン」に「ア」の音が繋がり、 **【ウォナ】** と発音されます。これは「going to $\rightarrow$ gonna」や「got to $\rightarrow$ gotta」と同じメカニズムです。"
       },
       "section_3": {
         "heading": "なぜそう聞こえるの？音声学的・リズム的な理由",
-        "content": "ネイティブが上記のように発音するのは、単なる「なまり」や「手抜き」ではなく、 **「効率性」と「リズム」** に基づいた音声学的な現象です。\n\n* **英語のストレス・タイミング言語としての特性** ：日本語が音節ごとに時間を取る「音節拍」言語であるのに対し、英語は **強勢（ストレス）** のある音節間で時間を取る「強勢拍」言語です。つまり、 **内容語（名詞、動詞、形容詞、副詞など）** は強く長く発音し、 **機能語（前置詞、冠詞、助動詞など）** は極端に弱く短く発音して、リズムを取ろうとします。\n\n* **弱形とシュワ（Schwa /ə/）** ：「to」「of」「a」「the」といった機能語は、弱く発音されるとき、母音が **シュワ（/ə/）** という曖昧な音に変化したり、子音だけになってしまったりします。今回の例文では、〈ディスポ アイラシ〉の部分で顕著にこの弱形化が起こっています。\n\n* **同化（Assimilation）と脱落（Deletion）** ：単語の境界で発音をスムーズにするため、「t」の音が脱落したり（listen to $\\\\rightarrow$ listen to）、次の音に影響を与えて変化したり（that I $\\\\rightarrow$ tha **t** I $\\\\rightarrow$ tha **r** I）するのです。これにより、発音の負荷が軽減されます。"
+        "content": "ネイティブが上記のように発音するのは、単なる「なまり」や「手抜き」ではなく、 **「効率性」と「リズム」** に基づいた音声学的な現象です。\n\n* **英語のストレス・タイミング言語としての特性** ：日本語が音節ごとに時間を取る「音節拍」言語であるのに対し、英語は **強勢（ストレス）** のある音節間で時間を取る「強勢拍」言語です。つまり、 **内容語（名詞、動詞、形容詞、副詞など）** は強く長く発音し、 **機能語（前置詞、冠詞、助動詞など）** は極端に弱く短く発音して、リズムを取ろうとします。\n\n* **弱形とシュワ（Schwa /ə/）** ：「to」「of」「a」「the」といった機能語は、弱く発音されるとき、母音が **シュワ（/ə/）** という曖昧な音に変化したり、子音だけになってしまったりします。今回の例文では、〈ディスポ アイラシ〉の部分で顕著にこの弱形化が起こっています。\n\n* **同化（Assimilation）と脱落（Deletion）** ：単語の境界で発音をスムーズにするため、「t」の音が脱落したり（listen to $\rightarrow$ listen to）、次の音に影響を与えて変化したり（that I $\rightarrow$ tha **t** I $\rightarrow$ tha **r** I）するのです。これにより、発音の負荷が軽減されます。"
       },
       "section_4": {
         "heading": "効果的な学習のコツ：シャドーイングと聞き取り強化",
@@ -1651,6 +1758,8 @@
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/qc6ctN5-xX0/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/qc6ctN5-xX0/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/qc6ctN5-xX0/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/qc6ctN5-xX0/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/qc6ctN5-xX0/maxresdefault.jpg\"}",
     "theme": "want to",
     "noIndex": 0,
-    "is_similar": 1
+    "is_similar": 1,
+    "pron_memo": null,
+    "tsukkomi": null
   }
 ]

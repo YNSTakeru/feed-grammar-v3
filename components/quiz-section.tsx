@@ -30,28 +30,28 @@ export function QuizSection({
   return (
     <div className="space-y-6">
       {/* YouTube Player */}
-      <Card>
-        <CardContent className="p-6">
-          <div className="space-y-4">
+      <div>
+        <Card>
+          <CardContent className="p-6 pb-0">
             <YouTubePlayer
               videoId={videoId}
               startTime={startTime}
               endTime={endTime}
             />
-            <div className="flex justify-between items-center">
-              <p className="text-sm text-muted-foreground">
-                動画を見て、フレーズを聞き取ってください
-              </p>
-              <a href={youtubeUrl} target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="sm">
-                  <ExternalLink className="h-4 w-4 mr-2" />
-                  YouTubeで見る
-                </Button>
-              </a>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+          </CardContent>
+        </Card>
+        <div className="mt-4 flex justify-between items-center px-2">
+          <p className="text-sm text-muted-foreground">
+            動画を見て、フレーズを聞き取ってください
+          </p>
+          <a href={youtubeUrl} target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" size="sm">
+              <ExternalLink className="h-4 w-4 mr-2" />
+              YouTubeで見る
+            </Button>
+          </a>
+        </div>
+      </div>
 
       {/* Listening Quiz */}
       {!hideQuiz && (

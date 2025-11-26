@@ -1,6 +1,12 @@
 export interface ArticleData {
   title: string;
   meta_description: string;
+  translated?: string;
+  tsukkomi?: Array<{
+    question: string;
+    answer: string;
+  }> | null;
+  remember?: string;
   introduction: string;
   section_1: {
     heading: string;
@@ -43,4 +49,6 @@ export interface FeedItem {
   thumbnail: string;
   theme: string;
   noIndex: number;
+  kugiri_eng: string;
+  kugiri_jp: string;
 }
