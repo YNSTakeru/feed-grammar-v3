@@ -5,10 +5,10 @@ import { QuizSection } from "@/components/quiz-section";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArticleData } from "@/types";
-import { ArrowLeft, ArrowRight, Volume2, Headphones } from "lucide-react";
+import { ArrowLeft, ArrowRight, Headphones, Volume2 } from "lucide-react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 interface ArticleContentProps {
   videoId: string;
@@ -224,9 +224,13 @@ export function ArticleContent({
                     setShowQuiz(true);
                     // Smooth scroll to quiz section
                     setTimeout(() => {
-                      const quizSection = document.getElementById("quiz-section");
+                      const quizSection =
+                        document.getElementById("quiz-section");
                       if (quizSection) {
-                        quizSection.scrollIntoView({ behavior: "smooth", block: "start" });
+                        quizSection.scrollIntoView({
+                          behavior: "smooth",
+                          block: "start",
+                        });
                       }
                     }, 100);
                   }}

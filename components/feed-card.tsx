@@ -30,15 +30,17 @@ export function FeedCard({ item }: FeedCardProps) {
   return (
     <Card className="hover:shadow-lg transition-shadow h-full">
       <CardHeader className="p-4">
-        <div className="relative w-full aspect-video mb-3 rounded-md overflow-hidden bg-muted">
-          <Image
-            src={thumbnail.medium}
-            alt={item.question}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
+        <Link href={`/article/${item.id}?mode=article`} className="block">
+          <div className="relative w-full aspect-video mb-3 rounded-md overflow-hidden bg-muted cursor-pointer hover:opacity-90 transition-opacity">
+            <Image
+              src={thumbnail.medium}
+              alt={item.question}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          </div>
+        </Link>
         <div className="flex flex-wrap gap-2 mb-2">
           <Badge variant="secondary" className="text-xs">
             {item.category}
