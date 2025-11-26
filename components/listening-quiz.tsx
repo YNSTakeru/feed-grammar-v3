@@ -6,6 +6,7 @@ import {
   CheckCircle2,
   Eye,
   EyeOff,
+  Flag,
   RotateCcw,
   Volume2,
   XCircle,
@@ -288,8 +289,10 @@ export function ListeningQuiz({
                   setIsCorrect(false);
                   onComplete?.(false);
                 }}
-                variant="secondary"
+                variant="destructive"
+                className="bg-orange-500 hover:bg-orange-600 dark:bg-orange-600 dark:hover:bg-orange-700 font-bold shadow-lg"
               >
+                <Flag className="h-4 w-4 mr-2" />
                 ギブアップ
               </Button>
               <Button onClick={handleReset} variant="outline">
