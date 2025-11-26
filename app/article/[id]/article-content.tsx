@@ -5,9 +5,10 @@ import { QuizSection } from "@/components/quiz-section";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArticleData } from "@/types";
-import { ArrowLeft, ArrowRight, Volume2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, Volume2, Headphones } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { useState, useEffect } from "react";
 
 interface ArticleContentProps {
   videoId: string;
@@ -36,8 +37,19 @@ export function ArticleContent({
   prevId,
   nextId,
 }: ArticleContentProps) {
+  const searchParams = useSearchParams();
   const [showArticle, setShowArticle] = useState(false);
   const [showQuiz, setShowQuiz] = useState(false);
+
+  // クライアントサイドでURLパラメータを読み取り、初期状態を設定
+  useEffect(() => {
+    const mode = searchParams.get("mode");
+    if (mode === "article") {
+      setShowArticle(true);
+    } else if (mode === "quiz") {
+      setShowQuiz(true);
+    }
+  }, [searchParams]);
 
   return (
     <div className="mb-8">
@@ -201,6 +213,29 @@ export function ArticleContent({
               <h2 className="text-2xl font-bold mb-4">まとめ</h2>
               <MarkdownContent content={article.conclusion} />
             </section>
+
+            {/* Quiz CTA Button - shown when article is accessed directly */}
+            {searchParams.get("mode") === "article" && (
+              <div className="mt-8 mb-8 flex justify-center">
+                <Button
+                  size="lg"
+                  className="gap-2 text-lg px-8 py-6"
+                  onClick={() => {
+                    setShowQuiz(true);
+                    // Smooth scroll to quiz section
+                    setTimeout(() => {
+                      const quizSection = document.getElementById("quiz-section");
+                      if (quizSection) {
+                        quizSection.scrollIntoView({ behavior: "smooth", block: "start" });
+                      }
+                    }, 100);
+                  }}
+                >
+                  <Headphones className="h-5 w-5" />
+                  リスニングに挑戦
+                </Button>
+              </div>
+            )}
           </div>
 
           {article.keywords && article.keywords.length > 0 && (
