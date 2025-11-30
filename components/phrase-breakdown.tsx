@@ -67,25 +67,38 @@ export function PhraseBreakdown({ kugiriEng, kugiriJp }: PhraseBreakdownProps) {
           const eng = engParts[index] || "";
           const jp = jpParts[index] || "";
 
-          // <> で囲まれた消えた音を抽出し、位置も判定
-          const silentMatch = eng.match(
-            /^(＜.+?＞|<.+?>)|(.+?)(＜.+?＞|<.+?>)$/
-          );
+          // 途中に消えた音がある場合を検出 (例: have ＜to＞ do)
+          const middleMatch = eng.match(/(.+?)\s*(＜.+?＞|<.+?>)\s*(.+)/);
           let silentSound = null;
-          let silentPosition: "before" | "after" = "after";
+          let silentPosition: "before" | "after" | "middle" = "after";
           let mainEng = eng;
+          let beforeText = "";
+          let afterText = "";
 
-          if (silentMatch) {
-            if (silentMatch[1]) {
-              // 先頭に消えた音がある
-              silentSound = silentMatch[1].replace(/[＜＞<>]/g, "");
-              silentPosition = "before";
-              mainEng = eng.replace(/^(＜.+?＞|<.+?>)/, "").trim();
-            } else if (silentMatch[3]) {
-              // 末尾に消えた音がある
-              silentSound = silentMatch[3].replace(/[＜＞<>]/g, "");
-              silentPosition = "after";
-              mainEng = silentMatch[2].trim();
+          if (middleMatch) {
+            // 途中に消えた音がある
+            silentSound = middleMatch[2].replace(/[＜＞<>]/g, "");
+            silentPosition = "middle";
+            beforeText = middleMatch[1].trim();
+            afterText = middleMatch[3].trim();
+            mainEng = `${beforeText} ${afterText}`;
+          } else {
+            // 前後の消えた音を検出
+            const silentMatch = eng.match(
+              /^(＜.+?＞|<.+?>)|(.+?)(＜.+?＞|<.+?>)$/
+            );
+            if (silentMatch) {
+              if (silentMatch[1]) {
+                // 先頭に消えた音がある
+                silentSound = silentMatch[1].replace(/[＜＞<>]/g, "");
+                silentPosition = "before";
+                mainEng = eng.replace(/^(＜.+?＞|<.+?>)/, "").trim();
+              } else if (silentMatch[3]) {
+                // 末尾に消えた音がある
+                silentSound = silentMatch[3].replace(/[＜＞<>]/g, "");
+                silentPosition = "after";
+                mainEng = silentMatch[2].trim();
+              }
             }
           }
 
@@ -114,9 +127,24 @@ export function PhraseBreakdown({ kugiriEng, kugiriJp }: PhraseBreakdownProps) {
                 <div className="text-gray-400 dark:text-gray-600 text-xs mb-1">
                   /
                 </div>
-                <div className="text-base font-semibold text-gray-800 dark:text-gray-200 text-center">
-                  {mainEng}
-                </div>
+                {silentPosition === "middle" ? (
+                  <div className="text-base font-semibold text-gray-800 dark:text-gray-200 text-center flex items-center gap-1">
+                    <span>{beforeText}</span>
+                    <span className="relative inline-flex flex-col items-center mx-1">
+                      <span className="text-[8px] text-orange-600 dark:text-orange-400 font-bold bg-orange-100 dark:bg-orange-900/30 px-1.5 py-0.5 rounded-full border border-orange-300 dark:border-orange-700 whitespace-nowrap">
+                        {silentSound}
+                      </span>
+                      <span className="text-[7px] text-orange-600 dark:text-orange-400 absolute -bottom-3 whitespace-nowrap">
+                        消音
+                      </span>
+                    </span>
+                    <span>{afterText}</span>
+                  </div>
+                ) : (
+                  <div className="text-base font-semibold text-gray-800 dark:text-gray-200 text-center">
+                    {mainEng}
+                  </div>
+                )}
               </div>
 
               {/* 後ろに消えた音 */}
