@@ -67,18 +67,45 @@ export function PhraseBreakdown({ kugiriEng, kugiriJp }: PhraseBreakdownProps) {
           const eng = engParts[index] || "";
           const jp = jpParts[index] || "";
 
-          // <> で囲まれた消えた音を抽出
-          const silentMatch = eng.match(/＜(.+?)＞|<(.+?)>/);
-          const silentSound = silentMatch
-            ? silentMatch[1] || silentMatch[2]
-            : null;
-          // 消えた音を除いた部分
-          const mainEng = silentSound
-            ? eng.replace(/＜.+?＞|<.+?>/, "").trim()
-            : eng;
+          // <> で囲まれた消えた音を抽出し、位置も判定
+          const silentMatch = eng.match(
+            /^(＜.+?＞|<.+?>)|(.+?)(＜.+?＞|<.+?>)$/
+          );
+          let silentSound = null;
+          let silentPosition: "before" | "after" = "after";
+          let mainEng = eng;
+
+          if (silentMatch) {
+            if (silentMatch[1]) {
+              // 先頭に消えた音がある
+              silentSound = silentMatch[1].replace(/[＜＞<>]/g, "");
+              silentPosition = "before";
+              mainEng = eng.replace(/^(＜.+?＞|<.+?>)/, "").trim();
+            } else if (silentMatch[3]) {
+              // 末尾に消えた音がある
+              silentSound = silentMatch[3].replace(/[＜＞<>]/g, "");
+              silentPosition = "after";
+              mainEng = silentMatch[2].trim();
+            }
+          }
 
           return (
-            <div key={index} className="flex flex-col items-center gap-2">
+            <div key={index} className="flex flex-col items-center gap-1">
+              {/* 前に消えた音 */}
+              {silentSound && silentPosition === "before" && (
+                <div className="flex flex-col items-center">
+                  <div className="text-[10px] text-orange-600 dark:text-orange-400 font-bold bg-orange-100 dark:bg-orange-900/30 px-2 py-0.5 rounded-full border border-orange-300 dark:border-orange-700">
+                    {silentSound}
+                  </div>
+                  <div className="text-[9px] text-orange-600 dark:text-orange-400 font-medium whitespace-nowrap">
+                    の音は消えている
+                  </div>
+                  <div className="text-orange-500 dark:text-orange-400 text-xs">
+                    ↓
+                  </div>
+                </div>
+              )}
+
               {/* メインのカード部分 */}
               <div className="flex flex-col items-center bg-white dark:bg-gray-800 rounded-md px-4 py-3 shadow-sm border border-blue-100 dark:border-blue-900 min-w-[80px] hover:shadow-md transition-shadow">
                 <div className="text-sm font-medium text-blue-600 dark:text-blue-400 mb-1 text-center">
@@ -92,10 +119,18 @@ export function PhraseBreakdown({ kugiriEng, kugiriJp }: PhraseBreakdownProps) {
                 </div>
               </div>
 
-              {/* 消えた音（カードの外に表示） */}
-              {silentSound && (
-                <div className="text-xs text-gray-500 dark:text-gray-400 italic bg-gray-100 dark:bg-gray-800/50 px-2 py-1 rounded border border-dashed border-gray-300 dark:border-gray-600">
-                  消えた音: {silentSound}
+              {/* 後ろに消えた音 */}
+              {silentSound && silentPosition === "after" && (
+                <div className="flex flex-col items-center">
+                  <div className="text-orange-500 dark:text-orange-400 text-xs">
+                    ↓
+                  </div>
+                  <div className="text-[9px] text-orange-600 dark:text-orange-400 font-medium whitespace-nowrap">
+                    の音は消えている
+                  </div>
+                  <div className="text-[10px] text-orange-600 dark:text-orange-400 font-bold bg-orange-100 dark:bg-orange-900/30 px-2 py-0.5 rounded-full border border-orange-300 dark:border-orange-700">
+                    {silentSound}
+                  </div>
                 </div>
               )}
             </div>
