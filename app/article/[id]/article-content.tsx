@@ -1,5 +1,6 @@
 "use client";
 
+import { FloatingNavigation } from "@/components/floating-navigation";
 import { MarkdownContent } from "@/components/markdown-content";
 import { PhraseBreakdown } from "@/components/phrase-breakdown";
 import { QuizSection } from "@/components/quiz-section";
@@ -9,7 +10,7 @@ import { ArticleData } from "@/types";
 import { ArrowLeft, ArrowRight, Headphones, Volume2 } from "lucide-react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface ArticleContentProps {
   videoId: string;
@@ -46,6 +47,7 @@ export function ArticleContent({
   const searchParams = useSearchParams();
   const [showArticle, setShowArticle] = useState(false);
   const [showQuiz, setShowQuiz] = useState(false);
+  const videoContainerRef = useRef<HTMLDivElement>(null);
 
   // クライアントサイドでURLパラメータを読み取り、初期状態を設定
   useEffect(() => {
@@ -111,20 +113,36 @@ export function ArticleContent({
 
       {/* Quiz Section with YouTube Player */}
       {showQuiz && (
-        <QuizSection
-          videoId={videoId}
-          startTime={startTime}
-          endTime={endTime}
-          question={question}
-          questionKatakana={questionKatakana}
-          youtubeUrl={youtubeUrl}
-          onAnswered={() => setShowArticle(true)}
-        />
+        <>
+          <div ref={videoContainerRef}>
+            <QuizSection
+              videoId={videoId}
+              startTime={startTime}
+              endTime={endTime}
+              question={question}
+              questionKatakana={questionKatakana}
+              youtubeUrl={youtubeUrl}
+              onAnswered={() => setShowArticle(true)}
+            />
+          </div>
+          <FloatingNavigation
+            prevId={prevId}
+            nextId={nextId}
+            mode="quiz"
+            videoElementRef={videoContainerRef}
+          />
+        </>
       )}
 
       {/* Article Content */}
       {showArticle && showQuiz && (
         <>
+          <FloatingNavigation
+            prevId={prevId}
+            nextId={nextId}
+            mode="article"
+            videoElementRef={videoContainerRef}
+          />
           <h1 className="text-4xl font-bold mb-4 mt-8">{article.title}</h1>
           <p className="text-lg text-muted-foreground mb-6">
             {article.meta_description}
@@ -376,8 +394,9 @@ export function ArticleContent({
       {/* Article Content (when skipped quiz) */}
       {showArticle && !showQuiz && (
         <>
+          <FloatingNavigation prevId={prevId} nextId={nextId} mode="article" />
           {/* Show video if quiz was skipped */}
-          <div className="mb-8">
+          <div className="mb-8" ref={videoContainerRef}>
             <QuizSection
               videoId={videoId}
               startTime={startTime}
