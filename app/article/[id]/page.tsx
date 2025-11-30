@@ -7,6 +7,7 @@ import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 
 const typedFeedData = feedData as unknown as FeedItem[];
 
@@ -155,21 +156,23 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         {/* 記事上部の広告 */}
         {adSpotId && <NinjaAdMax adSpotId={adSpotId} />}
 
-        <ArticleContent
-          videoId={videoId}
-          startTime={parseFloat(item.start_time)}
-          endTime={parseFloat(item.end_time)}
-          question={item.question}
-          questionKatakana={item.question_katakana}
-          youtubeUrl={youtubeUrl}
-          article={article}
-          category={item.category}
-          currentId={item.id}
-          prevId={prevId}
-          nextId={nextId}
-          kugiriEng={item.kugiri_eng}
-          kugiriJp={item.kugiri_jp}
-        />
+        <Suspense fallback={<div className="text-center py-8">読み込み中...</div>}>
+          <ArticleContent
+            videoId={videoId}
+            startTime={parseFloat(item.start_time)}
+            endTime={parseFloat(item.end_time)}
+            question={item.question}
+            questionKatakana={item.question_katakana}
+            youtubeUrl={youtubeUrl}
+            article={article}
+            category={item.category}
+            currentId={item.id}
+            prevId={prevId}
+            nextId={nextId}
+            kugiriEng={item.kugiri_eng}
+            kugiriJp={item.kugiri_jp}
+          />
+        </Suspense>
 
         {/* 記事下部の広告 */}
         {adSpotId && <NinjaAdMax adSpotId={adSpotId} />}
