@@ -6,8 +6,16 @@ import { PhraseBreakdown } from "@/components/phrase-breakdown";
 import { QuizSection } from "@/components/quiz-section";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { progressDB } from "@/lib/db/progress-db";
 import { ArticleData } from "@/types";
-import { ArrowLeft, ArrowRight, Headphones, Volume2 } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  CheckCircle2,
+  Headphones,
+  Lock,
+  Volume2,
+} from "lucide-react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -48,6 +56,63 @@ export function ArticleContent({
   const [showArticle, setShowArticle] = useState(false);
   const [showQuiz, setShowQuiz] = useState(false);
   const videoContainerRef = useRef<HTMLDivElement>(null);
+  const [isCompleted, setIsCompleted] = useState(false);
+  const [isMarkingComplete, setIsMarkingComplete] = useState(false);
+  const [isUnlocked, setIsUnlocked] = useState(false);
+  const [isCheckingUnlock, setIsCheckingUnlock] = useState(true);
+  const [isNextUnlocked, setIsNextUnlocked] = useState(false);
+
+  // 初期化時にアンロック状態と完了状態を確認
+  useEffect(() => {
+    const checkStatus = async () => {
+      setIsCheckingUnlock(true);
+      try {
+        const unlocked = await progressDB.isUnlocked(currentId);
+        const completed = await progressDB.isCompleted(currentId);
+        setIsUnlocked(unlocked);
+        setIsCompleted(completed);
+
+        // nextIdのアンロック状態もチェック
+        if (nextId) {
+          const nextUnlocked = await progressDB.isUnlocked(nextId);
+          setIsNextUnlocked(nextUnlocked);
+        }
+      } catch (error) {
+        console.error("Failed to check status:", error);
+        // エラー時はID=1のみアンロック
+        setIsUnlocked(currentId === 1);
+        setIsNextUnlocked(false);
+      } finally {
+        setIsCheckingUnlock(false);
+      }
+    };
+    checkStatus();
+  }, [currentId, nextId]);
+
+  // 「理解した」ボタンのハンドラー
+  const handleMarkAsCompleted = async () => {
+    if (isCompleted) return;
+
+    setIsMarkingComplete(true);
+    try {
+      await progressDB.markAsCompleted(currentId);
+      setIsCompleted(true);
+
+      // nextIdをアンロック
+      if (nextId) {
+        setIsNextUnlocked(true);
+
+        // 次の記事があれば、そちらに移動
+        setTimeout(() => {
+          router.push(`/article/${nextId}?mode=article`);
+        }, 1000);
+      }
+    } catch (error) {
+      console.error("Failed to mark as completed:", error);
+    } finally {
+      setIsMarkingComplete(false);
+    }
+  };
 
   // クライアントサイドでURLパラメータを読み取り、初期状態を設定
   useEffect(() => {
@@ -60,6 +125,55 @@ export function ArticleContent({
       setShowArticle(false);
     }
   }, [searchParams]);
+
+  // アンロックチェック中の表示
+  if (isCheckingUnlock) {
+    return (
+      <div className="flex justify-center items-center py-12">
+        <p className="text-muted-foreground">読み込み中...</p>
+      </div>
+    );
+  }
+
+  // アンロックされていない場合の表示
+  if (!isUnlocked) {
+    return (
+      <div className="mb-8">
+        <div className="flex flex-wrap gap-2 mb-4">
+          <Badge variant="secondary">{category}</Badge>
+        </div>
+        <div className="space-y-6">
+          <div className="p-8 border-2 border-dashed rounded-lg bg-muted/50 text-center">
+            <div className="mb-4 text-4xl">🔒</div>
+            <h2 className="text-2xl font-bold mb-3">
+              この問題はまだロックされています
+            </h2>
+            <p className="text-muted-foreground mb-6">
+              前の問題を完了すると、この問題が解放されます。
+              <br />
+              学習を進めて、新しいフレーズを解放しましょう！
+            </p>
+            {prevId && (
+              <Link href={`/article/${prevId}?mode=article`}>
+                <Button size="lg" className="gap-2">
+                  <ArrowLeft className="h-5 w-5" />
+                  前の問題に戻る
+                </Button>
+              </Link>
+            )}
+            {!prevId && (
+              <Link href="/">
+                <Button size="lg" className="gap-2">
+                  <ArrowLeft className="h-5 w-5" />
+                  トップページに戻る
+                </Button>
+              </Link>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="mb-8">
@@ -256,7 +370,7 @@ export function ArticleContent({
                 ) : (
                   <div className="flex-1" />
                 )}
-                {nextId && (
+                {nextId && isNextUnlocked ? (
                   <Link
                     href={`/article/${nextId}?mode=article`}
                     className="flex-1"
@@ -266,7 +380,17 @@ export function ArticleContent({
                       <ArrowRight className="h-5 w-5" />
                     </Button>
                   </Link>
-                )}
+                ) : nextId ? (
+                  <Button
+                    size="lg"
+                    disabled
+                    className="gap-2 w-full flex-1 opacity-50 cursor-not-allowed"
+                    title="「理解した」ボタンを押すと解放されます"
+                  >
+                    次の問題へ
+                    <Lock className="h-5 w-5" />
+                  </Button>
+                ) : null}
               </div>
             )}
           </div>
@@ -365,6 +489,31 @@ export function ArticleContent({
             </div>
           )}
 
+          {/* 理解したボタン */}
+          <div className="mt-8 mb-6 p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30 rounded-lg border-2 border-blue-200 dark:border-blue-800">
+            <h3 className="text-xl font-bold text-blue-700 dark:text-blue-300 mb-3">
+              🎓 このフレーズを理解できましたか？
+            </h3>
+            <p className="text-sm text-muted-foreground mb-4">
+              {isCompleted
+                ? "✅ 完了済み！次の問題に進めます。"
+                : "「理解した」ボタンを押すと、次の問題が解放されます。"}
+            </p>
+            <Button
+              size="lg"
+              onClick={handleMarkAsCompleted}
+              disabled={isCompleted || isMarkingComplete}
+              className="w-full sm:w-auto gap-2"
+            >
+              <CheckCircle2 className="h-5 w-5" />
+              {isMarkingComplete
+                ? "保存中..."
+                : isCompleted
+                ? "完了済み"
+                : "理解した！次へ進む"}
+            </Button>
+          </div>
+
           {/* Navigation Buttons */}
           {(prevId || nextId) && (
             <div className="mt-6 flex justify-between gap-4">
@@ -378,14 +527,24 @@ export function ArticleContent({
               ) : (
                 <div />
               )}
-              {nextId && (
+              {nextId && isNextUnlocked ? (
                 <Link href={`/article/${nextId}?mode=article`}>
                   <Button size="lg" className="gap-2">
                     次の問題へ
                     <ArrowRight className="h-5 w-5" />
                   </Button>
                 </Link>
-              )}
+              ) : nextId ? (
+                <Button
+                  size="lg"
+                  disabled
+                  className="gap-2 opacity-50 cursor-not-allowed"
+                  title="「理解した」ボタンを押すと解放されます"
+                >
+                  次の問題へ
+                  <Lock className="h-5 w-5" />
+                </Button>
+              ) : null}
             </div>
           )}
         </>
@@ -521,7 +680,7 @@ export function ArticleContent({
                 ) : (
                   <div className="flex-1" />
                 )}
-                {nextId && (
+                {nextId && isNextUnlocked ? (
                   <Link
                     href={`/article/${nextId}?mode=article`}
                     className="flex-1"
@@ -531,7 +690,17 @@ export function ArticleContent({
                       <ArrowRight className="h-5 w-5" />
                     </Button>
                   </Link>
-                )}
+                ) : nextId ? (
+                  <Button
+                    size="lg"
+                    disabled
+                    className="gap-2 w-full flex-1 opacity-50 cursor-not-allowed"
+                    title="「理解した」ボタンを押すと解放されます"
+                  >
+                    次の問題へ
+                    <Lock className="h-5 w-5" />
+                  </Button>
+                ) : null}
               </div>
             )}
           </div>
@@ -554,6 +723,31 @@ export function ArticleContent({
             <MarkdownContent content={article.conclusion} />
           </div>
 
+          {/* 理解したボタン */}
+          <div className="mt-8 mb-6 p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30 rounded-lg border-2 border-blue-200 dark:border-blue-800">
+            <h3 className="text-xl font-bold text-blue-700 dark:text-blue-300 mb-3">
+              🎓 このフレーズを理解できましたか？
+            </h3>
+            <p className="text-sm text-muted-foreground mb-4">
+              {isCompleted
+                ? "✅ 完了済み！次の問題に進めます。"
+                : "「理解した」ボタンを押すと、次の問題が解放されます。"}
+            </p>
+            <Button
+              size="lg"
+              onClick={handleMarkAsCompleted}
+              disabled={isCompleted || isMarkingComplete}
+              className="w-full sm:w-auto gap-2"
+            >
+              <CheckCircle2 className="h-5 w-5" />
+              {isMarkingComplete
+                ? "保存中..."
+                : isCompleted
+                ? "完了済み"
+                : "理解した！次へ進む"}
+            </Button>
+          </div>
+
           {/* Navigation Buttons */}
           {(prevId || nextId) && (
             <div className="mt-6 flex justify-between gap-4">
@@ -567,14 +761,24 @@ export function ArticleContent({
               ) : (
                 <div />
               )}
-              {nextId && (
+              {nextId && isNextUnlocked ? (
                 <Link href={`/article/${nextId}?mode=article`}>
                   <Button size="lg" className="gap-2">
                     次の問題へ
                     <ArrowRight className="h-5 w-5" />
                   </Button>
                 </Link>
-              )}
+              ) : nextId ? (
+                <Button
+                  size="lg"
+                  disabled
+                  className="gap-2 opacity-50 cursor-not-allowed"
+                  title="「理解した」ボタンを押すと解放されます"
+                >
+                  次の問題へ
+                  <Lock className="h-5 w-5" />
+                </Button>
+              ) : null}
             </div>
           )}
         </>

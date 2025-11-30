@@ -1,7 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { progressDB } from "@/lib/db/progress-db";
+import { ArrowLeft, ArrowRight, Lock } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -19,6 +20,7 @@ export function FloatingNavigation({
   videoElementRef,
 }: FloatingNavigationProps) {
   const [isVisible, setIsVisible] = useState(false);
+  const [isNextUnlocked, setIsNextUnlocked] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,6 +39,24 @@ export function FloatingNavigation({
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [videoElementRef]);
+
+  // nextIdのアンロック状態をチェック
+  useEffect(() => {
+    const checkNextUnlock = async () => {
+      if (!nextId) {
+        setIsNextUnlocked(false);
+        return;
+      }
+      try {
+        const unlocked = await progressDB.isUnlocked(nextId);
+        setIsNextUnlocked(unlocked);
+      } catch (error) {
+        console.error("Failed to check next unlock status:", error);
+        setIsNextUnlocked(false);
+      }
+    };
+    checkNextUnlock();
+  }, [nextId]);
 
   if (!isVisible || (!prevId && !nextId)) return null;
 
@@ -69,7 +89,7 @@ export function FloatingNavigation({
 
           <div className="h-6 w-px bg-border" />
 
-          {nextId ? (
+          {nextId && isNextUnlocked ? (
             <Link href={`/article/${nextId}?mode=${mode}`}>
               <Button
                 size="sm"
@@ -79,6 +99,17 @@ export function FloatingNavigation({
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
+          ) : nextId ? (
+            <Button
+              variant="ghost"
+              size="sm"
+              disabled
+              className="gap-2 rounded-full opacity-50 cursor-not-allowed"
+              title="前の問題を完了すると解放されます"
+            >
+              次の問題
+              <Lock className="h-4 w-4" />
+            </Button>
           ) : (
             <Button
               variant="ghost"

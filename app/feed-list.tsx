@@ -3,8 +3,9 @@
 import { FeedCard } from "@/components/feed-card";
 import { FilterTabs } from "@/components/filter-tabs";
 import { SearchBar } from "@/components/search-bar";
+import { progressDB } from "@/lib/db/progress-db";
 import { FeedItem } from "@/types";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 interface FeedListProps {
   items: FeedItem[];
@@ -13,6 +14,36 @@ interface FeedListProps {
 export default function FeedList({ items }: FeedListProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
+  const [unlockedIds, setUnlockedIds] = useState<Set<number>>(new Set([1]));
+  const [isLoading, setIsLoading] = useState(true);
+
+  // 初期化時にアンロック状態を読み込む
+  useEffect(() => {
+    const loadUnlockedState = async () => {
+      setIsLoading(true);
+      try {
+        const completedIds = await progressDB.getCompletedArticleIds();
+        const unlocked = new Set<number>([1]); // ID=1は常にアンロック
+
+        // 完了した記事の次の記事をアンロック
+        completedIds.forEach((id) => {
+          unlocked.add(id); // 完了した記事自体もアンロック
+          const nextItem = items.find((item) => item.id === id + 1);
+          if (nextItem) {
+            unlocked.add(nextItem.id);
+          }
+        });
+
+        setUnlockedIds(unlocked);
+      } catch (error) {
+        console.error("Failed to load unlock state:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadUnlockedState();
+  }, [items]);
 
   const categories = useMemo(() => {
     const uniqueCategories = Array.from(
@@ -23,6 +54,10 @@ export default function FeedList({ items }: FeedListProps) {
 
   const filteredItems = useMemo(() => {
     return items.filter((item) => {
+      // アンロックされているかチェック
+      const isUnlocked = unlockedIds.has(item.id);
+      if (!isUnlocked) return false;
+
       const matchesSearch =
         searchQuery === "" ||
         item.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -36,7 +71,15 @@ export default function FeedList({ items }: FeedListProps) {
 
       return matchesSearch && matchesCategory;
     });
-  }, [items, searchQuery, selectedCategory]);
+  }, [items, searchQuery, selectedCategory, unlockedIds]);
+
+  if (isLoading) {
+    return (
+      <div className="flex justify-center items-center py-12">
+        <p className="text-muted-foreground">読み込み中...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6">
