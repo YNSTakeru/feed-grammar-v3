@@ -73,19 +73,23 @@ export function ArticleContent({
         const referrer = document.referrer;
         const currentOrigin = window.location.origin;
         const isDirectAccess = !referrer || !referrer.startsWith(currentOrigin);
-        
-        console.log('Direct access check:', { referrer, currentOrigin, isDirectAccess });
-        
+
+        console.log("Direct access check:", {
+          referrer,
+          currentOrigin,
+          isDirectAccess,
+        });
+
         // 直接アクセスまたは外部からのアクセスの場合は常にアンロック
         if (isDirectAccess) {
           setIsUnlocked(true);
-          console.log('Direct access detected - unlocking article');
+          console.log("Direct access detected - unlocking article");
         } else {
           const unlocked = await progressDB.isUnlocked(currentId);
           setIsUnlocked(unlocked);
-          console.log('Site navigation detected - unlock status:', unlocked);
+          console.log("Site navigation detected - unlock status:", unlocked);
         }
-        
+
         const completed = await progressDB.isCompleted(currentId);
         setIsCompleted(completed);
 

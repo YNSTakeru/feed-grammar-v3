@@ -15,6 +15,7 @@ export default function FeedList({ items }: FeedListProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [unlockedIds, setUnlockedIds] = useState<Set<number>>(new Set([1]));
+  const [completedIds, setCompletedIds] = useState<Set<number>>(new Set());
   const [isLoading, setIsLoading] = useState(true);
 
   // 初期化時にアンロック状態を読み込む
@@ -22,11 +23,12 @@ export default function FeedList({ items }: FeedListProps) {
     const loadUnlockedState = async () => {
       setIsLoading(true);
       try {
-        const completedIds = await progressDB.getCompletedArticleIds();
+        const completedIdsArray = await progressDB.getCompletedArticleIds();
+        const completed = new Set<number>(completedIdsArray);
         const unlocked = new Set<number>([1]); // ID=1は常にアンロック
 
         // 完了した記事の次の記事をアンロック
-        completedIds.forEach((id) => {
+        completedIdsArray.forEach((id) => {
           unlocked.add(id); // 完了した記事自体もアンロック
           const nextItem = items.find((item) => item.id === id + 1);
           if (nextItem) {
@@ -34,6 +36,7 @@ export default function FeedList({ items }: FeedListProps) {
           }
         });
 
+        setCompletedIds(completed);
         setUnlockedIds(unlocked);
       } catch (error) {
         console.error("Failed to load unlock state:", error);
@@ -98,7 +101,11 @@ export default function FeedList({ items }: FeedListProps) {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredItems.map((item) => (
-          <FeedCard key={item.id} item={item} />
+          <FeedCard
+            key={item.id}
+            item={item}
+            isCompleted={completedIds.has(item.id)}
+          />
         ))}
       </div>
 

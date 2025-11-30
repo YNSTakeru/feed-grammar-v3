@@ -2,15 +2,16 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FeedItem, Thumbnail } from "@/types";
-import { BookOpen, Headphones } from "lucide-react";
+import { BookOpen, Headphones, Lock } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 interface FeedCardProps {
   item: FeedItem;
+  isCompleted?: boolean;
 }
 
-export function FeedCard({ item }: FeedCardProps) {
+export function FeedCard({ item, isCompleted = false }: FeedCardProps) {
   let thumbnail: Thumbnail;
   try {
     thumbnail =
@@ -27,6 +28,45 @@ export function FeedCard({ item }: FeedCardProps) {
     };
   }
 
+  // 未完了の場合はロック表示
+  if (!isCompleted) {
+    return (
+      <Link href={`/article/${item.id}?mode=article`} className="block">
+        <Card className="hover:shadow-lg transition-shadow h-full opacity-75 cursor-pointer">
+          <CardHeader className="p-4">
+            <div className="relative w-full aspect-video mb-3 rounded-md overflow-hidden bg-muted">
+              <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm">
+                <Lock className="h-12 w-12 text-white" />
+              </div>
+              <Image
+                src={thumbnail.medium}
+                alt="Locked content"
+                fill
+                className="object-cover blur-sm"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
+            <div className="flex flex-wrap gap-2 mb-2">
+              <Badge variant="secondary" className="text-xs">
+                {item.category}
+              </Badge>
+            </div>
+            <CardTitle className="text-lg line-clamp-2 text-muted-foreground">
+              問題 #{item.id}
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="p-4 pt-0 space-y-3">
+            <div className="w-full py-2 px-4 rounded-md bg-muted text-muted-foreground text-sm text-center flex items-center justify-center gap-2">
+              <Lock className="h-4 w-4" />
+              クリックして新しいフレーズを入手！
+            </div>
+          </CardContent>
+        </Card>
+      </Link>
+    );
+  }
+
+  // 完了済みの場合は通常表示
   return (
     <Card className="hover:shadow-lg transition-shadow h-full">
       <CardHeader className="p-4">
