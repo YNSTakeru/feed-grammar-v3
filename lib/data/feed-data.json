@@ -95,7 +95,7 @@
       "title": "「You have to harness them...」が「ユーハフタ ハーネス ダン」に!? ネイティブ発音の秘密を解明！",
       "meta_description": "英語学習者が驚く have to, them, that is の音の変化を徹底解説！リエゾン、弱化、脱落の法則を知ってリスニングを劇的に改善。",
       "katakana_weak_strong": "【ユー】〈ハフタ〉 【ハーネス】 〈ダン〉 【イントゥ】 〈ア〉 【ワーク】 〈ダルズ〉 【アクシュリー】 【ユーズフォー】",
-      "kugiri_eng": "You / ＜have to＞ / harness / them / into / a / work / that is / actually / useful",
+      "kugiri_eng": "You / have to / harness / them / into / a / work / that is / actually / useful",
       "kugiri_jp": "【ユー】 / 〈ハフタ〉 / 【ハーネス】 / 〈ダン〉 / 【イントゥ】 / 〈ア〉 / 【ワーク】 / 〈ダルズ〉 / 【アクシュリー】 / 【ユーズフォー】",
       "translated": "あなたは、それらを実際に役に立つ作品へと活用しなければならない。",
       "tsukkomi": [
@@ -170,7 +170,7 @@
         "answer": "actually（実際に）は、最初の音節に強勢があり、中間の子音（/tʃu/）と続く母音（/əli/）が速く発音されることで、母音の脱落（エリジョン）が起こり、「アクシュアリィ」の4音節ではなく、「アクシュリー」の3音節のように聞こえます。これは、多音節語が速く話される際によく起こる音の圧縮現象です。"
       }
     ],
-    "kugiri_eng": "You / ＜have to＞ / harness / them / into / a / work / that is / actually / useful",
+    "kugiri_eng": "You / have to / harness / them / into / a / work / that is / actually / useful",
     "kugiri_jp": "【ユー】 / 〈ハフタ〉 / 【ハーネス】 / 〈ダン〉 / 【イントゥ】 / 〈ア〉 / 【ワーク】 / 〈ダルズ〉 / 【アクシュリー】 / 【ユーズフォー】",
     "translated": "あなたは、それらを実際に役に立つ作品へと活用しなければならない。",
     "remember": "「have to」(〜しなければならない)は、義務を表す頻出表現です。会話では「ハフタ」と発音されることが多いことを覚えておきましょう。例：I have to go now. (もう行かなければならない)\n\n「harness」(〜を活用する、利用する)は、資源や能力などを目的に合わせて使いこなすことを意味する、ややフォーマルな表現です。例：We must harness the power of AI. (私たちはAIの力を活用しなければならない)\n\n「actually」(実際に、実は)は、自分の意見を述べたり、事実を強調したりする際に便利な副詞です。文頭、文中、文末と様々な位置で使えます。例：Actually, I'm not finished yet. (実は、まだ終わっていません)"
@@ -932,7 +932,7 @@
     "pron_memo": "",
     "tsukkomi": [],
     "kugiri_eng": "let me see / that. / Oooh, / this is / very / confusing.",
-    "kugiri_jp": "〈レッミースィー〉 / 【ザッ】 / . / 【ウゥー】 / 【ディスイズ】 / 〈ヴェリィ〉 / 【コンフュージン】",
+    "kugiri_jp": "〈レッミースィー〉 / 【ザッ】 / 【ウゥー】 / 【ディスイズ】 / 〈ヴェリィ〉 / 【コンフュージン】",
     "translated": "それを見せてください（または、ちょっと考えさせて）。うわぁ、これはすごくややこしいですね。",
     "remember": "「let me see」(ちょっと見せて/考えさせて)は、日常で頻繁に使う便利なフレーズです。相手から何か見せられた時や、即答できない時に使えます。例：Let me see what I can do. (何ができるかちょっと考えさせて) / Let me see that photo. (その写真を見せてください)\n\n「very confusing」(とてもややこしい/混乱する)は、状況や情報が複雑で理解が難しい時に使えます。例：The instructions were very confusing. (その説明書はとてもややこしかった)\n\n「this is...」は目の前の状況やものについて意見を言うときによく使われます。例：This is a great idea. (これは素晴らしいアイディアだ) / This is too difficult. (これは難しすぎる)"
   },
@@ -1212,8 +1212,8 @@
         "answer": "disoriented の語尾の[d]（または[t]）は次のfailureの[f]とつながる際、脱落したり、音韻が大きく変化したりすることがあります。failure の[f]音は、舌と唇の動きが少なく、摩擦音であるため、日本語の「フェ」よりも「フ」に近い音で「ディフェーリア」と聞こえます。また、disorientedの[ntid]の部分が極度に弱化・脱落し、「ディソーリア」のように聞こえるのも、英語の強弱リズムによるものです。英単語はアクセントのある音節以外は極端に弱く発音されます。"
       }
     ],
-    "kugiri_eng": "same thing / that I / used to / have ＜to＞ do / all ＜the＞ time / when I was an / equally / disoriented / failure",
-    "kugiri_jp": "【セム スィング】 / 〈ダッ〉 / 【ユース】 〈タ〉 / 〈ハフ〉 〈ドゥ〉 / 【オール タイム】 / 〈ナウズ イクリィ〉 / 【ディソーリア】 / 〈ディ〉【フェーリア】",
+    "kugiri_eng": "same thing / that I / used to / have ＜to＞ do / all ＜the＞ time / when I was an / equally / disoriented failure",
+    "kugiri_jp": "【セム スィング】 / 〈ダッ〉 / 【ユース】 〈タ〉 / 〈ハフ〉 〈ドゥ〉 / 【オール タイム】 / 〈ナウズ〉 / 〈イクリィ〉 / 【ディソーリア】 〈ディ〉【フェーリア】",
     "translated": "私がかつて、同じように方向性を見失った失敗者だった頃に、いつもやらなければならなかったことと同じことをね。",
     "remember": "「same thing」(同じこと)は、会話の中で前の発言や状況を受けて使う便利な表現です。\n例：He told me the same thing yesterday.（彼も昨日私に同じことを言ったよ。）\n\n「used to do」（以前は〜したものだ）は、過去の習慣や状態を表現する重要なフレーズです。現在とは違うニュアンスを含みます。\n例：I used to live in Tokyo.（以前は東京に住んでいた。）\n\n「have to do」（〜しなければならないこと）は、義務や必要性を表す日常会話の必須表現です。\n例：I have to finish this report by tomorrow.（私は明日までにこの報告書を終わらせなければならない。）"
   },

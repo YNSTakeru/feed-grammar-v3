@@ -351,7 +351,7 @@ export function ArticleContent({
           {(prevId || nextId) && (
             <div className="mt-6 flex justify-between gap-4">
               {prevId ? (
-                <Link href={`/article/${prevId}`}>
+                <Link href={`/article/${prevId}?mode=article`}>
                   <Button variant="outline" size="lg" className="gap-2">
                     <ArrowLeft className="h-5 w-5" />
                     前の問題へ
@@ -361,7 +361,7 @@ export function ArticleContent({
                 <div />
               )}
               {nextId && (
-                <Link href={`/article/${nextId}`}>
+                <Link href={`/article/${nextId}?mode=article`}>
                   <Button size="lg" className="gap-2">
                     次の問題へ
                     <ArrowRight className="h-5 w-5" />
@@ -539,7 +539,7 @@ export function ArticleContent({
           {(prevId || nextId) && (
             <div className="mt-6 flex justify-between gap-4">
               {prevId ? (
-                <Link href={`/article/${prevId}`}>
+                <Link href={`/article/${prevId}?mode=article`}>
                   <Button variant="outline" size="lg" className="gap-2">
                     <ArrowLeft className="h-5 w-5" />
                     前の問題へ
@@ -549,7 +549,7 @@ export function ArticleContent({
                 <div />
               )}
               {nextId && (
-                <Link href={`/article/${nextId}`}>
+                <Link href={`/article/${nextId}?mode=article`}>
                   <Button size="lg" className="gap-2">
                     次の問題へ
                     <ArrowRight className="h-5 w-5" />
