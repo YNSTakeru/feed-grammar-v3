@@ -16,6 +16,7 @@ export default function FeedList({ items }: FeedListProps) {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [unlockedIds, setUnlockedIds] = useState<Set<number>>(new Set([1]));
   const [completedIds, setCompletedIds] = useState<Set<number>>(new Set());
+  const [needsReviewIds, setNeedsReviewIds] = useState<Set<number>>(new Set());
   const [isLoading, setIsLoading] = useState(true);
 
   // 初期化時にアンロック状態を読み込む
@@ -24,7 +25,9 @@ export default function FeedList({ items }: FeedListProps) {
       setIsLoading(true);
       try {
         const completedIdsArray = await progressDB.getCompletedArticleIds();
+        const needsReviewIdsArray = await progressDB.getArticlesNeedingReview();
         const completed = new Set<number>(completedIdsArray);
+        const needsReview = new Set<number>(needsReviewIdsArray);
         const unlocked = new Set<number>([1]); // ID=1は常にアンロック
 
         // 完了した記事の次の記事をアンロック
@@ -37,6 +40,7 @@ export default function FeedList({ items }: FeedListProps) {
         });
 
         setCompletedIds(completed);
+        setNeedsReviewIds(needsReview);
         setUnlockedIds(unlocked);
       } catch (error) {
         console.error("Failed to load unlock state:", error);
@@ -56,7 +60,8 @@ export default function FeedList({ items }: FeedListProps) {
   }, [items]);
 
   const filteredItems = useMemo(() => {
-    return items.filter((item) => {
+    // フィルタリング
+    const filtered = items.filter((item) => {
       // アンロックされているかチェック
       const isUnlocked = unlockedIds.has(item.id);
       if (!isUnlocked) return false;
@@ -74,7 +79,33 @@ export default function FeedList({ items }: FeedListProps) {
 
       return matchesSearch && matchesCategory;
     });
-  }, [items, searchQuery, selectedCategory, unlockedIds]);
+
+    // ソート: 復習が必要 > 未完了 > 完了済み
+    return filtered.sort((a, b) => {
+      const aNeedsReview = needsReviewIds.has(a.id);
+      const bNeedsReview = needsReviewIds.has(b.id);
+      const aCompleted = completedIds.has(a.id);
+      const bCompleted = completedIds.has(b.id);
+
+      // 復習が必要な問題を最優先
+      if (aNeedsReview && !bNeedsReview) return -1;
+      if (!aNeedsReview && bNeedsReview) return 1;
+
+      // 次に未完了の問題
+      if (!aCompleted && bCompleted) return -1;
+      if (aCompleted && !bCompleted) return 1;
+
+      // 同じカテゴリ内ではID順
+      return a.id - b.id;
+    });
+  }, [
+    items,
+    searchQuery,
+    selectedCategory,
+    unlockedIds,
+    completedIds,
+    needsReviewIds,
+  ]);
 
   if (isLoading) {
     return (
@@ -105,6 +136,7 @@ export default function FeedList({ items }: FeedListProps) {
             key={item.id}
             item={item}
             isCompleted={completedIds.has(item.id)}
+            needsReview={needsReviewIds.has(item.id)}
           />
         ))}
       </div>

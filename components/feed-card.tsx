@@ -9,9 +9,14 @@ import Link from "next/link";
 interface FeedCardProps {
   item: FeedItem;
   isCompleted?: boolean;
+  needsReview?: boolean;
 }
 
-export function FeedCard({ item, isCompleted = false }: FeedCardProps) {
+export function FeedCard({
+  item,
+  isCompleted = false,
+  needsReview = false,
+}: FeedCardProps) {
   let thumbnail: Thumbnail;
   try {
     thumbnail =
@@ -85,6 +90,11 @@ export function FeedCard({ item, isCompleted = false }: FeedCardProps) {
           <Badge variant="secondary" className="text-xs">
             {item.category}
           </Badge>
+          {needsReview && (
+            <Badge variant="destructive" className="text-xs">
+              🔄 復習が必要
+            </Badge>
+          )}
         </div>
         <CardTitle className="text-lg line-clamp-2">
           {typeof item.article_text === "object" && item.article_text?.title

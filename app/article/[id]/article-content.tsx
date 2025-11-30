@@ -61,6 +61,7 @@ export function ArticleContent({
   const [isUnlocked, setIsUnlocked] = useState(false);
   const [isCheckingUnlock, setIsCheckingUnlock] = useState(true);
   const [isNextUnlocked, setIsNextUnlocked] = useState(false);
+  const [needsReview, setNeedsReview] = useState(false);
 
   // 初期化時にアンロック状態と完了状態を確認
   useEffect(() => {
@@ -93,6 +94,10 @@ export function ArticleContent({
         const completed = await progressDB.isCompleted(currentId);
         setIsCompleted(completed);
 
+        // 復習が必要かチェック
+        const needsReviewStatus = await progressDB.needsReview(currentId);
+        setNeedsReview(needsReviewStatus);
+
         // nextIdのアンロック状態もチェック
         if (nextId) {
           const nextUnlocked = await progressDB.isUnlocked(nextId);
@@ -112,21 +117,33 @@ export function ArticleContent({
 
   // 「理解した」ボタンのハンドラー
   const handleMarkAsCompleted = async () => {
-    if (isCompleted) return;
-
     setIsMarkingComplete(true);
     try {
-      await progressDB.markAsCompleted(currentId);
-      setIsCompleted(true);
-
-      // nextIdをアンロック
-      if (nextId) {
-        setIsNextUnlocked(true);
+      if (isCompleted) {
+        // 既に完了済みの場合は復習として記録
+        await progressDB.updateReviewStatus(currentId);
+        console.log("Review status updated for article", currentId);
 
         // 次の記事があれば、そちらに移動
-        setTimeout(() => {
-          router.push(`/article/${nextId}?mode=article`);
-        }, 1000);
+        if (nextId) {
+          setTimeout(() => {
+            router.push(`/article/${nextId}?mode=article`);
+          }, 500);
+        }
+      } else {
+        // 初回完了の場合
+        await progressDB.markAsCompleted(currentId);
+        setIsCompleted(true);
+
+        // nextIdをアンロック
+        if (nextId) {
+          setIsNextUnlocked(true);
+
+          // 次の記事があれば、そちらに移動
+          setTimeout(() => {
+            router.push(`/article/${nextId}?mode=article`);
+          }, 1000);
+        }
       }
     } catch (error) {
       console.error("Failed to mark as completed:", error);
@@ -513,24 +530,31 @@ export function ArticleContent({
           {/* 理解したボタン */}
           <div className="mt-8 mb-6 p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30 rounded-lg border-2 border-blue-200 dark:border-blue-800">
             <h3 className="text-xl font-bold text-blue-700 dark:text-blue-300 mb-3">
-              🎓 このフレーズを理解できましたか？
+              {needsReview
+                ? "🔄 このフレーズを復習しましょう！"
+                : "🎓 このフレーズを理解できましたか？"}
             </h3>
             <p className="text-sm text-muted-foreground mb-4">
-              {isCompleted
+              {needsReview
+                ? "エビングハウスの忘却曲線に基づき、復習の時期が来ています。もう一度確認して記憶を定着させましょう。"
+                : isCompleted
                 ? "✅ 完了済み！次の問題に進めます。"
                 : "「理解した」ボタンを押すと、次の問題が解放されます。"}
             </p>
             <Button
               size="lg"
               onClick={handleMarkAsCompleted}
-              disabled={isCompleted || isMarkingComplete}
+              disabled={isMarkingComplete}
               className="w-full sm:w-auto gap-2"
+              variant={needsReview ? "destructive" : "default"}
             >
               <CheckCircle2 className="h-5 w-5" />
               {isMarkingComplete
                 ? "保存中..."
+                : needsReview
+                ? "復習完了！次へ進む"
                 : isCompleted
-                ? "完了済み"
+                ? "もう一度復習して次へ"
                 : "理解した！次へ進む"}
             </Button>
           </div>
@@ -747,24 +771,31 @@ export function ArticleContent({
           {/* 理解したボタン */}
           <div className="mt-8 mb-6 p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30 rounded-lg border-2 border-blue-200 dark:border-blue-800">
             <h3 className="text-xl font-bold text-blue-700 dark:text-blue-300 mb-3">
-              🎓 このフレーズを理解できましたか？
+              {needsReview
+                ? "🔄 このフレーズを復習しましょう！"
+                : "🎓 このフレーズを理解できましたか？"}
             </h3>
             <p className="text-sm text-muted-foreground mb-4">
-              {isCompleted
+              {needsReview
+                ? "エビングハウスの忘却曲線に基づき、復習の時期が来ています。もう一度確認して記憶を定着させましょう。"
+                : isCompleted
                 ? "✅ 完了済み！次の問題に進めます。"
                 : "「理解した」ボタンを押すと、次の問題が解放されます。"}
             </p>
             <Button
               size="lg"
               onClick={handleMarkAsCompleted}
-              disabled={isCompleted || isMarkingComplete}
+              disabled={isMarkingComplete}
               className="w-full sm:w-auto gap-2"
+              variant={needsReview ? "destructive" : "default"}
             >
               <CheckCircle2 className="h-5 w-5" />
               {isMarkingComplete
                 ? "保存中..."
+                : needsReview
+                ? "復習完了！次へ進む"
                 : isCompleted
-                ? "完了済み"
+                ? "もう一度復習して次へ"
                 : "理解した！次へ進む"}
             </Button>
           </div>
