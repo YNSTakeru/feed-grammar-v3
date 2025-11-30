@@ -67,9 +67,26 @@ export function ArticleContent({
     const checkStatus = async () => {
       setIsCheckingUnlock(true);
       try {
-        const unlocked = await progressDB.isUnlocked(currentId);
+        // 直接アクセスかどうかを判定
+        // 1. document.referrerが空 = URL直接入力
+        // 2. document.referrerが同一オリジンでない = 外部サイトから
+        const referrer = document.referrer;
+        const currentOrigin = window.location.origin;
+        const isDirectAccess = !referrer || !referrer.startsWith(currentOrigin);
+        
+        console.log('Direct access check:', { referrer, currentOrigin, isDirectAccess });
+        
+        // 直接アクセスまたは外部からのアクセスの場合は常にアンロック
+        if (isDirectAccess) {
+          setIsUnlocked(true);
+          console.log('Direct access detected - unlocking article');
+        } else {
+          const unlocked = await progressDB.isUnlocked(currentId);
+          setIsUnlocked(unlocked);
+          console.log('Site navigation detected - unlock status:', unlocked);
+        }
+        
         const completed = await progressDB.isCompleted(currentId);
-        setIsUnlocked(unlocked);
         setIsCompleted(completed);
 
         // nextIdのアンロック状態もチェック
@@ -79,8 +96,8 @@ export function ArticleContent({
         }
       } catch (error) {
         console.error("Failed to check status:", error);
-        // エラー時はID=1のみアンロック
-        setIsUnlocked(currentId === 1);
+        // エラー時はアンロック
+        setIsUnlocked(true);
         setIsNextUnlocked(false);
       } finally {
         setIsCheckingUnlock(false);
