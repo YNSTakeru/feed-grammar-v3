@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://feedgrammar.com/</loc>
-    <lastmod>2025-11-30</lastmod>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -194,32 +194,32 @@
   </url>
   <url>
     <loc>https://feedgrammar.com/article/32?mode=article</loc>
-    <lastmod>2025-11-30</lastmod>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://feedgrammar.com/article/33?mode=article</loc>
-    <lastmod>2025-11-30</lastmod>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://feedgrammar.com/article/34?mode=article</loc>
-    <lastmod>2025-11-30</lastmod>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://feedgrammar.com/article/36?mode=article</loc>
-    <lastmod>2025-11-30</lastmod>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://feedgrammar.com/article/37?mode=article</loc>
-    <lastmod>2025-11-30</lastmod>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 </urlset>

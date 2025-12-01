@@ -7,7 +7,7 @@ import { QuizSection } from "@/components/quiz-section";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { progressDB } from "@/lib/db/progress-db";
-import { ArticleData } from "@/types";
+import { ArticleData, FeedItem } from "@/types";
 import {
   ArrowLeft,
   ArrowRight,
@@ -34,6 +34,10 @@ interface ArticleContentProps {
   nextId: number | null;
   kugiriEng: string;
   kugiriJp: string;
+  similarItems?: FeedItem[];
+  theme?: string;
+  isSimilar?: number;
+  parentArticleId?: number | null;
 }
 
 export function ArticleContent({
@@ -50,6 +54,10 @@ export function ArticleContent({
   nextId,
   kugiriEng,
   kugiriJp,
+  similarItems,
+  theme,
+  isSimilar,
+  parentArticleId,
 }: ArticleContentProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -62,6 +70,9 @@ export function ArticleContent({
   const [isCheckingUnlock, setIsCheckingUnlock] = useState(true);
   const [isNextUnlocked, setIsNextUnlocked] = useState(false);
   const [needsReview, setNeedsReview] = useState(false);
+  const [similarItemsCompleted, setSimilarItemsCompleted] = useState<
+    Set<number>
+  >(new Set());
 
   // 初期化時にアンロック状態と完了状態を確認
   useEffect(() => {
@@ -115,6 +126,24 @@ export function ArticleContent({
     checkStatus();
   }, [currentId, nextId]);
 
+  // 類似問題の完了状態をチェック
+  useEffect(() => {
+    const checkSimilarItemsStatus = async () => {
+      if (!similarItems || similarItems.length === 0) return;
+
+      const completed = new Set<number>();
+      for (const item of similarItems) {
+        const isItemCompleted = await progressDB.isCompleted(item.id);
+        if (isItemCompleted) {
+          completed.add(item.id);
+        }
+      }
+      setSimilarItemsCompleted(completed);
+    };
+
+    checkSimilarItemsStatus();
+  }, [similarItems]);
+
   // 「理解した」ボタンのハンドラー
   const handleMarkAsCompleted = async () => {
     setIsMarkingComplete(true);
@@ -124,8 +153,12 @@ export function ArticleContent({
         await progressDB.updateReviewStatus(currentId);
         console.log("Review status updated for article", currentId);
 
-        // 次の記事があれば、そちらに移動
-        if (nextId) {
+        // similarが1の場合は次の類似問題に遷移
+        if (isSimilar === 1 && similarItems && similarItems.length > 0) {
+          setTimeout(() => {
+            router.push(`/article/${similarItems[0].id}?mode=article`);
+          }, 500);
+        } else if (nextId) {
           setTimeout(() => {
             router.push(`/article/${nextId}?mode=article`);
           }, 500);
@@ -138,8 +171,14 @@ export function ArticleContent({
         // nextIdをアンロック
         if (nextId) {
           setIsNextUnlocked(true);
+        }
 
-          // 次の記事があれば、そちらに移動
+        // similarが1の場合は次の類似問題に遷移
+        if (isSimilar === 1 && similarItems && similarItems.length > 0) {
+          setTimeout(() => {
+            router.push(`/article/${similarItems[0].id}?mode=article`);
+          }, 1000);
+        } else if (nextId) {
           setTimeout(() => {
             router.push(`/article/${nextId}?mode=article`);
           }, 1000);
@@ -402,7 +441,7 @@ export function ArticleContent({
                       className="gap-2 w-full"
                     >
                       <ArrowLeft className="h-5 w-5" />
-                      前の問題へ
+                      {isSimilar === 1 ? "前の類題へ" : "前の問題へ"}
                     </Button>
                   </Link>
                 ) : (
@@ -414,7 +453,7 @@ export function ArticleContent({
                     className="flex-1"
                   >
                     <Button size="lg" className="gap-2 w-full">
-                      次の問題へ
+                      {isSimilar === 1 ? "次の類題へ" : "次の問題へ"}
                       <ArrowRight className="h-5 w-5" />
                     </Button>
                   </Link>
@@ -425,7 +464,7 @@ export function ArticleContent({
                     className="gap-2 w-full flex-1 opacity-50 cursor-not-allowed"
                     title="「理解した」ボタンを押すと解放されます"
                   >
-                    次の問題へ
+                    {isSimilar === 1 ? "次の類題へ" : "次の問題へ"}
                     <Lock className="h-5 w-5" />
                   </Button>
                 ) : null}
@@ -719,7 +758,7 @@ export function ArticleContent({
                       className="gap-2 w-full"
                     >
                       <ArrowLeft className="h-5 w-5" />
-                      前の問題へ
+                      {isSimilar === 1 ? "前の類題へ" : "前の問題へ"}
                     </Button>
                   </Link>
                 ) : (
@@ -731,7 +770,7 @@ export function ArticleContent({
                     className="flex-1"
                   >
                     <Button size="lg" className="gap-2 w-full">
-                      次の問題へ
+                      {isSimilar === 1 ? "次の類題へ" : "次の問題へ"}
                       <ArrowRight className="h-5 w-5" />
                     </Button>
                   </Link>
@@ -742,7 +781,7 @@ export function ArticleContent({
                     className="gap-2 w-full flex-1 opacity-50 cursor-not-allowed"
                     title="「理解した」ボタンを押すと解放されます"
                   >
-                    次の問題へ
+                    {isSimilar === 1 ? "次の類題へ" : "次の問題へ"}
                     <Lock className="h-5 w-5" />
                   </Button>
                 ) : null}
@@ -800,14 +839,108 @@ export function ArticleContent({
             </Button>
           </div>
 
+          {/* Similar Articles Section */}
+          {similarItems && similarItems.length > 0 && theme && (
+            <div className="mt-8 pt-8 border-t">
+              <div className="mb-4">
+                <h3 className="text-2xl font-bold mb-2">類似問題</h3>
+                <p className="text-sm text-muted-foreground">
+                  テーマ:{" "}
+                  <span className="font-medium text-foreground">{theme}</span>
+                </p>
+              </div>
+              <p className="text-muted-foreground mb-6">
+                同じテーマの関連問題で理解を深めましょう
+              </p>
+              <div className="grid grid-cols-1 gap-4">
+                {similarItems.slice(0, 1).map((item) => {
+                  const isSimilarCompleted = similarItemsCompleted.has(item.id);
+                  return (
+                    <Link
+                      key={item.id}
+                      href={`/article/${item.id}?mode=article`}
+                      className="block"
+                    >
+                      <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow cursor-pointer bg-gradient-to-br from-purple-50/50 to-pink-50/50 dark:from-purple-950/20 dark:to-pink-950/20 relative">
+                        <div className="flex gap-4">
+                          {item.thumbnail && (
+                            <div className="flex-shrink-0 w-32 h-32 relative rounded overflow-hidden">
+                              <img
+                                src={`https://img.youtube.com/vi/${
+                                  item.url.match(
+                                    /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/
+                                  )?.[1]
+                                }/mqdefault.jpg`}
+                                alt=""
+                                className={`object-cover w-full h-full ${
+                                  !isSimilarCompleted ? "blur-lg" : ""
+                                }`}
+                              />
+                              {!isSimilarCompleted && (
+                                <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                                  <Lock className="h-8 w-8 text-white" />
+                                </div>
+                              )}
+                            </div>
+                          )}
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-start gap-2 mb-2">
+                              <span className="inline-block px-2 py-1 text-xs font-medium bg-primary/10 text-primary rounded">
+                                {item.category}
+                              </span>
+                              {!isSimilarCompleted && (
+                                <span className="inline-block px-2 py-1 text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200 rounded">
+                                  未解答
+                                </span>
+                              )}
+                            </div>
+                            <h4 className="font-medium line-clamp-2 mb-2">
+                              {isSimilarCompleted
+                                ? item.question
+                                : "???????????????????????????"}
+                            </h4>
+                            {item.question_katakana && (
+                              <p className="text-sm text-muted-foreground line-clamp-2">
+                                {isSimilarCompleted
+                                  ? item.question_katakana
+                                  : "???????????????????????????????????????"}
+                              </p>
+                            )}
+                            {!isSimilarCompleted && (
+                              <p className="text-xs text-muted-foreground mt-2 flex items-center gap-1">
+                                <Lock className="h-3 w-3" />
+                                この問題を解くと内容が表示されます
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
           {/* Navigation Buttons */}
+          {isSimilar === 1 && parentArticleId && (
+            <div className="mt-6 mb-4 flex justify-center">
+              <Link href={`/article/${parentArticleId}?mode=article`}>
+                <Button variant="outline" size="lg" className="gap-2">
+                  <ArrowLeft className="h-5 w-5" />
+                  元の記事に戻る
+                </Button>
+              </Link>
+            </div>
+          )}
+
           {(prevId || nextId) && (
             <div className="mt-6 flex justify-between gap-4">
               {prevId ? (
                 <Link href={`/article/${prevId}?mode=article`}>
                   <Button variant="outline" size="lg" className="gap-2">
                     <ArrowLeft className="h-5 w-5" />
-                    前の問題へ
+                    {isSimilar === 1 ? "前の類題へ" : "前の問題へ"}
                   </Button>
                 </Link>
               ) : (
@@ -816,7 +949,7 @@ export function ArticleContent({
               {nextId && isNextUnlocked ? (
                 <Link href={`/article/${nextId}?mode=article`}>
                   <Button size="lg" className="gap-2">
-                    次の問題へ
+                    {isSimilar === 1 ? "次の類題へ" : "次の問題へ"}
                     <ArrowRight className="h-5 w-5" />
                   </Button>
                 </Link>
@@ -827,7 +960,7 @@ export function ArticleContent({
                   className="gap-2 opacity-50 cursor-not-allowed"
                   title="「理解した」ボタンを押すと解放されます"
                 >
-                  次の問題へ
+                  {isSimilar === 1 ? "次の類題へ" : "次の問題へ"}
                   <Lock className="h-5 w-5" />
                 </Button>
               ) : null}

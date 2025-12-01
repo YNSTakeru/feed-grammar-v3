@@ -51,4 +51,5 @@ export interface FeedItem {
   noIndex: number;
   kugiri_eng: string;
   kugiri_jp: string;
+  is_similar: number;
 }

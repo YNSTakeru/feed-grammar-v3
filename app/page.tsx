@@ -1,10 +1,36 @@
 import NinjaAdMax from "@/components/ninja-admax";
 import feedData from "@/lib/data/feed-data.json";
+import { FeedItem } from "@/types";
+import fs from "fs";
 import Image from "next/image";
 import Link from "next/link";
+import path from "path";
 import FeedList from "./feed-list";
 
 export default function Home() {
+  const typedFeedData = feedData as unknown as FeedItem[];
+
+  // similarフォルダから類似問題も読み込む
+  let allItems: FeedItem[] = [...typedFeedData];
+
+  try {
+    const similarDir = path.join(process.cwd(), "lib", "data", "similar");
+    if (fs.existsSync(similarDir)) {
+      const files = fs.readdirSync(similarDir);
+      files.forEach((file) => {
+        if (file.endsWith(".json")) {
+          const filePath = path.join(similarDir, file);
+          const content = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+          if (Array.isArray(content)) {
+            allItems = [...allItems, ...content];
+          }
+        }
+      });
+    }
+  } catch (error) {
+    console.error("Failed to read similar folder:", error);
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b">
@@ -48,7 +74,7 @@ export default function Home() {
         {/* 忍者AdMax 広告 */}
         <NinjaAdMax adSpotId="143d07eee51fc057088eb62107bae0a3" />
 
-        <FeedList items={feedData} />
+        <FeedList items={allItems} />
       </main>
     </div>
   );

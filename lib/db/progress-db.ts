@@ -1,4 +1,6 @@
 // IndexedDB を使用して学習進捗を管理
+import { consentDB } from "./consent-db";
+
 const DB_NAME = "feed-grammar-progress";
 const DB_VERSION = 2; // バージョンアップ: 復習タイミングを追加
 const STORE_NAME = "completed-articles";
@@ -47,6 +49,13 @@ class ProgressDB {
 
   // 記事を完了としてマーク
   async markAsCompleted(articleId: number): Promise<void> {
+    // 同意していない場合は何もしない
+    const consent = consentDB.getConsent();
+    if (!consent?.hasConsented) {
+      console.log("User has not consented, skipping progress save");
+      return;
+    }
+
     await this.init();
     if (!this.db) throw new Error("Database not initialized");
 
@@ -70,6 +79,12 @@ class ProgressDB {
 
   // 記事が完了済みかチェック（復習期限が来ていない＝まだ理解している状態）
   async isCompleted(articleId: number): Promise<boolean> {
+    // 同意していない場合は常にfalseを返す
+    const consent = consentDB.getConsent();
+    if (!consent?.hasConsented) {
+      return false;
+    }
+
     await this.init();
     if (!this.db) throw new Error("Database not initialized");
 
@@ -95,6 +110,12 @@ class ProgressDB {
 
   // 完了済みの記事IDリストを取得
   async getCompletedArticleIds(): Promise<number[]> {
+    // 同意していない場合は空配列を返す
+    const consent = consentDB.getConsent();
+    if (!consent?.hasConsented) {
+      return [];
+    }
+
     await this.init();
     if (!this.db) throw new Error("Database not initialized");
 
@@ -111,6 +132,12 @@ class ProgressDB {
   // 記事がアンロック（閲覧可能）かチェック
   // ルール: ID=1は常にアンロック、それ以外は前の記事が完了している必要がある
   async isUnlocked(articleId: number): Promise<boolean> {
+    // 同意していない場合はすべてアンロック
+    const consent = consentDB.getConsent();
+    if (!consent?.hasConsented) {
+      return true;
+    }
+
     if (articleId === 1) return true;
 
     // 前の記事（articleId - 1）が完了しているかチェック
@@ -119,6 +146,12 @@ class ProgressDB {
 
   // 復習が必要な記事かチェック（復習期限が過ぎている）
   async needsReview(articleId: number): Promise<boolean> {
+    // 同意していない場合はfalseを返す
+    const consent = consentDB.getConsent();
+    if (!consent?.hasConsented) {
+      return false;
+    }
+
     await this.init();
     if (!this.db) throw new Error("Database not initialized");
 
@@ -144,6 +177,13 @@ class ProgressDB {
 
   // 復習完了として記録（復習回数を増やし、次回復習日時を更新）
   async updateReviewStatus(articleId: number): Promise<void> {
+    // 同意していない場合は何もしない
+    const consent = consentDB.getConsent();
+    if (!consent?.hasConsented) {
+      console.log("User has not consented, skipping review update");
+      return;
+    }
+
     await this.init();
     if (!this.db) throw new Error("Database not initialized");
 
@@ -183,6 +223,12 @@ class ProgressDB {
 
   // 復習が必要な記事のIDリストを取得
   async getArticlesNeedingReview(): Promise<number[]> {
+    // 同意していない場合は空配列を返す
+    const consent = consentDB.getConsent();
+    if (!consent?.hasConsented) {
+      return [];
+    }
+
     await this.init();
     if (!this.db) throw new Error("Database not initialized");
 

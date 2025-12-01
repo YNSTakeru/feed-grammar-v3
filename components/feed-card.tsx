@@ -55,6 +55,14 @@ export function FeedCard({
               <Badge variant="secondary" className="text-xs">
                 {item.category}
               </Badge>
+              {item.is_similar === 1 && (
+                <Badge
+                  variant="outline"
+                  className="text-xs bg-purple-50 dark:bg-purple-950 border-purple-300 dark:border-purple-700"
+                >
+                  📚 類題
+                </Badge>
+              )}
             </div>
             <CardTitle className="text-lg line-clamp-2 text-muted-foreground">
               問題 #{item.id}
@@ -90,6 +98,14 @@ export function FeedCard({
           <Badge variant="secondary" className="text-xs">
             {item.category}
           </Badge>
+          {item.is_similar === 1 && (
+            <Badge
+              variant="outline"
+              className="text-xs bg-purple-50 dark:bg-purple-950 border-purple-300 dark:border-purple-700"
+            >
+              📚 類題
+            </Badge>
+          )}
           {needsReview && (
             <Badge variant="destructive" className="text-xs">
               🔄 復習が必要

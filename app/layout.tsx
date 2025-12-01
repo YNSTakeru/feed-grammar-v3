@@ -1,3 +1,4 @@
+import { ConsentProvider } from "@/components/consent-provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -38,7 +39,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {gaId && <GoogleAnalytics gaId={gaId} />}
-        {children}
+        <ConsentProvider>{children}</ConsentProvider>
       </body>
     </html>
   );
