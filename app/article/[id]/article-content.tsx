@@ -722,6 +722,37 @@ export function ArticleContent({
               />
             </div>
           )}
+          {/* 理解したボタン */}
+          <div className="mt-8 mb-6 p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30 rounded-lg border-2 border-blue-200 dark:border-blue-800">
+            <h3 className="text-xl font-bold text-blue-700 dark:text-blue-300 mb-3">
+              {needsReview
+                ? "🔄 このフレーズを復習しましょう！"
+                : "🎓 このフレーズを理解できましたか？"}
+            </h3>
+            <p className="text-sm text-muted-foreground mb-4">
+              {needsReview
+                ? "エビングハウスの忘却曲線に基づき、復習の時期が来ています。もう一度確認して記憶を定着させましょう。"
+                : isCompleted
+                ? "✅ 完了済み！次の問題に進めます。"
+                : "「理解した」ボタンを押すと、次の問題が解放されます。"}
+            </p>
+            <Button
+              size="lg"
+              onClick={handleMarkAsCompleted}
+              disabled={isMarkingComplete}
+              className="w-full sm:w-auto gap-2"
+              variant={needsReview ? "destructive" : "default"}
+            >
+              <CheckCircle2 className="h-5 w-5" />
+              {isMarkingComplete
+                ? "保存中..."
+                : needsReview
+                ? "復習完了！次へ進む"
+                : isCompleted
+                ? "もう一度復習して次へ"
+                : "理解した！次へ進む"}
+            </Button>
+          </div>
 
           {/* リスニングに挑戦と次の問題、前の問題ボタン */}
           <div className="my-8 space-y-4">
