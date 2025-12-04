@@ -19,6 +19,7 @@ import {
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { Tweet } from "react-tweet";
 
 interface ArticleContentProps {
   videoId: string;
@@ -393,6 +394,42 @@ export function ArticleContent({
             </div>
           )}
 
+          {/* Image Sections */}
+          {article.image_sections && article.image_sections.length > 0 && (
+            <div className="mb-8 space-y-6">
+              <h3 className="text-2xl font-bold text-blue-700 dark:text-blue-400 mb-4">
+                🖼️ フレーズのイメージ
+              </h3>
+              {article.image_sections.map((imageSection, index) => {
+                const tweetId = imageSection.url?.match(/TWEET_ID:(\d+)/)?.[1];
+                const displayLabel = imageSection.label.replace(/ /g, '_');
+                
+                return (
+                  <div
+                    key={index}
+                    className="p-5 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 rounded-lg border-2 border-blue-200 dark:border-blue-800"
+                  >
+                    <div className="mb-3">
+                      <h4 className="text-lg font-bold text-blue-800 dark:text-blue-300">
+                        【ここに{displayLabel}の画像を表示】
+                      </h4>
+                    </div>
+                    {tweetId && (
+                      <div className="mb-4">
+                        <Tweet id={tweetId} />
+                      </div>
+                    )}
+                    {imageSection.description && (
+                      <div className="text-gray-700 dark:text-gray-200">
+                        <MarkdownContent content={imageSection.description} />
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
           {/* Remember Section */}
           {article.remember && (
             <div className="mb-8 p-6 bg-gradient-to-br from-green-50 to-teal-50 dark:from-green-950/30 dark:to-teal-950/30 rounded-lg border-2 border-green-200 dark:border-green-800">
@@ -707,6 +744,42 @@ export function ArticleContent({
                   </div>
                 </div>
               ))}
+            </div>
+          )}
+
+          {/* Image Sections */}
+          {article.image_sections && article.image_sections.length > 0 && (
+            <div className="mb-8 space-y-6">
+              <h3 className="text-2xl font-bold text-blue-700 dark:text-blue-400 mb-4">
+                🖼️ フレーズのイメージ
+              </h3>
+              {article.image_sections.map((imageSection, index) => {
+                const tweetId = imageSection.url?.match(/TWEET_ID:(\d+)/)?.[1];
+                const displayLabel = imageSection.label.replace(/ /g, '_');
+                
+                return (
+                  <div
+                    key={index}
+                    className="p-5 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 rounded-lg border-2 border-blue-200 dark:border-blue-800"
+                  >
+                    <div className="mb-3">
+                      <h4 className="text-lg font-bold text-blue-800 dark:text-blue-300">
+                        【ここに{displayLabel}の画像を表示】
+                      </h4>
+                    </div>
+                    {tweetId && (
+                      <div className="mb-4">
+                        <Tweet id={tweetId} />
+                      </div>
+                    )}
+                    {imageSection.description && (
+                      <div className="text-gray-700 dark:text-gray-200">
+                        <MarkdownContent content={imageSection.description} />
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           )}
 

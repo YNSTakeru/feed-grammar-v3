@@ -6,6 +6,12 @@ export interface ArticleData {
     question: string;
     answer: string;
   }> | null;
+  image_sections?: Array<{
+    label: string;
+    time: string;
+    url: string;
+    description?: string;
+  }>;
   remember?: string;
   introduction: string;
   section_1: {

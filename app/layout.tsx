@@ -1,6 +1,7 @@
 import { ConsentProvider } from "@/components/consent-provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import "react-tweet/theme.css";
 import "./globals.css";
 import { GoogleAnalytics } from "./google-analytics";
 
