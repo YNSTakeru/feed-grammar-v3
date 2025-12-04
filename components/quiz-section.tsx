@@ -15,6 +15,7 @@ interface QuizSectionProps {
   youtubeUrl: string;
   onAnswered?: () => void;
   hideQuiz?: boolean;
+  onTimeUpdate?: (time: number) => void;
 }
 
 export function QuizSection({
@@ -26,6 +27,7 @@ export function QuizSection({
   youtubeUrl,
   onAnswered,
   hideQuiz = false,
+  onTimeUpdate,
 }: QuizSectionProps) {
   return (
     <div className="space-y-6">
@@ -34,9 +36,11 @@ export function QuizSection({
         <Card>
           <CardContent className="p-6 pb-0">
             <YouTubePlayer
+              key={`yt-${videoId}-${startTime}-${endTime}`}
               videoId={videoId}
               startTime={startTime}
               endTime={endTime}
+              onTimeUpdate={onTimeUpdate}
             />
           </CardContent>
         </Card>

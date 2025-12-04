@@ -12,6 +12,7 @@ interface YouTubePlayerProps {
   endTime: number;
   autoPlay?: boolean;
   loop?: boolean;
+  onTimeUpdate?: (time: number) => void;
 }
 
 declare global {
@@ -36,7 +37,13 @@ export function YouTubePlayer({
   endTime,
   autoPlay = true,
   loop = true,
+  onTimeUpdate,
 }: YouTubePlayerProps) {
+  // 【デバッグ】受け取ったプロップの値を確認
+  console.log(
+    `[YouTubePlayer] Props received - videoId: ${videoId}, startTime: ${startTime}, endTime: ${endTime}, loop: ${loop}`
+  );
+
   const playerRef = useRef<any>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const videoContainerRef = useRef<HTMLDivElement>(null);
@@ -54,19 +61,24 @@ export function YouTubePlayer({
   const updateProgress = useCallback(() => {
     if (playerRef.current && playerRef.current.getCurrentTime) {
       const current = playerRef.current.getCurrentTime();
-      // console.log(
-      //   `[updateProgress] 現在時刻: ${current.toFixed(
-      //     2
-      //   )}s (範囲: ${startTime}s - ${endTime}s)`
-      // );
+      console.log(
+        `[updateProgress] 現在時刻: ${current.toFixed(
+          2
+        )}s (範囲: ${startTime}s - ${endTime}s)`
+      );
       setCurrentTime(current);
+
+      // 親コンポーネントに現在時刻を通知
+      if (onTimeUpdate) {
+        onTimeUpdate(current);
+      }
 
       if (current >= startTime && current <= endTime) {
         const progressValue = ((current - startTime) / duration) * 100;
         setProgress(Math.min(progressValue, 100));
       }
     }
-  }, [startTime, endTime, duration]);
+  }, [startTime, endTime, duration, onTimeUpdate]);
 
   // 【機能】再生ボタンが押された時の処理
   // 現在位置がendTimeを超えているか、startTimeより前なら、startTimeに巻き戻してから再生
@@ -182,18 +194,18 @@ export function YouTubePlayer({
                       // Loop back to start when reaching end time
                       // 【ループ判定】現在時刻がendTimeの0.1秒手前に到達したらループ
                       if (current >= endTime - 0.1) {
-                        // console.log(
-                        //   `[Loop Check] endTime到達! 現在: ${current.toFixed(
-                        //     2
-                        //   )}s, endTime: ${endTime}s`
-                        // );
+                        console.log(
+                          `[Loop Check] endTime到達! 現在: ${current.toFixed(
+                            2
+                          )}s, endTime: ${endTime}s, startTime: ${startTime}s`
+                        );
                         if (loop) {
-                          // console.log(
-                          //   `[Loop] ${startTime}s にシークしてループ再生`
-                          // );
+                          console.log(
+                            `[Loop] ${startTime}s にシークしてループ再生`
+                          );
                           playerRef.current.seekTo(startTime, true);
                         } else {
-                          // console.log("[Loop] ループ無効のため一時停止");
+                          console.log("[Loop] ループ無効のため一時停止");
                           playerRef.current.pauseVideo();
                         }
                       }
@@ -217,8 +229,12 @@ export function YouTubePlayer({
     }
 
     return () => {
+      console.log(
+        `[YouTubePlayer] Cleanup - Destroying player for videoId: ${videoId}`
+      );
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
+        intervalRef.current = null;
       }
       if (playerRef.current) {
         playerRef.current.destroy();

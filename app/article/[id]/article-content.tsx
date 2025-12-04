@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 declare global {
   interface Window {
@@ -86,6 +86,15 @@ export function ArticleContent({
     Set<number>
   >(new Set());
   const pathname = usePathname();
+  const [currentVideoTime, setCurrentVideoTime] = useState<number>(startTime);
+  const lastUpdateTimeRef = useRef<number>(startTime);
+
+  // YouTube動画の現在時刻を更新するコールバック
+  // image_sectionsの切り替えポイントを検知するため、常に更新
+  const handleTimeUpdate = useCallback((time: number) => {
+    lastUpdateTimeRef.current = time;
+    setCurrentVideoTime(time);
+  }, []);
 
   // Twitter埋め込み: ページ遷移時にウィジェットを再読み込み
   useEffect(() => {
@@ -331,6 +340,7 @@ export function ArticleContent({
               questionKatakana={questionKatakana}
               youtubeUrl={youtubeUrl}
               onAnswered={() => setShowArticle(true)}
+              onTimeUpdate={handleTimeUpdate}
             />
           </div>
           <FloatingNavigation
@@ -459,6 +469,118 @@ export function ArticleContent({
                   </div>
                 );
               })}
+            </div>
+          )}
+
+          {/* Time-synced Tweet Display */}
+          {article.image_sections && article.image_sections.length > 0 && (
+            <div className="mb-8">
+              <h3 className="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-4">
+                🎬 動画連動イメージ
+              </h3>
+              <div className="p-5 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 rounded-lg border-2 border-purple-200 dark:border-purple-800">
+                {(() => {
+                  // 現在の時刻に基づいて表示するツイートを決定
+                  const sortedSections = [...article.image_sections].sort(
+                    (a, b) => parseFloat(a.time) - parseFloat(b.time)
+                  );
+
+                  // section.timeは動画の絶対時刻なので、currentVideoTimeと直接比較
+                  console.log(
+                    `[Quiz Mode] currentVideoTime: ${currentVideoTime.toFixed(
+                      2
+                    )}s`
+                  );
+                  console.log(
+                    `[Quiz Mode] Sections:`,
+                    sortedSections.map((s) => `${s.label}(${s.time}s)`)
+                  );
+
+                  // 現在の時刻を超えている最後のセクションを見つける
+                  let currentSection = sortedSections[0];
+                  for (const section of sortedSections) {
+                    const sectionTime = parseFloat(section.time);
+                    if (currentVideoTime >= sectionTime) {
+                      currentSection = section;
+                    } else {
+                      break;
+                    }
+                  }
+
+                  console.log(
+                    `[Quiz Mode] Selected: ${currentSection.label} (${currentSection.time}s)`
+                  );
+
+                  const tweetId =
+                    currentSection.url?.match(/TWEET_ID:(\d+)/)?.[1];
+
+                  return (
+                    <>
+                      <div className="mb-3 flex items-center justify-between">
+                        <h4 className="text-xl font-bold text-purple-900 dark:text-purple-200">
+                          {currentSection.label}
+                        </h4>
+                        <span className="text-sm text-purple-600 dark:text-purple-400 font-mono">
+                          {parseFloat(currentSection.time).toFixed(1)}秒
+                        </span>
+                      </div>
+
+                      {tweetId && (
+                        <div className="mb-4">
+                          <Tweet id={tweetId} />
+                        </div>
+                      )}
+
+                      {currentSection.description && (
+                        <div className="mb-3 text-gray-700 dark:text-gray-200">
+                          <MarkdownContent
+                            content={currentSection.description}
+                          />
+                        </div>
+                      )}
+
+                      {currentSection.image_suggestion && (
+                        <div className="mt-2 p-3 bg-purple-100/50 dark:bg-purple-900/20 rounded border-l-4 border-purple-400 dark:border-purple-600">
+                          <p className="text-sm text-gray-600 dark:text-gray-300">
+                            <span className="font-semibold">💡 イメージ: </span>
+                            {currentSection.image_suggestion}
+                          </p>
+                        </div>
+                      )}
+
+                      {/* タイムライン表示 */}
+                      <div className="mt-4 pt-4 border-t border-purple-200 dark:border-purple-800">
+                        <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+                          タイムライン:
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          {sortedSections.map((section, idx) => {
+                            const isActive =
+                              section.label === currentSection.label;
+                            const isPast =
+                              currentVideoTime >= parseFloat(section.time);
+                            return (
+                              <span
+                                key={idx}
+                                className={`px-2 py-1 rounded text-xs font-medium ${
+                                  isActive
+                                    ? "bg-purple-600 text-white"
+                                    : isPast
+                                    ? "bg-purple-200 dark:bg-purple-800 text-purple-900 dark:text-purple-100"
+                                    : "bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400"
+                                }`}
+                              >
+                                {section.label} (
+                                {parseFloat(section.time).toFixed(1)}s)
+                              </span>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    </>
+                  );
+                })()}
+              </div>
             </div>
           )}
 
@@ -717,6 +839,7 @@ export function ArticleContent({
               questionKatakana={questionKatakana}
               youtubeUrl={youtubeUrl}
               hideQuiz={true}
+              onTimeUpdate={handleTimeUpdate}
             />
           </div>
 
@@ -828,6 +951,127 @@ export function ArticleContent({
                   </div>
                 );
               })}
+            </div>
+          )}
+
+          {/* ここに追加 */}
+          {/* Time-synced Tweet Display */}
+          {article.image_sections && article.image_sections.length > 0 && (
+            <div className="mb-8">
+              <h3 className="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-4">
+                🎬 動画連動イメージ
+              </h3>
+              <div className="p-5 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 rounded-lg border-2 border-purple-200 dark:border-purple-800">
+                {(() => {
+                  // 現在の時刻に基づいて表示するツイートを決定
+                  const sortedSections = [...article.image_sections].sort(
+                    (a, b) => parseFloat(a.time) - parseFloat(b.time)
+                  );
+
+                  // section.timeは動画の絶対時刻なので、currentVideoTimeと直接比較
+                  console.log(
+                    `[Article Mode] currentVideoTime: ${currentVideoTime.toFixed(
+                      2
+                    )}s`
+                  );
+                  console.log(
+                    `[Article Mode] Sections:`,
+                    sortedSections.map((s) => `${s.label}(${s.time}s)`)
+                  );
+
+                  // 現在の時刻を超えている最後のセクションを見つける
+                  let currentSection = sortedSections[0];
+                  for (const section of sortedSections) {
+                    const sectionTime = parseFloat(section.time);
+                    const isMatch = currentVideoTime >= sectionTime;
+                    console.log(
+                      `[Article Mode] Checking ${
+                        section.label
+                      }: sectionTime=${sectionTime}, currentVideoTime=${currentVideoTime.toFixed(
+                        2
+                      )}, match=${isMatch}`
+                    );
+                    if (isMatch) {
+                      currentSection = section;
+                    } else {
+                      break;
+                    }
+                  }
+
+                  console.log(
+                    `[Article Mode] Selected: ${currentSection.label} (${currentSection.time}s)`
+                  );
+
+                  const tweetId =
+                    currentSection.url?.match(/TWEET_ID:(\d+)/)?.[1];
+
+                  return (
+                    <>
+                      <div className="mb-3 flex items-center justify-between">
+                        <h4 className="text-xl font-bold text-purple-900 dark:text-purple-200">
+                          {currentSection.label}
+                        </h4>
+                        <span className="text-sm text-purple-600 dark:text-purple-400 font-mono">
+                          {parseFloat(currentSection.time).toFixed(1)}秒
+                        </span>
+                      </div>
+
+                      {tweetId && (
+                        <div className="mb-4">
+                          <Tweet id={tweetId} />
+                        </div>
+                      )}
+
+                      {currentSection.description && (
+                        <div className="mb-3 text-gray-700 dark:text-gray-200">
+                          <MarkdownContent
+                            content={currentSection.description}
+                          />
+                        </div>
+                      )}
+
+                      {currentSection.image_suggestion && (
+                        <div className="mt-2 p-3 bg-purple-100/50 dark:bg-purple-900/20 rounded border-l-4 border-purple-400 dark:border-purple-600">
+                          <p className="text-sm text-gray-600 dark:text-gray-300">
+                            <span className="font-semibold">💡 イメージ: </span>
+                            {currentSection.image_suggestion}
+                          </p>
+                        </div>
+                      )}
+
+                      {/* タイムライン表示 */}
+                      <div className="mt-4 pt-4 border-t border-purple-200 dark:border-purple-800">
+                        <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+                          タイムライン:
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          {sortedSections.map((section, idx) => {
+                            const isActive =
+                              section.label === currentSection.label;
+                            const isPast =
+                              currentVideoTime >= parseFloat(section.time);
+                            return (
+                              <span
+                                key={idx}
+                                className={`px-2 py-1 rounded text-xs font-medium ${
+                                  isActive
+                                    ? "bg-purple-600 text-white"
+                                    : isPast
+                                    ? "bg-purple-200 dark:bg-purple-800 text-purple-900 dark:text-purple-100"
+                                    : "bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400"
+                                }`}
+                              >
+                                {section.label} (
+                                {parseFloat(section.time).toFixed(1)}s)
+                              </span>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    </>
+                  );
+                })()}
+              </div>
             </div>
           )}
 
