@@ -126,6 +126,22 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     } else {
       article = item.article_text as ArticleData;
     }
+
+    // Merge image_sections: combine article_text.image_sections with item.image_sections
+    if (article.image_sections && item.image_sections) {
+      // Merge by matching label
+      article.image_sections = article.image_sections.map((articleSection) => {
+        const itemSection = item.image_sections?.find(
+          (s) => s.label === articleSection.label
+        );
+        return {
+          ...articleSection,
+          url: itemSection?.url || articleSection.url,
+        };
+      });
+    } else if (item.image_sections) {
+      article.image_sections = item.image_sections;
+    }
   } catch (error) {
     console.error("Failed to parse article_text:", error);
     console.error("Article ID:", item.id);

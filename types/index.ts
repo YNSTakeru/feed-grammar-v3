@@ -10,7 +10,9 @@ export interface ArticleData {
     label: string;
     time: string;
     url: string;
+    image_display_instruction?: string;
     description?: string;
+    image_suggestion?: string;
   }>;
   remember?: string;
   introduction: string;
@@ -58,4 +60,12 @@ export interface FeedItem {
   kugiri_eng: string;
   kugiri_jp: string;
   is_similar: number;
+  image_sections?: Array<{
+    label: string;
+    time: string;
+    url: string;
+    image_display_instruction?: string;
+    description?: string;
+    image_suggestion?: string;
+  }>;
 }

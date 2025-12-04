@@ -8,6 +8,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { progressDB } from "@/lib/db/progress-db";
 import { ArticleData, FeedItem } from "@/types";
+import { Tweet } from "react-tweet";
+
 import {
   ArrowLeft,
   ArrowRight,
@@ -17,9 +19,18 @@ import {
   Volume2,
 } from "lucide-react";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { Tweet } from "react-tweet";
+
+declare global {
+  interface Window {
+    twttr?: {
+      widgets: {
+        load: () => void;
+      };
+    };
+  }
+}
 
 interface ArticleContentProps {
   videoId: string;
@@ -74,6 +85,14 @@ export function ArticleContent({
   const [similarItemsCompleted, setSimilarItemsCompleted] = useState<
     Set<number>
   >(new Set());
+  const pathname = usePathname();
+
+  // Twitter埋め込み: ページ遷移時にウィジェットを再読み込み
+  useEffect(() => {
+    if (typeof window.twttr === "object") {
+      window.twttr.widgets.load();
+    }
+  }, [pathname]);
 
   // 初期化時にアンロック状態と完了状態を確認
   useEffect(() => {
@@ -110,10 +129,15 @@ export function ArticleContent({
         const needsReviewStatus = await progressDB.needsReview(currentId);
         setNeedsReview(needsReviewStatus);
 
-        // nextIdのアンロック状態もチェック
+        // nextIdのアンロック状態もチェック（類似問題の場合は常にアンロック）
         if (nextId) {
-          const nextUnlocked = await progressDB.isUnlocked(nextId);
-          setIsNextUnlocked(nextUnlocked);
+          if (isSimilar === 1) {
+            // 類似問題の場合は、ナビゲーションに制限をかけない
+            setIsNextUnlocked(true);
+          } else {
+            const nextUnlocked = await progressDB.isUnlocked(nextId);
+            setIsNextUnlocked(nextUnlocked);
+          }
         }
       } catch (error) {
         console.error("Failed to check status:", error);
@@ -154,12 +178,8 @@ export function ArticleContent({
         await progressDB.updateReviewStatus(currentId);
         console.log("Review status updated for article", currentId);
 
-        // similarが1の場合は次の類似問題に遷移
-        if (isSimilar === 1 && similarItems && similarItems.length > 0) {
-          setTimeout(() => {
-            router.push(`/article/${similarItems[0].id}?mode=article`);
-          }, 500);
-        } else if (nextId) {
+        // 次の問題に遷移（類似問題でもnextIdを使用）
+        if (nextId) {
           setTimeout(() => {
             router.push(`/article/${nextId}?mode=article`);
           }, 500);
@@ -174,12 +194,8 @@ export function ArticleContent({
           setIsNextUnlocked(true);
         }
 
-        // similarが1の場合は次の類似問題に遷移
-        if (isSimilar === 1 && similarItems && similarItems.length > 0) {
-          setTimeout(() => {
-            router.push(`/article/${similarItems[0].id}?mode=article`);
-          }, 1000);
-        } else if (nextId) {
+        // 次の問題に遷移（類似問題でもnextIdを使用）
+        if (nextId) {
           setTimeout(() => {
             router.push(`/article/${nextId}?mode=article`);
           }, 1000);
@@ -402,26 +418,42 @@ export function ArticleContent({
               </h3>
               {article.image_sections.map((imageSection, index) => {
                 const tweetId = imageSection.url?.match(/TWEET_ID:(\d+)/)?.[1];
-                const displayLabel = imageSection.label.replace(/ /g, '_');
-                
+
                 return (
                   <div
                     key={index}
                     className="p-5 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 rounded-lg border-2 border-blue-200 dark:border-blue-800"
                   >
-                    <div className="mb-3">
-                      <h4 className="text-lg font-bold text-blue-800 dark:text-blue-300">
-                        【ここに{displayLabel}の画像を表示】
-                      </h4>
-                    </div>
+                    {/* Label */}
+                    {imageSection.label && (
+                      <div className="mb-3">
+                        <h4 className="text-xl font-bold text-blue-900 dark:text-blue-200">
+                          {imageSection.label}
+                        </h4>
+                      </div>
+                    )}
+
+                    {/* Tweet */}
                     {tweetId && (
                       <div className="mb-4">
                         <Tweet id={tweetId} />
                       </div>
                     )}
+
+                    {/* Description */}
                     {imageSection.description && (
-                      <div className="text-gray-700 dark:text-gray-200">
+                      <div className="mb-3 text-gray-700 dark:text-gray-200">
                         <MarkdownContent content={imageSection.description} />
+                      </div>
+                    )}
+
+                    {/* Image Suggestion */}
+                    {imageSection.image_suggestion && (
+                      <div className="mt-2 p-3 bg-blue-100/50 dark:bg-blue-900/20 rounded border-l-4 border-blue-400 dark:border-blue-600">
+                        <p className="text-sm text-gray-600 dark:text-gray-300">
+                          <span className="font-semibold">💡 イメージ: </span>
+                          {imageSection.image_suggestion}
+                        </p>
                       </div>
                     )}
                   </div>
@@ -755,26 +787,42 @@ export function ArticleContent({
               </h3>
               {article.image_sections.map((imageSection, index) => {
                 const tweetId = imageSection.url?.match(/TWEET_ID:(\d+)/)?.[1];
-                const displayLabel = imageSection.label.replace(/ /g, '_');
-                
+
                 return (
                   <div
                     key={index}
                     className="p-5 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 rounded-lg border-2 border-blue-200 dark:border-blue-800"
                   >
-                    <div className="mb-3">
-                      <h4 className="text-lg font-bold text-blue-800 dark:text-blue-300">
-                        【ここに{displayLabel}の画像を表示】
-                      </h4>
-                    </div>
+                    {/* Label */}
+                    {imageSection.label && (
+                      <div className="mb-3">
+                        <h4 className="text-xl font-bold text-blue-900 dark:text-blue-200">
+                          {imageSection.label}
+                        </h4>
+                      </div>
+                    )}
+
+                    {/* Tweet */}
                     {tweetId && (
                       <div className="mb-4">
                         <Tweet id={tweetId} />
                       </div>
                     )}
+
+                    {/* Description */}
                     {imageSection.description && (
-                      <div className="text-gray-700 dark:text-gray-200">
+                      <div className="mb-3 text-gray-700 dark:text-gray-200">
                         <MarkdownContent content={imageSection.description} />
+                      </div>
+                    )}
+
+                    {/* Image Suggestion */}
+                    {imageSection.image_suggestion && (
+                      <div className="mt-2 p-3 bg-blue-100/50 dark:bg-blue-900/20 rounded border-l-4 border-blue-400 dark:border-blue-600">
+                        <p className="text-sm text-gray-600 dark:text-gray-300">
+                          <span className="font-semibold">💡 イメージ: </span>
+                          {imageSection.image_suggestion}
+                        </p>
                       </div>
                     )}
                   </div>
