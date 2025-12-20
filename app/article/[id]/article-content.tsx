@@ -436,10 +436,10 @@ export function ArticleContent({
                   >
                     {/* Label */}
                     {imageSection.label && (
-                      <div className="mb-3">
-                        <h4 className="text-xl font-bold text-blue-900 dark:text-blue-200">
-                          {imageSection.label}
-                        </h4>
+                      <div className="mb-4">
+                        <span className="inline-block px-4 py-2 rounded-full bg-blue-600 dark:bg-blue-500 text-white text-lg font-bold shadow-md">
+                          🎯 {imageSection.label}
+                        </span>
                       </div>
                     )}
 
@@ -516,11 +516,11 @@ export function ArticleContent({
 
                   return (
                     <>
-                      <div className="mb-3 flex items-center justify-between">
-                        <h4 className="text-xl font-bold text-purple-900 dark:text-purple-200">
-                          {currentSection.label}
-                        </h4>
-                        <span className="text-sm text-purple-600 dark:text-purple-400 font-mono">
+                      <div className="mb-4 flex items-center justify-between flex-wrap gap-2">
+                        <span className="inline-block px-4 py-2 rounded-full bg-purple-600 dark:bg-purple-500 text-white text-lg font-bold shadow-md">
+                          🎯 {currentSection.label}
+                        </span>
+                        <span className="px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 text-sm font-mono font-semibold">
                           {parseFloat(currentSection.time).toFixed(1)}秒
                         </span>
                       </div>
@@ -918,10 +918,10 @@ export function ArticleContent({
                   >
                     {/* Label */}
                     {imageSection.label && (
-                      <div className="mb-3">
-                        <h4 className="text-xl font-bold text-blue-900 dark:text-blue-200">
-                          {imageSection.label}
-                        </h4>
+                      <div className="mb-4">
+                        <span className="inline-block px-4 py-2 rounded-full bg-blue-600 dark:bg-blue-500 text-white text-lg font-bold shadow-md">
+                          🎯 {imageSection.label}
+                        </span>
                       </div>
                     )}
 
@@ -1007,11 +1007,11 @@ export function ArticleContent({
 
                   return (
                     <>
-                      <div className="mb-3 flex items-center justify-between">
-                        <h4 className="text-xl font-bold text-purple-900 dark:text-purple-200">
-                          {currentSection.label}
-                        </h4>
-                        <span className="text-sm text-purple-600 dark:text-purple-400 font-mono">
+                      <div className="mb-4 flex items-center justify-between flex-wrap gap-2">
+                        <span className="inline-block px-4 py-2 rounded-full bg-purple-600 dark:bg-purple-500 text-white text-lg font-bold shadow-md">
+                          🎯 {currentSection.label}
+                        </span>
+                        <span className="px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 text-sm font-mono font-semibold">
                           {parseFloat(currentSection.time).toFixed(1)}秒
                         </span>
                       </div>
