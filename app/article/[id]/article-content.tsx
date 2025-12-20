@@ -89,12 +89,82 @@ export function ArticleContent({
   const [currentVideoTime, setCurrentVideoTime] = useState<number>(startTime);
   const lastUpdateTimeRef = useRef<number>(startTime);
 
+  // スクロールアニメーション用のstate
+  const [visibleSections, setVisibleSections] = useState<Set<number>>(
+    new Set()
+  );
+  const [animationStage, setAnimationStage] = useState<
+    Map<number, "label-big" | "label-small" | "tweet">
+  >(new Map());
+  const sectionRefs = useRef<Map<number, HTMLDivElement>>(new Map());
+  const [shouldInitObservers, setShouldInitObservers] = useState(false);
+
   // YouTube動画の現在時刻を更新するコールバック
   // image_sectionsの切り替えポイントを検知するため、常に更新
   const handleTimeUpdate = useCallback((time: number) => {
     lastUpdateTimeRef.current = time;
     setCurrentVideoTime(time);
   }, []);
+
+  // 記事が表示されたらIntersection Observerを初期化
+  useEffect(() => {
+    if (showArticle) {
+      // 少し遅延させてDOM要素が確実に登録されるのを待つ
+      const timer = setTimeout(() => {
+        setShouldInitObservers(true);
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [showArticle]);
+
+  // スクロールアニメーション: Intersection Observer設定
+  useEffect(() => {
+    if (!shouldInitObservers || sectionRefs.current.size === 0) return;
+
+    const observers: IntersectionObserver[] = [];
+    const observedIndices = new Set<number>();
+
+    sectionRefs.current.forEach((element, index) => {
+      if (!element || observedIndices.has(index)) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting && !visibleSections.has(index)) {
+            // セクションが表示されたら、アニメーション開始
+            setVisibleSections((prev) => new Set(prev).add(index));
+            setAnimationStage((prev) => new Map(prev).set(index, "label-big"));
+
+            // 500ms後にラベルを縮小
+            setTimeout(() => {
+              setAnimationStage((prev) =>
+                new Map(prev).set(index, "label-small")
+              );
+            }, 500);
+
+            // 800ms後にツイートを表示
+            setTimeout(() => {
+              setAnimationStage((prev) => new Map(prev).set(index, "tweet"));
+            }, 800);
+
+            // 一度だけ実行するためdisconnect
+            observer.disconnect();
+          }
+        },
+        {
+          threshold: 0.3,
+          rootMargin: "0px 0px -50px 0px",
+        }
+      );
+
+      observer.observe(element);
+      observers.push(observer);
+      observedIndices.add(index);
+    });
+
+    return () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, [shouldInitObservers]);
 
   // Twitter埋め込み: ページ遷移時にウィジェットを再読み込み
   useEffect(() => {
@@ -428,15 +498,30 @@ export function ArticleContent({
               </h3>
               {article.image_sections.map((imageSection, index) => {
                 const tweetId = imageSection.url?.match(/TWEET_ID:(\d+)/)?.[1];
+                const stage = animationStage.get(index);
 
                 return (
                   <div
                     key={index}
+                    ref={(el) => {
+                      if (el) sectionRefs.current.set(index, el);
+                    }}
                     className="p-5 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 rounded-lg border-2 border-blue-200 dark:border-blue-800"
                   >
                     {/* Label */}
                     {imageSection.label && (
-                      <div className="mb-4">
+                      <div
+                        className={`mb-4 transition-transform duration-300 ${
+                          stage === "label-big"
+                            ? "scale-125 animate-in zoom-in-50"
+                            : stage === "label-small" || stage === "tweet"
+                            ? "scale-100"
+                            : "scale-100 opacity-0"
+                        }`}
+                        style={{
+                          transformOrigin: "left center",
+                        }}
+                      >
                         <span className="inline-block px-4 py-2 rounded-full bg-blue-600 dark:bg-blue-500 text-white text-lg font-bold shadow-md">
                           🎯 {imageSection.label}
                         </span>
@@ -445,7 +530,13 @@ export function ArticleContent({
 
                     {/* Tweet */}
                     {tweetId && (
-                      <div className="mb-4">
+                      <div
+                        className={`mb-4 transition-all duration-500 ${
+                          stage === "tweet"
+                            ? "opacity-100 animate-in fade-in-0 slide-in-from-bottom-4"
+                            : "opacity-0 translate-y-4"
+                        }`}
+                      >
                         <Tweet id={tweetId} />
                       </div>
                     )}
@@ -910,15 +1001,30 @@ export function ArticleContent({
               </h3>
               {article.image_sections.map((imageSection, index) => {
                 const tweetId = imageSection.url?.match(/TWEET_ID:(\d+)/)?.[1];
+                const stage = animationStage.get(index);
 
                 return (
                   <div
                     key={index}
+                    ref={(el) => {
+                      if (el) sectionRefs.current.set(index, el);
+                    }}
                     className="p-5 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 rounded-lg border-2 border-blue-200 dark:border-blue-800"
                   >
                     {/* Label */}
                     {imageSection.label && (
-                      <div className="mb-4">
+                      <div
+                        className={`mb-4 transition-transform duration-300 ${
+                          stage === "label-big"
+                            ? "scale-125 animate-in zoom-in-50"
+                            : stage === "label-small" || stage === "tweet"
+                            ? "scale-100"
+                            : "scale-100 opacity-0"
+                        }`}
+                        style={{
+                          transformOrigin: "left center",
+                        }}
+                      >
                         <span className="inline-block px-4 py-2 rounded-full bg-blue-600 dark:bg-blue-500 text-white text-lg font-bold shadow-md">
                           🎯 {imageSection.label}
                         </span>
@@ -927,7 +1033,13 @@ export function ArticleContent({
 
                     {/* Tweet */}
                     {tweetId && (
-                      <div className="mb-4">
+                      <div
+                        className={`mb-4 transition-all duration-500 ${
+                          stage === "tweet"
+                            ? "opacity-100 animate-in fade-in-0 slide-in-from-bottom-4"
+                            : "opacity-0 translate-y-4"
+                        }`}
+                      >
                         <Tweet id={tweetId} />
                       </div>
                     )}
