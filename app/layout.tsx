@@ -1,4 +1,6 @@
 import { ConsentProvider } from "@/components/consent-provider";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "react-tweet/theme.css";
@@ -37,10 +39,14 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
         {gaId && <GoogleAnalytics gaId={gaId} />}
-        <ConsentProvider>{children}</ConsentProvider>
+        <SiteHeader />
+        <ConsentProvider>
+          <main className="flex-1">{children}</main>
+        </ConsentProvider>
+        <SiteFooter />
       </body>
     </html>
   );
