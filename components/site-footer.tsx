@@ -19,6 +19,12 @@ export function SiteFooter() {
               ホーム
             </Link>
             <Link
+              href="/about"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              運営者情報
+            </Link>
+            <Link
               href="/privacy"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >

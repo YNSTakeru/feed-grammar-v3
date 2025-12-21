@@ -26,6 +26,12 @@ export function SiteHeader() {
           </Link>
           <nav className="flex items-center gap-3 md:gap-4 text-xs md:text-sm">
             <Link
+              href="/about"
+              className="text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap"
+            >
+              運営者情報
+            </Link>
+            <Link
               href="https://docs.google.com/forms/d/e/1FAIpQLScp4BT5_Av0x-tYYaE8-c91KfOXo87zfTkA68Fiaen_vpeTSA/viewform"
               target="_blank"
               rel="noopener noreferrer"
