@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Feed Grammar - 英語の発音とリスニング学習",
+  title: "Feed Grammar | YouTubeで学ぶ英語リスニング講座",
   description:
-    "YouTubeから学ぶ英語の発音とリスニング。ネイティブの自然な発音変化を理解して、リスニング力を向上させましょう。",
+    "YouTubeの実際の会話シーンで学ぶ英語リスニング講座。ネイティブの自然な発音変化を理解して、リスニング力を向上させる教育メディアです。各レッスンで丁寧に解説します。",
   icons: {
     icon: "/logo.svg",
   },

@@ -4,7 +4,7 @@
     "url": "https://www.youtube.com/watch?v=Ij1o5zGDCeE",
     "start_time": "8",
     "end_time": "11",
-    "updated_at": "2025-12-20T17:58:21.440Z",
+    "updated_at": "2025-12-21T05:42:39.019Z",
     "question": "Some of us don’t want to think back to our childhoods",
     "question_katakana": "【サマ】〈ヴァス〉 【ドン】 【モア (モナ)】 【スィンク】 【バック】 〈ワ〉 【チャイルドウッズ】",
     "article_text": {
@@ -100,7 +100,7 @@
         "answer": "to ourのtoの音が完全に消えて聞こえ、ourが「ワ」のように聞こえるのは、toが機能語であるため弱化して脱落（エリジョン）しやすいからです。さらにour自体も『アゥア』ではなく『アー』や『ワー』のように弱く発音されることが多く、特に速い会話ではourの前のtoが脱落し、ourが『ワ』だけのように聞こえてしまうのです。これは英語の文章では意味を持つ『内容語』を際立たせるために、『機能語』が犠牲になるリズムの特徴を示しています。"
       }
     ],
-    "image_learn": "[{\"label\":\"some of us\",\"time\":\"8\",\"url\":\"TWEET_ID:1996959664760869004\"},{\"label\":\"don't want to think back\",\"time\":\"8.6\",\"url\":\"TWEET_ID:1996959723535622457\"},{\"label\":\"to our childhoods\",\"time\":\"9.72\",\"url\":\"TWEET_ID:2002438343058190777\"}]",
+    "image_learn": "[{\"label\":\"some of us\",\"time\":\"8\",\"url\":\"TWEET_ID:1996959664760869004\"},{\"label\":\"don't want to think back\",\"time\":\"8.6\",\"url\":\"TWEET_ID:1996959723535622457\"},{\"label\":\"to our childhoods\",\"time\":\"9.72\",\"url\":\"TWEET_ID:2002615597704913023\"}]",
     "image_sections": [
       {
         "label": "some of us",
@@ -115,7 +115,7 @@
       {
         "label": "to our childhoods",
         "time": "9.72",
-        "url": "TWEET_ID:2002438343058190777"
+        "url": "TWEET_ID:2002615597704913023"
       }
     ],
     "kugiri_eng": "Some of us / don't / want to / think back / ＜to＞ our / childhoods",
