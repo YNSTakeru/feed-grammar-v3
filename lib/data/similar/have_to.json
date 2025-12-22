@@ -1,0 +1,431 @@
+[
+  {
+    "id": 38,
+    "url": "https://www.youtube.com/watch?v=P-lBlZ3hqKc",
+    "start_time": "485.4",
+    "end_time": "488.78",
+    "updated_at": "2025-12-22T08:48:17.327Z",
+    "question": "they have to put ideology and religion and ethnicity aside",
+    "question_katakana": "〈ゼ〉 【ハフ ト】 【プッ】 【イディオロジィ】 〈アン〉 【レリジョン】 〈アン〉 【エスニシディ】 【アサイド】",
+    "article_text": {
+      "title": "ネイティブの発音はこう聞こえる！『they have to put ideology and religion and ethnicity aside』の秘密",
+      "meta_description": "英語の『have to』が『ハフ ト』に聞こえる理由とは？イデオロギーや宗教、民族性を脇に置くというフレーズを題材に、ネイティブ特有の音の変化（リエゾン・弱化）をプロが分かりやすく解説します。",
+      "katakana_weak_strong": "〈ゼ〉 【ハフ ト】 【プッ】 【イディオロジィ】 〈アン〉 【レリジョン】 〈アン〉 【エスニシディ】 【アサイド】",
+      "kugiri_eng": "they have to / put / ideology / and / religion / and / ethnicity / aside",
+      "kugiri_jp": "〈ゼ〉 【ハフ ト】 / 【プッ】 / 【イディオロジィ】 / 〈アン〉 / 【レリジョン】 / 〈アン〉 / 【エスニシディ】 / 【アサイド】",
+      "translated": "彼らは、イデオロギーや宗教、そして民族性を脇に置かなければなりません。",
+      "tsukkomi": [
+        {
+          "question": "have to は ハブ トゥ じゃなくて ハフ ト !?",
+          "answer": "have toが「ハフ ト」と聞こえるのは、直後の無声音[t]に引きずられて、haveの終わりの[v]が[f]に無声化するためです。さらに、toの母音も弱形（シュワ音）になり、「ハフ ト」のように短く発音されます。"
+        },
+        {
+          "question": "they は ゼイ じゃなくて ゼ!?",
+          "answer": "theyが「ゼ」と短く聞こえるのは、文の冒頭にある代名詞（機能語）として弱く発音されるためです。二重母音の[ei]が最後までハッキリ発音されず、脱落に近い形で短縮されることで「ゼ」のように聞こえます。"
+        },
+        {
+          "question": "ethnicity は エスニシティ じゃなくて エスニシディ！？",
+          "answer": "アメリカ英語では、母音に挟まれた[t]の音が、日本語の「ラ行」や[d]に近い音に変化する「フラップT」という現象が起こります。そのため「シティ」ではなく「シディ」のように濁った滑らかな音に聞こえるのです。"
+        },
+        {
+          "question": "and は アンドじゃなくて アン!?",
+          "answer": "andの最後の[d]は、次にくる単語が子音で始まる場合や、文中で素早く発音される場合に非常に脱落（消失）しやすい音です。そのため[d]を言わず「アン」とだけ発音されるのが一般的です。"
+        },
+        {
+          "question": "ideology は イデオロギーじゃなくて イディオロジー！？",
+          "answer": "英語のideologyの発音は、ドイツ語由来の日本語「イデオロギー」とは異なります。英語では[ˌaɪdiˈɑːlədʒi]のように発音されるため、カタカナでは「イディオロジィ」の方が英語本来の音に近くなります。"
+        }
+      ],
+      "image_sections": [
+        {
+          "label": "they have to ",
+          "time": "485.4",
+          "image_display_instruction": "【ここにthey_have_to_の画像を表示】",
+          "description": "「彼らは〜しなければならない」という義務や必要性を表します。話し手が対象者に強い必要性を感じている様子をイメージしましょう。",
+          "image_suggestion": "人々が真剣な表情で合意に向かおうとしている、あるいはルールに従おうとしている会議のシーン"
+        },
+        {
+          "label": "put ideology",
+          "time": "485.7",
+          "image_display_instruction": "【ここにput_ideologyの画像を表示】",
+          "description": "「イデオロギーを置く（脇にやる）」という意味です。自分の信念や思想を一旦どこかへ移動させるイメージです。",
+          "image_suggestion": "「Ideology」と書かれた本や書類を、机の端へそっと避けている手元のアップ"
+        },
+        {
+          "label": " and religion",
+          "time": "486.9",
+          "image_display_instruction": "【ここに_and_religionの画像を表示】",
+          "description": "「そして宗教も」と付け加えています。イデオロギーに続き、宗教的な背景も考慮から外すニュアンスです。",
+          "image_suggestion": "宗教的なシンボルが描かれたアイコンが、先ほど避けた書類の隣に並べられる様子"
+        },
+        {
+          "label": "and ethnicity aside",
+          "time": "487.7",
+          "image_display_instruction": "【ここにand_ethnicity_asideの画像を表示】",
+          "description": "「そして民族性も脇に」という意味です。aside（脇へ）という言葉が、これら全てを議論の中心から外す動作を完結させます。",
+          "image_suggestion": "思想、宗教、民族を表す全てのアイテムがテーブルの端（aside）に綺麗に避けられ、中心に広いスペースができる様子"
+        }
+      ],
+      "remember": "「put ... aside」(〜を脇に置く、無視する)は、感情や問題を一時的に置いておく際に非常に便利な熟語です。例：Let's put our differences aside.（違いはさておき協力しよう）\n\n「have to」(〜しなければならない)は、客観的な必要性を伝える日常表現です。例：I have to go now.（もう行かなくちゃ）\n\n「ethnicity」(民族性、エスニシティ)は、多様性の議論でよく使われる名詞です。例：People of every ethnicity were there.（あらゆる民族の人がそこにいた）",
+      "introduction": "「ネイティブの話すスピードが速すぎて聞き取れない」と感じたことはありませんか？実は、彼らは文字通りに発音しているのではなく、音を繋げたり、弱めたりして「楽に」話しているだけなのです。今回は、社会的なテーマを含む一文を題材に、その音の変化の仕組みを解明していきましょう。",
+      "section_1": {
+        "heading": "例文と意味",
+        "content": "今回の例文は『they have to put ideology and religion and ethnicity aside』です。「彼らは、イデオロギーや宗教、民族性を脇に置かなければならない」という意味になります。対立を乗り越えて話し合う際や、共通の目的のために個人的な背景を一旦忘れるべきだ、という状況で使われる非常に重みのあるフレーズです。"
+      },
+      "section_2": {
+        "heading": "発音のポイント",
+        "content": "まず驚くのは『have to』が「ハブ トゥ」ではなく「ハフ ト」と短く鋭く聞こえる点でしょう。さらに『and』も「アンド」の[d]が消えて「アン」に、そして『ethnicity』の[t]が濁って「エスニシディ」と変化しています。これらの変化は、英語特有のリズムを作るために必要な「省エネ発音」の結果なのです。"
+      },
+      "section_3": {
+        "heading": "なぜそう聞こえるの？",
+        "content": "英語には「機能語（代名詞や接続詞など）は弱く、内容語（名詞や動詞など）は強く」という明確な強弱のリズムがあります。theyやandが短くなるのは、それらが情報を繋ぐための脇役だからです。また、ethnicityが「シディ」に聞こえるのは、母音に囲まれた[t]を滑らかに発音しようとする『フラップT』という現象によるもので、アメリカ英語では非常に一般的です。"
+      },
+      "section_4": {
+        "heading": "学習のコツ",
+        "content": "リスニング上達の近道は、自分でもその音を真似して発音してみることです。特に『have to  ハフト』のようなパターンを丸ごと覚えてしまいましょう。シャドーイング（音源のすぐ後を追って発音する練習）を行う際は、カタカナの強弱記号【 】を意識して、強く読む場所と軽く流す場所のメリハリをつけると、一気にネイティブらしいリズムになります。"
+      },
+      "conclusion": "英語の音の変化は、ルールを知ってしまえば「なるほど！」という発見の連続です。耳で聞こえる音をそのまま受け入れることで、リスニング力は飛躍的に向上します。楽しみながら練習を続けていきましょう！",
+      "keywords": [
+        "英語発音",
+        "リエゾン",
+        "リスニング",
+        "英語学習",
+        "have to 発音",
+        "フラップT"
+      ]
+    },
+    "category": "最初の30フレーズ",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/P-lBlZ3hqKc/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/P-lBlZ3hqKc/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/P-lBlZ3hqKc/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/P-lBlZ3hqKc/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/P-lBlZ3hqKc/maxresdefault.jpg\"}",
+    "theme": "have to",
+    "noIndex": 0,
+    "is_similar": 1,
+    "pron_memo": "they は ゼ に聴こえる。 have to は ハフ ト に聴こえる。 ideologyでは イデオロジー に聴こえる。 ethnicity は エスニシディ　に聴こえる。",
+    "tsukkomi": [
+      {
+        "question": "have to は ハブ トゥ じゃなくて ハフ ト !?",
+        "answer": "have toが「ハフ ト」と聞こえるのは、直後の無声音[t]に引きずられて、haveの終わりの[v]が[f]に無声化するためです。さらに、toの母音も弱形（シュワ音）になり、「ハフ ト」のように短く発音されます。"
+      },
+      {
+        "question": "they は ゼイ じゃなくて ゼ!?",
+        "answer": "theyが「ゼ」と短く聞こえるのは、文の冒頭にある代名詞（機能語）として弱く発音されるためです。二重母音の[ei]が最後までハッキリ発音されず、脱落に近い形で短縮されることで「ゼ」のように聞こえます。"
+      },
+      {
+        "question": "ethnicity は エスニシティ じゃなくて エスニシディ！？",
+        "answer": "アメリカ英語では、母音に挟まれた[t]の音が、日本語の「ラ行」や[d]に近い音に変化する「フラップT」という現象が起こります。そのため「シティ」ではなく「シディ」のように濁った滑らかな音に聞こえるのです。"
+      },
+      {
+        "question": "and は アンドじゃなくて アン!?",
+        "answer": "andの最後の[d]は、次にくる単語が子音で始まる場合や、文中で素早く発音される場合に非常に脱落（消失）しやすい音です。そのため[d]を言わず「アン」とだけ発音されるのが一般的です。"
+      },
+      {
+        "question": "ideology は イデオロギーじゃなくて イディオロジー！？",
+        "answer": "英語のideologyの発音は、ドイツ語由来の日本語「イデオロギー」とは異なります。英語では[ˌaɪdiˈɑːlədʒi]のように発音されるため、カタカナでは「イディオロジィ」の方が英語本来の音に近くなります。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"they have to \",\"time\":\"485.4\",\"url\":\"TWEET_ID:2002764949064675656\"},{\"label\":\"put ideology\",\"time\":\"485.7\",\"url\":\"TWEET_ID:2002765032233615507\"},{\"label\":\" and religion\",\"time\":\"486.9\",\"url\":\"TWEET_ID:2002765071815229766\"},{\"label\":\"and ethnicity aside\",\"time\":\"487.7\",\"url\":\"TWEET_ID:2002765171731968337\"}]",
+    "image_sections": [
+      {
+        "label": "they have to ",
+        "time": "485.4",
+        "url": "TWEET_ID:2002764949064675656"
+      },
+      {
+        "label": "put ideology",
+        "time": "485.7",
+        "url": "TWEET_ID:2002765032233615507"
+      },
+      {
+        "label": " and religion",
+        "time": "486.9",
+        "url": "TWEET_ID:2002765071815229766"
+      },
+      {
+        "label": "and ethnicity aside",
+        "time": "487.7",
+        "url": "TWEET_ID:2002765171731968337"
+      }
+    ],
+    "kugiri_eng": "they have to / put / ideology / and / religion / and / ethnicity / aside",
+    "kugiri_jp": "〈ゼ〉 【ハフ ト】 / 【プッ】 / 【イディオロジィ】 / 〈アン〉 / 【レリジョン】 / 〈アン〉 / 【エスニシディ】 / 【アサイド】",
+    "translated": "彼らは、イデオロギーや宗教、そして民族性を脇に置かなければなりません。",
+    "remember": "「put ... aside」(〜を脇に置く、無視する)は、感情や問題を一時的に置いておく際に非常に便利な熟語です。例：Let's put our differences aside.（違いはさておき協力しよう）\n\n「have to」(〜しなければならない)は、客観的な必要性を伝える日常表現です。例：I have to go now.（もう行かなくちゃ）\n\n「ethnicity」(民族性、エスニシティ)は、多様性の議論でよく使われる名詞です。例：People of every ethnicity were there.（あらゆる民族の人がそこにいた）"
+  },
+  {
+    "id": 39,
+    "url": "https://www.youtube.com/watch?v=7n9IOH0NvyY",
+    "start_time": "152",
+    "end_time": "155",
+    "updated_at": "2025-12-22T09:29:24.685Z",
+    "question": "not to have to think about race every split second of our lives.",
+    "question_katakana": "〈ノット〉 〈ハフタ〉 【スィンク】 〈バウ〉 【レイス】 【エヴリィ】 【スプリット】 【セカンド】 〈バ〉 【ライヴズ】",
+    "article_text": {
+      "title": "ネイティブの発音はこう聞こえる！『not to have to think about race...』の秘密",
+      "meta_description": "「about」が「バウ」に聞こえる？ネイティブ特有の音の脱落や連結を、具体例を交えて詳しく解説。リスニング力を鍛えるための発音のコツを学びましょう。",
+      "katakana_weak_strong": "〈ノット〉 〈ハフタ〉 【スィンク】 〈バウ〉 【レイス】 【エヴリィ】 【スプリット】 【セカンド】 〈バ〉 【ライヴズ】",
+      "kugiri_eng": "not ＜to＞ / have to / think / about / race / every / split / second / of our / lives.",
+      "kugiri_jp": "〈ノット〉 / 〈ハフタ〉 / 【スィンク】 / 〈バウ〉 / 【レイス】 / 【エヴリィ】 / 【スプリット】 / 【セカンド】 / 〈バ〉 / 【ライヴズ】",
+      "translated": "人生のあらゆる瞬間において、人種について考えなくて済むようにすること。",
+      "tsukkomi": [
+        {
+          "question": "not to は ノット トゥ じゃなくて ノットだけ！？",
+          "answer": "not toの[t]の音が重なるため、後の[to]が飲み込まれるように消失したり、ごく僅かな止め（閉鎖）のみになったりします。その結果、カタカナでは「ノット」とだけ聞こえることがよくあります。"
+        },
+        {
+          "question": "have to は ハヴ トゥ じゃなくて ハフタ！？",
+          "answer": "have toは話し言葉では非常に頻繁に弱化し、「have to」「hafta」のように発音されます。vの音が無声化してfになり、toの母音もシュワ音（あいまい母音）に変化するため、「ハフタ」と聞こえます。"
+        },
+        {
+          "question": "about は アバウトじゃなくて バウ！？",
+          "answer": "aboutの最初の母音は弱く、速い会話では脱落することがあります。さらに、語尾のtも消失（脱落）しやすいため、結果として「バウ」という短い音だけで発音されることが多々あります。"
+        },
+        {
+          "question": "second of our は セカンド オヴ アワー じゃなくて セカンド バァ！？",
+          "answer": "ofとourが極端に弱形になり、前のdの音と連結（リエゾン）することで「セカンド・バ」のような短い塊になります。機能語が連続すると、このように元の音が判別できないほど短縮されるのが英語のリズムの特徴です。"
+        }
+      ],
+      "image_sections": [
+        {
+          "label": "not to have to think about",
+          "time": "152",
+          "image_display_instruction": "【ここにnot_to_have_to_think_aboutの画像を表示】",
+          "description": "「〜について考えなくて済む」という意味のフレーズです。頭の中から考え事が消えて、心が軽くなるような解放感をイメージしてください。",
+          "image_suggestion": "頭の周りに浮かんでいた思考の吹き出しが消え、スッキリした表情をしている人のイラスト"
+        },
+        {
+          "label": "race",
+          "time": "153.2",
+          "image_display_instruction": "【ここにraceの画像を表示】",
+          "description": "「人種」を指す言葉です。ここでは社会的な文脈でのアイデンティティを象徴しています。",
+          "image_suggestion": "多様な肌の色や背景を持つ人々が手をつないでいる、あるいは並んでいる様子"
+        },
+        {
+          "label": "every split second of our lives.",
+          "time": "153.5",
+          "image_display_instruction": "【ここにevery_split_second_of_our_lives.の画像を表示】",
+          "description": "「人生のあらゆる瞬間」という意味です。split second（一瞬）という言葉が、絶え間なく続く時間の細かさを強調しています。",
+          "image_suggestion": "時計の針が細かく刻まれている様子や、人生の様々な場面がフィルムのように流れているイメージ"
+        }
+      ],
+      "remember": "「not to have to」（〜しなくて済むように）は、義務から解放される状況で使われます。例：I want to finish early not to have to work late.（残業しなくて済むように、早く終わらせたい）\n\n「every split second」（一分一秒、あらゆる瞬間）は、非常に短い時間を強調する際に便利です。例：Every split second counts.（一分一秒が勝負だ）",
+      "introduction": "英語を聴いていて「知っている単語のはずなのに、全然違う音に聞こえる！」と驚いたことはありませんか？実は、ネイティブは一音ずつ丁寧に発音するのではなく、音をつなげたり省略したりしてリズムを作っています。今回は、驚きの発音変化が詰まった一文を攻略しましょう。",
+      "section_1": {
+        "heading": "例文と意味",
+        "content": "今回の例文は「not to have to think about race every split second of our lives.」です。これは、特定の社会的属性（ここでは人種）を意識し続けなければならない状況から解放され、ごく普通に、一人の人間として一瞬一瞬を過ごせることの重要性を説いています。非常に深いメッセージが込められたフレーズです。"
+      },
+      "section_2": {
+        "heading": "発音のポイント",
+        "content": "「ハフタ」や「バウ」といったカタカナ表記を見て、「そんなバカな！」と思った方も多いでしょう。しかし、実際のネイティブのスピードでは、have toの[v]は[f]に変わり、aboutの[t]は消えてしまいます。特にsecond of ourが「セカンド バ」と一塊になる現象は、カタカナ英語の知識だけでは太刀打ちできない、英語特有の「音の消失」が起きている証拠です。"
+      },
+      "section_3": {
+        "heading": "なぜそう聞こえるの？",
+        "content": "英語には、意味を伝える上で重要な「内容語（think, raceなど）」を強く、添え物的な役割の「機能語（to, of, ourなど）」を極端に弱く発音するルールがあります。have toが「ハフタ」になるのは、次の音に備えて効率的に発音しようとする「同化」現象です。また、ofやourが弱まることで、直前の子音とくっつき、全く別の短い音のように変化してしまうのです。"
+      },
+      "section_4": {
+        "heading": "学習のコツ",
+        "content": "まずは、今回紹介した強弱を意識しながら「カタカナ通りに」声に出してみてください。自分でその音を出せるようになると、不思議と耳でも聞き取れるようになります。特に「ハフタ」や「バウ」のような短縮された音を、恥ずかしがらずに思い切って発音するのが、ネイティブらしいリズムを身につける近道です。"
+      },
+      "conclusion": "音の変化のルールを知れば、今までノイズにしか聞こえなかった部分が、意味のある塊としてクリアに見えてきます。一歩ずつ、ネイティブの耳に近づいていきましょう！",
+      "keywords": [
+        "英語発音",
+        "リエゾン",
+        "リスニング",
+        "英語学習",
+        "have to",
+        "about"
+      ]
+    },
+    "category": "最初の30フレーズ",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/7n9IOH0NvyY/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/7n9IOH0NvyY/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/7n9IOH0NvyY/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/7n9IOH0NvyY/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/7n9IOH0NvyY/maxresdefault.jpg\"}",
+    "theme": "have to",
+    "noIndex": 0,
+    "is_similar": 1,
+    "pron_memo": "not to は ノット に聴こえる。 have to は ハフタ に聴こえる。 about は バウ に聴こえる。 second of our は セカンド バ に聴こえる。",
+    "tsukkomi": [
+      {
+        "question": "not to は ノット トゥ じゃなくて ノットだけ！？",
+        "answer": "not toの[t]の音が重なるため、後の[to]が飲み込まれるように消失したり、ごく僅かな止め（閉鎖）のみになったりします。その結果、カタカナでは「ノット」とだけ聞こえることがよくあります。"
+      },
+      {
+        "question": "have to は ハヴ トゥ じゃなくて ハフタ！？",
+        "answer": "have toは話し言葉では非常に頻繁に弱化し、「have to」「hafta」のように発音されます。vの音が無声化してfになり、toの母音もシュワ音（あいまい母音）に変化するため、「ハフタ」と聞こえます。"
+      },
+      {
+        "question": "about は アバウトじゃなくて バウ！？",
+        "answer": "aboutの最初の母音は弱く、速い会話では脱落することがあります。さらに、語尾のtも消失（脱落）しやすいため、結果として「バウ」という短い音だけで発音されることが多々あります。"
+      },
+      {
+        "question": "second of our は セカンド オヴ アワー じゃなくて セカンド バァ！？",
+        "answer": "ofとourが極端に弱形になり、前のdの音と連結（リエゾン）することで「セカンド・バ」のような短い塊になります。機能語が連続すると、このように元の音が判別できないほど短縮されるのが英語のリズムの特徴です。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"not to have to think about\",\"time\":\"152\",\"url\":\"TWEET_ID:2003033653618803174\"},{\"label\":\"race\",\"time\":\"153.2\",\"url\":\"TWEET_ID:2003033693552820275\"},{\"label\":\"every split second of our lives.\",\"time\":\"153.5\",\"url\":\"TWEET_ID:2003033726469754929\"}]",
+    "image_sections": [
+      {
+        "label": "not to have to think about",
+        "time": "152",
+        "url": "TWEET_ID:2003033653618803174"
+      },
+      {
+        "label": "race",
+        "time": "153.2",
+        "url": "TWEET_ID:2003033693552820275"
+      },
+      {
+        "label": "every split second of our lives.",
+        "time": "153.5",
+        "url": "TWEET_ID:2003033726469754929"
+      }
+    ],
+    "kugiri_eng": "not ＜to＞ / have to / think / about / race / every / split / second / of our / lives.",
+    "kugiri_jp": "〈ノット〉 / 〈ハフタ〉 / 【スィンク】 / 〈バウ〉 / 【レイス】 / 【エヴリィ】 / 【スプリット】 / 【セカンド】 / 〈バ〉 / 【ライヴズ】",
+    "translated": "人生のあらゆる瞬間において、人種について考えなくて済むようにすること。",
+    "remember": "「not to have to」（〜しなくて済むように）は、義務から解放される状況で使われます。例：I want to finish early not to have to work late.（残業しなくて済むように、早く終わらせたい）\n\n「every split second」（一分一秒、あらゆる瞬間）は、非常に短い時間を強調する際に便利です。例：Every split second counts.（一分一秒が勝負だ）"
+  },
+  {
+    "id": 40,
+    "url": "https://www.youtube.com/watch?v=9axG7EhGNmI",
+    "start_time": "1065",
+    "end_time": "1066.91",
+    "updated_at": "2025-12-22T09:59:35.023Z",
+    "question": "And, of course I have to let go sometimes and be like,",
+    "question_katakana": "【アン】 【オフコース】 〈ハフタ〉 【ライ】 【ゴー】 【サムタイムズ】 〈ビィ〉 【ラィ】",
+    "article_text": {
+      "title": "ネイティブの発音はこう聞こえる！『And, of course I have to let go sometimes and be like,』の秘密",
+      "meta_description": "『And, of course I have to...』が「アン オフコース ハフタ」に聞こえる理由をプロが解説。リンキングや弱化を学んでリスニング力を向上させましょう。",
+      "katakana_weak_strong": "【アン】 【オフコース】 〈ハフタ〉 【ライ】 【ゴー】 【サムタイムズ】 〈ビィ〉 【ラィ】",
+      "kugiri_eng": "And, of course / ＜I＞ have to / let / go / sometimes / and / be / like,",
+      "kugiri_jp": "【アン】 【オフコース】 / 〈ハフタ〉 / 【ライ】 / 【ゴー】 / 【サムタイムズ】 / 〈アン〉 / 〈ビィ〉 / 【ラィ】",
+      "translated": "そして、もちろん時には執着を捨てて、「まあ、そんなもんだよね」という感じでいなきゃいけないこともあります。",
+      "tsukkomi": [
+        {
+          "question": "And は アンド じゃなくて アン！？",
+          "answer": "Andの最後のdの音は、次に続く言葉が子音で始まる場合や、文脈の中で速く話される際に消失(脱落)することが非常によくあります。そのため「アンド」とはっきり言わず、「アン」のように聞こえます。"
+        },
+        {
+          "question": "I have to の アイ が聴こえない！？",
+          "answer": "have to という強い意味を持つ熟語の前にある主語の I は、非常に弱く発音されるか、次の音と混ざってほとんど聞こえなくなることがあります。話し手の意識が「have to(〜しなきゃ)」に向いているため、I が脱落したように聞こえるのです。"
+        },
+        {
+          "question": "have to は ハヴ トゥ じゃなくて ハフタ！？",
+          "answer": "have to は日常会話ではセットで発音され、haveの[v]が次に続く無声音の[t]に影響されて[f]の音に変化(無声化)します。さらにtoの母音が弱化してシュワ音になるため、カタカナでは「ハフタ」に近い音になります。"
+        },
+        {
+          "question": "let は レット じゃなくて ライ！？",
+          "answer": "let の語尾の t が、次に続く go の g とつながる際、t を飲み込むような「ストップ T」の状態になります。さらに let の e の音が日本語の「ア」に近く聞こえることがあり、結果として「ライ」のように短く鋭く聞こえます。"
+        },
+        {
+          "question": "sometimes and の and の音が聴こえない！？",
+          "answer": "文の途中にある接続詞の and は、情報の優先度が低いため非常に弱く発音されます。前の sometimes の最後の s の音に飲み込まれたり、単に鼻に抜ける「n」の音だけになったりするため、耳にはほとんど残らないのです。"
+        },
+        {
+          "question": "like は ライク じゃなくて ラィ！？",
+          "answer": "like の最後の k の音は、文の終わりや区切りにある場合、口の形は k を作りますが、実際に息を吐き出す「ク」の音を出さないことがあります。これを破裂の消失と呼び、日本人には「ラィ」と音が止まったように聞こえます。"
+        }
+      ],
+      "image_sections": [
+        {
+          "label": "And, of course I have to",
+          "time": "1065",
+          "image_display_instruction": "【ここにAnd_of_course_I_have_toの画像を表示】",
+          "description": "「そして、もちろん〜しなければならない」という義務や必然性を強調するフレーズです。何かの決心をしているような、真剣な表情をイメージしましょう。",
+          "image_suggestion": "話し手が人差し指を立てて、納得したり決意したりしているクローズアップシーン"
+        },
+        {
+          "label": "let go sometimes and",
+          "time": "1066.1",
+          "image_display_instruction": "【ここにlet_go_sometimes_andの画像を表示】",
+          "description": "「時には手放して、そして」という意味です。let go は握っていたものを離す、あるいは執着を捨てるイメージ。ふっと肩の力が抜ける感覚を視覚化します。",
+          "image_suggestion": "握っていた風船の紐を空へ放したり、固く結んだ手を緩めたりするリラックスしたシーン"
+        },
+        {
+          "label": "be like,",
+          "time": "1066.8",
+          "image_display_instruction": "【ここにbe_like,の画像を表示】",
+          "description": "「〜という感じになる」「〜と言う」という、当時の様子や感情を再現する時に使う口語表現です。肩をすくめて「まあいっか」と思っている様子をイメージしてください。",
+          "image_suggestion": "両手を広げて「仕方ないね」と微笑んでいるような、軽い受け流しのジェスチャー"
+        }
+      ],
+      "remember": "「let go」(手放す・執着を捨てる)は、物理的に物を離すだけでなく、悩みや感情を忘れる際にもよく使われます。例：You need to let go of the past.(過去のことは忘れる必要があるよ。)\n\n「be like...」(〜という感じだ・〜と言う)は、会話の中で誰かの発言や自分の心情を引用する際に非常に多用されます。例：I was like, \"Wait, what?\"(私は「ちょっと待って、何？」って感じだったよ。)",
+      "introduction": "ネイティブの英語が速すぎて、知っている単語さえ聞き取れないことはありませんか？実は、彼らは教科書通りに一文字ずつ発音しているわけではありません。音がつながったり、消えたりする「法則」を知るだけで、リスニングは一気に楽になります。今回は、日常会話でよく使われるフレーズを例に、その驚きの変化を見ていきましょう。",
+      "section_1": {
+        "heading": "例文と意味",
+        "content": "今回の例文は「And, of course I have to let go sometimes and be like,」です。これは、真面目に考えすぎず、時にはこだわりを捨てて「まあいいか」と受け入れる柔軟さを語るシーンで使われます。一つひとつの単語は簡単ですが、つながることで全く別の音に変化するのが特徴です。"
+      },
+      "section_2": {
+        "heading": "発音のポイント",
+        "content": "「そうは聞こえないだろ！」とツッコミを入れたくなるポイントが満載ですね。例えば、And が「アン」になったり、have to が「ハフタ」になったりするのは、英語特有のリズムを作るための「手抜き」に近い現象です。特に let go の部分で t の音が消えて「ライ・ゴー」のように滑らかにつながる点に注目してください。カタカナ表記の【強】と〈弱〉を意識して、強弱の波に乗ることが大切です。"
+      },
+      "section_3": {
+        "heading": "なぜそう聞こえるの？",
+        "content": "これらは「弱化(Reduction)」と「脱落(Elision)」という現象です。have to が「ハフタ」になるのは、次の音を出しやすくするためにエネルギーを節約しているからです。また、英語は「内容語(意味を持つ言葉)」を強く、「機能語(文法的な言葉)」を弱く発音するリズムを持っています。I や and が聞こえにくいのは、これらが機能語であり、話し手が「意味の核」となる have to や let go に焦点を当てているからなのです。"
+      },
+      "section_4": {
+        "heading": "学習のコツ",
+        "content": "まずは、聞こえたままの音をカタカナで真似する「耳コピー」から始めてみましょう。「アンド」ではなく「アン」と発音してみることで、脳がその音を英語として認識し始めます。次に、強弱記号に合わせて手を叩きながら音読してみてください。リズムが身につくと、速い英語でも不思議と単語の輪郭が見えてくるようになります。"
+      },
+      "conclusion": "英語の音の変化は、最初は戸惑うかもしれませんが、慣れてしまえば「効率的な話し方」であることに気づき、楽しい発見になります。完璧な発音を目指すよりも、このリズムの波に乗ることを楽しんでくださいね！",
+      "keywords": [
+        "英語発音",
+        "リエゾン",
+        "リスニング",
+        "英語学習",
+        "have to 発音",
+        "let go 意味"
+      ]
+    },
+    "category": "最初の30フレーズ",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/9axG7EhGNmI/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/9axG7EhGNmI/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/9axG7EhGNmI/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/9axG7EhGNmI/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/9axG7EhGNmI/maxresdefault.jpg\"}",
+    "theme": "have to",
+    "noIndex": 0,
+    "is_similar": 1,
+    "pron_memo": "And は アン に聴こえる。 I は聴こえない。 have to は ハフタ に聴こえる。 let は ライ に聴こえる。 like は ラィ に聴こえる。",
+    "tsukkomi": [
+      {
+        "question": "And は アンド じゃなくて アン！？",
+        "answer": "Andの最後のdの音は、次に続く言葉が子音で始まる場合や、文脈の中で速く話される際に消失(脱落)することが非常によくあります。そのため「アンド」とはっきり言わず、「アン」のように聞こえます。"
+      },
+      {
+        "question": "I have to の アイ が聴こえない！？",
+        "answer": "have to という強い意味を持つ熟語の前にある主語の I は、非常に弱く発音されるか、次の音と混ざってほとんど聞こえなくなることがあります。話し手の意識が「have to(〜しなきゃ)」に向いているため、I が脱落したように聞こえるのです。"
+      },
+      {
+        "question": "have to は ハヴ トゥ じゃなくて ハフタ！？",
+        "answer": "have to は日常会話ではセットで発音され、haveの[v]が次に続く無声音の[t]に影響されて[f]の音に変化(無声化)します。さらにtoの母音が弱化してシュワ音になるため、カタカナでは「ハフタ」に近い音になります。"
+      },
+      {
+        "question": "let は レット じゃなくて ライ！？",
+        "answer": "let の語尾の t が、次に続く go の g とつながる際、t を飲み込むような「ストップ T」の状態になります。さらに let の e の音が日本語の「ア」に近く聞こえることがあり、結果として「ライ」のように短く鋭く聞こえます。"
+      },
+      {
+        "question": "sometimes and の and の音が聴こえない！？",
+        "answer": "文の途中にある接続詞の and は、情報の優先度が低いため非常に弱く発音されます。前の sometimes の最後の s の音に飲み込まれたり、単に鼻に抜ける「n」の音だけになったりするため、耳にはほとんど残らないのです。"
+      },
+      {
+        "question": "like は ライク じゃなくて ラィ！？",
+        "answer": "like の最後の k の音は、文の終わりや区切りにある場合、口の形は k を作りますが、実際に息を吐き出す「ク」の音を出さないことがあります。これを破裂の消失と呼び、日本人には「ラィ」と音が止まったように聞こえます。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"And, of course I have to\",\"time\":\"1065\",\"url\":\"TWEET_ID:2003040560702169111\"},{\"label\":\"let go sometimes and\",\"time\":\"1066.1\",\"url\":\"TWEET_ID:2003040591945601269\"},{\"label\":\"be like,\",\"time\":\"1066.8\",\"url\":\"TWEET_ID:2003040627026702352\"}]",
+    "image_sections": [
+      {
+        "label": "And, of course I have to",
+        "time": "1065",
+        "url": "TWEET_ID:2003040560702169111"
+      },
+      {
+        "label": "let go sometimes and",
+        "time": "1066.1",
+        "url": "TWEET_ID:2003040591945601269"
+      },
+      {
+        "label": "be like,",
+        "time": "1066.8",
+        "url": "TWEET_ID:2003040627026702352"
+      }
+    ],
+    "kugiri_eng": "And, of course / ＜I＞ have to / let / go / sometimes / and / be / like,",
+    "kugiri_jp": "【アン】 【オフコース】 / 〈ハフタ〉 / 【ライ】 / 【ゴー】 / 【サムタイムズ】 / 〈アン〉 / 〈ビィ〉 / 【ラィ】",
+    "translated": "そして、もちろん時には執着を捨てて、「まあ、そんなもんだよね」という感じでいなきゃいけないこともあります。",
+    "remember": "「let go」(手放す・執着を捨てる)は、物理的に物を離すだけでなく、悩みや感情を忘れる際にもよく使われます。例：You need to let go of the past.(過去のことは忘れる必要があるよ。)\n\n「be like...」(〜という感じだ・〜と言う)は、会話の中で誰かの発言や自分の心情を引用する際に非常に多用されます。例：I was like, \"Wait, what?\"(私は「ちょっと待って、何？」って感じだったよ。)"
+  }
+]
