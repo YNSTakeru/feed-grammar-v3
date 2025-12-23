@@ -21,8 +21,46 @@ export const metadata: Metadata = {
   title: "Feed Grammar | YouTubeで学ぶ英語リスニング講座",
   description:
     "YouTubeの実際の会話シーンで学ぶ英語リスニング講座。ネイティブの自然な発音変化を理解して、リスニング力を向上させる教育メディアです。各レッスンで丁寧に解説します。",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL || "https://feedgrammar.com/"
+  ),
   icons: {
     icon: "/logo.svg",
+  },
+  openGraph: {
+    title: "Feed Grammar | YouTubeで学ぶ英語リスニング講座",
+    description:
+      "YouTubeの実際の会話シーンで学ぶ英語リスニング講座。ネイティブの自然な発音変化を理解して、リスニング力を向上させる教育メディアです。",
+    url: "https://feedgrammar.com/",
+    siteName: "Feed Grammar",
+    locale: "ja_JP",
+    type: "website",
+    images: [
+      {
+        url: "/ogp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Feed Grammar - YouTubeで学ぶ英語リスニング講座",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Feed Grammar | YouTubeで学ぶ英語リスニング講座",
+    description:
+      "YouTubeの実際の会話シーンで学ぶ英語リスニング講座。ネイティブの自然な発音変化を理解して、リスニング力を向上。",
+    images: ["/ogp.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   other: {
     "google-adsense-account": "ca-pub-XXXXXXXXXXXXXXXX", // 必要に応じて更新
