@@ -855,7 +855,7 @@
     "url": "https://www.youtube.com/watch?v=kTSLpT__Wts",
     "start_time": "223",
     "end_time": "225.8",
-    "updated_at": "2025-12-08T16:51:10.895Z",
+    "updated_at": "2025-12-23T12:28:53.511Z",
     "question": "mistakes. I mean, I just got to be honest and acknowlege that. But",
     "question_katakana": "【ミステイクス】。〈セゥ〉 〈ワイワ〉 〈イガルト スカルビィ〉 【オナ】 〈ソイノー〉 【ジャッ】。〈バッ〉",
     "article_text": {
@@ -981,32 +981,32 @@
         "answer": "acknowlege thatが「ノージャッ」に聞こえるのは、**acknowledge**の最初の音節**ac-**が**脱落**しているためです。これは速い会話の中で起こる**非強調音節の脱落**の典型例です。アクセントが**-know-**にあるため、それ以外の部分が極端に短縮されます。thatの[th]もほとんど発音されず、語尾の[t]が**破裂せずに**短く聞こえているため、「アクノーレッジ・ザット」とは全く異なる「ノージャッ」のように聞こえます。"
       }
     ],
-    "image_learn": "[{\"label\":\"mistakes.\",\"time\":\"223\",\"url\":\"TWEET_ID:1998070080761167982\"},{\"label\":\"I mean, I just got to be\",\"time\":\"223.28\",\"url\":\"TWEET_ID:1998070130165842216\"},{\"label\":\"honest\",\"time\":\"224.65\",\"url\":\"TWEET_ID:1998070174822670836\"},{\"label\":\"and acknowlege that.\",\"time\":\"224.81\",\"url\":\"TWEET_ID:1998070227507278235\"},{\"label\":\"But\",\"time\":\"225.5\",\"url\":\"TWEET_ID:1998070261208543654\"}]",
+    "image_learn": "[{\"label\":\"mistakes.\",\"time\":\"223\",\"url\":\"TWEET_ID:2003390931488375150\"},{\"label\":\"I mean, I just got to be\",\"time\":\"223.28\",\"url\":\"TWEET_ID:2003390979450208757\"},{\"label\":\"honest\",\"time\":\"224.65\",\"url\":\"TWEET_ID:2003391029593113050\"},{\"label\":\"and acknowlege that.\",\"time\":\"224.81\",\"url\":\"TWEET_ID:2003391074912600373\"},{\"label\":\"But\",\"time\":\"225.5\",\"url\":\"TWEET_ID:2003391493470585159\"}]",
     "image_sections": [
       {
         "label": "mistakes.",
         "time": "223",
-        "url": "TWEET_ID:1998070080761167982"
+        "url": "TWEET_ID:2003390931488375150"
       },
       {
         "label": "I mean, I just got to be",
         "time": "223.28",
-        "url": "TWEET_ID:1998070130165842216"
+        "url": "TWEET_ID:2003390979450208757"
       },
       {
         "label": "honest",
         "time": "224.65",
-        "url": "TWEET_ID:1998070174822670836"
+        "url": "TWEET_ID:2003391029593113050"
       },
       {
         "label": "and acknowlege that.",
         "time": "224.81",
-        "url": "TWEET_ID:1998070227507278235"
+        "url": "TWEET_ID:2003391074912600373"
       },
       {
         "label": "But",
         "time": "225.5",
-        "url": "TWEET_ID:1998070261208543654"
+        "url": "TWEET_ID:2003391493470585159"
       }
     ],
     "kugiri_eng": "mistakes. / I mean / I just / got to be / honest and / acknowlege that. / But",

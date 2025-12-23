@@ -427,5 +427,112 @@
     "kugiri_jp": "【アン】 【オフコース】 / 〈ハフタ〉 / 【ライ】 / 【ゴー】 / 【サムタイムズ】 / 〈アン〉 / 〈ビィ〉 / 【ラィ】",
     "translated": "そして、もちろん時には執着を捨てて、「まあ、そんなもんだよね」という感じでいなきゃいけないこともあります。",
     "remember": "「let go」(手放す・執着を捨てる)は、物理的に物を離すだけでなく、悩みや感情を忘れる際にもよく使われます。例：You need to let go of the past.(過去のことは忘れる必要があるよ。)\n\n「be like...」(〜という感じだ・〜と言う)は、会話の中で誰かの発言や自分の心情を引用する際に非常に多用されます。例：I was like, \"Wait, what?\"(私は「ちょっと待って、何？」って感じだったよ。)"
+  },
+  {
+    "id": 41,
+    "url": "https://www.youtube.com/watch?v=SEAIQ62rydI",
+    "start_time": "954.5",
+    "end_time": "957",
+    "updated_at": "2025-12-23T13:07:47.783Z",
+    "question": "Somebody's going to have to pay these costs.",
+    "question_katakana": "【サムメニィ】 〈ゴ〉 【ハフタ】 【ペイ】 〈ディ〉 【スコアシュ】",
+    "article_text": {
+      "title": "ネイティブの発音はこう聞こえる！\"Somebody's going to have to pay these costs.\"の秘密",
+      "meta_description": "英語の「Somebody's going to...」が「サムメニィ ゴ」に聞こえる理由を徹底解説！ネイティブ特有の音の連結（リエゾン）や消失（脱落）をマスターして、リスニング力を飛躍的にアップさせましょう。",
+      "katakana_weak_strong": "【サムメニィ】 〈ゴ〉 【ハフタ】 【ペイ】 〈ディ〉 【スコアシュ】",
+      "kugiri_eng": "Somebody's going ＜to＞ / have to / pay / these costs.",
+      "kugiri_jp": "【サムメニィ (ゴ)】 / 【ハフタ】 / 【ペイ】 / 〈ディ〉 【スコアシュ】",
+      "translated": "誰かがこれらの費用を支払わなければならなくなるでしょう。",
+      "tsukkomi": [
+        {
+          "question": "Somebody's は サムバディーズ じゃなくて サムメニィ！？ going は ゴーイングじゃなくてゴ have to は ハヴ トゥじゃなくて ハフタ！？ these costs は ジーズ コスツ じゃなくて ディ スコアシュ!?",
+          "answer": "驚くかもしれませんが、ネイティブの速い会話では、Somebody's going toが圧縮されて「サムメニィ ゴ」のように発音されることがよくあります。これはgoing toがgonna（ガナ）になり、さらに前のSomebody'sの最後の音と混ざり合うためです。have toが「ハフタ」になるのは、toの母音が弱化し、vの音が無声音のtに引きずられてf（フ）に変化するため。そしてthese costsが「ディ スコアシュ」に聞こえるのは、theseのthがdに近い音になり、さらにcostsの最後のtsが飲み込まれるように弱く発音されるためです。"
+        }
+      ],
+      "image_sections": [
+        {
+          "label": "Somebody's going to",
+          "time": "954.5",
+          "image_display_instruction": "【ここにSomebody's_going_toの画像を表示】",
+          "description": "Somebody's going toは「誰かが〜することになる」という未来の予測や決定を表します。誰か特定の人物は決まっていないけれど、確実に誰かがその行動を担うという運命的なニュアンスを含みます。見知らぬ誰かが指を差されているような、少し重い空気感をイメージしてください。",
+          "image_suggestion": "シルエットの人物が前方を指差しているシーン、あるいは不特定多数の中から誰か一人が選ばれようとしている場面。"
+        },
+        {
+          "label": "have to pay",
+          "time": "955.6",
+          "image_display_instruction": "【ここにhave_to_payの画像を表示】",
+          "description": "have to payは「支払わなければならない」という義務を意味します。自分の意思に関わらず、ルールや状況によって支払いの必要が生じている状態です。財布を開いて困っている様子や、請求書を突きつけられているイメージです。",
+          "image_suggestion": "テーブルの上に置かれた高額な請求書と、それを見つめる深刻な表情の人物。"
+        },
+        {
+          "label": "these costs.",
+          "time": "956.1",
+          "image_display_instruction": "【ここにthese_costs.の画像を表示】",
+          "description": "these costsは「これらの費用」を指します。目の前にある具体的な損害や経費を指しています。複数の積み重なった領収書や、計算機に表示された数字をイメージすると分かりやすいでしょう。",
+          "image_suggestion": "散らばった領収書や、合計金額が表示されたレジの画面。"
+        }
+      ],
+      "remember": "「Somebody's going to」（誰かが〜することになる）は、責任の所在や未来の確定事項を話すときに使われます。例：Somebody's going to get hurt.（誰かが怪我をすることになるぞ。）\n\n「have to pay」（支払わなければならない）は、金銭的な義務だけでなく、報いを受けるという意味でも使われます。例：You will have to pay for your mistakes.（君は自分の過ちの代償を払うことになるだろう。）\n\n「these costs」（これらの費用）は、プロジェクトや生活費などの具体的な支出を指す際に頻出します。例：We need to reduce these costs.（これらのコストを削減する必要があります。）",
+      "introduction": "英語を聴いていて「え？今なんて言ったの？」と耳を疑ったことはありませんか？特に今回の例文は、教科書通りの発音とはかけ離れて聞こえる魔法のようなフレーズです。音の変化のルールを知れば、霧が晴れるように聞き取れるようになりますよ。",
+      "section_1": {
+        "heading": "例文と意味",
+        "content": "今回の例文は \"Somebody's going to have to pay these costs.\" です。日本語では「誰かがこれらの費用を支払わなければならなくなるだろう」という意味になります。何かトラブルが起きた後や、大きなプロジェクトの予算について議論しているような、少しシリアスな場面で使われる表現です。"
+      },
+      "section_2": {
+        "heading": "発音のポイント",
+        "content": "「サムメニィ ゴ ハフタ」……文字だけ見ると呪文のようですよね！まず Somebody's going to ですが、ネイティブはこれを一つの塊として非常に速く発音します。going to が gonna を経てさらに短縮され「ゴ」だけが残るイメージです。そして have to は、hの音が弱まり、さらに to が「タ」のように軽く添えられることで「ハフタ」という一語のような響きになります。"
+      },
+      "section_3": {
+        "heading": "なぜそう聞こえるの？",
+        "content": "これには「機能語の弱化」と「音の消失」が関係しています。these costs が「ディ スコアシュ」に聞こえるのは、these の th が非常に軽く弾かれ [d] の音に近くなり、直後の costs の語頭の [k] と連結（リエゾン）するためです。また、costs の最後の [ts] は、次に言葉が続かない場合や文末では非常に弱く、息が抜けるような「シュ」という音に変化して聞こえることがよくあります。"
+      },
+      "section_4": {
+        "heading": "学習のコツ",
+        "content": "まずは「サムメニィ・ゴ・ハフタ・ペイ・ディ・スコアシュ」と、リズムを意識して口に出してみましょう。英語は強弱の差が激しい言語なので、【 】の部分を強く、〈 〉の部分を添える程度に発音するのがコツです。自分の声を録音して、お手本の音声とリズムが一致しているか確認する「セルフ・シャドーイング」も非常に効果的ですよ。"
+      },
+      "conclusion": "音の変化にはルールがあります。最初は「サムメニィ」に驚くかもしれませんが、一度耳が慣れてしまえば、次からは自然に聞き取れるようになります。一歩ずつ、ネイティブの耳に近づいていきましょう！",
+      "keywords": [
+        "英語発音",
+        "リスニング",
+        "Somebody's going to",
+        "have to",
+        "リエゾン",
+        "音声変化"
+      ]
+    },
+    "category": "最初の30フレーズ",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/SEAIQ62rydI/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/SEAIQ62rydI/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/SEAIQ62rydI/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/SEAIQ62rydI/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/SEAIQ62rydI/maxresdefault.jpg\"}",
+    "theme": "have to",
+    "noIndex": 0,
+    "is_similar": 1,
+    "pron_memo": "Somebody's は サムメニィ に聴こえる。 going は ゴ に聴こえる。 these costs は ディ スコアシュ に聴こえる。have to は ハフタ に聴こえる。",
+    "tsukkomi": [
+      {
+        "question": "Somebody's は サムバディーズ じゃなくて サムメニィ！？ going は ゴーイングじゃなくてゴ have to は ハヴ トゥじゃなくて ハフタ！？ these costs は ジーズ コスツ じゃなくて ディ スコアシュ!?",
+        "answer": "驚くかもしれませんが、ネイティブの速い会話では、Somebody's going toが圧縮されて「サムメニィ ゴ」のように発音されることがよくあります。これはgoing toがgonna（ガナ）になり、さらに前のSomebody'sの最後の音と混ざり合うためです。have toが「ハフタ」になるのは、toの母音が弱化し、vの音が無声音のtに引きずられてf（フ）に変化するため。そしてthese costsが「ディ スコアシュ」に聞こえるのは、theseのthがdに近い音になり、さらにcostsの最後のtsが飲み込まれるように弱く発音されるためです。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"Somebody's going to\",\"time\":\"954.5\",\"url\":\"TWEET_ID:2003449797559382406\"},{\"label\":\"have to pay\",\"time\":\"955.6\",\"url\":\"TWEET_ID:2003449831273140383\"},{\"label\":\"these costs.\",\"time\":\"956.1\",\"url\":\"TWEET_ID:2003449864336900153\"}]",
+    "image_sections": [
+      {
+        "label": "Somebody's going to",
+        "time": "954.5",
+        "url": "TWEET_ID:2003449797559382406"
+      },
+      {
+        "label": "have to pay",
+        "time": "955.6",
+        "url": "TWEET_ID:2003449831273140383"
+      },
+      {
+        "label": "these costs.",
+        "time": "956.1",
+        "url": "TWEET_ID:2003449864336900153"
+      }
+    ],
+    "kugiri_eng": "Somebody's going ＜to＞ / have to / pay / these costs.",
+    "kugiri_jp": "【サムメニィ (ゴ)】 / 【ハフタ】 / 【ペイ】 / 〈ディ〉 【スコアシュ】",
+    "translated": "誰かがこれらの費用を支払わなければならなくなるでしょう。",
+    "remember": "「Somebody's going to」（誰かが〜することになる）は、責任の所在や未来の確定事項を話すときに使われます。例：Somebody's going to get hurt.（誰かが怪我をすることになるぞ。）\n\n「have to pay」（支払わなければならない）は、金銭的な義務だけでなく、報いを受けるという意味でも使われます。例：You will have to pay for your mistakes.（君は自分の過ちの代償を払うことになるだろう。）\n\n「these costs」（これらの費用）は、プロジェクトや生活費などの具体的な支出を指す際に頻出します。例：We need to reduce these costs.（これらのコストを削減する必要があります。）"
   }
 ]
