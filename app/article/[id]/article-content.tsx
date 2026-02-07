@@ -9,6 +9,10 @@ import { Button } from "@/components/ui/button";
 import { progressDB } from "@/lib/db/progress-db";
 import { ArticleData, FeedItem } from "@/types";
 import { Tweet } from "react-tweet";
+import {
+  StaticImageSections,
+  TimeSyncedImageSections,
+} from "@/components/image-section-display";
 
 import {
   ArrowLeft,
@@ -27,6 +31,11 @@ declare global {
     twttr?: {
       widgets: {
         load: () => void;
+      };
+    };
+    instgrm?: {
+      Embeds: {
+        process: () => void;
       };
     };
   }
@@ -91,7 +100,7 @@ export function ArticleContent({
 
   // スクロールアニメーション用のstate
   const [visibleSections, setVisibleSections] = useState<Set<number>>(
-    new Set()
+    new Set(),
   );
   const [animationStage, setAnimationStage] = useState<
     Map<number, "label-big" | "label-small" | "tweet">
@@ -99,7 +108,7 @@ export function ArticleContent({
   const sectionRefs = useRef<Map<number, HTMLDivElement>>(new Map());
   const [shouldInitObservers, setShouldInitObservers] = useState(false);
 
-  // YouTube動画の現在時刻を更新するコールバック
+    // YouTube動画の現在時刻を更新するコールバック
   // image_sectionsの切り替えポイントを検知するため、常に更新
   const handleTimeUpdate = useCallback((time: number) => {
     lastUpdateTimeRef.current = time;
@@ -137,7 +146,7 @@ export function ArticleContent({
             // 500ms後にラベルを縮小
             setTimeout(() => {
               setAnimationStage((prev) =>
-                new Map(prev).set(index, "label-small")
+                new Map(prev).set(index, "label-small"),
               );
             }, 500);
 
@@ -153,7 +162,7 @@ export function ArticleContent({
         {
           threshold: 0.3,
           rootMargin: "0px 0px -50px 0px",
-        }
+        },
       );
 
       observer.observe(element);
@@ -172,6 +181,32 @@ export function ArticleContent({
       window.twttr.widgets.load();
     }
   }, [pathname]);
+
+  // Instagram埋め込み: 動的にスクリプトを読み込み、埋め込みを処理
+  useEffect(() => {
+    const hasInstagramEmbed = article.image_sections?.some(
+      (section) => section.url?.includes('instagram-media')
+    );
+    if (!hasInstagramEmbed) return;
+
+    const loadAndProcess = () => {
+      if (window.instgrm?.Embeds) {
+        window.instgrm.Embeds.process();
+      }
+    };
+
+    if (!document.querySelector('script[src*="instagram.com/embed.js"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://www.instagram.com/embed.js';
+      script.async = true;
+      script.onload = loadAndProcess;
+      document.body.appendChild(script);
+    } else {
+      // スクリプト読み込み済みの場合は少し待ってから処理
+      const timer = setTimeout(loadAndProcess, 300);
+      return () => clearTimeout(timer);
+    }
+  }, [article.image_sections, animationStage, pathname]);
 
   // 初期化時にアンロック状態と完了状態を確認
   useEffect(() => {
@@ -491,189 +526,17 @@ export function ArticleContent({
           )}
 
           {/* Image Sections */}
-          {article.image_sections && article.image_sections.length > 0 && (
-            <div className="mb-8 space-y-6">
-              <h3 className="text-2xl font-bold text-blue-700 dark:text-blue-400 mb-4">
-                🖼️ フレーズのイメージ
-              </h3>
-              {article.image_sections.map((imageSection, index) => {
-                const tweetId = imageSection.url?.match(/TWEET_ID:(\d+)/)?.[1];
-                const stage = animationStage.get(index);
+          <StaticImageSections
+            sections={article.image_sections ?? []}
+            animationStage={animationStage}
+            sectionRefs={sectionRefs}
+          />
 
-                return (
-                  <div
-                    key={index}
-                    ref={(el) => {
-                      if (el) sectionRefs.current.set(index, el);
-                    }}
-                    className="p-5 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 rounded-lg border-2 border-blue-200 dark:border-blue-800"
-                  >
-                    {/* Label */}
-                    {imageSection.label && (
-                      <div
-                        className={`mb-4 transition-transform duration-300 ${
-                          stage === "label-big"
-                            ? "scale-125 animate-in zoom-in-50"
-                            : stage === "label-small" || stage === "tweet"
-                            ? "scale-100"
-                            : "scale-100 opacity-0"
-                        }`}
-                        style={{
-                          transformOrigin: "left center",
-                        }}
-                      >
-                        <span className="inline-block px-4 py-2 rounded-full bg-blue-600 dark:bg-blue-500 text-white text-lg font-bold shadow-md">
-                          🎯 {imageSection.label}
-                        </span>
-                      </div>
-                    )}
-
-                    {/* Tweet */}
-                    {tweetId && (
-                      <div
-                        className={`mb-4 transition-all duration-500 ${
-                          stage === "tweet"
-                            ? "opacity-100 animate-in fade-in-0 slide-in-from-bottom-4"
-                            : "opacity-0 translate-y-4"
-                        }`}
-                      >
-                        <Tweet id={tweetId} />
-                      </div>
-                    )}
-
-                    {/* Description */}
-                    {imageSection.description && (
-                      <div className="mb-3 text-gray-700 dark:text-gray-200">
-                        <MarkdownContent content={imageSection.description} />
-                      </div>
-                    )}
-
-                    {/* Image Suggestion */}
-                    {imageSection.image_suggestion && (
-                      <div className="mt-2 p-3 bg-blue-100/50 dark:bg-blue-900/20 rounded border-l-4 border-blue-400 dark:border-blue-600">
-                        <p className="text-sm text-gray-600 dark:text-gray-300">
-                          <span className="font-semibold">💡 イメージ: </span>
-                          {imageSection.image_suggestion}
-                        </p>
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          )}
-
-          {/* Time-synced Tweet Display */}
-          {article.image_sections && article.image_sections.length > 0 && (
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-4">
-                🎬 動画連動イメージ
-              </h3>
-              <div className="p-5 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 rounded-lg border-2 border-purple-200 dark:border-purple-800">
-                {(() => {
-                  // 現在の時刻に基づいて表示するツイートを決定
-                  const sortedSections = [...article.image_sections].sort(
-                    (a, b) => parseFloat(a.time) - parseFloat(b.time)
-                  );
-
-                  // section.timeは動画の絶対時刻なので、currentVideoTimeと直接比較
-                  console.log(
-                    `[Quiz Mode] currentVideoTime: ${currentVideoTime.toFixed(
-                      2
-                    )}s`
-                  );
-                  console.log(
-                    `[Quiz Mode] Sections:`,
-                    sortedSections.map((s) => `${s.label}(${s.time}s)`)
-                  );
-
-                  // 現在の時刻を超えている最後のセクションを見つける
-                  let currentSection = sortedSections[0];
-                  for (const section of sortedSections) {
-                    const sectionTime = parseFloat(section.time);
-                    if (currentVideoTime >= sectionTime) {
-                      currentSection = section;
-                    } else {
-                      break;
-                    }
-                  }
-
-                  console.log(
-                    `[Quiz Mode] Selected: ${currentSection.label} (${currentSection.time}s)`
-                  );
-
-                  const tweetId =
-                    currentSection.url?.match(/TWEET_ID:(\d+)/)?.[1];
-
-                  return (
-                    <>
-                      <div className="mb-4 flex items-center justify-between flex-wrap gap-2">
-                        <span className="inline-block px-4 py-2 rounded-full bg-purple-600 dark:bg-purple-500 text-white text-lg font-bold shadow-md">
-                          🎯 {currentSection.label}
-                        </span>
-                        <span className="px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 text-sm font-mono font-semibold">
-                          {parseFloat(currentSection.time).toFixed(1)}秒
-                        </span>
-                      </div>
-
-                      {tweetId && (
-                        <div className="mb-4">
-                          <Tweet id={tweetId} />
-                        </div>
-                      )}
-
-                      {currentSection.description && (
-                        <div className="mb-3 text-gray-700 dark:text-gray-200">
-                          <MarkdownContent
-                            content={currentSection.description}
-                          />
-                        </div>
-                      )}
-
-                      {currentSection.image_suggestion && (
-                        <div className="mt-2 p-3 bg-purple-100/50 dark:bg-purple-900/20 rounded border-l-4 border-purple-400 dark:border-purple-600">
-                          <p className="text-sm text-gray-600 dark:text-gray-300">
-                            <span className="font-semibold">💡 イメージ: </span>
-                            {currentSection.image_suggestion}
-                          </p>
-                        </div>
-                      )}
-
-                      {/* タイムライン表示 */}
-                      <div className="mt-4 pt-4 border-t border-purple-200 dark:border-purple-800">
-                        <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
-                          タイムライン:
-                        </p>
-                        <div className="flex flex-wrap gap-2">
-                          {sortedSections.map((section, idx) => {
-                            const isActive =
-                              section.label === currentSection.label;
-                            const isPast =
-                              currentVideoTime >= parseFloat(section.time);
-                            return (
-                              <span
-                                key={idx}
-                                className={`px-2 py-1 rounded text-xs font-medium ${
-                                  isActive
-                                    ? "bg-purple-600 text-white"
-                                    : isPast
-                                    ? "bg-purple-200 dark:bg-purple-800 text-purple-900 dark:text-purple-100"
-                                    : "bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400"
-                                }`}
-                              >
-                                {section.label} (
-                                {parseFloat(section.time).toFixed(1)}s)
-                              </span>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    </>
-                  );
-                })()}
-              </div>
-            </div>
-          )}
+          {/* Time-synced Image Display */}
+          <TimeSyncedImageSections
+            sections={article.image_sections ?? []}
+            currentVideoTime={currentVideoTime}
+          />
 
           {/* Remember Section */}
           {article.remember && (
@@ -859,8 +722,8 @@ export function ArticleContent({
               {needsReview
                 ? "エビングハウスの忘却曲線に基づき、復習の時期が来ています。もう一度確認して記憶を定着させましょう。"
                 : isCompleted
-                ? "✅ 完了済み！次の問題に進めます。"
-                : "「理解した」ボタンを押すと、次の問題が解放されます。"}
+                  ? "✅ 完了済み！次の問題に進めます。"
+                  : "「理解した」ボタンを押すと、次の問題が解放されます。"}
             </p>
             <Button
               size="lg"
@@ -873,10 +736,10 @@ export function ArticleContent({
               {isMarkingComplete
                 ? "保存中..."
                 : needsReview
-                ? "復習完了！次へ進む"
-                : isCompleted
-                ? "もう一度復習して次へ"
-                : "理解した！次へ進む"}
+                  ? "復習完了！次へ進む"
+                  : isCompleted
+                    ? "もう一度復習して次へ"
+                    : "理解した！次へ進む"}
             </Button>
           </div>
 
@@ -994,198 +857,17 @@ export function ArticleContent({
           )}
 
           {/* Image Sections */}
-          {article.image_sections && article.image_sections.length > 0 && (
-            <div className="mb-8 space-y-6">
-              <h3 className="text-2xl font-bold text-blue-700 dark:text-blue-400 mb-4">
-                🖼️ フレーズのイメージ
-              </h3>
-              {article.image_sections.map((imageSection, index) => {
-                const tweetId = imageSection.url?.match(/TWEET_ID:(\d+)/)?.[1];
-                const stage = animationStage.get(index);
+          <StaticImageSections
+            sections={article.image_sections ?? []}
+            animationStage={animationStage}
+            sectionRefs={sectionRefs}
+          />
 
-                return (
-                  <div
-                    key={index}
-                    ref={(el) => {
-                      if (el) sectionRefs.current.set(index, el);
-                    }}
-                    className="p-5 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 rounded-lg border-2 border-blue-200 dark:border-blue-800"
-                  >
-                    {/* Label */}
-                    {imageSection.label && (
-                      <div
-                        className={`mb-4 transition-transform duration-300 ${
-                          stage === "label-big"
-                            ? "scale-125 animate-in zoom-in-50"
-                            : stage === "label-small" || stage === "tweet"
-                            ? "scale-100"
-                            : "scale-100 opacity-0"
-                        }`}
-                        style={{
-                          transformOrigin: "left center",
-                        }}
-                      >
-                        <span className="inline-block px-4 py-2 rounded-full bg-blue-600 dark:bg-blue-500 text-white text-lg font-bold shadow-md">
-                          🎯 {imageSection.label}
-                        </span>
-                      </div>
-                    )}
-
-                    {/* Tweet */}
-                    {tweetId && (
-                      <div
-                        className={`mb-4 transition-all duration-500 ${
-                          stage === "tweet"
-                            ? "opacity-100 animate-in fade-in-0 slide-in-from-bottom-4"
-                            : "opacity-0 translate-y-4"
-                        }`}
-                      >
-                        <Tweet id={tweetId} />
-                      </div>
-                    )}
-
-                    {/* Description */}
-                    {imageSection.description && (
-                      <div className="mb-3 text-gray-700 dark:text-gray-200">
-                        <MarkdownContent content={imageSection.description} />
-                      </div>
-                    )}
-
-                    {/* Image Suggestion */}
-                    {imageSection.image_suggestion && (
-                      <div className="mt-2 p-3 bg-blue-100/50 dark:bg-blue-900/20 rounded border-l-4 border-blue-400 dark:border-blue-600">
-                        <p className="text-sm text-gray-600 dark:text-gray-300">
-                          <span className="font-semibold">💡 イメージ: </span>
-                          {imageSection.image_suggestion}
-                        </p>
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          )}
-
-          {/* ここに追加 */}
-          {/* Time-synced Tweet Display */}
-          {article.image_sections && article.image_sections.length > 0 && (
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-4">
-                🎬 動画連動イメージ
-              </h3>
-              <div className="p-5 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 rounded-lg border-2 border-purple-200 dark:border-purple-800">
-                {(() => {
-                  // 現在の時刻に基づいて表示するツイートを決定
-                  const sortedSections = [...article.image_sections].sort(
-                    (a, b) => parseFloat(a.time) - parseFloat(b.time)
-                  );
-
-                  // section.timeは動画の絶対時刻なので、currentVideoTimeと直接比較
-                  console.log(
-                    `[Article Mode] currentVideoTime: ${currentVideoTime.toFixed(
-                      2
-                    )}s`
-                  );
-                  console.log(
-                    `[Article Mode] Sections:`,
-                    sortedSections.map((s) => `${s.label}(${s.time}s)`)
-                  );
-
-                  // 現在の時刻を超えている最後のセクションを見つける
-                  let currentSection = sortedSections[0];
-                  for (const section of sortedSections) {
-                    const sectionTime = parseFloat(section.time);
-                    const isMatch = currentVideoTime >= sectionTime;
-                    console.log(
-                      `[Article Mode] Checking ${
-                        section.label
-                      }: sectionTime=${sectionTime}, currentVideoTime=${currentVideoTime.toFixed(
-                        2
-                      )}, match=${isMatch}`
-                    );
-                    if (isMatch) {
-                      currentSection = section;
-                    } else {
-                      break;
-                    }
-                  }
-
-                  console.log(
-                    `[Article Mode] Selected: ${currentSection.label} (${currentSection.time}s)`
-                  );
-
-                  const tweetId =
-                    currentSection.url?.match(/TWEET_ID:(\d+)/)?.[1];
-
-                  return (
-                    <>
-                      <div className="mb-4 flex items-center justify-between flex-wrap gap-2">
-                        <span className="inline-block px-4 py-2 rounded-full bg-purple-600 dark:bg-purple-500 text-white text-lg font-bold shadow-md">
-                          🎯 {currentSection.label}
-                        </span>
-                        <span className="px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 text-sm font-mono font-semibold">
-                          {parseFloat(currentSection.time).toFixed(1)}秒
-                        </span>
-                      </div>
-
-                      {tweetId && (
-                        <div className="mb-4">
-                          <Tweet id={tweetId} />
-                        </div>
-                      )}
-
-                      {currentSection.description && (
-                        <div className="mb-3 text-gray-700 dark:text-gray-200">
-                          <MarkdownContent
-                            content={currentSection.description}
-                          />
-                        </div>
-                      )}
-
-                      {currentSection.image_suggestion && (
-                        <div className="mt-2 p-3 bg-purple-100/50 dark:bg-purple-900/20 rounded border-l-4 border-purple-400 dark:border-purple-600">
-                          <p className="text-sm text-gray-600 dark:text-gray-300">
-                            <span className="font-semibold">💡 イメージ: </span>
-                            {currentSection.image_suggestion}
-                          </p>
-                        </div>
-                      )}
-
-                      {/* タイムライン表示 */}
-                      <div className="mt-4 pt-4 border-t border-purple-200 dark:border-purple-800">
-                        <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
-                          タイムライン:
-                        </p>
-                        <div className="flex flex-wrap gap-2">
-                          {sortedSections.map((section, idx) => {
-                            const isActive =
-                              section.label === currentSection.label;
-                            const isPast =
-                              currentVideoTime >= parseFloat(section.time);
-                            return (
-                              <span
-                                key={idx}
-                                className={`px-2 py-1 rounded text-xs font-medium ${
-                                  isActive
-                                    ? "bg-purple-600 text-white"
-                                    : isPast
-                                    ? "bg-purple-200 dark:bg-purple-800 text-purple-900 dark:text-purple-100"
-                                    : "bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400"
-                                }`}
-                              >
-                                {section.label} (
-                                {parseFloat(section.time).toFixed(1)}s)
-                              </span>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    </>
-                  );
-                })()}
-              </div>
-            </div>
-          )}
+          {/* Time-synced Image Display */}
+          <TimeSyncedImageSections
+            sections={article.image_sections ?? []}
+            currentVideoTime={currentVideoTime}
+          />
 
           {/* Remember Section */}
           {article.remember && (
@@ -1210,8 +892,8 @@ export function ArticleContent({
               {needsReview
                 ? "エビングハウスの忘却曲線に基づき、復習の時期が来ています。もう一度確認して記憶を定着させましょう。"
                 : isCompleted
-                ? "✅ 完了済み！次の問題に進めます。"
-                : "「理解した」ボタンを押すと、次の問題が解放されます。"}
+                  ? "✅ 完了済み！次の問題に進めます。"
+                  : "「理解した」ボタンを押すと、次の問題が解放されます。"}
             </p>
             <Button
               size="lg"
@@ -1224,10 +906,10 @@ export function ArticleContent({
               {isMarkingComplete
                 ? "保存中..."
                 : needsReview
-                ? "復習完了！次へ進む"
-                : isCompleted
-                ? "もう一度復習して次へ"
-                : "理解した！次へ進む"}
+                  ? "復習完了！次へ進む"
+                  : isCompleted
+                    ? "もう一度復習して次へ"
+                    : "理解した！次へ進む"}
             </Button>
           </div>
 
@@ -1326,8 +1008,8 @@ export function ArticleContent({
               {needsReview
                 ? "エビングハウスの忘却曲線に基づき、復習の時期が来ています。もう一度確認して記憶を定着させましょう。"
                 : isCompleted
-                ? "✅ 完了済み！次の問題に進めます。"
-                : "「理解した」ボタンを押すと、次の問題が解放されます。"}
+                  ? "✅ 完了済み！次の問題に進めます。"
+                  : "「理解した」ボタンを押すと、次の問題が解放されます。"}
             </p>
             <Button
               size="lg"
@@ -1340,10 +1022,10 @@ export function ArticleContent({
               {isMarkingComplete
                 ? "保存中..."
                 : needsReview
-                ? "復習完了！次へ進む"
-                : isCompleted
-                ? "もう一度復習して次へ"
-                : "理解した！次へ進む"}
+                  ? "復習完了！次へ進む"
+                  : isCompleted
+                    ? "もう一度復習して次へ"
+                    : "理解した！次へ進む"}
             </Button>
           </div>
 
@@ -1376,7 +1058,7 @@ export function ArticleContent({
                               <img
                                 src={`https://img.youtube.com/vi/${
                                   item.url.match(
-                                    /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/
+                                    /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/,
                                   )?.[1]
                                 }/mqdefault.jpg`}
                                 alt=""

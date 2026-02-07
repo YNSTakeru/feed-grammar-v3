@@ -41,7 +41,7 @@ export function YouTubePlayer({
 }: YouTubePlayerProps) {
   // 【デバッグ】受け取ったプロップの値を確認
   console.log(
-    `[YouTubePlayer] Props received - videoId: ${videoId}, startTime: ${startTime}, endTime: ${endTime}, loop: ${loop}`
+    `[YouTubePlayer] Props received - videoId: ${videoId}, startTime: ${startTime}, endTime: ${endTime}, loop: ${loop}`,
   );
 
   const playerRef = useRef<any>(null);
@@ -63,8 +63,8 @@ export function YouTubePlayer({
       const current = playerRef.current.getCurrentTime();
       console.log(
         `[updateProgress] 現在時刻: ${current.toFixed(
-          2
-        )}s (範囲: ${startTime}s - ${endTime}s)`
+          2,
+        )}s (範囲: ${startTime}s - ${endTime}s)`,
       );
       setCurrentTime(current);
 
@@ -196,12 +196,12 @@ export function YouTubePlayer({
                       if (current >= endTime - 0.1) {
                         console.log(
                           `[Loop Check] endTime到達! 現在: ${current.toFixed(
-                            2
-                          )}s, endTime: ${endTime}s, startTime: ${startTime}s`
+                            2,
+                          )}s, endTime: ${endTime}s, startTime: ${startTime}s`,
                         );
                         if (loop) {
                           console.log(
-                            `[Loop] ${startTime}s にシークしてループ再生`
+                            `[Loop] ${startTime}s にシークしてループ再生`,
                           );
                           playerRef.current.seekTo(startTime, true);
                         } else {
@@ -212,7 +212,7 @@ export function YouTubePlayer({
 
                       updateProgress();
                     }
-                  }, 100);
+                  }, 10);
                 }
               } else {
                 // 【機能】再生停止時はインターバルをクリア
@@ -230,7 +230,7 @@ export function YouTubePlayer({
 
     return () => {
       console.log(
-        `[YouTubePlayer] Cleanup - Destroying player for videoId: ${videoId}`
+        `[YouTubePlayer] Cleanup - Destroying player for videoId: ${videoId}`,
       );
       if (intervalRef.current) {
         clearInterval(intervalRef.current);

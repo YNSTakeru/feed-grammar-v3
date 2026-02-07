@@ -24,7 +24,7 @@ function renderStyledKatakana(text: string) {
           className="font-bold text-blue-700 dark:text-blue-300"
         >
           {match[1]}
-        </span>
+        </span>,
       );
     } else if (match[2]) {
       // 〈〉で囲まれた弱い発音
@@ -34,14 +34,14 @@ function renderStyledKatakana(text: string) {
           className="font-normal text-blue-400 dark:text-blue-500 opacity-70"
         >
           {match[2]}
-        </span>
+        </span>,
       );
     } else if (match[3]) {
       // 通常のテキスト
       parts.push(
         <span key={currentIndex++} className="font-medium">
           {match[3]}
-        </span>
+        </span>,
       );
     }
   }
@@ -50,6 +50,11 @@ function renderStyledKatakana(text: string) {
 }
 
 export function PhraseBreakdown({ kugiriEng, kugiriJp }: PhraseBreakdownProps) {
+  // kugiriEng/kugiriJp が未定義の場合は何も表示しない
+  if (!kugiriEng || !kugiriJp) {
+    return null;
+  }
+
   // スラッシュで分割
   const engParts = kugiriEng.split("/").map((part) => part.trim());
   const jpParts = kugiriJp.split("/").map((part) => part.trim());
@@ -85,7 +90,7 @@ export function PhraseBreakdown({ kugiriEng, kugiriJp }: PhraseBreakdownProps) {
           } else {
             // 前後の消えた音を検出
             const silentMatch = eng.match(
-              /^(＜.+?＞|<.+?>)|(.+?)(＜.+?＞|<.+?>)$/
+              /^(＜.+?＞|<.+?>)|(.+?)(＜.+?＞|<.+?>)$/,
             );
             if (silentMatch) {
               if (silentMatch[1]) {

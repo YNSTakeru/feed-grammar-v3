@@ -1,6 +1,6 @@
 [
   {
-    "id": 32,
+    "id": 36,
     "url": "https://www.youtube.com/watch?v=7n9IOH0NvyY",
     "start_time": "918",
     "end_time": "921",
@@ -34,21 +34,24 @@
           "time": "918",
           "image_display_instruction": "【ここにin_order_to_live_the_livesの画像を表示】",
           "description": "「〜な人生を送るために」という目的を示すフレーズです。自分が理想とするライフスタイルを歩み始める、最初の一歩を踏み出すイメージです。",
-          "image_suggestion": "理想の生活に向かって、明るい道へ一歩踏み出す人の後ろ姿。"
+          "image_suggestion": "理想の生活に向かって、明るい道へ一歩踏み出す人の後ろ姿。",
+          "url": "TWEET_ID:2002058947948392593"
         },
         {
           "label": "that we say",
           "time": "919.3",
           "image_display_instruction": "【ここにthat_we_sayの画像を表示】",
           "description": "「私たちが言っている」という、口に出した決意や言葉を指します。自分の理想を他人に語ったり、心の中で宣言したりする様子をイメージしましょう。",
-          "image_suggestion": "友人や鏡に向かって、自分の夢や目標をいきいきと語っているシーン。"
+          "image_suggestion": "友人や鏡に向かって、自分の夢や目標をいきいきと語っているシーン。",
+          "url": "TWEET_ID:2002058977161666638"
         },
         {
           "label": "we want to live",
           "time": "920",
           "image_display_instruction": "【ここにwe_want_to_liveの画像を表示】",
           "description": "「私たちが生きたい（人生）」という、心からの願望を表します。本当に望んでいる状態や、幸せを感じている瞬間を視覚化します。",
-          "image_suggestion": "自分が一番リラックスでき、幸せを感じる場所で満面の笑みを浮かべている様子。"
+          "image_suggestion": "自分が一番リラックスでき、幸せを感じる場所で満面の笑みを浮かべている様子。",
+          "url": "TWEET_ID:2002059180778402086"
         }
       ],
       "remember": "「in order to」(〜するために)は、目的をはっきりと伝える時に非常に便利な表現です。例：I study hard in order to pass the exam.（試験に合格するために一生懸命勉強しています。）\n\n「want to (wanna)」(〜したい)は、自分の願望を伝える日常会話の超必須フレーズです。例：I wanna go to Hawaii someday.（いつかハワイに行きたいな。）",
@@ -123,7 +126,7 @@
     "remember": "「in order to」(〜するために)は、目的をはっきりと伝える時に非常に便利な表現です。例：I study hard in order to pass the exam.（試験に合格するために一生懸命勉強しています。）\n\n「want to (wanna)」(〜したい)は、自分の願望を伝える日常会話の超必須フレーズです。例：I wanna go to Hawaii someday.（いつかハワイに行きたいな。）"
   },
   {
-    "id": 33,
+    "id": 37,
     "url": "https://www.youtube.com/watch?v=o1Z4F4e2Bw4",
     "start_time": "472",
     "end_time": "476.4",
@@ -165,28 +168,32 @@
           "time": "472",
           "image_display_instruction": "【ここにyou_do_not_want_to_mess_withの画像を表示】",
           "description": "「〜に手を出すべきではない」「〜を怒らせないほうがいい」という警告のニュアンスを含むフレーズです。相手に対して「そんなことしないほうが身のためだよ」と忠告するような、少し緊張感のある場面をイメージしてください。",
-          "image_suggestion": "危険なものに対して、誰かが「止めておけ」と制止しているような緊迫したシーン"
+          "image_suggestion": "危険なものに対して、誰かが「止めておけ」と制止しているような緊迫したシーン",
+          "url": "TWEET_ID:2002069887632748819"
         },
         {
           "label": "a hippo",
           "time": "473.3",
           "image_display_instruction": "【ここにa_hippoの画像を表示】",
           "description": "hippoはhippopotamus（カバ）の略称です。見た目はのんびりしていますが、野生では非常に気性が荒く危険な動物であることを示す視覚イメージが効果的です。",
-          "image_suggestion": "大きく口を開けて威嚇している、迫力のあるカバの姿"
+          "image_suggestion": "大きく口を開けて威嚇している、迫力のあるカバの姿",
+          "url": "TWEET_ID:2002069932138463500"
         },
         {
           "label": "or a rhino",
           "time": "474",
           "image_display_instruction": "【ここにor_a_rhinoの画像を表示】",
           "description": "rhinoはrhinoceros（サイ）の略称です。頑丈な皮膚と鋭い角を持ち、突進してくる力強さをイメージすると、なぜ「手を出してはいけない」のかが腑に落ちます。",
-          "image_suggestion": "夕日のサバンナで角を突き立てて立っている、屈強なサイの姿"
+          "image_suggestion": "夕日のサバンナで角を突き立てて立っている、屈強なサイの姿",
+          "url": "TWEET_ID:2002069967483892142"
         },
         {
           "label": "or a water buffalo.",
           "time": "475.2",
           "image_display_instruction": "【ここにor_a_water_buffaloの画像を表示】",
           "description": "water buffalo（水牛）は、巨大な角を持ち、群れで行動する非常にタフな動物です。野生動物の怖さを象徴する最後の一押しとしてイメージしましょう。",
-          "image_suggestion": "泥の中に立ち、こちらを鋭い眼光で睨みつける巨大な角を持った水牛"
+          "image_suggestion": "泥の中に立ち、こちらを鋭い眼光で睨みつける巨大な角を持った水牛",
+          "url": "TWEET_ID:2002070006872617303"
         }
       ],
       "remember": "「you do not want to...」(〜しないほうがいいよ)は、相手に忠告や警告を与える時に使われる非常に強い表現です。直訳の「〜したくない」よりも「〜すべきではない」という意味合いが強くなります。例：You do not want to be late for this meeting.（この会議には遅れないほうがいいですよ）\n\n「mess with...」(〜に手を出す、〜を怒らせる)は、厄介な人や危険なものに関わってトラブルになる状況で使われます。例：Don't mess with him.（彼を怒らせるなよ）",
@@ -272,336 +279,5 @@
     "kugiri_jp": "【ユ】 〈ドゥ〉 / 【ノ】 / 【ワタ】 / 【メスザ】 / 【ヒッポオ】 / 〈オア〉 / 【ライノ】 / 〈オア〉 / 【ワタ】 / 【バッファロー】",
     "translated": "カバやサイ、あるいは水牛を怒らせるような真似はしたくないはずだ（＝手を出すべきではない）。",
     "remember": "「you do not want to...」(〜しないほうがいいよ)は、相手に忠告や警告を与える時に使われる非常に強い表現です。直訳の「〜したくない」よりも「〜すべきではない」という意味合いが強くなります。例：You do not want to be late for this meeting.（この会議には遅れないほうがいいですよ）\n\n「mess with...」(〜に手を出す、〜を怒らせる)は、厄介な人や危険なものに関わってトラブルになる状況で使われます。例：Don't mess with him.（彼を怒らせるなよ）"
-  },
-  {
-    "id": 34,
-    "url": "https://www.youtube.com/watch?v=SEAIQ62rydI",
-    "start_time": "162",
-    "end_time": "165.5",
-    "updated_at": "2025-12-19T18:16:41.922Z",
-    "question": "I want to put it in a broader context.",
-    "question_katakana": "【アィ】〈ワィ〉 【プディンニア】 【ブローダー】 【コンテキスト】",
-    "article_text": {
-      "title": "ネイティブの発音はこう聞こえる！『I want to put it in a broader context.』の秘密",
-      "meta_description": "『I want to put it in a broader context』が「アィ プディンニア」に聞こえる理由をプロが解説。want toの脱落やリエゾンの仕組みを学んで、リスニング力を向上させましょう。",
-      "katakana_weak_strong": "【アィ】〈ワィ〉 【プディンニア】 【ブローダー】 【コンテキスト】",
-      "kugiri_eng": "I ＜want to＞ / put it in a / broader / context.",
-      "kugiri_jp": "【アィ】〈ワィ〉 / 【プディンニア】 / 【ブローダー】 / 【コンテキスト】",
-      "translated": "それをより広い文脈で捉えたいと思います。",
-      "tsukkomi": [
-        {
-          "question": "want to が 聴こえない!?",
-          "answer": "want toが聞こえないのは、先行するIと結合し、さらにtoが極端に弱化・脱落するためです。ネイティブの速い会話では、wantのt音が消え、さらにtoの音が前の語に吸収されるように「ワィ」や「ワナ」のように発音されることが多いため、慣れていないと聞き逃してしまいます。"
-        },
-        {
-          "question": "put it in a は プット イット イン ア じゃなくて プディンニア!?",
-          "answer": "これは「リンキング（連結）」と「フラップのT」という現象が同時に起きているためです。putのtが母音に挟まれてラ行（またはdに近い音）に変化し、続くit、in、aとすべてが数珠つなぎになります。put-it-in-aがひと繋ぎになり、カタカナでは「プディンニア」のように一気に発音されます。"
-        }
-      ],
-      "image_sections": [
-        {
-          "label": "I want to put it in a ",
-          "time": "162",
-          "image_display_instruction": "【ここにI_want_to_put_it_in_a_の画像を表示】",
-          "description": "I want to put it in aは「私は〜を（どこかに）置きたい・組み込みたい」という自身の意図を示すフレーズです。手を動かして何かを中に配置しようとしている動作をイメージしてください。",
-          "image_suggestion": "プレゼンターが資料のパネルを、より大きな枠組みの中に差し込もうとしている様子"
-        },
-        {
-          "label": "broader",
-          "time": "163.7",
-          "image_display_instruction": "【ここにbroaderの画像を表示】",
-          "description": "broaderは「より広い」という意味の比較級です。視界が左右にぐっと広がるような、開放感のあるイメージを持つと覚えやすくなります。",
-          "image_suggestion": "狭い道から、パッと視界が開けた広い草原や大海原に繋がる景色のイラスト"
-        },
-        {
-          "label": " context.",
-          "time": "164.4",
-          "image_display_instruction": "【ここにcontextの画像を表示】",
-          "description": "contextは「文脈」や「背景」を意味します。単一の出来事ではなく、それを取り巻く状況全体を線やパズルのように捉えるイメージです。",
-          "image_suggestion": "一つのパズルピースの周りに、それに関連するたくさんのピースが並んでいる背景図"
-        }
-      ],
-      "remember": "「put A in a ... context」(Aを…な文脈で捉える)は、ビジネスや学術的な議論で非常によく使われる表現です。例：We should see this problem in a global context. (この問題は地球規模の文脈で捉えるべきです。)\n\n「broader」(より広い)は、視野や範囲を広げたい時に役立つ単語です。例：We need a broader perspective. (私たちにはより広い視点が必要です。)",
-      "introduction": "英語のリスニングをしていて「知っている単語のはずなのに、全く別の言葉に聞こえる」と感じたことはありませんか？実は、ネイティブの発音には音がつながったり消えたりする一定のルールがあります。今回は、その代表例を見ていきましょう。",
-      "section_1": {
-        "heading": "例文と意味",
-        "content": "今回の例文は『I want to put it in a broader context.』です。これは、何か特定の事象について「単体で考えるのではなく、もっと大きな背景や状況（文脈）の中に置いて考えてみたい」と提案する際に使われる、非常に洗練された表現です。"
-      },
-      "section_2": {
-        "heading": "発音のポイント",
-        "content": "衝撃的なのは『put it in a』が『プディンニア』と聞こえる点でしょう。カタカナで「プット・イット・イン・ア」と一語ずつ区切って発音する癖があると、この音は一生聞き取れません。すべての単語が連結し、一つの長い単語のように発音されるのが英語本来のリズムです。"
-      },
-      "section_3": {
-        "heading": "なぜそう聞こえるの？",
-        "content": "『want to』が消えたように感じるのは、機能語の弱化が原因です。重要な情報を伝える『put』や『broader』に強調が置かれる一方で、want toは添える程度に発音されます。また、『put it in a』のt音がdに近い音に化ける「フラップT」現象により、滑らかな『プディンニア』という音が生まれるのです。"
-      },
-      "section_4": {
-        "heading": "学習のコツ",
-        "content": "まずは「プディンニア」と口に出して言ってみましょう。一見ふざけているようですが、自分で出せる音は必ず聞き取れるようになります。一語ずつ発音するのではなく、意味のまとまりごとに「一息で言い切る」練習を繰り返すのが、リスニング上達の近道です。"
-      },
-      "conclusion": "音の変化のルールがわかると、呪文のように聞こえていた英語が急にクリアな意味を持って聞こえ始めます。新しい「音」との出会いを楽しんでいきましょう！",
-      "keywords": [
-        "英語発音",
-        "リエゾン",
-        "リスニング",
-        "英語学習",
-        "want to",
-        "put it in a"
-      ]
-    },
-    "category": "最初の30フレーズ",
-    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/SEAIQ62rydI/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/SEAIQ62rydI/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/SEAIQ62rydI/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/SEAIQ62rydI/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/SEAIQ62rydI/maxresdefault.jpg\"}",
-    "theme": "want to",
-    "noIndex": 0,
-    "is_similar": 1,
-    "pron_memo": " want to が聴こえない。 put it in a は プディンニア に 聴こえる。",
-    "tsukkomi": [
-      {
-        "question": "want to が 聴こえない!?",
-        "answer": "want toが聞こえないのは、先行するIと結合し、さらにtoが極端に弱化・脱落するためです。ネイティブの速い会話では、wantのt音が消え、さらにtoの音が前の語に吸収されるように「ワィ」や「ワナ」のように発音されることが多いため、慣れていないと聞き逃してしまいます。"
-      },
-      {
-        "question": "put it in a は プット イット イン ア じゃなくて プディンニア!?",
-        "answer": "これは「リンキング（連結）」と「フラップのT」という現象が同時に起きているためです。putのtが母音に挟まれてラ行（またはdに近い音）に変化し、続くit、in、aとすべてが数珠つなぎになります。put-it-in-aがひと繋ぎになり、カタカナでは「プディンニア」のように一気に発音されます。"
-      }
-    ],
-    "image_learn": "[{\"label\":\"I want to put it in a \",\"time\":\"162\",\"url\":\"TWEET_ID:2002079485785747642\"},{\"label\":\"broader\",\"time\":\"163.7\",\"url\":\"TWEET_ID:2002079529293197553\"},{\"label\":\" context.\",\"time\":\"164.4\",\"url\":\"TWEET_ID:2002079560419192953\"}]",
-    "image_sections": [
-      {
-        "label": "I want to put it in a ",
-        "time": "162",
-        "url": "TWEET_ID:2002079485785747642"
-      },
-      {
-        "label": "broader",
-        "time": "163.7",
-        "url": "TWEET_ID:2002079529293197553"
-      },
-      {
-        "label": " context.",
-        "time": "164.4",
-        "url": "TWEET_ID:2002079560419192953"
-      }
-    ],
-    "kugiri_eng": "I ＜want to＞ / put it in a / broader / context.",
-    "kugiri_jp": "【アィ】〈ワィ〉 / 【プディンニア】 / 【ブローダー】 / 【コンテキスト】",
-    "translated": "それをより広い文脈で捉えたいと思います。",
-    "remember": "「put A in a ... context」(Aを…な文脈で捉える)は、ビジネスや学術的な議論で非常によく使われる表現です。例：We should see this problem in a global context. (この問題は地球規模の文脈で捉えるべきです。)\n\n「broader」(より広い)は、視野や範囲を広げたい時に役立つ単語です。例：We need a broader perspective. (私たちにはより広い視点が必要です。)"
-  },
-  {
-    "id": 36,
-    "url": "https://www.youtube.com/watch?v=RcGyVTAoXEU",
-    "start_time": "650",
-    "end_time": "654",
-    "updated_at": "2025-12-19T19:35:27.204Z",
-    "question": "I want to finish by telling you about one more study.",
-    "question_katakana": "〈モナ〉 【フィニッシュ】 〈バイ〉 【テリング】 〈ユ〉 〈バウ〉 【ワンモア】 【スタディ】",
-    "article_text": {
-      "title": "ネイティブの発音はこう聞こえる！『I want to finish by telling you...』の秘密",
-      "meta_description": "「I want to」が「モナ」に！？英語リスニングの壁を壊す、ネイティブ特有の音の変化（リダクション・リエゾン）を専門家が分かりやすく解説します。",
-      "katakana_weak_strong": "〈モナ〉 【フィニッシュ】 〈バイ〉 【テリング】 〈ユ〉 〈バウ〉 【ワンモア】 【スタディ】",
-      "kugiri_eng": "＜I＞ want to / finish / by / telling you / about / one more / study.",
-      "kugiri_jp": "〈モナ〉 / 【フィニッシュ】 / 〈バイ〉 / 【テリング】 〈ユ〉 / 〈バウ〉 / 【ワンモア】 / 【スタディ】",
-      "translated": "最後にもう一つ、ある研究についてお話しして終わりたいと思います。",
-      "tsukkomi": [
-        {
-          "question": "I は 聴こえない !?",
-          "answer": "代名詞の I は機能語と呼ばれ、文脈で明らかな場合は非常に弱く、あるいは完全に脱落して発音されることがあります。特に次に続く want to とセットで「モナ」のように一体化して聞こえるため、単体としての「アイ」という音は消失したように感じられます。"
-        },
-        {
-          "question": "want to は ウォント トゥ じゃなくて モナ!?",
-          "answer": "want to は会話では wanna（ワナ）と短縮されますが、さらに直前の I の音の影響や、w 音の弱化が重なると「モナ」に近い響きになります。これは鼻音の n が前後の音を飲み込むように発音される、ネイティブ特有のリダクション（音の脱落）現象です。"
-        },
-        {
-          "question": "about は アバウト じゃなくて バウ!?",
-          "answer": "about の最初の a はシュワ音（あいまい母音）と呼ばれ、ストレスが置かれないため非常に弱く発音されます。さらに、語尾の t は「止まる t」として飲み込まれるため、結果として中心部分の「バウ」だけが残って聞こえるのです。"
-        }
-      ],
-      "image_sections": [
-        {
-          "label": "I want to finish",
-          "time": "650",
-          "image_display_instruction": "【ここにI_want_to_finishの画像を表示】",
-          "description": "I want to finishは「〜して終わりたい」という意欲を示す表現です。マラソンのゴールテープを切る瞬間や、プレゼンを締めくくろうとしている場面をイメージすると伝わりやすいでしょう。",
-          "image_suggestion": "ゴールテープを目前にしたランナー、またはマイクを持ってスピーチを締めくくる人物のイラスト"
-        },
-        {
-          "label": "by telling you",
-          "time": "651.9",
-          "image_display_instruction": "【ここにby_telling_youの画像を表示】",
-          "description": "by telling youは「あなたに伝えることによって」という手段を説明するフレーズです。相手に秘密を打ち明けたり、情報を手渡したりするような、双方向のコミュニケーションの様子を思い浮かべてください。",
-          "image_suggestion": "友人の耳元でささやく姿や、聞き手に向かって情熱的に語りかけているスピーカーの姿"
-        },
-        {
-          "label": "about one more study.",
-          "time": "652.7",
-          "image_display_instruction": "【ここにabout_one_more_study.の画像を表示】",
-          "description": "about one more studyは「もう一つの研究について」という意味です。山積みになった資料から最後の一冊を取り出すような、知的で探求心を感じさせるシーンがぴったりです。",
-          "image_suggestion": "顕微鏡やグラフが描かれた研究資料の束から、一冊のレポートを指し示している様子"
-        }
-      ],
-      "remember": "「I want to... by ～ing」（～することで～したい）は、自分の目的と手段を同時に伝える際に非常に便利な形です。例：I want to relax by reading a book.（本を読むことでリラックスしたい）\n\n「one more...」（もう一つの、もう一回の）は、追加を求める日常のあらゆる場面で使えます。例：Can I have one more cup of coffee?（もう一杯コーヒーをいただけますか？）",
-      "introduction": "「単語は知っているのに、ネイティブの話が聞き取れない！」そんな経験はありませんか？実は、英語は文字通りに発音されないことがよくあります。今回は、一見シンプルなのに聞き取りが難しいフレーズの裏側を解き明かしましょう。",
-      "section_1": {
-        "heading": "例文と意味",
-        "content": "今回の例文は「I want to finish by telling you about one more study.」です。プレゼンテーションや講義の終盤で、「最後に、あともう一つ研究を紹介して締めくくりたいと思います」と宣言する場面で使われます。話し手がこれから話をまとめようとしている前向きなニュアンスが含まれています。"
-      },
-      "section_2": {
-        "heading": "発音のポイント",
-        "content": "カタカナ表記を見て驚いた方も多いはずです。まず、「I want to」がセットで「モナ」のように聞こえます。これは I が弱まり、want to の w 音が鼻音の n に同化して聞こえるためです。また、「about」は最初の『ア』も最後の『ト』もほとんど発音されず、中間の「バウ」だけが強調されるのが特徴です。まさに『そうは聞こえないだろ！』とツッコミたくなるような変化ですが、これが英語のリアルな響きです。"
-      },
-      "section_3": {
-        "heading": "なぜそう聞こえるの？",
-        "content": "英語には、重要な情報を持つ「内容語（finish, studyなど）」は強く、文法を助ける「機能語（I, to, byなど）」は極端に弱く発音するというリズムの法則があります。want to が「モナ」に聞こえるのは、素早い発話の中で  音の響きが支配的になるためです。about が「バウ」になるのは、ストレスのない音節が脱落する「リダクション」と、語尾の閉鎖音が破裂せずに止まる「ストップ 」の現象が同時に起きているからです。"
-      },
-      "section_4": {
-        "heading": "学習のコツ",
-        "content": "まずは「文字」を忘れて「音」だけを真似する練習が効果的です。この例文なら「モナ・フィニッシュ」という一つの塊として口に出してみましょう。意味の切れ目（by や about の前）で少し意識を置きつつ、強弱の波（ストレス）に乗る感覚でシャドーイングを行うと、リスニング力だけでなくスピーキングの流暢さも格段に向上します。"
-      },
-      "conclusion": "英語の音の変化は、最初は魔法のように思えるかもしれませんが、ルールを知ればパズルのように解けていきます。新しい音の発見を楽しみながら、ネイティブに近いリズムを身につけていきましょう！",
-      "keywords": [
-        "英語発音",
-        "リエゾン",
-        "リスニング",
-        "リダクション",
-        "I want to",
-        "about 発音"
-      ]
-    },
-    "category": "最初の30フレーズ",
-    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/RcGyVTAoXEU/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/RcGyVTAoXEU/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/RcGyVTAoXEU/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/RcGyVTAoXEU/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/RcGyVTAoXEU/maxresdefault.jpg\"}",
-    "theme": "want to",
-    "noIndex": 0,
-    "is_similar": 1,
-    "pron_memo": "I は 聴こえない。 want to は モナ に聴こえる。 about は バウ に聴こえる。",
-    "tsukkomi": [
-      {
-        "question": "I は 聴こえない !?",
-        "answer": "代名詞の I は機能語と呼ばれ、文脈で明らかな場合は非常に弱く、あるいは完全に脱落して発音されることがあります。特に次に続く want to とセットで「モナ」のように一体化して聞こえるため、単体としての「アイ」という音は消失したように感じられます。"
-      },
-      {
-        "question": "want to は ウォント トゥ じゃなくて モナ!?",
-        "answer": "want to は会話では wanna（ワナ）と短縮されますが、さらに直前の I の音の影響や、w 音の弱化が重なると「モナ」に近い響きになります。これは鼻音の n が前後の音を飲み込むように発音される、ネイティブ特有のリダクション（音の脱落）現象です。"
-      },
-      {
-        "question": "about は アバウト じゃなくて バウ!?",
-        "answer": "about の最初の a はシュワ音（あいまい母音）と呼ばれ、ストレスが置かれないため非常に弱く発音されます。さらに、語尾の t は「止まる t」として飲み込まれるため、結果として中心部分の「バウ」だけが残って聞こえるのです。"
-      }
-    ],
-    "image_learn": "[{\"label\":\"I want to finish\",\"time\":\"650\",\"url\":\"TWEET_ID:2002084154247364710\"},{\"label\":\"by telling you\",\"time\":\"651.9\",\"url\":\"TWEET_ID:2002084186937782558\"},{\"label\":\"about one more study.\",\"time\":\"652.7\",\"url\":\"TWEET_ID:2002084222463557661\"}]",
-    "image_sections": [
-      {
-        "label": "I want to finish",
-        "time": "650",
-        "url": "TWEET_ID:2002084154247364710"
-      },
-      {
-        "label": "by telling you",
-        "time": "651.9",
-        "url": "TWEET_ID:2002084186937782558"
-      },
-      {
-        "label": "about one more study.",
-        "time": "652.7",
-        "url": "TWEET_ID:2002084222463557661"
-      }
-    ],
-    "kugiri_eng": "＜I＞ want to / finish / by / telling you / about / one more / study.",
-    "kugiri_jp": "〈モナ〉 / 【フィニッシュ】 / 〈バイ〉 / 【テリング】 〈ユ〉 / 〈バウ〉 / 【ワンモア】 / 【スタディ】",
-    "translated": "最後にもう一つ、ある研究についてお話しして終わりたいと思います。",
-    "remember": "「I want to... by ～ing」（～することで～したい）は、自分の目的と手段を同時に伝える際に非常に便利な形です。例：I want to relax by reading a book.（本を読むことでリラックスしたい）\n\n「one more...」（もう一つの、もう一回の）は、追加を求める日常のあらゆる場面で使えます。例：Can I have one more cup of coffee?（もう一杯コーヒーをいただけますか？）"
-  },
-  {
-    "id": 37,
-    "url": "https://www.youtube.com/watch?v=qc6ctN5-xX0",
-    "start_time": "376.4",
-    "end_time": "380.4",
-    "updated_at": "2025-11-29T15:57:04.462Z",
-    "question": "I listen to your music, uh, a planet that I want to be on,",
-    "question_katakana": "〈ア〉 【ディスポ アイラシ ミュージック】 〈アー ア〉 【プラネタラ ウォナ ビィオン】",
-    "article_text": {
-      "title": "🤯「ウォナ」って聞こえたら正解！ネイティブ発音「I listen to your music...」の秘密",
-      "meta_description": "I listen to your musicが「ディスポアイラシ」？ want toが「ウォナ」？ネイティブの英語発音の「リエゾン」「弱化」を解説。リスニング力向上に役立つ学習法を紹介。",
-      "katakana_weak_strong": "〈ア〉 【ディスポ アイラシ ミュージック】 〈アー ア〉 【プラネタラ ウォナ ビィオン】",
-      "kugiri_eng": "I / listen to / your / music, / uh, / a planet / that I / want to / be on",
-      "kugiri_jp": "〈ア〉 / 【ディスポ】 / 〈アイラシ〉 / 【ミュージック】 / 〈アー〉 / 〈ア〉 【プラネ】 / 〈タラ〉 / 【ウォナ】 / 【ビィオン】",
-      "translated": "君の音楽を聴いているんだ。ああ、僕がいたいと思う惑星（場所）なんだ。",
-      "tsukkomi": [
-        {
-          "question": "I は アイ ではなく ア！？",
-          "answer": "単語単体では「アイ」ですが、文中でストレスを受けない場合や、次の単語と音がつながる場合など、母音が弱化して「ア」（シュワ音の[ə]）に近い音になることがあります。これは機能語である代名詞の弱形（Weak Form）の一つです。"
-        },
-        {
-          "question": "listen to your は リッスン トゥ ユア じゃなくて ディスポ アイラシ!?",
-          "answer": "これは非常に強い音の連結（リエゾン）と脱落（エリジョン）が起こった結果です。「listen to」の/t/がほとんど聞こえず、「to your」の/t/も脱落し、「your」の母音も弱化することで、全体として「ディスポ アイラシ」のような、元の単語の形を大きく変えた音として聞こえています。特に、/t/や/d/といった破裂音が、続く音によってはほとんど発音されなくなる現象です。"
-        },
-        {
-          "question": "planet that I は プラネット ザット アイ じゃなくて プラネタラ!?",
-          "answer": "「planet」の語尾の/t/の後の「that」の/ðæ/、そして続く「I」の/aɪ/がリエゾン（音の連結）と弱化を起こしています。「that」の/t/がフラップT（アメリカ英語の軽い/d/や/r/のような音）になり、母音も弱化して、すべてがつながって「プラネタラ」のように聞こえます。特に「that I」が「ザラ」のように変化しています。"
-        },
-        {
-          "question": "want to は ウォント トゥ じゃなくて ウォナ!?",
-          "answer": "これは最も有名な短縮形の一つです。「want to」は、口語では「wanna」（ウォナ）と発音されることが非常に一般的です。「to」の母音[u:]が弱化してシュワ音[ə]になり、さらに/t/が脱落して/n/と融合することで起こる現象です。これは日常会話で頻出するため、慣れることが必須です。"
-        }
-      ],
-      "remember": "「I want to be on...」(〜の上にいたい/〜の中にいたい)は、「そこに属したい」「参加したい」といった場所や状態を望む気持ちを表すフレーズです。例文では「惑星にいたい」ですが、より抽象的な場所にも使えます。\n例：I want to be on the winning team. (私は勝ち組のチームにいたい)\n\n「listen to your...」(あなたの〜を聴く)は、文字通り音楽を聴く以外にも、「意見を聞く」「アドバイスに従う」という意味でも使われます。\n例：You should listen to your mother's advice. (あなたは母親のアドバイスを聞くべきです)",
-      "introduction": "英語のリスニングで「知っているはずの単語なのに、全然そう聞こえない！」と驚いた経験はありませんか？ネイティブの会話は、学校で習った発音とは違い、単語が驚くほどくっついたり、音が消えたりします。今回の例文では、まさに英語の「リエゾン（音の連結）」「弱化」「短縮」の宝庫です。この秘密を解き明かせば、あなたのリスニング力は一気に向上します！",
-      "section_1": {
-        "heading": "例文と意味",
-        "content": "今回の例文は、「I listen to your music, uh, a planet that I want to be on」です。直訳すると「私はあなたの音楽を聴く、ああ、それは私がいたいと思う惑星だ」となります。\n\nこれは、 **「その音楽に没頭することで、まるで自分が理想とする別の世界（惑星）にいるような気持ちになる」** という、音楽への深い共感や愛情を表現している状況だと考えられます。日本語訳：「君の音楽を聴いているんだ。ああ、僕がいたいと思う惑星（場所）なんだ。」"
-      },
-      "section_2": {
-        "heading": "発音のポイント：驚きの音変化！",
-        "content": "学習者からの「ツッコミ」にもあるように、この例文には驚くべき発音変化が詰まっています。\n\n* **I は「ア」に！？** :  「I」（私）は文頭でもストレスを受けにくいため、母音が弱化し、カタカナで書くと「ア」（厳密にはシュワ音 [ə]）のように聞こえることがあります。機能語は弱くなるという英語の鉄則です。\n* **listen to your が「ディスポ アイラシ」！？** : ここは連鎖的な変化の極致です。「listen to」の/t/と「to your」の/t/がほとんど脱落し（エリジョン）、「listen to your」全体が一つの単語のように強く連結（リエゾン）しています。特に「to your」は「チゥヤ」や「チュワ」ではなく、元の単語の形を大きく変えた「アイラシ」に聞こえています。\n* **planet that I が「プラネタラ」！？** : 「planet that I」で「that」の/t/はフラップT（軽い「ラ」のような音）に変化し、「that I」の母音が弱化と連結を起こし「ザラ」のように聞こえます。全体の音は「プラネタラ」となってしまい、元の単語の区切りが分からなくなります。\n* **want to が「ウォナ」！？** : これは「wanna」という短縮形です。 **「want」の/t/が脱落** し、「to」の母音が弱化して/n/と融合することで生まれる、日常会話で最も頻出する短縮の一つです。"
-      },
-      "section_3": {
-        "heading": "なぜそう聞こえるの？：英語のリズムと音声変化",
-        "content": "これらの音変化は、英語が持つ特有のリズム（ **強勢拍リズム** ）と、発音を楽にするための音声変化のルールに基づいています。\n\n1.  **弱化（Reduction）** : 代名詞（I）、前置詞（to）、冠詞（a/the）などの **機能語** は、文中で意味の中心ではないため、ストレスを受けず、母音が **シュワ音** [ə] などに変化して弱く発音されます。「I」が「ア」になるのはこのためです。$\\\\text{I (aɪ)} \\\\rightarrow \\\\text{I (ə)}$\n2.  **リエゾン（Linking）と脱落（Elision）** : 単語の語尾の子音と次の単語の語頭の母音や子音が連結することをリエゾンと呼びます。今回の「listen to your」や「planet that I」の大部分の音変化はこれにあたります。また、子音（特に/t/や/d/）が連続したり、弱く発音される単語（toなど）にある場合に音が消えてしまうことを脱落と言います。「want to」の/t/が脱落し「wanna」になるのは、発音を楽にするための最も有名な例です。$\\\\text{want to} \\\\rightarrow \\\\text{wanna}$"
-      },
-      "section_4": {
-        "heading": "学習のコツ：変化した音をそのまま受け入れる",
-        "content": "ネイティブの発音に慣れるためには、変化した音を「間違い」として捉えるのではなく、「 **英語の自然な音** 」としてそのまま受け入れることが重要です。\n\n* **変化を意識したシャドーイング** : まずは例文を聴き、リエゾンや短縮が起こっている部分を意識して、その **「変化した音」をそのまま真似して発音** してみましょう。「want to」を「ウォナ」と発音する練習を積むことで、リスニングでも「ウォナ」が「want to」だと即座に認識できるようになります。\n* **区切りを意識した学習** : 例文を意味のまとまり（チャンク）で区切って（例：I / listen to your / music / ...）、そのチャンク内の音の変化に注目します。区切りごとに何度もリピートすることで、長いフレーズでも音の連鎖を理解できるようになります。\n\n「ウォナ」や「ディスポ アイラシ」といった音に「なるほど！」と感じられたら、あなたのリスニング力はすでに一歩前進しています。"
-      },
-      "conclusion": "今回の例文を通して、英語の音の変化がいかにダイナミックであるかを感じていただけたでしょう。特に「want to」が「ウォナ」になる短縮は日常英会話で避けて通れません。これらの現象は、英語学習の壁ではなく、ネイティブのように流暢に話すための「ヒント」です。音の変化の法則を知り、積極的に真似ることで、リスニングも発音も格段に向上します。次の英語学習では、ぜひ音のつながりを意識して取り組んでみてください！",
-      "keywords": [
-        "英語発音",
-        "リエゾン",
-        "弱化",
-        "短縮",
-        "want to",
-        "ウォナ",
-        "リスニング",
-        "英語学習"
-      ]
-    },
-    "category": "最初の30フレーズ",
-    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/qc6ctN5-xX0/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/qc6ctN5-xX0/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/qc6ctN5-xX0/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/qc6ctN5-xX0/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/qc6ctN5-xX0/maxresdefault.jpg\"}",
-    "theme": "want to",
-    "noIndex": 0,
-    "is_similar": 1,
-    "pron_memo": "I は ア に聴こえる。 listen to your は ディスポ アイラシ に聴こえる。 planet that I は プラネタラ に聴こえる。 want to は ウォナ に聴こえる。",
-    "tsukkomi": [
-      {
-        "question": "I は アイ ではなく ア！？",
-        "answer": "単語単体では「アイ」ですが、文中でストレスを受けない場合や、次の単語と音がつながる場合など、母音が弱化して「ア」（シュワ音の[ə]）に近い音になることがあります。これは機能語である代名詞の弱形（Weak Form）の一つです。"
-      },
-      {
-        "question": "listen to your は リッスン トゥ ユア じゃなくて ディスポ アイラシ!?",
-        "answer": "これは非常に強い音の連結（リエゾン）と脱落（エリジョン）が起こった結果です。「listen to」の/t/がほとんど聞こえず、「to your」の/t/も脱落し、「your」の母音も弱化することで、全体として「ディスポ アイラシ」のような、元の単語の形を大きく変えた音として聞こえています。特に、/t/や/d/といった破裂音が、続く音によってはほとんど発音されなくなる現象です。"
-      },
-      {
-        "question": "planet that I は プラネット ザット アイ じゃなくて プラネタラ!?",
-        "answer": "「planet」の語尾の/t/の後の「that」の/ðæ/、そして続く「I」の/aɪ/がリエゾン（音の連結）と弱化を起こしています。「that」の/t/がフラップT（アメリカ英語の軽い/d/や/r/のような音）になり、母音も弱化して、すべてがつながって「プラネタラ」のように聞こえます。特に「that I」が「ザラ」のように変化しています。"
-      },
-      {
-        "question": "want to は ウォント トゥ じゃなくて ウォナ!?",
-        "answer": "これは最も有名な短縮形の一つです。「want to」は、口語では「wanna」（ウォナ）と発音されることが非常に一般的です。「to」の母音[u:]が弱化してシュワ音[ə]になり、さらに/t/が脱落して/n/と融合することで起こる現象です。これは日常会話で頻出するため、慣れることが必須です。"
-      }
-    ],
-    "image_learn": null,
-    "kugiri_eng": "I / listen to / your / music, / uh, / a planet / that I / want to / be on",
-    "kugiri_jp": "〈ア〉 / 【ディスポ】 / 〈アイラシ〉 / 【ミュージック】 / 〈アー〉 / 〈ア〉 【プラネ】 / 〈タラ〉 / 【ウォナ】 / 【ビィオン】",
-    "translated": "君の音楽を聴いているんだ。ああ、僕がいたいと思う惑星（場所）なんだ。",
-    "remember": "「I want to be on...」(〜の上にいたい/〜の中にいたい)は、「そこに属したい」「参加したい」といった場所や状態を望む気持ちを表すフレーズです。例文では「惑星にいたい」ですが、より抽象的な場所にも使えます。\n例：I want to be on the winning team. (私は勝ち組のチームにいたい)\n\n「listen to your...」(あなたの〜を聴く)は、文字通り音楽を聴く以外にも、「意見を聞く」「アドバイスに従う」という意味でも使われます。\n例：You should listen to your mother's advice. (あなたは母親のアドバイスを聞くべきです)"
   }
 ]

@@ -72,7 +72,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             const content = JSON.parse(fs.readFileSync(filePath, "utf-8"));
             if (Array.isArray(content)) {
               const foundItem = content.find(
-                (i: FeedItem) => i.id === requestedId
+                (i: FeedItem) => i.id === requestedId,
               );
               if (foundItem) {
                 item = foundItem;
@@ -132,7 +132,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       // Merge by matching label
       article.image_sections = article.image_sections.map((articleSection) => {
         const itemSection = item.image_sections?.find(
-          (s) => s.label === articleSection.label
+          (s) => s.label === articleSection.label,
         );
         return {
           ...articleSection,
@@ -149,7 +149,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       "Raw article_text:",
       typeof item.article_text === "string"
         ? item.article_text.substring(0, 1000)
-        : JSON.stringify(item.article_text).substring(0, 1000)
+        : JSON.stringify(item.article_text).substring(0, 1000),
     );
     notFound();
   }
@@ -176,7 +176,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
   // Extract video ID from YouTube URL
   const videoIdMatch = item.url.match(
-    /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&]+)/,
   );
   const videoId = videoIdMatch ? videoIdMatch[1] : "";
 
@@ -184,7 +184,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   if (!videoId || videoId.length !== 11) {
     console.error(`Invalid YouTube URL for article ID ${item.id}: ${item.url}`);
     console.error(
-      `Video ID: ${videoId} (length: ${videoId.length}, expected: 11)`
+      `Video ID: ${videoId} (length: ${videoId.length}, expected: 11)`,
     );
     notFound();
   }
@@ -201,21 +201,21 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         "lib",
         "data",
         "similar",
-        similarFileName
+        similarFileName,
       );
 
       // ファイルが存在するかチェック
       if (fs.existsSync(similarFilePath)) {
         const similarData = JSON.parse(
-          fs.readFileSync(similarFilePath, "utf-8")
+          fs.readFileSync(similarFilePath, "utf-8"),
         );
         allSimilarItems = similarData as FeedItem[];
         // 現在の記事以外の類似問題を取得
         similarItems = allSimilarItems.filter(
-          (similar) => similar.id !== item.id
+          (similar) => similar.id !== item.id,
         );
         console.log(
-          `Found ${similarItems.length} similar items for theme: ${item.theme}`
+          `Found ${similarItems.length} similar items for theme: ${item.theme}`,
         );
       }
     } catch (error) {
@@ -240,7 +240,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     // 元の記事（is_similar === 0でthemeが同じ記事）を探す
     if (item.theme) {
       const parentArticle = typedFeedData.find(
-        (article) => article.is_similar === 0 && article.theme === item.theme
+        (article) => article.is_similar === 0 && article.theme === item.theme,
       );
       if (parentArticle) {
         parentArticleId = parentArticle.id;
@@ -249,7 +249,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   } else {
     // 通常の記事の場合は、is_similarが0の記事のみでナビゲーション
     const navigableItems = typedFeedData.filter(
-      (item) => item.is_similar === 0
+      (item) => item.is_similar === 0,
     );
     const currentIndex = navigableItems.findIndex((i) => i.id === item.id);
     prevId = currentIndex > 0 ? navigableItems[currentIndex - 1].id : null;
@@ -306,8 +306,16 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             currentId={item.id}
             prevId={prevId}
             nextId={nextId}
-            kugiriEng={item.kugiri_eng}
-            kugiriJp={item.kugiri_jp}
+            kugiriEng={
+              item.kugiri_eng ||
+              ((article as Record<string, unknown>).kugiri_eng as string) ||
+              ""
+            }
+            kugiriJp={
+              item.kugiri_jp ||
+              ((article as Record<string, unknown>).kugiri_jp as string) ||
+              ""
+            }
             similarItems={similarItems}
             theme={item.theme}
             isSimilar={item.is_similar}
