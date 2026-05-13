@@ -308,12 +308,12 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             nextId={nextId}
             kugiriEng={
               item.kugiri_eng ||
-              ((article as Record<string, unknown>).kugiri_eng as string) ||
+              ((article as unknown as Record<string, unknown>).kugiri_eng as string) ||
               ""
             }
             kugiriJp={
               item.kugiri_jp ||
-              ((article as Record<string, unknown>).kugiri_jp as string) ||
+              ((article as unknown as Record<string, unknown>).kugiri_jp as string) ||
               ""
             }
             similarItems={similarItems}
