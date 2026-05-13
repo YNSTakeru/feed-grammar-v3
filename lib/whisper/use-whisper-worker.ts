@@ -318,9 +318,7 @@ export function useWhisperWorker(opts: UseWhisperWorkerOptions = {}) {
           await waitForPong(worker, 2_000, ac.signal);
         }
         tPong = performance.now();
-        if (process.env.NODE_ENV !== "production") {
-          console.log(`[whisper] ⚡ pong ${Math.round(tPong - t0)}ms | model: ${activeModelKey}`);
-        }
+        console.log(`[whisper] ⚡ pong ${Math.round(tPong - t0)}ms | model: ${activeModelKey} | persistent: ${persistentPath}`);
         const loadActiveModel = async (modelKey: GgufModelKey) => {
           const timeout = isMediumOrLargerModel(modelKey)
             ? Math.max(loadTimeoutMs, 120_000)
@@ -344,11 +342,9 @@ export function useWhisperWorker(opts: UseWhisperWorkerOptions = {}) {
         }
         loadedModelRef.current = activeModelKey;
         tModel = performance.now();
-        if (process.env.NODE_ENV !== "production") {
-          console.log(
-            `[whisper] 📦 model ${Math.round(tModel - tPong)}ms | ${activeModelKey} | 🧠 transcription starting (timeout: ${transcribeTimeoutMs}ms)`,
-          );
-        }
+        console.log(
+          `[whisper] 📦 model ${Math.round(tModel - tPong)}ms | ${activeModelKey} | 🧠 transcription starting (timeout: ${transcribeTimeoutMs}ms)`,
+        );
 
         const result = await sendTranscribe(
           worker,
@@ -369,9 +365,7 @@ export function useWhisperWorker(opts: UseWhisperWorkerOptions = {}) {
         }
 
         const timings = buildTimings(t0, tPong, tModel, tInference);
-        if (process.env.NODE_ENV !== "production") {
-          console.table(timings);
-        }
+        console.table(timings);
 
         return {
           ok: true,
@@ -384,11 +378,9 @@ export function useWhisperWorker(opts: UseWhisperWorkerOptions = {}) {
         };
       } catch (err) {
         const e = err as Partial<WorkerError>;
-        if (process.env.NODE_ENV !== "production") {
-          const tNow = performance.now();
-          console.table(buildTimings(t0, tPong, tModel, tNow));
-          console.warn(`[whisper] ❌ ${e.category ?? "runtime"}: ${e.message ?? String(err)}`);
-        }
+        const tNow = performance.now();
+        console.table(buildTimings(t0, tPong, tModel, tNow));
+        console.warn(`[whisper] ❌ ${e.category ?? "runtime"}: ${e.message ?? String(err)}`);
         return {
           ok: false,
           error: e.message ?? String(err),

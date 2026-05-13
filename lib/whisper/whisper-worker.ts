@@ -439,10 +439,12 @@ async function loadModel(modelIdOverride?: string) {
         name: string,
         fn: T,
       ): T =>
-        ((...args: Parameters<T>) => {
-          console.warn(`[whisper-worker][proxy] called: "${name}"`);
-          return fn(...args);
-        }) as T;
+        process.env.NODE_ENV !== "production"
+          ? ((...args: Parameters<T>) => {
+              console.warn(`[whisper-worker][proxy] called: "${name}"`);
+              return fn(...args);
+            }) as T
+          : fn;
       for (const key of Object.keys(handlerTarget)) {
         const fn = handlerTarget[key];
         if (typeof fn === "function") {
@@ -460,7 +462,9 @@ async function loadModel(modelIdOverride?: string) {
             !seenMissing.has(prop)
           ) {
             seenMissing.add(prop);
-            console.warn(`[whisper-worker][proxy] missing: "${prop}"`);
+            if (process.env.NODE_ENV !== "production") {
+              console.warn(`[whisper-worker][proxy] missing: "${prop}"`);
+            }
           }
           return value;
         },

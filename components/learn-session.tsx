@@ -263,7 +263,6 @@ function LearnSessionReady() {
         });
         window.setTimeout(() => {
           if (!isMountedRef.current) return;
-          setCurrentIndex((index) => (index + 1) % lesson001.sentences.length);
           setFeedback(null);
           setWorkerProgress(0);
           setWorkerStage("loading-model");
