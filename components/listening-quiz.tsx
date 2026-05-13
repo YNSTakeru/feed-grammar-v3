@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { KatakanaText } from "@/lib/text/render-katakana";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   CheckCircle2,
@@ -19,105 +20,8 @@ interface ListeningQuizProps {
   onComplete?: (correct: boolean) => void;
 }
 
-// カタカナ表記をパースして強弱を視覚化する関数
-function parseKatakana(text: string) {
-  const parts: { text: string; isStrong: boolean; isWeak: boolean }[] = [];
-  let currentText = "";
-  let insideBracket = false;
-  let insideAngleBracket = false;
-  let bracketType: "strong" | "weak" | null = null;
-
-  for (let i = 0; i < text.length; i++) {
-    const char = text[i];
-
-    if (char === "【") {
-      if (currentText) {
-        parts.push({ text: currentText, isStrong: false, isWeak: false });
-        currentText = "";
-      }
-      insideBracket = true;
-      bracketType = "strong";
-    } else if (char === "】") {
-      if (currentText) {
-        parts.push({ text: currentText, isStrong: true, isWeak: false });
-        currentText = "";
-      }
-      insideBracket = false;
-      bracketType = null;
-    } else if (char === "〈") {
-      if (currentText) {
-        parts.push({ text: currentText, isStrong: false, isWeak: false });
-        currentText = "";
-      }
-      insideAngleBracket = true;
-      bracketType = "weak";
-    } else if (char === "〉") {
-      if (currentText) {
-        parts.push({ text: currentText, isStrong: false, isWeak: true });
-        currentText = "";
-      }
-      insideAngleBracket = false;
-      bracketType = null;
-    } else if (char === " ") {
-      if (insideBracket || insideAngleBracket) {
-        currentText += char;
-      } else {
-        if (currentText) {
-          parts.push({ text: currentText, isStrong: false, isWeak: false });
-          currentText = "";
-        }
-        // スペースは無視
-      }
-    } else {
-      currentText += char;
-    }
-  }
-
-  if (currentText) {
-    parts.push({
-      text: currentText,
-      isStrong: insideBracket,
-      isWeak: insideAngleBracket,
-    });
-  }
-
-  return parts;
-}
-
-// カタカナ表示コンポーネント
-function KatakanaDisplay({ text }: { text: string }) {
-  const parts = parseKatakana(text);
-
-  return (
-    <div className="flex flex-wrap items-center gap-1 justify-center leading-relaxed">
-      {parts.map((part, index) => (
-        <span
-          key={index}
-          className={`
-            inline-block
-            ${
-              part.isStrong
-                ? "font-bold text-2xl text-blue-900 dark:text-blue-100"
-                : ""
-            }
-            ${
-              part.isWeak
-                ? "font-normal text-xl text-blue-400 dark:text-blue-400 opacity-60"
-                : ""
-            }
-            ${
-              !part.isStrong && !part.isWeak
-                ? "font-semibold text-2xl text-blue-700 dark:text-blue-200"
-                : ""
-            }
-            transition-all duration-200
-          `}
-        >
-          {part.text}
-        </span>
-      ))}
-    </div>
-  );
+function shuffleWords(question: string) {
+  return question.split(" ").sort(() => Math.random() - 0.5);
 }
 
 export function ListeningQuiz({
@@ -125,17 +29,18 @@ export function ListeningQuiz({
   questionKatakana,
   onComplete,
 }: ListeningQuizProps) {
-  const [words, setWords] = useState<string[]>([]);
+  const [words, setWords] = useState<string[]>(() => question.split(" "));
   const [selectedWords, setSelectedWords] = useState<string[]>([]);
   const [showAnswer, setShowAnswer] = useState(false);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [showKatakana, setShowKatakana] = useState(false);
 
   useEffect(() => {
-    // Split question into words and shuffle them
-    const questionWords = question.split(" ");
-    const shuffled = [...questionWords].sort(() => Math.random() - 0.5);
-    setWords(shuffled);
+    const timeoutId = window.setTimeout(() => {
+      setWords(shuffleWords(question));
+    }, 0);
+
+    return () => window.clearTimeout(timeoutId);
   }, [question]);
 
   const handleWordClick = (word: string, index: number) => {
@@ -163,9 +68,7 @@ export function ListeningQuiz({
   };
 
   const handleReset = () => {
-    const questionWords = question.split(" ");
-    const shuffled = [...questionWords].sort(() => Math.random() - 0.5);
-    setWords(shuffled);
+    setWords(shuffleWords(question));
     setSelectedWords([]);
     setShowAnswer(false);
     setIsCorrect(null);
@@ -213,7 +116,7 @@ export function ListeningQuiz({
               カタカナ表記
             </p>
             <div className="mb-3">
-              <KatakanaDisplay text={questionKatakana} />
+              <KatakanaText text={questionKatakana} variant="quiz" />
             </div>
             <div className="flex items-center justify-center gap-4 text-xs text-muted-foreground pt-3 border-t border-blue-200 dark:border-blue-800">
               <div className="flex items-center gap-1">
@@ -333,7 +236,7 @@ export function ListeningQuiz({
                     カタカナ表記:
                   </p>
                   <div className="p-3 rounded bg-white dark:bg-gray-900">
-                    <KatakanaDisplay text={questionKatakana} />
+                    <KatakanaText text={questionKatakana} variant="quiz" />
                   </div>
                 </div>
               </div>
@@ -362,7 +265,7 @@ export function ListeningQuiz({
                     カタカナ表記:
                   </p>
                   <div className="p-3 rounded bg-white dark:bg-gray-900">
-                    <KatakanaDisplay text={questionKatakana} />
+                    <KatakanaText text={questionKatakana} variant="quiz" />
                   </div>
                 </div>
               </div>

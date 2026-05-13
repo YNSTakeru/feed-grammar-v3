@@ -1,52 +1,8 @@
-import React from "react";
+import { renderKatakana } from "@/lib/text/render-katakana";
 
 interface PhraseBreakdownProps {
   kugiriEng: string;
   kugiriJp: string;
-}
-
-// カタカナ文字列を強弱に応じてスタイリング
-function renderStyledKatakana(text: string) {
-  // 【】は強い発音、〈〉は弱い発音
-  const parts: React.ReactElement[] = [];
-  let currentIndex = 0;
-
-  // 【strong】と〈weak〉のパターンをマッチ
-  const regex = /【([^】]+)】|〈([^〉]+)〉|([^【〈]+)/g;
-  let match;
-
-  while ((match = regex.exec(text)) !== null) {
-    if (match[1]) {
-      // 【】で囲まれた強い発音
-      parts.push(
-        <span
-          key={currentIndex++}
-          className="font-bold text-blue-700 dark:text-blue-300"
-        >
-          {match[1]}
-        </span>,
-      );
-    } else if (match[2]) {
-      // 〈〉で囲まれた弱い発音
-      parts.push(
-        <span
-          key={currentIndex++}
-          className="font-normal text-blue-400 dark:text-blue-500 opacity-70"
-        >
-          {match[2]}
-        </span>,
-      );
-    } else if (match[3]) {
-      // 通常のテキスト
-      parts.push(
-        <span key={currentIndex++} className="font-medium">
-          {match[3]}
-        </span>,
-      );
-    }
-  }
-
-  return <>{parts}</>;
 }
 
 export function PhraseBreakdown({ kugiriEng, kugiriJp }: PhraseBreakdownProps) {
@@ -127,7 +83,7 @@ export function PhraseBreakdown({ kugiriEng, kugiriJp }: PhraseBreakdownProps) {
               {/* メインのカード部分 */}
               <div className="flex flex-col items-center bg-white dark:bg-gray-800 rounded-md px-4 py-3 shadow-sm border border-blue-100 dark:border-blue-900 min-w-[80px] hover:shadow-md transition-shadow">
                 <div className="text-sm font-medium text-blue-600 dark:text-blue-400 mb-1 text-center">
-                  {renderStyledKatakana(jp)}
+                  {renderKatakana(jp, "phrase")}
                 </div>
                 <div className="text-gray-400 dark:text-gray-600 text-xs mb-1">
                   /
