@@ -13,7 +13,7 @@ import { resampleTo16k } from "@/lib/audio/resample";
 import { KatakanaText } from "@/lib/text/render-katakana";
 import { useWhisperWorker } from "@/lib/whisper/use-whisper-worker";
 import { Mic, Sparkles } from "lucide-react";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 type Feedback =
   | { kind: "hit"; message: string; asrText?: string }
@@ -43,6 +43,9 @@ function LearnSessionReady() {
   const [isRecording, setIsRecording] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
   const [workerProgress, setWorkerProgress] = useState(0);
+  const [workerStage, setWorkerStage] = useState<
+    "initializing-wasm" | "loading-model" | "transcribing"
+  >("loading-model");
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const mediaStreamRef = useRef<MediaStream | null>(null);
   const chunksRef = useRef<Blob[]>([]);
@@ -51,10 +54,13 @@ function LearnSessionReady() {
   const audioContextRef = useRef<AudioContext | null>(null);
 
   const { run } = useWhisperWorker({
-    onProgress: (_stage, percent) => {
-      if (isMountedRef.current) setWorkerProgress(percent);
+    onProgress: (stage, percent) => {
+      if (isMountedRef.current) {
+        setWorkerStage(stage);
+        setWorkerProgress(percent);
+      }
     },
-    transcribeTimeoutMs: 90_000,
+    transcribeTimeoutMs: 5 * 60_000,
   });
 
   const currentSentence = lesson001.sentences[currentIndex] ?? null;
@@ -74,6 +80,11 @@ function LearnSessionReady() {
       ? 0
       : (englishCount / lesson001.sentences.length) * 100;
   const isBusy = isRecording || isProcessing;
+
+  const stopMediaTracks = useCallback(() => {
+    mediaStreamRef.current?.getTracks().forEach((track) => track.stop());
+    mediaStreamRef.current = null;
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -113,13 +124,14 @@ function LearnSessionReady() {
       stopMediaTracks();
       audioContextRef.current?.close().catch(() => {});
     };
-  }, []);
+  }, [stopMediaTracks]);
 
   async function startRecording() {
     if (!currentSentence || isBusy) return;
 
     setFeedback({ kind: "info", message: "声をそのまま届けてみましょう。" });
     setWorkerProgress(0);
+    setWorkerStage("loading-model");
     chunksRef.current = [];
 
     try {
@@ -202,6 +214,11 @@ function LearnSessionReady() {
         new Float32Array(monoAudio),
         audioBuffer.sampleRate,
       );
+      if (process.env.NODE_ENV !== "production") {
+        console.log(
+          `[whisper] 🎤 audio: duration=${audioBuffer.duration.toFixed(2)}s sampleRate=${audioBuffer.sampleRate} resampled=${(resampled.length / 16000).toFixed(2)}s`,
+        );
+      }
       const result = await run(resampled, "en");
       if (!isMountedRef.current) return;
 
@@ -212,6 +229,9 @@ function LearnSessionReady() {
             : result.category === "empty"
               ? "音が短かったかも。もう1回！"
               : "うまく聞き取れませんでした。もう1回！";
+        if (process.env.NODE_ENV !== "production") {
+          console.warn(`[whisper] ❌ ${result.category}: ${result.error}`);
+        }
         setFeedback({ kind: "try-again", message: msg });
         await applyMiss(currentSentence.id);
         return;
@@ -244,6 +264,7 @@ function LearnSessionReady() {
           setCurrentIndex((index) => (index + 1) % lesson001.sentences.length);
           setFeedback(null);
           setWorkerProgress(0);
+          setWorkerStage("loading-model");
         }, 1500);
       } else {
         await applyMiss(currentSentence.id);
@@ -279,11 +300,6 @@ function LearnSessionReady() {
           lastUpdated: Date.now(),
         },
     }));
-  }
-
-  function stopMediaTracks() {
-    mediaStreamRef.current?.getTracks().forEach((track) => track.stop());
-    mediaStreamRef.current = null;
   }
 
   if (!currentSentence) {
@@ -344,7 +360,13 @@ function LearnSessionReady() {
           {isProcessing && (
             <div className="w-full space-y-2">
               <Progress value={workerProgress} />
-              <p className="text-sm text-muted-foreground">Whisper が音を確認中です</p>
+              <p className="text-sm text-muted-foreground">
+                {workerStage === "initializing-wasm"
+                  ? "WASM初期化中…"
+                  : workerStage === "loading-model"
+                    ? "モデル読込中…"
+                    : "認識中…"}
+              </p>
             </div>
           )}
 
@@ -384,5 +406,3 @@ function LearnShell({ children }: { children: React.ReactNode }) {
     </div>
   );
 }
-
-
