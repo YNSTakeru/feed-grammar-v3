@@ -56,24 +56,16 @@ export function autoSelectGgufModel(caps: WhisperRuntimeCaps): GgufModelKey {
   if (isSafariUserAgent(caps.userAgent) && !caps.hasWebGPU) {
     return GGUF_BASE_MODEL_KEY;
   }
-  // @transcribe/shout WASM runs on CPU regardless of WebGPU — there is no GPU
-  // inference path. The medium model (514MB) takes 60-120 s cold-start on CPU
-  // even with SIMD+pthreads, which is unacceptable UX.
-  //
-  // Note: navigator.deviceMemory is capped at 8 by browsers, so the ≥16 gate
-  // is intentionally unreachable via auto-select. Use a modelId override (e.g.
-  // "ggml-medium-q5_0") to opt-in to medium explicitly.
-  if (
-    caps.deviceMemory >= 16 &&
-    caps.hardwareConcurrency >= 8 &&
-    caps.hasWebGPU
-  ) {
-    return GGUF_MEDIUM_MODEL_KEY;
+  // WebGPU path: whisper-large-v3-turbo via @huggingface/transformers achieves
+  // ~2–3 s inference on 8 GB VRAM, making the large model viable.
+  // Requires at least 4 hardware threads to avoid blocking the main thread.
+  if (caps.hasWebGPU && caps.hardwareConcurrency >= 4) {
+    return "ggml-large-v3-turbo-q5_0";
   }
-  // ggml-small-q5_1 (181MB) measured ~72 s/inference in @transcribe/shout v1.0.7
-  // WASM — SIMD acceleration is not effective in this build, making small
-  // unacceptably slow. Cap auto-select at base (56MB, ~12 s) on capable desktops;
-  // tiny (32MB, ~6 s) everywhere else.
+  // WASM-only path (@transcribe/shout): cap at base (56MB, ~12s) for capable
+  // desktops. small (181MB) takes ~72s in this build — unacceptable UX.
+  // Note: navigator.deviceMemory is browser-capped at 8, so the ≥16 gate
+  // above is unreachable via auto-select. Use a modelId override to opt-in.
   if (caps.deviceMemory >= 4 && caps.hardwareConcurrency >= 4) {
     return GGUF_BASE_MODEL_KEY;
   }

@@ -3,6 +3,11 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // allowedDevOrigins: ["http://192.168.x.x:3000"], // LAN IP for iPhone Safari via `next dev`
 
+  // Prevent @huggingface/transformers from being bundled for SSR.
+  // It is used only in Web Workers (client-side), so server-side bundling
+  // would fail on Node.js-incompatible browser APIs.
+  serverExternalPackages: ["@huggingface/transformers"],
+
   async headers() {
     return [
       {

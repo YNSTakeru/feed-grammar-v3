@@ -41,10 +41,16 @@ describe("autoSelectGgufModel", () => {
     expect(selected).toBe("ggml-base-q5_1");
   });
 
-  it("returns base on standard desktop (8GB/8-core/WebGPU)", () => {
-    // ggml-small-q5_1 measured ~72s/inference in @transcribe/shout v1.0.7 WASM.
-    // Auto-select ceiling lowered to base (56MB, ~12s) for capable desktops.
+  it("returns large-v3-turbo on standard desktop with WebGPU (8GB/8-core)", () => {
+    // WebGPU path: @huggingface/transformers achieves ~2-3s on 8GB VRAM.
+    // The factory routes to whisper-worker-webgpu.ts when navigator.gpu is available.
     const selected = autoSelectGgufModel(caps());
+    expect(selected).toBe("ggml-large-v3-turbo-q5_0");
+  });
+
+  it("returns base on standard desktop without WebGPU (WASM path)", () => {
+    // WASM path: ggml-small ~72s, so cap at base (~12s).
+    const selected = autoSelectGgufModel(caps({ hasWebGPU: false }));
     expect(selected).toBe("ggml-base-q5_1");
   });
 
@@ -63,9 +69,9 @@ describe("resolveGgufModel", () => {
   });
 
   it("falls back to auto select when override missing", () => {
-    // caps() = 8GB/8-core/WebGPU → base (auto-select ceiling, not small)
+    // caps() = 8GB/8-core/WebGPU → large-v3-turbo (WebGPU auto-select)
     const selected = resolveGgufModel(undefined, caps());
-    expect(selected).toBe("ggml-base-q5_1");
+    expect(selected).toBe("ggml-large-v3-turbo-q5_0");
   });
 
   it("explicit model override bypasses auto-select", () => {

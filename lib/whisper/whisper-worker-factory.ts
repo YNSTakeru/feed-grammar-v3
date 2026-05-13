@@ -9,6 +9,14 @@ export type WhisperWorkerPlatform = "pc" | "ios" | "android";
 let pcWorker: Worker | null = null;
 let pcRefCount = 0;
 
+export function hasWebGpu(): boolean {
+  return (
+    typeof navigator !== "undefined" &&
+    "gpu" in navigator &&
+    navigator.gpu !== null
+  );
+}
+
 export function createWhisperWorker(): Worker {
   // type: "module" が必須。
   // Emscripten pthread (shout 内部) は em-pthread 子 Worker を常に
@@ -18,6 +26,11 @@ export function createWhisperWorker(): Worker {
   // 再実行された瞬間 Safari が仕様通り `importScripts cannot be used if
   // worker type is "module"` で拒絶し Worker ごとクラッシュする。
   // Chrome (V8) は寛容で動くが iOS Safari (JSC) は厳密。module 起動で統一。
+  if (hasWebGpu()) {
+    return new Worker(new URL("./whisper-worker-webgpu.ts", import.meta.url), {
+      type: "module",
+    });
+  }
   return new Worker(new URL("./whisper-worker.ts", import.meta.url), {
     type: "module",
   });

@@ -4,7 +4,7 @@ export interface TranscriptionChunk {
 }
 
 export interface WhisperDiagnostics {
-  device: "wasm";
+  device: "wasm" | "webgpu";
   modelId: string;
   dtype: string;
   timings: {
