@@ -549,11 +549,10 @@ async function loadModel(modelIdOverride?: string) {
     });
     Module.init("model.bin", ""); // "" = DTW alignment なし
 
-    // WASM JIT warm-up: compiles Turbofan before first real inference.
-    // Progress 97→99 signals warm-up in progress to the loading UI.
-    postResponse({ type: "model-progress", progress: 97, status: "initializing-wasm" });
-    await warmUpWasm(Module);
-    postResponse({ type: "model-progress", progress: 99, status: "initializing-wasm" });
+    // warmUpWasm() was removed after measuring 72s per call on @transcribe/shout v1.0.7.
+    // The WASM build does not achieve SIMD-accelerated throughput; every transcribe()
+    // takes ~72s for ggml-small regardless of JIT state. The warm-up added 72s to
+    // load time for zero benefit (V8 Turbofan theory was incorrect for this build).
 
     whisperModule = Module;
     currentModelKey = modelKey;

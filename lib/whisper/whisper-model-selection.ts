@@ -70,11 +70,14 @@ export function autoSelectGgufModel(caps: WhisperRuntimeCaps): GgufModelKey {
   ) {
     return GGUF_MEDIUM_MODEL_KEY;
   }
-  // small (181MB): ~3-5 s warm inference on any desktop with SIMD+pthreads.
+  // ggml-small-q5_1 (181MB) measured ~72 s/inference in @transcribe/shout v1.0.7
+  // WASM — SIMD acceleration is not effective in this build, making small
+  // unacceptably slow. Cap auto-select at base (56MB, ~12 s) on capable desktops;
+  // tiny (32MB, ~6 s) everywhere else.
   if (caps.deviceMemory >= 4 && caps.hardwareConcurrency >= 4) {
-    return "ggml-small-q5_1";
+    return GGUF_BASE_MODEL_KEY;
   }
-  return GGUF_BASE_MODEL_KEY;
+  return "ggml-tiny-q5_1";
 }
 
 export function resolveGgufModel(

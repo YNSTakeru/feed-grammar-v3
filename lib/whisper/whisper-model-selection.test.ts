@@ -41,17 +41,18 @@ describe("autoSelectGgufModel", () => {
     expect(selected).toBe("ggml-base-q5_1");
   });
 
-  it("returns small on standard desktop (8GB/8-core/WebGPU)", () => {
-    // deviceMemory is browser-capped at 8; medium gate requires ≥16 (never triggers).
+  it("returns base on standard desktop (8GB/8-core/WebGPU)", () => {
+    // ggml-small-q5_1 measured ~72s/inference in @transcribe/shout v1.0.7 WASM.
+    // Auto-select ceiling lowered to base (56MB, ~12s) for capable desktops.
     const selected = autoSelectGgufModel(caps());
-    expect(selected).toBe("ggml-small-q5_1");
+    expect(selected).toBe("ggml-base-q5_1");
   });
 
-  it("returns base when desktop concurrency is below small gate", () => {
+  it("returns tiny when desktop concurrency is below base gate", () => {
     const selected = autoSelectGgufModel(
       caps({ deviceMemory: 4, hardwareConcurrency: 2 }),
     );
-    expect(selected).toBe("ggml-base-q5_1");
+    expect(selected).toBe("ggml-tiny-q5_1");
   });
 });
 
@@ -62,8 +63,9 @@ describe("resolveGgufModel", () => {
   });
 
   it("falls back to auto select when override missing", () => {
+    // caps() = 8GB/8-core/WebGPU → base (auto-select ceiling, not small)
     const selected = resolveGgufModel(undefined, caps());
-    expect(selected).toBe("ggml-small-q5_1");
+    expect(selected).toBe("ggml-base-q5_1");
   });
 
   it("explicit model override bypasses auto-select", () => {
