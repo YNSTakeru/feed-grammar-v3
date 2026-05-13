@@ -7,12 +7,6 @@ export interface WhisperDiagnostics {
   device: "wasm";
   modelId: string;
   dtype: string;
-  timings: {
-    workerInitMs: number;
-    modelLoadMs: number;
-    inferenceMs: number;
-    totalMs: number;
-  };
   rawChunkCount: number;
   filteredCount: number;
   removedCount: number;
@@ -41,7 +35,6 @@ export type WorkerInboundMessage =
       language: string;
     }
   | { type: "abort" }
-  | { type: "reset" }
   | { type: "dispose" };
 
 export type WorkerOutboundMessage =

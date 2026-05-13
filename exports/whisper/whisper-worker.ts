@@ -24,15 +24,6 @@ import type {
   WorkerOutboundMessage,
 } from "./whisper-worker-protocol";
 import { classifyPrintErr, toErrorCategory } from "./whisper-worker-utils";
-import {
-  GGUF_MODELS,
-  detectRuntimeCaps,
-  getGgufUrl,
-  isIOSUserAgent,
-  isSafariUserAgent,
-  resolveGgufModel,
-  type GgufModelKey,
-} from "./whisper-model-selection";
 
 // ──────────────────────────────────────────────────────────────────
 // Emscripten pthread サブワーカー検出
@@ -48,17 +39,66 @@ const IS_PTHREAD =
     "em-pthread",
   ) === true;
 
-const runtimeCaps = detectRuntimeCaps(
-  navigator as Navigator & { deviceMemory?: number; gpu?: unknown },
-);
-const IS_IOS = isIOSUserAgent(runtimeCaps.userAgent);
+// iOS 検出（Worker 内で再判定）
+const IS_IOS = /iPhone|iPad/i.test(navigator.userAgent);
+
+// ──────────────────────────────────────────────────────────────────
+// GGUF モデル定義
+// HuggingFace: ggerganov/whisper.cpp (公式 whisper.cpp リポジトリ)
+// q5_1: 5-bit 量子化、多言語対応、iOS メモリ予算に適合
+// ──────────────────────────────────────────────────────────────────
+const GGUF_BASE_URL =
+  "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/";
+
+const GGUF_MODELS = {
+  "ggml-tiny-q5_1": { sizeMB: 32 },
+  "ggml-base-q5_1": { sizeMB: 56 },
+  "ggml-small-q5_1": { sizeMB: 181 },
+} as const;
+
+type GgufModelKey = keyof typeof GGUF_MODELS;
+
+function getGgufUrl(key: GgufModelKey): string {
+  return `${GGUF_BASE_URL}${key}.bin`;
+}
+
+/**
+ * 受信した modelId (ONNX 形式 or GGUF 形式 or undefined) を GGUF モデルキーに変換する。
+ */
+function resolveGgufModel(modelIdOverride?: string): GgufModelKey {
+  if (modelIdOverride) {
+    if (modelIdOverride in GGUF_MODELS) {
+      return modelIdOverride as GgufModelKey;
+    }
+    if (modelIdOverride.includes("small")) return "ggml-small-q5_1";
+    if (modelIdOverride.includes("base")) return "ggml-base-q5_1";
+    if (modelIdOverride.includes("tiny")) return "ggml-tiny-q5_1";
+  }
+  return autoSelectGgufModel();
+}
+
+function autoSelectGgufModel(): GgufModelKey {
+  if (IS_IOS) return "ggml-tiny-q5_1";
+  if (/iPhone|iPad|Android/i.test(navigator.userAgent)) return "ggml-tiny-q5_1";
+
+  const memory = (navigator as { deviceMemory?: number }).deviceMemory;
+  if (memory !== undefined) {
+    if (memory >= 8) return "ggml-small-q5_1";
+    if (memory >= 4) return "ggml-base-q5_1";
+    return "ggml-tiny-q5_1";
+  }
+
+  const cores = navigator.hardwareConcurrency || 4;
+  if (cores >= 8) return "ggml-base-q5_1";
+  return "ggml-tiny-q5_1";
+}
 
 /**
  * 推論スレッド数の上限を返す。
  * Safari は hardwareConcurrency = 8 を返すが実質 2 スレッドが安全。
  */
 function getMaxThreads(): number {
-  const isSafari = isSafariUserAgent(runtimeCaps.userAgent);
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
   if (isSafari) return 2;
   return Math.min(navigator.hardwareConcurrency || 2, 8);
 }
@@ -74,8 +114,6 @@ let activeModelId = "";
 // 2 件目の transcribe が届いて whisperModule.onTranscribed を上書きすると
 // 1 件目の Promise が永久 pending になるため。
 let isBusy = false;
-// resetRuntimeState() でインクリメントし、stale な onTranscribed コールバックを無効化する。
-let transcribeGeneration = 0;
 const idbCache = new IDBModelCache();
 
 // SharedArrayBuffer 前提 (pthreads) — COOP/COEP が未設定だとシングルスレッド動作で
@@ -199,10 +237,6 @@ if (!IS_PTHREAD) {
       disposeModel();
       return;
     }
-    if (msg.type === "reset") {
-      resetRuntimeState();
-      return;
-    }
 
     if (isBusy) {
       reportError("前の処理が実行中です", "runtime");
@@ -243,67 +277,14 @@ function disposeModel() {
   (self as unknown as { gc?: () => void }).gc?.();
 }
 
-function resetRuntimeState() {
-  // isBusy を必ずクリアする: WASM が abort/cancel された後も isBusy が true のまま残ると
-  // 次回 run() で "前の処理が実行中です" エラーになる (Bug #2)。
-  isBusy = false;
-  // generation を進めて stale な onTranscribed コールバックを無効化する。
-  // reset 後に旧 WASM スレッドが onTranscribed を呼んでも新しい run の Promise に
-  // 混入しない (spurious error postMessage 防止)。
-  transcribeGeneration++;
-  if (!whisperModule) return;
-  whisperModule.onProgress = undefined;
-  whisperModule.onTranscribed = undefined;
-}
-
-// ──────────────────────────────────────────────────────────────────
-// warmUpWasm
-// ──────────────────────────────────────────────────────────────────
-/**
- * WASM JIT warm-up: forces V8 Turbofan compilation of WASM hot paths.
- *
- * V8 runs WASM in slow Liftoff (unoptimized) tier on first load.
- * Turbofan (optimizing JIT) compiles hot paths in the background during
- * Liftoff execution. By running a silent micro-inference immediately after
- * Module.init(), Turbofan compilation completes before the first real
- * inference. Subsequent inferences run at Turbofan speed (~3-8s vs ~80s).
- *
- * Runs BEFORE sending "model-loaded" so the user sees a loading spinner
- * (progress 97-99%) rather than a stuck "transcribing" state for 80s.
- */
-async function warmUpWasm(mod: ShoutModule): Promise<void> {
-  const threads = getMaxThreads();
-  const silent = new Float32Array(8000); // 0.5s silence @ 16kHz
-  const t0 = performance.now();
-  console.log(`[whisper-worker] warmUp: start threads=${threads}`);
-  await new Promise<void>((resolve) => {
-    const timer = setTimeout(resolve, 120_000); // hard cap at 2 min
-    mod.onTranscribed = () => {
-      clearTimeout(timer);
-      mod.onTranscribed = undefined;
-      console.log(`[whisper-worker] warmUp: done in ${(performance.now() - t0).toFixed(0)}ms`);
-      resolve();
-    };
-    try {
-      mod.transcribe(silent, "en", threads, false, 0, false, false, false);
-    } catch {
-      clearTimeout(timer);
-      mod.onTranscribed = undefined;
-      console.warn("[whisper-worker] warmUp: transcribe threw, skipping");
-      resolve();
-    }
-  });
-}
-
 // ──────────────────────────────────────────────────────────────────
 // loadModel
 // ──────────────────────────────────────────────────────────────────
 async function loadModel(modelIdOverride?: string) {
-  const modelKey = resolveGgufModel(modelIdOverride, runtimeCaps);
+  const modelKey = resolveGgufModel(modelIdOverride);
   activeModelId = modelKey;
 
   // 同一モデルが既にロード済みの場合は再利用
-  console.log(`[whisper-worker] loadModel: module=${!!whisperModule} currentKey=${currentModelKey} requestedKey=${modelKey}`);
   if (whisperModule && currentModelKey === modelKey) {
     postResponse({ type: "model-loaded", progress: 100 });
     return;
@@ -313,18 +294,14 @@ async function loadModel(modelIdOverride?: string) {
   const { sizeMB } = GGUF_MODELS[modelKey];
 
   try {
-    postResponse({ type: "model-progress", progress: 0, status: "loading-model" });
+    postResponse({ type: "model-progress", progress: 0 });
 
     // ── IDB キャッシュ確認 ──
     let modelData: Uint8Array | null;
     const cached = await idbCache.match(url);
 
     if (cached) {
-      postResponse({
-        type: "model-progress",
-        progress: 72,
-        status: "loading-model",
-      });
+      postResponse({ type: "model-progress", progress: 72 });
       modelData = new Uint8Array(await cached.arrayBuffer());
     } else {
       // ── ストリーミングフェッチ（進捗付き） ──
@@ -350,11 +327,7 @@ async function loadModel(modelIdOverride?: string) {
           contentLength > 0
             ? Math.round((downloaded / contentLength) * 65)
             : 20;
-        postResponse({
-          type: "model-progress",
-          progress: pct,
-          status: "loading-model",
-        });
+        postResponse({ type: "model-progress", progress: pct });
       }
 
       const totalLength = chunks.reduce((sum, c) => sum + c.length, 0);
@@ -365,11 +338,7 @@ async function loadModel(modelIdOverride?: string) {
         offset += chunk.length;
       }
 
-      postResponse({
-        type: "model-progress",
-        progress: 70,
-        status: "loading-model",
-      });
+      postResponse({ type: "model-progress", progress: 70 });
       // IDB QuotaExceeded 等で書き込み失敗しても今回の推論は続行する。
       try {
         await idbCache.put(
@@ -388,20 +357,12 @@ async function loadModel(modelIdOverride?: string) {
     void sizeMB;
 
     // ── WASM ランタイム初期化 ──
-    postResponse({
-      type: "model-progress",
-      progress: 75,
-      status: "initializing-wasm",
-    });
+    postResponse({ type: "model-progress", progress: 75 });
 
     // iOS: WASM コンパイル中の stall 対策として定期的に progress を送る
     const keepalive = IS_IOS
       ? setInterval(() => {
-          postResponse({
-            type: "model-progress",
-            progress: 78,
-            status: "initializing-wasm",
-          });
+          postResponse({ type: "model-progress", progress: 78 });
         }, 30000)
       : null;
 
@@ -479,12 +440,10 @@ async function loadModel(modelIdOverride?: string) {
         name: string,
         fn: T,
       ): T =>
-        process.env.NODE_ENV !== "production"
-          ? ((...args: Parameters<T>) => {
-              console.warn(`[whisper-worker][proxy] called: "${name}"`);
-              return fn(...args);
-            }) as T
-          : fn;
+        ((...args: Parameters<T>) => {
+          console.warn(`[whisper-worker][proxy] called: "${name}"`);
+          return fn(...args);
+        }) as T;
       for (const key of Object.keys(handlerTarget)) {
         const fn = handlerTarget[key];
         if (typeof fn === "function") {
@@ -502,9 +461,7 @@ async function loadModel(modelIdOverride?: string) {
             !seenMissing.has(prop)
           ) {
             seenMissing.add(prop);
-            if (process.env.NODE_ENV !== "production") {
-              console.warn(`[whisper-worker][proxy] missing: "${prop}"`);
-            }
+            console.warn(`[whisper-worker][proxy] missing: "${prop}"`);
           }
           return value;
         },
@@ -517,11 +474,7 @@ async function loadModel(modelIdOverride?: string) {
     }
 
     // ── モデルを WASM FS に書き込む ──
-    postResponse({
-      type: "model-progress",
-      progress: 88,
-      status: "initializing-wasm",
-    });
+    postResponse({ type: "model-progress", progress: 88 });
 
     try {
       Module.FS_unlink("model.bin");
@@ -536,18 +489,8 @@ async function loadModel(modelIdOverride?: string) {
     (self as unknown as { gc?: () => void }).gc?.();
 
     // ── whisper コンテキスト初期化 ──
-    postResponse({
-      type: "model-progress",
-      progress: 95,
-      status: "initializing-wasm",
-    });
+    postResponse({ type: "model-progress", progress: 95 });
     Module.init("model.bin", ""); // "" = DTW alignment なし
-
-    // WASM JIT warm-up: compiles Turbofan before first real inference.
-    // Progress 97→99 signals warm-up in progress to the loading UI.
-    postResponse({ type: "model-progress", progress: 97, status: "initializing-wasm" });
-    await warmUpWasm(Module);
-    postResponse({ type: "model-progress", progress: 99, status: "initializing-wasm" });
 
     whisperModule = Module;
     currentModelKey = modelKey;
@@ -608,7 +551,6 @@ async function transcribe(
     postResponse({ type: "transcription-progress", progress: 5 });
 
     const threads = getMaxThreads();
-    console.log(`[whisper-worker] transcribe: threads=${threads} duration=${(audioData.length / 16000).toFixed(2)}s crossOriginIsolated=${typeof crossOriginIsolated !== "undefined" ? crossOriginIsolated : "N/A"}`);
 
     whisperModule.onProgress = (p: number) => {
       postResponse({
@@ -622,16 +564,8 @@ async function transcribe(
     // 単語レベルのタイムスタンプ (split_on_word + max_len) は使用しない。
     // これにより VoyagerX 特許の「単語タイムスタンプ」構成要件を回避。
     // ===========================================================
-    // generation をキャプチャして stale コールバックを無効化する。
-    // reset → isBusy=false → 新 run 開始 後に旧 WASM が onTranscribed を呼ぶと
-    // 新 run の Promise が誤った結果で resolve されるのを防ぐ。
-    const gen = ++transcribeGeneration;
     const result = await new Promise<TranscriptionResult>((resolve, reject) => {
-      whisperModule!.onTranscribed = (r: TranscriptionResult) => {
-        if (transcribeGeneration !== gen) return; // stale: reset 済み
-        whisperModule!.onTranscribed = undefined;
-        resolve(r);
-      };
+      whisperModule!.onTranscribed = (r: TranscriptionResult) => resolve(r);
       try {
         whisperModule!.transcribe(
           audioData,
@@ -670,12 +604,6 @@ async function transcribe(
       device: "wasm",
       modelId: activeModelId,
       dtype: currentModelKey?.split("-").pop() ?? "unknown",
-      timings: {
-        workerInitMs: 0,
-        modelLoadMs: 0,
-        inferenceMs: 0,
-        totalMs: 0,
-      },
       rawChunkCount: rawChunks.length,
       filteredCount: finalChunks.length,
       removedCount: rawChunks.length - finalChunks.length,

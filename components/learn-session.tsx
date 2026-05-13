@@ -216,11 +216,9 @@ function LearnSessionReady() {
         new Float32Array(monoAudio),
         audioBuffer.sampleRate,
       );
-      if (process.env.NODE_ENV !== "production") {
-        console.log(
-          `[whisper] 🎤 audio: duration=${audioBuffer.duration.toFixed(2)}s sampleRate=${audioBuffer.sampleRate} resampled=${(resampled.length / 16000).toFixed(2)}s`,
-        );
-      }
+      console.log(
+        `[whisper] 🎤 audio: duration=${audioBuffer.duration.toFixed(2)}s sampleRate=${audioBuffer.sampleRate} resampled=${(resampled.length / 16000).toFixed(2)}s`,
+      );
       const result = await run(resampled, "en");
       if (!isMountedRef.current) return;
 
