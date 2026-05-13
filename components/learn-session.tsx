@@ -16,8 +16,8 @@ import { Mic, Sparkles } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 type Feedback =
-  | { kind: "hit"; message: string }
-  | { kind: "try-again"; message: string }
+  | { kind: "hit"; message: string; asrText?: string }
+  | { kind: "try-again"; message: string; asrText?: string }
   | { kind: "info"; message: string };
 
 const ISOLATION_ERROR =
@@ -47,11 +47,14 @@ function LearnSessionReady() {
   const mediaStreamRef = useRef<MediaStream | null>(null);
   const chunksRef = useRef<Blob[]>([]);
   const isMountedRef = useRef(true);
+  // RULE A-3: single AudioContext instance reused across recordings
+  const audioContextRef = useRef<AudioContext | null>(null);
 
   const { run } = useWhisperWorker({
     onProgress: (_stage, percent) => {
       if (isMountedRef.current) setWorkerProgress(percent);
     },
+    transcribeTimeoutMs: 90_000,
   });
 
   const currentSentence = lesson001.sentences[currentIndex] ?? null;
@@ -108,6 +111,7 @@ function LearnSessionReady() {
         recorder.stop();
       }
       stopMediaTracks();
+      audioContextRef.current?.close().catch(() => {});
     };
   }, []);
 
@@ -157,11 +161,42 @@ function LearnSessionReady() {
   async function finishRecording() {
     if (!currentSentence) return;
 
+    // Guard: tap was too short — ondataavailable never fired with real data
+    if (chunksRef.current.length === 0) {
+      setFeedback({
+        kind: "try-again",
+        message: "もう少し長めに押しながら話してください。",
+      });
+      stopMediaTracks();
+      chunksRef.current = [];
+      return;
+    }
+
     setIsProcessing(true);
 
     try {
       const audioBlob = new Blob(chunksRef.current, { type: "audio/webm" });
-      const audioBuffer = await decodeAudioBlob(audioBlob);
+
+      if (audioBlob.size === 0) {
+        setFeedback({
+          kind: "try-again",
+          message: "もう少し長めに押しながら話してください。",
+        });
+        return;
+      }
+
+      // RULE A-3: reuse AudioContext instead of creating a new one each call
+      const arrayBuffer = await audioBlob.arrayBuffer();
+      if (!audioContextRef.current || audioContextRef.current.state === "closed") {
+        const AudioContextCtor =
+          window.AudioContext ??
+          (window as unknown as { webkitAudioContext?: typeof AudioContext })
+            .webkitAudioContext;
+        if (!AudioContextCtor) throw new Error("AudioContext is not available");
+        audioContextRef.current = new AudioContextCtor();
+      }
+      const audioBuffer = await audioContextRef.current.decodeAudioData(arrayBuffer);
+
       const monoAudio = audioBuffer.getChannelData(0);
       const resampled = await resampleTo16k(
         new Float32Array(monoAudio),
@@ -171,12 +206,18 @@ function LearnSessionReady() {
       if (!isMountedRef.current) return;
 
       if (!result.ok) {
-        setFeedback({ kind: "try-again", message: "音を拾えました。もう1回！" });
+        const msg =
+          result.category === "timeout"
+            ? "処理が長すぎました。もう1回！"
+            : result.category === "empty"
+              ? "音が短かったかも。もう1回！"
+              : "うまく聞き取れませんでした。もう1回！";
+        setFeedback({ kind: "try-again", message: msg });
         await applyMiss(currentSentence.id);
         return;
       }
 
-      const asrText = result.chunks.map((chunk) => chunk.text).join(" ");
+      const asrText = result.chunks.map((chunk) => chunk.text).join(" ").trim();
       const score = normalizedSimilarity(asrText, currentSentence.english);
 
       if (score >= 0.85) {
@@ -196,6 +237,7 @@ function LearnSessionReady() {
         setFeedback({
           kind: "hit",
           message: `通じた！ (${Math.min(hits, 3)} 連続中)`,
+          asrText,
         });
         window.setTimeout(() => {
           if (!isMountedRef.current) return;
@@ -206,12 +248,12 @@ function LearnSessionReady() {
       } else {
         await applyMiss(currentSentence.id);
         if (isMountedRef.current) {
-          setFeedback({ kind: "try-again", message: "もう1回！今の調子です。" });
+          setFeedback({ kind: "try-again", message: "もう1回！今の調子です。", asrText });
         }
       }
     } catch {
       if (isMountedRef.current) {
-        setFeedback({ kind: "try-again", message: "音を確認できました。もう1回！" });
+        setFeedback({ kind: "try-again", message: "音を処理できませんでした。もう1回！" });
       }
     } finally {
       if (isMountedRef.current) {
@@ -309,6 +351,11 @@ function LearnSessionReady() {
           {feedback && (
             <div className={feedback.kind === "hit" ? "rounded-2xl bg-green-100 px-5 py-3 font-bold text-green-900 dark:bg-green-950 dark:text-green-100" : "rounded-2xl bg-amber-100 px-5 py-3 font-bold text-amber-900 dark:bg-amber-950 dark:text-amber-100"}>
               {feedback.message}
+              {"asrText" in feedback && feedback.asrText && (
+                <p className="mt-1 text-sm font-normal opacity-75">
+                  聞こえた:「{feedback.asrText}」
+                </p>
+              )}
             </div>
           )}
         </CardContent>
@@ -338,17 +385,4 @@ function LearnShell({ children }: { children: React.ReactNode }) {
   );
 }
 
-async function decodeAudioBlob(blob: Blob): Promise<AudioBuffer> {
-  const arrayBuffer = await blob.arrayBuffer();
-  const AudioContextCtor =
-    window.AudioContext ??
-    (window as unknown as { webkitAudioContext?: typeof AudioContext })
-      .webkitAudioContext;
-  if (!AudioContextCtor) throw new Error("AudioContext is not available");
-  const context = new AudioContextCtor();
-  try {
-    return await context.decodeAudioData(arrayBuffer);
-  } finally {
-    await context.close();
-  }
-}
+
