@@ -2,7 +2,7 @@
 // WebGPU-backed Whisper inference via @huggingface/transformers
 // Speaks the same WorkerInboundMessage/WorkerOutboundMessage protocol as whisper-worker.ts
 
-import { pipeline } from "@huggingface/transformers";
+import { pipeline, type DataType } from "@huggingface/transformers";
 import type {
   TranscriptionChunk,
   WhisperDiagnostics,
@@ -19,7 +19,7 @@ import {
 // Map GGUF model keys → HuggingFace ONNX model IDs + quantization dtypes
 interface HfModelConfig {
   hfId: string;
-  dtype: string | Record<string, string>;
+  dtype: DataType | Record<string, DataType>;
 }
 
 const HF_MODEL_MAP: Partial<Record<GgufModelKey, HfModelConfig>> = {
