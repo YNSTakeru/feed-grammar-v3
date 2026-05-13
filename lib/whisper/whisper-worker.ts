@@ -278,8 +278,13 @@ async function warmUpWasm(mod: ShoutModule): Promise<void> {
   console.log(`[whisper-worker] warmUp: start threads=${threads}`);
   await new Promise<void>((resolve) => {
     const timer = setTimeout(resolve, 120_000); // hard cap at 2 min
+    // onProgress MUST be a function before transcribe() — the Emscripten pthread
+    // fires onProgress callbacks via IPC and crashes with
+    // "A[C.handler] is not a function" if the property is undefined.
+    mod.onProgress = () => {};
     mod.onTranscribed = () => {
       clearTimeout(timer);
+      mod.onProgress = undefined;
       mod.onTranscribed = undefined;
       console.log(`[whisper-worker] warmUp: done in ${(performance.now() - t0).toFixed(0)}ms`);
       resolve();
@@ -288,6 +293,7 @@ async function warmUpWasm(mod: ShoutModule): Promise<void> {
       mod.transcribe(silent, "en", threads, false, 0, false, false, false);
     } catch {
       clearTimeout(timer);
+      mod.onProgress = undefined;
       mod.onTranscribed = undefined;
       console.warn("[whisper-worker] warmUp: transcribe threw, skipping");
       resolve();
