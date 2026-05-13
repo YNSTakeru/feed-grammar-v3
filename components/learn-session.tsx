@@ -60,6 +60,8 @@ function LearnSessionReady() {
         setWorkerProgress(percent);
       }
     },
+    // small (181MB) needs ~90 s for first download+IDB-write+WASM-init.
+    loadTimeoutMs: 90_000,
     transcribeTimeoutMs: 5 * 60_000,
   });
 
