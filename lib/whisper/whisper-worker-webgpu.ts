@@ -226,10 +226,11 @@ self.onmessage = async (event: MessageEvent<WorkerInboundMessage>) => {
 
       postResponse({ type: "transcription-progress", progress: 10 });
 
-      // @huggingface/transformers expects { data, sampling_rate } for raw PCM
+      // AudioInput = Float32Array | Float64Array | string | URL — pass Float32Array directly.
+      // The pipeline's feature extractor expects 16kHz PCM; audioData is already resampled.
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const result = await (transcriber as any)(
-        { data: audioData, sampling_rate: 16000 },
+        audioData,
         {
           language,
           task: "transcribe",
