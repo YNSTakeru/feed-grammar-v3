@@ -2,7 +2,7 @@ import { ArticleContent } from "@/app/article/[id]/article-content";
 import NinjaAdMax from "@/components/ninja-admax";
 import { Button } from "@/components/ui/button";
 import feedData from "@/lib/data/feed-data.json";
-import { ArticleData, FeedItem, Thumbnail } from "@/types";
+import { ArticleData, ChunkTimestamp, FeedItem, Thumbnail } from "@/types";
 import fs from "fs";
 import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
@@ -262,6 +262,14 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   // 忍者AdMaxの広告スポットIDを環境変数から取得
   const adSpotId = process.env.NEXT_PUBLIC_ADMAX_SPOT_ID;
 
+  // chunk_timestampsが存在する場合、カラオケ表示用のチャンクデータを準備
+  const chunkTimestamps: ChunkTimestamp[] | null =
+    item.chunk_timestamps != null &&
+    item.chunk_sections &&
+    item.chunk_sections.length > 0
+      ? item.chunk_sections
+      : null;
+
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b">
@@ -320,6 +328,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             theme={item.theme}
             isSimilar={item.is_similar}
             parentArticleId={parentArticleId}
+            chunkTimestamps={chunkTimestamps}
           />
         </Suspense>
 

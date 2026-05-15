@@ -7,7 +7,7 @@ import { QuizSection } from "@/components/quiz-section";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { progressDB } from "@/lib/db/progress-db";
-import { ArticleData, FeedItem } from "@/types";
+import { ArticleData, ChunkTimestamp, FeedItem } from "@/types";
 import { Tweet } from "react-tweet";
 import {
   StaticImageSections,
@@ -41,6 +41,39 @@ declare global {
   }
 }
 
+function KaraokeQuestion({
+  question,
+  chunks,
+  currentTime,
+}: {
+  question: string;
+  chunks: ChunkTimestamp[];
+  currentTime: number;
+}) {
+  if (!chunks.length) return <>{question}</>;
+  return (
+    <>
+      {chunks.map((chunk, i) => {
+        const isActive =
+          currentTime >= chunk.start_time && currentTime < chunk.end_time;
+        return (
+          <span
+            key={i}
+            className={`transition-colors duration-75 ${
+              isActive
+                ? "bg-yellow-200 dark:bg-yellow-500/40 text-yellow-900 dark:text-yellow-100 rounded-sm px-0.5"
+                : ""
+            }`}
+          >
+            {i > 0 ? " " : ""}
+            {chunk.text}
+          </span>
+        );
+      })}
+    </>
+  );
+}
+
 interface ArticleContentProps {
   videoId: string;
   startTime: number;
@@ -59,6 +92,7 @@ interface ArticleContentProps {
   theme?: string;
   isSimilar?: number;
   parentArticleId?: number | null;
+  chunkTimestamps?: ChunkTimestamp[] | null;
 }
 
 export function ArticleContent({
@@ -79,6 +113,7 @@ export function ArticleContent({
   theme,
   isSimilar,
   parentArticleId,
+  chunkTimestamps,
 }: ArticleContentProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -478,7 +513,15 @@ export function ArticleContent({
                 🎯 English
               </h3>
               <p className="text-xl font-bold text-gray-800 dark:text-gray-100">
-                {question}
+                {chunkTimestamps && chunkTimestamps.length > 0 ? (
+                  <KaraokeQuestion
+                    question={question}
+                    chunks={chunkTimestamps}
+                    currentTime={currentVideoTime}
+                  />
+                ) : (
+                  question
+                )}
               </p>
             </div>
             {article.translated && (
@@ -809,7 +852,15 @@ export function ArticleContent({
                 🎯 English
               </h3>
               <p className="text-xl font-bold text-gray-800 dark:text-gray-100">
-                {question}
+                {chunkTimestamps && chunkTimestamps.length > 0 ? (
+                  <KaraokeQuestion
+                    question={question}
+                    chunks={chunkTimestamps}
+                    currentTime={currentVideoTime}
+                  />
+                ) : (
+                  question
+                )}
               </p>
             </div>
             {article.translated && (

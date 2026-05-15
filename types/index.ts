@@ -44,6 +44,12 @@ export interface Thumbnail {
   maxres: string;
 }
 
+export interface ChunkTimestamp {
+  text: string;
+  start_time: number;
+  end_time: number;
+}
+
 export interface FeedItem {
   id: number;
   url: string;
@@ -60,6 +66,8 @@ export interface FeedItem {
   kugiri_eng: string;
   kugiri_jp: string;
   is_similar: number;
+  chunk_timestamps?: string | null;
+  chunk_sections?: ChunkTimestamp[] | null;
   image_sections?: Array<{
     label: string;
     time: string;
