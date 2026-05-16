@@ -1,3 +1,10 @@
+export interface PronChunk {
+  en: string;
+  ipa_citation: string;
+  ipa_connected: string;
+  kana: string;
+}
+
 export interface ArticleData {
   title: string;
   meta_description: string;
@@ -34,6 +41,8 @@ export interface ArticleData {
   };
   conclusion: string;
   keywords: string[];
+  pron_chunks?: PronChunk[] | null;
+  katakana_weak_strong?: string;
 }
 
 export interface Thumbnail {
@@ -48,6 +57,18 @@ export interface ChunkTimestamp {
   text: string;
   start_time: number;
   end_time: number;
+  katakana?: string;
+  ipa_connected?: string;
+  reduction_type?: string;
+  linking?: ChunkLinkingAnnotation[];
+}
+
+export interface ChunkLinkingAnnotation {
+  type: "linking" | "reduction" | "elision" | "assimilation";
+  description: string;
+  from_word_index?: number;
+  to_word_index?: number;
+  word_index?: number;
 }
 
 export interface FeedItem {

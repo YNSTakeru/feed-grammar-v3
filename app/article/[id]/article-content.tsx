@@ -8,7 +8,7 @@ import { type YouTubePlayerHandle } from "@/components/youtube-player";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { progressDB } from "@/lib/db/progress-db";
-import { ArticleData, ChunkTimestamp, FeedItem } from "@/types";
+import { ArticleData, ChunkTimestamp, FeedItem, PronChunk } from "@/types";
 import { Tweet } from "react-tweet";
 import {
   StaticImageSections,
@@ -45,6 +45,30 @@ declare global {
 const buildChunkInteractionKey = (chunk: ChunkTimestamp) =>
   `${chunk.text}-${chunk.start_time}`;
 
+function findPronChunk(
+  chunk: ChunkTimestamp,
+  pronChunks: PronChunk[],
+): PronChunk | null {
+  if (!pronChunks.length) return null;
+  const chunkText = chunk.text.toLowerCase();
+  const exact = pronChunks.find((pc) =>
+    pc.en.toLowerCase().replace(/[＜＞<>]/g, "").includes(chunkText),
+  );
+  if (exact) return exact;
+  const words = chunkText.split(/\s+/).filter(Boolean);
+  let best: PronChunk | null = null;
+  let bestScore = 0;
+  for (const pc of pronChunks) {
+    const pcText = pc.en.toLowerCase().replace(/[＜＞<>]/g, "");
+    const score = words.filter((w) => pcText.includes(w)).length;
+    if (score > bestScore) {
+      bestScore = score;
+      best = pc;
+    }
+  }
+  return bestScore > 0 ? best : null;
+}
+
 function KaraokeQuestion({
   question,
   chunks,
@@ -54,6 +78,7 @@ function KaraokeQuestion({
   showDiscoveryHint = false,
   showContextualPulse = false,
   seekingChunkKey,
+  pronChunks,
 }: {
   question: string;
   chunks: ChunkTimestamp[];
@@ -63,6 +88,7 @@ function KaraokeQuestion({
   showDiscoveryHint?: boolean;
   showContextualPulse?: boolean;
   seekingChunkKey?: string | null;
+  pronChunks?: PronChunk[] | null;
 }) {
   const [selectedChunk, setSelectedChunk] = useState<ChunkTimestamp | null>(null);
   const [flashingChunkKey, setFlashingChunkKey] = useState<string | null>(null);
@@ -93,9 +119,17 @@ function KaraokeQuestion({
   };
 
   const firstTappableIndex = chunks.findIndex(hasPronunciationData);
+  const shouldShowHintBadge = showDiscoveryHint && firstTappableIndex >= 0;
 
   return (
     <>
+      {shouldShowHintBadge && (
+        <div className="mb-1">
+          <span className="rounded-full bg-blue-600 px-2 py-0.5 text-[10px] font-semibold text-white shadow-sm">
+            🔊 タップで IPA
+          </span>
+        </div>
+      )}
       {chunks.map((chunk, i) => {
         const isActive =
           currentTime >= chunk.start_time && currentTime < chunk.end_time;
@@ -105,7 +139,6 @@ function KaraokeQuestion({
         const isFlashing = flashingChunkKey === key;
         const isSeeking = seekingChunkKey === key;
         const isSelected = selectedChunk ? isSameChunk(selectedChunk, chunk) : false;
-        const shouldShowTapHint = isFirstTappable && showDiscoveryHint;
         const shouldShowPulseRing = isFirstTappable && showContextualPulse;
 
         return (
@@ -136,11 +169,6 @@ function KaraokeQuestion({
                 isSeeking ? "chunk-seeking" : ""
               } ${shouldShowPulseRing ? "chunk-pulse-ring" : ""}`}
             >
-              {shouldShowTapHint && (
-                <span className="pointer-events-none absolute -top-5 left-0 rounded-full bg-blue-600 px-2 py-0.5 text-[10px] font-semibold text-white shadow-sm">
-                  🔊 タップで IPA
-                </span>
-              )}
               {i > 0 ? " " : ""}
               {chunk.text}
             </span>
@@ -165,11 +193,28 @@ function KaraokeQuestion({
                   </Button>
                 </div>
 
-                {chunk.ipa_connected ? (
-                  <p className="font-mono text-sm text-foreground">{chunk.ipa_connected}</p>
-                ) : (
-                  <p className="text-sm text-muted-foreground">IPA データなし</p>
-                )}
+                {(() => {
+                  const pc = pronChunks ? findPronChunk(chunk, pronChunks) : null;
+                  if (pc) {
+                    return (
+                      <div className="space-y-1">
+                        <p className="font-mono text-sm text-foreground">{pc.ipa_connected}</p>
+                        {pc.ipa_citation && pc.ipa_citation !== pc.ipa_connected && (
+                          <p className="text-xs text-muted-foreground">
+                            辞書形: {pc.ipa_citation}
+                          </p>
+                        )}
+                        {pc.kana && (
+                          <p className="mt-1 text-sm text-muted-foreground">{pc.kana}</p>
+                        )}
+                      </div>
+                    );
+                  } else if (chunk.ipa_connected) {
+                    return <p className="font-mono text-sm text-foreground">{chunk.ipa_connected}</p>;
+                  } else {
+                    return <p className="text-sm text-muted-foreground">IPA データなし</p>;
+                  }
+                })()}
 
                 {chunk.reduction_type && (
                   <div className="mt-2">
@@ -233,6 +278,7 @@ interface ArticleContentProps {
   isSimilar?: number;
   parentArticleId?: number | null;
   chunkTimestamps?: ChunkTimestamp[] | null;
+  pronChunks?: PronChunk[] | null;
 }
 
 export function ArticleContent({
@@ -254,6 +300,7 @@ export function ArticleContent({
   isSimilar,
   parentArticleId,
   chunkTimestamps,
+  pronChunks,
 }: ArticleContentProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -744,6 +791,7 @@ export function ArticleContent({
                     showDiscoveryHint={!hasEverTapped && isVideoPlaying}
                     showContextualPulse={!hasEverTapped && !isVideoPlaying}
                     seekingChunkKey={seekingChunk?.key ?? null}
+                    pronChunks={pronChunks}
                   />
                 ) : (
                   question
@@ -1090,6 +1138,7 @@ export function ArticleContent({
                     showDiscoveryHint={!hasEverTapped && isVideoPlaying}
                     showContextualPulse={!hasEverTapped && !isVideoPlaying}
                     seekingChunkKey={seekingChunk?.key ?? null}
+                    pronChunks={pronChunks}
                   />
                 ) : (
                   question

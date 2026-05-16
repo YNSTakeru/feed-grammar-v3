@@ -329,6 +329,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             isSimilar={item.is_similar}
             parentArticleId={parentArticleId}
             chunkTimestamps={chunkTimestamps}
+            pronChunks={article.pron_chunks ?? null}
           />
         </Suspense>
 
