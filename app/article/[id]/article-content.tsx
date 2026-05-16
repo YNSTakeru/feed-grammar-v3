@@ -8,6 +8,7 @@ import { type YouTubePlayerHandle } from "@/components/youtube-player";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { progressDB } from "@/lib/db/progress-db";
+import { CHUNK_REPLAY_PAD_S, computeChunkReplayEnd } from "@/lib/learn/chunk-replay";
 import { ArticleData, ChunkTimestamp, FeedItem, PronChunk } from "@/types";
 import { Tweet } from "react-tweet";
 import {
@@ -84,7 +85,7 @@ function KaraokeQuestion({
   chunks: ChunkTimestamp[];
   currentTime: number;
   onChunkSelect?: (chunk: ChunkTimestamp) => void;
-  onChunkReplay?: (chunk: ChunkTimestamp) => void;
+  onChunkReplay?: (chunk: ChunkTimestamp, index: number) => void;
   showDiscoveryHint?: boolean;
   showContextualPulse?: boolean;
   seekingChunkKey?: string | null;
@@ -185,7 +186,7 @@ function KaraokeQuestion({
                     className="h-7 px-2 text-xs"
                     onClick={(event) => {
                       event.preventDefault();
-                      onChunkReplay?.(chunk);
+                      onChunkReplay?.(chunk, i);
                     }}
                   >
                     <Headphones className="mr-1 h-3.5 w-3.5" />
@@ -328,6 +329,10 @@ export function ArticleContent({
     start: number;
     end: number;
   } | null>(null);
+  // Ref mirror for seekingChunk — used in handleTimeUpdate to avoid re-creating
+  // the callback (and triggering YouTubePlayer's useEffect cleanup) on every
+  // seekingChunk state change.
+  const seekingChunkRef = useRef<{ key: string; start: number; end: number } | null>(null);
   const seekingFallbackTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(
     null,
   );
@@ -346,15 +351,22 @@ export function ArticleContent({
     setIsVideoPlaying(isPlaying);
   }, []);
 
+  // Keep seekingChunkRef in sync so handleTimeUpdate can read it without
+  // taking seekingChunk as a dependency (which would cascade a player rebuild).
+  useEffect(() => {
+    seekingChunkRef.current = seekingChunk;
+  }, [seekingChunk]);
+
   // YouTube動画の現在時刻を更新するコールバック
   // image_sectionsの切り替えポイントを検知するため、常に更新
   const handleTimeUpdate = useCallback((time: number) => {
     lastUpdateTimeRef.current = time;
     setCurrentVideoTime(time);
+    const sc = seekingChunkRef.current;
     if (
-      seekingChunk &&
-      time >= seekingChunk.start &&
-      time <= seekingChunk.end
+      sc &&
+      time >= sc.start &&
+      time <= sc.end
     ) {
       setSeekingChunk(null);
       if (seekingFallbackTimeoutRef.current) {
@@ -362,7 +374,7 @@ export function ArticleContent({
         seekingFallbackTimeoutRef.current = null;
       }
     }
-  }, [seekingChunk]);
+  }, []);
 
   const markKaraokeHintAsDiscovered = useCallback(() => {
     if (!hasEverTappedRef.current) {
@@ -392,7 +404,7 @@ export function ArticleContent({
     markKaraokeHintAsDiscovered();
   }, [markKaraokeHintAsDiscovered]);
 
-  const handleKaraokeChunkReplay = useCallback((chunk: ChunkTimestamp) => {
+  const handleKaraokeChunkReplay = useCallback((chunk: ChunkTimestamp, index: number) => {
     markKaraokeHintAsDiscovered();
     markChunkAsSeeking(chunk);
 
@@ -402,8 +414,15 @@ export function ArticleContent({
       return;
     }
 
-    playerHandle.playSegment(chunk.start_time, chunk.end_time);
-  }, [markChunkAsSeeking, markKaraokeHintAsDiscovered]);
+    const nextChunk = chunkTimestamps?.[index + 1];
+    const paddedEnd = computeChunkReplayEnd(
+      chunk,
+      nextChunk,
+      CHUNK_REPLAY_PAD_S,
+    );
+
+    playerHandle.playSegment(chunk.start_time, paddedEnd);
+  }, [chunkTimestamps, markChunkAsSeeking, markKaraokeHintAsDiscovered]);
 
   useEffect(() => {
     return () => {

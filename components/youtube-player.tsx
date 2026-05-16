@@ -137,10 +137,10 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
 
         // seekTo() is async: getCurrentTime() may still return the pre-seek
         // position for several rAF frames. If that stale value already satisfies
-        // the stop condition (>= endSeconds - 0.05), the loop would pause
+        // the stop condition (>= endSeconds), the loop would pause
         // immediately before any audio plays. Guard against this by waiting
         // until getCurrentTime() has dropped at least 0.2s from preSeekCt.
-        let seekGuardActive = preSeekCt >= endSeconds - 0.05;
+        let seekGuardActive = preSeekCt >= endSeconds;
         let guardWaitFrames = 0;
         const MAX_GUARD_FRAMES = 60; // ~1 s safety timeout at 60 fps
 
@@ -174,7 +174,7 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
             return;
           }
 
-          if (ct >= endSeconds - 0.05) {
+          if (ct >= endSeconds) {
             activePlayer.pauseVideo();
             stopSegmentLoop();
             return;
