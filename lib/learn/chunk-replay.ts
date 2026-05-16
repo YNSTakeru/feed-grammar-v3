@@ -5,9 +5,9 @@ export interface ReplayChunkLike {
 
 export const CHUNK_REPLAY_PAD_S = 0.4;
 
-// rAF fires every ~16ms at 60fps. Subtract one frame from the next chunk's start
-// so the rAF-based stop always fires at or before the next word begins.
-const RAF_FRAME_S = 0.016;
+// Total stop lead: 16ms (rAF polling) + 20ms (pauseVideo postMessage to iframe) + 4ms margin.
+// Subtracting this from nextChunk.start_time guarantees the audio stops before the next word.
+const CHUNK_STOP_LEAD_S = 0.040;
 
 export function computeChunkReplayEnd(
   chunk: ReplayChunkLike,
@@ -21,5 +21,5 @@ export function computeChunkReplayEnd(
     return replayEnd;
   }
 
-  return Math.min(replayEnd, nextChunk.start_time - RAF_FRAME_S);
+  return Math.min(replayEnd, nextChunk.start_time - CHUNK_STOP_LEAD_S);
 }
