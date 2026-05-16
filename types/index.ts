@@ -3,6 +3,7 @@ export interface PronChunk {
   ipa_citation: string;
   ipa_connected: string;
   kana: string;
+  reduction_type?: string;
 }
 
 export interface ArticleData {
@@ -42,6 +43,8 @@ export interface ArticleData {
   conclusion: string;
   keywords: string[];
   pron_chunks?: PronChunk[] | null;
+  chunks?: PronChunk[] | null;
+  chunk_sections?: ChunkTimestamp[] | null;
   katakana_weak_strong?: string;
 }
 
