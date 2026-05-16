@@ -4,7 +4,14 @@ import { FloatingVideoControls } from "@/components/floating-video-controls";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Pause, Play, RotateCcw } from "lucide-react";
-import { useCallback, useEffect, useRef, useState } from "react";
+import {
+  forwardRef,
+  useCallback,
+  useEffect,
+  useImperativeHandle,
+  useRef,
+  useState,
+} from "react";
 
 interface YouTubePlayerProps {
   videoId: string;
@@ -13,11 +20,48 @@ interface YouTubePlayerProps {
   autoPlay?: boolean;
   loop?: boolean;
   onTimeUpdate?: (time: number) => void;
+  onPlaybackStateChange?: (isPlaying: boolean) => void;
+  onError?: () => void;
 }
+
+type YouTubePlayerInstance = {
+  getCurrentTime: () => number;
+  seekTo: (seconds: number, allowSeekAhead: boolean) => void;
+  playVideo: () => void;
+  pauseVideo: () => void;
+  destroy: () => void;
+  getPlayerState?: () => number;
+  isMuted?: () => boolean;
+  getVolume?: () => number;
+};
+
+export interface YouTubePlayerHandle {
+  seekAndPlay: (seconds: number) => void;
+  playSegment: (startSeconds: number, endSeconds: number) => void;
+  isMuted: () => boolean;
+  getVolume: () => number | null;
+}
+
+type YouTubePlayerEvent = {
+  data: number;
+  target: YouTubePlayerInstance;
+};
+
+type YouTubePlayerConfig = {
+  videoId: string;
+  playerVars: Record<string, string | number>;
+  events: {
+    onReady: (event: YouTubePlayerEvent) => void;
+    onStateChange: (event: YouTubePlayerEvent) => void;
+    onError: () => void;
+  };
+};
 
 declare global {
   interface Window {
-    YT: any;
+    YT?: {
+      Player: new (container: HTMLElement, config: YouTubePlayerConfig) => YouTubePlayerInstance;
+    };
     onYouTubeIframeAPIReady: () => void;
   }
 }
@@ -31,41 +75,127 @@ const PlayerState = {
   CUED: 5,
 };
 
-export function YouTubePlayer({
-  videoId,
-  startTime,
-  endTime,
-  autoPlay = true,
-  loop = true,
-  onTimeUpdate,
-}: YouTubePlayerProps) {
-  // 【デバッグ】受け取ったプロップの値を確認
-  console.log(
-    `[YouTubePlayer] Props received - videoId: ${videoId}, startTime: ${startTime}, endTime: ${endTime}, loop: ${loop}`,
-  );
-
-  const playerRef = useRef<any>(null);
+export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>(
+  function YouTubePlayer(
+    {
+      videoId,
+      startTime,
+      endTime,
+      autoPlay = true,
+      loop = true,
+      onTimeUpdate,
+      onPlaybackStateChange,
+      onError,
+    }: YouTubePlayerProps,
+    ref,
+  ) {
+  const playerRef = useRef<YouTubePlayerInstance | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const videoContainerRef = useRef<HTMLDivElement>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const autoplayGuardTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const segmentLoopFrameRef = useRef<number | null>(null);
 
   const [isLoading, setIsLoading] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [progress, setProgress] = useState(0);
+  const [showResumeOverlay, setShowResumeOverlay] = useState(false);
 
   const duration = endTime - startTime;
+
+  const stopSegmentLoop = useCallback(() => {
+    if (segmentLoopFrameRef.current !== null) {
+      window.cancelAnimationFrame(segmentLoopFrameRef.current);
+      segmentLoopFrameRef.current = null;
+    }
+  }, []);
+
+  useImperativeHandle(
+    ref,
+    () => ({
+      seekAndPlay: (seconds: number) => {
+        stopSegmentLoop();
+        playerRef.current?.seekTo(seconds, true);
+        playerRef.current?.playVideo();
+      },
+      playSegment: (startSeconds: number, endSeconds: number) => {
+        const player = playerRef.current;
+        if (!player) {
+          return;
+        }
+
+        stopSegmentLoop();
+        // Capture position BEFORE seekTo so the rAF guard can detect stale values.
+        const preSeekCt = player.getCurrentTime();
+        player.seekTo(startSeconds, true);
+        player.playVideo();
+
+        if (endSeconds <= startSeconds) {
+          return;
+        }
+
+        // seekTo() is async: getCurrentTime() may still return the pre-seek
+        // position for several rAF frames. If that stale value already satisfies
+        // the stop condition (>= endSeconds - 0.05), the loop would pause
+        // immediately before any audio plays. Guard against this by waiting
+        // until getCurrentTime() has dropped at least 0.2s from preSeekCt.
+        let seekGuardActive = preSeekCt >= endSeconds - 0.05;
+        let guardWaitFrames = 0;
+        const MAX_GUARD_FRAMES = 60; // ~1 s safety timeout at 60 fps
+
+        const monitorSegmentEnd = () => {
+          const activePlayer = playerRef.current;
+          if (!activePlayer) {
+            stopSegmentLoop();
+            return;
+          }
+
+          const ct = activePlayer.getCurrentTime();
+
+          if (seekGuardActive) {
+            guardWaitFrames++;
+            // Release once ct has moved 0.2s toward startSeconds, or after timeout.
+            if (ct < preSeekCt - 0.2 || guardWaitFrames > MAX_GUARD_FRAMES) {
+              seekGuardActive = false;
+            } else {
+              segmentLoopFrameRef.current = window.requestAnimationFrame(monitorSegmentEnd);
+              return;
+            }
+          }
+
+          const state = activePlayer.getPlayerState?.();
+          if (
+            state !== undefined &&
+            state !== PlayerState.PLAYING &&
+            state !== PlayerState.BUFFERING
+          ) {
+            stopSegmentLoop();
+            return;
+          }
+
+          if (ct >= endSeconds - 0.05) {
+            activePlayer.pauseVideo();
+            stopSegmentLoop();
+            return;
+          }
+
+          segmentLoopFrameRef.current = window.requestAnimationFrame(monitorSegmentEnd);
+        };
+
+        segmentLoopFrameRef.current = window.requestAnimationFrame(monitorSegmentEnd);
+      },
+      isMuted: () => playerRef.current?.isMuted?.() ?? false,
+      getVolume: () => playerRef.current?.getVolume?.() ?? null,
+    }),
+    [stopSegmentLoop],
+  );
 
   // 【機能】プログレスバーの更新と現在時刻の表示を管理
   // 100msごとに呼ばれて、現在の再生位置を取得し、プログレスバーを更新
   const updateProgress = useCallback(() => {
     if (playerRef.current && playerRef.current.getCurrentTime) {
       const current = playerRef.current.getCurrentTime();
-      console.log(
-        `[updateProgress] 現在時刻: ${current.toFixed(
-          2,
-        )}s (範囲: ${startTime}s - ${endTime}s)`,
-      );
       setCurrentTime(current);
 
       // 親コンポーネントに現在時刻を通知
@@ -85,16 +215,11 @@ export function YouTubePlayer({
   const handlePlay = useCallback(() => {
     if (playerRef.current) {
       const current = playerRef.current.getCurrentTime();
-      // console.log(
-      //   `[handlePlay] 再生ボタン押下 現在時刻: ${current.toFixed(2)}s`
-      // );
-
-      // If video is at or past the end time, restart from beginning
       if (current >= endTime - 0.5 || current < startTime) {
-        // console.log(`[handlePlay] 範囲外のため ${startTime}s にシーク`);
         playerRef.current.seekTo(startTime, true);
       }
 
+      setShowResumeOverlay(false);
       playerRef.current.playVideo();
     }
   }, [startTime, endTime]);
@@ -109,8 +234,8 @@ export function YouTubePlayer({
   // startTimeに巻き戻して再生開始
   const handleRestart = useCallback(() => {
     if (playerRef.current) {
-      // console.log(`[handleRestart] 最初から再生: ${startTime}s にシーク`);
       playerRef.current.seekTo(startTime, true);
+      setShowResumeOverlay(false);
       playerRef.current.playVideo();
     }
   }, [startTime]);
@@ -131,8 +256,9 @@ export function YouTubePlayer({
     }
 
     function initPlayer() {
-      if (containerRef.current && !playerRef.current) {
-        playerRef.current = new window.YT.Player(containerRef.current, {
+      if (!window.YT?.Player || !containerRef.current || playerRef.current) return;
+
+      playerRef.current = new window.YT.Player(containerRef.current, {
           videoId: videoId,
           playerVars: {
             start: startTime,
@@ -149,99 +275,97 @@ export function YouTubePlayer({
           events: {
             // 【イベント】プレイヤーの準備が完了した時
             // ローディング状態を解除し、autoPlayがtrueなら自動再生開始
-            onReady: (event: any) => {
-              // console.log(
-              //   `[onReady] プレイヤー準備完了 (autoPlay: ${autoPlay})`
-              // );
+            onReady: (event: YouTubePlayerEvent) => {
               setIsLoading(false);
-              // Ensure video starts playing
               event.target.seekTo(startTime, true);
               if (autoPlay) {
                 setTimeout(() => {
                   event.target.playVideo();
+                  if (autoplayGuardTimeoutRef.current) {
+                    clearTimeout(autoplayGuardTimeoutRef.current);
+                  }
+                  autoplayGuardTimeoutRef.current = setTimeout(() => {
+                    const state = playerRef.current?.getPlayerState?.();
+                    if (state !== PlayerState.PLAYING) {
+                      setShowResumeOverlay(true);
+                    }
+                  }, 1200);
                 }, 100);
               }
             },
-            // 【イベント】プレイヤーの状態が変化した時（再生/一時停止/終了など）
-            onStateChange: (event: any) => {
+            onStateChange: (event: YouTubePlayerEvent) => {
               const state = event.data;
-              const stateNames = {
-                [-1]: "UNSTARTED",
-                [0]: "ENDED",
-                [1]: "PLAYING",
-                [2]: "PAUSED",
-                [3]: "BUFFERING",
-                [5]: "CUED",
-              };
-              // console.log(
-              //   `[onStateChange] 状態変化: ${
-              //     stateNames[state as keyof typeof stateNames]
-              //   }`
-              // );
               setIsPlaying(state === PlayerState.PLAYING);
+              onPlaybackStateChange?.(state === PlayerState.PLAYING);
+              if (state === PlayerState.PLAYING) {
+                setShowResumeOverlay(false);
+                if (autoplayGuardTimeoutRef.current) {
+                  clearTimeout(autoplayGuardTimeoutRef.current);
+                  autoplayGuardTimeoutRef.current = null;
+                }
+              }
 
-              // Handle loop
-              // 【機能】再生中の場合、100msごとにendTimeをチェックしてループ処理
               if (state === PlayerState.PLAYING) {
                 if (!intervalRef.current) {
-                  // console.log(
-                  //   "[onStateChange] 100msインターバル開始 (endTime監視)"
-                  // );
                   intervalRef.current = setInterval(() => {
                     if (playerRef.current && playerRef.current.getCurrentTime) {
                       const current = playerRef.current.getCurrentTime();
 
-                      // Loop back to start when reaching end time
-                      // 【ループ判定】現在時刻がendTimeの0.1秒手前に到達したらループ
                       if (current >= endTime - 0.1) {
-                        console.log(
-                          `[Loop Check] endTime到達! 現在: ${current.toFixed(
-                            2,
-                          )}s, endTime: ${endTime}s, startTime: ${startTime}s`,
-                        );
                         if (loop) {
-                          console.log(
-                            `[Loop] ${startTime}s にシークしてループ再生`,
-                          );
                           playerRef.current.seekTo(startTime, true);
                         } else {
-                          console.log("[Loop] ループ無効のため一時停止");
                           playerRef.current.pauseVideo();
                         }
                       }
 
                       updateProgress();
                     }
-                  }, 10);
+                  }, 100);
                 }
               } else {
-                // 【機能】再生停止時はインターバルをクリア
                 if (intervalRef.current) {
-                  // console.log("[onStateChange] インターバル停止");
                   clearInterval(intervalRef.current);
                   intervalRef.current = null;
                 }
               }
             },
+            onError: () => {
+              setIsLoading(false);
+              setIsPlaying(false);
+              onPlaybackStateChange?.(false);
+              onError?.();
+            },
           },
         });
-      }
     }
 
     return () => {
-      console.log(
-        `[YouTubePlayer] Cleanup - Destroying player for videoId: ${videoId}`,
-      );
+      stopSegmentLoop();
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
         intervalRef.current = null;
+      }
+      if (autoplayGuardTimeoutRef.current) {
+        clearTimeout(autoplayGuardTimeoutRef.current);
+        autoplayGuardTimeoutRef.current = null;
       }
       if (playerRef.current) {
         playerRef.current.destroy();
         playerRef.current = null;
       }
     };
-  }, [videoId, startTime, endTime, autoPlay, loop, updateProgress]);
+  }, [
+    videoId,
+    startTime,
+    endTime,
+    autoPlay,
+    loop,
+    updateProgress,
+    onPlaybackStateChange,
+    onError,
+    stopSegmentLoop,
+  ]);
 
   return (
     <>
@@ -264,6 +388,13 @@ export function YouTubePlayer({
           {isLoading && (
             <div className="absolute inset-0 flex items-center justify-center z-10">
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+            </div>
+          )}
+          {showResumeOverlay && (
+            <div className="absolute inset-0 z-20 flex items-center justify-center bg-black/55 p-4">
+              <Button onClick={handlePlay} size="lg">
+                Tap to resume
+              </Button>
             </div>
           )}
           <div ref={containerRef} className="w-full h-full" />
@@ -315,4 +446,7 @@ export function YouTubePlayer({
       </div>
     </>
   );
-}
+  },
+);
+
+YouTubePlayer.displayName = "YouTubePlayer";
