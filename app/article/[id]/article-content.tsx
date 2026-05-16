@@ -4,6 +4,7 @@ import { FloatingNavigation } from "@/components/floating-navigation";
 import { MarkdownContent } from "@/components/markdown-content";
 import { PhraseBreakdown } from "@/components/phrase-breakdown";
 import { QuizSection } from "@/components/quiz-section";
+import { type YouTubePlayerHandle } from "@/components/youtube-player";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { progressDB } from "@/lib/db/progress-db";
@@ -24,7 +25,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 
 declare global {
   interface Window {
@@ -41,33 +42,172 @@ declare global {
   }
 }
 
+const buildChunkInteractionKey = (chunk: ChunkTimestamp) =>
+  `${chunk.text}-${chunk.start_time}`;
+
 function KaraokeQuestion({
   question,
   chunks,
   currentTime,
+  onChunkSelect,
+  onChunkReplay,
+  showDiscoveryHint = false,
+  showContextualPulse = false,
+  seekingChunkKey,
 }: {
   question: string;
   chunks: ChunkTimestamp[];
   currentTime: number;
+  onChunkSelect?: (chunk: ChunkTimestamp) => void;
+  onChunkReplay?: (chunk: ChunkTimestamp) => void;
+  showDiscoveryHint?: boolean;
+  showContextualPulse?: boolean;
+  seekingChunkKey?: string | null;
 }) {
+  const [selectedChunk, setSelectedChunk] = useState<ChunkTimestamp | null>(null);
+  const [flashingChunkKey, setFlashingChunkKey] = useState<string | null>(null);
+  const [showKatakana, setShowKatakana] = useState(false);
+
   if (!chunks.length) return <>{question}</>;
+
+  const hasPronunciationData = (_chunk: ChunkTimestamp) => true;
+
+  const isSameChunk = (a: ChunkTimestamp, b: ChunkTimestamp) =>
+    a.text === b.text &&
+    a.start_time === b.start_time &&
+    a.end_time === b.end_time;
+
+  const handleChunkSelect = (chunk: ChunkTimestamp) => {
+    const key = buildChunkInteractionKey(chunk);
+    const isSameSelected = selectedChunk && isSameChunk(selectedChunk, chunk);
+
+    setFlashingChunkKey(key);
+
+    if (isSameSelected) {
+      setSelectedChunk(null);
+      return;
+    }
+
+    setSelectedChunk(chunk);
+    onChunkSelect?.(chunk);
+  };
+
+  const firstTappableIndex = chunks.findIndex(hasPronunciationData);
+
   return (
     <>
       {chunks.map((chunk, i) => {
         const isActive =
           currentTime >= chunk.start_time && currentTime < chunk.end_time;
+        const isTappable = hasPronunciationData(chunk);
+        const key = buildChunkInteractionKey(chunk);
+        const isFirstTappable = isTappable && i === firstTappableIndex;
+        const isFlashing = flashingChunkKey === key;
+        const isSeeking = seekingChunkKey === key;
+        const isSelected = selectedChunk ? isSameChunk(selectedChunk, chunk) : false;
+        const shouldShowTapHint = isFirstTappable && showDiscoveryHint;
+        const shouldShowPulseRing = isFirstTappable && showContextualPulse;
+
         return (
-          <span
-            key={i}
-            className={`transition-colors duration-75 ${
-              isActive
-                ? "bg-yellow-200 dark:bg-yellow-500/40 text-yellow-900 dark:text-yellow-100 rounded-sm px-0.5"
-                : ""
-            }`}
-          >
-            {i > 0 ? " " : ""}
-            {chunk.text}
-          </span>
+          <Fragment key={`${key}-${chunk.end_time}`}>
+            <span
+              role={isTappable ? "button" : undefined}
+              tabIndex={isTappable ? 0 : undefined}
+              onClick={() => handleChunkSelect(chunk)}
+              onKeyDown={(event) => {
+                if (!isTappable) return;
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
+                  handleChunkSelect(chunk);
+                }
+              }}
+              onAnimationEnd={() => {
+                if (isFlashing) {
+                  setFlashingChunkKey(null);
+                }
+              }}
+              className={`relative inline-block align-middle rounded-sm px-0.5 transition-all duration-150 ${
+                isTappable ? "cursor-pointer chunk-zebra" : "pointer-events-none cursor-default"
+              } ${
+                isActive
+                  ? "bg-yellow-200 dark:bg-yellow-500/40 text-yellow-900 dark:text-yellow-100"
+                  : ""
+              } ${isSelected ? "chunk-float" : ""} ${isFlashing ? "chunk-flash" : ""} ${
+                isSeeking ? "chunk-seeking" : ""
+              } ${shouldShowPulseRing ? "chunk-pulse-ring" : ""}`}
+            >
+              {shouldShowTapHint && (
+                <span className="pointer-events-none absolute -top-5 left-0 rounded-full bg-blue-600 px-2 py-0.5 text-[10px] font-semibold text-white shadow-sm">
+                  🔊 タップで IPA
+                </span>
+              )}
+              {i > 0 ? " " : ""}
+              {chunk.text}
+            </span>
+
+            {isSelected && (
+              <div className="my-3 ml-1 rounded-md border border-border bg-background/95 p-3 shadow-sm">
+                <div className="mb-2 flex items-center justify-between gap-2">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                    Pronunciation
+                  </p>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="h-7 px-2 text-xs"
+                    onClick={(event) => {
+                      event.preventDefault();
+                      onChunkReplay?.(chunk);
+                    }}
+                  >
+                    <Headphones className="mr-1 h-3.5 w-3.5" />
+                    🔁 Replay
+                  </Button>
+                </div>
+
+                {chunk.ipa_connected ? (
+                  <p className="font-mono text-sm text-foreground">{chunk.ipa_connected}</p>
+                ) : (
+                  <p className="text-sm text-muted-foreground">IPA データなし</p>
+                )}
+
+                {chunk.reduction_type && (
+                  <div className="mt-2">
+                    <Badge variant="secondary">{chunk.reduction_type}</Badge>
+                  </div>
+                )}
+
+                {chunk.katakana && (
+                  <div className="mt-2 space-y-2">
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      className="h-7 px-2 text-xs"
+                      onClick={(event) => {
+                        event.preventDefault();
+                        setShowKatakana((current) => !current);
+                      }}
+                    >
+                      {showKatakana ? "カタカナを隠す" : "カタカナを表示"}
+                    </Button>
+                    {showKatakana && (
+                      <p className="rounded bg-muted px-2 py-1 text-xs text-muted-foreground">
+                        {chunk.katakana}
+                      </p>
+                    )}
+                  </div>
+                )}
+
+                {chunk.linking && chunk.linking.length > 0 && (
+                  <ul className="mt-2 list-disc space-y-1 pl-4 text-xs text-muted-foreground">
+                    {chunk.linking.map((item, index) => (
+                      <li key={`${chunk.start_time}-${index}`}>{item.description}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            )}
+          </Fragment>
         );
       })}
     </>
@@ -119,6 +259,7 @@ export function ArticleContent({
   const searchParams = useSearchParams();
   const [showArticle, setShowArticle] = useState(false);
   const [showQuiz, setShowQuiz] = useState(false);
+  const playerRef = useRef<YouTubePlayerHandle | null>(null);
   const videoContainerRef = useRef<HTMLDivElement>(null);
   const [isCompleted, setIsCompleted] = useState(false);
   const [isMarkingComplete, setIsMarkingComplete] = useState(false);
@@ -132,6 +273,17 @@ export function ArticleContent({
   const pathname = usePathname();
   const [currentVideoTime, setCurrentVideoTime] = useState<number>(startTime);
   const lastUpdateTimeRef = useRef<number>(startTime);
+  const hasEverTappedRef = useRef(false);
+  const [hasEverTapped, setHasEverTapped] = useState(false);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [seekingChunk, setSeekingChunk] = useState<{
+    key: string;
+    start: number;
+    end: number;
+  } | null>(null);
+  const seekingFallbackTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(
+    null,
+  );
 
   // スクロールアニメーション用のstate
   const [visibleSections, setVisibleSections] = useState<Set<number>>(
@@ -143,11 +295,75 @@ export function ArticleContent({
   const sectionRefs = useRef<Map<number, HTMLDivElement>>(new Map());
   const [shouldInitObservers, setShouldInitObservers] = useState(false);
 
-    // YouTube動画の現在時刻を更新するコールバック
+  const handlePlaybackStateChange = useCallback((isPlaying: boolean) => {
+    setIsVideoPlaying(isPlaying);
+  }, []);
+
+  // YouTube動画の現在時刻を更新するコールバック
   // image_sectionsの切り替えポイントを検知するため、常に更新
   const handleTimeUpdate = useCallback((time: number) => {
     lastUpdateTimeRef.current = time;
     setCurrentVideoTime(time);
+    if (
+      seekingChunk &&
+      time >= seekingChunk.start &&
+      time <= seekingChunk.end
+    ) {
+      setSeekingChunk(null);
+      if (seekingFallbackTimeoutRef.current) {
+        clearTimeout(seekingFallbackTimeoutRef.current);
+        seekingFallbackTimeoutRef.current = null;
+      }
+    }
+  }, [seekingChunk]);
+
+  const markKaraokeHintAsDiscovered = useCallback(() => {
+    if (!hasEverTappedRef.current) {
+      hasEverTappedRef.current = true;
+      setHasEverTapped(true);
+    }
+  }, []);
+
+  const markChunkAsSeeking = useCallback((chunk: ChunkTimestamp) => {
+    const key = buildChunkInteractionKey(chunk);
+
+    setSeekingChunk({
+      key,
+      start: chunk.start_time,
+      end: chunk.end_time,
+    });
+
+    if (seekingFallbackTimeoutRef.current) {
+      clearTimeout(seekingFallbackTimeoutRef.current);
+    }
+    seekingFallbackTimeoutRef.current = setTimeout(() => {
+      setSeekingChunk((current) => (current?.key === key ? null : current));
+    }, 800);
+  }, []);
+
+  const handleKaraokeChunkSelect = useCallback(() => {
+    markKaraokeHintAsDiscovered();
+  }, [markKaraokeHintAsDiscovered]);
+
+  const handleKaraokeChunkReplay = useCallback((chunk: ChunkTimestamp) => {
+    markKaraokeHintAsDiscovered();
+    markChunkAsSeeking(chunk);
+
+    const playerHandle = playerRef.current;
+    if (!playerHandle) {
+      console.warn("Chunk replay requested, but player handle is unavailable");
+      return;
+    }
+
+    playerHandle.playSegment(chunk.start_time, chunk.end_time);
+  }, [markChunkAsSeeking, markKaraokeHintAsDiscovered]);
+
+  useEffect(() => {
+    return () => {
+      if (seekingFallbackTimeoutRef.current) {
+        clearTimeout(seekingFallbackTimeoutRef.current);
+      }
+    };
   }, []);
 
   // 記事が表示されたらIntersection Observerを初期化
@@ -428,6 +644,7 @@ export function ArticleContent({
       {!showQuiz && !showArticle && (
         <div className="space-y-6">
           <QuizSection
+            ref={playerRef}
             videoId={videoId}
             startTime={startTime}
             endTime={endTime}
@@ -435,6 +652,8 @@ export function ArticleContent({
             questionKatakana={questionKatakana}
             youtubeUrl={youtubeUrl}
             hideQuiz={true}
+            onPlaybackStateChange={handlePlaybackStateChange}
+            onTimeUpdate={handleTimeUpdate}
           />
           <div className="flex flex-col gap-4 p-6 border-2 border-dashed rounded-lg bg-muted/50">
             <h2 className="text-xl font-bold text-center mb-2">
@@ -473,6 +692,7 @@ export function ArticleContent({
         <>
           <div ref={videoContainerRef}>
             <QuizSection
+              ref={playerRef}
               videoId={videoId}
               startTime={startTime}
               endTime={endTime}
@@ -481,6 +701,7 @@ export function ArticleContent({
               youtubeUrl={youtubeUrl}
               onAnswered={() => setShowArticle(true)}
               onTimeUpdate={handleTimeUpdate}
+              onPlaybackStateChange={handlePlaybackStateChange}
             />
           </div>
           <FloatingNavigation
@@ -512,17 +733,22 @@ export function ArticleContent({
               <h3 className="text-sm font-semibold text-purple-700 dark:text-purple-300 mb-2">
                 🎯 English
               </h3>
-              <p className="text-xl font-bold text-gray-800 dark:text-gray-100">
+              <div className="text-xl font-bold text-gray-800 dark:text-gray-100">
                 {chunkTimestamps && chunkTimestamps.length > 0 ? (
                   <KaraokeQuestion
                     question={question}
                     chunks={chunkTimestamps}
                     currentTime={currentVideoTime}
+                    onChunkSelect={handleKaraokeChunkSelect}
+                    onChunkReplay={handleKaraokeChunkReplay}
+                    showDiscoveryHint={!hasEverTapped && isVideoPlaying}
+                    showContextualPulse={!hasEverTapped && !isVideoPlaying}
+                    seekingChunkKey={seekingChunk?.key ?? null}
                   />
                 ) : (
                   question
                 )}
-              </p>
+              </div>
             </div>
             {article.translated && (
               <div>
@@ -829,6 +1055,7 @@ export function ArticleContent({
           {/* Show video if quiz was skipped */}
           <div className="mb-8" ref={videoContainerRef}>
             <QuizSection
+              ref={playerRef}
               videoId={videoId}
               startTime={startTime}
               endTime={endTime}
@@ -837,6 +1064,7 @@ export function ArticleContent({
               youtubeUrl={youtubeUrl}
               hideQuiz={true}
               onTimeUpdate={handleTimeUpdate}
+              onPlaybackStateChange={handlePlaybackStateChange}
             />
           </div>
 
@@ -851,17 +1079,22 @@ export function ArticleContent({
               <h3 className="text-sm font-semibold text-purple-700 dark:text-purple-300 mb-2">
                 🎯 English
               </h3>
-              <p className="text-xl font-bold text-gray-800 dark:text-gray-100">
+              <div className="text-xl font-bold text-gray-800 dark:text-gray-100">
                 {chunkTimestamps && chunkTimestamps.length > 0 ? (
                   <KaraokeQuestion
                     question={question}
                     chunks={chunkTimestamps}
                     currentTime={currentVideoTime}
+                    onChunkSelect={handleKaraokeChunkSelect}
+                    onChunkReplay={handleKaraokeChunkReplay}
+                    showDiscoveryHint={!hasEverTapped && isVideoPlaying}
+                    showContextualPulse={!hasEverTapped && !isVideoPlaying}
+                    seekingChunkKey={seekingChunk?.key ?? null}
                   />
                 ) : (
                   question
                 )}
-              </p>
+              </div>
             </div>
             {article.translated && (
               <div>
