@@ -4,6 +4,7 @@ import { FloatingNavigation } from "@/components/floating-navigation";
 import { MarkdownContent } from "@/components/markdown-content";
 import { PhraseBreakdown } from "@/components/phrase-breakdown";
 import { QuizSection } from "@/components/quiz-section";
+import { normalizePronunciationText } from "@/lib/text/normalize-pronunciation";
 import { type YouTubePlayerHandle } from "@/components/youtube-player";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -46,25 +47,45 @@ declare global {
 const buildChunkInteractionKey = (chunk: ChunkTimestamp) =>
   `${chunk.text}-${chunk.start_time}`;
 
+function mergePronChunks(chunks: PronChunk[]): PronChunk {
+  return {
+    en: chunks.map((c) => c.en).join(" "),
+    ipa_citation: chunks.map((c) => c.ipa_citation).filter(Boolean).join(" ") || "",
+    ipa_connected: chunks.map((c) => c.ipa_connected).filter(Boolean).join(" ") || "",
+    kana: chunks.map((c) => c.kana).filter(Boolean).join(" ") || "",
+    reduction_type: chunks.find((c) => c.reduction_type)?.reduction_type,
+  };
+}
+
 function findPronChunk(
   chunk: ChunkTimestamp,
   pronChunks: PronChunk[],
 ): PronChunk | null {
   if (!pronChunks.length) return null;
-  const chunkText = chunk.text.toLowerCase();
+  const chunkText = normalizePronunciationText(chunk.text);
   const exact = pronChunks.find((pc) =>
-    pc.en.toLowerCase().replace(/[＜＞<>]/g, "").includes(chunkText),
+    normalizePronunciationText(pc.en).includes(chunkText),
   );
   if (exact) return exact;
   const words = chunkText.split(/\s+/).filter(Boolean);
   let best: PronChunk | null = null;
   let bestScore = 0;
   for (const pc of pronChunks) {
-    const pcText = pc.en.toLowerCase().replace(/[＜＞<>]/g, "");
+    const pcText = normalizePronunciationText(pc.en);
     const score = words.filter((w) => pcText.includes(w)).length;
     if (score > bestScore) {
       bestScore = score;
       best = pc;
+    }
+  }
+  // Try sliding windows of 2–3 consecutive pron_chunks for merged display chunks
+  for (let windowSize = 2; windowSize <= Math.min(3, pronChunks.length); windowSize++) {
+    for (let i = 0; i <= pronChunks.length - windowSize; i++) {
+      const window = pronChunks.slice(i, i + windowSize);
+      const combined = normalizePronunciationText(window.map((c) => c.en).join(" "));
+      if (combined === chunkText) {
+        return mergePronChunks(window);
+      }
     }
   }
   return bestScore > 0 ? best : null;
@@ -94,6 +115,18 @@ function KaraokeQuestion({
   const [selectedChunk, setSelectedChunk] = useState<ChunkTimestamp | null>(null);
   const [flashingChunkKey, setFlashingChunkKey] = useState<string | null>(null);
   const [showKatakana, setShowKatakana] = useState(false);
+  const [showKana, setShowKana] = useState<boolean>(() => {
+    if (typeof window === "undefined") return true;
+    const stored = localStorage.getItem("feed-grammar-showKana");
+    return stored === null ? true : stored === "true";
+  });
+  const toggleKana = () => {
+    setShowKana((prev) => {
+      const next = !prev;
+      localStorage.setItem("feed-grammar-showKana", String(next));
+      return next;
+    });
+  };
 
   if (!chunks.length) return <>{question}</>;
 
@@ -195,6 +228,10 @@ function KaraokeQuestion({
                 </div>
 
                 {(() => {
+                  if (chunk.ipa_connected) {
+                    return <p className="font-mono text-sm text-foreground">{chunk.ipa_connected}</p>;
+                  }
+
                   const pc = pronChunks ? findPronChunk(chunk, pronChunks) : null;
                   if (pc) {
                     return (
@@ -206,12 +243,39 @@ function KaraokeQuestion({
                           </p>
                         )}
                         {pc.kana && (
-                          <p className="mt-1 text-sm text-muted-foreground">{pc.kana}</p>
+                          showKana ? (
+                            <div className="mt-1 flex items-center gap-1">
+                              <p className="text-sm text-muted-foreground">{pc.kana}</p>
+                              <Button
+                                size="sm"
+                                variant="ghost"
+                                className="h-5 px-1 text-xs"
+                                onClick={(event) => {
+                                  event.preventDefault();
+                                  toggleKana();
+                                }}
+                                aria-label="かな非表示"
+                              >
+                                あ
+                              </Button>
+                            </div>
+                          ) : (
+                            <Button
+                              size="sm"
+                              variant="ghost"
+                              className="mt-1 h-5 px-1 text-xs"
+                              onClick={(event) => {
+                                event.preventDefault();
+                                toggleKana();
+                              }}
+                              aria-label="かな表示"
+                            >
+                              あ
+                            </Button>
+                          )
                         )}
                       </div>
                     );
-                  } else if (chunk.ipa_connected) {
-                    return <p className="font-mono text-sm text-foreground">{chunk.ipa_connected}</p>;
                   } else {
                     return <p className="text-sm text-muted-foreground">IPA データなし</p>;
                   }
