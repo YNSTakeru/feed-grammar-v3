@@ -1,7 +1,20 @@
 import type { NextConfig } from "next";
 
+const enableCrossOriginIsolation =
+  process.env.NEXT_ENABLE_CROSS_ORIGIN_ISOLATION === "true";
+
 const nextConfig: NextConfig = {
   // allowedDevOrigins: ["http://192.168.x.x:3000"], // LAN IP for iPhone Safari via `next dev`
+
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.ytimg.com",
+        pathname: "/vi/**",
+      },
+    ],
+  },
 
   // Prevent @huggingface/transformers from being bundled for SSR.
   // It is used only in Web Workers (client-side), so server-side bundling
@@ -9,10 +22,14 @@ const nextConfig: NextConfig = {
   serverExternalPackages: ["@huggingface/transformers"],
 
   async headers() {
+    if (!enableCrossOriginIsolation) {
+      return [];
+    }
+
     return [
       {
-        // すべてのルートに COOP/COEP ヘッダーを付与
-        // SharedArrayBuffer を有効化し @transcribe/shout (whisper.cpp WASM) を正常動作させる
+        // SharedArrayBuffer が必要な検証時のみ COOP/COEP を有効化する。
+        // 既定 OFF にして YouTube / 外部埋め込み互換性を優先する。
         source: "/:path*",
         headers: [
           {

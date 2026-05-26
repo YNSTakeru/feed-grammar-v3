@@ -6,40 +6,11 @@
     "end_time": "1525.4",
     "updated_at": "2026-02-06T21:10:29.457Z",
     "question": "I'm not sure if these areas over here on the right side, if those are advertisements or actually part of this site. it kinda looks like an ad.",
-    "question_katakana": "〈ウナ〉【シュア (ウナチャー)】 【ジーズ エリアズ】 〈オーバー〉 【ヒアノ】 【ライト サイド】 〈ゾ〉 【アクタイズメンツァクチュリ】 【パードブ】 【ディスッ サイト】 〈カナ〉 【ルックス】 【ライカ ナァド】",
+    "question_katakana": "ウナシュア(ウナチャー) ジーズ エリアズ オーバー ヒアノ ライト サイド　ゾ アクタイズメンツァクチュリ パードブ ディスッサイト カナ ルックス ライカ ナァド",
     "article_text": {
       "title": "ネイティブの発音は「ウナシュア」！？「I'm not sure if...」のリアルな響きをマスターしよう",
       "meta_description": "「I'm not sure if」が「ウナシュア」に聞こえる理由を徹底解説！ネイティブ特有の音の連結（リエゾン）や脱落を学び、リスニング力を飛躍的に向上させるための教育的ブログ記事です。",
       "katakana_weak_strong": "〈ウナ〉【シュア (ウナチャー)】 【ジーズ エリアズ】 〈オーバー〉 【ヒアノ】 【ライト サイド】 〈ゾ〉 【アクタイズメンツァクチュリ】 【パードブ】 【ディスッ サイト】 〈カナ〉 【ルックス】 【ライカ ナァド】",
-      "kugiri_eng": "I'm not sure if / these areas / over / here on / ＜the＞ right side, / ＜if＞ those ＜are＞ / advertisements or actually / part of / this site. It / kinda / looks / like an ad.",
-      "kugiri_jp": "〈ウナ〉【シュア (ウナチャー)】 / 【ジーズ エリアズ】 / 〈オーバー〉 / 【ヒアノ】 / 【ライト サイド】 / 〈ゾ〉 / 【アクタイズメンツァクチュリ】 / 【パードブ】 / 【ディスッ サイト】 / 〈カナ〉 / 【ルックス】 / 【ライカ】 【ナァド】",
-      "translated": "この右側にあるエリアが広告なのか、それとも実はこのサイトの一部なのか、よく分かりません。なんだか広告のように見えます。",
-      "tsukkomi": [
-        {
-          "question": "I'm not sure if は アイム ノット シュア イフ じゃなくて ウナシュア(ウナチャー)!? シュアの音がチャーの音に聴こえることがある！？",
-          "answer": "はい、その通りです！「I'm not」の音が極端に弱化して「ウナ」のように聞こえ、「sure」の語尾と「if」が連結する際、前後の文脈や話者の癖で「シュア」が「チャー」に近い音に変化することがあります。これは速い口語でよく起こる現象です。"
-        },
-        {
-          "question": "here on は ヒア オン じゃなくて ヒアノ！？",
-          "answer": "これは典型的なリエゾン（音の連結）です。「here」の語尾の[r]の音と、次の「on」の母音[o]がつながって「ヒア・ロン」→「ヒアノ」のように聞こえます。子音で終わる単語と母音で始まる単語は、一つの単語のようにくっつくのが英語のリズムの基本です。"
-        },
-        {
-          "question": "advertisements or actually アドバタイズメンツ オア アクチュアリィ は アクタイズメンツァクチュリ！？",
-          "answer": "「advertisements」の最初の「ad-」が弱化し、さらに「or」も弱く発音されて「actually」と一気に繋がっています。「or」は独立して発音されず、前後の単語に挟まれて「ァ」のような音に変わるため、全体が塊のように聞こえます。"
-        },
-        {
-          "question": "part of this site. it は パート オブ ディス サイト じゃなくて パードブ ディスッ サイト！？",
-          "answer": "「part of」の[t]が母音に挟まれることで有声音化（フラップTに近い現象）し、「パードブ」のように聞こえます。また、文末の「site」の[t]と次の「it」が素早く発音されることで、音が詰まったような「ディスッ」という響きになります。"
-        },
-        {
-          "question": "kinda は カインダ じゃなくて カナ！？",
-          "answer": "「kind of」の短縮形である「kinda」は、カジュアルな会話ではさらに簡略化され、「d」の音が脱落して「カナ」のように発音されることが多々あります。スラング的なスピード感のある発音ですね。"
-        },
-        {
-          "question": "like an ad. は ライク アン アド じゃなくて ライカ ナァド！？",
-          "answer": "これもリエゾンの連続です。「like」の[k]と「an」の[a]が繋がり「ライカ」に、さらに「an」の[n]と「ad」の[a]が繋がり「ナァド」になります。3つの単語がまるで一つの単語「ライカナァド」のように発音されるのがネイティブの自然な流れです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "I'm not sure if",
@@ -141,6 +112,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"I'm not sure if\",\"time\":\"1519.2\",\"url\":\"TWEET_ID:2015471645700624708\"},{\"label\":\"these areas over here on\",\"time\":\"1519.7\",\"url\":\"TWEET_ID:2015471693385597278\"},{\"label\":\" the right side, \",\"time\":\"1520.9\",\"url\":\"TWEET_ID:2015471727447580768\"},{\"label\":\"if those are advertisements or \",\"time\":\"1521.5\",\"url\":\"\"},{\"label\":\"actually part of this site. it kinda looks like an ad.\",\"time\":\"1522.6\",\"url\":\"\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "I'm not sure if",
@@ -170,8 +142,7 @@
     ],
     "kugiri_eng": "I'm not sure if / these areas / over / here on / ＜the＞ right side, / ＜if＞ those ＜are＞ / advertisements or actually / part of / this site. It / kinda / looks / like an ad.",
     "kugiri_jp": "〈ウナ〉【シュア (ウナチャー)】 / 【ジーズ エリアズ】 / 〈オーバー〉 / 【ヒアノ】 / 【ライト サイド】 / 〈ゾ〉 / 【アクタイズメンツァクチュリ】 / 【パードブ】 / 【ディスッ サイト】 / 〈カナ〉 / 【ルックス】 / 【ライカ】 【ナァド】",
-    "translated": "この右側にあるエリアが広告なのか、それとも実はこのサイトの一部なのか、よく分かりません。なんだか広告のように見えます。",
-    "remember": "「I'm not sure if...」(〜かどうかよく分からない)は、断定を避けて丁寧に疑問を伝える時に非常に便利な表現です。例：I'm not sure if I can make it.(行けるかどうかわかりません。)\n\n「kinda」(なんだか、ちょっと)は「kind of」の短縮形で、感想を和らげたりぼかしたりする時に使われます。例：It's kinda cold today.(今日はちょっと寒いね。)\n\n「looks like...」(〜のように見える)は外見や状況から判断した感想を言う時の定番です。例：It looks like it's going to rain.(雨が降りそうだね。)"
+    "translated": "この右側にあるエリアが広告なのか、それとも実はこのサイトの一部なのか、よく分かりません。なんだか広告のように見えます。"
   },
   {
     "id": 57,
@@ -180,24 +151,11 @@
     "end_time": "597.3",
     "updated_at": "2026-01-26T13:21:43.746Z",
     "question": "I'm not sure if it makes sense labeling one thing B and one C flat.",
-    "question_katakana": "〈アナ〉【ショフェ】 【メイクセンス】 【リーブリン】 〈ワン〉 【スィング】 【ビィ】 〈アン〉 〈ワン〉 【シー フラット】",
+    "question_katakana": "アナショフェ メイクセンス リーブリン ワン スィング ビィ アン ワン シー フラット",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！「I'm not sure if it...」の意外な正体とは？",
       "meta_description": "英語の「I'm not sure if it」が「アナショフェ」に聞こえる理由をプロが解説！リエゾンや弱化を学んでリスニング力を劇的にアップさせましょう。",
       "katakana_weak_strong": "〈アナ〉【ショフェ】 【メイクセンス】 【リーブリン】 〈ワン〉 【スィング】 【ビィ】 〈アン〉 〈ワン〉 【シー フラット】",
-      "kugiri_eng": "I'm not sure if it / makes sense / labeling / one thing / B / and one / C flat.",
-      "kugiri_jp": "〈アナ〉【ショフェ】 / 【メイクセンス】 / 【リーブリン】 / 〈ワン〉 【スィング】 / 【ビィ】 / 〈アン〉 〈ワン〉 / 【シー フラット】",
-      "translated": "一つのものをBと呼び、もう一つをCフラットと呼ぶことに意味があるのか、私にはよく分かりません。",
-      "tsukkomi": [
-        {
-          "question": "I'm not sure if it は アイム ノット シュア イフ イット じゃなくて アナショフェ！？",
-          "answer": "そう聞こえますよね！これは「機能語の弱化」と「リエゾン（音の連結）」が同時に起きているからです。I'm not の [t] が脱落し、sure if it の部分で [f] と [i] がつながり、さらに語尾の [t] も飲み込むように発音されるため、カタカナでは「アナショフェ」に近い、ひと繋がりの音として聞こえるのです。"
-        },
-        {
-          "question": "labeling は レイブリング じゃなくて リーブリン！？",
-          "answer": "驚きですよね。実はネイティブが早く話す際、labeling の [ei] の音が非常に短く弱められ、続く [l] と [i] が繋がることで「リーブリン」のように聞こえることがあります。特に [g] の音は脱落して「ン」に近い鼻音で終わるのが一般的です。教科書通りの発音に固執せず、この「音の塊」を意識するのがコツです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "I'm not sure if it",
@@ -270,6 +228,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"I'm not sure if it\",\"time\":\"593.4\",\"url\":\"TWEET_ID:2015773008657523018\"},{\"label\":\"makes sense\",\"time\":\"594.2\",\"url\":\"TWEET_ID:2015773089934737481\"},{\"label\":\"labeling one thing B and one C flat.\",\"time\":\"594.8\",\"url\":\"TWEET_ID:2015773121371054148\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "I'm not sure if it",
@@ -289,8 +248,7 @@
     ],
     "kugiri_eng": "I'm not sure if it / makes sense / labeling / one thing / B / and one / C flat.",
     "kugiri_jp": "〈アナ〉【ショフェ】 / 【メイクセンス】 / 【リーブリン】 / 〈ワン〉 【スィング】 / 【ビィ】 / 〈アン〉 〈ワン〉 / 【シー フラット】",
-    "translated": "一つのものをBと呼び、もう一つをCフラットと呼ぶことに意味があるのか、私にはよく分かりません。",
-    "remember": "「I'm not sure if...」(〜かどうか自信がない)は、自分の意見を控えめに伝えたい時に非常に便利な表現です。例：I'm not sure if I can go. (行けるかどうかわかりません)\n\n「make sense」(理解できる、理にかなう)は、相手の説明が納得できる時や、逆に「それっておかしくない？」と言いたい時に頻出します。例：That makes sense. (それは筋が通っていますね)\n\n「labeling A B」(AをBと呼ぶ、位置付ける)は、何かを定義したり分類したりする際に使われます。例：Stop labeling people. (人にレッテルを貼るのはやめなさい)"
+    "translated": "一つのものをBと呼び、もう一つをCフラットと呼ぶことに意味があるのか、私にはよく分かりません。"
   },
   {
     "id": 58,
@@ -299,28 +257,11 @@
     "end_time": "703.9",
     "updated_at": "2026-01-26T13:50:15.798Z",
     "question": "I'm not sure if it'll deliver on all that stuff,",
-    "question_katakana": "〈アナチョフィル〉 【デリヴァー】 〈オダッツ〉 【スタッフ】",
+    "question_katakana": "アナチョフィル デリヴァー オダッツ スタッフ ",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『I'm not sure if it'll...』の秘密",
       "meta_description": "『I'm not sure if it'll』が『アナチョフィル』に！？ネイティブ特有の音の繋がりや脱落を、カタカナ強弱記号と視覚的イメージで分かりやすく解説します。リスニング力向上に役立つ教育的ブログ記事です。",
       "katakana_weak_strong": "〈アナチョフィル〉 【デリヴァー】 〈オダッツ〉 【スタッフ】",
-      "kugiri_eng": "I'm not sure if it'll / deliver / on all that / stuff,",
-      "kugiri_jp": "〈アナチョフィル〉 / 【デリヴァー】 / 〈オダッツ〉 / 【スタッフ】",
-      "translated": "それらすべてにちゃんと応えられるかどうか、私には確信が持てません。",
-      "tsukkomi": [
-        {
-          "question": "I'm not sure if it'll は アイム ノット シュア イフ イトル じゃなくて アナチョフィル !?",
-          "answer": "「I'm not sure if it'll」が「アナチョフィル」に聞こえるのは、複数の音が連結・脱落しているからです。まず『I'm』の[m]が脱落気味になり、『not』の[t]も消え、さらに『sure』の終わりと『if』、そして『it'll』が滑らかに繋がります。特に if の [f] と it'll が連結することで、日本人には「フィ」に近い音に聞こえるのです。全体がひと繋がりのリズムで発音されるため、単語ごとの区切りがなくなります。"
-        },
-        {
-          "question": "on all that は オン オール ザット じゃなかくて オダッツ！？",
-          "answer": "「on all that」が「オダッツ」と聞こえるのは、前置詞『on』の母音が弱まり、次の『all』の[l]音と連結（リエゾン）するためです。さらに『all』の終わりと『that』の[th]音が重なり、かつ『that』の語尾の[t]が飲み込まれるように消えるため、全体で「オダッツ」という短い一塊の音として処理されます。"
-        },
-        {
-          "question": "all that のオールザットの音はどう変形した！？",
-          "answer": "all の語尾の [l] 音と that の [th] 音は、調音する場所が近いため非常に繋がりやすい性質があります。ネイティブの速い会話では、all の [l] が軽く弾かれ、そのまま that の濁る [th] 音へ移行します。その際、that の語尾の [t] は「閉鎖音の脱落」によって発音されず、息が止まるだけになるため、「オダッツ」のような鋭く短い音に変化するのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "I'm not sure",
@@ -396,6 +337,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"I'm not sure\",\"time\":\"702\",\"url\":\"TWEET_ID:2015783168637587789\"},{\"label\":\"if it'll deliver\",\"time\":\"702.5\",\"url\":\"TWEET_ID:2015783199746789783\"},{\"label\":\"on all that stuff,\",\"time\":\"703.2\",\"url\":\"TWEET_ID:2015783229404660183\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "I'm not sure",
@@ -415,8 +357,7 @@
     ],
     "kugiri_eng": "I'm not sure if it'll / deliver / on all that / stuff,",
     "kugiri_jp": "〈アナチョフィル〉 / 【デリヴァー】 / 〈オダッツ〉 / 【スタッフ】",
-    "translated": "それらすべてにちゃんと応えられるかどうか、私には確信が持てません。",
-    "remember": "「I'm not sure if...」(〜かどうか分からない)は、断定を避けて控えめに意見を言う際に非常に便利なフレーズです。例：I'm not sure if I can make it.(行けるかどうか分かりません。)\n\n「deliver on...」(期待に応える、約束を果たす)は、ビジネスでも日常でも「成果を出す」と言いたい時に使えます。例：He always delivers on his promises.(彼はいつも約束を果たします。)\n\n「all that stuff」(そういった諸々のこと)は、具体的な名称を並べる代わりに使える便利な言葉です。例：I need to finish all that stuff by tomorrow.(明日までにそういった諸々のことを終わらせる必要があります。)"
+    "translated": "それらすべてにちゃんと応えられるかどうか、私には確信が持てません。"
   },
   {
     "id": 59,
@@ -425,20 +366,11 @@
     "end_time": "86.7",
     "updated_at": "2026-01-26T14:44:10.934Z",
     "question": "I'm not sure if magic exists,",
-    "question_katakana": "〈アナシュア〉 【マジック】 【イグジスト】",
+    "question_katakana": "アナシュア マジック イグジスト",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『I'm not sure if magic exists』の秘密",
       "meta_description": "「I'm not sure if」が「アナシュア」に聞こえる理由を徹底解説！ネイティブ特有の音の脱落や連結を理解して、リスニング力を劇的にアップさせましょう。",
       "katakana_weak_strong": "〈アナシュア〉 【マジック】 【イグジスト】",
-      "kugiri_eng": "I'm not sure if / magic / exists,",
-      "kugiri_jp": "〈アナシュア〉 / 【マジック】 / 【イグジスト】",
-      "translated": "魔法が存在するかどうか、私には確信が持てません。",
-      "tsukkomi": [
-        {
-          "question": "I'm not sure if は アイム ノット シュア イフ じゃなくて アナシュア!? ifの音は！？",
-          "answer": "驚きますよね！これは「機能語」の弱化と脱落が同時に起きているためです。I'm notの [m] や [t] が脱落し、さらに sure の語尾と if が連結（リエゾン）しますが、会話のスピードが速くなると if の母音や [f] の音がほとんど飲み込まれるように消えてしまいます。その結果、全体がひと繋ぎになり「アナシュア」という一つの塊のように聞こえるのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "I'm not sure if",
@@ -498,6 +430,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"I'm not sure if\",\"time\":\"84.7\",\"url\":\"TWEET_ID:2015793497971065245\"},{\"label\":\"magic exists,\",\"time\":\"85.7\",\"url\":\"TWEET_ID:2015793528732016692\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "I'm not sure if",
@@ -512,7 +445,6 @@
     ],
     "kugiri_eng": "I'm not sure if / magic / exists,",
     "kugiri_jp": "〈アナシュア〉 / 【マジック】 / 【イグジスト】",
-    "translated": "魔法が存在するかどうか、私には確信が持てません。",
-    "remember": "「I'm not sure if」(〜かどうかよくわからない)は、自信がない時や控えめに否定したい時に便利な表現です。例：I'm not sure if I can go.(行けるかどうかわかりません)\n\n「magic exists」(魔法が存在する)は、物語やロマンチックな文脈で使われます。exists(存在する)は硬い語ですが、日常でも「実在する」という意味でよく使います。例：Do you think true love exists?(真実の愛は存在すると思う？)"
+    "translated": "魔法が存在するかどうか、私には確信が持てません。"
   }
 ]

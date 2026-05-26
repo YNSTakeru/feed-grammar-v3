@@ -22,6 +22,7 @@ interface YouTubePlayerProps {
   onTimeUpdate?: (time: number) => void;
   onPlaybackStateChange?: (isPlaying: boolean) => void;
   onError?: () => void;
+  onLoopComplete?: () => void;
 }
 
 type YouTubePlayerInstance = {
@@ -30,6 +31,9 @@ type YouTubePlayerInstance = {
   playVideo: () => void;
   pauseVideo: () => void;
   destroy: () => void;
+  getPlaybackRate?: () => number;
+  setPlaybackRate?: (suggestedRate: number) => void;
+  getAvailablePlaybackRates?: () => number[];
   getPlayerState?: () => number;
   isMuted?: () => boolean;
   getVolume?: () => number;
@@ -38,6 +42,9 @@ type YouTubePlayerInstance = {
 export interface YouTubePlayerHandle {
   seekAndPlay: (seconds: number) => void;
   playSegment: (startSeconds: number, endSeconds: number) => void;
+  setPlaybackRate: (rate: number) => void;
+  getPlaybackRate: () => number | null;
+  getAvailablePlaybackRates: () => number[];
   isMuted: () => boolean;
   getVolume: () => number | null;
 }
@@ -53,6 +60,7 @@ type YouTubePlayerConfig = {
   events: {
     onReady: (event: YouTubePlayerEvent) => void;
     onStateChange: (event: YouTubePlayerEvent) => void;
+    onPlaybackRateChange?: (event: YouTubePlayerEvent) => void;
     onError: () => void;
   };
 };
@@ -86,15 +94,27 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
       onTimeUpdate,
       onPlaybackStateChange,
       onError,
+      onLoopComplete,
     }: YouTubePlayerProps,
     ref,
   ) {
   const playerRef = useRef<YouTubePlayerInstance | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const videoContainerRef = useRef<HTMLDivElement>(null);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const autoplayGuardTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const playbackFrameRef = useRef<number | null>(null);
   const segmentLoopFrameRef = useRef<number | null>(null);
+  const loopCompleteFiredRef = useRef(false);
+  const loopSeekedRef = useRef(false);
+  const targetRateRef = useRef(1);
+  const onErrorRef = useRef(onError);
+  const onPlaybackStateChangeRef = useRef(onPlaybackStateChange);
+  const onTimeUpdateRef = useRef(onTimeUpdate);
+  const onLoopCompleteRef = useRef(onLoopComplete);
+  const loopRef = useRef(loop);
+  const autoPlayRef = useRef(autoPlay);
+  const startTimeRef = useRef(startTime);
+  const endTimeRef = useRef(endTime);
 
   const [isLoading, setIsLoading] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -104,10 +124,62 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
 
   const duration = endTime - startTime;
 
+  useEffect(() => {
+    onErrorRef.current = onError;
+  });
+
+  useEffect(() => {
+    onPlaybackStateChangeRef.current = onPlaybackStateChange;
+  });
+
+  useEffect(() => {
+    onTimeUpdateRef.current = onTimeUpdate;
+  });
+
+  useEffect(() => {
+    onLoopCompleteRef.current = onLoopComplete;
+  });
+
+  useEffect(() => {
+    loopRef.current = loop;
+  });
+
+  useEffect(() => {
+    autoPlayRef.current = autoPlay;
+  });
+
+  useEffect(() => {
+    startTimeRef.current = startTime;
+  });
+
+  useEffect(() => {
+    endTimeRef.current = endTime;
+  });
+
   const stopSegmentLoop = useCallback(() => {
     if (segmentLoopFrameRef.current !== null) {
       window.cancelAnimationFrame(segmentLoopFrameRef.current);
       segmentLoopFrameRef.current = null;
+    }
+  }, []);
+
+  const syncPlaybackRate = useCallback(() => {
+    const player = playerRef.current;
+    if (!player || typeof player.setPlaybackRate !== "function") {
+      return;
+    }
+
+    const targetRate = targetRateRef.current;
+    const currentRate = player.getPlaybackRate?.();
+    if (currentRate === undefined || currentRate !== targetRate) {
+      player.setPlaybackRate(targetRate);
+    }
+  }, []);
+
+  const stopPlaybackMonitor = useCallback(() => {
+    if (playbackFrameRef.current !== null) {
+      window.cancelAnimationFrame(playbackFrameRef.current);
+      playbackFrameRef.current = null;
     }
   }, []);
 
@@ -118,6 +190,7 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
         stopSegmentLoop();
         playerRef.current?.seekTo(seconds, true);
         playerRef.current?.playVideo();
+        syncPlaybackRate();
       },
       playSegment: (startSeconds: number, endSeconds: number) => {
         const player = playerRef.current;
@@ -130,6 +203,7 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
         const preSeekCt = player.getCurrentTime();
         player.seekTo(startSeconds, true);
         player.playVideo();
+        syncPlaybackRate();
 
         if (endSeconds <= startSeconds) {
           return;
@@ -185,30 +259,92 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
 
         segmentLoopFrameRef.current = window.requestAnimationFrame(monitorSegmentEnd);
       },
+      setPlaybackRate: (rate: number) => {
+        targetRateRef.current = rate;
+        syncPlaybackRate();
+      },
+      getPlaybackRate: () => {
+        return playerRef.current?.getPlaybackRate?.() ?? null;
+      },
+      getAvailablePlaybackRates: () => {
+        return playerRef.current?.getAvailablePlaybackRates?.() ?? [];
+      },
       isMuted: () => playerRef.current?.isMuted?.() ?? false,
       getVolume: () => playerRef.current?.getVolume?.() ?? null,
     }),
-    [stopSegmentLoop],
+    [stopSegmentLoop, syncPlaybackRate],
   );
 
-  // 【機能】プログレスバーの更新と現在時刻の表示を管理
-  // 100msごとに呼ばれて、現在の再生位置を取得し、プログレスバーを更新
   const updateProgress = useCallback(() => {
-    if (playerRef.current && playerRef.current.getCurrentTime) {
-      const current = playerRef.current.getCurrentTime();
-      setCurrentTime(current);
+    const player = playerRef.current;
+    if (!player || !player.getCurrentTime) {
+      return;
+    }
 
-      // 親コンポーネントに現在時刻を通知
-      if (onTimeUpdate) {
-        onTimeUpdate(current);
-      }
+    const current = player.getCurrentTime();
+    const activeStartTime = startTimeRef.current;
+    const activeEndTime = endTimeRef.current;
+    const activeDuration = activeEndTime - activeStartTime;
+    setCurrentTime(current);
+    onTimeUpdateRef.current?.(current);
 
-      if (current >= startTime && current <= endTime) {
-        const progressValue = ((current - startTime) / duration) * 100;
-        setProgress(Math.min(progressValue, 100));
+    if (activeDuration <= 0) {
+      setProgress(0);
+      return;
+    }
+
+    if (current >= activeStartTime && current <= activeEndTime) {
+      const progressValue = ((current - activeStartTime) / activeDuration) * 100;
+      setProgress(Math.min(progressValue, 100));
+    }
+  }, []);
+
+  const monitorPlayback = useCallback(() => {
+    const activePlayer = playerRef.current;
+    if (!activePlayer) {
+      stopPlaybackMonitor();
+      return;
+    }
+
+    const state = activePlayer.getPlayerState?.();
+    if (state !== undefined && state !== PlayerState.PLAYING && state !== PlayerState.BUFFERING) {
+      stopPlaybackMonitor();
+      return;
+    }
+
+    const current = activePlayer.getCurrentTime();
+    const activeStartTime = startTimeRef.current;
+    const activeEndTime = endTimeRef.current;
+    const segmentDuration = Math.max(activeEndTime - activeStartTime, 0);
+
+    if (loopCompleteFiredRef.current) {
+      const resetThreshold =
+        segmentDuration < 1
+          ? activeStartTime + segmentDuration * 0.25
+          : activeStartTime + 0.5;
+      if (current < resetThreshold) {
+        loopCompleteFiredRef.current = false;
       }
     }
-  }, [startTime, endTime, duration, onTimeUpdate]);
+
+    if (current >= activeEndTime - 0.1) {
+      if (loopRef.current) {
+        if (!loopCompleteFiredRef.current) {
+          loopCompleteFiredRef.current = true;
+          loopSeekedRef.current = true;
+          activePlayer.seekTo(activeStartTime, true);
+          syncPlaybackRate();
+        }
+      } else {
+        activePlayer.pauseVideo();
+        stopPlaybackMonitor();
+        return;
+      }
+    }
+
+    updateProgress();
+    playbackFrameRef.current = window.requestAnimationFrame(monitorPlayback);
+  }, [stopPlaybackMonitor, syncPlaybackRate, updateProgress]);
 
   // 【機能】再生ボタンが押された時の処理
   // 現在位置がendTimeを超えているか、startTimeより前なら、startTimeに巻き戻してから再生
@@ -221,8 +357,9 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
 
       setShowResumeOverlay(false);
       playerRef.current.playVideo();
+      syncPlaybackRate();
     }
-  }, [startTime, endTime]);
+  }, [startTime, endTime, syncPlaybackRate]);
 
   const handlePause = useCallback(() => {
     if (playerRef.current) {
@@ -237,8 +374,9 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
       playerRef.current.seekTo(startTime, true);
       setShowResumeOverlay(false);
       playerRef.current.playVideo();
+      syncPlaybackRate();
     }
-  }, [startTime]);
+  }, [startTime, syncPlaybackRate]);
 
   useEffect(() => {
     // Load YouTube IFrame API
@@ -277,8 +415,13 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
             // ローディング状態を解除し、autoPlayがtrueなら自動再生開始
             onReady: (event: YouTubePlayerEvent) => {
               setIsLoading(false);
-              event.target.seekTo(startTime, true);
-              if (autoPlay) {
+              const readyRate = event.target.getPlaybackRate?.() ?? 1;
+              if (targetRateRef.current === 1) {
+                targetRateRef.current = readyRate;
+              }
+              syncPlaybackRate();
+              event.target.seekTo(startTimeRef.current, true);
+              if (autoPlayRef.current) {
                 setTimeout(() => {
                   event.target.playVideo();
                   if (autoplayGuardTimeoutRef.current) {
@@ -295,46 +438,43 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
             },
             onStateChange: (event: YouTubePlayerEvent) => {
               const state = event.data;
+              if (
+                state === PlayerState.PLAYING ||
+                state === PlayerState.CUED ||
+                state === PlayerState.BUFFERING
+              ) {
+                syncPlaybackRate();
+              }
               setIsPlaying(state === PlayerState.PLAYING);
-              onPlaybackStateChange?.(state === PlayerState.PLAYING);
+              onPlaybackStateChangeRef.current?.(state === PlayerState.PLAYING);
               if (state === PlayerState.PLAYING) {
                 setShowResumeOverlay(false);
                 if (autoplayGuardTimeoutRef.current) {
                   clearTimeout(autoplayGuardTimeoutRef.current);
                   autoplayGuardTimeoutRef.current = null;
                 }
-              }
-
-              if (state === PlayerState.PLAYING) {
-                if (!intervalRef.current) {
-                  intervalRef.current = setInterval(() => {
-                    if (playerRef.current && playerRef.current.getCurrentTime) {
-                      const current = playerRef.current.getCurrentTime();
-
-                      if (current >= endTime - 0.1) {
-                        if (loop) {
-                          playerRef.current.seekTo(startTime, true);
-                        } else {
-                          playerRef.current.pauseVideo();
-                        }
-                      }
-
-                      updateProgress();
-                    }
-                  }, 100);
+                if (loopSeekedRef.current) {
+                  loopSeekedRef.current = false;
+                  onLoopCompleteRef.current?.();
                 }
-              } else {
-                if (intervalRef.current) {
-                  clearInterval(intervalRef.current);
-                  intervalRef.current = null;
+                if (playbackFrameRef.current === null) {
+                  playbackFrameRef.current = window.requestAnimationFrame(monitorPlayback);
                 }
+              } else if (state === PlayerState.PAUSED) {
+                loopSeekedRef.current = false;
+                stopPlaybackMonitor();
+              } else if (state !== PlayerState.BUFFERING) {
+                stopPlaybackMonitor();
               }
+            },
+            onPlaybackRateChange: (event: YouTubePlayerEvent) => {
+              targetRateRef.current = event.data;
             },
             onError: () => {
               setIsLoading(false);
               setIsPlaying(false);
-              onPlaybackStateChange?.(false);
-              onError?.();
+              onPlaybackStateChangeRef.current?.(false);
+              onErrorRef.current?.();
             },
           },
         });
@@ -342,10 +482,7 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
 
     return () => {
       stopSegmentLoop();
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-        intervalRef.current = null;
-      }
+      stopPlaybackMonitor();
       if (autoplayGuardTimeoutRef.current) {
         clearTimeout(autoplayGuardTimeoutRef.current);
         autoplayGuardTimeoutRef.current = null;
@@ -355,17 +492,9 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
         playerRef.current = null;
       }
     };
-  }, [
-    videoId,
-    startTime,
-    endTime,
-    autoPlay,
-    loop,
-    updateProgress,
-    onPlaybackStateChange,
-    onError,
-    stopSegmentLoop,
-  ]);
+    // Player instance intentionally rebuilds only when videoId changes.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [videoId]);
 
   return (
     <>

@@ -4,7 +4,11 @@ export interface PronChunk {
   ipa_connected: string;
   kana: string;
   reduction_type?: string;
+  start_time?: number;
+  end_time?: number;
 }
+
+export type DifficultyLevel = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
 
 export interface ArticleData {
   title: string;
@@ -86,10 +90,17 @@ export interface FeedItem {
   category: string;
   thumbnail: string;
   theme: string;
+  difficulty_level?: DifficultyLevel;
+  tags?: string[];
   noIndex: number;
-  kugiri_eng: string;
-  kugiri_jp: string;
+  kugiri_eng?: string;
+  kugiri_jp?: string;
   is_similar: number;
+  translated?: string;
+  tsukkomi?: Array<{
+    question: string;
+    answer: string;
+  }> | null;
   chunk_timestamps?: string | null;
   chunk_sections?: ChunkTimestamp[] | null;
   image_sections?: Array<{

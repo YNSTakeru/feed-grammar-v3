@@ -6,20 +6,11 @@
     "end_time": "293.6",
     "updated_at": "2026-02-07T15:53:22.774Z",
     "question": "I'm excited about the work we can do together.",
-    "question_katakana": "【アィム】 【エキサイディッド】 〈アバウト〉 〈ワーク〉 〈ウィ〉 【キャン】 【ドゥギャザー】",
+    "question_katakana": "アィム エキサイディッド アバウト ワーク ウィ キャン ドゥギャザー",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『I'm excited about the work we can do together.』の秘密",
       "meta_description": "「do together」が「ドゥギャザー」に聞こえる理由とは？英語の音の連結（リエゾン）や消失を解説。ネイティブ流の自然な発音をマスターしましょう。",
       "katakana_weak_strong": "【アィム】 【エキサイディッド】 〈アバウト〉 〈ワーク〉 〈ウィ〉 【キャン】 【ドゥギャザー】",
-      "kugiri_eng": "I'm excited / about ＜the＞ work / we can / do together.",
-      "kugiri_jp": "【アィム】 【エキサイディッド】 / 〈アバウト〉 〈ワーク〉 / 〈ウィ〉 【キャン】 / 【ドゥギャザー】",
-      "translated": "皆さんと一緒に取り組める仕事に、とてもワクワクしています。",
-      "tsukkomi": [
-        {
-          "question": "do together は ドゥ トゥギャザーじゃなくて　ドゥギャザー！？",
-          "answer": "その通りです！「do」の終わりの音と「together」の始まりの音が非常に近いため、音がつながって「ドゥギャザー」のように一気に発音されます。これを「連結（リエゾン）」や「同化」と呼びます。ネイティブは一語一語を区切らず、流れるように発音するため、このように聞こえるのが自然なのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "I'm excited",
@@ -87,6 +78,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"I'm excited\",\"time\":\"291\",\"url\":\"TWEET_ID:2017666892115415239\"},{\"label\":\"about the work\",\"time\":\"292\",\"url\":\"TWEET_ID:2017666924168298890\"},{\"label\":\"we can do together.\",\"time\":\"292.5\",\"url\":\"TWEET_ID:2017666961950523392\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "I'm excited",
@@ -106,7 +98,6 @@
     ],
     "kugiri_eng": "I'm excited / about ＜the＞ work / we can / do together.",
     "kugiri_jp": "【アィム】 【エキサイディッド】 / 〈アバウト〉 〈ワーク〉 / 〈ウィ〉 【キャン】 / 【ドゥギャザー】",
-    "translated": "皆さんと一緒に取り組める仕事に、とてもワクワクしています。",
-    "remember": "「excited about」(〜にワクワクしている)は、何かを楽しみにしている時に欠かせない表現です。例：I'm excited about our trip.(旅行がとても楽しみです。)\n\n「do together」(一緒にやる)は、協力関係を築く際の定番フレーズです。例：Let's do our best together.(一緒に頑張りましょう。)\n\n「we can」(私たちは〜できる)は、可能性や自信を示すポジティブな表現です。例：We can make it happen.(私たちなら実現できます。)"
+    "translated": "皆さんと一緒に取り組める仕事に、とてもワクワクしています。"
   }
 ]

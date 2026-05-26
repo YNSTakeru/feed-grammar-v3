@@ -63,11 +63,13 @@ type FeedRecord = {
   image_learn?: string;
   translated?: string;
   tsukkomi?: TsukkomiEntry[];
-  article_text?: string | {
-    introduction?: string;
-    pron_chunks?: PronChunk[] | null;
-    chunks?: PronChunk[] | null;
-  };
+  article_text?:
+    | string
+    | {
+        introduction?: string;
+        pron_chunks?: PronChunk[] | null;
+        chunks?: PronChunk[] | null;
+      };
   chunk_timestamps?: string | null;
 };
 
@@ -172,14 +174,16 @@ function parseChunkTimestamps(
   }
 }
 
-const LESSON_ID = "lesson-001";
+const LESSON_ID = "lesson-002";
 const LESSON_CATEGORY = "最初の30フレーズ";
-const LESSON_SIZE = 15;
+const LESSON_OFFSET = 15;
+const LESSON_SIZE = 1;
 
 const allRecords = feedData as FeedRecord[];
 const records = allRecords
   .filter((record) => record.category === LESSON_CATEGORY)
-  .slice(0, LESSON_SIZE);
+  // TODO: Replace scaffold row with curated YouGlish clips (5-8 entries).
+  .slice(LESSON_OFFSET, LESSON_OFFSET + LESSON_SIZE);
 
 const baseSentences = records.map((record, index) => ({
   id: `${LESSON_ID}-${index + 1}`,
@@ -204,9 +208,9 @@ const baseSentences = records.map((record, index) => ({
       : undefined,
 }));
 
-export const lesson001: Lesson = {
+export const lesson002: Lesson = {
   id: LESSON_ID,
-  title: "最初の15フレーズ",
+  title: "YouGlish lesson-002 scaffold",
   sentences: baseSentences.map((sentence, index) => ({
     ...sentence,
     choices: buildDictationChoices({
@@ -219,3 +223,5 @@ export const lesson001: Lesson = {
     }),
   })),
 };
+
+export default lesson002;

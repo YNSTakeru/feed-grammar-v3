@@ -6,28 +6,11 @@
     "end_time": "91.4",
     "updated_at": "2026-01-22T19:13:15.782Z",
     "question": "Write Your Own Talk Feel free to choose your own topic",
-    "question_katakana": "【ライツ】 【ユァ】 【オウン】 【トーク】 【フィル】 【フリー】 〈ダ〉 【チューズ】 【ユォン】 【トピック】",
+    "question_katakana": "ライツ ユァ オウン トーク フィル フリー ダ チューズ ユォン トピック",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『Write Your Own Talk...』攻略ガイド",
       "meta_description": "英語のネイティブ発音を徹底解説！「write」が「ライツ」に聞こえる理由とは？音の変化（リエゾン・弱化）を理解して、リスニング力と発音を劇的に向上させましょう。",
       "katakana_weak_strong": "【ライツ】 【ユァ】 【オウン】 【トーク】 【フィル】 【フリー】 〈ダ〉 【チューズ】 【ユォン】 【トピック】",
-      "kugiri_eng": "Write / your own / talk / Feel free / to choose / your own / topic",
-      "kugiri_jp": "【ライツ】 / 【ユァ】 【オウン】 / 【トーク】 / 【フィル】 【フリー】 / 〈ダ〉【チューズ】 / 【ユォン】 / 【トピック】",
-      "translated": "自分自身のトーク内容を書いてください。トピックは自由に選んで構いません。",
-      "tsukkomi": [
-        {
-          "question": "write は ライト じゃなくて ライツ !?",
-          "answer": "writeの語尾の[t]の音が、次に続くyourの[j]の音とつながる（連結・リエゾン）ことで、日本語の「ツ」に近い音に変化して聞こえます。英語では語尾の破裂音と次の半母音が合体して、別の音のように聞こえることがよくあります。"
-        },
-        {
-          "question": "feel は フィールじゃなくて フィル!?",
-          "answer": "feelの[l]は「ダークL」と呼ばれ、舌を上の歯の付け根に軽く触れさせる程度で終わるため、「ル」というはっきりした音にはなりません。また、母音も短く聞こえるため、カタカナでは「フィル」と表記するのがよりネイティブの音に近くなります。"
-        },
-        {
-          "question": "your own は ユァ ウォン じゃなくて ユォン!?",
-          "answer": "yourの語尾[r]とownの先頭の母音[o]が完全に連結して「ユォン」という一つの音のように聞こえます。別々に発音するのではなく、一息でつなげて発音するのがネイティブらしい自然な響きを作るコツです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "Write Your Own Talk",
@@ -103,6 +86,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"Write Your Own Talk\",\"time\":\"87\",\"url\":\"TWEET_ID:2013301474181423317\"},{\"label\":\"Feel free to choose\",\"time\":\"89\",\"url\":\"TWEET_ID:2013301514274783515\"},{\"label\":\"your own topic\",\"time\":\"90.3\",\"url\":\"TWEET_ID:2013301548231860367\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "Write Your Own Talk",
@@ -122,8 +106,7 @@
     ],
     "kugiri_eng": "Write / your own / talk / Feel free / to choose / your own / topic",
     "kugiri_jp": "【ライツ】 / 【ユァ】 【オウン】 / 【トーク】 / 【フィル】 【フリー】 / 〈ダ〉【チューズ】 / 【ユォン】 / 【トピック】",
-    "translated": "自分自身のトーク内容を書いてください。トピックは自由に選んで構いません。",
-    "remember": "「Feel free to」(遠慮なく〜してください)は、相手に許可を与える際によく使われる非常に便利なフレーズです。例：Feel free to ask me any questions. (遠慮なく何でも質問してください)\n\n「your own」(あなた自身の)は、自分だけのものであることを強調する時に使います。例：You should use your own computer. (自分のコンピュータを使うべきです)"
+    "translated": "自分自身のトーク内容を書いてください。トピックは自由に選んで構いません。"
   },
   {
     "id": 52,
@@ -132,24 +115,11 @@
     "end_time": "1131.7",
     "updated_at": "2026-02-06T20:51:12.585Z",
     "question": "feel free to subscribe, I upload most Fridays, and we have fun here.",
-    "question_katakana": "〈オファディ〉 【サブスクライ】 【アイ】 【アップロード】 【モースト】 【フライデイズ】 〈アァン〉 〈ウィ〉〈ハッ〉 【ファニア】",
+    "question_katakana": "オファディ サブスクライ アイ アップロード モースト フライデイズ アァン ウィハッ ファニア",
     "article_text": {
       "title": "「feel free to」が「オファディ」に聞こえる！？ネイティブ発音の秘密を解明",
       "meta_description": "ネイティブの「feel free to」が「オファディ」に聞こえる理由を徹底解説！音の連結や弱化をマスターして、リスニング力を劇的に向上させましょう。「have fun here」が「ハッ ファニア」になる仕組みも詳しく紹介します。",
       "katakana_weak_strong": "〈オファディ〉 【サブスクライ】 【アイ】 【アップロード】 【モースト】 【フライデイズ】 〈アァン〉 〈ウィ〉〈ハッ〉 【ファニア】",
-      "kugiri_eng": "feel free to / subscribe, / I / upload / most / Fridays, / and / we / have / fun here.",
-      "kugiri_jp": "〈オファディ〉 / 【サブスクライ】 / 【アイ】 / 【アップロード】 / 【モースト】 / 【フライデイズ】 / 〈アァン〉 / 〈ウィ〉 / 〈ハッ〉 / 【ファニア】",
-      "translated": "お気軽にチャンネル登録してくださいね。大抵金曜日にアップロードしていますし、ここではみんなで楽しんでいますから。",
-      "tsukkomi": [
-        {
-          "question": "feel free to は フィル フリー トゥ じゃなくて オファディ！？どう言う変形!?",
-          "answer": "これは「音の脱落」と「弱化」が同時に起きている非常にネイティブらしい現象です。まずfeelの[l]音が消失し、freeの[r]音とtoの[t]音が非常に弱く発音されることで、日本語の「オ」に近い曖昧な音から始まり「ファディ」と流れるように聞こえます。機能語であるtoがシュワ音（あいまい母音）になるため、「トゥ」とはっきり発音されないのがポイントです。"
-        },
-        {
-          "question": "have fun here は ハヴ ファン ヒア じゃなくて ハッ ファニア！？",
-          "answer": "haveの最後の音[v]が脱落し、funの[n]音とhereの[h]音が連結（リエゾン）しているためです。hereの[h]音はしばしば弱まって消えることがあり、funの[n]とhereの母音がつながって「ニア」のように聞こえます。結果として全体が「ハッ・ファニア」という一つの単語のようなリズムになります。"
-        }
-      ],
       "image_sections": [
         {
           "label": "feel free to",
@@ -228,6 +198,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"feel free to\",\"time\":\"1128\",\"url\":\"TWEET_ID:2014423311401550288\"},{\"label\":\"subscribe\",\"time\":\"1128.3\",\"url\":\"TWEET_ID:2014423363108933708\"},{\"label\":\" I upload most Fridays,\",\"time\":\"1129\",\"url\":\"TWEET_ID:2014423407618884078\"},{\"label\":\"and we have fun here.\",\"time\":\"1130.5\",\"url\":\"\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "feel free to",
@@ -252,8 +223,7 @@
     ],
     "kugiri_eng": "feel free to / subscribe, / I / upload / most / Fridays, / and / we / have / fun here.",
     "kugiri_jp": "〈オファディ〉 / 【サブスクライ】 / 【アイ】 / 【アップロード】 / 【モースト】 / 【フライデイズ】 / 〈アァン〉 / 〈ウィ〉 / 〈ハッ〉 / 【ファニア】",
-    "translated": "お気軽にチャンネル登録してくださいね。大抵金曜日にアップロードしていますし、ここではみんなで楽しんでいますから。",
-    "remember": "「Feel free to」(遠慮なく〜してください)は、相手に何かを勧める時に非常に便利な定番フレーズです。例：Feel free to ask questions.（遠慮なく質問してください）\n\n「Have fun」(楽しむ)は、別れ際の挨拶や状況を説明する時に使えます。例：Have fun at the party!（パーティー楽しんできてね！）\n\n「Most Fridays」(たいていの金曜日)のように、most ＋ 曜日で「たいていの〜曜日」という習慣を表現できます。例：I work out most Saturdays.（たいていの土曜日は筋トレをしています）"
+    "translated": "お気軽にチャンネル登録してくださいね。大抵金曜日にアップロードしていますし、ここではみんなで楽しんでいますから。"
   },
   {
     "id": 53,
@@ -262,20 +232,11 @@
     "end_time": "411.83",
     "updated_at": "2026-01-22T20:05:25.096Z",
     "question": "Also, feel free to check out my website,",
-    "question_katakana": "【オーソー】 【フィル フリー】 〈チェカラ〉 【ウェブサイト】",
+    "question_katakana": "オーソー フィル フリー チェカラ ウェブサイト",
     "article_text": {
       "title": "ネイティブの発音は「チェカラ」？\"check out my\" の音の変化を徹底解説！",
       "meta_description": "英語の「check out my」が「チェカラ」に聞こえる理由をプロが解説。音の連結（リエゾン）と弱化の仕組みを理解して、リスニング力とスピーキング力を劇的に向上させましょう。",
       "katakana_weak_strong": "【オーソー】 【フィル フリー】 〈チェカラ〉 【ウェブサイト】",
-      "kugiri_eng": "Also, / feel free to / check out my / website,",
-      "kugiri_jp": "【オーソー】 / 【フィル フリー】 / 〈チェカラ〉 / 【ウェブサイト】",
-      "translated": "また、私のウェブサイトもぜひお気軽にチェックしてみてください。",
-      "tsukkomi": [
-        {
-          "question": "check out my は チェック アウト マイ じゃなくて チェカラ！？my の音はどう変形した！？",
-          "answer": "checkの語末の[k]とoutの語頭の[a]が繋がり「チェッカ」になり、さらにoutの[t]が母音に挟まれて「ラ行」のような音（フラップT）に変化します。そしてmyは非常に弱く発音されるため、母音が脱落し[m]の音だけが残るか、前の音に吸収されます。その結果、すべてが繋がって「チェカラ」という一つの単語のように聞こえるのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "Also",
@@ -343,6 +304,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"Also\",\"time\":\"410\",\"url\":\"TWEET_ID:2014428329429049445\"},{\"label\":\"feel free to\",\"time\":\"410.5\",\"url\":\"TWEET_ID:2014428364237635937\"},{\"label\":\"check out my website,\",\"time\":\"411\",\"url\":\"TWEET_ID:2014428406331638120\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "Also",
@@ -362,8 +324,7 @@
     ],
     "kugiri_eng": "Also, / feel free to / check out my / website,",
     "kugiri_jp": "【オーソー】 / 【フィル フリー】 / 〈チェカラ〉 / 【ウェブサイト】",
-    "translated": "また、私のウェブサイトもぜひお気軽にチェックしてみてください。",
-    "remember": "「Feel free to」(お気軽に〜してください)は、相手に遠慮してほしくない時に使えるとても丁寧でフレンドリーな表現です。例：Feel free to ask any questions.（何か質問があればお気軽にどうぞ。）\n\n「Check out」(〜をチェックする・見てみる)は、注目してほしいものがある時に日常的に使われます。例：Check out this new song.（この新曲をチェックしてみてよ。）"
+    "translated": "また、私のウェブサイトもぜひお気軽にチェックしてみてください。"
   },
   {
     "id": 55,
@@ -372,28 +333,11 @@
     "end_time": "247.1",
     "updated_at": "2026-01-25T16:28:05.654Z",
     "question": "like you? feel free to post a comment about that below.",
-    "question_katakana": "【ライキュ】 〈ユ〉 【フィル フリ】 〈ァ〉 【ポッセ】 【コメント】 〈アバウト〉 〈ザッ〉 〈ブロウ〉",
+    "question_katakana": "ライキュ ユ フィル フリ ァ ポッセ コメント アバウト ザッ ブロウ",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！「Like you? Feel free to post a comment」の秘密",
       "meta_description": "英語が「ライキュ ユ」や「ポッセ」に聞こえる理由を解説。リエゾンや弱化を理解してリスニング力をアップしましょう。",
       "katakana_weak_strong": "【ライキュ】 〈ユ〉 【フィル フリ】 〈ァ〉 【ポッセ】 【コメント】 〈アバウト〉 〈ザッ〉 〈ブロウ〉",
-      "kugiri_eng": "Like you? / feel free / to / post a / comment / about that / below.",
-      "kugiri_jp": "【ライキュ】 〈ユ〉 / 【フィル フリ】 / 〈ァ〉 / 【ポッセ】 / 【コメント】 / 〈アバウト〉 〈ザッ〉 / 〈ブロウ〉",
-      "translated": "あなたもそうですか？もしそうなら、下にコメントを自由に投稿してくださいね。",
-      "tsukkomi": [
-        {
-          "question": "like you は ライク ユー じゃなくて ライキュ ユ！？",
-          "answer": "likeの語尾の子音[k]と、youの[j]の音がつながって（連結）、さらにyouが弱く発音されることで「ライキュ」という一つの音のように聞こえます。これは英語の『リンキング』と呼ばれる現象の典型的なパターンです。"
-        },
-        {
-          "question": "feel free to の to の音が ァ に聴こえる！？",
-          "answer": "toのような機能語は、強調されない場面では母音が弱化して「シュワ音（あいまい母音）」になります。その結果、「トゥ」ではなく、かすかに「ァ」や「タ」のように聞こえることが非常に多いのです。"
-        },
-        {
-          "question": "post a は ポスト ア じゃなくて ポッセ！？",
-          "answer": "postの語尾の[t]の音が、次に続く母音の[a]とつながり、さらに[t]の音が消失（脱落）気味になることで「ポッセ」のように聞こえます。日本語の「ポスト・ア」という一音ずつの区切りとは全く異なるリズムになります。"
-        }
-      ],
       "image_sections": [
         {
           "label": "like you? ",
@@ -469,6 +413,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"like you? \",\"time\":\"244\",\"url\":\"TWEET_ID:2015137238678663552\"},{\"label\":\"feel free to\",\"time\":\"244.9\",\"url\":\"TWEET_ID:2015137277048131889\"},{\"label\":\" post a comment about that below.\",\"time\":\"245.3\",\"url\":\"TWEET_ID:2015137319356125481\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "like you? ",
@@ -488,7 +433,6 @@
     ],
     "kugiri_eng": "Like you? / feel free / to / post a / comment / about that / below.",
     "kugiri_jp": "【ライキュ】 〈ユ〉 / 【フィル フリ】 / 〈ァ〉 / 【ポッセ】 / 【コメント】 / 〈アバウト〉 〈ザッ〉 / 〈ブロウ〉",
-    "translated": "あなたもそうですか？もしそうなら、下にコメントを自由に投稿してくださいね。",
-    "remember": "「Feel free to」(遠慮なく〜してください)は、相手に何かを促すときに非常に便利な表現です。例：Feel free to ask questions.（遠慮なく質問してください）\n\n「Post a comment」(コメントを投稿する)は、SNS全般で使えるフレーズです。例：Please post a comment on my video.（私の動画にコメントを投稿してください）"
+    "translated": "あなたもそうですか？もしそうなら、下にコメントを自由に投稿してくださいね。"
   }
 ]

@@ -6,28 +6,11 @@
     "end_time": "490.7",
     "updated_at": "2026-02-05T16:51:45.890Z",
     "question": "they have to put ideology and religion and ethnicity aside and draw their cities together.",
-    "question_katakana": "〈ゼ〉 【ハフト】 【プッ】 【イディオロジィ】 〈アン〉 【レリジョン】 〈アン〉 【エスニシディ】 【アサイデン】 【ドロー】 〈ゼァ〉 【シディズ】 【トギャザー】",
+    "question_katakana": "ゼ ハフト プッ イディオロジィ アン レリジョン アン エスニシディ アサデン ドロー ゼァ シディズ トギャザー",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『they have to...』の意外な短縮と連結の秘密",
       "meta_description": "英語の『they have to』がなぜ『ゼ・ハフト』に聞こえるのか？リエゾンや弱化のメカニズムを解説し、ネイティブのような自然な発音を身につけるコツを紹介します。",
       "katakana_weak_strong": "〈ゼ〉 【ハフト】 【プッ】 【イディオロジィ】 〈アン〉 【レリジョン】 〈アン〉 【エスニシディ】 【アサイデン】 【ドロー】 〈ゼァ〉 【シディズ】 【トギャザー】",
-      "kugiri_eng": "they have to / put / ideology / and / religion / and / ethnicity / aside and / draw / their cities / together.",
-      "kugiri_jp": "〈ゼ〉 【ハフト】 / 【プッ】 / 【イディオロジィ】 / 〈アン〉 / 【レリジョン】 / 〈アン〉 / 【エスニシディ】 / 【アサイデン】 / 【ドロー】 / 〈ゼァ〉 【シディズ】 / 【トギャザー】",
-      "translated": "彼らはイデオロギーや宗教、民族性を脇に置き、自分たちの都市を一つにまとめなければならない。",
-      "tsukkomi": [
-        {
-          "question": "they は ゼイ じゃなくて ゼ！？",
-          "answer": "theyが「ゼ」に聞こえるのは、文中で機能語として弱く発音される際、二重母音の後半部分[i]が脱落（弱化）するためです。速い会話では「ゼイ」とはっきり言わず、軽く「ゼ」と添える程度になります。"
-        },
-        {
-          "question": "have to は ハヴ トゥ じゃなくて ハフト!?",
-          "answer": "have toは後ろに続くtoの影響で、[v]の音が無声化して[f]になり、一気に「ハフト」と発音されるのが一般的です。これは口の動きを最小限にするための音声変化で、日常会話ではほぼ100%この音になります。"
-        },
-        {
-          "question": "aside and は アサイド アンド じゃなくて アサイデン!?",
-          "answer": "asideの語末のdとandの最初のaが連結（リエゾン）し、さらにandの最後のdが脱落、nの音だけが残るため「アサイデン」のように聞こえます。単語がバラバラではなく、一つの単語のように繋がって発音される現象です。"
-        }
-      ],
       "image_sections": [
         {
           "label": "they have to ",
@@ -127,6 +110,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"they have to \",\"time\":\"485.4\",\"url\":\"TWEET_ID:2002764949064675656\"},{\"label\":\"put ideology\",\"time\":\"490.7\",\"url\":\"TWEET_ID:2002765032233615507\"},{\"label\":\" and religion\",\"time\":\"486.9\",\"url\":\"TWEET_ID:2002765071815229766\"},{\"label\":\"and ethnicity aside and\",\"time\":\"487.7\",\"url\":\"TWEET_ID:2002765171731968337\"},{\"label\":\"draw\",\"time\":\"489\",\"url\":\"TWEET_ID:2019452656264310973\"},{\"label\":\"their cities together.\",\"time\":\"489.6\",\"url\":\"TWEET_ID:2019452709980479789\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "they have to ",
@@ -161,8 +145,7 @@
     ],
     "kugiri_eng": "they have to / put / ideology / and / religion / and / ethnicity / aside and / draw / their cities / together.",
     "kugiri_jp": "〈ゼ〉 【ハフト】 / 【プッ】 / 【イディオロジィ】 / 〈アン〉 / 【レリジョン】 / 〈アン〉 / 【エスニシディ】 / 【アサイデン】 / 【ドロー】 / 〈ゼァ〉 【シディズ】 / 【トギャザー】",
-    "translated": "彼らはイデオロギーや宗教、民族性を脇に置き、自分たちの都市を一つにまとめなければならない。",
-    "remember": "「put ... aside」(〜を脇に置く、〜を考慮に入れない)は、議論を前に進める際に問題を一時的に無視しようと提案する時に便利です。例：Let's put our differences aside for now.（今は違いを脇に置きましょう。）\n\n「have to」(〜しなければならない)は、義務感を表す日常必須フレーズです。発音は「ハフト」と覚えるのが実践的です。例：I have to go now.（もう行かなくちゃ。）\n\n「draw ... together」(〜を一つにまとめる、結束させる)は、バラバラな人々や組織を協力させる時に使われます。例：The crisis drew the community together.（その危機が地域社会を結束させた。）」"
+    "translated": "彼らはイデオロギーや宗教、民族性を脇に置き、自分たちの都市を一つにまとめなければならない。"
   },
   {
     "id": 33,
@@ -176,27 +159,6 @@
       "title": "ネイティブの発音はこう聞こえる！『not to have to think about race...』の秘密",
       "meta_description": "「about」が「バウ」に聞こえる？ネイティブ特有の音の脱落や連結を、具体例を交えて詳しく解説。リスニング力を鍛えるための発音のコツを学びましょう。",
       "katakana_weak_strong": "〈ノット〉 〈ハフタ〉 【スィンク】 〈バウ〉 【レイス】 【エヴリィ】 【スプリット】 【セカンド】 〈バ〉 【ライヴズ】",
-      "kugiri_eng": "not ＜to＞ / have to / think / about / race / every / split / second / of our / lives.",
-      "kugiri_jp": "〈ノット〉 / 〈ハフタ〉 / 【スィンク】 / 〈バウ〉 / 【レイス】 / 【エヴリィ】 / 【スプリット】 / 【セカンド】 / 〈バ〉 / 【ライヴズ】",
-      "translated": "人生のあらゆる瞬間において、人種について考えなくて済むようにすること。",
-      "tsukkomi": [
-        {
-          "question": "not to は ノット トゥ じゃなくて ノットだけ！？",
-          "answer": "not toの[t]の音が重なるため、後の[to]が飲み込まれるように消失したり、ごく僅かな止め（閉鎖）のみになったりします。その結果、カタカナでは「ノット」とだけ聞こえることがよくあります。"
-        },
-        {
-          "question": "have to は ハヴ トゥ じゃなくて ハフタ！？",
-          "answer": "have toは話し言葉では非常に頻繁に弱化し、「have to」「hafta」のように発音されます。vの音が無声化してfになり、toの母音もシュワ音（あいまい母音）に変化するため、「ハフタ」と聞こえます。"
-        },
-        {
-          "question": "about は アバウトじゃなくて バウ！？",
-          "answer": "aboutの最初の母音は弱く、速い会話では脱落することがあります。さらに、語尾のtも消失（脱落）しやすいため、結果として「バウ」という短い音だけで発音されることが多々あります。"
-        },
-        {
-          "question": "second of our は セカンド オヴ アワー じゃなくて セカンド バァ！？",
-          "answer": "ofとourが極端に弱形になり、前のdの音と連結（リエゾン）することで「セカンド・バ」のような短い塊になります。機能語が連続すると、このように元の音が判別できないほど短縮されるのが英語のリズムの特徴です。"
-        }
-      ],
       "image_sections": [
         {
           "label": "not to have to think about",
@@ -276,6 +238,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"not to have to think about\",\"time\":\"152\",\"url\":\"TWEET_ID:2003033653618803174\"},{\"label\":\"race\",\"time\":\"153.2\",\"url\":\"TWEET_ID:2003033693552820275\"},{\"label\":\"every split second of our lives.\",\"time\":\"153.5\",\"url\":\"TWEET_ID:2003033726469754929\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "not to have to think about",
@@ -295,8 +258,7 @@
     ],
     "kugiri_eng": "not ＜to＞ / have to / think / about / race / every / split / second / of our / lives.",
     "kugiri_jp": "〈ノット〉 / 〈ハフタ〉 / 【スィンク】 / 〈バウ〉 / 【レイス】 / 【エヴリィ】 / 【スプリット】 / 【セカンド】 / 〈バ〉 / 【ライヴズ】",
-    "translated": "人生のあらゆる瞬間において、人種について考えなくて済むようにすること。",
-    "remember": "「not to have to」（〜しなくて済むように）は、義務から解放される状況で使われます。例：I want to finish early not to have to work late.（残業しなくて済むように、早く終わらせたい）\n\n「every split second」（一分一秒、あらゆる瞬間）は、非常に短い時間を強調する際に便利です。例：Every split second counts.（一分一秒が勝負だ）"
+    "translated": "人生のあらゆる瞬間において、人種について考えなくて済むようにすること。"
   },
   {
     "id": 34,
@@ -305,40 +267,11 @@
     "end_time": "1068.5",
     "updated_at": "2026-02-05T21:53:39.374Z",
     "question": "And, of course I have to let go sometimes and be like,I'm not gonna micro-manage this,",
-    "question_katakana": "【アン】 オフコース 〈ハフタ〉 【ライ】 【ゴー】 【サムタイムズ】 【ビィ】 〈ラィ〉 〈ノン〉 〈カナ〉 【マイクロ】 【マネージ】 【ディス】",
+    "question_katakana": "アン オフコース ハフタ ライ ゴー サムタイムズ ビィ ラィ ノン カナ マイクロ マネージ ディス",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！「And, of course I have to...」のリアルな音を徹底解説",
       "meta_description": "英語が「アン」「ハフタ」と聞こえるのはなぜ？ネイティブ特有の短縮・連結・脱落現象を、具体的な例文を使って分かりやすく解説します。",
       "katakana_weak_strong": "【アン】 オフコース 〈ハフタ〉 【ライ】 【ゴー】 【サムタイムズ】 【ビィ】 〈ラィ〉 〈ノン〉 〈カナ〉 【マイクロ】 【マネージ】 【ディス】",
-      "kugiri_eng": "And, of course / ＜I＞ have to / let go / sometimes / ＜and＞ be like, / ＜I'm＞ not gonna / micro-manage / this",
-      "kugiri_jp": "【アン】 オフコース / 〈ハフタ〉 / 【ライ】 【ゴー】 / 【サムタイムズ】 / 【ビィ】 〈ラィ〉 / 〈ノン〉 〈カナ〉 / 【マイクロ】 【マネージ】 / 【ディス】",
-      "translated": "それに、もちろん、時には手を放して「これについては細かく管理しないぞ」というふうにしなきゃいけないこともあります。",
-      "tsukkomi": [
-        {
-          "question": "And は アンド じゃなくて アン！？",
-          "answer": "Andの語末の[d]は、後ろに言葉が続く場合や速く話される場合に「脱落（ドロップ）」しやすく、ほとんど聞こえなくなります。その結果、日本語の「アン」に近い音になります。"
-        },
-        {
-          "question": "have to は ハヴ トゥ じゃなくて ハフタ！？",
-          "answer": "have toは日常会話で非常に頻繁に使われるため、短縮されて「have to  hafta（ハフタ）」のように発音されるのが一般的です。vの音が無声化してfに近い音になります。"
-        },
-        {
-          "question": "let は レットじゃなくて ライ！？",
-          "answer": "letの後のgoが続く際、letの語末のtが「フラップT」や「ストップT」になり、さらに日本語のラ行に近い音に変化します。そのため「ライ」のように聞こえることがあります。"
-        },
-        {
-          "question": "like は ライク じゃなくて ラィ！？",
-          "answer": "likeの語末の[k]は、破裂させずに息を止める「ストップ音」になることが多いため、「ク」とはっきり発音されず、喉の奥を閉じるような「ィ」や「ッ」に近い音になります。"
-        },
-        {
-          "question": "I'm not のI'm が聴こえなくて not が ノン！？",
-          "answer": "主語のI'mは非常に弱く発音されるか、文脈で明らかな場合は省略されることがあります。また、notの後のgonnaとつながることで、notの[t]が鼻音化し「ノン」のように変化します。"
-        },
-        {
-          "question": "gonna は ガナ じゃなくて カナ！？",
-          "answer": "going toの短縮形gonnaは、前の単語（この場合はnot）の語尾の影響を受けたり、非常に速いスピードで話されたりすると、濁音が消えて「カナ」に近い鋭い音に聞こえることがあります。"
-        }
-      ],
       "image_sections": [
         {
           "label": "And, of course I have to",
@@ -435,6 +368,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"And, of course I have to\",\"time\":\"1065\",\"url\":\"TWEET_ID:2003040560702169111\"},{\"label\":\"let go sometimes and\",\"time\":\"1066.1\",\"url\":\"TWEET_ID:2003040591945601269\"},{\"label\":\"be like,\",\"time\":\"1066.8\",\"url\":\"TWEET_ID:2003040627026702352\"},{\"label\":\"I'm not gonna micro-manage this,\",\"time\":\"1067.1\",\"url\":\"TWEET_ID:2019528639264747960\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "And, of course I have to",
@@ -459,8 +393,7 @@
     ],
     "kugiri_eng": "And, of course / ＜I＞ have to / let go / sometimes / ＜and＞ be like, / ＜I'm＞ not gonna / micro-manage / this",
     "kugiri_jp": "【アン】 オフコース / 〈ハフタ〉 / 【ライ】 【ゴー】 / 【サムタイムズ】 / 【ビィ】 〈ラィ〉 / 〈ノン〉 〈カナ〉 / 【マイクロ】 【マネージ】 / 【ディス】",
-    "translated": "それに、もちろん、時には手を放して「これについては細かく管理しないぞ」というふうにしなきゃいけないこともあります。",
-    "remember": "「Let go」(手放す、諦める)は、執着をやめたり、リラックスしたりする時に非常によく使われる表現です。例：You need to let go of the past.（過去のことは忘れる必要があるよ。）\n\n「I'm not gonna」(〜するつもりはない)は、未来の予定や強い意志を否定する際に日常的に使われます。例：I'm not gonna quit my job.（仕事を辞めるつもりはないよ。）\n\n「Micro-manage」(細かく管理しすぎる)は、仕事などで他人の行動に細かく口を出すことを指す言葉です。例：Stop trying to micro-manage me!（私をいちいち細かく管理しようとするのはやめて！）"
+    "translated": "それに、もちろん、時には手を放して「これについては細かく管理しないぞ」というふうにしなきゃいけないこともあります。"
   },
   {
     "id": 35,
@@ -474,15 +407,6 @@
       "title": "ネイティブの発音はこう聞こえる！\"Somebody's going to have to pay these costs.\"の秘密",
       "meta_description": "英語の「Somebody's going to...」が「サムメニィ ゴ」に聞こえる理由を徹底解説！ネイティブ特有の音の連結（リエゾン）や消失（脱落）をマスターして、リスニング力を飛躍的にアップさせましょう。",
       "katakana_weak_strong": "【サムメニィ】 〈ゴ〉 【ハフタ】 【ペイ】 〈ディ〉 【スコアシュ】",
-      "kugiri_eng": "Somebody's going ＜to＞ / have to / pay / these costs.",
-      "kugiri_jp": "【サムメニィ (ゴ)】 / 【ハフタ】 / 【ペイ】 / 〈ディ〉 【スコアシュ】",
-      "translated": "誰かがこれらの費用を支払わなければならなくなるでしょう。",
-      "tsukkomi": [
-        {
-          "question": "Somebody's は サムバディーズ じゃなくて サムメニィ！？ going は ゴーイングじゃなくてゴ have to は ハヴ トゥじゃなくて ハフタ！？ these costs は ジーズ コスツ じゃなくて ディ スコアシュ!?",
-          "answer": "驚くかもしれませんが、ネイティブの速い会話では、Somebody's going toが圧縮されて「サムメニィ ゴ」のように発音されることがよくあります。これはgoing toがgonna（ガナ）になり、さらに前のSomebody'sの最後の音と混ざり合うためです。have toが「ハフタ」になるのは、toの母音が弱化し、vの音が無声音のtに引きずられてf（フ）に変化するため。そしてthese costsが「ディ スコアシュ」に聞こえるのは、theseのthがdに近い音になり、さらにcostsの最後のtsが飲み込まれるように弱く発音されるためです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "Somebody's going to",
@@ -550,6 +474,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"Somebody's going to\",\"time\":\"954.5\",\"url\":\"TWEET_ID:2003449797559382406\"},{\"label\":\"have to pay\",\"time\":\"955.6\",\"url\":\"TWEET_ID:2003449831273140383\"},{\"label\":\"these costs.\",\"time\":\"956.1\",\"url\":\"TWEET_ID:2003449864336900153\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "Somebody's going to",
@@ -569,8 +494,7 @@
     ],
     "kugiri_eng": "Somebody's going ＜to＞ / have to / pay / these costs.",
     "kugiri_jp": "【サムメニィ (ゴ)】 / 【ハフタ】 / 【ペイ】 / 〈ディ〉 【スコアシュ】",
-    "translated": "誰かがこれらの費用を支払わなければならなくなるでしょう。",
-    "remember": "「Somebody's going to」（誰かが〜することになる）は、責任の所在や未来の確定事項を話すときに使われます。例：Somebody's going to get hurt.（誰かが怪我をすることになるぞ。）\n\n「have to pay」（支払わなければならない）は、金銭的な義務だけでなく、報いを受けるという意味でも使われます。例：You will have to pay for your mistakes.（君は自分の過ちの代償を払うことになるだろう。）\n\n「these costs」（これらの費用）は、プロジェクトや生活費などの具体的な支出を指す際に頻出します。例：We need to reduce these costs.（これらのコストを削減する必要があります。）"
+    "translated": "誰かがこれらの費用を支払わなければならなくなるでしょう。"
   },
   {
     "id": 38,
@@ -579,24 +503,11 @@
     "end_time": "745.2",
     "updated_at": "2026-02-06T17:35:45.791Z",
     "question": "We have to remember that we need people who disagree with us, because there are people who need all of us",
-    "question_katakana": "【ウィ】 〈ハフタ〉 【リメンバー】 〈ザッ〉 【ウィ】 〈ニィ〉 【ピーポー】 【フゥ】 〈ディスアグリィ〉 〈ウィズ〉 【アス】 【ビコズ】〈ゼァ〉 【ピーポー】 【フゥ】 【ニード】 【オール】 〈オヴ〉 【アス】",
+    "question_katakana": "ウィ ハフタ リメンバー ザッ ウィ ニィ ピーポー フゥ ディスアグリィ ウィズ アス ビコズゼァ ピーポー フゥ ニード オール オヴ アス",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『We have to remember...』の秘密",
       "meta_description": "英語の音がつながって聞こえる理由を知るとリスニングが楽になります。例文「We have to remember...」を使い、「have to」が「ハフタ」に、「people」が「ピーポー」に聞こえる理由をプロが詳しく解説します。",
       "katakana_weak_strong": "【ウィ】 〈ハフタ〉 【リメンバー】 〈ザッ〉 【ウィ】 〈ニィ〉 【ピーポー】 【フゥ】 〈ディスアグリィ〉 〈ウィズ〉 【アス】 【ビコズ】〈ゼァ〉 【ピーポー】 【フゥ】 【ニード】 【オール】 〈オヴ〉 【アス】",
-      "kugiri_eng": "We have to / remember / that we need / people / who disagree with us, / because / there are / people / who need / all of us",
-      "kugiri_jp": "【ウィ】 〈ハフタ〉 / 【リメンバー】 / 〈ザッ〉 【ウィ】 〈ニィ〉 / 【ピーポー】 / 【フゥ】 〈ディスアグリィ〉 〈ウィズ〉 【アス】 / 【ビコズ】 / 〈ゼァ〉 / 【ピーポー】 / 【フゥ】 / 【ニード】 / 【オール】 〈オヴ〉 【アス】",
-      "translated": "私たちは、自分たちと意見の合わない人々が必要であることを忘れてはなりません。なぜなら、私たち全員を必要としている人々がいるからです。",
-      "tsukkomi": [
-        {
-          "question": "have to は ハヴ トゥ じゃなくて ハフタ!?",
-          "answer": "have toが「ハフタ」と聞こえるのは、次に続くtoの影響で[v]の音が無声化して[f]になり、さらにtoの母音が弱化してシュワ音（あいまい母音）になるためです。日常会話では非常に頻繁に起こる短縮現象で、have to [hæv tu] が [hæftə] と発音されます。"
-        },
-        {
-          "question": "people はピープル じゃなくて ピーポー！？",
-          "answer": "peopleが「ピーポー」と聞こえるのは、単語の終わりにある[l]が「ダークL」と呼ばれる音になるためです。ダークLは舌先を歯茎につけず、喉の奥を鳴らすように発音するため、日本語の「オ」に近い音に聞こえます。そのため「ピープル」ではなく「ピーポー」のように響くのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "We have to remember",
@@ -665,6 +576,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"We have to remember\",\"time\":\"739.3\",\"url\":\"\"},{\"label\":\"that we need people who disagree with us,\",\"time\":\"740.8\",\"url\":\"\"},{\"label\":\"because there are people who need all of us\",\"time\":\"743.2\",\"url\":\"\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "We have to remember",
@@ -684,8 +596,7 @@
     ],
     "kugiri_eng": "We have to / remember / that we need / people / who disagree with us, / because / there are / people / who need / all of us",
     "kugiri_jp": "【ウィ】 〈ハフタ〉 / 【リメンバー】 / 〈ザッ〉 【ウィ】 〈ニィ〉 / 【ピーポー】 / 【フゥ】 〈ディスアグリィ〉 〈ウィズ〉 【アス】 / 【ビコズ】 / 〈ゼァ〉 / 【ピーポー】 / 【フゥ】 / 【ニード】 / 【オール】 〈オヴ〉 【アス】",
-    "translated": "私たちは、自分たちと意見の合わない人々が必要であることを忘れてはなりません。なぜなら、私たち全員を必要としている人々がいるからです。",
-    "remember": "「have to」(〜しなければならない)は、義務や必要性を表す超頻出フレーズです。口語では「have to」を一つの塊として捉えましょう。例：I have to go now.（もう行かなくちゃ。）\n\n「disagree with」(〜と意見が合わない)は、相手の意見に対して異議を唱える際に使われます。反対の「agree with」とセットで覚えましょう。例：I disagree with your opinion.（あなたの意見には反対です。）\n\n「all of us」(私たち全員)は、グループ全体を強調する表現です。リエゾンして「オーロヴァス」のように発音されるのが特徴です。例：It's important for all of us.（それは私たち全員にとって重要です。）"
+    "translated": "私たちは、自分たちと意見の合わない人々が必要であることを忘れてはなりません。なぜなら、私たち全員を必要としている人々がいるからです。"
   },
   {
     "id": 39,
@@ -699,27 +610,6 @@
       "title": "ネイティブの発音はこう聞こえる！『not to have to think about race...』の秘密",
       "meta_description": "「about」が「バウ」に聞こえる？ネイティブ特有の音の脱落や連結を、具体例を交えて詳しく解説。リスニング力を鍛えるための発音のコツを学びましょう。",
       "katakana_weak_strong": "〈ノット〉 〈ハフタ〉 【スィンク】 〈バウ〉 【レイス】 【エヴリィ】 【スプリット】 【セカンド】 〈バ〉 【ライヴズ】",
-      "kugiri_eng": "not ＜to＞ / have to / think / about / race / every / split / second / of our / lives.",
-      "kugiri_jp": "〈ノット〉 / 〈ハフタ〉 / 【スィンク】 / 〈バウ〉 / 【レイス】 / 【エヴリィ】 / 【スプリット】 / 【セカンド】 / 〈バ〉 / 【ライヴズ】",
-      "translated": "人生のあらゆる瞬間において、人種について考えなくて済むようにすること。",
-      "tsukkomi": [
-        {
-          "question": "not to は ノット トゥ じゃなくて ノットだけ！？",
-          "answer": "not toの[t]の音が重なるため、後の[to]が飲み込まれるように消失したり、ごく僅かな止め（閉鎖）のみになったりします。その結果、カタカナでは「ノット」とだけ聞こえることがよくあります。"
-        },
-        {
-          "question": "have to は ハヴ トゥ じゃなくて ハフタ！？",
-          "answer": "have toは話し言葉では非常に頻繁に弱化し、「have to」「hafta」のように発音されます。vの音が無声化してfになり、toの母音もシュワ音（あいまい母音）に変化するため、「ハフタ」と聞こえます。"
-        },
-        {
-          "question": "about は アバウトじゃなくて バウ！？",
-          "answer": "aboutの最初の母音は弱く、速い会話では脱落することがあります。さらに、語尾のtも消失（脱落）しやすいため、結果として「バウ」という短い音だけで発音されることが多々あります。"
-        },
-        {
-          "question": "second of our は セカンド オヴ アワー じゃなくて セカンド バァ！？",
-          "answer": "ofとourが極端に弱形になり、前のdの音と連結（リエゾン）することで「セカンド・バ」のような短い塊になります。機能語が連続すると、このように元の音が判別できないほど短縮されるのが英語のリズムの特徴です。"
-        }
-      ],
       "image_sections": [
         {
           "label": "not to have to think about",
@@ -799,6 +689,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"not to have to think about\",\"time\":\"152\",\"url\":\"TWEET_ID:2003033653618803174\"},{\"label\":\"race\",\"time\":\"153.2\",\"url\":\"TWEET_ID:2003033693552820275\"},{\"label\":\"every split second of our lives.\",\"time\":\"155.3\",\"url\":\"TWEET_ID:2003033726469754929\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "not to have to think about",
@@ -818,8 +709,7 @@
     ],
     "kugiri_eng": "not ＜to＞ / have to / think / about / race / every / split / second / of our / lives.",
     "kugiri_jp": "〈ノット〉 / 〈ハフタ〉 / 【スィンク】 / 〈バウ〉 / 【レイス】 / 【エヴリィ】 / 【スプリット】 / 【セカンド】 / 〈バ〉 / 【ライヴズ】",
-    "translated": "人生のあらゆる瞬間において、人種について考えなくて済むようにすること。",
-    "remember": "「not to have to」（〜しなくて済むように）は、義務から解放される状況で使われます。例：I want to finish early not to have to work late.（残業しなくて済むように、早く終わらせたい）\n\n「every split second」（一分一秒、あらゆる瞬間）は、非常に短い時間を強調する際に便利です。例：Every split second counts.（一分一秒が勝負だ）"
+    "translated": "人生のあらゆる瞬間において、人種について考えなくて済むようにすること。"
   },
   {
     "id": 40,
@@ -828,24 +718,11 @@
     "end_time": "769",
     "updated_at": "2026-02-06T17:55:46.077Z",
     "question": "we have to be hard-headed and big-hearted at the same time.",
-    "question_katakana": "〈ウィ〉 【ハフ トゥ】 〈ビィ〉 【ハード ヘッデッド】 〈アンド〉 【ビッグ ハーデデット】 〈セイム〉 【タイム】",
+    "question_katakana": "ウィ ハフ トゥ ビィ ハード ヘッデッド アンド ビッグ ハーデデット セイム タイム",
     "article_text": {
       "title": "「have to」が「ハフ トゥ」に！？ネイティブが話す『we have to be hard-headed and big-hearted at the same time.』の発音法則",
       "meta_description": "英語の「have to」が「ハフ トゥ」に聞こえる理由を解説。例文「we have to be hard-headed and big-hearted at the same time.」を使い、音の同化やリエゾンなど、ネイティブ特有の発音変化を学びましょう。",
       "katakana_weak_strong": "〈ウィ〉 【ハフ トゥ】 〈ビィ〉 【ハード ヘッデッド】 〈アンド〉 【ビッグ ハーデデット】 〈セイム〉 【タイム】",
-      "kugiri_eng": "We have to be / hard-headed / and big-hearted at / ＜the＞ same time.",
-      "kugiri_jp": "〈ウィ〉 【ハフ トゥ】 〈ビィ〉 / 【ハード ヘッデッド】 / 〈アンド〉 【ビッグ ハーデデット】 / 〈セイム〉 【タイム】",
-      "translated": "私たちは、冷静であると同時に、寛大でもなければなりません。",
-      "tsukkomi": [
-        {
-          "question": "have to は ハヴ トゥ じゃなくて ハフ トゥ!?",
-          "answer": "have toが「ハフ トゥ」に聞こえるのは、次に続くtoの無声音[t]の影響を受けて、直前のv（有声音）が無声音のfに変化する「逆行同化」という現象が起きるためです。慣用的にこの組み合わせはセットで「ハフタ」や「ハフトゥ」と発音されるのが一般的です。"
-        },
-        {
-          "question": "big-hearted at は ビッグ ハーデデット！？",
-          "answer": "big-heartedの語末のdと、直後のatのaが連結（リエゾン）して「ハーデ（ッ）」という音になります。さらにatのtは次に音が続かない場合や弱く読まれる際に消失しやすいため、全体として「ビッグ ハーデデット」のような一続きの音として聞こえます。"
-        }
-      ],
       "image_sections": [
         {
           "label": "we have to be hard-headed",
@@ -914,6 +791,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"we have to be hard-headed\",\"time\":\"765\",\"url\":\"\"},{\"label\":\" and big-hearted at\",\"time\":\"767.6\",\"url\":\"\"},{\"label\":\"the same time.\",\"time\":\"768.6\",\"url\":\"\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "we have to be hard-headed",
@@ -933,8 +811,7 @@
     ],
     "kugiri_eng": "We have to be / hard-headed / and big-hearted at / ＜the＞ same time.",
     "kugiri_jp": "〈ウィ〉 【ハフ トゥ】 〈ビィ〉 / 【ハード ヘッデッド】 / 〈アンド〉 【ビッグ ハーデデット】 / 〈セイム〉 【タイム】",
-    "translated": "私たちは、冷静であると同時に、寛大でもなければなりません。",
-    "remember": "「hard-headed」(冷静な、現実的な)は、ビジネスなどで感情を抜きにして判断を下す際に使われる表現です。例：You need to be hard-headed when making investment decisions. (投資判断を下すときは冷静である必要がある。)\n\n「at the same time」(同時に、その一方で)は、二つの対照的な事柄を並べる際によく使われます。例：She is strict and kind at the same time. (彼女は厳しいが、同時に優しくもある。)"
+    "translated": "私たちは、冷静であると同時に、寛大でもなければなりません。"
   },
   {
     "id": 41,
@@ -943,24 +820,11 @@
     "end_time": "941.2",
     "updated_at": "2026-02-06T18:16:22.324Z",
     "question": "companies have to do more to employ already qualified Americans.",
-    "question_katakana": "【カンパニィズ】 〈ハフタ〉 【ドゥ】 【モァ】 〈チュンプアィ〉 〈アァ〉 【オゥルレディ】 〈ア〉 【クォリファイ】 【アメリカンツ】",
+    "question_katakana": "カンパニィズ ハフタ ドゥ モァ チュンプアィ ＜アァ＞ オゥルレディ ＜ア＞ クォリファイ アメリカンツ",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！「companies have to do more to employ...」の秘密",
       "meta_description": "英語の音がつながって聞こえる理由を解説！「have to」が「ハフタ」に、「to employ」が「チュンプアィ」に聞こえる音声変化の謎を解き明かします。ネイティブ特有のリズムをマスターして、リスニング力を一気に向上させましょう。",
       "katakana_weak_strong": "【カンパニィズ】 〈ハフタ〉 【ドゥ】 【モァ】 〈チュンプアィ〉 〈アァ〉 【オゥルレディ】 〈ア〉 【クォリファイ】 【アメリカンツ】",
-      "kugiri_eng": "companies / have to / do more / to employ / already / qualified / Americans.",
-      "kugiri_jp": "【カンパニィズ】 / 〈ハフタ〉 / 【ドゥ】 【モァ】 / 〈チュンプアィ〉 / 〈アァ〉 【オゥルレディ】 〈ア〉 / 【クォリファイ】 / 【アメリカンツ】",
-      "translated": "企業は、すでに資格を持っているアメリカ人を雇用するためにもっと努力しなければならない。",
-      "tsukkomi": [
-        {
-          "question": "have to は ハヴ トゥ じゃなくて ハフタ！",
-          "answer": "have toは、日常会話の速いスピードではしばしば「ハフタ」と弱化して発音されます。本来の[v]の音が、次にくる無声音の[t]の影響を受けて無声化し[f]になり、さらにtoの母音がシュワ音（あいまい母音）に変化するためです。これにより、一単語のように「have-to → hafta」と一気に発音されるのが一般的です。"
-        },
-        {
-          "question": "to employ は トゥ エンプロイ じゃなくて チュンプアィ toem ploy みたいに発音してる！？",
-          "answer": "to employが「チュンプアィ」に聞こえるのは、toの[t]の音と、次のemployの母音が連結（リエゾン）して「t-employ」のように一つの塊として発音されるためです。さらに、toの母音が弱化してほとんど消え、employの最初の音が鼻音のように響くことで、日本語の「エン」ではなく「ン」に近い音になり、結果として全体が「チュンプアィ」のような独特な響きになります。"
-        }
-      ],
       "image_sections": [
         {
           "label": "companies have to do more",
@@ -1029,6 +893,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"companies have to do more\",\"time\":\"935.6\",\"url\":\"\"},{\"label\":\" to employ\",\"time\":\"936.9\",\"url\":\"\"},{\"label\":\"already qualified Americans.\",\"time\":\"938.2\",\"url\":\"\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "companies have to do more",
@@ -1048,8 +913,7 @@
     ],
     "kugiri_eng": "companies / have to / do more / to employ / already / qualified / Americans.",
     "kugiri_jp": "【カンパニィズ】 / 〈ハフタ〉 / 【ドゥ】 【モァ】 / 〈チュンプアィ〉 / 〈アァ〉 【オゥルレディ】 〈ア〉 / 【クォリファイ】 / 【アメリカンツ】",
-    "translated": "企業は、すでに資格を持っているアメリカ人を雇用するためにもっと努力しなければならない。",
-    "remember": "「have to」(〜しなければならない)は、義務や必要性を伝える日常頻出の表現です。会話では「hafta」のように発音されることが多いです。例：I have to go now. (もう行かなくちゃ。)\n\n「qualified」(資格のある、適任の)は、仕事やスキルについて話す際に非常に役立つ単語です。例：She is highly qualified for the job. (彼女はその仕事に非常に適任だ。)"
+    "translated": "企業は、すでに資格を持っているアメリカ人を雇用するためにもっと努力しなければならない。"
   },
   {
     "id": 42,
@@ -1068,6 +932,7 @@
     "pron_memo": " And at は アナ に聴こえる。that は ダッ に聴こえる。 to a は トゥア に聴こえる。have to は ハフタ に聴こえる。decision. You は ディシジョニュ に聴こえる。",
     "tsukkomi": "And at　は アンド アット じゃなくて アナ！？ that は ザット じゃなくて ダッ！？ to a は トゥ ア　じゃなくて トゥア！？ have to は ハヴ トゥ じゃなくて ハフタ！？\ndecision. You は デシジョン ユ じゃなくて デシジョニュ！？",
     "image_learn": "[{\"label\":\"And at that point\",\"time\":\"368.61\",\"url\":\"TWEET_ID:2003870614474707277\"},{\"label\":\"you have to\",\"time\":\"367.2\",\"url\":\"TWEET_ID:2003870657730551823\"},{\"label\":\"come to a decision. You\",\"time\":\"367.7\",\"url\":\"TWEET_ID:2003870713846157788\"},{\"label\":\"actually have to make a choice.\",\"time\":\"368.8\",\"url\":\"\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "And at that point",
@@ -1098,32 +963,11 @@
     "end_time": "801",
     "updated_at": "2026-02-06T21:59:06.959Z",
     "question": "And you're remembering that you don't have to face them alone.",
-    "question_katakana": "〈アントゥ〉 【ユア リメンバリング】 〈ダット(ザット)〉 〈ユ〉 【ドン】 【ハフタ】 【フェイス】 〈デ モロン〉",
+    "question_katakana": "アントゥ ユア リメンバリング ダット(ザット) ユ ドン ハフタ フェイス デ モロン",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！「And you're remembering that you don't have to face them alone.」の秘密",
       "meta_description": "英語の音がつながって聞こえる理由を知るとリスニングが楽になります。「And」が「アントゥ」に、「them alone」が「デ モロン」に聞こえる理由をプロが詳しく解説。ネイティブ特有のリズムを身につけましょう。",
       "katakana_weak_strong": "〈アントゥ〉 【ユア リメンバリング】 〈ダット(ザット)〉 〈ユ〉 【ドン】 【ハフタ】 【フェイス】 〈デ モロン〉",
-      "kugiri_eng": "And you're remembering / that you / don't / have to / face / them alone.",
-      "kugiri_jp": "〈アントゥ〉 【ユア リメンバリング】 / 〈ダット (ザット) ユ〉 / 【ドン】 / 【ハフタ】 / 【フェイス】 / 〈デ モロン〉",
-      "translated": "そして、あなたはそれらに一人で立ち向かう必要はないのだと思い出しているところです。",
-      "tsukkomi": [
-        {
-          "question": "and は アンド じゃなくて アントゥ！？",
-          "answer": "andが「アントゥ」に聞こえるのは、文頭で軽く添えられる際、最後のdが完全に発音されず、息が抜けるような無声音に近い音になるためです。さらに、次に続くyouの音と滑らかにつながることで、カタカナの「ド」のような重い音ではなく、軽い「トゥ」のような響きになります。"
-        },
-        {
-          "question": "don't は ドント じゃなくて ドン！？",
-          "answer": "don'tの最後のtは、次に子音が続く場合や文中で素早く発音される際、舌を上の歯茎に付けたまま音を止める「閉鎖」という現象が起き、実際には聞こえなくなります。そのため、日本語の「ドント」ではなく「ドン」という短い音に聞こえるのが一般的です。"
-        },
-        {
-          "question": "have to は ハヴ トゥ じゃなくて ハフタ！？",
-          "answer": "have toは日常会話では非常に頻繁に使われるため、短縮されて「hafta」のように発音されることが非常に多いです。haveのv（有声音）が、直後のtoのt（無声音）に影響を受けてf（無声音）に変化し、toの母音も弱まって「タ」のような音になります。"
-        },
-        {
-          "question": "them alone は ゼム アローン じゃなくて デ モロン！？",
-          "answer": "themのthの音が脱落し、さらに直前のfaceや周囲の音の流れの中で、themの最後のmとaloneの最初のaが連結（リエゾン）して「モ」という音に変化します。その結果、「ゼム・アローン」という独立した単語ではなく、「デ・モロン」という一続きの単語のように聞こえるのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "And you're remembering",
@@ -1203,6 +1047,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"And you're remembering\",\"time\":\"796\",\"url\":\"TWEET_ID:2004074899560943732\"},{\"label\":\"that you don't have to\",\"time\":\"798.2\",\"url\":\"TWEET_ID:2004074931450269732\"},{\"label\":\"face them alone.\",\"time\":\"799.3\",\"url\":\"TWEET_ID:2004074961917694050\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "And you're remembering",
@@ -1222,8 +1067,7 @@
     ],
     "kugiri_eng": "And you're remembering / that you / don't / have to / face / them alone.",
     "kugiri_jp": "〈アントゥ〉 【ユア リメンバリング】 / 〈ダット (ザット) ユ〉 / 【ドン】 / 【ハフタ】 / 【フェイス】 / 〈デ モロン〉",
-    "translated": "そして、あなたはそれらに一人で立ち向かう必要はないのだと思い出しているところです。",
-    "remember": "「don't have to」(〜する必要はない)は、相手の負担を減らしてあげたい時や、義務がないことを伝える時に非常に便利な表現です。例：You don't have to worry about it.(そのことは心配しなくていいですよ。)\n\n「face」(〜に立ち向かう)は、物理的に顔を向けるだけでなく、困難や問題に正面から取り組むという意味でよく使われます。例：We need to face the problem.(私たちはその問題に向き合う必要がある。)\n\n「alone」(一人で)は、孤独という意味だけでなく、自分だけの力でという意味も含みます。例：I can't do this alone.(これを一人でやるのは無理だ。)"
+    "translated": "そして、あなたはそれらに一人で立ち向かう必要はないのだと思い出しているところです。"
   },
   {
     "id": 44,
@@ -1232,32 +1076,11 @@
     "end_time": "1558.7",
     "updated_at": "2026-02-06T18:27:39.551Z",
     "question": "It doesn't have to be this black and white monolithic thinking.",
-    "question_katakana": "〈ダズン〉 【ハフト】 【ビィ】 【ディス (デス)】 【ブラッキン】 【ホワイ】 【モノリシック】 【シンキング】",
+    "question_katakana": "ダズン ハフト ビィ ディス(デス) ブラッキン ホワイ モノリシック シンキング",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『It doesn't have to be...』の秘密",
       "meta_description": "『It doesn't have to be this black and white...』がどうして『ダズン ハフト ビィ...』に聞こえるのか？ネイティブ特有の音の脱落や変化の仕組みを、プロの視点でわかりやすく解説します。",
       "katakana_weak_strong": "〈ダズン〉 【ハフト】 【ビィ】 【ディス (デス)】 【ブラッキン】 【ホワイ】 【モノリシック】 【シンキング】",
-      "kugiri_eng": "＜It＞ doesn't / have to / be / this / black and / white / monolithic / thinking",
-      "kugiri_jp": "〈ダズン〉 / 【ハフト】 / 【ビィ】 / 【ディス (デス)】 / 【ブラッキン】 / 【ホワイ】 / 【モノリシック】 / 【シンキング】",
-      "translated": "物事は、それほど白黒はっきりさせた画一的な考え方である必要はありません。",
-      "tsukkomi": [
-        {
-          "question": "It の音が聴こえない！？",
-          "answer": "文頭の It は非常に弱く発音されるか、直後の doesn't の [d] 音に飲み込まれるようにして省略されることがよくあります。ネイティブの日常会話では、文脈で主語が明らかな場合、It の [i] 音がほとんど脱落して聞こえなくなります。"
-        },
-        {
-          "question": "doesn't は ダズント じゃなくて ダズン！？",
-          "answer": "doesn't の最後の [t] は「破裂」させずに、舌を上の歯茎に付けたまま息を止める「飲み込む T」の状態になります。そのため、私たちの耳には「ト」の音が聞こえず、「ダズン」という鼻に抜ける音だけが残ります。"
-        },
-        {
-          "question": "have to は ハヴ トゥ じゃなくて ハフト !?",
-          "answer": "have to はセットで発音される際、後ろの無声音の [t] に引っ張られて have の [v] が [f] に変化する「無声化」が起こります。そのため「ハヴトゥ」ではなく、一気に「ハフト」と発音するのが一般的です。"
-        },
-        {
-          "question": "black and white は ブラック アンド ホワイト じゃなくて ブラッキン ホワイ！？",
-          "answer": "and の [d] が脱落し、さらに [n] が直前の black の [k] と連結（リエゾン）することで「ブラッキン」に聞こえます。また、white の最後の [t] も doesn't と同様に飲み込まれるため、「ホワイ」で止まったように聞こえるのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "It doesn't have to be",
@@ -1337,6 +1160,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"It doesn't have to be\",\"time\":\"1556\",\"url\":\"TWEET_ID:2004162261754302619\"},{\"label\":\"this black and white\",\"time\":\"1556.8\",\"url\":\"TWEET_ID:2004162402481578021\"},{\"label\":\"monolithic thinking\",\"time\":\"1558.7\",\"url\":\"TWEET_ID:2004162448656572560\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "It doesn't have to be",
@@ -1356,8 +1180,7 @@
     ],
     "kugiri_eng": "＜It＞ doesn't / have to / be / this / black and / white / monolithic / thinking",
     "kugiri_jp": "〈ダズン〉 / 【ハフト】 / 【ビィ】 / 【ディス (デス)】 / 【ブラッキン】 / 【ホワイ】 / 【モノリシック】 / 【シンキング】",
-    "translated": "物事は、それほど白黒はっきりさせた画一的な考え方である必要はありません。",
-    "remember": "「It doesn't have to be...」(〜である必要はない)は、相手のプレッシャーを和らげたり、柔軟な考えを提案したりする時に非常に便利なフレーズです。例：It doesn't have to be perfect. (完璧である必要はありません。)\n\n「Black and white」(白黒はっきりした)は、比喩的に物事を極端に捉える状況でよく使われます。例：Things aren't always black and white. (物事はいつも白黒はっきりしているわけではない。)"
+    "translated": "物事は、それほど白黒はっきりさせた画一的な考え方である必要はありません。"
   },
   {
     "id": 45,
@@ -1366,36 +1189,11 @@
     "end_time": "89.1",
     "updated_at": "2026-02-06T18:31:53.705Z",
     "question": "would atrophy our brains because we wouldn't have to remember anything if we wrote it down",
-    "question_katakana": "【ウッ】 【アトロフィ】 〈ワ〉 【ブレインズ】 【ビコズ】 【ウ】 【ドン】 【ハフタ】 【リメンバー】 【アニシング】 【ロウト】 【ダウン】",
+    "question_katakana": "ウッ アトロフィ ワ ブレインズ ビコズ ウ ドン ハフタ リメンバー アニシング ロウト ダウン",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『would atrophy our brains...』の秘密",
       "meta_description": "英語が「カタカナ通りに聞こえない」とお悩みの方へ。リエゾンや弱化による音の変化を、具体的な例文『would atrophy our brains...』を通して専門コーチがわかりやすく解説します。",
       "katakana_weak_strong": "【ウッ】 【アトロフィ】 〈ワ〉 【ブレインズ】 【ビコズ】 【ウ】 【ドン】 【ハフタ】 【リメンバー】 【アニシング】 【ロウト】 【ダウン】",
-      "kugiri_eng": "would atrophy / our brains / because / ＜we＞ wouldn't / have to / remember / anything ＜if＞ / ＜we＞ wrote ＜it＞ / down",
-      "kugiri_jp": "【ウッ】 【アトロフィ】 / 〈ワ〉 【ブレインズ】 / 【ビコズ】 / 〈ウ〉 【ドン】 / 【ハフタ】 / 【リメンバー】 / 【アニシング】 / 【ロウト】 / 【ダウン】",
-      "translated": "書き留めておけば何も覚える必要がなくなるため、私たちの脳は退化してしまうでしょう。",
-      "tsukkomi": [
-        {
-          "question": "our は アワー じゃなくて ワ!?",
-          "answer": "ourは機能語（代名詞の所有格）であり、文中で強調されない場合は非常に弱く短く発音されます。前の単語の語尾とつながり、母音が脱落して「ワ」のように聞こえるのは、英語特有の「弱化（Reduction）」という現象です。"
-        },
-        {
-          "question": "we wouldn't は ウィー ウドント じゃなくて ウ　ドン！？",
-          "answer": "weとwouldn'tが連続すると、weの母音が短縮され、wouldn'tの語尾のtが脱落（ストップT）します。その結果、音が圧縮されて「ウ ドン」のように聞こえます。これはリズムを一定に保つための自然な変化です。"
-        },
-        {
-          "question": "have to は ハヴ トゥ じゃなくて ハフタ！",
-          "answer": "have toは非常によく使われる熟語であるため、発音が同化して「ハフタ」[hæftə] となるのが一般的です。vの音が無声化してfになり、toの母音がシュワ音（曖昧母音）に変化することでこの音になります。"
-        },
-        {
-          "question": "we wrote it は ウィ ロウト イット じゃなくて ロウト!?",
-          "answer": "主語のweが弱く発音され、wroteの語末のtとitの母音が繋がり（リエゾン）、さらにitの語末のtが消えることで、全体が「ロウト」という一つの塊のように聞こえます。動詞のwroteが最も強く響くため、前後の音がかき消されている状態です。"
-        },
-        {
-          "question": "anything if の if の音が聴こえない！？",
-          "answer": "anythingの語尾とifのiが連結し、さらにifのfの音が次に続く単語と干渉することで、ほとんど消失したように聞こえることがあります。文脈から判断されるため、ネイティブは最小限の息の音だけで処理することが多いのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "would atrophy our brains",
@@ -1479,6 +1277,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"would atrophy our brains\",\"time\":\"85.2\",\"url\":\"TWEET_ID:2012150095903637933\"},{\"label\":\"because we wouldn't have to remember anything if\",\"time\":\"86.6\",\"url\":\"TWEET_ID:2012150125012086986\"},{\"label\":\"we wrote it down\",\"time\":\"88.4\",\"url\":\"TWEET_ID:2012150158969246087\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "would atrophy our brains",
@@ -1498,8 +1297,7 @@
     ],
     "kugiri_eng": "would atrophy / our brains / because / ＜we＞ wouldn't / have to / remember / anything ＜if＞ / ＜we＞ wrote ＜it＞ / down",
     "kugiri_jp": "【ウッ】 【アトロフィ】 / 〈ワ〉 【ブレインズ】 / 【ビコズ】 / 〈ウ〉 【ドン】 / 【ハフタ】 / 【リメンバー】 / 【アニシング】 / 【ロウト】 / 【ダウン】",
-    "translated": "書き留めておけば何も覚える必要がなくなるため、私たちの脳は退化してしまうでしょう。",
-    "remember": "「atrophy」(退化させる、衰退する)は、医療やビジネスの文脈で「機能が衰える」と言いたい時に使えます。例：Lack of exercise causes muscles to atrophy. (運動不足は筋肉を退化させます。)\n\n「write it down」(書き留める)は、忘れないようにメモをする際に必須の表現です。例：Please write it down so you don't forget. (忘れないように書き留めておいてください。)\n\n「have to remember」(覚える必要がある)は、義務や必要性を表すhave toを使った実用的なフレーズです。例：You have to remember his name. (彼の名前を覚えておかなければなりません。)"
+    "translated": "書き留めておけば何も覚える必要がなくなるため、私たちの脳は退化してしまうでしょう。"
   },
   {
     "id": 46,
@@ -1508,28 +1306,11 @@
     "end_time": "372.3",
     "updated_at": "2026-02-06T21:55:36.186Z",
     "question": "But the truth he was saying is you have to go outward.if you can download the consciousness,",
-    "question_katakana": "【バット】 〈トルー〉 【ヒー】〈ワ〉 【セイ】 【ユ】 【ハフタ】 【ゴ】 【アゥウォード】 【フュー】 【キャン】 【ダウンロード】 〈ザ〉 【コンチスネス】",
+    "question_katakana": "バット トルー ヒー ワ セイ ユ ハフタ ゴ アゥウォード フュー キャン ダウンロード ザ コンチスネス",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！「But the truth he was saying...」の秘密",
       "meta_description": "英語が「ヒー ワ セイ」や「フュー」に聞こえる理由を徹底解説！ネイティブ特有のリズムや音の連結（リエゾン）、脱落を学んでリスニング力をアップしましょう。日常で使える表現も紹介します。",
       "katakana_weak_strong": "【バット】 〈トルー〉 【ヒー】〈ワ〉 【セイ】 【ユ】 【ハフタ】 【ゴ】 【アゥウォード】 【フュー】 【キャン】 【ダウンロード】 〈ザ〉 【コンチスネス】",
-      "kugiri_eng": "But ＜the＞ truth / he was saying ＜is＞ / you have to / go / outward. / If you / can download / the consciousness,",
-      "kugiri_jp": "【バット】 〈トルー〉 / 【ヒー】〈ワ〉 / 【セイ】 / 【ユ】 【ハフタ】 / 【ゴ】 / 【アゥウォード】 / 【フュー】 / 【キャン】 【ダウンロード】 / 〈ザ〉 【コンチスネス】",
-      "translated": "しかし、彼が言っていた真実は、外に向かわなければならないということです。もし意識をダウンロードできるのであれば、という話です。",
-      "tsukkomi": [
-        {
-          "question": "he was saying は ヒー ワズ セイイングではなく、 ヒー ワ セイ！？",
-          "answer": "これは「脱落」と「弱化」の典型例です。was の末尾の [z] が消え、さらに saying の語尾の [ing] もカジュアルな会話では [in] や単なる [i] の響きに短縮されるため、カタカナでは「ヒー ワ セイ」のように聞こえます。文脈で時制を判断するネイティブ特有のリズムです。"
-        },
-        {
-          "question": "have to は ハヴ トゥ じゃなくて ハフタ!",
-          "answer": "have to はセットで発音される際、[v] の音が無声化して [f] になり、to の母音が弱音（シュワ音）になるため、「ハフタ」という一つの単語のような音に変化します。これは義務を表す際によく使われる非常に一般的な発音変化です。"
-        },
-        {
-          "question": "if you は イフ ユ じゃなくて フュー！？",
-          "answer": "if の最初の母音 [i] が脱落し、残った [f] の音と次の you [ju] が連結（リエゾン）することで「フュー」という音になります。会話のスピードが上がると、接続詞などの機能語は極限まで短く発音される傾向があります。"
-        }
-      ],
       "image_sections": [
         {
           "label": "But the truth he was saying",
@@ -1604,6 +1385,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"But the truth he was saying\",\"time\":\"367\",\"url\":\"TWEET_ID:2011804699079688413\"},{\"label\":\"you have to go outward.\",\"time\":\"368.7\",\"url\":\"TWEET_ID:2011804745082814886\"},{\"label\":\"if you can download the consciousness,\",\"time\":\"370\",\"url\":\"\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "But the truth he was saying",
@@ -1623,8 +1405,7 @@
     ],
     "kugiri_eng": "But ＜the＞ truth / he was saying ＜is＞ / you have to / go / outward. / If you / can download / the consciousness,",
     "kugiri_jp": "【バット】 〈トルー〉 / 【ヒー】〈ワ〉 / 【セイ】 / 【ユ】 【ハフタ】 / 【ゴ】 / 【アゥウォード】 / 【フュー】 / 【キャン】 【ダウンロード】 / 〈ザ〉 【コンチスネス】",
-    "translated": "しかし、彼が言っていた真実は、外に向かわなければならないということです。もし意識をダウンロードできるのであれば、という話です。",
-    "remember": "「have to」(〜しなければならない)は、日常で避けられない義務を伝える時に必須の表現です。発音は「ハフタ」と覚えると一気にネイティブ感が出ます。例：I have to go now. (もう行かなきゃ。)\n\n「truth」(真実・本当のこと)は、自分の本心を話す時によく使われます。例：To tell you the truth, I'm tired. (実を言うと、疲れているんだ。)\n\n「download」(ダウンロードする)は、ネット用語だけでなく「情報を頭に入れる」といった比喩でも使えます。例：I need to download all the data. (すべてのデータをダウンロードする必要がある。)"
+    "translated": "しかし、彼が言っていた真実は、外に向かわなければならないということです。もし意識をダウンロードできるのであれば、という話です。"
   },
   {
     "id": 47,
@@ -1633,24 +1414,11 @@
     "end_time": "694.7",
     "updated_at": "2026-02-06T18:45:55.999Z",
     "question": "We have to do everything we can for those families",
-    "question_katakana": "【ウィ】 〈アッタ〉 【ドゥ】 【エヴリシング】 【ウィ】 【キャン】 〈フォ〉 【ゾーズ】 【フェイマス】",
+    "question_katakana": "ウィ アッタ ドゥ エヴリシング ウィ キャン フォ ゾーズ フェイマス",
     "article_text": {
       "title": "「We have to do everything we can for those families」の発音を攻略！「アッタ」や「フェイマス」に聞こえる理由とは？",
       "meta_description": "英語の「We have to do everything we can for those families」が「アッタ」や「フェイマス」に聞こえて驚いたことはありませんか？ネイティブ特有の音の連結や弱化を、プロの視点で分かりやすく解説します。",
       "katakana_weak_strong": "【ウィ】 〈アッタ〉 【ドゥ】 【エヴリシング】 【ウィ】 【キャン】 〈フォ〉 【ゾーズ】 【フェイマス】",
-      "kugiri_eng": "We have to / do / everything / we can / for those / families",
-      "kugiri_jp": "【ウィ】 〈アッタ〉 / 【ドゥ】 / 【エヴリシング】 / 【ウィ】 【キャン】 / 〈フォ〉 【ゾーズ】 / 【フェイマス】",
-      "translated": "私たちは、それらの家族のためにできる限りのことをしなければなりません。",
-      "tsukkomi": [
-        {
-          "question": "have to は ハヴ トゥ じゃなくて アッタ !?",
-          "answer": "have toが「アッタ」に聞こえるのは、口語で頻繁に起こる「have to  hafta (ハフタ)」という音の変化に加え、前の語Weの終わりとつながり、さらに[h]の音が脱落することで「アッタ」のように聞こえるためです。非常に速い日常会話では、律儀に「ハヴ」と発音されないことがよくあります。"
-        },
-        {
-          "question": "families は ファミリィズ じゃなくて フェイマス！？",
-          "answer": "familiesが「フェイマス」のように聞こえるのは、単語の中間の[i]の音が弱化してほとんど消え、最後の[z]の音が直後の無音や文脈の中で短く処理されるためです。カタカナの「ファミリィズ」を想像していると、ネイティブの速い「Fam'lies」という響きが「フェイマス」に近い音として耳に飛び込んでくることがあります。"
-        }
-      ],
       "image_sections": [
         {
           "label": "We have to do",
@@ -1722,6 +1490,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"We have to do\",\"time\":\"692\",\"url\":\"TWEET_ID:2012496955247882400\"},{\"label\":\"everything we can\",\"time\":\"693\",\"url\":\"TWEET_ID:2012496997606125907\"},{\"label\":\"for those families\",\"time\":\"693.8\",\"url\":\"TWEET_ID:2012497067877540173\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "We have to do",
@@ -1741,8 +1510,7 @@
     ],
     "kugiri_eng": "We have to / do / everything / we can / for those / families",
     "kugiri_jp": "【ウィ】 〈アッタ〉 / 【ドゥ】 / 【エヴリシング】 / 【ウィ】 【キャン】 / 〈フォ〉 【ゾーズ】 / 【フェイマス】",
-    "translated": "私たちは、それらの家族のためにできる限りのことをしなければなりません。",
-    "remember": "「have to」(〜しなければならない)は義務を伝える基本表現です。口語では「hafta」のように短くなることが多いです。例：I have to go now.(もう行かなきゃ。)\n\n「everything we can」(私たちができること全て)は、全力で取り組む際に使える決まり文句です。例：We'll do everything we can to help you.(あなたを助けるためにできる限りのことをします。)\n\n「for those...」(それらの〜のために)は、特定の対象を指定して目的を伝える時に便利です。例：This gift is for those children.(この贈り物はあの子たちのためのものです。)"
+    "translated": "私たちは、それらの家族のためにできる限りのことをしなければなりません。"
   },
   {
     "id": 48,
@@ -1751,40 +1519,11 @@
     "end_time": "67.4",
     "updated_at": "2026-02-06T21:51:51.233Z",
     "question": "you have to find the really, really old rocks of the Paleozoic rocks between a half a billion and quarter-billion years old.",
-    "question_katakana": "【ユ】 〈ハフタ〉 【ファインド】 【リアリィ リアリィ】 【オゥル ブラックス】 〈ペアリィゾィ〉 【ロックス】 〈ビトゥィナ〉 【ハーファ】 【ビリオン】 〈アナクォーダァ〉 【ビリオ ニアーズ】 【オゥルド】",
+    "question_katakana": "ユ ハフタ ファインド リアリィ リアリィ オゥル ブラックス ペアリィゾィ ロックス ビトゥィナ ハーファ ビリオン アナクォーダァ ビリオ ニァーズ オゥルド",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！「you have to find the really, really old rocks...」の秘密",
       "meta_description": "英語の音がつながって聞こえる理由を知ると、リスニングが一気に楽になります。古生代の岩石を探す例文を通じて、ネイティブ特有の「リンキング」や「音の弱化」をマスターしましょう。",
       "katakana_weak_strong": "【ユ】 〈ハフタ〉 【ファインド】 【リアリィ リアリィ】 【オゥル ブラックス】 〈ペアリィゾィ〉 【ロックス】 〈ビトゥィナ〉 【ハーファ】 【ビリオン】 〈アナクォーダァ〉 【ビリオ ニアーズ】 【オゥルド】",
-      "kugiri_eng": "you / have to find / ＜the＞ really, really / old rocks / Paleozoic rocks / between a / half a / billion / and quarter / -billion years / old.",
-      "kugiri_jp": "【ユ】 / 〈ハフタ〉 【ファインド】 / 【リアリィ リアリィ】 / 【オゥル ブラックス】 / 〈ペアリィゾィ〉 【ロックス】 / 〈ビトゥィナ〉 / 【ハーファ】 / 【ビリオン】 / 〈アナクォーダァ〉 / 【ビリオ ニアーズ】 / 【オゥルド】",
-      "translated": "あなたは、5億年から2億5千万年前の古生代の岩石の中でも、本当に、本当に古い岩石を見つけなければなりません。",
-      "tsukkomi": [
-        {
-          "question": "have to は ハヴ トゥ じゃなくて ハフタ !?",
-          "answer": "have toは日常会話では非常に頻繁に使われるため、音が短縮・弱化して「ハフタ」のように発音されます。haveの[v]が次の無声音[t]に影響されて無声化し、[f]の音になる現象です。これは「have to」という一つの塊として認識される際によく起こります。"
-        },
-        {
-          "question": "old rocks は オールド ロックス じゃなくて オール ブラック!?",
-          "answer": "oldの語末の[d]は、次のrocksの[r]と続く際にほとんど脱落（ドロップ）します。そのため「オールド」ではなく「オール」に聞こえ、さらにrocksの[r]が強く意識されることで、日本語の「ブラック」に近い響きとして捉えられることがあります。"
-        },
-        {
-          "question": "half a は ハーフ ア じゃなくて ハーファ！？",
-          "answer": "halfの語末の[f]と、冠詞aが連結（リエゾン）して「ハーファ」となります。子音と母音が隣り合うと音がつながるのは、英語のリズムを一定に保つための自然な変化です。"
-        },
-        {
-          "question": "between a は ビトウィーン ア じゃなくて ビトゥィナ！？",
-          "answer": "betweenの語末の[n]とaがリエゾンを起こし、「ビトゥィナ」と一気に発音されます。語末の[n]は次の母音と非常にくっつきやすい性質を持っています。"
-        },
-        {
-          "question": "and quarter は アンド クォーター じゃなくて アナ クォーダー！？",
-          "answer": "andの[d]が脱落し、残った[n]がquarterとつながります。さらに、アメリカ英語では[t]の音が母音に挟まれると[d]や[l]に近い音（フラップT）に変化するため、全体として「アナクォーダァ」のように聞こえるのです。"
-        },
-        {
-          "question": "billion years は ビリオン イアーズ じゃなくて ビリオ ニアーズ！？ billionのnがyearsとリンキング！",
-          "answer": "その通りです！billionの語末にある[n]の音が、次のyearsの出だしの音とつながっています。これにより、単語が途切れず滑らかに聞こえるようになります。"
-        }
-      ],
       "image_sections": [
         {
           "label": "you have to find",
@@ -1879,6 +1618,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"you have to find\",\"time\":\"61.4\",\"url\":\"TWEET_ID:2012810842228847094\"},{\"label\":\"the really, really old rocks of the\",\"time\":\"62\",\"url\":\"TWEET_ID:2012496997606125907\"},{\"label\":\"Paleozoic rocks\",\"time\":\"63.4\",\"url\":\"TWEET_ID:2012810922327220250\"},{\"label\":\"between a half a billion and quarter-billion years old.\",\"time\":\"64.4\",\"url\":\"\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "you have to find",
@@ -1903,7 +1643,6 @@
     ],
     "kugiri_eng": "you / have to find / ＜the＞ really, really / old rocks / Paleozoic rocks / between a / half a / billion / and quarter / -billion years / old.",
     "kugiri_jp": "【ユ】 / 〈ハフタ〉 【ファインド】 / 【リアリィ リアリィ】 / 【オゥル ブラックス】 / 〈ペアリィゾィ〉 【ロックス】 / 〈ビトゥィナ〉 / 【ハーファ】 / 【ビリオン】 / 〈アナクォーダァ〉 / 【ビリオ ニアーズ】 / 【オゥルド】",
-    "translated": "あなたは、5億年から2億5千万年前の古生代の岩石の中でも、本当に、本当に古い岩石を見つけなければなりません。",
-    "remember": "「have to」(〜しなければならない)は義務や必要性を表す日常会話の必須表現です。発音は「ハフタ」と短縮されることが多いです。例：I have to go now.(もう行かなくちゃ)\n\n「between A and B」(AとBの間)は期間や場所を示す際に非常に便利です。例：The meeting is between 2 and 3 p.m.(会議は午後2時から3時の間です)\n\n「really, really」(本当に、本当に)は言葉を重ねることで、強調の度合いをさらに強めることができます。例：It's really, really important.(それは本当に、本当に重要なことなんです)"
+    "translated": "あなたは、5億年から2億5千万年前の古生代の岩石の中でも、本当に、本当に古い岩石を見つけなければなりません。"
   }
 ]

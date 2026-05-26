@@ -4,7 +4,7 @@ import { FloatingNavigation } from "@/components/floating-navigation";
 import { MarkdownContent } from "@/components/markdown-content";
 import { PhraseBreakdown } from "@/components/phrase-breakdown";
 import { QuizSection } from "@/components/quiz-section";
-import { normalizePronunciationText } from "@/lib/text/normalize-pronunciation";
+import { findPronChunk } from "@/lib/utils/find-pron-chunk";
 import { type YouTubePlayerHandle } from "@/components/youtube-player";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -46,50 +46,6 @@ declare global {
 
 const buildChunkInteractionKey = (chunk: ChunkTimestamp) =>
   `${chunk.text}-${chunk.start_time}`;
-
-function mergePronChunks(chunks: PronChunk[]): PronChunk {
-  return {
-    en: chunks.map((c) => c.en).join(" "),
-    ipa_citation: chunks.map((c) => c.ipa_citation).filter(Boolean).join(" ") || "",
-    ipa_connected: chunks.map((c) => c.ipa_connected).filter(Boolean).join(" ") || "",
-    kana: chunks.map((c) => c.kana).filter(Boolean).join(" ") || "",
-    reduction_type: chunks.find((c) => c.reduction_type)?.reduction_type,
-  };
-}
-
-function findPronChunk(
-  chunk: ChunkTimestamp,
-  pronChunks: PronChunk[],
-): PronChunk | null {
-  if (!pronChunks.length) return null;
-  const chunkText = normalizePronunciationText(chunk.text);
-  const exact = pronChunks.find((pc) =>
-    normalizePronunciationText(pc.en).includes(chunkText),
-  );
-  if (exact) return exact;
-  const words = chunkText.split(/\s+/).filter(Boolean);
-  let best: PronChunk | null = null;
-  let bestScore = 0;
-  for (const pc of pronChunks) {
-    const pcText = normalizePronunciationText(pc.en);
-    const score = words.filter((w) => pcText.includes(w)).length;
-    if (score > bestScore) {
-      bestScore = score;
-      best = pc;
-    }
-  }
-  // Try sliding windows of 2–3 consecutive pron_chunks for merged display chunks
-  for (let windowSize = 2; windowSize <= Math.min(3, pronChunks.length); windowSize++) {
-    for (let i = 0; i <= pronChunks.length - windowSize; i++) {
-      const window = pronChunks.slice(i, i + windowSize);
-      const combined = normalizePronunciationText(window.map((c) => c.en).join(" "));
-      if (combined === chunkText) {
-        return mergePronChunks(window);
-      }
-    }
-  }
-  return bestScore > 0 ? best : null;
-}
 
 function KaraokeQuestion({
   question,

@@ -4,83 +4,99 @@
     "url": "https://www.youtube.com/watch?v=Ij1o5zGDCeE",
     "start_time": "8",
     "end_time": "11",
-    "updated_at": "2025-12-21T05:42:39.019Z",
+    "updated_at": "2026-05-16T18:21:47.396Z",
     "question": "Some of us don’t want to think back to our childhoods",
     "question_katakana": "【サマ】〈ヴァス〉 【ドン】 【モア (モナ)】 【スィンク】 【バック】 〈ワ〉 【チャイルドウッズ】",
     "article_text": {
-      "title": "ネイティブの発音はこう聞こえる！「Some of us don't want to think back...」の秘密",
-      "meta_description": "「サマヴァス」「モア」に聞こえる理由を徹底解説！英語のリスニング力を劇的に向上させるための弱形・リエゾン・脱落の法則を学びましょう。",
-      "katakana_weak_strong": "【サマ】〈ヴァス〉 【ドン】 【モア (モナ)】 【スィンク】 【バック】 〈ワ〉 【チャイルドウッズ】",
-      "kugiri_eng": "Some of us / don't / want to / think back / ＜to＞ our / childhoods",
-      "kugiri_jp": "【サマ】〈ヴァス〉 / 【ドン】 / 【モア (モナ)】 / 【スィンク】 【バック】 / 〈ワ〉 / 【チャイルドウッズ】",
-      "translated": "私たちの中には、自分の子供時代を思い出したくない人もいる。",
-      "tsukkomi": [
-        {
-          "question": "of us で なんで ヴァス！？",
-          "answer": "of usが「ヴァス」に聞こえるのは、ofの母音が弱化（シュワ音化）して、次のusと音が連結（リエゾン）するためです。ofのような機能語は弱く発音されるため、fの音がほとんど消え、「アヴァス」または「ヴァス」のように聞こえるのです。これは英語の『弱形（weak form）』の典型例です。"
-        },
-        {
-          "question": "want to が なんで モア (モナ)！？",
-          "answer": "want toが「モア」または「モナ」のように聞こえるのは、toの母音が極端に弱化してシュワ音化する（弱形 /ə/）ことと、wantの語尾の[t]の音が消える、または母音と結合して非常に速く発音されるためです。特に、会話では want to $\\\\\\\\rightarrow$ wanna という短縮形になることが多く、その『wanna』の音が日本語の『モナ』や『モア』に近い音として聞こえることがあります。スムーズな発音のために生じる同化・脱落の現象です。"
-        },
-        {
-          "question": "to が消えて、our が ワだけ！？",
-          "answer": "to ourのtoの音が完全に消えて聞こえ、ourが「ワ」のように聞こえるのは、toが機能語であるため弱化して脱落（エリジョン）しやすいからです。さらにour自体も『アゥア』ではなく『アー』や『ワー』のように弱く発音されることが多く、特に速い会話ではourの前のtoが脱落し、ourが『ワ』だけのように聞こえてしまうのです。これは英語の文章では意味を持つ『内容語』を際立たせるために、『機能語』が犠牲になるリズムの特徴を示しています。"
-        }
-      ],
-      "image_sections": [
-        {
-          "label": "some of us",
-          "time": "8",
-          "image_display_instruction": "【ここにsome_of_usの画像を表示】",
-          "description": "some of usは「私たちの中には（一部が）」という意味で、グループの中の一部分だけを指す時に使う表現です。全体の中の一部に焦点を当てている様子をイメージすると覚えやすいでしょう。",
-          "image_suggestion": "複数の人がいるグループの中で、特定の数人が他とは異なる方向を向いている、または特定の数人にだけスポットライトが当たっているシーンを想像してください。",
-          "url": "TWEET_ID:1996959664760869004"
-        },
-        {
-          "label": "don't want to think back",
-          "time": "8.6",
-          "image_display_instruction": "【ここにdon't_want_to_think_backの画像を表示】",
-          "description": "don't want to think backは「〜を思い出したくない」という強い否定の気持ちを表します。過去を振り返ることを拒絶しているイメージです。",
-          "image_suggestion": "顔をしかめて後ろ（過去）を見ようとしない人物や、過去の記憶が入った箱に『STOP』の標識が立っている様子を想像してください。",
-          "url": "TWEET_ID:1996959723535622457"
-        },
-        {
-          "label": "to our childhoods",
-          "time": "9.72",
-          "image_display_instruction": "【ここにto_our_childhoodsの画像を表示】",
-          "description": "childhoodは「子供時代」という意味です。to our childhoodsで「私たちの子供時代へ（を）」という意味になります。具体的な過去の時期を指します。",
-          "image_suggestion": "カラフルなおもちゃや公園の遊具、または卒業アルバムなど、子供時代を連想させるノスタルジックな風景や物を想像してください。",
-          "url": "TWEET_ID:2002615597704913023"
-        }
-      ],
-      "remember": "「Some of us」（私たちの中には）は、意見が分かれる時やグループの一部について話す時に便利な表現です。例：Some of us prefer working from home, others like the office.（私たちの中には在宅勤務を好む者もいれば、オフィスを好む者もいる）\n\n「don't want to do/be...」（〜したくない）は、日常で頻出する否定の意思表現です。want toの音が短縮形『wanna』になりやすいことも覚えておきましょう。例：I don't want to miss the bus.（バスに乗りたくない）\n\n「think back to...」（〜を思い出す、〜を振り返る）は、過去の特定の出来事や期間を回想する際に使う表現です。例：We often think back to our college days.（私たちはよく大学時代を思い出す）",
-      "introduction": "英語のリスニングで「あれ？全然違う音に聞こえるぞ？」と戸惑った経験はありませんか？ 特にネイティブの速い会話では、単語と単語の音が驚くほど変化します。この現象の正体が、今回の例文「Some of us don't want to think back to our childhoods」に詰まっています。音の変化の法則を知れば、あなたのリスニング力は劇的に向上しますよ。",
+      "title": "ネイティブの「Some of us don’t want to...」を攻略！自然な英語発音のコツ",
+      "meta_description": "英語の発音で「Some of us don’t want to」が聞き取れない・言えない悩みを解決！リンキングや脱落（エリジョン）を詳しく解説します。",
+      "introduction": "英語を話すとき、単語ひとつひとつを丁寧に発音しすぎて、逆に「不自然」に聞こえてしまった経験はありませんか？実は、ネイティブスピーカーは特定の音を繋げたり、消したりすることでスムーズなリズムを作っています。今回は「Some of us don’t want to think back to our childhoods」という一文を題材に、流暢に見せるテクニックを学びましょう。",
       "section_1": {
-        "heading": "例文と意味",
-        "content": "今回の例文「Some of us don't want to think back to our childhoods」は、「私たちの中には、自分の子供時代を思い出したくない人もいる」という意味です。誰にでも振り返りたくない過去がある、という共感性の高いシチュエーションで使われる表現です。映画やドラマ、日常会話でもよく使われる、自然な言い回しを学んでいきましょう。"
+        "heading": "「Some of us」のリンキング：サマ・ヴァス",
+        "content": "最初の難関は「Some of us」です。Someの最後の音（m）と、ofの最初の音（vの前の曖昧母音）が繋がり、「サマ」のように聞こえます。さらにofの「v」とusの「u」が繋がり「ヴァス」となります。単語を分断せず、一つの単語のように一気に発音するのがコツです。"
       },
       "section_2": {
-        "heading": "発音のポイント：連結・弱化・脱落の驚き",
-        "content": "多くの学習者が「そうは聞こえないだろ！」と驚くのが、今回の例文のカタカナ表記が示す音の変化です。 **of usが「ヴァス」** に聞こえるのは、前述の通りof（機能語）の母音が弱まり、usと音が連結（リエゾン）した結果です。また、 **want toが「モア」または「モナ」** に聞こえるのは、toが弱形になり、さらにwantの[t]が脱落、または直後の母音とつながって『wanna』のような音に変化するためです。さらに驚くのは、 **to ourのtoの音がほとんど消え、ourが「ワ」だけ** のように聞こえてしまう点です。これは、機能語であるtoが極端に弱く、ほとんど発音されない『脱落（エリジョン）』という現象が起きているからです。これらの音の変化こそが、ネイティブの自然な発音の特徴なのです。"
+        "heading": "「don’t want to」の劇的な変化：ドン・モア",
+        "content": "ここは最もネイティブらしさが出るポイントです。don’tの「t」は脱落し、want toは短縮されて「wanna（ワナ）」のような響きになります。今回のカタカナ表記「モア」は、鼻音のnの影響でwの音が変化した非常にリアルな響きを再現しています。tをきれいに発音しようとしないことが大切です。"
       },
       "section_3": {
-        "heading": "なぜそう聞こえるの？英語のリズムの法則",
-        "content": "これらの音の変化（リエゾン、弱化、脱落）は、ネイティブが **効率的かつリズミカルに発音する** ための自然な法則に基づいています。英語は『強弱アクセント言語』と呼ばれ、文の中で意味を持つ **内容語（名詞、動詞、形容詞、副詞など）** を強くはっきりと発音し、文法的な役割を持つ **機能語（前置詞、冠詞、助動詞など）** を弱く短く発音する傾向があります。今回のof、to、ourなどはすべて機能語であり、そのため極端に弱化したり、脱落したりするのです。このリズムに乗ることで、会話のスピードと流暢さが保たれます。機能語の母音はしばしば **シュワ音（$\\\\\\\\text{\\\\\\\\small /ə/}$）** という曖昧な音に変化し、これが「ア」や「ウ」のような曖昧なカタカナに聞こえる原因となります。"
+        "heading": "「to our」は一瞬で通り過ぎる：〈ワ〉",
+        "content": "to ourの部分を「トゥ・アワー」とハッキリ言ってしまうとリズムが崩れます。ここは弱形（Reduction）が起こり、さらにリンキングが重なって、極めて短い「ワ」のような音に凝縮されます。主役である「childhoods」を引き立てるために、ここは影のように短く添えましょう。"
       },
       "section_4": {
-        "heading": "学習のコツ：音の塊で捉え、シャドーイングする",
-        "content": "音の変化を理解したら、次は実践です。最も効果的な学習法は、 **意味のまとまり（フレーズ）** で音を捉えることです。今回の例文で言えば、「Some of us / don't want to / think back / to our childhoods」というように、区切りの良いところで区切って発音練習をします。特に「don't want to」や「Some of us」のような変化が起きている箇所を意識して、 **【サマ】〈ヴァス〉 / 【ドン】 / 【モア (モナ)】** のように、カタカナの強弱も意識しながら音読・シャドーイングを行いましょう。繰り返し練習することで、脳がこの音の変化を『自然なもの』として認識し、リスニングで驚くことが少なくなります。最初はゆっくり、慣れてきたら徐々に速度を上げ、音の連結や脱落を再現することが重要です。"
+        "heading": "強調すべきは「think back」と「childhoods」",
+        "content": "機能語（of, to, ourなど）を弱く発音する一方で、意味を持つ内容語（think, back, childhoods）はしっかりと発音します。この強弱のコントラストが、英語特有の心地よいリズムを生み出します。特にchildhoodsは最後を「ウッズ」としっかり着地させましょう。"
       },
-      "conclusion": "英語の音の変化は、最初は戸惑うかもしれませんが、一度そのルールを理解してしまえば、リスニングがグッと楽になり、まるで暗号が解けるかのような楽しさに変わります。今回の『弱形・リエゾン・脱落』の法則を忘れずに、積極的に音読やシャドーイングに取り入れていきましょう。その積み重ねが、あなたの発音とリスニング力を飛躍的に向上させます。",
+      "conclusion": "英語の発音向上には、単語単体の音だけでなく「音の繋がり（リンキング）」と「音の消失（エリジョン）」への理解が不可欠です。今回学んだ「サマ・ヴァス」「モア」といった塊（チャンク）を意識して、何度も口に出して練習してみてください。気づけば、あなたの英語は驚くほどネイティブに近いリズムになっているはずです。",
+      "remember": "「繋げる音」と「消える音」を意識するだけで、リスニング力も飛躍的にアップします！",
       "keywords": [
         "英語発音",
-        "リエゾン",
-        "弱形",
-        "リスニング",
-        "英語学習",
-        "Some of us",
-        "want to"
+        "リンキング",
+        "リスニング向上",
+        "want to 発音",
+        "音の変化",
+        "ネイティブ英語"
+      ],
+      "chunks": [
+        {
+          "en": "Some of us",
+          "ipa_citation": "sʌm əv ʌs",
+          "ipa_connected": "sʌməvəs",
+          "kana": "【サマ】〈ヴァス〉",
+          "reduction_type": "Linking",
+          "start_time": 8,
+          "end_time": 8.69
+        },
+        {
+          "en": "don’t",
+          "ipa_citation": "doʊnt",
+          "ipa_connected": "doʊn",
+          "kana": "【ドン】",
+          "reduction_type": "Elision",
+          "start_time": 8.7,
+          "end_time": 9.01
+        },
+        {
+          "en": "want to",
+          "ipa_citation": "wɑnt tu",
+          "ipa_connected": "wɑnə",
+          "kana": "【モア (モナ)】",
+          "reduction_type": "Elision+Reduction",
+          "start_time": 9.1,
+          "end_time": 9.39
+        },
+        {
+          "en": "think",
+          "ipa_citation": "θɪŋk",
+          "ipa_connected": "θɪŋk",
+          "kana": "【スィンク】",
+          "reduction_type": "None",
+          "start_time": 9.4,
+          "end_time": 9.59
+        },
+        {
+          "en": "back",
+          "ipa_citation": "bæk",
+          "ipa_connected": "bæk",
+          "kana": "【バック】",
+          "reduction_type": "None"
+        },
+        {
+          "en": "to our",
+          "ipa_citation": "tu aʊər",
+          "ipa_connected": "təwər",
+          "kana": "〈ワ〉",
+          "reduction_type": "Linking+Reduction"
+        },
+        {
+          "en": "childhoods",
+          "ipa_citation": "ˈtʃaɪldhʊdz",
+          "ipa_connected": "ˈtʃaɪldhʊdz",
+          "kana": "【チャイルドウッズ】",
+          "reduction_type": "None",
+          "start_time": 9.91,
+          "end_time": 11
+        }
       ]
     },
     "category": "最初の30フレーズ",
@@ -91,19 +107,16 @@
     "pron_memo": "Some of us は サマヴァス に聴こえる。 don't は ドン に聴こえる。 want to は モア (モナ) に聴こえる。 to ourのto の音が聴こえない。 our　は ワ に聴こえる。",
     "tsukkomi": [
       {
-        "question": "of us で なんで ヴァス！？",
-        "answer": "of usが「ヴァス」に聞こえるのは、ofの母音が弱化（シュワ音化）して、次のusと音が連結（リエゾン）するためです。ofのような機能語は弱く発音されるため、fの音がほとんど消え、「アヴァス」または「ヴァス」のように聞こえるのです。これは英語の『弱形（weak form）』の典型例です。"
+        "question": "「don’t」のTは絶対に発音しちゃダメなの？",
+        "answer": "絶対にダメというわけではありませんが、会話のスピードが上がると「t」を止める「ストップT」の状態になるか、完全に消えるのが一般的です。発音しない方がスムーズに次の単語へ繋がります。"
       },
       {
-        "question": "want to が なんで モア (モナ)！？",
-        "answer": "want toが「モア」または「モナ」のように聞こえるのは、toの母音が極端に弱化してシュワ音化する（弱形 /ə/）ことと、wantの語尾の[t]の音が消える、または母音と結合して非常に速く発音されるためです。特に、会話では want to $\\\\\\\\rightarrow$ wanna という短縮形になることが多く、その『wanna』の音が日本語の『モナ』や『モア』に近い音として聞こえることがあります。スムーズな発音のために生じる同化・脱落の現象です。"
-      },
-      {
-        "question": "to が消えて、our が ワだけ！？",
-        "answer": "to ourのtoの音が完全に消えて聞こえ、ourが「ワ」のように聞こえるのは、toが機能語であるため弱化して脱落（エリジョン）しやすいからです。さらにour自体も『アゥア』ではなく『アー』や『ワー』のように弱く発音されることが多く、特に速い会話ではourの前のtoが脱落し、ourが『ワ』だけのように聞こえてしまうのです。これは英語の文章では意味を持つ『内容語』を際立たせるために、『機能語』が犠牲になるリズムの特徴を示しています。"
+        "question": "「wanna」と書いていないのに「モア」と聞こえるのはなぜ？",
+        "answer": "「want to」が「wanna」に変化するのは口語では非常に一般的です。その際、nの音が強く残るため、日本語の感覚では「ワナ」や、前後の繋がりで「モア」のように聞こえることがあります。"
       }
     ],
     "image_learn": "[{\"label\":\"some of us\",\"time\":\"8\",\"url\":\"TWEET_ID:1996959664760869004\"},{\"label\":\"don't want to think back\",\"time\":\"8.6\",\"url\":\"TWEET_ID:1996959723535622457\"},{\"label\":\"to our childhoods\",\"time\":\"9.72\",\"url\":\"TWEET_ID:2002615597704913023\"}]",
+    "chunk_timestamps": "[{\"text\":\"Some of us\",\"start_time\":8,\"end_time\":8.69},{\"text\":\"don’t want to\",\"start_time\":8.7,\"end_time\":9.39},{\"text\":\"think back to our\",\"start_time\":9.4,\"end_time\":9.9},{\"text\":\"childhoods\",\"start_time\":9.91,\"end_time\":11}]",
     "image_sections": [
       {
         "label": "some of us",
@@ -121,44 +134,81 @@
         "url": "TWEET_ID:2002615597704913023"
       }
     ],
-    "kugiri_eng": "Some of us / don't / want to / think back / ＜to＞ our / childhoods",
-    "kugiri_jp": "【サマ】〈ヴァス〉 / 【ドン】 / 【モア (モナ)】 / 【スィンク】 【バック】 / 〈ワ〉 / 【チャイルドウッズ】",
-    "translated": "私たちの中には、自分の子供時代を思い出したくない人もいる。",
-    "remember": "「Some of us」（私たちの中には）は、意見が分かれる時やグループの一部について話す時に便利な表現です。例：Some of us prefer working from home, others like the office.（私たちの中には在宅勤務を好む者もいれば、オフィスを好む者もいる）\n\n「don't want to do/be...」（〜したくない）は、日常で頻出する否定の意思表現です。want toの音が短縮形『wanna』になりやすいことも覚えておきましょう。例：I don't want to miss the bus.（バスに乗りたくない）\n\n「think back to...」（〜を思い出す、〜を振り返る）は、過去の特定の出来事や期間を回想する際に使う表現です。例：We often think back to our college days.（私たちはよく大学時代を思い出す）"
+    "chunks": [
+      {
+        "en": "Some of us",
+        "ipa_citation": "sʌm əv ʌs",
+        "ipa_connected": "sʌməvəs",
+        "kana": "【サマ】〈ヴァス〉",
+        "reduction_type": "Linking",
+        "start_time": 8,
+        "end_time": 8.69
+      },
+      {
+        "en": "don’t",
+        "ipa_citation": "doʊnt",
+        "ipa_connected": "doʊn",
+        "kana": "【ドン】",
+        "reduction_type": "Elision",
+        "start_time": 8.7,
+        "end_time": 9.01
+      },
+      {
+        "en": "want to",
+        "ipa_citation": "wɑnt tu",
+        "ipa_connected": "wɑnə",
+        "kana": "【モア (モナ)】",
+        "reduction_type": "Elision+Reduction",
+        "start_time": 9.1,
+        "end_time": 9.39
+      },
+      {
+        "en": "think",
+        "ipa_citation": "θɪŋk",
+        "ipa_connected": "θɪŋk",
+        "kana": "【スィンク】",
+        "reduction_type": "None",
+        "start_time": 9.4,
+        "end_time": 9.59
+      },
+      {
+        "en": "back",
+        "ipa_citation": "bæk",
+        "ipa_connected": "bæk",
+        "kana": "【バック】",
+        "reduction_type": "None"
+      },
+      {
+        "en": "to our",
+        "ipa_citation": "tu aʊər",
+        "ipa_connected": "təwər",
+        "kana": "〈ワ〉",
+        "reduction_type": "Linking+Reduction"
+      },
+      {
+        "en": "childhoods",
+        "ipa_citation": "ˈtʃaɪldhʊdz",
+        "ipa_connected": "ˈtʃaɪldhʊdz",
+        "kana": "【チャイルドウッズ】",
+        "reduction_type": "None",
+        "start_time": 9.91,
+        "end_time": 11
+      }
+    ],
+    "translated": "私たちの中には、子供時代を振り返りたくない人もいます。"
   },
   {
     "id": 2,
     "url": "https://www.youtube.com/watch?v=DjcZrtcBZi4",
     "start_time": "279",
     "end_time": "283",
-    "updated_at": "2025-12-21T15:09:08.732Z",
+    "updated_at": "2026-05-15T12:47:21.244Z",
     "question": "You have to harness them into a work that is actually useful.",
     "question_katakana": "【ユー】〈ハフタ〉 【ハーネス】 〈ダン〉 【イントゥ】 〈ア〉 【ワーク】 〈ダルズ〉 〈アクチュリー〉 【ユーズフォー】",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『You have to harness them into a work that is actually useful』の秘密",
       "meta_description": "『You have to harness them...』がどうして『ユーハフタ ハーネス ダン...』に聞こえるのか？ネイティブ特有の発音変化「弱化」や「リエゾン」をプロが徹底解説します。",
       "katakana_weak_strong": "【ユー】〈ハフタ〉 【ハーネス】 〈ダン〉 【イントゥ】 〈ア〉 【ワーク】 〈ダルズ〉 〈アクチュリー〉 【ユーズフォー】",
-      "kugiri_eng": "You have to / harness / them / into a / work / that is / actually / useful",
-      "kugiri_jp": "【ユー】〈ハフタ〉 / 【ハーネス】 / 〈ダン〉 / 【イントゥ】〈ア〉 / 【ワーク】 / 〈ダルズ〉 / 〈アクチュリー〉 / 【ユーズフォー】",
-      "translated": "それらを、実際に役立つ作品へと活用しなければなりません。",
-      "tsukkomi": [
-        {
-          "question": "have to が ハフタ に聴こえる!? to が タ に聴こえる！？",
-          "answer": "have toは日常会話で非常に頻繁に使われるため、音が短縮・弱化して「ハフタ [hæftə]」のように発音されるのが一般的です。特に不定詞のtoは、強調されない限り母音がシュワ音（あいまい母音）になり、「トゥ」ではなく「タ」に近い音に変化します。"
-        },
-        {
-          "question": "them は ゼムのはずなのにダン！？",
-          "answer": "代名詞のthemは、文中で弱く発音される際、最初の[th]の音が脱落することがよくあります。その結果、直前の単語の語尾とつながったり、母音が弱まったりして「エム」や「アム」のように聞こえます。今回は直前のharnessのs音の影響もあり、「ダン」に近い響きとして認識されます。"
-        },
-        {
-          "question": "that is が ザットイズ じゃなくて ダルズ！？",
-          "answer": "thatの末尾のtが母音（isのi）に挟まれることで、日本語の「ラ行」に近い音に変化する「フラップT」という現象が起きています。さらにthatのthが弱まることで、全体として「ダルズ」や「ラルズ」のように滑らかにつながって聞こえるのです。"
-        },
-        {
-          "question": "actually は アクシュアリィじゃなくてアクチュリー！？",
-          "answer": "actuallyは辞書的には「アクシュアリィ」に近い表記ですが、ネイティブの速い口調では中間の母音が圧縮されます。結果として「アクチュリー [æktʃəli]」のように、音節が一つ減ったような非常にコンパクトな発音になるのが一般的です。"
-        }
-      ],
       "image_sections": [
         {
           "label": "You have to harness them",
@@ -238,6 +288,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"You have to harness them\",\"time\":\"279\",\"url\":\"TWEET_ID:1996953513763750171\"},{\"label\":\"into a work\",\"time\":\"280.2\",\"url\":\"TWEET_ID:1996953568969216151\"},{\"label\":\"that is actually useful\",\"time\":\"281\",\"url\":\"TWEET_ID:1996953623104995410\"}]",
+    "chunk_timestamps": "[{\"text\":\"You have to\",\"start_time\":279,\"end_time\":279.5},{\"text\":\"harnes them\",\"start_time\":279.51,\"end_time\":280.29},{\"text\":\"into a work\",\"start_time\":280.3,\"end_time\":280.99},{\"text\":\"that is actually useful\",\"start_time\":281,\"end_time\":283}]",
     "image_sections": [
       {
         "label": "You have to harness them",
@@ -257,8 +308,7 @@
     ],
     "kugiri_eng": "You have to / harness / them / into a / work / that is / actually / useful",
     "kugiri_jp": "【ユー】〈ハフタ〉 / 【ハーネス】 / 〈ダン〉 / 【イントゥ】〈ア〉 / 【ワーク】 / 〈ダルズ〉 / 〈アクチュリー〉 / 【ユーズフォー】",
-    "translated": "それらを、実際に役立つ作品へと活用しなければなりません。",
-    "remember": "「have to」(〜しなければならない)は義務を表す必須表現ですが、会話では「ハフタ」と発音するのがコツです。例：I have to go now.（もう行かなくちゃ。）\n\n「actually」(実は、実際に)は、相手の予想に反する事実を伝えたり、強調したりする時に便利です。例：Actually, it's not that hard.（実際、そんなに難しくないよ。）\n\n「useful」(役に立つ)は人や物に対して幅広く使えます。例：This app is really useful.（このアプリは本当に役に立つ。）"
+    "translated": "それらを、実際に役立つ作品へと活用しなければなりません。"
   },
   {
     "id": 3,
@@ -272,23 +322,6 @@
       "title": "ネイティブの発音はこう聞こえる！「We just can't wait to follow...」の秘密",
       "meta_description": "英語の「follow」が「パロゥ」に聞こえる？！ネイティブ特有の音の繋がりや脱落、can'tが「ケン」になる理由など、驚きの発音変化をプロが徹底解説。リスニング力を劇的に上げるヒントが満載です。",
       "katakana_weak_strong": "〈ウィ〉 【ジャス】 【ケン】 【ウェイ】 〈ット〉 【パロゥ】 〈ザ〉 【ネクスト】 【ワン】",
-      "kugiri_eng": "We just can't wait / to follow / the next one",
-      "kugiri_jp": "〈ウィ〉 【ジャス】 【ケン】 【ウェイ】 / 〈ット〉 【パロゥ】 / 〈ザ〉 【ネクスト】 【ワン】",
-      "translated": "私たちは、次の方（または次の展開）をフォローするのが待ちきれません。",
-      "tsukkomi": [
-        {
-          "question": "can't は キャントじゃなくてケン！？",
-          "answer": "can'tの最後の「t」は、後ろに単語が続く場合や文末でない限り、ほとんど発音されない「脱落」が起こります。さらに、否定の「can't」の「a」の音は、鼻に抜ける短い「エ」に近い音に変化しやすいため、日本人には「ケン」や「カン」のように短く聞こえるのが一般的です。"
-        },
-        {
-          "question": "wait to ウェイ ット！？",
-          "answer": "これは「リンキング（連結）」による現象です。waitの終わりの「t」と、toの始まりの「t」が重なり、一つの音として処理されます。その結果、waitの「t」が飲み込まれるようなタメ（促音）になり、「ウェイ ット」というリズムに変化します。"
-        },
-        {
-          "question": "follow は フォローじゃなくてパロゥ！？ fの音どこ！？",
-          "answer": "英語の「f」は上の前歯を下唇に軽く当てて隙間から息を出す音ですが、速い発話の中ではその摩擦音が非常に短くなり、日本語の「パ」に近い破裂的な鋭い響きとして捉えられることがあります。また、語尾の「ow」は二重母音なので、単なる「オー」ではなく「オゥ」と発音するのがネイティブ流です。"
-        }
-      ],
       "image_sections": [
         {
           "label": "We just can't wait",
@@ -364,6 +397,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"We just can't wait\",\"time\":\"708\",\"url\":\"TWEET_ID:2002440045949755750\"},{\"label\":\"to follow\",\"time\":\"708.65\",\"url\":\"TWEET_ID:1996975904401293568\"},{\"label\":\"the next one\",\"time\":\"709.12\",\"url\":\"TWEET_ID:2002440079114133795\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "We just can't wait",
@@ -383,8 +417,7 @@
     ],
     "kugiri_eng": "We just can't wait / to follow / the next one",
     "kugiri_jp": "〈ウィ〉 【ジャス】 【ケン】 【ウェイ】 / 〈ット〉 【パロゥ】 / 〈ザ〉 【ネクスト】 【ワン】",
-    "translated": "私たちは、次の方（または次の展開）をフォローするのが待ちきれません。",
-    "remember": "「can't wait to ~」(〜するのが待ちきれない)は、楽しみな予定がある時に欠かせない表現です。例：I can't wait to see the movie.(その映画を観るのが待ちきれません)\n\n「the next one」(次のもの、次の方)は、順番を待っている時やシリーズ物を話題にする際に便利です。例：I'm ready for the next one.(次の準備はできています)"
+    "translated": "私たちは、次の方（または次の展開）をフォローするのが待ちきれません。"
   },
   {
     "id": 4,
@@ -398,15 +431,6 @@
       "title": "「like your」が「ライキュ ユ」!? ネイティブ発音の秘密を解明！",
       "meta_description": "英語学習者がつまずきやすい「like your」の音の変化「ライキュ ユ」を徹底解説。リエゾン、弱形を理解してリスニング力をアップさせましょう。",
       "katakana_weak_strong": "【フィル】 【フリー】 〈トゥ〉 【テイラー】 【ディス】 〈トゥ〉 【ハウエヴァー】 〈ユー〉 【ライキュ】 〈ユ〉 【マッシュルームズ】",
-      "kugiri_eng": "Feel / free to / tailor this / to / however / you like / your mushrooms.",
-      "kugiri_jp": "【フィル】 / 【フリー】 〈トゥ〉 / 【テイラー】 【ディス】 / 〈トゥ〉 / 【ハウエヴァー】 / 〈ユー〉 【ライキュ】 / 〈ユ〉 【マッシュルームズ】",
-      "translated": "このキノコ料理は、お好みに合わせて自由に調整してください。",
-      "tsukkomi": [
-        {
-          "question": "like your は ライクじゃなくてライキュ ユ！？",
-          "answer": "「like your」が「ライキュ ユ」に聞こえるのは、**音の連結（リエゾン）**と**弱形（機能語の弱化）**が複合的に起きているためです。「like」の語尾の子音 $[k]$ と、次の単語「your」の始まりの $[j]$ の音が連結し、「like-your」 $\\\\\\\\rightarrow$ 「ライキュ ユ」のように変化しています。特に、「your」が機能語として弱化して「ユ」に近い音になることで、リエゾンがより顕著に聞こえるのです。これはネイティブが英語を滑らかに話す際によく起こる自然な現象です。"
-        }
-      ],
       "image_sections": [
         {
           "label": "Feel free to tailor this",
@@ -475,6 +499,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"Feel free to tailor this\",\"time\":\"413.6\",\"url\":\"TWEET_ID:2002442450519167482\"},{\"label\":\"to however you like\",\"time\":\"416\",\"url\":\"TWEET_ID:1997173925869244900\"},{\"label\":\"your mushrooms.\",\"time\":\"417.14\",\"url\":\"TWEET_ID:1997173973894025334\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "Feel free to tailor this",
@@ -494,8 +519,7 @@
     ],
     "kugiri_eng": "Feel / free to / tailor this / to / however / you like / your mushrooms.",
     "kugiri_jp": "【フィル】 / 【フリー】 〈トゥ〉 / 【テイラー】 【ディス】 / 〈トゥ〉 / 【ハウエヴァー】 / 〈ユー〉 【ライキュ】 / 〈ユ〉 【マッシュルームズ】",
-    "translated": "このキノコ料理は、お好みに合わせて自由に調整してください。",
-    "remember": "「Feel free to $\\\\\\\\text{...}$」(自由に〜してよい)は、相手に気兼ねなく行動を促す際に非常に便利な表現です。例：Feel free to ask me any questions.(どんな質問でもご遠慮なくお尋ねください。)\n\n「tailor $\\\\\\\\text{...}$ to $\\\\\\\\text{...}$」(〜を〜に合わせる/調整する)は、状況や好みに応じてカスタマイズすることを表すビジネスや日常で役立つ表現です。例：We can tailor the plan to your specific needs.(お客様の特定のニーズに合わせて計画を調整できます。)\n\n「however you like」(お好きなように/どのようにでも)は、相手に全面的に選択権を与える、フレンドリーで柔軟な表現です。例：You can decorate the room however you like.(部屋はあなたの好きなように飾り付けていいですよ。)"
+    "translated": "このキノコ料理は、お好みに合わせて自由に調整してください。"
   },
   {
     "id": 5,
@@ -509,19 +533,6 @@
       "title": "「How about these familiar faces?」が「ハウ バウトゥ ディース メリア」に聞こえる謎！脱落・弱化の英語発音を徹底解説",
       "meta_description": "ネイティブの「How about these familiar faces?」が、どうして「ハウ バウトゥ ディース メリア」に聞こえるのか？音の脱落や弱化の法則を学び、リスニング力と発音を向上させましょう。",
       "katakana_weak_strong": "【ハウ】〈バウトゥ〉 【ディース】 【メリア】 (ノゥヨ) 【フェイシズ】",
-      "kugiri_eng": "How about / these / familiar faces?",
-      "kugiri_jp": "【ハウ】 〈バウトゥ〉 / 〈ディース〉 / 【メリア】 (ノゥヨ) 【フェイシズ】",
-      "translated": "このおなじみの顔ぶれはどうですか？",
-      "tsukkomi": [
-        {
-          "question": "about は アバウ じゃなくて バウトゥ！？ アがないやん、しかも トゥはほとんど聴こえない！？",
-          "answer": "aboutの最初の母音である[ə]（シュワ音）は、文頭以外のaboutでは特に弱化して脱落しやすく、ネイティブは『’bout（バウトゥ）』のように発音することが非常に多いです。そして語尾の[t]音は、日本語の『トゥ』のように強く発音されず、ほとんど聞こえないか、飲み込まれたような音（ストップT）になるため、『バウトゥ』の『トゥ』は消えかけの音に聞こえるのです。"
-        },
-        {
-          "question": "familiar は ファミリア じゃなくて メリア (ノゥヨ) !? fの音どこいった！？ しかも ノゥヨ にも聴こえることがある！？",
-          "answer": "familiarの最初の音[f]は、特に会話の流れの中では弱く発音されたり、次の母音とともに弱化・脱落したりすることがあります。また、[m]と[l]の間の母音[ɪ]や[ə]が弱くなり、全体として『メリア』のように短縮されて聞こえることがあります。さらに、発音によっては、語頭の[fə]がさらに弱化して、前後の音と連結することで『ノゥヨ』のように聞こえるという、極端な音の崩れも発生し得るのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "How about",
@@ -595,6 +606,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"How about\",\"time\":\"102\",\"url\":\"TWEET_ID:1997290084086014367\"},{\"label\":\"these\",\"time\":\"102.6\",\"url\":\"TWEET_ID:1997290182664769714\"},{\"label\":\"familiar faces?\",\"time\":\"103.19\",\"url\":\"TWEET_ID:1997290225882812759\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "How about",
@@ -614,8 +626,7 @@
     ],
     "kugiri_eng": "How about / these / familiar faces?",
     "kugiri_jp": "【ハウ】 〈バウトゥ〉 / 〈ディース〉 / 【メリア】 (ノゥヨ) 【フェイシズ】",
-    "translated": "このおなじみの顔ぶれはどうですか？",
-    "remember": "「How about...？」(〜はどうですか？)は、意見を求めたり、何かを提案したりする際に日常で頻繁に使われる表現です。使い方の幅が非常に広いので覚えておきましょう。\n例：How about going to the movies tonight?(今夜、映画に行くのはどうですか？)\n例：How about a cup of coffee?(コーヒーはいかがですか？)\n\n「familiar faces」(おなじみの顔ぶれ)は、久しぶりに会う人やよく知っている人々のことを言う時に便利な表現です。\n例：It's nice to see so many familiar faces here.(ここでこんなにおなじみの顔ぶれに会えて嬉しいです。)"
+    "translated": "このおなじみの顔ぶれはどうですか？"
   },
   {
     "id": 6,
@@ -629,27 +640,6 @@
       "title": "「アンナ・シュア・サシュ」って何？ ネイティブ発音の\"I'm not sure if that's just because it's more brown.\"を徹底解説！",
       "meta_description": "ネイティブの英語はリエゾンと弱化でカタカナとは全く違う音に聞こえます。「アンナ」「サシュ」「ビコズ ス」など、発音変化の謎を解説し、リスニング力向上を目指しましょう。",
       "katakana_weak_strong": "【アン ナ】〈シュア〉〈サシュ〉 (〈シャシュ〉) 【ビコズ ス モァ】 【ブラウン】",
-      "kugiri_eng": "I'm not / sure / ＜if＞ that's / ＜just＞ because it's / more / brown.",
-      "kugiri_jp": "【アン ナ】 / 〈シュア〉 / 〈サシュ〉 (〈シャシュ〉) / 【ビコズ ス】 / 【モァ】 / 【ブラウン】",
-      "translated": "ただ、より茶色いからというわけではないと思いますが。",
-      "tsukkomi": [
-        {
-          "question": "I'm not は アイム ノット じゃなくて　アンナ！？",
-          "answer": "「I'm not」は、ネイティブの速い会話の中では、機能語である「I'm」が弱く発音され、その後の「not」の[t]が脱落（T-dropping）し、「アイム・ノット」から「アン・ナ」のように聞こえることがあります。特に「I'm」の母音が曖昧な音（シュワ音）に近づき、全体としてリズミカルに短く発音されます。"
-        },
-        {
-          "question": "that's は ザッツ じゃなくて サシュ (シャシュ) サかシャかどっちも聴こえる！？",
-          "answer": "これは「that's」の語尾の[s]音と、次に続く単語「just」の[j]の音が連結（リエゾン）し、さらにその音が摩擦によって混ざり合う（同化）ことで「サシュ」や「シャシュ」のように聞こえています。that's $\\\\\\\\rightarrow$ that's just $\\\\\\\\rightarrow$ /ðætsʤʌst/ $\\\\\\\\rightarrow$ /ðæʃtʃʌst/ のような音の変化が起こっているためです。"
-        },
-        {
-          "question": "if jsut はなんで聴こえない！？",
-          "answer": "「if」は文脈の中で意味を補う機能語であり、強調されない限り非常に弱く発音されるか、前の音と連結してほとんど聞こえなくなることが多いためです。この文では、「that's」の直後に続くため、その前の「that's」や次の「just」の強勢によって埋もれてしまい、結果的に学習者には聞き取れない「脱落」のように聞こえるのです。"
-        },
-        {
-          "question": "because it's は ビコーズ イッツ ではなく ビコズ ス！？  イッツは！？",
-          "answer": "「because it's」は、「because」の[z]と「it's」の[ɪts]が連結（リエゾン）し、さらに「it's」の[ɪt]の部分が弱化または脱落して、結果的に「ビコズス」のように聞こえています。特に「it's」のような頻出の代名詞と助動詞の短縮形は非常に弱く発音され、[ɪt]の母音と[t]が消え、語尾の[s]だけが前の単語にくっついて聞こえる現象です。"
-        }
-      ],
       "image_sections": [
         {
           "label": "I'm not sure",
@@ -731,6 +721,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"I'm not sure\",\"time\":\"1700.3\",\"url\":\"TWEET_ID:1997661366962819475\"},{\"label\":\"if that's just because\",\"time\":\"1700.95\",\"url\":\"TWEET_ID:1997661406276063421\"},{\"label\":\"it's more brown.\",\"time\":\"1701.7\",\"url\":\"TWEET_ID:1997661443785740493\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "I'm not sure",
@@ -750,8 +741,7 @@
     ],
     "kugiri_eng": "I'm not / sure / ＜if＞ that's / ＜just＞ because it's / more / brown.",
     "kugiri_jp": "【アン ナ】 / 〈シュア〉 / 〈サシュ〉 (〈シャシュ〉) / 【ビコズ ス】 / 【モァ】 / 【ブラウン】",
-    "translated": "ただ、より茶色いからというわけではないと思いますが。",
-    "remember": "「I'm not sure」(〜かどうか確信がない)は、確信度が低いことを伝える非常に便利な表現です。例：I'm not sure if I locked the door. (ドアに鍵をかけたかどうか確信がない)\n\n「just because」(〜というだけの理由で)は、何かを強調したり、逆にその理由だけでは不十分だと示唆する際に使えます。例：Don't judge me just because I'm quiet. (静かだからというだけの理由で私を判断しないで)\n\n「more [形容詞]」(より〜)は、比較や変化を表現する基本の形で、日常会話で頻繁に使われます。例：This coffee is more bitter than usual. (このコーヒーはいつもより苦い)"
+    "translated": "ただ、より茶色いからというわけではないと思いますが。"
   },
   {
     "id": 7,
@@ -765,19 +755,6 @@
       "title": "「アノウ・フィール・ライク・オントゥ・ワーク」に聞こえる！？ネイティブ発音の秘密を解明！",
       "meta_description": "I don't feel like going to work.がなぜそう聞こえる？「d」や「g」の音が消える理由をリエゾンと脱落から解説。リスニング力向上に役立つ！",
       "katakana_weak_strong": "〈アノウ〉 【フィール】 【ライク】 〈オン〉 〈トゥ〉 【ワーク】",
-      "kugiri_eng": "I don't / feel / like / going / to / work",
-      "kugiri_jp": "〈アノウ〉 / 【フィール】 / 【ライク】 / 〈オン〉 / 〈トゥ〉 / 【ワーク】",
-      "translated": "私は仕事に行きたい気分ではない。",
-      "tsukkomi": [
-        {
-          "question": "I don't は アイドント じゃなくて アノウ！？ dの音どこいった！？",
-          "answer": "「I don't」が「アノウ」のように聞こえるのは、don'tの語尾の**破裂音[t]が脱落（T-dropping）**し、その前の[d]の音もほとんど発音されなくなるためです。さらに、Iとdon'tが連結し、機能語であるdon'tが弱く発音されるため、全体が非常に弱く、母音を中心に「アノウ」に近い音として聞こえます。これは英語の自然な会話リズムによるものです。"
-        },
-        {
-          "question": "going は ゴーイングじゃなくて オン！？ gの音どこいった！？",
-          "answer": "「going」が「オン」のように聞こえるのは、語尾の**[g]の音が脱落**し、鼻音の[ŋ]（日本語の「ン」に近い音）のみが残るためです。これは**「ing」の語尾を[ɪn]と発音する**現象で、非常にカジュアルな会話で頻繁に起こります。「goin'」のように表記されることもあり、[g]の音は破裂させずに鼻音だけで終わります。"
-        }
-      ],
       "image_sections": [
         {
           "label": "I don't feel",
@@ -849,6 +826,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"I don't feel\",\"time\":\"242.5\",\"url\":\"TWEET_ID:1997975976274481180\"},{\"label\":\"like going\",\"time\":\"243.06\",\"url\":\"TWEET_ID:1997976006792204736\"},{\"label\":\"to work\",\"time\":\"243.45\",\"url\":\"TWEET_ID:1997976049960005641\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "I don't feel",
@@ -868,8 +846,7 @@
     ],
     "kugiri_eng": "I don't / feel / like / going / to / work",
     "kugiri_jp": "〈アノウ〉 / 【フィール】 / 【ライク】 / 〈オン〉 / 〈トゥ〉 / 【ワーク】",
-    "translated": "私は仕事に行きたい気分ではない。",
-    "remember": "「I don't feel like $\\\\\\\\text{...}$」(〜したい気分ではない)は、非常に便利な気分を伝える表現です。「like」の後には必ず動名詞（〜ing）または名詞が来ます。例：I don't feel like cooking tonight.（今夜は料理をする気分じゃない）\n\n「going to work」(仕事に行く)は、日常的な動作を表す表現です。「go to」は場所へ向かう動きを示し、「work」は「仕事」を意味します。例：She is going to work early today.（彼女は今日、早く仕事に行く）"
+    "translated": "私は仕事に行きたい気分ではない。"
   },
   {
     "id": 8,
@@ -883,31 +860,6 @@
       "title": "「I just got to be honest...」が「ワイワ イガルト スカルビィ オナ」に！？ ネイティブ発音の衝撃とリエゾン・弱化の法則",
       "meta_description": "ネイティブの「mistakes. I mean, I just got to be honest and acknowlege that. But」がなぜ「セゥ ワイワ イガルト スカルビィ オナ ノージャッ」と聞こえるのかを解説。I mean, got to be, honest andの発音変化を学び、リスニング力を飛躍的に向上させましょう。",
       "katakana_weak_strong": "【ミステイクス】。〈セゥ〉 〈ワイワ〉 〈イガルト スカルビィ〉 【オナ】 〈ソイノー〉 【ジャッ】。〈バッ〉",
-      "kugiri_eng": "mistakes. / I mean / I just / got to be / honest and / acknowlege that. / But",
-      "kugiri_jp": "【ミステイクス】 / 〈セゥ〉 / 〈ワイワ〉 / 〈イガルト スカルビィ〉 / 【オナ】 / 〈ソイノー〉 【ジャッ】 / 〈バッ〉",
-      "translated": "過ち。つまり、私は正直になって、それを認めなくてはならない。だけど。",
-      "tsukkomi": [
-        {
-          "question": "I mean は アイミーン じゃなくて セゥ！？ どういう変形！？",
-          "answer": "I meanが「セゥ」のように短く聞こえるのは、両単語の母音や子音が極端に**弱化**し、さらに前の単語の語尾（この場合は文脈上「mistakes」のs）と極端に**リエゾン**（音の連結）した結果、元の発音とはかけ離れた音に聞こえているためです。Iの母音はシュワ音化し、meanの[m]や[n]が短く機能語として弱く発音されています。元の発音を強く意識しすぎず、フレーズ全体で弱く発音されることを知っておきましょう。"
-        },
-        {
-          "question": "I just は アイ ジャス じゃなくて ワイワ！？ どういうこと！？",
-          "answer": "I justが「ワイワ」に聞こえるのは、**音の脱落（エリジョン）と弱化、そしてリエゾン**の複合的な現象です。Iの母音が弱化し、justの語尾の[t]が脱落し、さらに次の単語gotの[g]とリエゾンすることで「アイ・ジャス」とは全く異なる音に聞こえることがあります。また、話し手の発音の癖やスピードにも大きく影響されます。"
-        },
-        {
-          "question": "got to be は ゴット トゥ ビィ じゃなくて イガルト スカルビィ ！？ もはや別物！？",
-          "answer": "got to beが「イガルト スカルビィ」に聞こえるのは、**got to (have got to)** の**慣用的な弱形**が原因です。have got toは「〜しなければならない」という意味で、口語では**'ve gotta** (ガタ/ガラ)のように発音されることが非常に多いです。ここでは[t]が**フラッピング（弾音化）**し「ラ」に近い音になり、「ガタ/ガラ」＋beが短縮され、元の音とはかけ離れた音に聞こえるほど弱くなっています。"
-        },
-        {
-          "question": "honest and は オネスト アンド じゃなくて オナ！？",
-          "answer": "honest andが「オナ」に聞こえるのは、**and**の**弱化**（機能語であるため）と**リエゾン**によるものです。andはしばしば[n]や[ən]にまで弱化し、さらに[d]の音が**脱落**します。honestの[t]も脱落しやすいため、honest and が「オネス・ア・ン」のように繋がり、最終的に「オナ」のような短縮された音に聞こえています。"
-        },
-        {
-          "question": "acknowlege that は アクノーレッジ ザット じゃなくて ノージャッ!? アクどこいった！？",
-          "answer": "acknowlege thatが「ノージャッ」に聞こえるのは、**acknowledge**の最初の音節**ac-**が**脱落**しているためです。これは速い会話の中で起こる**非強調音節の脱落**の典型例です。アクセントが**-know-**にあるため、それ以外の部分が極端に短縮されます。thatの[th]もほとんど発音されず、語尾の[t]が**破裂せずに**短く聞こえているため、「アクノーレッジ・ザット」とは全く異なる「ノージャッ」のように聞こえます。"
-        }
-      ],
       "image_sections": [
         {
           "label": "mistakes.",
@@ -1008,6 +960,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"mistakes.\",\"time\":\"223\",\"url\":\"TWEET_ID:2003390931488375150\"},{\"label\":\"I mean, I just got to be\",\"time\":\"223.28\",\"url\":\"TWEET_ID:2003390979450208757\"},{\"label\":\"honest\",\"time\":\"224.65\",\"url\":\"TWEET_ID:2003391029593113050\"},{\"label\":\"and acknowlege that.\",\"time\":\"224.81\",\"url\":\"TWEET_ID:2003391074912600373\"},{\"label\":\"But\",\"time\":\"225.5\",\"url\":\"TWEET_ID:2003391493470585159\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "mistakes.",
@@ -1037,8 +990,7 @@
     ],
     "kugiri_eng": "mistakes. / I mean / I just / got to be / honest and / acknowlege that. / But",
     "kugiri_jp": "【ミステイクス】 / 〈セゥ〉 / 〈ワイワ〉 / 〈イガルト スカルビィ〉 / 【オナ】 / 〈ソイノー〉 【ジャッ】 / 〈バッ〉",
-    "translated": "過ち。つまり、私は正直になって、それを認めなくてはならない。だけど。",
-    "remember": "「I mean」(つまり、というか)は、話しながら考えをまとめたり、自分の発言を言い直したりする際によく使う **フィラー** です。特に強い意味はなく、会話を滑らかにする機能語として使われます。例：I mean, it's not that I don't like it, I'm just busy.（つまり、嫌いなわけじゃなくて、ただ忙しいだけなんだ）\n\n「got to be」（〜しなければならない）は、「have got to be」の短縮形で、 **義務** や **必要性** を表します。口語では「ガタビィ」のように短縮されることが多く、非常に頻繁に使われます。例：I got to be careful next time.（次は気をつけなきゃ）\n\n「acknowlege that」(それを認める)は、 **事実や過ちを受け入れる** 際に使う表現です。フォーマルな場面でも、カジュアルな場面でも使えます。例：He had to acknowlege that he was wrong.（彼は自分が間違っていたことを認めざるを得なかった）"
+    "translated": "過ち。つまり、私は正直になって、それを認めなくてはならない。だけど。"
   },
   {
     "id": 9,
@@ -1052,31 +1004,6 @@
       "title": "ネイティブの発音はこう聞こえる！「Or do you want me to hire...」の秘密",
       "meta_description": "「or」が「オ」？「job」が「ジャ」？ネイティブ特有の音の変化、脱落、リエゾンを詳しく解説。リスニング力が劇的に上がる発音のコツを伝授します。",
       "katakana_weak_strong": "〈オ〉 〈デュ〉 【ウォン】 〈ミァ〉 【ハイアー】 〈ザ〉 【ベスト】 【パーソン (プロセン)】 〈フォー〉 〈ジャ〉",
-      "kugiri_eng": "Or do you want me to / hire / the best person for the job ?",
-      "kugiri_jp": "〈オ〉 〈デュ〉 【ウォン】 〈ミァ〉 / 【ハイアー】 / 〈ザ〉 【ベスト】 【パーソン (プロセン)】 〈フォー〉 〈ジャ〉",
-      "translated": "それとも、その仕事に最も適した人物を私に雇ってほしいのですか？",
-      "tsukkomi": [
-        {
-          "question": "or は オアー じゃなくて オ！？",
-          "answer": "文頭のorが弱く発音される際、語尾のrの音が脱落し、さらに母音が短くなることで「オ」のように聞こえます。これは機能語が文中で弱形（weak form）として扱われる典型的な例です。"
-        },
-        {
-          "question": "do you は ドゥ ユゥ じゃなくて デュ！？",
-          "answer": "doとyouが連結し、さらに短縮されることで「デュ」という一つの音のように聞こえます。これはカジュアルな会話で非常によく起こる音の同化（assimilation）と弱化の現象です。"
-        },
-        {
-          "question": "want to は ウォント トゥ じゃなくて ウォン ミァ",
-          "answer": "本来「want me to」の部分ですが、wantの末尾のtが脱落し、meと連結することで「ウォン ミァ」のように聞こえます。tの音が消えることで、次のm音へスムーズに移行するリズムが生まれています。"
-        },
-        {
-          "question": "person は パーソンだけどプロセンにも聴こえる!?",
-          "answer": "アクセントのない後半の音節「-son」の部分で母音が極端に弱まり（シュワ音）、前後の子音と混ざり合うことで「プロセン」のような独特の響きに聞こえることがあります。母音の弱化が激しい英語の特徴です。"
-        },
-        {
-          "question": "job は ジョブ じゃなくてジャ！？",
-          "answer": "jobの最後のbの音が破裂せずに飲み込まれる「無破裂」の状態になり、さらに母音のoが「ア」に近い音で発音されるため、「ジャ」のように聞こえます。語尾の子音をはっきり言わないのは英語の日常会話では一般的です。"
-        }
-      ],
       "image_sections": [
         {
           "label": "Or do you want me to",
@@ -1160,6 +1087,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"Or do you want me to\",\"time\":\"534\",\"url\":\"TWEET_ID:1998723461414584578\"},{\"label\":\"hire\",\"time\":\"535.1\",\"url\":\"TWEET_ID:1998723497611387135\"},{\"label\":\"the best person for the job ?\",\"time\":\"535.29\",\"url\":\"TWEET_ID:1998723539101430007\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "Or do you want me to",
@@ -1179,8 +1107,7 @@
     ],
     "kugiri_eng": "Or do you want me to / hire / the best person for the job ?",
     "kugiri_jp": "〈オ〉 〈デュ〉 【ウォン】 〈ミァ〉 / 【ハイアー】 / 〈ザ〉 【ベスト】 【パーソン (プロセン)】 〈フォー〉 〈ジャ〉",
-    "translated": "それとも、その仕事に最も適した人物を私に雇ってほしいのですか？",
-    "remember": "「Or do you want me to...?」(それとも、私に〜してほしいですか？)は、相手に別の提案をする時に非常に役立つ表現です。例：Or do you want me to call you back later? (それとも、後で折り返し電話しましょうか？)\n\n「the best person for the job」(その仕事に最適な人)は、採用や推薦の場面でよく使われる決まり文句です。例：She is definitely the best person for the job. (彼女は間違いなくその仕事に最適な人物だ。)"
+    "translated": "それとも、その仕事に最も適した人物を私に雇ってほしいのですか？"
   },
   {
     "id": 10,
@@ -1194,31 +1121,6 @@
       "title": "「ワワムエキサイティッドバァルーススカルハン…」ネイティブの超速連結発音を解読せよ！",
       "meta_description": "What I'm excited about is it's got a lot of space.のリエゾン・弱化を解説。ワットがワ？アイムがワム？全く違う音に聞こえる秘密を解き明かします。",
       "katakana_weak_strong": "【ワ】〈ワム (オム) エキサイティッド〉【バァルース】 〈スカル ハン〉 【スペルス (ステイ)】",
-      "kugiri_eng": "What I'm excited / about is / it's got a lot of / space",
-      "kugiri_jp": "【ワ】〈ワム (オム) エキサイティッド〉 / 【バァルース】 / 〈スカル ハン〉 / 【スペルス (ステイ)】",
-      "translated": "私がわくわくしているのは、それに広いスペースがあることです。",
-      "tsukkomi": [
-        {
-          "question": "What は ワット じゃなくて ワ！？",
-          "answer": "Whatのような疑問詞は文頭にあると強く発音されることが多いですが、この例文では後ろの「I'm excited about」という情報に重点があるため、Whatの母音が弱化し、語尾の[t]もほとんど発音されないか、[ʔ]（声門閉鎖音）に変化し、「ワッ」あるいはさらに短い「ワ」のように聞こえることがあります。また、続くI'mと連結している影響も大きいです。"
-        },
-        {
-          "question": "I'm は アム じゃなくて ワム または オム なんで！？",
-          "answer": "前のWhatの語尾の[t]音が脱落または弱化し、子音で終わっているため、次のI'mと連結（リエゾン）します。I'mの母音[aɪ]が弱化し、さらに[m]音に引っ張られて「ワム」または「オム」のように聞こえます。特に[w]の音は前のWhatから残響のように引き継がれているため、「ワム」と認識されやすくなります。"
-        },
-        {
-          "question": "about is は アバウトじゃなくて バァルース ！？ もはや別物！？",
-          "answer": "aboutの語尾の[t]が脱落（T-dropping）し、母音が極度に弱化（シュワ音化）します。そして、aboutの語尾の[t]が脱落した後の母音と、次のisが連結（リエゾン）することで、「アバウ・イズ」というより「バァルース」に近い速い音のまとまりになります。特に[r]音は、話者の癖やスピード、音の同化によって強く認識されることがあります。ネイティブの超速連結では、元の単語とはかけ離れた音に聞こえることがよくあります。"
-        },
-        {
-          "question": "It's got a lot of は イッツ ゴット ア ロット オブ じゃなくて スカル ハン！？ どういうこと！？ スの音、カルの音、ハンの音はどこからきた？",
-          "answer": "非常に激しい音の脱落（エリジョン）と連結（リエゾン）、そして弱化（リダクション）が複合的に起こっています。It's got a lot ofは非常に速く発音される機能語の塊です。\n\n* **It's got (イッツ ゴット)**：[t]が脱落し、母音も弱化して「スカル」の「ス」または「カル」の一部に聞こえる。\n* **a lot of (ア ロット オブ)**：最も弱化が激しい部分です。a lot of は一般的に「アラロフ」や「アラダフ」のように発音されますが、さらに弱化が進み、a lot of の[t]や[v]が脱落し、母音もシュワ音[ə]になり、全体として極めて短く速い「カル ハン」のような音に聞こえます。この「カル」「ハン」というカタカナ表記は、音の連結と脱落の結果、元の単語の音を部分的に抽出した学習者の聞き取りに基づいています。特にlotの[l]やofの[v]が極端に短く、かつ母音が弱化することで、非ネイティブには聞き取りが困難な音の塊になります。"
-        },
-        {
-          "question": "space は スペース じゃなくて スペルス または ステイ に聴こえる！？",
-          "answer": "spaceは内容語なので強く発音されるはずですが、語尾の[s]音の後に余計な母音をつけてしまう癖（日本語の「スペース」のように）がない分、語尾の[s]で音が急に切れるため、非ネイティブには「スペルス」や「ステイ」のように、音が途中で止まった、あるいは変化したように聞こえることがあります。特に[s]音は子音で終わるため、その後に母音がないと、日本語の「ス」とは違う音の印象を受けます。"
-        }
-      ],
       "image_sections": [
         {
           "label": "What I'm excited about",
@@ -1316,6 +1218,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"What I'm excited about\",\"time\":\"111\",\"url\":\"TWEET_ID:1998737085751324693\"},{\"label\":\"is\",\"time\":\"112.89\",\"url\":\"TWEET_ID:1998737119385366841\"},{\"label\":\"it's got\",\"time\":\"113.5\",\"url\":\"TWEET_ID:1998737162703909030\"},{\"label\":\"a lot of space\",\"time\":\"113.7\",\"url\":\"TWEET_ID:1998737212850979007\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "What I'm excited about",
@@ -1340,8 +1243,7 @@
     ],
     "kugiri_eng": "What I'm excited / about is / it's got a lot of / space",
     "kugiri_jp": "【ワ】〈ワム (オム) エキサイティッド〉 / 【バァルース】 / 〈スカル ハン〉 / 【スペルス (ステイ)】",
-    "translated": "私がわくわくしているのは、それに広いスペースがあることです。",
-    "remember": "「What I'm excited about is...」(私が楽しみにしているのは〜です)は、自分の熱意を伝えるのに非常に便利な表現です。例：What I'm excited about is our trip to Hawaii next month.（私がわくわくしているのは、来月のハワイ旅行です）\n\n「It's got a lot of...」(それにはたくさんの〜がある)は、魅力的なモノや場所を紹介する時に使える口語表現です。例：This new car's got a lot of amazing features.（この新しい車にはたくさんの素晴らしい機能が搭載されています）\n\n「a lot of」(たくさんの)は、日常会話で\"many\"や\"much\"の代わりに頻繁に使われる、量を表す超頻出フレーズです。例：I have a lot of work to do today.（今日はたくさんのやるべき仕事があります）"
+    "translated": "私がわくわくしているのは、それに広いスペースがあることです。"
   },
   {
     "id": 11,
@@ -1355,10 +1257,6 @@
       "title": "ネイティブの発音はこう聞こえる！\"let me see that\"が「レッミースィーザッ」になる秘密",
       "meta_description": "英語の\"let me see that\"が「レッミースィーザッ」のように聞こえる理由を発音のプロが解説。音の連結と弱化をマスターしてリスニング力をアップしましょう。",
       "katakana_weak_strong": "【レッ】〈ミー〉【スィーザッ】. 【ウゥー】 【ディス】〈イズ〉【ヴェリィコンフュージン}",
-      "kugiri_eng": "let me / see / that. / Oooh! / This is / very / confusing.",
-      "kugiri_jp": "【レッ】〈ミー〉 / 【スィー】 / 【ザッ】 / 【ウゥー】 / 【ディス】〈イズ〉 / 【ヴェリィ】 / 【コンフュージン}",
-      "translated": "ちょっと見せて。うわー、これはとても分かりにくい。",
-      "tsukkomi": [],
       "image_sections": [
         {
           "label": "Let me see that!",
@@ -1421,6 +1319,7 @@
     "pron_memo": "",
     "tsukkomi": [],
     "image_learn": "[{\"label\":\"Let me see that!\",\"time\":\"319.5\",\"url\":\"TWEET_ID:1998742747239559564\"},{\"label\":\"Oooh!\",\"time\":\"320.5\",\"url\":\"TWEET_ID:1998742780957557063\"},{\"label\":\"This is very confusing.\",\"time\":\"320.97\",\"url\":\"TWEET_ID:1998742824557387996\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "Let me see that!",
@@ -1440,8 +1339,7 @@
     ],
     "kugiri_eng": "let me / see / that. / Oooh! / This is / very / confusing.",
     "kugiri_jp": "【レッ】〈ミー〉 / 【スィー】 / 【ザッ】 / 【ウゥー】 / 【ディス】〈イズ〉 / 【ヴェリィ】 / 【コンフュージン}",
-    "translated": "ちょっと見せて。うわー、これはとても分かりにくい。",
-    "remember": "「Let me see that」（ちょっと見せて）は、日常会話で非常に頻繁に使う表現です。何かを手に取って確認したいときにカジュアルに使えます。例：\"That looks interesting. Let me see that!\"（面白そうだね。ちょっと見せて！）。\n\n「confusing」（分かりにくい、混乱させる）は、複雑な状況や説明を言い表すのに役立ちます。例：\"The instructions are very confusing.\"（その説明書はとても分かりにくい）。\n\n「very」（とても、非常に）は、形容詞を強調するのに使える便利な副詞です。例：\"This cake is very good.\"（このケーキはとても美味しい）。"
+    "translated": "ちょっと見せて。うわー、これはとても分かりにくい。"
   },
   {
     "id": 12,
@@ -1450,44 +1348,11 @@
     "end_time": "353.3",
     "updated_at": "2026-02-05T22:11:41.247Z",
     "question": "I'm getting used to getting up at 5 in the morning and walking him.",
-    "question_katakana": "〈アム〉 【ゲッ】 【ニュースト】 【ゲブ】 〈ノッペ〉 【ファイブ】 〈ナ〉 【モーニン】 〈アン〉 【ウォークマン】",
+    "question_katakana": "アム ゲッ ニュースト ゲブ ノッペ ファイブ ナ モーニン アン ウォークマン",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『I'm getting used to getting up...』の攻略法",
       "meta_description": "英語の音がつながって消える仕組みを解説！『walking him』が『ウォークマン』に聞こえる理由とは？音の変化を学んでリスニング力を向上させましょう。",
       "katakana_weak_strong": "〈アム〉 【ゲッ】 【ニュースト】 【ゲブ】 〈ノッペ〉 【ファイブ】 〈ナ〉 【モーニン】 〈アン〉 【ウォークマン】",
-      "kugiri_eng": "I'm / getting / used to / getting up at / 5 / in the / morning / and / walking him.",
-      "kugiri_jp": "〈アム〉 / 【ゲッ】 / 【ニュースト】 / 【ゲブ】 〈ノッペ〉 / 【ファイブ】 / 〈ナ〉 / 【モーニン】 / 〈アン〉 / 【ウォークマン】",
-      "translated": "私は朝5時に起きて彼の散歩をさせることに慣れてきているところです。",
-      "tsukkomi": [
-        {
-          "question": "I'm は アイム じゃなくて アム！？",
-          "answer": "I'mは文頭で弱く発音される際、二重母音の[ai]が短縮され、シュワ音（あいまい母音）化して「アム」のように聞こえることが非常に多いです。"
-        },
-        {
-          "question": "getting は ゲッティング じゃなくて ゲッ！？",
-          "answer": "gettingの最後の[ing]は口をあまり開けず鼻に抜ける音になるため、カタカナでは「ゲッ」と止まるように聞こえることが一般的です。"
-        },
-        {
-          "question": "used to は ユースト じゃなくて ニュースト!?",
-          "answer": "直前のgettingの最後の[n]の音がusedの[u]とつながり（連結）、さらにusedの[d]が脱落することで「ニュースト」という響きに変化します。"
-        },
-        {
-          "question": "getting up at は ゲッティング アップ アット じゃなくて ゲブノッペ!?",
-          "answer": "gettingの[t]がフラップ化（ラ行に近い音）し、upと連結して「ゲラッ(ゲブ)」、さらにupの[p]とatの[a]が連結して「ノッペ（アッペ）」のように一気に繋がって発音されます。"
-        },
-        {
-          "question": "in the morning は イン ザ モーニング じゃなくて ナ モーニン!?",
-          "answer": "in theの[i]が弱化し、さらに[th]の音が脱落することで、前の音と混ざり「ナ」のように極めて短く発音されます。morningの[g]も脱落し「モーニン」となります。"
-        },
-        {
-          "question": "and は アンド じゃなくて アン!?",
-          "answer": "andは機能語として非常に弱く読まれるため、語尾の[d]が脱落し、ほとんど「アン」または「ン」という鼻音だけが残るのが標準的な発音です。"
-        },
-        {
-          "question": "walking him は ウォーキング ヒム じゃなくて ウォークマン!? どうゆう変形！？",
-          "answer": "walkingの[g]が脱落し、さらにhimの[h]も脱落（弱化）することで、walkingの[n]とhimの[im]が連結して「ウォークマン」という一つの単語のような音に変化します。"
-        }
-      ],
       "image_sections": [
         {
           "label": "I'm getting used to",
@@ -1587,6 +1452,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"I'm getting used to\",\"time\":\"349\",\"url\":\"TWEET_ID:1998749519660687458\"},{\"label\":\"getting up\",\"time\":\"350\",\"url\":\"TWEET_ID:1998749555870020082\"},{\"label\":\"at 5 in the morning\",\"time\":\"350.35\",\"url\":\"TWEET_ID:1998749591660015713\"},{\"label\":\" and walking him.\",\"time\":\"351.4\",\"url\":\"TWEET_ID:2019533786552365195\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "I'm getting used to",
@@ -1611,8 +1477,7 @@
     ],
     "kugiri_eng": "I'm / getting / used to / getting up at / 5 / in the / morning / and / walking him.",
     "kugiri_jp": "〈アム〉 / 【ゲッ】 / 【ニュースト】 / 【ゲブ】 〈ノッペ〉 / 【ファイブ】 / 〈ナ〉 / 【モーニン】 / 〈アン〉 / 【ウォークマン】",
-    "translated": "私は朝5時に起きて彼の散歩をさせることに慣れてきているところです。",
-    "remember": "「get used to」(〜に慣れる)は、変化の過程を表す際によく使われる表現です。例：I'm getting used to my new job.(新しい仕事に慣れてきました。)\n\n「walk [person/pet]」(〜を散歩させる/歩かせる)は、日常会話で頻出の動詞の使い方です。例：I have to walk my dog every day.(毎日犬を散歩させなければなりません。)"
+    "translated": "私は朝5時に起きて彼の散歩をさせることに慣れてきているところです。"
   },
   {
     "id": 13,
@@ -1626,10 +1491,6 @@
       "title": "「is that the thing I'm good at」が「イズ ザッ スィング アィム グッ ダ」に聞こえる理由：ネイティブ発音の秘密",
       "meta_description": "「is that the thing I'm good at」の自然な発音を解説。リエゾン、弱化、脱落といった英語特有の音の変化を学び、リスニング力を飛躍的に向上させましょう。",
       "katakana_weak_strong": "〈イズ〉 【ザッ】 【スィング】 〈アィム〉 【グッ】 〈ダ〉",
-      "kugiri_eng": "is that / ＜the＞ thing / I'm good at",
-      "kugiri_jp": "〈イズ〉 【ザッ】 / 【スィング】 / 〈アィム〉 【グッ】 〈ダ〉",
-      "translated": "それは、私が得意なことなの？",
-      "tsukkomi": [],
       "image_sections": [
         {
           "label": "is that",
@@ -1693,6 +1554,7 @@
     "pron_memo": "",
     "tsukkomi": [],
     "image_learn": "[{\"label\":\"is that\",\"time\":\"99.5\",\"url\":\"TWEET_ID:1998754146619634018\"},{\"label\":\"the thing\",\"time\":\"100\",\"url\":\"TWEET_ID:1998754197265895726\"},{\"label\":\"I'm good at\",\"time\":\"100.26\",\"url\":\"TWEET_ID:1998754235283026061\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "is that",
@@ -1712,8 +1574,7 @@
     ],
     "kugiri_eng": "is that / ＜the＞ thing / I'm good at",
     "kugiri_jp": "〈イズ〉 【ザッ】 / 【スィング】 / 〈アィム〉 【グッ】 〈ダ〉",
-    "translated": "それは、私が得意なことなの？",
-    "remember": "「is that the thing?」(それってそのこと？)は、相手の言っていることが何かを確認したり、特定の事柄に言及したりする際に便利な表現です。例：Is that the thing we talked about yesterday?(それって昨日話してたこと？)\n\n「I'm good at 〜」(〜が得意だ)は、自分のスキルや長所を伝える時に役立つ定番フレーズです。例：I'm good at cooking, especially Italian food.(私は料理、特にイタリア料理が得意です。)"
+    "translated": "それは、私が得意なことなの？"
   },
   {
     "id": 14,
@@ -1727,39 +1588,6 @@
       "title": "ネイティブ発音の衝撃！『same thing that I used to have to do...』から学ぶ英語の弱化・脱落の秘密",
       "meta_description": "『same thing that I used to have to do...』が「セム スィング ダッ ユース タ ハフ ドゥ...」に聞こえる理由を、発音のプロが徹底解説！英語のリスニング力アップの秘訣。",
       "katakana_weak_strong": "【セム スィング】 〈ダッ〉 〈ユース タ ハフ ドゥ〉 【オール タイム】 〈ナウズ〉 〈イクリィ〉 【ディソーリア ディフェーリア】",
-      "kugiri_eng": "same thing / that ＜I＞ used to / have ＜to＞ do / all ＜the＞ time / when I was an / equally / disoriented failure.",
-      "kugiri_jp": "【セム スィング】 / 〈ダッ〉 〈ユース タ〉 / 〈ハフ ドゥ〉 / 【オール タイム】 / 〈ナウズ〉 / 〈イクリィ〉 / 【ディソーリア ディフェーリア】",
-      "translated": "それは、私が同じように道を見失っていた失敗者だった頃に、いつもやらなければならなかったことと同じだ。",
-      "tsukkomi": [
-        {
-          "question": "same は セィム じゃなくて セム！？",
-          "answer": "same の発音は /seɪm/ で、確かに「セイム」と教わりますが、口語では母音がやや弱化して「セム」のように聞こえることがあります。特に速い会話の中では、はっきりとした二重母音 [eɪ] よりも、単母音に近い [e] の音で聞かれることがあります。"
-        },
-        {
-          "question": "that I は ザット アイ じゃなくて ダッ！？ I はどこ！？",
-          "answer": "that I はリエゾン（音の連結）と弱化、そして脱落のオンパレードです。that の語尾の [t] は、子音で終わる機能語なので、次の I の母音とつながるものの、非常に弱く発音されるか、ほとんど消えてしまいます（フラップTまたは脱落）。また、I の音自体も弱まり、結果的に「ダッ」のように聞こえます。I の音は機能語であるため、極端に弱く発音されることが多いです。"
-        },
-        {
-          "question": "used to は ユース トゥ じゃなくて ユース タ！？",
-          "answer": "used to は「ユーズド トゥ」ではなく、used の [d] が脱落し、to の母音が弱化してシュワ音 /ə/ になるため、非強調形では「ユースタ」または「ユースドゥ」のように聞こえます。この「ユースタ」は、英語の音の連結・弱化の代表例です。"
-        },
-        {
-          "question": "have to は ハフ トゥ じゃなくて ハフ だけ！？ toは！？",
-          "answer": "have to（〜しなければならない）は、to の母音が弱化してシュワ音になり、極端に音が短くなると、まるで have の [v] 音が聞こえなくなり「ハフ」だけのように聞こえることがあります。また、to の [t] が次の do と連結する際、t の音が弱く発音され、ほとんど聞こえなくなるため、「ハフ ドゥ」のように聞こえるのです。to は機能語のため、弱く発音されるのが通常です。"
-        },
-        {
-          "question": "all the time は オール ザ タイム じゃなくて オール タイム!?",
-          "answer": "all the time の the は機能語であり、極端に弱化・脱落しやすい音です。口語では the の音がほとんど消え、次の time と連結して「オール タイム」のように聞こえます。特に速い会話では、子音 [ð] が次の子音 [t] と並ぶため、省略されやすくなります。"
-        },
-        {
-          "question": "when I was an は ウェン アイ ワス アン じゃなくて ナウズ !? どういう省略！？",
-          "answer": "これは非常に高度な音の変化で、when I was an の音が極端に連結・弱化・脱落した結果です。when の [n]、I の弱形、was の [wʌz] の弱形、an の弱形が全て連鎖的に変化し、特に when I の部分が [waɪ] からさらに弱化して、was an と合わさって「ナウズ」のように聞こえる可能性があります。これは非常に速い発話での音の同化（Assimilation）が起こった結果です。"
-        },
-        {
-          "question": "disoriented failure は ディソリエンティッド フェリアー じゃなくて ディソーリア ディフェーリア ！？ fの音は！？",
-          "answer": "disoriented の語尾の [d] が脱落し、failure の最初の [f] 音が弱く発音されるか、前の音と連結（リエゾン）して /d/ や /ð/ に似た音に変化し、さらに /l/ や /r/ が続くことで、全体として「ディソーリア ディフェーリア」のように聞こえることがあります。特に 'failure' の [f] は日本語の「フ」よりも弱く発音され、次の母音と滑らかにつながるため、「フェーリア」とは違って聞こえるのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "same thing",
@@ -1864,6 +1692,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"same thing\",\"time\":\"324\",\"url\":\"TWEET_ID:1998783431174672752\"},{\"label\":\"that I used to have to do\",\"time\":\"324.4\",\"url\":\"TWEET_ID:1998783482458419275\"},{\"label\":\"all the time\",\"time\":\"325.2\",\"url\":\"TWEET_ID:1998783518139363446\"},{\"label\":\"when I was an equally disoriented failure.\",\"time\":\"325.9\",\"url\":\"TWEET_ID:1998783565308506507\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "same thing",
@@ -1888,8 +1717,7 @@
     ],
     "kugiri_eng": "same thing / that ＜I＞ used to / have ＜to＞ do / all ＜the＞ time / when I was an / equally / disoriented failure.",
     "kugiri_jp": "【セム スィング】 / 〈ダッ〉 〈ユース タ〉 / 〈ハフ ドゥ〉 / 【オール タイム】 / 〈ナウズ〉 / 〈イクリィ〉 / 【ディソーリア ディフェーリア】",
-    "translated": "それは、私が同じように道を見失っていた失敗者だった頃に、いつもやらなければならなかったことと同じだ。",
-    "remember": "「same thing」(同じこと)は、以前経験したことや、他の人が経験したことと同じ状況を指すときに便利な表現です。例：It's the same thing that happened last year.（それは去年起こったことと同じだ）\n\n「used to do」(以前は〜したものだ)は、過去に習慣的に行っていたが、今はもうやっていない行為を表します。例：I used to play soccer when I was a kid.（私は子供の頃、よくサッカーをしたものだ）\n\n「have to do」(〜しなければならない)は、義務や必要性を表す日常頻出の表現です。例：We have to finish this report by Friday.（私たちは金曜日までにこのレポートを終わらせなければならない）"
+    "translated": "それは、私が同じように道を見失っていた失敗者だった頃に、いつもやらなければならなかったことと同じだ。"
   },
   {
     "id": 15,
@@ -1903,19 +1731,6 @@
       "title": "for some reason…が「サム・リーズン」に!? ネイティブ発音の弱化と連結の秘密",
       "meta_description": "英語学習者がつまずきやすい「for some reason」や「had a」の自然な発音変化を、弱化とリエゾン（連結）の視点から徹底解説します。リスニング力向上に役立つ記事です。",
       "katakana_weak_strong": "〈サム〉【リーズン】 【ウィメン】 【リアリィ】 〈ハロ〉 【ハード】 【タイム】 【クラッキング】 【メインストリーム】",
-      "kugiri_eng": "＜for＞ some reason / women really / had a / hard time / cracking / mainstream",
-      "kugiri_jp": "〈サム〉【リーズン】 / 【ウィメン】 【リアリィ】 / 〈ハロ〉 / 【ハード】 【タイム】 / 【クラッキング】 / 【メインストリーム】",
-      "translated": "どういうわけか、女性たちは主流に入り込むのに本当に苦労していました。",
-      "tsukkomi": [
-        {
-          "question": "for some reason は フォー サム リーズン じゃなくて サムリーズン !? for　は省略していいの？",
-          "answer": "for some reasonが「サム・リーズン」と聞こえるのは、前置詞のforが極端に弱化し、ほとんど聞こえなくなるためです。forのような機能語（文法的な役割を持つ単語）は、文中で重要ではないため、母音がシュワ($\\\\\\\\text{\\\\\\\\smallə}$)に変化したり、完全に脱落したりすることがよくあります。この例では、forが脱落したように聞こえる「サム・リーズン」という発音が非常に自然な英語のリズムです。"
-        },
-        {
-          "question": "had a は ハド ア じゃなくて ハロ！？",
-          "answer": "had aが「ハダ」のように聞こえるのは、hadの語尾の[d]とaがリエゾン（音の連結）を起こし、さらに[d]が[r]や日本語のラ行に近いフラップ音（たたき音）[$ \\\\\\\\text{\\\\\\\\smallɾ} $]に変化するからです。had a hard timeのように、[d]の後に母音が続き、続く単語の母音がストレスを受けていない場合、このフラップ音化が起こりやすくなります。結果として「ハダ」よりも速く、ラ行に近い「ハラ」または「ハロ」に近い音に聞こえるのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "For some reason,",
@@ -1996,6 +1811,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"For some reason,\",\"time\":\"42\",\"url\":\"TWEET_ID:1999173873087185312\"},{\"label\":\"women really had a hard time\",\"time\":\"43\",\"url\":\"TWEET_ID:1999173955064856599\"},{\"label\":\"cracking\",\"time\":\"44.5\",\"url\":\"TWEET_ID:1999173983456100748\"},{\"label\":\"mainstream\",\"time\":\"44.8\",\"url\":\"TWEET_ID:1999174012275163454\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "For some reason,",
@@ -2020,8 +1836,7 @@
     ],
     "kugiri_eng": "＜for＞ some reason / women really / had a / hard time / cracking / mainstream",
     "kugiri_jp": "〈サム〉【リーズン】 / 【ウィメン】 【リアリィ】 / 〈ハロ〉 / 【ハード】 【タイム】 / 【クラッキング】 / 【メインストリーム】",
-    "translated": "どういうわけか、女性たちは主流に入り込むのに本当に苦労していました。",
-    "remember": "「For some reason」（どういうわけか、なぜか）は、理由がはっきりしない事柄を説明する際によく使う表現です。文頭に置いて文全体にかかる修飾語として使われます。例：For some reason, I can't open this file.(どういうわけか、このファイルが開けません。)\n\n「have a hard time doing something」（〜するのに苦労する）は、何かを達成するのが困難であることを表現する際に非常に便利なフレーズです。この表現の後に動名詞（〜ing）が続きます。例：He had a hard time finding a job in the city.(彼は都会で仕事を見つけるのに苦労しました。)\n\n「crack the mainstream」（主流に入り込む）は、ビジネスやエンターテイメントなど、特定の分野で成功したり、一般的に認知されたりすることを意味する、力強い表現です。例：It took years for her music to crack the mainstream.(彼女の音楽が主流に入り込むまでには何年もかかりました。)"
+    "translated": "どういうわけか、女性たちは主流に入り込むのに本当に苦労していました。"
   },
   {
     "id": 16,
@@ -2035,23 +1850,6 @@
       "title": "「It sounds like Milton Friedman or Ronald Regan」：ネイティブ発音の\"消える音\"と\"連結\"を徹底解説",
       "meta_description": "「It sounds like...」が「サウンズライク...」に聞こえる理由とは？英語の音の脱落、連結、弱化のルールを学び、リスニング力を飛躍的に向上させます。",
       "katakana_weak_strong": "〈サウンズ〉 【ライク】 ノン 【フリーグメン】 ォ 【ロアゥロ】 【ライゲン】",
-      "kugiri_eng": "＜It＞ sounds like / Milton Friedman / or / Ronald Regan.",
-      "kugiri_jp": "〈サウンズ〉 【ライク】 / ノン 【フリーグメン】 / 〈ォ〉 / 【ロアゥロ】 【ライゲン】",
-      "translated": "（それは）ミルトン・フリードマンかロナルド・レーガンの声に似ています。",
-      "tsukkomi": [
-        {
-          "question": "It の音が聴こえない！？",
-          "answer": "文章の主語であるIt（イット）は、文頭にありますが、機能語（文法的な役割を持つ単語）であるため、発音されるときに非常に弱くなったり、次の単語と連結して脱落したりすることがあります。この例文では、Itの[t]音が次のsoundsの[s]音と隣接するため、脱落（エリジョン）しやすい傾向にあり、ほとんど聞こえなくなっていると考えられます。その結果、「サウンズ」から始まるように聞こえます。"
-        },
-        {
-          "question": "Milton Friedman は ミルトン フリードメン じゃなくて ノン フリーグメン に聴こえる！？",
-          "answer": "固有名詞は通常強く発音されますが、英語の速い会話の中では、\"Milton\"の[l]音と[t]音の間にある母音が弱化し、[l]音が鼻音[n]音と連結することで、ミルトン（Milton）の[mɪltən]が「ノン」のように聞こえることがあります。特に[t]音は発音されずに飲み込まれる（脱落）ことが多いです。また、\"Friedman\"の[fr]と\"man\"の[mən]が弱化や連結を起こし、「フリーグメン」のように聞こえるのは、音の連続的な変化と、英語のリズムによるものです。"
-        },
-        {
-          "question": "Ronald Regan は ロナルド レーガン じゃなくて ロアゥロ ライゲン に聴こえる！？",
-          "answer": "「Ronald」（ロナルド）の[d]音は子音の塊の終わりに位置するため、脱落しやすい音です。さらに、\"Ronald\"の[n]音と[l]音が連結することで「ロアゥロ」のように聞こえることがあります。\"Regan\"（レーガン）についても、弱化と脱落が起こり「ライゲン」のように聞こえるのは、特に固有名詞における非強勢音節の母音の弱化と、[r]音の影響によるものです。これは、英語がストレス（強弱）を重視する言語であるために起こる、非常に自然な音声変化です。"
-        }
-      ],
       "image_sections": [
         {
           "label": "It sounds like",
@@ -2130,6 +1928,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"It sounds like\",\"time\":\"423.5\",\"url\":\"TWEET_ID:1999511803982966836\"},{\"label\":\"Milton Friedman\",\"time\":\"424.5\",\"url\":\"TWEET_ID:1999511844185133455\"},{\"label\":\"or Ronald Regan.\",\"time\":\"425.7\",\"url\":\"TWEET_ID:1999511885788356687\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "It sounds like",
@@ -2149,8 +1948,7 @@
     ],
     "kugiri_eng": "＜It＞ sounds like / Milton Friedman / or / Ronald Regan.",
     "kugiri_jp": "〈サウンズ〉 【ライク】 / ノン 【フリーグメン】 / 〈ォ〉 / 【ロアゥロ】 【ライゲン】",
-    "translated": "（それは）ミルトン・フリードマンかロナルド・レーガンの声に似ています。",
-    "remember": "「It sounds like 〜」（〜のように聞こえる）は、日常会話で非常に役立つ表現です。誰かの声や、初めて聞く音楽、聞いた噂などについて感想を伝える際によく使われます。\n\n例：It sounds like a great idea!（それは素晴らしいアイデアに聞こえるね！/良さそうだね！）\n例：It sounds like he’s in trouble.（彼は困っているように聞こえる。/困っているみたいだ。）\n\nまた、固有名詞や重要な役職名（例：President Regan）は、文脈を理解する上で不可欠です。ニュースやドキュメンタリーで頻出するので、知っている固有名詞が多いほど理解力が高まります。"
+    "translated": "（それは）ミルトン・フリードマンかロナルド・レーガンの声に似ています。"
   },
   {
     "id": 17,
@@ -2164,27 +1962,6 @@
       "title": "「It takes ten seconds to take a selfie」が「イ テキ サイ ケズ セイカツ セルフィ」に聞こえる謎！ネイティブ発音の秘密",
       "meta_description": "「It takes ten seconds...」がなぜカタカナ通りに聞こえない？リエゾン、弱化、脱落といったネイティブ英語の発音ルールを解説します。あなたのリスニング力が劇的に向上！",
       "katakana_weak_strong": "〈イ〉【テキ】 【テン】 【サイ ケズ (セカズ)】 〈セイカツ (テイカ)〉 【セルフィ】",
-      "kugiri_eng": "It / takes / ten seconds / ＜to＞ take a / selfie",
-      "kugiri_jp": "〈イ〉 / 【テキ】 / 【テン】 【サイ ケズ (セカズ)】 / 〈セイカツ (テイカ)〉 / 【セルフィ】",
-      "translated": "自撮りをするのに10秒かかる。",
-      "tsukkomi": [
-        {
-          "question": "It は イット じゃなくて イ！？",
-          "answer": "代名詞の「It」は文の頭で強く発音されることもありますが、ここでは次の「takes」と比べて弱く、母音が不明瞭になる「弱化（リダクション）」が起きているため、「イット」ではなく、極めて短い「イ」に近い音に聞こえるのです。これは英語の機能語（文法的な役割を持つ単語）が持つ特徴です。"
-        },
-        {
-          "question": "takes は テイクス じゃなくて テキ！？",
-          "answer": "「takes」の語尾の[s]音の直前にある、強く発音されるべき母音[eɪ]（日本語の「エイ」）が、発音の速さやリズムによって短く、不明瞭な「エ」に近い音に変わる「母音の弱化」が起きています。そのため、「テイクス」ではなく「テキ」のように聞こえることがあります。また、文脈によっては次の「ten」と連結（リエゾン）しているようにも聞こえるため、さらに短く感じられます。"
-        },
-        {
-          "question": "seconds は セカンズ じゃなくて サイ ケズ (セカズ)！？",
-          "answer": "「seconds」の最初の母音は本来、弱化しやすく、[ə]（シュワ音）になることがありますが、ここでは強く発音されているにも関わらず、発音の違いや音の強調により「セカズ」よりも「サイケズ」に近い音に聞こえる可能性があります。これは発音する人やスピードによる違いですが、特に速く発音されると母音が変化し、日本語のカタカナ表記では聞き取りにくい音になる典型例です。"
-        },
-        {
-          "question": "to take a は トゥー テイク ア じゃなくて セイカツ (テイカ)！？ tの音は！？",
-          "answer": "これは非常に複雑な音の変化が起きています。まず「to」は機能語であるため、母音が弱化してシュワ音になり、多くの場合「トゥー」ではなく「タ」またはほとんど聞こえない音に変化します。そして、直前の「seconds」の語尾の[s]音と「to」がリエゾンを起こし、さらに「take a」の[k]と[ə]が連結し、「テイク ア」ではなく「テイカ」のように聞こえます。さらに、この文では「to」の[t]の音が脱落するか、ほとんど聞こえない程度まで弱化しています。そして、「take a」全体が「セイカツ」や「テイカ」と表記されるほど、元の音からかけ離れて聞こえるのは、一連の単語の連結、弱化、脱落が複合的に起こっているためです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "It takes",
@@ -2265,6 +2042,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"It takes\",\"time\":\"279.3\",\"url\":\"TWEET_ID:1999514801836359712\"},{\"label\":\"ten seconds\",\"time\":\"279.7\",\"url\":\"TWEET_ID:1999514837542666341\"},{\"label\":\"to take a selfie\",\"time\":\"280.37\",\"url\":\"TWEET_ID:1999514867888455975\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "It takes",
@@ -2284,8 +2062,7 @@
     ],
     "kugiri_eng": "It / takes / ten seconds / ＜to＞ take a / selfie",
     "kugiri_jp": "〈イ〉 / 【テキ】 / 【テン】 【サイ ケズ (セカズ)】 / 〈セイカツ (テイカ)〉 / 【セルフィ】",
-    "translated": "自撮りをするのに10秒かかる。",
-    "remember": "「It takes $\\\\\\\\text{...}$」(〜（時間）がかかる)は、所要時間を伝える最も一般的な表現です。例：It takes about an hour to get there.（そこに着くまでに約1時間かかります）\n\n「take a selfie」(自撮りをする)は、現代の日常会話でよく使われるフレーズです。例：Can you take a selfie with me?（私と一緒に自撮りしてくれない？）"
+    "translated": "自撮りをするのに10秒かかる。"
   },
   {
     "id": 18,
@@ -2299,19 +2076,6 @@
       "title": "「ハプス」「スメリクン」！？ ネイティブ英語の“消える音・変わる音”を徹底解説！",
       "meta_description": "it seems to me that perhaps the actions of the Samaritanの不自然な発音「ハプス」「スメリクン」の謎を解明。リエゾン、弱化、脱落の法則を学んでリスニング力アップ！",
       "katakana_weak_strong": "〈イッツ〉 【シィムス】 〈トゥ〉 【ミィ】 【ザッ】 【ハプス】 〈ジ〉 【アクションズ】 〈オヴ〉 〈スメリクン〉",
-      "kugiri_eng": "it seems to me that / perhaps / the actions of the Samaritan",
-      "kugiri_jp": "〈イッツ〉 【シィムス】 〈トゥ〉 【ミィ】 【ザッ】 / 【ハプス】 / 〈ジ〉 【アクションズ】 〈オヴ〉 〈スメリクン〉",
-      "translated": "私には、おそらくサマリア人の行動のように思えます。",
-      "tsukkomi": [
-        {
-          "question": "perhaps は パーハプス じゃなくて ハプス！？",
-          "answer": "perhapsが「パーハプス」ではなく「ハプス」のように聞こえるのは、最初の音節の[pər]（パー）が極端に弱化・脱落し、強調されない機能語（この場合は副詞的な役割）として扱われるためです。結果として、強勢のある第2音節の「haps」の部分が強調され、「ハプス」と聞こえるのです。これは英語の\"強弱\"リズム（ストレス・タイミング）を保つための自然な現象です。"
-        },
-        {
-          "question": "the Samaritan は ザ サマリタン じゃなくて スメリクン！？",
-          "answer": "the Samaritanが「ザ サマリタン」ではなく「スメリクン」に聞こえるのは、複合的な音の変化が起きているためです。まず、Samaritanの最初の音節[sə]（サ）が、弱化してシュワ音（あいまい母音）の「ス」（または「サ」の弱く短い音）になります。強勢が第2音節の[mær]（マァ）にあるため、その前後が極端に弱くなります。特に最後の[tən]（タン）は、[t]の音の後ろで母音が弱化・脱落し、鼻音[n]の音だけが残ったような「クン」に近い音になるためです。正確には[sə'mærɪtən]（サ'マリタン）ですが、弱化によって「スメリクン」のように聞こえるのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "it seems to me that",
@@ -2386,6 +2150,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"it seems to me that\",\"time\":\"359.1\",\"url\":\"TWEET_ID:1999843403195154695\"},{\"label\":\"perhaps\",\"time\":\"361.3\",\"url\":\"TWEET_ID:1999843425794076989\"},{\"label\":\"the actions of the Samaritan\",\"time\":\"361.7\",\"url\":\"TWEET_ID:1999843454000755141\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "it seems to me that",
@@ -2405,8 +2170,7 @@
     ],
     "kugiri_eng": "it seems to me that / perhaps / the actions of the Samaritan",
     "kugiri_jp": "〈イッツ〉 【シィムス】 〈トゥ〉 【ミィ】 【ザッ】 / 【ハプス】 / 〈ジ〉 【アクションズ】 〈オヴ〉 〈スメリクン〉",
-    "translated": "私には、おそらくサマリア人の行動のように思えます。",
-    "remember": "「it seems to me that...」（私には〜のように思えます）は、ビジネスや議論で自分の意見を柔らかく伝えるのに最適な表現です。\n例：It seems to me that we should invest more in marketing.（私には、マーケティングにもっと投資すべきのように思えます。）\n\n「perhaps」（おそらく）は、断定を避けて可能性を示すときに役立つ副詞です。文頭、文中、文末のどこでも使えます。\n例：Perhaps we can meet tomorrow instead.（おそらく、代わりに明日会うことができます。）"
+    "translated": "私には、おそらくサマリア人の行動のように思えます。"
   },
   {
     "id": 19,
@@ -2420,15 +2184,6 @@
       "title": "「I'm really」が「ムリィ」に聞こえる！？英語のナチュラル発音の秘密を解明！",
       "meta_description": "ネイティブの「I'm really fascinated」がなぜ「ソ ムリィ ファスネイド」のように聞こえるのか？音の連結（リエゾン）と弱化を徹底解説します。",
       "katakana_weak_strong": "〈ソ〉〈ムリィ〉【ファスネイド】〈バイ〉〈ザ〉〈ウェイ〉〈ザッ〉【コンテクスト】",
-      "kugiri_eng": "So / I'm really / fascinated / by the way that / context",
-      "kugiri_jp": "〈ソ〉 / 〈ムリィ〉 / 【ファスネイド】 / 〈バイ〉〈ザ〉〈ウェイ〉〈ザッ〉 / 【コンテクスト】",
-      "translated": "私は、文脈（コンテクスト）がどのように作用するかということに、本当に魅了されている。",
-      "tsukkomi": [
-        {
-          "question": "I'm really は アイム リアリィ じゃなくて ムリィ！？",
-          "answer": "この聞き取りにくい「ムリィ」は、英語の音の連結（リエゾン）と機能語の弱化が同時に起こっている典型的な例です。本来の「I'm really」は、「I'm」の[m]と「really」の[r]が強く繋がり、「アイム・リアリィ」ではなく、まるで一つの単語のように「ムリィ」という音に変化します。さらに、I'mは機能語（内容語ではない単語）なので、強く発音されず、母音の[aɪ]（アイ）が弱化して「アム」に近い音になり、結果として「ムリィ」のように聞こえるのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "So",
@@ -2521,6 +2276,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"So\",\"time\":\"10\",\"url\":\"TWEET_ID:2000059753171677241\"},{\"label\":\"I'm\",\"time\":\"10.6\",\"url\":\"TWEET_ID:2000059790786285659\"},{\"label\":\"really\",\"time\":\"10.7\",\"url\":\"TWEET_ID:2000059825754087837\"},{\"label\":\"fascinated\",\"time\":\"10.9\",\"url\":\"TWEET_ID:2000059859241476419\"},{\"label\":\"by the way that\",\"time\":\"11.7\",\"url\":\"TWEET_ID:2000059899997499570\"},{\"label\":\"context\",\"time\":\"12.5\",\"url\":\"TWEET_ID:2000059937964314768\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "So",
@@ -2555,8 +2311,7 @@
     ],
     "kugiri_eng": "So / I'm really / fascinated / by the way that / context",
     "kugiri_jp": "〈ソ〉 / 〈ムリィ〉 / 【ファスネイド】 / 〈バイ〉〈ザ〉〈ウェイ〉〈ザッ〉 / 【コンテクスト】",
-    "translated": "私は、文脈（コンテクスト）がどのように作用するかということに、本当に魅了されている。",
-    "remember": "「I'm really fascinated by」(〜に本当に魅了されている)は、自分の興味や熱中していることを伝える際に非常に便利な表現です。例：I'm really fascinated by Japanese history.（日本の歴史に本当に魅了されています。）\n\n「by the way that...」(〜がどのように作用するかによって)は、複雑な現象や仕組みについて言及する際に使える、知的な響きを持つフレーズです。例：I'm surprised by the way that technology changes our lives.（技術が私たちの生活を変化させるやり方に驚いています。）\n\n「context」(文脈、状況)は、ビジネスやアカデミックな会話で頻繁に使われる重要単語です。例：You need to understand the historical context.（あなたはその歴史的な文脈を理解する必要があります。）"
+    "translated": "私は、文脈（コンテクスト）がどのように作用するかということに、本当に魅了されている。"
   },
   {
     "id": 20,
@@ -2570,35 +2325,6 @@
       "title": "「I'm on my way to work」が「アム オン マイ ウェイ ダ ワーク」に聞こえる理由：ネイティブ発音の秘密",
       "meta_description": "英語学習者が必ずつまずく「音の連結（リエゾン）」と「弱化」を、例文『Leaving; I'm on my way to work...』から徹底解説。リスニング力向上に役立つ発音の法則を分かりやすく説明します。",
       "katakana_weak_strong": "【リーヴィング】 / 〈アム〉 【オン】 〈マイ〉 【ウェイ】 〈ダ〉 【ワーク】 / 【ライク】 【ランニング】 〈アップ〉 〈ドア〉 / 【ライ】 【ツアー】 〈ィズ〉 【フォ】 【ワーケン】",
-      "kugiri_eng": "Leaving / I'm / on my way to work / like running out ＜the＞ door / like two hours late / for work, and",
-      "kugiri_jp": "【リーヴィング】 / 〈アム〉 / 【オン】 〈マイ〉 【ウェイ】 〈ダ〉 【ワーク】 / 【ライク】 【ランニング】 〈アップ〉 〈ドア〉 / 【ライ】 【ツアー】 〈ィズ〉 / 【フォ】 【ワーケン】",
-      "translated": "仕事に向かっているんだ。仕事に2時間も遅刻しそうで、家を飛び出してきたんだ。",
-      "tsukkomi": [
-        {
-          "question": "I'm は アィム じゃなくて アム !?",
-          "answer": "I'm（I am）のIは、機能語ではないため本来は強く発音されますが、文頭や会話の流れによっては、機能語（前置詞や助動詞など）と同じように母音が弱化し、短く「アム」のように聞こえることがあります。これは、文全体のリズムを優先し、内容語（Leavingやwork）を際立たせるために起こる現象です。"
-        },
-        {
-          "question": "way to は ウェイ トゥ じゃなくて ウェイ ダ!?",
-          "answer": "way toの「to」は、前置詞（機能語）なので弱く発音され、母音が「シュワ音」（曖昧な母音）に変化することがよくあります。また、toのtは、wayの後の母音とつながることで、英語のリズムで早く発音される際などに、「d」に近い音（フラップT、またはラ行音）になることがあります。これが「ウェイ ダ」のように聞こえる原因です。"
-        },
-        {
-          "question": "running out は ランニング アウト　じゃなくて ランニング アップ！？",
-          "answer": "running out the doorの「out」は、文脈によっては強く発音されますが、この例では「running」の後に素早く発音され、「out」のtが脱落（ストップT）、または弱化して飲み込まれる形で、次の「the」と繋がる（リエゾン）ことによって「アップ」に近い音に聞こえたと考えられます。特にoutのtは、素早い発音の中で消えやすい音です。"
-        },
-        {
-          "question": "like two hours late は ライク トゥー ハワーズ レイト じゃなくて ライ ツアー ィズ ！？",
-          "answer": "like two hours lateは、音の連結と脱落の連続です。まず、likeの語尾の子音[k]と次のtwoの[t]が連結し、likeの[k]が弱まるか脱落します。さらに、hoursのhが脱落し（H-dropping）、\"two hours\"が \"ツアー ィズ\" のように、音が繋がりかつ母音が弱化することで聞こえる形です。"
-        },
-        {
-          "question": "lateの音は！？",
-          "answer": "late for workのlateは、直後のforと連結（リエゾン）する際に、lateの語尾の[t]が脱落するか、ほとんど発音されない「ストップT」になり、forの[f]の音に埋もれて聞こえなくなっていると考えられます。このように、単語の境界で音が消える「脱落」は、ネイティブ発音の大きな特徴の一つです。"
-        },
-        {
-          "question": "workn, and は ワーク アンド じゃなくて ワーケン!?",
-          "answer": "work, andは、まずandの「a」の母音が弱化し（シュワ音化）、次に「d」の音が脱落しています。その結果、workの[k]とandの残った[n]の音が繋がり、「ワーケン」のように聞こえる現象（リエゾンと弱化・脱落の組み合わせ）が起こっています。"
-        }
-      ],
       "image_sections": [
         {
           "label": "Leaving",
@@ -2689,6 +2415,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"Leaving\",\"time\":\"781\",\"url\":\"TWEET_ID:2000362041333457387\"},{\"label\":\"I'm on my way to work\",\"time\":\"781.2\",\"url\":\"TWEET_ID:2000362075982598174\"},{\"label\":\"like running out the door like two hours late for work\",\"time\":\"782.3\",\"url\":\"TWEET_ID:2000362156072776101\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "Leaving",
@@ -2708,8 +2435,7 @@
     ],
     "kugiri_eng": "Leaving / I'm / on my way to work / like running out ＜the＞ door / like two hours late / for work, and",
     "kugiri_jp": "【リーヴィング】 / 〈アム〉 / 【オン】 〈マイ〉 【ウェイ】 〈ダ〉 【ワーク】 / 【ライク】 【ランニング】 〈アップ〉 〈ドア〉 / 【ライ】 【ツアー】 〈ィズ〉 / 【フォ】 【ワーケン】",
-    "translated": "仕事に向かっているんだ。仕事に2時間も遅刻しそうで、家を飛び出してきたんだ。",
-    "remember": "「on my way to 〜」（〜へ向かっている最中）は、移動状況を伝える際に最もよく使われる表現です。toの後に場所やイベントを入れて使います。例：I'm on my way to the meeting.（会議に向かっている最中だ。）\n\n「running out the door」（家を飛び出すように急ぐ）は、非常に急いでいる状況を表すイディオム的な表現です。日常会話で慌てている様子を伝えるのに便利です。例：She was running out the door because she missed the bus.（彼女はバスに乗り遅れたので、家を飛び出すように急いでいた。）\n\n「two hours late for work」（仕事に2時間遅刻）のように、「late for 〜」（〜に遅れる）は遅延を伝える際に頻繁に使われます。時間だけでなく、予定やイベントに対しても使えます。例：I hope I won't be late for the party.（パーティーに遅刻しないといいんだけど。）"
+    "translated": "仕事に向かっているんだ。仕事に2時間も遅刻しそうで、家を飛び出してきたんだ。"
   },
   {
     "id": 21,
@@ -2723,27 +2449,6 @@
       "title": "「フュー!? ワナ!?」ネイティブ発音の秘密！\"Let me know if you want to hear more about this kind of thing.\"",
       "meta_description": "if youが「フュー」、want toが「ワナ」に聞こえる理由を徹底解説！ネイティブの音の連結・弱化の法則を学んで、リスニング力を飛躍的にアップさせましょう。",
       "katakana_weak_strong": "【レ】〈ミ〉 【ノウ】 〈フュー〉 【ワナ】 【ヒア】 【モア】 〈バウ〉 【ディス】 〈カナ〉 【スィング】",
-      "kugiri_eng": "Let me know / if you / want to / hear more / about this / kind of / thing.",
-      "kugiri_jp": "【レ】〈ミ〉 【ノウ】 / 〈フュー〉 / 【ワナ】 / 【ヒア】 【モア】 / 〈バウ〉 【ディス】 / 〈カナ〉 / 【スィング】",
-      "translated": "このことについてもっと聞きたい場合は、私に知らせてください。",
-      "tsukkomi": [
-        {
-          "question": "if you は イフ ユー じゃなくて フュー！？",
-          "answer": "ifの語尾[f]の音とyouの語頭[j]の音が連結（リエゾン）することで、子音[f]が次の母音とくっつき「フィユー」のような音になります。さらに、文の中で弱く発音されるため、母音が脱落・弱化して「フュー」のように聞こえるのです。機能語（if、youなど）が弱く発音される英語のリズムの典型的な例です。"
-        },
-        {
-          "question": "want to は ウォント トゥ じゃなくて ワナ!?",
-          "answer": "want toは、会話の中で最も頻繁に弱化する表現の一つです。toの母音が曖昧なシュワ音（/ə/）に弱化し、前のwantの語尾[t]の音も脱落または弾音化（フラップT）するため、全体として「ワナ」（wanna）という音に変化します。この変化は英語圏で非常に一般的で、フォーマルな場以外では日常的に使われます。"
-        },
-        {
-          "question": "about は アバウト じゃなくて バウ!?",
-          "answer": "aboutのような多音節の単語は、文の中で弱く発音される際、強勢のない最初の母音（この場合は/ə/）が脱落したり弱化したりすることがよくあります。その結果、「アバウト」の「ア」の音がほとんど消え、次の単語（this）と連結（リエゾン）して「バウディス」のように聞こえるのです。"
-        },
-        {
-          "question": "kind of は カインド オヴ じゃなくて カナ!?",
-          "answer": "kind ofもまた、日常会話で極端に弱化・短縮される代表的な表現です。kindの語尾[d]の音が脱落し、ofの母音が弱化・脱落して子音[v]の音も失われるか弱まり、全体が次の単語（thing）と連結することで「カナ」のような短い音になります。これは音の脱落（エリジョン）と弱化、そしてリエゾンが同時に起こる現象です。"
-        }
-      ],
       "image_sections": [
         {
           "label": "Let me know",
@@ -2825,6 +2530,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"Let me know\",\"time\":\"434.5\",\"url\":\"TWEET_ID:2000533228076302571\"},{\"label\":\"if you want to hear more\",\"time\":\"435.25\",\"url\":\"TWEET_ID:2000533271441252749\"},{\"label\":\"about this kind of thing.\",\"time\":\"436.25\",\"url\":\"TWEET_ID:2000533316387422344\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "Let me know",
@@ -2844,8 +2550,7 @@
     ],
     "kugiri_eng": "Let me know / if you / want to / hear more / about this / kind of / thing.",
     "kugiri_jp": "【レ】〈ミ〉 【ノウ】 / 〈フュー〉 / 【ワナ】 / 【ヒア】 【モア】 / 〈バウ〉 【ディス】 / 〈カナ〉 / 【スィング】",
-    "translated": "このことについてもっと聞きたい場合は、私に知らせてください。",
-    "remember": "「Let me know」(私に知らせてください)は、日常的な依頼や確認に非常に便利な表現です。例：Let me know if you can make it.（間に合うかどうか知らせてね）\n\n「if you want to」(もしあなたが〜したいなら)は、相手の意向を尋ねる時によく使われる丁寧な表現です。この部分が「フュー ワナ」と短縮されることを意識して使いましょう。例：If you want to try, just tell me.（試したいなら、言ってください）\n\n「kind of thing」(この種のこと/この手のもの)は、特定のカテゴリやテーマを指す時に使える便利なフレーズです。例：I'm interested in this kind of thing.（私はこの手のことに興味があります）"
+    "translated": "このことについてもっと聞きたい場合は、私に知らせてください。"
   },
   {
     "id": 22,
@@ -2859,27 +2564,6 @@
       "title": "「ジャスティン」？ネイティブ発音の秘密を解明！ \"just in case I end up...\"",
       "meta_description": "just in case I end up needing to recut this piece later on.が「ジャスティン」「エンダッ」に聞こえる理由を解説。リエゾン・弱化をマスターしてリスニング力をアップさせましょう。",
       "katakana_weak_strong": "【ジャスティン】 〈ケィス〉 【アイ】 【エンダッ】 【ニード】 〈トゥ〉 【リィカッ】 【ディス】 【ピース】 【レドロン】",
-      "kugiri_eng": "just in case / I end up / needing to / recut this piece / later on.",
-      "kugiri_jp": "【ジャスティン】 〈ケィス〉 / 【アイ】 【エンダッ】 / 【ニード】 〈トゥ〉 / 【リィカッ】 【ディス】 【ピース】 / 【レドロン】",
-      "translated": "念のため、後でこの部分をカットし直すことになった場合に備えて。",
-      "tsukkomi": [
-        {
-          "question": "just in は ジャスト イン じゃなくて ジャスティン!?",
-          "answer": "justの語尾の[t]の音が次の単語inの[i]と連結（リエゾン）することで「ジャスティン」のように聞こえます。子音＋母音の連結は英語では非常によく起こる現象です。また、justはやや弱く、inは強く発音されがちなため、まるで一つの単語のように聞こえるのです。"
-        },
-        {
-          "question": "end up は エンド アップ じゃなくて エンダッ!?",
-          "answer": "endの語尾の[d]とupの頭の[ʌ]が連結（リエゾン）することで「エンダッ」のように聞こえます。また、endの[d]の音が脱落したり、ほとんど聞こえなくなったりする現象（脱落）も同時に起こっているため、\"d\"の音がほとんど聞こえずに「エンダッ」に近い音になるのです。"
-        },
-        {
-          "question": "needing は ニーディング じゃなくて ニード!?",
-          "answer": "needingの語尾の[ŋ]（ング）の音が脱落し、さらに直後のtoの[t]と連結して音が変化した結果、「ニード」のように聞こえることがあります。ingのgが脱落するのは口語で頻繁に起こる現象（g-dropping）で、その後のtoの母音も弱まることで、全体が非常に速く、短く発音されるのです。"
-        },
-        {
-          "question": "later on は レイター オン じゃなくて レドロン!?",
-          "answer": "laterの[t]の音が、母音に挟まれることで日本語のラ行に近い「R音」（フラップTまたはT-flapping）に変化し、「レイター」が「レイダー」や「レダー」のように聞こえます。さらに、onと連結（リエゾン）して「レドロン」のような音になります。この「レドロン」という音は、会話のスピードが速くなると特に顕著になります。"
-        }
-      ],
       "image_sections": [
         {
           "label": "just in case",
@@ -2968,6 +2652,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"just in case\",\"time\":\"476.5\",\"url\":\"TWEET_ID:2000928461972758857\"},{\"label\":\"I end up needing to\",\"time\":\"477.5\",\"url\":\"TWEET_ID:2000928494390480987\"},{\"label\":\"recut this piece\",\"time\":\"478.9\",\"url\":\"TWEET_ID:2000928529085780265\"},{\"label\":\"later on.\",\"time\":\"480.2\",\"url\":\"TWEET_ID:2000928565513347252\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "just in case",
@@ -2992,8 +2677,7 @@
     ],
     "kugiri_eng": "just in case / I end up / needing to / recut this piece / later on.",
     "kugiri_jp": "【ジャスティン】 〈ケィス〉 / 【アイ】 【エンダッ】 / 【ニード】 〈トゥ〉 / 【リィカッ】 【ディス】 【ピース】 / 【レドロン】",
-    "translated": "念のため、後でこの部分をカットし直すことになった場合に備えて。",
-    "remember": "「just in case」(念のために、万が一に備えて)は、会話の中で予防策やバックアッププランを伝える際によく使われる表現です。例：I took an umbrella, just in case it rains. (念のため、雨が降る場合に備えて傘を持っていった。)\n\n「end up doing (ing)」(結局〜することになる、最終的に〜に終わる)は、予想とは違う結果や最終的な状態を表すのに便利なフレーズです。例：We missed the train and ended up taking a taxi. (私たちは電車に乗り遅れ、結局タクシーに乗ることになった。)\n\n「later on」(後で、そのうち)は、近い未来や漠然とした未来の時点を指す際にlaterよりも少し口語的で自然に聞こえる表現です。例：Let's talk about it later on. (それについては後で話しましょう。)"
+    "translated": "念のため、後でこの部分をカットし直すことになった場合に備えて。"
   },
   {
     "id": 23,
@@ -3007,23 +2691,6 @@
       "title": "ネイティブの発音はこう聞こえる！『I'd love to hear the questions...』の秘密",
       "meta_description": "『I'd』が消える？『topic or』が『トピカ』に？ネイティブ特有の音の連結（リエゾン）や脱落を詳しく解説。リスニング力が飛躍的にアップする発音のコツを伝授します。",
       "katakana_weak_strong": "〈ラヴ〉 【ド】 【ヒア】 〈ザ〉 (【ヒヨ】 【ド】) 【クエスチョンズ】 (【クワッシンジュ】) 【ユ】 【ハヴ】 【アバウト】 【ディス】 【トピカ】",
-      "kugiri_eng": "＜I'd＞ love to / hear / the / questions / you / have / about / this / topic or",
-      "kugiri_jp": "〈ラヴ〉 【ド】 / 【ヒア (ヒヨ)】 / 〈ザ (ド)〉 / 【クエスチョンズ (クワッシンジュ)】 / 【ユ】 / 【ハヴ】 / 【アバウト】 / 【ディス】 / 【トピカ】",
-      "translated": "このトピックについて、あなたが持っている質問をぜひお聞きしたいです。",
-      "tsukkomi": [
-        {
-          "question": "I'd の 音が聴こえない！？",
-          "answer": "I'dのdは「脱落（ドロップ）」しやすい音です。特に次にloveのような子音が続く場合、舌を上あごにつけて息を止めるだけの状態になり、音として外に響かないため、日本人には「聞こえない」状態になります。"
-        },
-        {
-          "question": "love to は ラヴ トゥ じゃなくて ラヴ ド!?",
-          "answer": "loveの終わりの音[v]とtoの[t]が連続すると、toの音が弱化し、さらに前の有声音[v]の影響を受けて濁ったような「ド」に近い音に変化することがあります。これを「同化」や「弱化」と呼びます。"
-        },
-        {
-          "question": "topic or は トピック オア じゃなくて トピカ！？",
-          "answer": "topicの語尾の[k]とorの最初の母音[ɔːr]が連結（リエゾン）して「トピカ」のように聞こえます。単語がバラバラに発音されるのではなく、一つの単語のように繋がって発音されるためです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "I'd love to hear",
@@ -3099,6 +2766,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"I'd love to hear\",\"time\":\"244.2\",\"url\":\"TWEET_ID:2001249850013458770\"},{\"label\":\"the questions you have\",\"time\":\"244.71\",\"url\":\"TWEET_ID:2001249880564776996\"},{\"label\":\"about this topic or...\",\"time\":\"245.7\",\"url\":\"TWEET_ID:2001249912324051096\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "I'd love to hear",
@@ -3118,8 +2786,7 @@
     ],
     "kugiri_eng": "＜I'd＞ love to / hear / the / questions / you / have / about / this / topic or",
     "kugiri_jp": "〈ラヴ〉 【ド】 / 【ヒア (ヒヨ)】 / 〈ザ (ド)〉 / 【クエスチョンズ (クワッシンジュ)】 / 【ユ】 / 【ハヴ】 / 【アバウト】 / 【ディス】 / 【トピカ】",
-    "translated": "このトピックについて、あなたが持っている質問をぜひお聞きしたいです。",
-    "remember": "「I'd love to ～」(ぜひ～したい)は、I want to よりも丁寧で熱意が伝わる表現です。例：I'd love to join you.(ぜひご一緒したいです)\n\n「questions you have」(あなたが持っている質問)は、相手に質問を促す際の定番フレーズです。例：Do you have any questions you have?(何か質問はありますか？)"
+    "translated": "このトピックについて、あなたが持っている質問をぜひお聞きしたいです。"
   },
   {
     "id": 24,
@@ -3128,20 +2795,11 @@
     "end_time": "1231.3",
     "updated_at": "2026-02-06T10:26:57.292Z",
     "question": "Brexit would be minimal and we would just go ahead and start",
-    "question_katakana": "【ブレクシット】 〈ウッ ビ〉 【ミニモァ】 〈アン ウィ ウ〉 【ジャス】 【ゴ アヘ】 〈ァン〉 【スタート】",
+    "question_katakana": "ブレクシット ウッ ビ ミニモァ アン ウィ ウ ジャス ゴ アヘ ァン スタート",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『minimal』が『ミニモァ』になる秘密",
       "meta_description": "「minimal」は「ミニマル」じゃない？Brexitの例文を通して、ネイティブ特有のLの発音変化「ダークL」や、自然な英語のリズムを詳しく解説します。リスニング力アップに役立つ発音のコツが満載です。",
       "katakana_weak_strong": "【ブレクシット】 〈ウッ ビ〉 【ミニモァ】 〈アン ウィ ウ〉 【ジャス】 【ゴ アヘ】 〈ァン〉 【スタート】",
-      "kugiri_eng": "Brexit / would be / minimal / and we / would / just / go ahead / and / start",
-      "kugiri_jp": "【ブレクシット】 / 〈ウッ ビ〉 / 【ミニモァ】 / 〈アン ウィ〉 / 〈ウ〉 / 【ジャス】 / 【ゴ アヘ】 / 〈ァン〉 / 【スタート】",
-      "translated": "ブレグジットの影響は最小限にとどまり、私たちはそのまま進んで開始することになるでしょう。",
-      "tsukkomi": [
-        {
-          "question": "minimal は ミニマルじゃなくて ミニモァ !?",
-          "answer": "minimalの語尾の[l]は、後ろに母音が続かない場合に「ダークL」と呼ばれ、舌先を上に付けずに喉の奥を鳴らすような音になります。そのため、日本人には「ル」ではなく「オ」や「ア」に近い「モァ」のように聞こえるのです。これは英語の自然な発音で非常によく起こる現象です。"
-        }
-      ],
       "image_sections": [
         {
           "label": "Brexit would be",
@@ -3209,6 +2867,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"Brexit would be\",\"time\":\"1228\",\"url\":\"TWEET_ID:2001262528786321759\"},{\"label\":\"minimal\",\"time\":\"1229.5\",\"url\":\"TWEET_ID:2001262579885416864\"},{\"label\":\"and we would just go ahead and start\",\"time\":\"1231.3\",\"url\":\"TWEET_ID:2001262612093554865\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "Brexit would be",
@@ -3228,8 +2887,7 @@
     ],
     "kugiri_eng": "Brexit / would be / minimal / and we / would / just / go ahead / and / start",
     "kugiri_jp": "【ブレクシット】 / 〈ウッ ビ〉 / 【ミニモァ】 / 〈アン ウィ〉 / 〈ウ〉 / 【ジャス】 / 【ゴ アヘ】 / 〈ァン〉 / 【スタート】",
-    "translated": "ブレグジットの影響は最小限にとどまり、私たちはそのまま進んで開始することになるでしょう。",
-    "remember": "「minimal」(最小限の)は、影響や被害が少ないことを伝える際に非常に便利な単語です。例：The damage was minimal.(被害は最小限だった。)\n\n「go ahead」(進める、どうぞ)は、計画を続行したり、相手に許可を与えたりする時に日常的に使われます。例：Please go ahead with your presentation.(プレゼンを進めてください。)\n\n「start」(開始する)は、プロジェクトや活動の始まりを指す基本単語です。例：Let's start the meeting.(会議を始めましょう。)"
+    "translated": "ブレグジットの影響は最小限にとどまり、私たちはそのまま進んで開始することになるでしょう。"
   },
   {
     "id": 25,
@@ -3243,31 +2901,6 @@
       "title": "ネイティブの発音はこう聞こえる！『I'll notice the cheese goes all the way to the crust...』の秘密",
       "meta_description": "「I'll」が「アル」に、「crust」が「クラス」に聞こえる？ピザの感想を述べる日常フレーズを使って、英語特有の音の脱落や連結（リエゾン）をプロが詳しく解説します。",
       "katakana_weak_strong": "〈アル〉 【ノルステ】 〈チーズ〉 【ゴーズ】 【オール】 〈ザ〉 【ウェイ】 〈トゥ〉 〈ザ〉 【クラス】 【ウィッチャ】 【プリシエイト】",
-      "kugiri_eng": "I'll / notice / ＜the＞ cheese / goes / all the way / to the / crust, / which I / appreciate.",
-      "kugiri_jp": "〈アル〉 / 【ノルステ】 / 〈チーズ〉 / 【ゴーズ】 / 【オール ザ ウェイ】 / 〈トゥ ザ〉 / 【クラス】 / 【ウィッチャ】 / 【プリシエイト】",
-      "translated": "チーズが端（生地の縁）までたっぷりかかっているのに気づくでしょう、それは本当にありがたいことです。",
-      "tsukkomi": [
-        {
-          "question": "I'll は アイル じゃなくて アル！？",
-          "answer": "I'llは短縮形のため、日常会話では母音が極めて弱く発音されます。口をあまり開けずに「L」の音に移行するため、「アイル」とはっきり言わず「アル」や「ウル」のように聞こえるのが一般的です。"
-        },
-        {
-          "question": "notice は ノーディス じゃなくて ノゥステ!?",
-          "answer": "noticeの語末の[s]と、次のtheの始まりの音が干渉したり、話し手のスピードが速かったりすると、語尾の音が脱落したり変化したりします。ここでは[t]の音がフラップ化し、さらに語尾が飲み込まれるように聞こえるため「ノゥステ」に近い響きになります。"
-        },
-        {
-          "question": "the cheese の the は聴こえない。",
-          "answer": "theは機能語（文法的な役割のみを持つ言葉）なので、非常に弱く、かつ素早く発音されます。特にcheeseのような強い名詞の前では、[th]の音がほとんど発音されず、前の語と繋がって消えたように感じることがよくあります。"
-        },
-        {
-          "question": "crust は クラスト じゃなくて クラス！？",
-          "answer": "英語では語末の[t]の音が破裂せずに止まる「飲み込まれる音（ストップ音）」になることが非常に多いです。そのため「クラスト」の「ト」が聞こえず、「クラス」で止まっているように聞こえます。"
-        },
-        {
-          "question": "which I appreciate. は ウィッチ アイ アプリシエイト じゃなくて ウィッチャ プリシエイト!?",
-          "answer": "whichの語末の[ch]と、次のIの母音が連結（リエゾン）して「ウィッチャ」となります。さらにappreciateの最初の母音[a]は弱形（シュワ音）として非常に弱く発音されるため、実質的に「プリシエイト」の部分が際立って聞こえるのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "I'll notice",
@@ -3351,6 +2984,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"I'll notice\",\"time\":\"540.7\",\"url\":\"TWEET_ID:2001266794053746713\"},{\"label\":\"the cheese goes all the way to the crust,\",\"time\":\"541.3\",\"url\":\"TWEET_ID:2001266827033563593\"},{\"label\":\"which I appreciate.\",\"time\":\"542.9\",\"url\":\"TWEET_ID:2001266861032546579\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "I'll notice",
@@ -3370,8 +3004,7 @@
     ],
     "kugiri_eng": "I'll / notice / ＜the＞ cheese / goes / all the way / to the / crust, / which I / appreciate.",
     "kugiri_jp": "〈アル〉 / 【ノルステ】 / 〈チーズ〉 / 【ゴーズ】 / 【オール ザ ウェイ】 / 〈トゥ ザ〉 / 【クラス】 / 【ウィッチャ】 / 【プリシエイト】",
-    "translated": "チーズが端（生地の縁）までたっぷりかかっているのに気づくでしょう、それは本当にありがたいことです。",
-    "remember": "「all the way to」(〜までずっと)は、距離や範囲が最後まで到達していることを強調する時に便利です。例：The line goes all the way to the corner.（行列が角のところまでずっと続いている）\n\n「which I appreciate」(それはありがたいです)は、相手がしてくれたことや、ある状況に対して感謝を述べる定番の付け足しフレーズです。例：You finished it early, which I appreciate.（早く終わらせてくれて、感謝しています）"
+    "translated": "チーズが端（生地の縁）までたっぷりかかっているのに気づくでしょう、それは本当にありがたいことです。"
   },
   {
     "id": 26,
@@ -3380,36 +3013,11 @@
     "end_time": "2699.7",
     "updated_at": "2026-02-06T10:47:46.474Z",
     "question": "but since it's my fault, not yours, I'm going to cut my income 60%",
-    "question_katakana": "〈バッ〉 【シンシズ】 〈ナ〉 【フォ】 〈ナ〉 【ユアーズ】 【アムリカ】 【マイ】 【インカム】 【シックスティ】 【パーセント】",
+    "question_katakana": "バッ シンシズ ナ フォ ナ ユアーズ アムリカ マイ インカム シックスティ パーセント",
     "article_text": {
       "title": "ネイティブ発音の衝撃！'But since it's my fault...' が「バッ シンシズ ナ フォ...」に聞こえる理由",
       "meta_description": "「since it's」が「シンシズ」！？ネイティブ特有の音の連結（リエゾン）や弱化を、具体的な例文「But since it's my fault, not yours, I'm going to cut my income 60%」を使って解説します。",
       "katakana_weak_strong": "〈バッ〉 【シンシズ】 〈ナ〉 【フォ】 〈ナ〉 【ユアーズ】 【アムリカ】 【マイ】 【インカム】 【シックスティ】 【パーセント】",
-      "kugiri_eng": "But since it's / my / fault, / not / yours, / I'm going to cut / my / income / 60%",
-      "kugiri_jp": "〈バッ〉 【シンシズ】 / 〈ナ〉 / 【フォ】 / 〈ナ〉 / 【ユアーズ】 / 【アムリカ】 / 〈マイ〉 / 【インカム】 / 【シックスティ】 / 【パーセント】",
-      "translated": "しかし、それはあなたのせいではなく私の責任なので、私の収入を60％カットするつもりです。",
-      "tsukkomi": [
-        {
-          "question": "since it's は シンス イッツ じゃなくて シンシズ!?",
-          "answer": "sinceの語尾の[s]（または[z]に近い音）とit'sの[i]が連結（リエゾン）し、さらにit'sの語尾が次の単語とつながることで「シンシズ」のように一気に発音されます。個別の単語を区切らず、一つの単語のように滑らかに繋げるのがネイティブ流です。"
-        },
-        {
-          "question": "my は マイ じゃなくて ナ!?",
-          "answer": "myは文脈の中で強調されない場合、非常に短く弱く発音されます。母音の[ai]が弱化して「ナ」や「ヌ」に近い音になり、前後の音と混ざり合うことで、日本人には「ナ」としか聞こえないことがよくあります。"
-        },
-        {
-          "question": "fault は フォルト じゃなくて フォ！？",
-          "answer": "faultの語尾の[l]や[t]は、ネイティブスピーカーが素早く発音する際、舌を弾かずに音を飲み込む「飲み込み音（ストップ音）」になりやすいです。その結果、カタカナの「ルト」の部分が消えて「フォ」とだけ聞こえる現象が起こります。"
-        },
-        {
-          "question": "not は ノット　じゃなくて ナ!?",
-          "answer": "notの[o]はアメリカ英語では「ア」に近い音で発音されることが多く、さらに語尾の[t]が脱落（ドロップ）することで、短く「ナ」と聞こえます。これは機能語が弱く発音される際によく見られる現象です。"
-        },
-        {
-          "question": "I'm going to cut は アイム ゴーイング トゥ カット じゃなくて アムリカ！？",
-          "answer": "I'm going toは口語で「gonna（ガナ）」となり、さらにそれが圧縮されると「I'ma（アマ）」のような音になります。そこにcutの音が連結し、[t]がフラップ音（ラ行に近い音）に変化することで、全体として「アムリカ」という一つの塊のような音に聞こえるのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "But since it's my fault,",
@@ -3493,6 +3101,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"But since it's my fault,\",\"time\":\"2696.1\",\"url\":\"TWEET_ID:2001269707492757611\"},{\"label\":\"not yours,\",\"time\":\"2697.2\",\"url\":\"TWEET_ID:2001269742066344286\"},{\"label\":\"I'm going to cut my income 60%\",\"time\":\"2697.8\",\"url\":\"TWEET_ID:2019723753413074982\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "But since it's my fault,",
@@ -3512,8 +3121,7 @@
     ],
     "kugiri_eng": "But since it's / my / fault, / not / yours, / I'm going to cut / my / income / 60%",
     "kugiri_jp": "〈バッ〉 【シンシズ】 / 〈ナ〉 / 【フォ】 / 〈ナ〉 / 【ユアーズ】 / 【アムリカ】 / 〈マイ〉 / 【インカム】 / 【シックスティ】 / 【パーセント】",
-    "translated": "しかし、それはあなたのせいではなく私の責任なので、私の収入を60％カットするつもりです。",
-    "remember": "「It's my fault.」(私のせいです)は、自分の非を認める際の定番フレーズです。例：I'm sorry, it's my fault that we missed the bus.(ごめん、バスに乗り遅れたのは私のせいだ。)\n\n「I'm going to...」(〜するつもりです)は、これからの予定や決意を伝える表現です。例：I'm going to call him later.(後で彼に電話するつもりです。)\n\n「not yours」(あなたのじゃない)は、所有や責任を否定する時に使います。例：This umbrella is mine, not yours.(この傘は私ので、あなたのではありません。)"
+    "translated": "しかし、それはあなたのせいではなく私の責任なので、私の収入を60％カットするつもりです。"
   },
   {
     "id": 27,
@@ -3527,15 +3135,6 @@
       "title": "ネイティブの発音はこう聞こえる！『mind that』が『マイ ノット』に聞こえる秘密",
       "meta_description": "英語のリスニングで『mind that』が『マイ ノット』と聞こえて驚いたことはありませんか？ネイティブ特有の音の連結（リエゾン）と脱落（リダクション）の仕組みを、専門家が分かりやすく解説します。",
       "katakana_weak_strong": "【エクスパーツ】 〈ワァ〉 【マッチ】 【レス】 【コンフィデント】 〈イン〉 〈ザ〉 【シミラリティ】 〈バッ〉 【ネバ】 【マイ ノット】",
-      "kugiri_eng": "Experts were / much less / confident / in the / similarity, / but / never / mind that",
-      "kugiri_jp": "【エクスパーツ】 〈ワァ〉 / 【マッチ】 【レス】 / 【コンフィデント】 / 〈イン〉 〈ザ〉 / 【シミラリティ】 / 〈バッ〉 / 【ネバ】 / 【マイ ノット】",
-      "translated": "専門家たちはその類似性についてはるかに自信を持っていませんでしたが、それはさておき。",
-      "tsukkomi": [
-        {
-          "question": "mind that は マインド ザット じゃなくて マイ ノット!?",
-          "answer": "そう聞こえるのには理由があります！まず『mind』の語尾の [d] は、次に子音が続く場合、ほとんど発音されない『脱落（脱落）』が起こります。さらに『that』の最初の [th] 音も、速い会話の中では非常に弱く発音されるか、前の音に飲み込まれることがあります。その結果、残った『mai』と『that』の後半部分が繋がり、日本語の『マイ ノット』に近い音として認識されるのです。これはネイティブが省エネで話すときによく起こる現象です。"
-        }
-      ],
       "image_sections": [
         {
           "label": "Experts were",
@@ -3603,6 +3202,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"Experts were\",\"time\":\"157.2\",\"url\":\"TWEET_ID:2001276267132604497\"},{\"label\":\"much less confident in the similarity,\",\"time\":\"158.2\",\"url\":\"TWEET_ID:2001276302620594665\"},{\"label\":\"but never mind that.\",\"time\":\"159.8\",\"url\":\"TWEET_ID:2001276343028478391\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "Experts were",
@@ -3622,8 +3222,7 @@
     ],
     "kugiri_eng": "Experts were / much less / confident / in the / similarity, / but / never / mind that",
     "kugiri_jp": "【エクスパーツ】 〈ワァ〉 / 【マッチ】 【レス】 / 【コンフィデント】 / 〈イン〉 〈ザ〉 / 【シミラリティ】 / 〈バッ〉 / 【ネバ】 / 【マイ ノット】",
-    "translated": "専門家たちはその類似性についてはるかに自信を持っていませんでしたが、それはさておき。",
-    "remember": "「Never mind」(気にしないで／なんでもない)は、言い直したい時や相手の謝罪を軽く流す時に非常に便利な表現です。例：Never mind, I found my keys.(気にしないで、鍵は見つかったから)\n\n「much less」(〜はなおさら……ない)は、否定文の後に続けて、さらに可能性が低いことを示す時に使います。例：He can't speak English, much less French.(彼は英語が話せないし、フランス語ならなおさらだ)\n\n「confident in」(〜に自信がある)は、自分の能力や特定の事柄に対して確信を持っている状態を表します。例：I'm confident in my decision.(自分の決断に自信がある)"
+    "translated": "専門家たちはその類似性についてはるかに自信を持っていませんでしたが、それはさておき。"
   },
   {
     "id": 28,
@@ -3637,19 +3236,6 @@
       "title": "ネイティブの発音はこう聞こえる！『Well you know what?』の驚きの真実",
       "meta_description": "「Well you know what?」が「エットネイ ワィ」に聞こえる理由をプロが解説！ネイティブ特有のリズムや音の消失（脱落）をマスターして、リスニング力を劇的に向上させましょう。",
       "katakana_weak_strong": "〈エット〉【ネイ】 【ワ】 〈ユ〉 【ノ】 【ワィ】",
-      "kugiri_eng": "Well / you know / ＜what?＞",
-      "kugiri_jp": "〈エット〉【ネイ】 / 【ワ】 〈ユ〉 【ノ】 / 【ワィ】",
-      "translated": "あのね、ちょっと聞いてくれる？（あのさ、何だと思う？）",
-      "tsukkomi": [
-        {
-          "question": "Well は ウェル じゃなくて エットネイ ワ!?",
-          "answer": "Wellが「エットネイ ワ」に聞こえるのは、文頭の「Well」がため息のような短い音から始まり、かつ直後の「you know」と高速で繋がっているためです。特にネイティブが言葉を濁したり、話を切り出す際にLの音がほとんど発音されず、喉の奥で止まるような「ダークL」の状態から次の「you」へ滑らかに移行することで、カタカナの「ウェル」とはかけ離れたリズムが生まれます。"
-        },
-        {
-          "question": "what は ワット じゃなくて ワィ！？",
-          "answer": "whatが「ワィ」に聞こえるのは、語尾の [t] の音が消失（脱落）し、さらに疑問文特有の語尾の上げ調子（イントネーション）が加わるためです。ネイティブは語尾の [t] をハッキリ発音せず、息を止めるだけで終わらせることが多いため、日本語の「ト」のような強い母音は含まれません。その結果、前の音と繋がって「ワィ」のように短く鋭く聞こえるのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "Well",
@@ -3721,6 +3307,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"Well\",\"time\":\"1068.4\",\"url\":\"TWEET_ID:2001280719142924482\"},{\"label\":\"you know\",\"time\":\"1069.47\",\"url\":\"TWEET_ID:2001280748305953043\"},{\"label\":\"what?\",\"time\":\"1069.7\",\"url\":\"TWEET_ID:2001280792518074381\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "Well",
@@ -3740,8 +3327,7 @@
     ],
     "kugiri_eng": "Well / you know / ＜what?＞",
     "kugiri_jp": "〈エット〉【ネイ】 / 【ワ】 〈ユ〉 【ノ】 / 【ワィ】",
-    "translated": "あのね、ちょっと聞いてくれる？（あのさ、何だと思う？）",
-    "remember": "「Well you know...」(あのね、ええと)は、次に言うことを考えている時に非常に便利な「つなぎ言葉」です。例：Well you know... I think you are right. (ええと、君が正しいと思うよ。)\n\n「You know what?」(あのさ、ちょっと聞いてよ)は、驚くようなニュースや新しい話題を切り出す時の定番フレーズです。例：You know what? I'm getting married! (あのね、私結婚するんだ！)"
+    "translated": "あのね、ちょっと聞いてくれる？（あのさ、何だと思う？）"
   },
   {
     "id": 29,
@@ -3755,23 +3341,6 @@
       "title": "ネイティブの発音はこう聞こえる！『It'll be like being in the flow…』の秘密",
       "meta_description": "It'llが「ソクド」？英語の音の変化「弱化」や「リエゾン」を詳しく解説。ネイティブの自然なスピードでの聞こえ方を学び、リスニング力を劇的に向上させましょう。",
       "katakana_weak_strong": "〈ソクド〉 【ビィ】 【ライク】 【ビーング】 【フロウ】 〈ゥニュナ〉 〈ウニュウ〉 【ラッキング】 【アニスィン】",
-      "kugiri_eng": "It'll / be / like / being / ＜in the＞ / flow, / where you're not really / lacking / anything",
-      "kugiri_jp": "〈ソクド〉 / 【ビィ】 / 【ライク】 / 〈ビーング〉 / 【フロウ】 / 〈ゥニュナ〉〈ウニュウ〉 / 【ラッキング】 / 【アニスィン】",
-      "translated": "それはまるで、自分に何一つ欠けているものがないような、フロー（没頭）状態にいるような感じになるでしょう。",
-      "tsukkomi": [
-        {
-          "question": "It'll は イトル ではなく ソクド！？",
-          "answer": "It'llが「ソクド」のように聞こえるのは、Itとwillの短縮形において、tとlの音が融合し、さらに文頭で弱く速く発音されるためです。カタカナの「イトル」のように一音ずつはっきり発音せず、一気に息を吐き出すように発音されると、日本語の「速度（ソクド）」に近い響きになります。"
-        },
-        {
-          "question": "being in the flow は ビーイング イン ザ フロウ じゃなくて ビーイン フロウ!?",
-          "answer": "beingの語尾のgが脱落し、さらにin theという機能語が極限まで弱化して前の単語と連結した結果です。in theの「n」と「th」は、ネイティブが速く話す際、ほとんど「ん」という鼻音や飲み込むような音に変化し、実質的に「ビーイン・フロウ」と聞こえるようになります。"
-        },
-        {
-          "question": "where you're not really は ウェ ユア ノット リァリィ じゃなくて ゥニュナ ウニュウ！？ reallyの音は！？",
-          "answer": "where you're not reallyの4単語がすべて弱形（weak form）でつながり、一つの大きな塊として発音されています。特にreallyの[r]の音は、前のnotのn音の影響を受け、口をあまり動かさずに発音されることで「ウニュウ」のような曖昧な響きになります。rの音をはっきり「リ」と弾かずに、喉の奥を震わせるだけに留めているのが原因です。"
-        }
-      ],
       "image_sections": [
         {
           "label": "It'll be like being in the flow,",
@@ -3839,6 +3408,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"It'll be like being in the flow,\",\"time\":\"130\",\"url\":\"TWEET_ID:2001284349749326173\"},{\"label\":\"where you're not really lacking anything\",\"time\":\"131.7\",\"url\":\"TWEET_ID:2001284383660241366\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "It'll be like being in the flow,",
@@ -3853,8 +3423,7 @@
     ],
     "kugiri_eng": "It'll / be / like / being / ＜in the＞ / flow, / where you're not really / lacking / anything",
     "kugiri_jp": "〈ソクド〉 / 【ビィ】 / 【ライク】 / 〈ビーング〉 / 【フロウ】 / 〈ゥニュナ〉〈ウニュウ〉 / 【ラッキング】 / 【アニスィン】",
-    "translated": "それはまるで、自分に何一つ欠けているものがないような、フロー（没頭）状態にいるような感じになるでしょう。",
-    "remember": "「in the flow」(フロー状態で、没頭して)は、仕事やスポーツなどで最高の集中力を発揮している時に使います。例：I was so in the flow that I didn't hear the phone. (没頭しすぎていて、電話に気づきませんでした。)\n\n「not lacking anything」(何も欠けていない、すべて揃っている)は、満足感や充足感を伝えるのに便利です。例：Our team is not lacking anything to win. (私たちのチームが勝つのに欠けているものは何もない。)"
+    "translated": "それはまるで、自分に何一つ欠けているものがないような、フロー（没頭）状態にいるような感じになるでしょう。"
   },
   {
     "id": 30,
@@ -3868,23 +3437,6 @@
       "title": "ネイティブの発音はこう聞こえる！『we don't have career ladders...』の秘密",
       "meta_description": "「career」が「クロ」に聞こえる！？ネイティブ特有の音の連結（リエゾン）や脱落、弱化を詳しく解説。リスニング力が飛躍的にアップする発音のコツを学びましょう。",
       "katakana_weak_strong": "〈ウ〉 【ドン】 〈ハヴ〉 【クロ】 【ラダァ】 〈ザ〉 【メイク センス】",
-      "kugiri_eng": "we don't have / career / ladders / that / make sense",
-      "kugiri_jp": "〈ウ〉 【ドン】〈ハヴ〉 / 【クロ】 / 【ラダァ】 / 〈ザ〉 / 【メイク センス】",
-      "translated": "私たちには、筋の通ったキャリアの階段（キャリアパス）が存在しません。",
-      "tsukkomi": [
-        {
-          "question": "we don't は ウィ ドント じゃなくて ウ ドン!?",
-          "answer": "weは文脈の中で弱く発音されると「ウィ」の母音が極めて短くなり「ウ」に近い音になります。また、don'tの語尾のtは、次に子音が続く場合に脱落（リダクション）しやすいため、合わせて「ウ ドン」のように聞こえます。"
-        },
-        {
-          "question": "career は キャリア じゃなくて クロ!?",
-          "answer": "careerの発音は、最初のcaの部分が非常に弱く発音されるシュワ音（あいまい母音）になり、後半のreerに強いアクセントが置かれます。そのため、日本語の「キャリア」のように均等に発音せず、ネイティブスピードでは「クロ」に近い凝縮された音に聞こえるのです。"
-        },
-        {
-          "question": "ladders that は ラダーズ ザット じゃなくて ラダァ ザ!?",
-          "answer": "laddersの語尾のs（ズの音）と、thatの最初のth音が重なると、摩擦音同士が干渉して音が同化または脱落します。さらにthatの語尾のtも飲み込まれるため、結果として「ラダァ ザ」という非常に短い音として認識されます。"
-        }
-      ],
       "image_sections": [
         {
           "label": "we don't have",
@@ -3960,6 +3512,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"we don't have\",\"time\":\"209.2\",\"url\":\"TWEET_ID:2001631471665361362\"},{\"label\":\"career ladders\",\"time\":\"209.7\",\"url\":\"TWEET_ID:2001631501818171845\"},{\"label\":\"that make sense\",\"time\":\"210.2\",\"url\":\"TWEET_ID:2001631533837554082\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "we don't have",
@@ -3979,8 +3532,7 @@
     ],
     "kugiri_eng": "we don't have / career / ladders / that / make sense",
     "kugiri_jp": "〈ウ〉 【ドン】〈ハヴ〉 / 【クロ】 / 【ラダァ】 / 〈ザ〉 / 【メイク センス】",
-    "translated": "私たちには、筋の通ったキャリアの階段（キャリアパス）が存在しません。",
-    "remember": "「Make sense」(筋が通っている、なるほど)は、相手の説明に納得した時や、計画が合理的である時に非常によく使われます。例：That doesn't make sense.（それは筋が通っていない。）\n\n「Career ladder」(出世コース、キャリアの階段)は、仕事での昇進やキャリア形成を語る際の定番フレーズです。例：He is climbing the career ladder.（彼は出世の階段を駆け上がっている。）"
+    "translated": "私たちには、筋の通ったキャリアの階段（キャリアパス）が存在しません。"
   },
   {
     "id": 31,
@@ -3994,15 +3546,6 @@
       "title": "ネイティブの発音はこう聞こえる！『It's up to you because...』のリスニングの秘密",
       "meta_description": "『It's up to you because you are expressing yourself』の自然な発音を解説。It's upが「イッツァ ップ」に聞こえる理由や、リエゾン・弱化の法則を学びましょう。",
       "katakana_weak_strong": "【イッツァ】 【ップ】 〈トゥ〉 【ユ】 〈ビコズ〉 【ユ】 〈ア〉 【エクスプレッシング】 【ユアセル】",
-      "kugiri_eng": "It's up / to you / because / you are / expressing / yourself",
-      "kugiri_jp": "【イッツァ】 【ップ】 / 〈トゥ〉 【ユ】 / 〈ビコズ〉 / 【ユ】 〈ア〉 / 【エクスプレッシング】 / 【ユアセル】",
-      "translated": "それはあなた次第です、なぜならあなたは自分自身を表現しているからです。",
-      "tsukkomi": [
-        {
-          "question": "It's up は イッツ アップ じゃなくて イッツァ ップ!?",
-          "answer": "その通りです！It'sの語尾の音とupの先頭の母音がつながる「リエゾン（音の連結）」が起きるため、単なる『アップ』ではなく、前の音を引っ張って『イッツァ ップ』のように聞こえます。英語では子音と母音が隣り合うと、あたかも一つの単語のように滑らかにつながるのが一般的です。"
-        }
-      ],
       "image_sections": [
         {
           "label": "It's up to you",
@@ -4070,6 +3613,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"It's up to you\",\"time\":\"108\",\"url\":\"TWEET_ID:2001989859163197835\"},{\"label\":\"because\",\"time\":\"109.5\",\"url\":\"TWEET_ID:2001989890880483516\"},{\"label\":\"you are expressing yourself\",\"time\":\"109.7\",\"url\":\"TWEET_ID:2001989929895944508\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "It's up to you",
@@ -4089,34 +3633,20 @@
     ],
     "kugiri_eng": "It's up / to you / because / you are / expressing / yourself",
     "kugiri_jp": "【イッツァ】 【ップ】 / 〈トゥ〉 【ユ】 / 〈ビコズ〉 / 【ユ】 〈ア〉 / 【エクスプレッシング】 / 【ユアセル】",
-    "translated": "それはあなた次第です、なぜならあなたは自分自身を表現しているからです。",
-    "remember": "「It's up to you」(あなた次第です)は、日常会話で決定を相手に任せる時に非常に便利な決まり文句です。例：Where should we eat? - It's up to you.（どこで食べる？ー君に任せるよ。）\n\n「express yourself」(自分を表現する)は、アートや意見表明など、自分の個性を外に出す際によく使われる表現です。例：Don't be afraid to express yourself.（自分を表現することを恐れないで。）"
+    "translated": "それはあなた次第です、なぜならあなたは自分自身を表現しているからです。"
   },
   {
     "id": 67,
     "url": "https://www.youtube.com/watch?v=TLsBZQnwF54",
     "start_time": "1007.4",
     "end_time": "1009.5",
-    "updated_at": "2026-02-07T15:23:10.449Z",
+    "updated_at": "2026-02-14T00:22:46.247Z",
     "question": "Do you still live tweet when the show comes on?",
-    "question_katakana": "〈ドゥ ユ〉 【スティル】 【ライトゥイ】 【ウェン】 〈エ〉 【ショウ カムズオン】",
+    "question_katakana": "ドゥ ユ スティル ライトゥイ ウエン エ ショウ カムズオン",
     "article_text": {
       "title": "「live tweet」が「ライトゥイ」に！？「Do you still live tweet when the show comes on?」の自然な発音をマスターしよう",
       "meta_description": "ネイティブの英語が「ライトゥイ」や「ウェン エ」に聞こえて驚いたことはありませんか？「Do you still live tweet when the show comes on?」を例に、音の連結と脱落の秘密を専門家が分かりやすく解説します。",
       "katakana_weak_strong": "〈ドゥ ユ〉 【スティル】 【ライトゥイ】 【ウェン】 〈エ〉 【ショウ カムズオン】",
-      "kugiri_eng": "Do you / still / live tweet / when the / show / comes on?",
-      "kugiri_jp": "〈ドゥ ユ〉 / 【スティル】 / 【ライトゥイ】 / 【ウェン】 〈エ〉 / 【ショウ】 / 【カムズオン】",
-      "translated": "その番組が放送されるとき、今でも実況ツイート（ライブツイート）をしているのですか？",
-      "tsukkomi": [
-        {
-          "question": "live tweet は ライヴ ツィート じゃなくて ライトゥイ！？",
-          "answer": "live tweetが「ライトゥイ」に聞こえるのは、子音の脱落と消失が起きているからです。liveの最後の[v]は非常に弱く発音されるか、次のtweetの[t]に飲み込まれます。さらに、tweetの最後の[t]は「飲み込む音（閉鎖音）」となり、はっきり発音されません。その結果、日本語の「ツィート」のような強い音ではなく、音が消えたような「ライトゥイ」という響きになります。"
-        },
-        {
-          "question": "when the は ウェン ザ じゃなくて ウェン エ！？",
-          "answer": "when theが「ウェン エ」に聞こえるのは、theの[th]音が弱化し、直前のwhenの[n]音の影響を受けて脱落することがあるためです。ネイティブの速い会話では、theの[th]がほとんど発音されず、母音の[ə]（シュワ音）だけが残ることがあります。これが直前のnと滑らかにつながることで、日本人には「ウェン エ」のように聞こえるのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "Do you still",
@@ -4171,7 +3701,7 @@
         "音の脱落"
       ]
     },
-    "category": "英検4級",
+    "category": "中学2年",
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/TLsBZQnwF54/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/TLsBZQnwF54/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/TLsBZQnwF54/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/TLsBZQnwF54/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/TLsBZQnwF54/maxresdefault.jpg\"}",
     "theme": "Do you still live",
     "noIndex": 0,
@@ -4188,6 +3718,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"Do you still\",\"time\":\"1007.4\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544088999\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\" live tweet\",\"time\":\"1007.8\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544089020\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"when the show comes on?\",\"time\":\"1008.3\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544089278\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "Do you still",
@@ -4207,7 +3738,1024 @@
     ],
     "kugiri_eng": "Do you / still / live tweet / when the / show / comes on?",
     "kugiri_jp": "〈ドゥ ユ〉 / 【スティル】 / 【ライトゥイ】 / 【ウェン】 〈エ〉 / 【ショウ】 / 【カムズオン】",
-    "translated": "その番組が放送されるとき、今でも実況ツイート（ライブツイート）をしているのですか？",
-    "remember": "「live tweet」(実況ツイートする)は、SNS全盛の現代で非常によく使われる動詞表現です。例：I love to live tweet during football games.(サッカーの試合中に実況ツイートするのが大好きです。)\n\n「come on」(番組が始まる、放送される)は、テレビやラジオの文脈で頻出します。例：My favorite drama comes on at 9 PM.(お気に入りのドラマは夜9時に始まります。)\n\n「Do you still...?」(今でも〜しているの？)は、相手の現状を確認する際に便利な定番フレーズです。例：Do you still work at the same bank?(今でも同じ銀行で働いているのですか？)"
+    "translated": "その番組が放送されるとき、今でも実況ツイート（ライブツイート）をしているのですか？"
+  },
+  {
+    "id": 68,
+    "url": "https://www.youtube.com/watch?v=TGsHPAD-n-U",
+    "start_time": "1147.3",
+    "end_time": "1150",
+    "updated_at": "2026-02-14T00:22:34.461Z",
+    "question": "and you still live on that estate. I wonder if you could tell us something",
+    "question_katakana": "ニュ スティル リヴォ ナイステイ ウォンディフュク テレス サムスィング",
+    "article_text": {
+      "title": "「and you still live on that estate」が「ニュ スティル リヴォ ナイステイ」に聞こえる理由",
+      "meta_description": "「and you」が「ニュ」に聞こえる！？ネイティブ特有の音の脱落と連結を徹底解説。例文「and you still live on that estate. I wonder if you could tell us something」の発音のコツを学びましょう。",
+      "katakana_weak_strong": "〈ニュ〉 【スティル】 【リヴォ】 〈ナイステイ〉 【ウォンディフュク】 【テレス】 【サムスィング】",
+      "image_sections": [
+        {
+          "label": "and you still live on that estate. ",
+          "time": "1147.3",
+          "image_display_instruction": "【ここにand_you_still_live_on_that_estate._の画像を表示】",
+          "description": "「そして、あなたはまだあのアパート（団地・公営住宅）に住んでいる」という意味です。estateはイギリス英語で公営住宅地を指すことが多いです。長年同じ場所に住み続けている日常の風景をイメージしましょう。",
+          "image_suggestion": "歴史を感じさせる公営アパートの外観と、そこに住む住人の様子",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544091872\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+        },
+        {
+          "label": "I wonder if",
+          "time": "1148.4",
+          "image_display_instruction": "【ここにI_wonder_ifの画像を表示】",
+          "description": "「〜かしら」「〜していただけないでしょうか」と、相手に控えめに尋ねる時に使うクッション言葉です。頭の中に疑問符が浮かんでいるような、少し考え込んでいる表情がぴったりです。",
+          "image_suggestion": "人差し指を顎に当てて、何かを考えているような控えめな表情の人物",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544091879\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+        },
+        {
+          "label": "you could tell us something",
+          "time": "1148.8",
+          "image_display_instruction": "【ここにyou_could_tell_us_somethingの画像を表示】",
+          "description": "「何か私たちに話してくれませんか」という丁寧な依頼です。相手から思い出や情報を引き出そうとする、インタビューのような場面を想像してください。",
+          "image_suggestion": "テーブルを挟んで向かい合い、相手の話を熱心に聞こうとしているインタビューのシーン",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544091884\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+        }
+      ],
+      "remember": "「I wonder if you could...」（〜していただけないでしょうか）は、相手に何かを頼む時の非常に丁寧な表現です。例：I wonder if you could help me.(お助けいただけないでしょうか)\n\n「Still live on...」（まだ〜に住んでいる）は、居住状態が続いていることを表します。例：Do you still live on that street?(まだあの通りに住んでいるのですか？)\n\n「Tell us something about...」（〜について何か話して）は、話題を振る時に便利です。例：Tell us something about your home town.(あなたの故郷について何か教えてください)",
+      "introduction": "「単語は知っているのに、ネイティブが話すと全く聞き取れない！」そんな経験はありませんか？実は英語には、音がくっついたり消えたりする特有のルールがあります。今回は、一見複雑に見えるフレーズを解剖して、耳をネイティブ化していきましょう。",
+      "section_1": {
+        "heading": "例文と意味",
+        "content": "今回の例文は「and you still live on that estate. I wonder if you could tell us something」です。これはインタビューなどで、相手の背景を確認しつつ「何かお話しいただけますか？」と優しく促すシーンで使われます。estateは「不動産」だけでなく、イギリス英語では「公営団地」などの意味でもよく使われる重要な単語です。"
+      },
+      "section_2": {
+        "heading": "発音のポイント",
+        "content": "驚くべきは「and you」がたった一音の「ニュ」に聞こえる点です。さらに「live on that estate I」という長い区間が、まるで「リヴォ ナイステイ」という一つの魔法の言葉のように一気に発音されます。これは、単語ごとの区切りを意識するのではなく、子音と母音を数珠つなぎにする英語特有の「リエゾン（連結）」が起きているからです。"
+      },
+      "section_3": {
+        "heading": "なぜそう聞こえるの？",
+        "content": "英語には、重要な情報を伝える「内容語」を強く、文法を支える「機能語」を極端に弱く発音するリズムがあります。wonder if you couldが「ウォンディフュク」と短縮されるのは、ifやyouが機能語として弱化し、前後の音に飲み込まれてしまうためです。また、子音で終わる単語（tell）と母音で始まる単語（us）が隣り合うと、自然と音がつながり「テレス」という一つの音に変化します。"
+      },
+      "section_4": {
+        "heading": "学習のコツ",
+        "content": "この「カタカナの強弱」を意識しながら、何度も口に出してみましょう。特に「ナイステイ」のような連結部分は、個別の単語（that, estate, I）を意識しすぎず、一つのリズムの塊として歌うように練習するのがコツです。録音して自分の音とネイティブの音を比較すると、どこが「つながりきっていないか」が明確になりますよ。"
+      },
+      "conclusion": "音の変化のルールがわかると、あんなに速く聞こえた英語が不思議と「塊」として捉えられるようになります。次はぜひ、自分でも「ニュ！」と発音してみてくださいね。",
+      "keywords": [
+        "英語発音",
+        "リエゾン",
+        "リンキング",
+        "リスニング改善",
+        "イギリス英語",
+        "カタカナ英語"
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/TGsHPAD-n-U/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/TGsHPAD-n-U/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/TGsHPAD-n-U/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/TGsHPAD-n-U/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/TGsHPAD-n-U/maxresdefault.jpg\"}",
+    "theme": "you still live on",
+    "noIndex": 0,
+    "is_similar": 0,
+    "pron_memo": "and you は ニュ に聴こえる。\nlive on that estate I は リヴォ ナイステイ に聴こえる。\nwonder if you could は ウォンディフク に聴こえる。\ntell us は テレス に聴こえる。",
+    "tsukkomi": [
+      {
+        "question": "and you の anの音が消えてn だけになって nyou でニュ！？",
+        "answer": "andは機能語として非常に弱く発音されることが多く、最初の「a」の音が脱落して「n」だけが残ることがあります。その結果、直後のyouとつながって「n + you = nyou（ニュ）」のような音になります。これはカジュアルな会話で頻発する現象です。"
+      },
+      {
+        "question": "live on that estate にて I live o で リヴォ n that es は naes で ナイス tate I はtate からテの音だけもらっと I は アイ の音のイだけもらって テイ で ナイステイ!?",
+        "answer": "これこそがリンキング（連結）の極意です！liveの終わり[v]とonの[o]がつながり「リヴォ」、onの[n]とthatの[th]が馴染み、さらにthatの最後の[t]とestateの最初の[e]、estateの最後と次の「I」の「i」が連鎖的にくっつくことで、まるで「ナイステイ」という一つの単語のように聞こえるのです。"
+      },
+      {
+        "question": "wonder if you could にて ワンダーではなくウォンダー ここではウォンd だけもらっている dif you could で ディフュク 全体で ウォンディフュック!?",
+        "answer": "wonderの後半の音が極限まで弱化し「ウォン」と「d」だけが残り、それがifとつながって「ディフ」、さらにyou couldの音が重なって「フュク」となります。速い口調では母音が極限まで省略されるため、このような凝縮された音になります。"
+      },
+      {
+        "question": "tell us は テル アス じゃなくて テレス！？",
+        "answer": "tellの語末のL音（[l]）と、usの最初の母音（[u]）が連結して「tell-us（テレス）」となります。子音で終わる単語の後に母音で始まる単語が来ると、必ずと言っていいほど音がつながります。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"and you still live on that estate. \",\"time\":\"1147.3\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544091872\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\"I wonder if\",\"time\":\"1148.4\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544091879\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\"you could tell us something\",\"time\":\"1148.8\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544091884\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"}]",
+    "chunk_timestamps": null,
+    "image_sections": [
+      {
+        "label": "and you still live on that estate. ",
+        "time": "1147.3",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544091872\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": "I wonder if",
+        "time": "1148.4",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544091879\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": "you could tell us something",
+        "time": "1148.8",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544091884\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      }
+    ],
+    "kugiri_eng": "And you / still / live on that estate. I / wonder if you / could / tell us / something",
+    "kugiri_jp": "〈ニュ〉 / 【スティル】 / 【リヴォ】 〈ナイステイ〉 / 【ウォン】〈ディフュ〉 / 〈ク〉 / 【テレス】 / 【サムスィング】",
+    "translated": "そして、あなたは今もあのアパート（公営住宅）に住んでいるのですね。もしよろしければ、何かお話しいただけないでしょうか。"
+  },
+  {
+    "id": 69,
+    "url": "https://www.youtube.com/watch?v=P-lBlZ3hqKc",
+    "start_time": "685.2",
+    "end_time": "689.1",
+    "updated_at": "2026-02-14T00:22:23.061Z",
+    "question": "or intervene in a mugging in the street as he goes to work because he sees it.",
+    "question_katakana": "オー インタヴィーン イナ モギィン イン ザ ストリー ダジィ ゴースト ワーク ビコジ スィズィ",
+    "article_text": {
+      "title": "ネイティブの発音はこう聞こえる！「or intervene in a mugging in the street...」の秘密",
+      "meta_description": "英語の音がつながって聞こえる理由を知ると、リスニングが一気に楽になります。例文「or intervene in a mugging in the street as he goes to work because he sees it.」を使って、リエゾンや弱化の仕組みをプロが詳しく解説します。",
+      "katakana_weak_strong": "〈オー〉 【インタヴィーン】 〈イナ〉 【モギィン】 〈イン ザ〉 【ストリー】 〈ダジィ〉 【ゴースト】 【ワーク】 〈ビコジ〉 【スィズィ】",
+      "image_sections": [
+        {
+          "label": "or intervene in a",
+          "time": "685.2",
+          "image_display_instruction": "【ここにor_intervene_in_aの画像を表示】",
+          "description": "interveneは「介入する」「仲裁に入る」という意味です。誰かの間に割って入るイメージを持つと覚えやすいでしょう。",
+          "image_suggestion": "揉めている二人の間に一人が割って入って止めようとしているシーン",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544093636\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+        },
+        {
+          "label": "mugging in the street",
+          "time": "686.5",
+          "image_display_instruction": "【ここにmugging_in_the_streetの画像を表示】",
+          "description": "muggingは「路上強盗」を指します。street（通り）という単語と一緒に、緊迫した場面を視覚的に結びつけます。",
+          "image_suggestion": "夜の街灯の下で、誰かがひったくりに遭いそうになっているドラマチックな場面",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544093648\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n"
+        },
+        {
+          "label": "as he goes to work",
+          "time": "687.3",
+          "image_display_instruction": "【ここにas_he_goes_to_workの画像を表示】",
+          "description": "goes to workは「仕事に行く」という日常的な動作です。バッグを持って歩いている姿を想像しましょう。",
+          "image_suggestion": "通勤カバンを持って忙しそうに歩道を歩くビジネスマンの姿",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544093661\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n"
+        },
+        {
+          "label": "because he sees it.",
+          "time": "688.2",
+          "image_display_instruction": "【ここにbecause_he_sees_it.の画像を表示】",
+          "description": "sees itは、何かを目撃した瞬間を指します。理由（because）があって行動することを表しています。",
+          "image_suggestion": "角を曲がった瞬間に、何か驚くべき光景を目にして目を見開いている人の表情",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544093670\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+        }
+      ],
+      "remember": "「Intervene in...」(〜に介入する)は、トラブルや議論に仲裁に入る時に使います。例：The government decided to intervene in the dispute.（政府はその紛争に介入することを決定した）\n\n「Go to work」(仕事に行く)は毎日の習慣を語るのに必須です。例：I usually go to work by train.（私は普段、電車で仕事に行きます）\n\n「Because he sees it」(彼がそれを見たから)は、行動の理由を説明する形です。例：He ran away because he saw a snake.（彼はヘビを見たので逃げ出した）",
+      "introduction": "英語を聴いていて「えっ、今なんて言った？」と耳を疑うことはありませんか？実は、単語が並ぶと音が合体したり消えたりするのは、英語のリズムを作るための自然な現象なんです。今回は、一つの長い例文を通して、ネイティブがどうやって音を繋げているのかを解剖していきましょう。",
+      "section_1": {
+        "heading": "例文と意味",
+        "content": "今回の例文は「or intervene in a mugging in the street as he goes to work because he sees it.」です。日本語では「あるいは、出勤途中に路上での強盗事件を見かけたので、それに介入すること」といった状況を説明しています。非常に具体的で動きのあるシーンですね。"
+      },
+      "section_2": {
+        "heading": "発音のポイント",
+        "content": "まず驚くのは「street as he」が「ストリー ダジィ」と聞こえる点でしょう。streetの[t]が消えたわけではなく、次の母音とくっついて「ダ」のような濁った音に化けています。また、「goes to」が「ゴースト」に聞こえるのも、[s]と[t]がぶつかって音が短縮されているからです。単語を一つずつ読むのではなく、一つの大きな音の波に乗るイメージが大切です。"
+      },
+      "section_3": {
+        "heading": "なぜそう聞こえるの？",
+        "content": "なぜ「because he sees it」が「ビコジ スィズィ」になるのでしょうか。それは英語の「機能語（he, itなど）」がストレスを受けないため、前の単語の語尾とリエゾンしやすいからです。becauseの語尾[z]とheの[h]が合体して[h]が脱落し、さらにseesの[z]とitの[i]が繋がることで、呪文のような一塊の音になります。これは英語が「音節（シラブル）の強弱」を重視する言語だからこそ起こる現象です。"
+      },
+      "section_4": {
+        "heading": "学習のコツ",
+        "content": "この音の変化をマスターするには、まずは「カタカナ表記」を声に出して読んでみてください。意外かもしれませんが、文字通りのスペルを忘れて、耳に聞こえる音（ストリー ダジィなど）をそのまま真似るのがリエゾン習得の近道です。慣れてきたら、自分で録音してネイティブのスピードと比較してみましょう。音がつながる快感が分かれば、リスニング力は飛躍的に向上します。"
+      },
+      "conclusion": "英語の音の変化は、ルールを知れば知るほど「宝探し」のような楽しい発見になります。次はどんな音が繋がっているか、ぜひ耳を澄ませてみてくださいね！",
+      "keywords": [
+        "英語発音",
+        "リエゾン",
+        "リスニング",
+        "英語学習",
+        "音の連結",
+        "発音矯正"
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/P-lBlZ3hqKc/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/P-lBlZ3hqKc/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/P-lBlZ3hqKc/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/P-lBlZ3hqKc/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/P-lBlZ3hqKc/maxresdefault.jpg\"}",
+    "theme": "street",
+    "noIndex": 0,
+    "is_similar": 0,
+    "pron_memo": "or は オー に聴こえる。\nin a は イナ に聴こえる。\nstreet as he は ストリー ダジィ に聴こえる。\ngoes to は ゴースト に聴こえる。\nbecause he sees it は ビコジ スィズィ",
+    "tsukkomi": [
+      {
+        "question": "or は オア じゃなくて オー",
+        "answer": "orは単独で強調されるときは「オア」に近い音になりますが、文中で弱く発音される（弱形）ときは、母音が曖昧になり「オー」や「ア」のように短く聞こえます。この例文では、次の重要な動詞interveneへ繋げるための軽い助走のような役割になっています。"
+      },
+      {
+        "question": "in a は イン ア じゃなくて イナ",
+        "answer": "これは典型的な「リエゾン（音の連結）」です。inの終わりの子音[n]と、aの母音がくっついて「イナ」という一つの単語のような音になります。ネイティブはこれらを切り離して発音しません。"
+      },
+      {
+        "question": "street as he は ストリート アズ ヒィ じゃなくて ストリー ダジィ street の tの音が as と合体して ダ as の s と he が合体して she になって ジィ",
+        "answer": "非常に鋭い観察です！まずstreetの最後の[t]が、次の母音[a]と繋がります。この際、[t]は母音に挟まれると「フラップT」という[d]や日本語のラ行に近い音に変化するため「ダ」に聞こえます。さらにasの[s]（実際は[z]音）とheの[h]が連結する際、[h]の音が脱落し、[z]と[e]が合体して「ジィ」のような音になります。"
+      },
+      {
+        "question": "goes to は ゴーズ トゥ じゃなくて ゴースト!? goesのsもスって発音するの！？",
+        "answer": "goesの本来の語尾は[z]ですが、次に無声音の[t]（to）が続くことで、音が同化して[s]に近い「ス」に変化することがあります。その結果、goes toがまるで「ゴースト」のように一気に発音されます。これも英語特有の「同化（assimilation）」という現象です。"
+      },
+      {
+        "question": "because he see it は ビコウズ ヒィ スィ イット じゃなくてビコジ スィズィ！？ because の ビコだけそのままで、 末尾の se と he が合体して ジ、sees の末尾のsとitがくっついてスィズィ!?",
+        "answer": "その通りです！becauseの後半部分[-se]の[z]音とheの[h]が連結し、[h]が消えて「ジ」になります。さらにseesの最後の[z]とitの[i]がリエゾンして「ズィ」になります。機能語であるheやitは非常に弱く短く発音されるため、前の単語の語尾に吸収されるように聞こえるのです。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"or intervene in a\",\"time\":\"685.2\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544093636\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\" mugging in the street\",\"time\":\"686.5\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544093648\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\"},{\"label\":\"as he goes to work\",\"time\":\"687.3\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544093661\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\"},{\"label\":\" because he sees it.\",\"time\":\"688.2\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544093670\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"}]",
+    "chunk_timestamps": null,
+    "image_sections": [
+      {
+        "label": "or intervene in a",
+        "time": "685.2",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544093636\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": " mugging in the street",
+        "time": "686.5",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544093648\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n"
+      },
+      {
+        "label": "as he goes to work",
+        "time": "687.3",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544093661\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n"
+      },
+      {
+        "label": " because he sees it.",
+        "time": "688.2",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544093670\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      }
+    ],
+    "kugiri_eng": "or / intervene / in a / mugging / in the street as he / goes to / work / because he sees it.",
+    "kugiri_jp": "〈オー〉 / 【インタヴィーン】 / 〈イナ〉 / 【モギィン】 / 〈イン ザ〉 【ストリー】 〈ダジィ〉 / 【ゴースト】 / 【ワーク】 / 〈ビコジ〉 【スィズィ】",
+    "translated": "あるいは、仕事に行く途中の通りで強盗事件を目撃したからといって、それに介入したりすることです。"
+  },
+  {
+    "id": 70,
+    "url": "https://www.youtube.com/watch?v=XzvGr79eOQM",
+    "start_time": "583.4",
+    "end_time": "588.4",
+    "updated_at": "2026-02-14T00:22:13.780Z",
+    "question": "Now, I've been asked,Why, as an anesthesiologist, did I dream up a program based on street-based care?",
+    "question_katakana": "ナ アイベン アスク ワイ エシナン シジオロジス　ドダイ トリーマップ プログレム ベイスロンツピ ベイスケア",
+    "article_text": {
+      "title": "「Now, I've been asked...」ネイティブの発音は「ナ アイベン アスク」！？驚きの音変化を徹底解説",
+      "meta_description": "麻酔科医が語る衝撃の英語発音を解説。なぜ「Now」が「ナ」に、「did I」が「ドダイ」に聞こえるのか？リエゾンや弱化の仕組みをプロが解明します。リスニング力向上に役立つヒントが満載です。",
+      "katakana_weak_strong": "【ナ】 〈アイベン〉 【アスク】 【ワイ】 〈エシナン〉 【シジオロジス】 【ドダイ】 【トリーマップ】 【プログレム】 【ベイスロンツピ】 【ベイスケア】",
+      "image_sections": [
+        {
+          "label": "Now, I've been asked,",
+          "time": "583.4",
+          "image_display_instruction": "【ここにNow_I've_been_askedの画像を表示】",
+          "description": "「さて、これまで〜と聞かれてきました」という導入です。話し手が聞き手に向かって、過去から現在まで繰り返されてきた状況を説明する場面をイメージしてください。",
+          "image_suggestion": "講演台に立つスピーカーが、聴衆からの質問を振り返るように少し考え込んでいる表情のシーン。",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544096006\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+        },
+        {
+          "label": "Why, as an anesthesiologist,",
+          "time": "584.4",
+          "image_display_instruction": "【ここにWhy_as_an_anesthesiologistの画像を表示】",
+          "description": "「なぜ、麻酔科医である私が」という、自身の専門性と意外性を強調するフレーズです。麻酔科医というプロフェッショナルな肩書きがキーワードです。",
+          "image_suggestion": "病院のスクラブ（手術着）を着た医師が、手術室や医療器具を背景にしている様子。",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544096011\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+        },
+        {
+          "label": "did I dream up a program based on street-based care?",
+          "time": "585.7",
+          "image_display_instruction": "【ここにdid_I_dream_up_a_program_based_on_street-based_careの画像を表示】",
+          "description": "「路上ケアに基づいたプログラムを考案したのか？」という核心部分です。医療機関から飛び出し、路上で活動する革新的なイメージを伴います。",
+          "image_suggestion": "街角や路上で、バックパックを背負った医療チームが困っている人に手を差し伸べている、温かく希望を感じさせるシーン。",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544096017\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+        }
+      ],
+      "remember": "「I've been asked」（〜と聞かれてきた）は、過去から何度か同じ質問をされている時に便利な表現です。例：I've been asked that question many times.（その質問は何度も受けてきました。）\n\n「dream up」（〜を思いつく、考案する）は、独創的なアイデアなどを考え出した時に使います。例：How did you dream up such a plan?（どうやってそんな計画を思いついたのですか？）\n\n「based on」（〜に基づいた）は、根拠や基礎を説明する際の必須フレーズです。例：This movie is based on a true story.（この映画は実話に基づいています。）",
+      "introduction": "英語を一生懸命勉強していても、ネイティブの速い英語を聞くと「えっ、今なんて言った？」と戸惑うことはありませんか？実は、彼らは教科書通りの音ではなく、音を繋げたり削ったりして、極限まで省エネで発音しているのです。今回は麻酔科医の情熱的なスピーチを題材に、驚きの音変化の正体を解き明かしましょう。",
+      "section_1": {
+        "heading": "例文と意味",
+        "content": "今回の例文は、専門家としてのキャリアを持ちながら、なぜ全く異なる分野とも思える「路上でのケア」に情熱を注ぐようになったのか、その動機を語る重要な一節です。 anesthesiologist（麻酔科医）という長い単語が含まれていますが、文脈の中では非常にスピーディーに発音されています。"
+      },
+      "section_2": {
+        "heading": "発音のポイント",
+        "content": "まず注目すべきは「did I」が「ドダイ」と聞こえる点です。ディド・アイと律儀に発音するネイティブはまずいません。また「based on street」が「ベイスロンツピ」に聞こえる現象は、子音と母音が合体するリエゾン（連結）と、語尾の音が弱まる脱落が同時に起きているためです。「そうは聞こえないだろ！」と感じるかもしれませんが、この「塊の音」に慣れることがリスニング克服の第一歩です。"
+      },
+      "section_3": {
+        "heading": "なぜそう聞こえるの？",
+        "content": "英語には、重要な情報を持つ単語（内容語）は強く、文法的な役割を果たす単語（機能語）は極端に弱く発音するというリズムの法則があります。「as an an...」の部分が「エシナン」と圧縮されるのは、これらの単語が機能語であり、次の「麻酔科医」という重要な単語へ素早く繋げるための助走に過ぎないからです。また、dream の [dr] が「トリー」に聞こえるのは、[d] 音が [r] の影響を受けて無声音化しやすいためです。これらは音声学的に「同化」と呼ばれる現象です。"
+      },
+      "section_4": {
+        "heading": "学習のコツ",
+        "content": "効果的な練習方法は、自分で「ナ アイベン アスク」と、聞こえた通りのカタカナ音で真似してみることです。スペルを意識しすぎると、脳が勝手に「正解の音」を捏造してしまいます。まずは耳から入った音をそのままコピーするシャドーイングを行い、その後に「あ、実は I've been asked と言っていたんだ」と答え合わせをする順序が、リスニング脳を鍛える近道になります。"
+      },
+      "conclusion": "英語の音の変化は、最初は呪文のように聞こえるかもしれません。しかし、リエゾンや弱化のパターンを知れば、それは「速い」のではなく「効率化されている」だけだと気づくはずです。この発見を楽しみながら、ネイティブのリズムを身につけていきましょう！",
+      "keywords": [
+        "英語発音",
+        "リエゾン",
+        "リスニング",
+        "英語学習",
+        "音の変化",
+        "麻酔科医の英語"
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/XzvGr79eOQM/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/XzvGr79eOQM/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/XzvGr79eOQM/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/XzvGr79eOQM/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/XzvGr79eOQM/maxresdefault.jpg\"}",
+    "theme": "on street",
+    "noIndex": 0,
+    "is_similar": 0,
+    "pron_memo": "Now は ナ に聴こえる。\nI've been は アイベン に聴こえる。\nasked は アスク に聴こえる。\nas an anesthesiologist, は エシナン シジオロジス に聴こえる。\ndid I は ドダイ に聴こえる。\nderam up a は トリーマップ に聴こえる。 a は聴こえない。\nbased on street は ベイスロンツピ に聴こえる。\nbased care? はベイスケア に聴こえる。",
+    "tsukkomi": [
+      {
+        "question": "Now は ナウ じゃなくて ナでもOK！？",
+        "answer": "はい、速い口調やリラックスした発音では「Now」の二重母音の後半 [u] が省略され、単に「ナ」のように聞こえることがよくあります。これは文頭の接続詞として軽く発音される際の特徴です。"
+      },
+      {
+        "question": "I've been は アイヴ ビン じゃなくて ve been を繋げて アイベンでOK!?",
+        "answer": "その通りです。I've の [v] と been の [b] はどちらも唇を使う音なので、連結（リエゾン）して「アイベン」のように一気に発音されます。個別に「アイヴ・ビン」と区切らないのがネイティブ流です。"
+      },
+      {
+        "question": "as an anesthesiologist, の as an ane で エシナン！？",
+        "answer": "as an anesthesiologist [æz ən ænəssiːziɑ́lədʒist] は、母音で始まる単語が続くため、音が繋がって「アズ・アン・アネ」が「エシナン」のように一気に圧縮されます。機能語の弱化と連結の典型例です。"
+      },
+      {
+        "question": "did I は ディド アイ じゃなくて ドダイ！",
+        "answer": "did の [d] と I [ai] が連結し、さらに did の母音が弱化してシュワ音（あいまい母音）になるため、「ドダイ」というひと塊の音として聞こえます。"
+      },
+      {
+        "question": "dream up は dの音があるけどトリーマップ！？",
+        "answer": "英語の [dr] の音は、日本語の「ド」よりも「ヂュ」や「チュ」に近い摩擦を伴う音になります。そのため、日本人の耳には「トリー」に近い鋭い響きで聞こえることが多々あります。"
+      },
+      {
+        "question": "dream up a の a の音が聴こえない！？",
+        "answer": "up の語尾と a [ə] が連結し、a は極めて弱く発音されるため、実質的に「アップ」の最後の余韻として「パ」や「マ」の中に溶け込んでしまい、単独の音としては認識しづらくなります。"
+      },
+      {
+        "question": "based on street は ベイスロンツピ に聴こえる！？ d on はロン！？ street が変形して ツピ!?",
+        "answer": "based の語尾 [d] と on が連結して「ドゥオン」から「ロン」に近い弾き音に変化します。また street は語頭の s 以外の音が極端に圧縮され、日本語の耳には「ツピ」のように鋭く短い音として捉えられることがあります。"
+      },
+      {
+        "question": "based care? の dの音が聴こえない！？",
+        "answer": "based の [d] と care の [k] が続く場合、破裂音の [d] は飲み込まれる「消失（脱落）」が起こります。そのため「ベイス」で止まってから「ケア」に続くように聞こえるのが自然です。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"Now, I've been asked,\",\"time\":\"583.4\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544096006\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"Why, as an anesthesiologist,\",\"time\":\"584.4\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544096011\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\"did I dream up a program based on street-based care?\",\"time\":\"585.7\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544096017\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"}]",
+    "chunk_timestamps": null,
+    "image_sections": [
+      {
+        "label": "Now, I've been asked,",
+        "time": "583.4",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544096006\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "Why, as an anesthesiologist,",
+        "time": "584.4",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544096011\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": "did I dream up a program based on street-based care?",
+        "time": "585.7",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544096017\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      }
+    ],
+    "kugiri_eng": "Now, / I've been asked, / Why, / as an anesthesiologist, / did I / dream up a / program / based on street-based care?",
+    "kugiri_jp": "【ナ】 / 〈アイベン〉 【アスク】 / 【ワイ】 / 〈エシナン〉 【シジオロジス】 / 【ドダイ】 / 【トリーマップ】 / 【プログレム】 / 【ベイスロン】 〈ツピ〉 【ベイスケア】",
+    "translated": "さて、これまで「なぜ麻酔科医である私が、路上生活者のケアに基づいたプログラムを考案したのか？」という質問を受けてきました。"
+  },
+  {
+    "id": 72,
+    "url": "https://www.youtube.com/watch?v=9axG7EhGNmI",
+    "start_time": "1086.2",
+    "end_time": "1089",
+    "updated_at": "2026-02-14T00:21:53.643Z",
+    "question": "you have to and I was like, hell, no I'm not lip-singing!",
+    "question_katakana": "ユ ハフトゥ ナウズ ライク ヘル ノー アイム ノッ リップ スィン",
+    "article_text": {
+      "title": "「and I was」が「ナウズ」に聞こえる！？驚きの発音変化と「have to」のルール",
+      "meta_description": "ネイティブが「you have to and I was like...」と言う時、どうして「ナウズ」と聞こえるのか？その驚きの音声変化の仕組みを、プロの視点で分かりやすく解説します。",
+      "katakana_weak_strong": "【ユ】 〈ハフトゥ〉 〈ナウズ〉 【ライク】 【ヘル】 【ノー】 【アイム】 〈ノッ〉 【リップ】 【スィン】",
+      "image_sections": [
+        {
+          "label": "you have to",
+          "time": "1086.2",
+          "image_display_instruction": "【ここにyou_have_toの画像を表示】",
+          "description": "「〜しなければならない」という義務や強い提案を表します。相手に指をさしてアドバイスしたり、強く促したりするシーンをイメージしてください。",
+          "image_suggestion": "真剣な表情で相手に何かを促しているコーチや友人の姿",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544098187\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+        },
+        {
+          "label": "and I was like, hell, no",
+          "time": "1086.8",
+          "image_display_instruction": "【ここにand_I_was_like_hell_noの画像を表示】",
+          "description": "「それで私は『絶対無理！』って感じだった」という、過去の自分の反応を生き生きと伝える表現です。あきれたり、断固拒否したりする感情的な場面にぴったりです。",
+          "image_suggestion": "両手を広げて「ありえない！」という表情をしている女性のイラスト",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544098196\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+        },
+        {
+          "label": "I'm not lip-singing!",
+          "time": "1087.66",
+          "image_display_instruction": "【ここにI_m_not_lip-singing!の画像を表示】",
+          "description": "「口パクなんてしない！」という強い宣言です。自分のプライドやポリシーを貫く、堂々とした姿勢をイメージしましょう。",
+          "image_suggestion": "マイクを握りしめ、力強く歌おうとしている歌手のステージシーン",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544098207\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+        }
+      ],
+      "remember": "「have to」(〜しなきゃ)は、義務や強いアドバイスを伝える時に必須の表現です。発音は「ハフトゥ」と短くまとめるのがコツです。例：I have to go now.（もう行かなくちゃ。）\n\n「and I was like...」(それで私は〜って感じだった)は、会話の中で自分の過去の感情や発言を引用する時に非常に便利な口語表現です。例：And I was like, \"Wait, what?\"（それで私は「ちょっと待って、何？」って感じだったの。）\n\n「hell no」(絶対ダメ、とんでもない)は、強い拒絶を示すスラング的な表現です。気心の知れた仲で使います。例：Hell no, I'm not doing that!（絶対イヤだ、そんなことやらないよ！）",
+      "introduction": "英語を聴いていて「えっ、今なんて言った？」と耳を疑うことはありませんか？実は、文字通りの発音とはかけ離れた「ネイティブ特有の音のつながり」が存在します。今回は、驚きの「ナウズ」という音の正体を解き明かしましょう。",
+      "section_1": {
+        "heading": "例文と意味",
+        "content": "今回の例文は「you have to and I was like, hell, no I'm not lip-singing!」です。これは、誰かに何かを強制された時に、自分の強い拒絶を相手に伝える非常に口語的でダイナミックな表現です。特に「I was like」は、物語を話す時に「〜って感じだった」と臨場感を出すためによく使われます。"
+      },
+      "section_2": {
+        "heading": "発音のポイント",
+        "content": "まず「have to」を「ハヴ トゥ」と丁寧に読んでいませんか？ネイティブのスピードでは「ハフトゥ」と一息で発音されます。そして最大の問題児「and I was」です。これは「アンド アイ ワズ」と律儀に発音されることはまずありません。特に早口の文脈では、音が極限まで削ぎ落とされ、前の単語と合体して「ナウズ」という一つの塊のような音に聞こえるのが特徴です。"
+      },
+      "section_3": {
+        "heading": "なぜそう聞こえるの？",
+        "content": "なぜ「ナウズ」になるのか。それは英語の「弱化」と「同化」が連続して起きているからです。and の d は脱落しやすく、残った n と I がつながって「ナイ」。さらに was の w は前の音を飲み込みやすく、I の最後の音が w に引っ張られて変化します。結果として「ナイ」が「ナウ」に変化し、was の a も消えて最後の z 音だけが残るため、全体で「ナウズ」という極めて短い音に凝縮されるのです。これは機能語が弱く発音される英語のリズムが生んだ現象です。"
+      },
+      "section_4": {
+        "heading": "学習のコツ",
+        "content": "このような激しい音の変化をマスターするには、「耳で聞こえたままを真似る」のが一番の近道です。文字を見ながらだと、どうしても「アンド アイ ワズ」と脳が修正してしまいます。まずはスクリプトを見ずに、聞こえてくる「ナウズ」という音をそのまま口に出してシャドーイングしてみましょう。理屈を理解した後に何度も口に馴染ませることで、リスニング力も飛躍的に向上します。"
+      },
+      "conclusion": "英語の音の変化は、最初は魔法のように聞こえるかもしれませんが、法則を知れば納得の連続です。「ナウズ」が聞き取れた時、あなたのリスニングレベルは確実に一段階上がっているはずですよ！",
+      "keywords": [
+        "英語発音",
+        "リエゾン",
+        "リスニング",
+        "英語学習",
+        "have to",
+        "and I was like"
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/9axG7EhGNmI/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/9axG7EhGNmI/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/9axG7EhGNmI/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/9axG7EhGNmI/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/9axG7EhGNmI/maxresdefault.jpg\"}",
+    "theme": "No...I'm",
+    "noIndex": 0,
+    "is_similar": 0,
+    "pron_memo": "have to は ハフトゥ に聴こえる\nI was は ナウズ に聴こえる。",
+    "tsukkomi": [
+      {
+        "question": "have to は ハヴ トゥ じゃなくて ハフトゥ！？",
+        "answer": "have to は日常会話では、vの音が後ろの無声音のtに影響を受けて、濁らない「f」の音に変化します。そのため「ハヴ トゥ」ではなく、一気に「ハフトゥ」と発音するのが一般的です。これは英語の「同化」という現象の一つです。"
+      },
+      {
+        "question": "and I was は アンド アイ ワズ じゃなくて ナウズ！？",
+        "answer": "and の n と I の音がつながり（リエゾン）、まず「ナイ」のような音になります。さらに was に続く際、I の「イ」の音が was の w に吸収されて「ウ」に変化し、was の a の音も脱落するため、全体として「ナウズ」のように聞こえるのです。非常に高度な音の消失と連結が起きています。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"you have to\",\"time\":\"1086.2\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544098187\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"  and I was like, hell, no\",\"time\":\"1086.8\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544098196\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\"I'm not lip-singing!\",\"time\":\"1087.66\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544098207\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"}]",
+    "chunk_timestamps": null,
+    "image_sections": [
+      {
+        "label": "you have to",
+        "time": "1086.2",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544098187\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "  and I was like, hell, no",
+        "time": "1086.8",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544098196\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": "I'm not lip-singing!",
+        "time": "1087.66",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544098207\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      }
+    ],
+    "kugiri_eng": "you / have to / and I was / like, / hell, no / I'm not / lip-singing!",
+    "kugiri_jp": "【ユ】 / 〈ハフトゥ〉 / 〈ナウズ〉 / 【ライク】 / 【ヘル】 【ノー】 / 【アイム】 〈ノッ〉 / 【リップ】 【スィン】",
+    "translated": "あなた、やらなきゃダメだよ。それで私は「まさか、口パクなんて絶対しないわ！」って感じだったの。"
+  },
+  {
+    "id": 73,
+    "url": "https://www.youtube.com/watch?v=b3fIGWhvpI4",
+    "start_time": "1993.8",
+    "end_time": "1997.1",
+    "updated_at": "2026-02-14T00:43:38.620Z",
+    "question": "you know, they would stay up all night, or part of the night.",
+    "question_katakana": " ユ ノゥ ゼィ ウッ ステイ ポー ナイト オァ パードナイ？",
+    "article_text": {
+      "title": "ネイティブの発音はこう聞こえる！「stay up all night」が「ステイ ポー ナイト」になる秘密",
+      "meta_description": "英語の「stay up all night」が「ステイ ポー ナイト」に聞こえる理由を解説。リエゾンや音の脱落など、ネイティブ特有の発音ルールを学んでリスニング力をアップさせましょう。",
+      "katakana_weak_strong": "〈ユ ノゥ〉 〈ゼィ〉 〈ウッ〉 【ステイ】 【ポー】 【ナイト】 〈オァ〉 【パードナイ】",
+      "image_sections": [
+        {
+          "label": "you know, they would stay up ",
+          "time": "1993.8",
+          "image_display_instruction": "【ここにyou_know,_they_would_stay_up_の画像を表示】",
+          "description": "「you know」は「ほら」「ええと」といった、会話の調子を整えるクッション言葉です。「stay up」は寝ずに起きている状態を指します。",
+          "image_suggestion": "夜遅くにリビングのソファでくつろぎながら、友人や家族とリラックスして会話をしているシーン。",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544342498\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+        },
+        {
+          "label": "all night,",
+          "time": "1995.7",
+          "image_display_instruction": "【ここにall_night,の画像を表示】",
+          "description": "「all night」は「一晩中」という意味です。夜が更けてから朝が来るまでずっと、というニュアンスを含みます。",
+          "image_suggestion": "窓の外が暗い中、部屋に明かりが灯り、時計の針が深夜を指している様子。",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544342503\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n\n"
+        },
+        {
+          "label": " or part of the night.",
+          "time": "1996.5",
+          "image_display_instruction": "【ここに_or_part_of_the_night.の画像を表示】",
+          "description": "「part of the night」は「夜の一部」、つまり一晩中ではないけれど、夜の遅い時間まで、という意味で使われます。",
+          "image_suggestion": "三日月が浮かぶ夜空の下、少し眠そうにしながらもまだ作業や読書を続けている人の姿。",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544342509\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+        }
+      ],
+      "remember": "「stay up」(寝ずに起きている)は、夜更かしを語る際に欠かせない熟語です。例：I stayed up late to watch a movie. (映画を見るために夜遅くまで起きていた。)\n\n「part of」(の一部)は、全体のうちの特定の割合を示す際に便利です。例：Part of the story is true. (その話の一部は本当だ。)\n\n「you know」(ほら、知っての通り)は、相手に同意を求めたり話を切り出したりする時の定番フレーズです。例：You know, I've been thinking about changing my job. (あのさ、転職しようか考えてるんだよね。)",
+      "introduction": "「えっ、今なんて言った？」英語を学んでいると、知っている単語のはずなのに、全く違う音に聞こえて驚くことがありますよね。実はそれ、ネイティブ特有の「音のつながり」が原因なんです。今回は「stay up all night」を例に、リスニングの壁を突破する発音のコツを伝授します！",
+      "section_1": {
+        "heading": "例文と意味",
+        "content": "今回の例文は「you know, they would stay up all night, or part of the night.」です。日本語では「ほら、彼らは一晩中、あるいは夜の遅い時間まで起きているものなんだよ」という意味になります。習慣的に夜更かしをしていた様子を誰かに説明している、カジュアルな会話シーンを想像してみてください。"
+      },
+      "section_2": {
+        "heading": "発音のポイント",
+        "content": "「ステイ アップ オール ナイト」と一音ずつ区切って発音されることは、実際の会話ではまずありません！特に驚くのが「stay up all」が「ステイ ポー」のように聞こえる点です。また、「part of the night」も「パードナイ」と、まるで一つの単語のように短く聞こえます。このように音が連結したり脱落したりすることで、英語特有の滑らかなリズムが生まれます。"
+      },
+      "section_3": {
+        "heading": "なぜそう聞こえるの？",
+        "content": "理由は音の「同化」と「連結（リエゾン）」にあります。まず「stay up all」では、all が「オー」という母音で始まるため、直前の up の u が弱化して消え、残った p の音と all がくっついて「ポー」に変化します。また、「part of the night」では、part の語尾の t が母音に挟まれたり機能語（of, the）に続いたりすることで音が濁り、全体が合体して「ドナ」のような響きになるのです。これらは素早く話す際のリズムを保つための自然な変化です。"
+      },
+      "section_4": {
+        "heading": "学習のコツ",
+        "content": "まずは「ステイ ポー」「パードナイ」という聞こえるままの音を、自分でも真似して口に出してみましょう。意味のまとまり（チャンク）を意識しながら、強弱を付けてシャドーイングするのが効果的です。特に強く読む【ステイ】【ポー】【ナイト】を強調し、〈ユ ノゥ〉などの弱形は添える程度に発音すると、一気にネイティブらしい響きに近づきますよ。"
+      },
+      "conclusion": "英語の音の変化は、ルールを知ってしまえば「なるほど！」という発見の連続です。耳が慣れてくると、リスニングがどんどん楽しくなります。ぜひ今日から「ステイ ポー」と口に馴染ませてみてくださいね！",
+      "keywords": [
+        "英語発音",
+        "リエゾン",
+        "リスニング",
+        "英語学習",
+        "stay up all night",
+        "音の連結"
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/b3fIGWhvpI4/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/b3fIGWhvpI4/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/b3fIGWhvpI4/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/b3fIGWhvpI4/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/b3fIGWhvpI4/maxresdefault.jpg\"}",
+    "theme": "No...I'm",
+    "noIndex": 0,
+    "is_similar": 0,
+    "pron_memo": "stay up all が ステイ ポー ナイト に聴こえる。\npart of the night が　パードナイ に聴こえる。",
+    "tsukkomi": [
+      {
+        "question": "stay up all が ステイ ポー ナイト に聴こえる！？",
+        "answer": "all が「オー」の発音なので、直前の up の母音「u」の音が消えて「p」の音だけが残り、all と連結して「ポー」という音に変形して聞こえます。これは英語特有の連結（リエゾン）の一種です。"
+      },
+      {
+        "question": "part of the night が パードナイ に聴こえる!?",
+        "answer": "t of the が合体して「ドナ」のような音になります。part の語尾の t が soft d のように濁り、続く of と the と連結することで、素早く「パードナイ」と一気に発音されるためです。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"you know, they would stay up \",\"time\":\"1993.8\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544342498\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\"all night,\",\"time\":\"1995.7\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544342503\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\\n\"},{\"label\":\" or part of the night.\",\"time\":\"1996.5\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544342509\\\" height=\\\"445\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"}]",
+    "chunk_timestamps": null,
+    "image_sections": [
+      {
+        "label": "you know, they would stay up ",
+        "time": "1993.8",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544342498\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": "all night,",
+        "time": "1995.7",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544342503\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n\n"
+      },
+      {
+        "label": " or part of the night.",
+        "time": "1996.5",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544342509\" height=\"445\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      }
+    ],
+    "kugiri_eng": "you know / they would / stay up / all / night / or / part of the / night",
+    "kugiri_jp": "〈ユ ノゥ〉 / 〈ゼィ ウッ〉 / 【ステイ】 / 【ポー】 / 【ナイト】 / 〈オァ〉 / 【パードナイ】",
+    "translated": "ほら、彼らは一晩中、あるいは夜の遅い時間まで起きているものなんだよ。"
+  },
+  {
+    "id": 74,
+    "url": "https://www.youtube.com/watch?v=lFlu60qs7_4",
+    "start_time": "1339.4",
+    "end_time": "1343.4",
+    "updated_at": "2026-03-01T01:47:08.791Z",
+    "question": "it feels just as if they're traveling at constant velocity in a straight line.",
+    "question_katakana": "イッ フィーウズ ジャスタ セイフタァ トラヴェリンガッ コンスト ヴェロシティ イナ ストレイト ライン",
+    "article_text": {
+      "title": "ネイティブの発音はこう聞こえる！「it feels just as if they're...」の秘密",
+      "meta_description": "英語が「ジャスタ セイフタァ」に聞こえる理由を解説！「it feels just as if they're traveling at constant velocity in a straight line.」のカタカナ発音と、音の連結や脱落の仕組みを学びましょう。",
+      "katakana_weak_strong": "〈イッ〉 【フィーウズ】 【ジャスタ】 【セイフタァ】 【トラヴェリンガッ】 【コンスト】 【ヴェロシティ】 〈イナ〉 【ストレイト】 【ライン】",
+      "image_sections": [
+        {
+          "label": "it feels just as if they're",
+          "time": "1339.4",
+          "image_display_instruction": "【ここにit_feels_just_as_if_they_reの画像を表示】",
+          "description": "「まるで～のように感じる」という、主観的な感覚や仮定の状態を表現するフレーズです。何かの感覚に深く入り込んでいる様子をイメージしましょう。",
+          "image_suggestion": "目を閉じて、無重力や風を感じながら何かに没入している人の表情のアップ。",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544927272\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n"
+        },
+        {
+          "label": "traveling at constant velocity",
+          "time": "1341",
+          "image_display_instruction": "【ここにtraveling_at_constant_velocityの画像を表示】",
+          "description": "「一定の速度で移動している」という物理的な状態を指します。加速も減速もせず、滑らかにスーッと進むイメージです。",
+          "image_suggestion": " 滑らかな軌道の上を、ブレることなく一定のスピードで進む物体のイラスト。",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544927359\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+        },
+        {
+          "label": "in a straight line.",
+          "time": "1342.3",
+          "image_display_instruction": "【ここにin_a_straight_lineの画像を表示】",
+          "description": "「一直線に」という意味です。迷いや曲がり角がなく、どこまでも真っ直ぐに伸びる軌道を示します。",
+          "image_suggestion": "地平線の彼方まで続く、一寸の狂いもない真っ直ぐな道や光の線の画像。",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544927365\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n"
+        }
+      ],
+      "remember": "「just as if」(まるで〜かのように)は、比喩を使って状況を説明する時に非常に便利な表現です。例：It looks just as if it's going to rain.(まるで今にも雨が降り出しそうだ。)\n\n「in a straight line」(一直線に)は、方向や動きを説明する際に使われます。例：Please stand in a straight line.(一直線に並んでください。)\n\n「at constant...」(一定の〜で)は、速度や温度などが変わらない状態を表します。例：Keep the oven at constant temperature.(オーブンを一定の温度に保ちなさい。)",
+      "introduction": "英語のリスニングをしていて、「えっ、今なんて言ったの？」と驚いたことはありませんか？実は、ネイティブは教科書通りに一語ずつ発音しているわけではありません。音がつながったり、消えたりする「音の変化」を知ることで、あなたの耳は劇的に進化します。",
+      "section_1": {
+        "heading": "例文と意味",
+        "content": "今回の例文は「it feels just as if they're traveling at constant velocity in a straight line.」です。物理現象などを説明する際によく使われる表現で、「まるで一直線を一定の速度で進んでいるかのように感じられる」という意味になります。慣性の中にいるような、滑らかな動きを想像してみてください。"
+      },
+      "section_2": {
+        "heading": "発音のポイント",
+        "content": "まずは「ジャスタ セイフタァ」という部分に注目です。just の [t] が脱落し、as if が連結することで、まるで一つの新しい単語のようなリズムになります。また、traveling at も「トラヴェリンガッ」とつながります。単語の境界線を意識しすぎず、音の波に乗ることが大切です。"
+      },
+      "section_3": {
+        "heading": "なぜそう聞こえるの？",
+        "content": "英語には、言いやすいように音を繋げる「リエゾン」や、速く言うために音を省略する「リダクション」というルールがあります。in a が「イナ」になるのは、前後の音が連結してエネルギーを節約しているからです。また、constant の [t] が消えるのは、語末の子音を完全に発音しない英語特有のリズムによるものです。"
+      },
+      "section_4": {
+        "heading": "学習のコツ",
+        "content": "まずは、今回紹介したカタカナ表記の強弱（【】の部分を強調し、〈〉を素早く添える）を意識して、音を真似してみてください。自分の口で「ジャスタ」と言えるようになれば、不思議と耳でも「just as」と聞き取れるようになります。短いフレーズからシャドーイングを繰り返しましょう。"
+      },
+      "conclusion": "英語の音の変化は、最初は魔法のように聞こえるかもしれませんが、仕組みを知れば楽しい発見の連続です。一歩ずつ、ネイティブのリズムをマスターしていきましょう！",
+      "keywords": [
+        "英語発音",
+        "リエゾン",
+        "リスニング",
+        "英語学習",
+        "just as if",
+        "音の脱落"
+      ]
+    },
+    "category": "高校2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/lFlu60qs7_4/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/lFlu60qs7_4/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/lFlu60qs7_4/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/lFlu60qs7_4/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/lFlu60qs7_4/maxresdefault.jpg\"}",
+    "theme": "just as if they're",
+    "noIndex": 0,
+    "is_similar": 0,
+    "pron_memo": "just as if they're が ジャスタ セイフタァ に聴こえる。\ntraveling at が トラヴェリンガッ に聴こえる。\nconstant が コンスト に聴こえる\nin a が イナ に聴こえる",
+    "tsukkomi": [
+      {
+        "question": "just as if they're が ジャスタ セイフタァ にどうして聴こえるの？",
+        "answer": "これは「リンキング（連結）」と「音の脱落」が同時に起きているためです。just の [t] が消え、as の [s] と if の [i] がつながって「ジャスタ・スィフ」のようになります。さらに if の [f] と they're の [ð] が重なり、[f] の音が強調されて「セイフタァ」のように聞こえるのです。"
+      },
+      {
+        "question": "traveling at は トラヴェリンガッ！",
+        "answer": "traveling の語尾の [ŋ] と、続く at の [æ] が連結して「ガッ」という音に変化しています。英語では単語の最後が子音で、次が母音で始まる場合、一つの単語のように繋げて発音するのが一般的です。"
+      },
+      {
+        "question": "constant がコンスタントに聴こえない！？",
+        "answer": "英語の constant は、最後の [t] がほとんど発音されない「飲み込む音（Stop T）」になることがよくあります。また、アクセントのない後半の母音は非常に弱くなるため、日本人には「コンスト」のように短く切り詰められた音に聞こえるのです。"
+      },
+      {
+        "question": "in a は イナ！",
+        "answer": "これも典型的なリンキング（連結）です。in の終わりにある子音 [n] と、次の a [ə] がくっついて [nə]（ナ）という一つの音になります。一語一語区切らずに「イナ」と一息で発音するのがネイティブ流です。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"it feels just as if they're\",\"time\":\"1339.4\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544927272\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\"},{\"label\":\"traveling at constant velocity\",\"time\":\"1341\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544927359\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\"in a straight line.\",\"time\":\"1342.3\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544927365\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\"}]",
+    "chunk_timestamps": null,
+    "image_sections": [
+      {
+        "label": "it feels just as if they're",
+        "time": "1339.4",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544927272\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n"
+      },
+      {
+        "label": "traveling at constant velocity",
+        "time": "1341",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544927359\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": "in a straight line.",
+        "time": "1342.3",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544927365\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n"
+      }
+    ],
+    "kugiri_eng": "it feels / just as if they're / traveling at / constant / velocity / in a / straight line.",
+    "kugiri_jp": "〈イッ〉 【フィーウズ】 / 【ジャスタ】 【セイフタァ】 / 【トラヴェリンガッ】 / 【コンスト】 / 【ヴェロシティ】 / 〈イナ〉 / 【ストレイト】 【ライン】",
+    "translated": "まるで彼らが等速度で直線的に移動しているかのように感じられます。"
+  },
+  {
+    "id": 75,
+    "url": "https://www.youtube.com/watch?v=ZJ5SuhIPwAI",
+    "start_time": "195",
+    "end_time": "197.4",
+    "updated_at": "2026-03-02T04:23:07.369Z",
+    "question": "But we can learn a lot from Oklo today.",
+    "question_katakana": "バッ ウィ ケン ラァン ア ラット フロム オッコー トデイ",
+    "article_text": {
+      "title": "ネイティブの発音はこう聞こえる！「But we can learn a lot from Oklo today.」の秘密",
+      "meta_description": "英語の「lot」が「ラット」に聞こえる理由を知っていますか？「But we can learn a lot from Oklo today.」を例に、ネイティブ特有の音のつながりやリズムを専門家が分かりやすく解説します。",
+      "katakana_weak_strong": "〈バッ ウィ ケン〉 【ラァン】 〈ア〉 【ラット】 〈フロム〉 【オッコー】 【トデイ】",
+      "image_sections": [
+        {
+          "label": "But we can learn",
+          "time": "195",
+          "image_display_instruction": "【ここにBut_we_can_learnの画像を表示】",
+          "description": "「しかし、私たちは学べる」という前向きな可能性を示すフレーズです。何か新しい発見をしようと、みんなで資料を覗き込んでいるような意欲的なシーンをイメージしてください。",
+          "image_suggestion": "古い資料や岩石を囲んで、熱心に話し合っている研究者たちのグループ",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544971179\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+        },
+        {
+          "label": "a lot from Oklo",
+          "time": "196.3",
+          "image_display_instruction": "【ここにa_lot_from_Okloの画像を表示】",
+          "description": "「オクロからたくさんのことを」という意味です。オクロ（天然原子炉の跡地）という特定の場所から、溢れんばかりの情報や知識が流れ出てくる様子を視覚的に捉えると記憶に残ります。",
+          "image_suggestion": "アフリカの地図上の「Oklo」という地点から、光の粒子（知識の象徴）が溢れ出しているイラスト",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544971182\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+        },
+        {
+          "label": "today.",
+          "time": "196.9",
+          "image_display_instruction": "【ここにtodayの画像を表示】",
+          "description": "「今日（現代において）」という意味で、過去の出来事が今の私たちに役立つことを強調しています。カレンダーや時計が「今」を指しているイメージが最適です。",
+          "image_suggestion": "現代的な研究所の風景と、デジタルの日付表示が「TODAY」となっているクローズアップ画像",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544971184\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+        }
+      ],
+      "remember": "「Learn a lot from」（〜から多くを学ぶ）は、経験や場所から教訓を得る時に非常に便利な表現です。例：We can learn a lot from our mistakes.（私たちは失敗から多くのことを学ぶことができる）\n\n「But we can」（しかし私たちは〜できる）は、逆境や難しい状況の中で可能性を提示する際に使われます。例：It's difficult, but we can do it.（難しいけれど、私たちならできるよ）",
+      "introduction": "英語を聴いていて「知っている単語なのに、なぜか違う音に聞こえる」と感じたことはありませんか？実は、ネイティブの発音には特有の「一息で言うリズム」と「母音の変化」が隠されています。今回はオクロの天然原子炉に関する一文を題材に、リスニングの壁を突破するコツを伝授します。",
+      "section_1": {
+        "heading": "例文と意味",
+        "content": "今回の例文は「But we can learn a lot from Oklo today.」です。これは「しかし、私たちは今日のオクロから多くのことを学ぶことができます」という意味です。20億年前に自然に発生した原子炉「オクロ」から、現代の私たちが得られる知見がいかに多いかを説いている場面ですね。"
+      },
+      "section_2": {
+        "heading": "発音のポイント",
+        "content": "まず注目したいのは「But we can learn」までを一息で駆け抜けるスピード感です。ここで一歩引いてしまうと、ネイティブのリズムに置いていかれてしまいます。そして最大のツッコミどころは「lot」の発音。学校で習った「ロット」という音を期待していると、急に「ラット」と聞こえてきて戸惑うはずです。これはアメリカ英語特有の母音の広がりが原因です。"
+      },
+      "section_3": {
+        "heading": "なぜそう聞こえるの？",
+        "content": "「lot」が「ラット」に聞こえるのは、英語には日本語のラ行の音が厳密には存在しないからです。さらに、[o]の音を発音する際、舌の位置や口の開き方によって、日本語の「オ」よりも「ア」に近い響きになることがよくあります。また、「But we can」が弱く発音されるのは、これらが文法的な役割を果たす「機能語」だからです。英語のリズムは、重要な単語を強調するために周りの単語を縮めるという性質を持っているのです。"
+      },
+      "section_4": {
+        "heading": "学習のコツ",
+        "content": "まずは「But we can learn」を指をパチンと鳴らす間に一気に言う練習をしてみましょう。単語を一つずつ切り離さず、滑り台を滑るように発音するのがコツです。また、「lot」を聞く時は「オ」と「ア」の中間音を意識してみてください。自分の耳で「ロットともラットとも聞こえるな」と感じられたら、それはネイティブの音を正確にキャッチでき始めている証拠です。"
+      },
+      "conclusion": "英語の音の変化は、理屈が分かれば「聞こえない」が「面白い発見」に変わります。今日から「lot」を聴く時は、その絶妙な響きの違いを楽しんでみてくださいね！",
+      "keywords": [
+        "英語発音",
+        "リスニング",
+        "ネイティブ英語",
+        "オクロ",
+        "音の変化",
+        "リエゾン"
+      ]
+    },
+    "category": "高校1年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/ZJ5SuhIPwAI/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/ZJ5SuhIPwAI/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/ZJ5SuhIPwAI/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/ZJ5SuhIPwAI/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/ZJ5SuhIPwAI/maxresdefault.jpg\"}",
+    "theme": "learn a lot from",
+    "noIndex": 0,
+    "is_similar": 0,
+    "pron_memo": "lot は ラットのように聴こえる",
+    "tsukkomi": [
+      {
+        "question": "But we can learn までが一息で発音されるのはなぜ？",
+        "answer": "英語では「意味の塊（チャンク）」を一気に発音する傾向があります。But, we, canは機能語と呼ばれ、後ろの重要な単語であるlearn（内容語）に向かって滑り込むように弱く速く発音されるため、まるで一つの単語のように一息で聞こえるのです。"
+      },
+      {
+        "question": "lot が「ロット」じゃなくて「ラット」のように聴こえることがあるのはなぜ？",
+        "answer": "英語には日本語のラ行にぴったり一致する発音が存在しません。特にアメリカ英語の「o」の音は口を縦に開けて「ア」に近い音で発音されることが多いため、日本人には「ロット」だったり「ラット」だったり、人によって違うように聴こえることがあります。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"But we can learn\",\"time\":\"195\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544971179\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"a lot from Oklo\",\"time\":\"196.3\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544971182\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"today.\",\"time\":\"196.9\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544971184\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"}]",
+    "chunk_timestamps": null,
+    "image_sections": [
+      {
+        "label": "But we can learn",
+        "time": "195",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544971179\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "a lot from Oklo",
+        "time": "196.3",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544971182\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "today.",
+        "time": "196.9",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544971184\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      }
+    ],
+    "kugiri_eng": "But we can learn / a lot / from Oklo / today.",
+    "kugiri_jp": "〈バッ ウィ ケン〉 【ラァン】 / 〈ア〉 【ラット (ロット)】 / 〈フロム〉 【オッコー】 / 【トデイ】",
+    "translated": "しかし、私たちは今日のオクロから多くのことを学ぶことができます。"
+  },
+  {
+    "id": 76,
+    "url": "https://www.youtube.com/watch?v=JW8dqT90BLs",
+    "start_time": "85.6",
+    "end_time": "89.2",
+    "updated_at": "2026-03-02T07:26:04.591Z",
+    "question": "what we're starting to understand is that at the most primary level,",
+    "question_katakana": "ワッウォ スターティン トゥ ワナスタン イズゼレッタ モゥスト プライマリィ レボゥ",
+    "article_text": {
+      "title": "ネイティブの発音はこう聞こえる！「what we're starting to understand...」の秘密",
+      "meta_description": "「what we're」が「ワッウォ」に聞こえる！？ネイティブ特有の音の変化「リエゾン」や「弱化」を詳しく解説。例文「what we're starting to understand is that at the most primary level,」を使って、リスニングのコツを掴みましょう。",
+      "katakana_weak_strong": "〈ワッウォ〉 【スターティン】 〈トゥ〉 【ワナスタン】 【イズ】〈ゼレッタ〉 【モゥスト】 【プライマリィ】 【レボゥ】",
+      "image_sections": [
+        {
+          "label": "what we're starting to understand ",
+          "time": "85.6",
+          "image_display_instruction": "【ここにwhat_we're_starting_to_understand_の画像を表示】",
+          "description": "「私たちが理解し始めていること」という意味です。霧が晴れて物事の全体像が見え始めてくるような、知的な発見のプロセスを表します。",
+          "image_suggestion": "パズルのピースが組み合わさり始め、一つの絵が見えてきそうな瞬間のイメージ。",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975022\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+        },
+        {
+          "label": "is that",
+          "time": "87.3",
+          "image_display_instruction": "【ここにis_thatの画像を表示】",
+          "description": "「それは～だ」と、結論を導き出すためのつなぎの言葉です。ここから重要な情報を話すぞ、という合図の役割を果たします。",
+          "image_suggestion": "プレゼンテーターが指を差し、次の重要なポイントを示しているシーン。",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975023\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+        },
+        {
+          "label": " at the most primary level,",
+          "time": "87.65",
+          "image_display_instruction": "【ここにat_the_most_primary_level,の画像を表示】",
+          "description": "「最も根本的な（基礎的な）レベルで」という意味です。物事の表面ではなく、一番土台となる部分に焦点を当てる表現です。",
+          "image_suggestion": "大きな木の根っこや、建物のしっかりとした土台部分を強調した図解。",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975027\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+        }
+      ],
+      "remember": "「starting to」(〜し始めている)は、何かの変化が始まったことを伝えるのに便利です。例：I'm starting to like natto. (納豆を好きになり始めている)\n\n「primary level」(根本的なレベル、初等レベル)は、物事の基本を説明する際によく使われます。例：We need to solve the problem at a primary level. (根本的なレベルで問題を解決する必要がある)",
+      "introduction": "「単語は知っているのに、ネイティブが話すと全く聞き取れない…」そんな経験はありませんか？実は英語には、文字通りには発音されない「音のルール」がたくさん隠れています。今回は、科学的な説明やプレゼンでよく使われるフレーズを題材に、驚きの音の変化を解き明かしていきましょう。",
+      "section_1": {
+        "heading": "例文と意味",
+        "content": "今回の例文は「what we're starting to understand is that at the most primary level,」です。これは「私たちが理解し始めているのは、最も根本的なレベルにおいて、……」という意味になります。何か新しい発見や、物事の本質について説明を始める時に非常に便利な、知的な響きを持つフレーズです。"
+      },
+      "section_2": {
+        "heading": "発音のポイント",
+        "content": "カタカナ表記を見ると「ワッウォ」「ワナスタン」「ゼレッタ」と、元の綴りからは想像もつかない音になっていますよね。「what we're」が「ワッウォ」になるのは、wの音が連続して重なるためです。また、「understand」が「ワナスタン」に聞こえる現象は、前の「to」から滑らかに音が繋がっている証拠です。これらは決してデタラメに発音されているわけではなく、英語特有のリズムが生み出す自然な変化なのです。"
+      },
+      "section_3": {
+        "heading": "なぜそう聞こえるの？",
+        "content": "この劇的な音の変化の理由は「機能語の弱化」と「フラップT」にあります。that, at, the といった文法的な役割を持つ語（機能語）は、会話の中では極限まで短く、弱く発音されます。さらに、that at the のように母音に挟まれた T の音が日本語のラ行のように変化する「フラップT」現象が起きることで、「ゼレッタ」という繋がった音になります。英語は、重要な単語（内容語）を強調し、それ以外を繋げて発音することで、独特の波のようなリズムを作っているのです。"
+      },
+      "section_4": {
+        "heading": "学習のコツ",
+        "content": "まずは「ワッウォ」「ワナスタン」「ゼレッタ」と、聞こえたままの音を口に出して真似してみてください。スペルを意識しすぎると、どうしても「トゥー・アンダー・スタンド」と一音ずつ区切ってしまい、ネイティブのリズムから遠ざかってしまいます。カタカナの強弱記号を参考に、息を止めずに一気に一息で発音する練習（シャドーイング）を取り入れるのが、リスニング力向上の最短ルートです。"
+      },
+      "conclusion": "英語の音の変化は、最初は呪文のように聞こえるかもしれませんが、ルールを知ればパズルを解くような楽しさに変わります。耳が「繋がった音」に慣れてくると、リスニングの世界がガラッと変わりますよ！",
+      "keywords": [
+        "英語発音",
+        "リエゾン",
+        "リスニング",
+        "英語学習",
+        "what we're",
+        "音声変化"
+      ]
+    },
+    "category": "大学",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/JW8dqT90BLs/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/JW8dqT90BLs/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/JW8dqT90BLs/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/JW8dqT90BLs/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/JW8dqT90BLs/maxresdefault.jpg\"}",
+    "theme": "understand",
+    "noIndex": 0,
+    "is_similar": 0,
+    "pron_memo": "what we're はワッウォ に聴こえる。\nto understand は トゥ ワナスタン に聴こえる\nthat at the は ゼレッタ に聴こえる。",
+    "tsukkomi": [
+      {
+        "question": "what we're は ワッウォ！？",
+        "answer": "whatの語尾のtが脱落（または非常に弱いストップ音）し、we'reのw音とつながることで「ワッウォ」のように聞こえます。we'reも弱く発音されるため、カタカナの「ウィアー」とは程遠い、一瞬の音になります。"
+      },
+      {
+        "question": "to understand は ワナスタン！？ アンダーじゃないの！？",
+        "answer": "toの母音が弱化して「トゥ」や「タ」に、そしてunderstandの最初のunが「アン」ではなく、前の語とつながりながら「ワ」に近い音で飲み込まれるように発音されるためです。さらに、dの音が消失し、語尾のdも脱落することで「ワナスタン」という独特の響きになります。"
+      },
+      {
+        "question": "that at the は ゼレッタ !? レの音はどこから？",
+        "answer": "thatの末尾のtとatの母音がつながり（連結）、さらにatのtとtheが重なることで、日本語の「ラ行」に近い「弾き音（フラップT）」が発生します。その結果、「ザッアットザ」ではなく「ゼレッタ」という滑らかな一つの塊として聞こえるのです。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"what we're starting to understand \",\"time\":\"85.6\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544975022\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\"is that\",\"time\":\"87.3\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544975023\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\" at the most primary level,\",\"time\":\"87.65\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544975027\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"}]",
+    "chunk_timestamps": null,
+    "image_sections": [
+      {
+        "label": "what we're starting to understand ",
+        "time": "85.6",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975022\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": "is that",
+        "time": "87.3",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975023\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": " at the most primary level,",
+        "time": "87.65",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975027\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      }
+    ],
+    "kugiri_eng": "what we're / starting / to understand / is / that at the / most / primary / level,",
+    "kugiri_jp": "〈ワッウォ〉 / 【スターティン】 / 〈トゥ〉 【ワナスタン】 / 【イズ】 / 〈ゼレッタ〉 / 【モゥスト】 / 【プライマリィ】 / 【レボゥ】",
+    "translated": "私たちが理解し始めていることは、最も根本的なレベルにおいて、ということです。"
+  },
+  {
+    "id": 77,
+    "url": "https://www.youtube.com/watch?v=GrHzffja4Qs",
+    "start_time": "1242",
+    "end_time": "1245",
+    "updated_at": "2026-03-12T04:26:42.347Z",
+    "question": "Those of you who have been with us before",
+    "question_katakana": "ワッウォ スターティン トゥ ワナスタン イズゼレッタ モゥスト プライマリィ レボゥ",
+    "article_text": {
+      "title": "ネイティブの発音はこう聞こえる！「what we're starting to understand...」の秘密",
+      "meta_description": "「what we're」が「ワッウォ」に聞こえる！？ネイティブ特有の音の変化「リエゾン」や「弱化」を詳しく解説。例文「what we're starting to understand is that at the most primary level,」を使って、リスニングのコツを掴みましょう。",
+      "katakana_weak_strong": "〈ワッウォ〉 【スターティン】 〈トゥ〉 【ワナスタン】 【イズ】〈ゼレッタ〉 【モゥスト】 【プライマリィ】 【レボゥ】",
+      "image_sections": [
+        {
+          "label": "what we're starting to understand ",
+          "time": "85.6",
+          "image_display_instruction": "【ここにwhat_we're_starting_to_understand_の画像を表示】",
+          "description": "「私たちが理解し始めていること」という意味です。霧が晴れて物事の全体像が見え始めてくるような、知的な発見のプロセスを表します。",
+          "image_suggestion": "パズルのピースが組み合わさり始め、一つの絵が見えてきそうな瞬間のイメージ。",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975022\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+        },
+        {
+          "label": "is that",
+          "time": "87.3",
+          "image_display_instruction": "【ここにis_thatの画像を表示】",
+          "description": "「それは～だ」と、結論を導き出すためのつなぎの言葉です。ここから重要な情報を話すぞ、という合図の役割を果たします。",
+          "image_suggestion": "プレゼンテーターが指を差し、次の重要なポイントを示しているシーン。",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975023\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+        },
+        {
+          "label": " at the most primary level,",
+          "time": "87.65",
+          "image_display_instruction": "【ここにat_the_most_primary_level,の画像を表示】",
+          "description": "「最も根本的な（基礎的な）レベルで」という意味です。物事の表面ではなく、一番土台となる部分に焦点を当てる表現です。",
+          "image_suggestion": "大きな木の根っこや、建物のしっかりとした土台部分を強調した図解。",
+          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975027\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+        }
+      ],
+      "remember": "「starting to」(〜し始めている)は、何かの変化が始まったことを伝えるのに便利です。例：I'm starting to like natto. (納豆を好きになり始めている)\n\n「primary level」(根本的なレベル、初等レベル)は、物事の基本を説明する際によく使われます。例：We need to solve the problem at a primary level. (根本的なレベルで問題を解決する必要がある)",
+      "introduction": "「単語は知っているのに、ネイティブが話すと全く聞き取れない…」そんな経験はありませんか？実は英語には、文字通りには発音されない「音のルール」がたくさん隠れています。今回は、科学的な説明やプレゼンでよく使われるフレーズを題材に、驚きの音の変化を解き明かしていきましょう。",
+      "section_1": {
+        "heading": "例文と意味",
+        "content": "今回の例文は「what we're starting to understand is that at the most primary level,」です。これは「私たちが理解し始めているのは、最も根本的なレベルにおいて、……」という意味になります。何か新しい発見や、物事の本質について説明を始める時に非常に便利な、知的な響きを持つフレーズです。"
+      },
+      "section_2": {
+        "heading": "発音のポイント",
+        "content": "カタカナ表記を見ると「ワッウォ」「ワナスタン」「ゼレッタ」と、元の綴りからは想像もつかない音になっていますよね。「what we're」が「ワッウォ」になるのは、wの音が連続して重なるためです。また、「understand」が「ワナスタン」に聞こえる現象は、前の「to」から滑らかに音が繋がっている証拠です。これらは決してデタラメに発音されているわけではなく、英語特有のリズムが生み出す自然な変化なのです。"
+      },
+      "section_3": {
+        "heading": "なぜそう聞こえるの？",
+        "content": "この劇的な音の変化の理由は「機能語の弱化」と「フラップT」にあります。that, at, the といった文法的な役割を持つ語（機能語）は、会話の中では極限まで短く、弱く発音されます。さらに、that at the のように母音に挟まれた T の音が日本語のラ行のように変化する「フラップT」現象が起きることで、「ゼレッタ」という繋がった音になります。英語は、重要な単語（内容語）を強調し、それ以外を繋げて発音することで、独特の波のようなリズムを作っているのです。"
+      },
+      "section_4": {
+        "heading": "学習のコツ",
+        "content": "まずは「ワッウォ」「ワナスタン」「ゼレッタ」と、聞こえたままの音を口に出して真似してみてください。スペルを意識しすぎると、どうしても「トゥー・アンダー・スタンド」と一音ずつ区切ってしまい、ネイティブのリズムから遠ざかってしまいます。カタカナの強弱記号を参考に、息を止めずに一気に一息で発音する練習（シャドーイング）を取り入れるのが、リスニング力向上の最短ルートです。"
+      },
+      "conclusion": "英語の音の変化は、最初は呪文のように聞こえるかもしれませんが、ルールを知ればパズルを解くような楽しさに変わります。耳が「繋がった音」に慣れてくると、リスニングの世界がガラッと変わりますよ！",
+      "keywords": [
+        "英語発音",
+        "リエゾン",
+        "リスニング",
+        "英語学習",
+        "what we're",
+        "音声変化"
+      ]
+    },
+    "category": "大学",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/GrHzffja4Qs/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/GrHzffja4Qs/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/GrHzffja4Qs/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/GrHzffja4Qs/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/GrHzffja4Qs/maxresdefault.jpg\"}",
+    "theme": "understand",
+    "noIndex": 0,
+    "is_similar": 0,
+    "pron_memo": "what we're はワッウォ に聴こえる。\nto understand は トゥ ワナスタン に聴こえる\nthat at the は ゼレッタ に聴こえる。",
+    "tsukkomi": [
+      {
+        "question": "what we're は ワッウォ！？",
+        "answer": "whatの語尾のtが脱落（または非常に弱いストップ音）し、we'reのw音とつながることで「ワッウォ」のように聞こえます。we'reも弱く発音されるため、カタカナの「ウィアー」とは程遠い、一瞬の音になります。"
+      },
+      {
+        "question": "to understand は ワナスタン！？ アンダーじゃないの！？",
+        "answer": "toの母音が弱化して「トゥ」や「タ」に、そしてunderstandの最初のunが「アン」ではなく、前の語とつながりながら「ワ」に近い音で飲み込まれるように発音されるためです。さらに、dの音が消失し、語尾のdも脱落することで「ワナスタン」という独特の響きになります。"
+      },
+      {
+        "question": "that at the は ゼレッタ !? レの音はどこから？",
+        "answer": "thatの末尾のtとatの母音がつながり（連結）、さらにatのtとtheが重なることで、日本語の「ラ行」に近い「弾き音（フラップT）」が発生します。その結果、「ザッアットザ」ではなく「ゼレッタ」という滑らかな一つの塊として聞こえるのです。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"what we're starting to understand \",\"time\":\"85.6\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544975022\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\"is that\",\"time\":\"87.3\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544975023\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\" at the most primary level,\",\"time\":\"87.65\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544975027\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"}]",
+    "chunk_timestamps": null,
+    "image_sections": [
+      {
+        "label": "what we're starting to understand ",
+        "time": "85.6",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975022\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": "is that",
+        "time": "87.3",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975023\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": " at the most primary level,",
+        "time": "87.65",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975027\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      }
+    ],
+    "kugiri_eng": "what we're / starting / to understand / is / that at the / most / primary / level,",
+    "kugiri_jp": "〈ワッウォ〉 / 【スターティン】 / 〈トゥ〉 【ワナスタン】 / 【イズ】 / 〈ゼレッタ〉 / 【モゥスト】 / 【プライマリィ】 / 【レボゥ】",
+    "translated": "私たちが理解し始めていることは、最も根本的なレベルにおいて、ということです。"
   }
 ]

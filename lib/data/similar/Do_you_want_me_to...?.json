@@ -6,32 +6,11 @@
     "end_time": "202.2",
     "updated_at": "2026-02-06T21:31:02.596Z",
     "question": "\"What do you want me to say?\" and I'm like, \"Can you say told douchebag?\"\n",
-    "question_katakana": "【ワデュウォンミア】 【セイ】 〈アナイ〉 【キャニュー】 〈ア〉 【セイ】 【トゥロォ】 【デュシバッグ】",
+    "question_katakana": "ワデュウォンミア セイ アナイ キャニュー ア セイ トゥロォ デュシバッグ\n",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『What do you want me to say?』の秘密",
       "meta_description": "『What do you want me to say?』が『ワデュウォンミア』に聞こえる！？ネイティブ特有の音の連結（リエゾン）や弱化を、カタカナ強弱記号付きで分かりやすく解説します。リスニング力向上に役立つ発音のコツが満載です。",
       "katakana_weak_strong": "【ワデュウォンミア】 【セイ】 〈アナイ〉 【キャニュー】 〈ア〉 【セイ】 【トゥロォ】 【デュシバッグ】",
-      "kugiri_eng": "What do you want me to / say? / and I'm ＜like＞, / Can you / say / told / douchebag?",
-      "kugiri_jp": "【ワデュウォンミア】 / 【セイ】 / 〈アナイ〉 / 【キャニュー】 / 【セイ】 / 【トゥロォ】 / 【デュシバッグ】",
-      "translated": "「私に何て言ってほしいの？」そしたら私は「『told douchebag』って言える？」って感じになったの。",
-      "tsukkomi": [
-        {
-          "question": "What do you want me to は ワット ドゥ ユ ウォント ミ トゥ じゃなくて ワデュウォンミア !? to の音がア！？",
-          "answer": "これは単語が連続することで音がつながり、さらに弱化が起きているためです。What do you の [t] が次の母音とつながり「ワデュ」のように変化し、want me to の最後の to はストレスがかからないため、はっきりした「トゥ」ではなく、曖昧母音の「ア」に近い「ア」に弱まっています。その結果、一気に「ワデュウォンミア」と聞こえるのです。"
-        },
-        {
-          "question": "and I'm like, は アンド アイム ライク じゃなくて アナイ !? likeの音は！？",
-          "answer": "and の d は脱落しやすく、I'm の m も非常に弱く発音されます。さらに like の [k] 音も、文脈の中で素早く発音される際や、話し言葉の filler（つなぎ言葉）として使われる場合にはほとんど聞き取れないほど脱落することがあります。その結果、「アナイ」という非常に短い音に凝縮されて聞こえるのです。"
-        },
-        {
-          "question": "Can you は キャン ユ じゃなくて キャニュー!?",
-          "answer": "Can の終わりの [n] と you の始まりの [j] の音がつながる「リンキング（連結）」が起きているからです。n と y がくっつくことで「ニュ」という一つの音のように変化し、「キャニュー」というスムーズな響きになります。"
-        },
-        {
-          "question": "say told はセイ トゥロォ、その前にある ア はフィラー!?",
-          "answer": "told の最後の d は、次の単語が子音で始まる場合や文末などでしばしば脱落し、「トゥロォ」のように聞こえます。また、その前にある「ア」という音は、言いよどんだり言葉を探したりする際に出る「フィラー（えーっと、あの）」と呼ばれる音です。"
-        }
-      ],
       "image_sections": [
         {
           "label": "\"What do you want me to say?\" ",
@@ -109,6 +88,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"What do you want me to say?\",\"time\":\"198.1\",\"url\":\"TWEET_ID:2016505845291565504\"},{\"label\":\" and I'm like,\",\"time\":\"198.9\",\"url\":\"TWEET_ID:2016505880880222340\"},{\"label\":\" Can you say told douchebag?\",\"time\":\"199.1\",\"url\":\"TWEET_ID:2016505914875085144\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "What do you want me to say?",
@@ -128,8 +108,7 @@
     ],
     "kugiri_eng": "What do you want me to / say? / and I'm ＜like＞, / Can you / say / told / douchebag?",
     "kugiri_jp": "【ワデュウォンミア】 / 【セイ】 / 〈アナイ〉 / 【キャニュー】 / 【セイ】 / 【トゥロォ】 / 【デュシバッグ】",
-    "translated": "「私に何て言ってほしいの？」そしたら私は「『told douchebag』って言える？」って感じになったの。",
-    "remember": "「What do you want me to 〜?」(私に〜してほしい？)は、相手の希望を尋ねる際に非常に便利な定型表現です。例：What do you want me to do next?(次に私に何をしてほしい？)\n\n「and I'm like...」(そしたら私は「〜」って感じだった)は、過去の会話や自分の反応をカジュアルに伝える時の定番フレーズです。例：And I'm like, \"No way!\"(そしたら私は「ありえない！」って感じだったの。)\n\n「Can you say...」(〜って言える？/〜と言ってくれますか？)は、発音を確認したり、特定の言葉を求めて依頼したりする時に使えます。例：Can you say that again?(もう一度それを言ってもらえますか？)"
+    "translated": "「私に何て言ってほしいの？」そしたら私は「『told douchebag』って言える？」って感じになったの。"
   },
   {
     "id": 63,
@@ -138,24 +117,11 @@
     "end_time": "10.5",
     "updated_at": "2026-01-29T18:51:08.147Z",
     "question": "What do you want me to serve the squash and the beef?",
-    "question_katakana": "【ワデュウォンミア】 【サーヴ】 【スクァッシュ】 〈アン〉 【ビィフ】",
+    "question_katakana": "ワデュウォンミア サーヴ スクァッシュ アン　ビィフ",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『What do you want me to serve the squash and the beef?』の秘密",
       "meta_description": "英語の『What do you want me to』が『ワデュウォンミア』に聞こえる理由を徹底解説！音の連結や弱化をマスターしてリスニング力をアップしましょう。",
       "katakana_weak_strong": "【ワデュウォンミア】 【サーヴ】 【スクァッシュ】 〈アン〉 【ビィフ】",
-      "kugiri_eng": "What do you want me to / serve / the squash / and / the beef?",
-      "kugiri_jp": "【ワデュウォンミア】 / 【サーヴ】 / 【スクァッシュ】 / 〈アン〉 / 【ビィフ】",
-      "translated": "カボチャと牛肉、どちらを先にお出ししましょうか？",
-      "tsukkomi": [
-        {
-          "question": "What do you want me to は ワット ドゥ ユ ウォント ミ トゥ じゃなくて ワデュウォンミア !? to の音がア！？",
-          "answer": "これは英語特有の「音の消失」と「弱化」が重なった現象です。What do you の [t] が次の母音と繋がって [d] のような音になり、さらに want me to の to が弱く発音されることで母音がシュワ音（あいまい母音）に変化し、「ア」のような響きになります。結果として全体がひと塊の「ワデュウォンミア」のように聞こえるのです。"
-        },
-        {
-          "question": "and は アンド じゃなくて アン!?",
-          "answer": "and は機能語と呼ばれる「添え物」の単語なので、文中で強調されない限り d の音が脱落（ドロップ）することが非常によくあります。特に次の単語が子音で始まる場合、d を発音せずに「アン」とだけ言うのがネイティブにとって自然なリズムなのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "What do you want me to",
@@ -227,6 +193,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"What do you want me to\",\"time\":\"8\",\"url\":\"TWEET_ID:2016946073831649446\"},{\"label\":\"serve\",\"time\":\"9.2\",\"url\":\"TWEET_ID:2016946128722546924\"},{\"label\":\"the squash and the beef?\",\"time\":\"9.5\",\"url\":\"TWEET_ID:2016946166567682074\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "What do you want me to",
@@ -246,8 +213,7 @@
     ],
     "kugiri_eng": "What do you want me to / serve / the squash / and / the beef?",
     "kugiri_jp": "【ワデュウォンミア】 / 【サーヴ】 / 【スクァッシュ】 / 〈アン〉 / 【ビィフ】",
-    "translated": "カボチャと牛肉、どちらを先にお出ししましょうか？",
-    "remember": "「What do you want me to」(私に何を〜してほしいですか)は、相手の意向を確認する際に非常に便利なフレーズです。例：What do you want me to do next? (次に私に何をしてほしいですか？)\n\n「serve」(料理を出す)は、レストランだけでなく家庭でも使える単語です。例：I'll serve dinner at seven. (7時に夕食を出しますね。)\n\n「and」(〜と)は、文中では d を発音せず「アン」と弱く発音すると一気にネイティブらしくなります。例：I like salt and pepper. (塩コショウが好きです。)"
+    "translated": "カボチャと牛肉、どちらを先にお出ししましょうか？"
   },
   {
     "id": 64,
@@ -256,28 +222,11 @@
     "end_time": "692.7",
     "updated_at": "2026-02-06T21:29:32.281Z",
     "question": "Do you want me to tell you what mine look like? Yeah.",
-    "question_katakana": "〈ドゥユ〉【ウォンミア】 【テル】 〈ユ〉【ワマィナサ】〈イ〉？【ヤァ】",
+    "question_katakana": "ドゥユウォンミア テル ユワマィナサイ？ヤァ",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！「Do you want me to tell you what mine look like?」の秘密",
       "meta_description": "「Do you want me to」が「ドゥユウォンミア」に聞こえる？「look like」が「ナサイ」？ネイティブ特有の音の変化（リエゾン・弱化）をプロが詳しく解説します。",
       "katakana_weak_strong": "〈ドゥユ〉【ウォンミア】 【テル】 〈ユ〉【ワマィナサ】〈イ〉？【ヤァ】",
-      "kugiri_eng": "Do you want me to / tell / you / what / mine look like? / Yeah.",
-      "kugiri_jp": "〈ドゥユ〉【ウォンミア】 / 【テル】 / 〈ユ〉 / 【ワ】 / 【マィ】 【ナサ】 〈イ〉 / 【ヤァ】",
-      "translated": "私のがどんな見た目か、教えてほしい？いいよ。",
-      "tsukkomi": [
-        {
-          "question": "Do you want me to は ドゥ ユ ウォン ミィ トゥ じゃなくて ドゥユウォンミア！？",
-          "answer": "wantの最後のtが脱落し、meとつながります。さらに、toの母音が弱化して「ア」のようなシュワ音（あいまい母音）になるため、全体として「ウォンミア」のように一気に発音されます。これは、機能語が連続する際にエネルギーを節約する英語特有のリズムです。"
-        },
-        {
-          "question": "you what mine look like は ユ ワ マイン ルック ライク じゃなくて ユワマィナサイ！？",
-          "answer": "whatのtが消失し、mineのnとlookのlが滑らかにつながります。さらに、lookのkとlikeのlが連結し、likeの最後のkが脱落（または非常に弱くなる）することで、日本語の「ナサイ」に近い音に変化しています。特に早口の会話では、一つ一つの単語を独立させず、波のように音をつなげるため、このような劇的な変化が起こります。"
-        },
-        {
-          "question": "look like の音がどうしてナサイ！？",
-          "answer": "lookの語尾[k]とlikeの語頭[l]が重なり、kの音が飲み込まれる「消失」が起きています。さらに、前のmineの[n]の残響とlikeの[l]、そしてlikeの[ai]の音が連続することで、私たちの耳には「ナサイ」というカタカナに近い響きとして届くのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "Do you want me to",
@@ -353,6 +302,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"Do you want me to\",\"time\":\"691.1\",\"url\":\"TWEET_ID:2017205163157860419\"},{\"label\":\" tell you\",\"time\":\"691.5\",\"url\":\"TWEET_ID:2017205196724854921\"},{\"label\":\" what mine look like? Yeah.\",\"time\":\"691.8\",\"url\":\"TWEET_ID:2017205237136937340\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "Do you want me to",
@@ -372,8 +322,7 @@
     ],
     "kugiri_eng": "Do you want me to / tell / you / what / mine look like? / Yeah.",
     "kugiri_jp": "〈ドゥユ〉【ウォンミア】 / 【テル】 / 〈ユ〉 / 【ワ】 / 【マィ】 【ナサ】 〈イ〉 / 【ヤァ】",
-    "translated": "私のがどんな見た目か、教えてほしい？いいよ。",
-    "remember": "「Do you want me to... ?」（私に～してほしいですか？）は、相手を助けたい時や提案する時に非常に便利な表現です。例：Do you want me to help you?（手伝いましょうか？）\n\n「look like...」（～のように見える、～に似ている）は、外見や状態を説明する際の必須フレーズです。例：It looks like rain.（雨が降りそうだね。）\n\n「tell you」（あなたに教える）は、単に事実を伝えるだけでなく、情報共有の意思を示す際によく使われます。例：I'll tell you later.（あとで教えるね。）"
+    "translated": "私のがどんな見た目か、教えてほしい？いいよ。"
   },
   {
     "id": 65,
@@ -382,24 +331,11 @@
     "end_time": "465.3",
     "updated_at": "2026-02-06T21:20:34.242Z",
     "question": "Do you want me to ask that question?",
-    "question_katakana": "〈ドゥ〉【ウォミア】 【アスタ】 【クェスション】",
+    "question_katakana": "ドゥウォミア アスタ クェスション",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『Do you want me to ask that question?』の秘密",
       "meta_description": "『Do you want me to ask that question?』が「ドゥウォミア アスタ...」に聞こえる理由を解説。リエゾンや音の脱落をマスターしてリスニング力を向上させましょう。",
       "katakana_weak_strong": "〈ドゥ〉【ウォミア】 【アスタ】 【クェスション】",
-      "kugiri_eng": "Do ＜you＞ want me to / ask that / question?",
-      "kugiri_jp": "〈ドゥ〉【ウォミア】 / 【アスタ】 / 【クェスション】",
-      "translated": "その質問を私に聞いてほしいですか？（私がその質問をしましょうか？）",
-      "tsukkomi": [
-        {
-          "question": "Do you want me to は ドゥ ユ ウォント ミィ トゥ じゃなくて ドゥウォンミア！？",
-          "answer": "Do you want me toが「ドゥウォミア」に聞こえるのは、複数の音声変化が同時に起きているためです。まずDo youが短縮され、wantの最後のtが脱落します。さらにwant me toが連結し、口語では「wanna me to」からさらに省略された「wom-mi-ya」のような響きに変化します。機能語であるtoも弱体化して「ア」に近い音になるため、全体として一気に繋がって聞こえます。"
-        },
-        {
-          "question": "ask that は アスク ザット じゃなくて アスタ！？",
-          "answer": "ask thatが「アスタ」に聞こえるのは、子音の連続による脱落（リダクション）が原因です。askの終わりの[k]とthatの始まりの[th]が隣り合うとき、後ろの[th]の音に飲み込まれる形で[k]がほとんど発音されなくなります。さらにthatの最後のtも次に続く音（または文末）の影響で飲み込まれる「飲み込みのt」になるため、結果として「アスタ」のように非常に短く聞こえるのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "Do you want me to ask that question?",
@@ -470,6 +406,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"Do you want me\",\"time\":\"464.2\",\"url\":\"TWEET_ID:2017208999385706574\"},{\"label\":\"ask that\",\"time\":\"464.6\",\"url\":\"TWEET_ID:2017209031937642595\"},{\"label\":\" question?\",\"time\":\"464.8\",\"url\":\"TWEET_ID:2017209076640624968\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "Do you want me",
@@ -489,7 +426,6 @@
     ],
     "kugiri_eng": "Do ＜you＞ want me to / ask that / question?",
     "kugiri_jp": "〈ドゥ〉【ウォミア】 / 【アスタ】 / 【クェスション】",
-    "translated": "その質問を私に聞いてほしいですか？（私がその質問をしましょうか？）",
-    "remember": "「Do you want me to...」(私に〜してほしいですか？)は、相手を助けたい時や提案をする時に非常に便利なフレーズです。例：Do you want me to help you?(手伝いましょうか？)\n\n「ask that question」(その質問をする)は、会議や授業で特定の疑問を代わりにぶつけたい時に使えます。例：I'll ask that question for you.(あなたの代わりにその質問をしましょう。)"
+    "translated": "その質問を私に聞いてほしいですか？（私がその質問をしましょうか？）"
   }
 ]

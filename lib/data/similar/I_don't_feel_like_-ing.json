@@ -6,28 +6,11 @@
     "end_time": "484.4",
     "updated_at": "2026-01-26T15:06:56.998Z",
     "question": "I don't feel like we're really making the movie until about three days in.",
-    "question_katakana": "【アイノ】 【フィル】 【ライク】 〈ゥリァリィ〉 【メイキング】 【ムーヴィー】 【トバツ】 【スリー】 【デイズ】 【イン】",
+    "question_katakana": "アイノ フィル ライク ゥリァリィ メイキング ムーヴィー トバツ スリー デイズ イン",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『until about』が『トバツ』に化ける秘密とは？",
       "meta_description": "映画製作の裏側を語る一文から、ネイティブ特有の音の消失（脱落）と連結を解説。「until about」が「トバツ」に聞こえる理由など、リスニングの壁を突破するヒントが満載です。",
       "katakana_weak_strong": "【アイノ】 【フィル】 【ライク】 〈ゥリァリィ〉 【メイキング】 【ムーヴィー】 【トバツ】 【スリー】 【デイズ】 【イン】",
-      "kugiri_eng": "I don't / feel like / ＜we're＞ really / making ＜the＞ / movie / until about / three days in.",
-      "kugiri_jp": "【アイノ】 / 【フィル】 【ライク】 / 〈ゥリァリィ〉 / 【メイキング】 / 【ムーヴィー】 / 【トバツ】 / 【スリー】 【デイズ】 【イン】",
-      "translated": "3日目くらいになるまで、本当に映画を作っているという実感が湧かないんだ。",
-      "tsukkomi": [
-        {
-          "question": "like we're really の ウィア の音が聴こえない！？",
-          "answer": "we'reのような機能語（代名詞とbe動詞の短縮形）は、文脈で意味が通じる場合、ネイティブは極限まで弱く発音するか、前後の音に飲み込ませて省略することがあります。likeの終わりの音とreallyの始まりの音が連続するため、中間のwe'reが脱落して「ライク・リァリィ」のように聞こえるのです。"
-        },
-        {
-          "question": "the movie の theの音が聴こえない！？",
-          "answer": "theは英語の中で最も頻出する機能語の一つですが、makingの終わりの鼻音とmovieの始まりの[m]音に挟まれることで、舌を歯に挟む[th]の動作が省略され、実質的に音が消えたように聞こえる現象（脱落）が起きています。"
-        },
-        {
-          "question": "until about は アンティル アバウトじゃなくて トバツ!?",
-          "answer": "これは「弱化」と「連結（リエゾン）」が同時に起きた結果です。untilの最初の音[un]が消えて「ティル」だけになり、さらに最後の[l]とaboutの最初の[a]が繋がります。しかし、さらに短縮が進むと、untilの語尾[l]すら消え、tの音とaboutの後半部分が合体して「トバツ」という鋭い音に変化して聞こえます。"
-        }
-      ],
       "image_sections": [
         {
           "label": "I don't feel like",
@@ -103,6 +86,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"I don't feel like\",\"time\":\"481.5\",\"url\":\"TWEET_ID:2015801883143938482\"},{\"label\":\" we're really making the movie\",\"time\":\"482.3\",\"url\":\"TWEET_ID:2015801916102717522\"},{\"label\":\"until about three days in.\",\"time\":\"483.3\",\"url\":\"TWEET_ID:2015801952542802229\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "I don't feel like",
@@ -122,8 +106,7 @@
     ],
     "kugiri_eng": "I don't / feel like / ＜we're＞ really / making ＜the＞ / movie / until about / three days in.",
     "kugiri_jp": "【アイノ】 / 【フィル】 【ライク】 / 〈ゥリァリィ〉 / 【メイキング】 / 【ムーヴィー】 / 【トバツ】 / 【スリー】 【デイズ】 【イン】",
-    "translated": "3日目くらいになるまで、本当に映画を作っているという実感が湧かないんだ。",
-    "remember": "「feel like ...」(〜な気がする、〜したい気分だ)は、自分の直感や欲求を伝えるのに非常に便利な表現です。例：I feel like something is wrong. (何かがおかしい気がする)\n\n「... days in」(開始して〜日目で)は、プロジェクトや旅行などが始まってからの期間を表す際に使われます。例：We are two days into the trip. (旅行が始まって2日目だ)"
+    "translated": "3日目くらいになるまで、本当に映画を作っているという実感が湧かないんだ。"
   },
   {
     "id": 61,
@@ -132,32 +115,11 @@
     "end_time": "809.1",
     "updated_at": "2026-02-06T21:15:21.174Z",
     "question": "I don't feel like I'm making a lot of progress. My endurance is getting a little bit better.",
-    "question_katakana": "【アイ ドン フィル】 〈ライク〉 〈メイキング〉 【ラァ】 【プログレス】 【マイ】 【デュアズ】 【スキャニ】 【リドビ】 【ベタァ】",
+    "question_katakana": "アイ ドン フィル ライク メイキング ラァ プログレス マイ デュアズ スキャニ リドビ ベタァ",
     "article_text": {
       "title": "ネイティブの発音はこう聞こえる！『I don't feel like I'm making a lot of progress...』の秘密",
       "meta_description": "英語が「スキャニ」や「デュアズ」に聞こえる！？ネイティブ特有の音の脱落や連結を、プロの視点で分かりやすく解説します。リスニング力アップの鍵を握る発音のコツを学びましょう。",
       "katakana_weak_strong": "【アイ ドン フィル】 〈ライク〉 〈メイキング〉 【ラァ】 【プログレス】 【マイ】 【デュアズ】 【スキャニ】 【リドビ】 【ベタァ】",
-      "kugiri_eng": "I don't feel like / ＜I'm＞ making / a lot of / progress. / My / endurance is / getting a / little bit / better.",
-      "kugiri_jp": "【アイ ドン フィル】 〈ライク〉 / 〈メイキング〉 / 【ラァ】 / 【プログレス】 / 【マイ】 / 【デュアズ】 / 【スキャニ】 / 【リドビ】 / 【ベタァ】",
-      "translated": "あまり進歩している気がしません。持久力は少しずつ良くなってきているのですが。",
-      "tsukkomi": [
-        {
-          "question": "I'm の音はどうして聴こえない！？",
-          "answer": "I'mは文脈上予測可能な「機能語」であり、次のmakingという強い「内容語」に飲み込まれるように弱化して発音されます。ネイティブの速い会話では、喉の奥で微かに音が鳴る程度で、カタカナの「アイム」のような明確な音としてはほぼ消失するため、耳には聴こえなくなります。"
-        },
-        {
-          "question": "a lot of はどうして ア ロット オブ じゃなくて ラァ！？",
-          "answer": "a lot ofが「ラァ」に聞こえるのは、まずaが弱化し、lotの最後のtが「フラップT（日本語のラ行に近い音）」に変化して次のofと連結するためです。さらにofのfも脱落しやすいため、全体が凝縮されて「ラァ」という一つの音のように響きます。"
-        },
-        {
-          "question": "endurance is は エンジュランス じゃなくて デュアズ ！？ エンの音は！？",
-          "answer": "enduranceの最初の音「en-」が非常に弱く発音される、あるいは直前のMyの終わりから滑らかにつながることで、アクセントのある「du-」の部分から強調されて聞こえ始めます。さらにceとisがリエゾン（音の連結）を起こし、[s]と[iz]が混ざり合って「デュアズ」のような短い音に凝縮されるのです。"
-        },
-        {
-          "question": "getting a は イズ ゲッティング ア じゃなくて スキャニ！？ ゲの音はどこにいった！？",
-          "answer": "これは前のendurance isの語尾[z]とgettingの[g]、そしてaの弱化が連続して起こる現象です。isの[z]の影響でgettingの[g]が消失したり、非常に弱く飲み込まれたりします。残った「-tting a」の部分で、tがラ行化（フラップT）し、aとつながることで「スキャニ」のように聞こえるのです。"
-        }
-      ],
       "image_sections": [
         {
           "label": "I don't feel like",
@@ -245,6 +207,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"I don't feel like\",\"time\":\"805.7\",\"url\":\"TWEET_ID:2016215332395090199\"},{\"label\":\" I'm making a lot of progress.\",\"time\":\"806.5\",\"url\":\"TWEET_ID:2016215407301165193\"},{\"label\":\"My endurance is \",\"time\":\"807.4\",\"url\":\"TWEET_ID:2016215407301165193\"},{\"label\":\"getting a little bit better.\",\"time\":\"807.85\",\"url\":\"TWEET_ID:2016215439479808509\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "I don't feel like",
@@ -269,7 +232,6 @@
     ],
     "kugiri_eng": "I don't feel like / ＜I'm＞ making / a lot of / progress. / My / endurance is / getting a / little bit / better.",
     "kugiri_jp": "【アイ ドン フィル】 〈ライク〉 / 〈メイキング〉 / 【ラァ】 / 【プログレス】 / 【マイ】 / 【デュアズ】 / 【スキャニ】 / 【リドビ】 / 【ベタァ】",
-    "translated": "あまり進歩している気がしません。持久力は少しずつ良くなってきているのですが。",
-    "remember": "「Feel like」(〜な気がする)は、自分の直感や気分を伝える際に非常に便利な表現です。例：I feel like something is wrong. (何かがおかしい気がする)\n\n「A lot of progress」(大きな進歩)は、仕事や学習の成果を語る時の定番フレーズです。例：You've made a lot of progress lately. (最近、すごく上達したね)\n\n「A little bit better」(少しだけ良くなる)は、劇的ではないけれど着実な改善を伝える時に使えます。例：I'm feeling a little bit better today. (今日は少し気分が良いです)"
+    "translated": "あまり進歩している気がしません。持久力は少しずつ良くなってきているのですが。"
   }
 ]

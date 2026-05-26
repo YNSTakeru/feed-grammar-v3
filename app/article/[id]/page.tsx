@@ -2,7 +2,8 @@ import { ArticleContent } from "@/app/article/[id]/article-content";
 import NinjaAdMax from "@/components/ninja-admax";
 import { Button } from "@/components/ui/button";
 import feedData from "@/lib/data/feed-data.json";
-import { ArticleData, ChunkTimestamp, FeedItem, Thumbnail } from "@/types";
+import { loadArticle } from "@/lib/data/article-loader";
+import { ChunkTimestamp, FeedItem } from "@/types";
 import fs from "fs";
 import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
@@ -55,120 +56,26 @@ export function generateStaticParams() {
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
   const resolvedParams = await params;
-  const requestedId = parseInt(resolvedParams.id);
+  const loaded = await loadArticle(resolvedParams.id);
+  if (!loaded) notFound();
 
-  // メインのfeed-dataから記事を検索
-  let item = typedFeedData.find((item) => item.id === requestedId);
+  const item = loaded.item;
+  const article = loaded.article;
 
-  // feed-dataに見つからない場合、similarフォルダ内を検索
-  if (!item) {
-    try {
-      const similarDir = path.join(process.cwd(), "lib", "data", "similar");
-      if (fs.existsSync(similarDir)) {
-        const files = fs.readdirSync(similarDir);
-        for (const file of files) {
-          if (file.endsWith(".json")) {
-            const filePath = path.join(similarDir, file);
-            const content = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-            if (Array.isArray(content)) {
-              const foundItem = content.find(
-                (i: FeedItem) => i.id === requestedId,
-              );
-              if (foundItem) {
-                item = foundItem;
-                break;
-              }
-            }
-          }
-        }
-      }
-    } catch (error) {
-      console.error("Failed to search similar folder:", error);
-    }
-  }
-
-  if (!item) {
-    notFound();
-  }
-
-  // Function to fix malformed JSON escape sequences
-  function fixJsonEscaping(jsonString: string): string {
-    // Replace instances of \" that are not properly escaped
-    // This handles cases like: "...\"text\"..." inside a JSON string value
-    // We need to find \" that appears inside string values and escape them properly
-
-    // First, let's try a different approach: manually fix common patterns
-    let fixed = jsonString;
-
-    // Replace \\\\ with \\ (unescape doubled backslashes first)
-    // Then properly escape quotes inside string values
-
-    // Try to fix the specific pattern: \\\"text\\\" should become \\\\\"text\\\\\"
-    fixed = fixed.replace(/\\\\\"/g, '\\\\\\"');
-
-    return fixed;
-  }
-
-  // Parse article_text on the server side
-  let article: ArticleData;
-  try {
-    if (typeof item.article_text === "string") {
-      let articleText = item.article_text;
-
-      // Try to fix common escaping issues
-      try {
-        article = JSON.parse(articleText) as ArticleData;
-      } catch (firstError) {
-        console.log("First parse failed, attempting to fix escaping...");
-        articleText = fixJsonEscaping(articleText);
-        article = JSON.parse(articleText) as ArticleData;
-      }
-    } else {
-      article = item.article_text as ArticleData;
-    }
-
-    // Merge image_sections: combine article_text.image_sections with item.image_sections
-    if (article.image_sections && item.image_sections) {
-      // Merge by matching label
-      article.image_sections = article.image_sections.map((articleSection) => {
-        const itemSection = item.image_sections?.find(
-          (s) => s.label === articleSection.label,
-        );
-        return {
-          ...articleSection,
-          url: itemSection?.url || articleSection.url,
-        };
-      });
-    } else if (item.image_sections) {
-      article.image_sections = item.image_sections;
-    }
-  } catch (error) {
-    console.error("Failed to parse article_text:", error);
-    console.error("Article ID:", item.id);
-    console.error(
-      "Raw article_text:",
-      typeof item.article_text === "string"
-        ? item.article_text.substring(0, 1000)
-        : JSON.stringify(item.article_text).substring(0, 1000),
-    );
-    notFound();
-  }
-
-  let thumbnail: Thumbnail;
-
-  try {
-    thumbnail =
-      typeof item.thumbnail === "string"
-        ? JSON.parse(item.thumbnail)
-        : item.thumbnail;
-  } catch {
-    thumbnail = {
-      default: "",
-      medium: "",
-      high: "",
-      standard: "",
-      maxres: "",
-    };
+  // Merge image_sections: combine article_text.image_sections with item.image_sections
+  if (article.image_sections && item.image_sections) {
+    // Merge by matching label
+    article.image_sections = article.image_sections.map((articleSection) => {
+      const itemSection = item.image_sections?.find(
+        (section) => section.label === articleSection.label,
+      );
+      return {
+        ...articleSection,
+        url: itemSection?.url || articleSection.url,
+      };
+    });
+  } else if (item.image_sections) {
+    article.image_sections = item.image_sections;
   }
 
   // YouTube URL with time parameters

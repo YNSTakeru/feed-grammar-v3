@@ -5,9 +5,20 @@ export interface SentenceProgress {
   lastUpdated: number;
 }
 
+export interface DictationSessionEvent {
+  id?: number;
+  sessionId: string;
+  segmentId: string;
+  reductionType: string;
+  correct: boolean;
+  attemptsBeforeCorrect: number;
+  createdAt: number;
+}
+
 const DB_NAME = "feed-grammar-learn";
-const DB_VERSION = 1;
+const DB_VERSION = 2;
 const STORE_NAME = "sentence-progress";
+const DICTATION_EVENT_STORE = "dictation-events";
 
 function defaultProgress(sentenceId: string): SentenceProgress {
   return {
@@ -69,6 +80,12 @@ export class SentenceProgressDB {
         const db = (event.target as IDBOpenDBRequest).result;
         if (!db.objectStoreNames.contains(STORE_NAME)) {
           db.createObjectStore(STORE_NAME, { keyPath: "sentenceId" });
+        }
+        if (!db.objectStoreNames.contains(DICTATION_EVENT_STORE)) {
+          db.createObjectStore(DICTATION_EVENT_STORE, {
+            keyPath: "id",
+            autoIncrement: true,
+          });
         }
       };
     }).finally(() => {
@@ -136,6 +153,54 @@ export class SentenceProgressDB {
       const request = store.delete(sentenceId);
 
       request.onsuccess = () => resolve();
+      request.onerror = () => reject(request.error);
+    });
+  }
+
+  async recordDictationEvent(
+    input: Omit<DictationSessionEvent, "id" | "createdAt">,
+  ): Promise<DictationSessionEvent | null> {
+    await this.init();
+    if (!this.db) return null;
+
+    const event: DictationSessionEvent = {
+      ...input,
+      createdAt: Date.now(),
+    };
+
+    return new Promise((resolve, reject) => {
+      const transaction = this.db!.transaction([DICTATION_EVENT_STORE], "readwrite");
+      const store = transaction.objectStore(DICTATION_EVENT_STORE);
+      const request = store.put(event);
+
+      request.onsuccess = () => {
+        const id = request.result;
+        resolve({
+          ...event,
+          id: typeof id === "number" ? id : undefined,
+        });
+      };
+      request.onerror = () => reject(request.error);
+    });
+  }
+
+  async listDictationEvents(sessionId?: string): Promise<DictationSessionEvent[]> {
+    await this.init();
+    if (!this.db) return [];
+
+    return new Promise((resolve, reject) => {
+      const transaction = this.db!.transaction([DICTATION_EVENT_STORE], "readonly");
+      const store = transaction.objectStore(DICTATION_EVENT_STORE);
+      const request = store.getAll();
+
+      request.onsuccess = () => {
+        const all = (request.result as DictationSessionEvent[] | undefined) ?? [];
+        const filtered = sessionId
+          ? all.filter((item) => item.sessionId === sessionId)
+          : all;
+        filtered.sort((a, b) => a.createdAt - b.createdAt);
+        resolve(filtered);
+      };
       request.onerror = () => reject(request.error);
     });
   }

@@ -40,5 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-scripts/
+scripts/*
+!scripts/migrate-chunk-sections.ts
+!scripts/migrate-article-schema.ts
+!scripts/merge-tight-gap-chunks.ts
+!scripts/merge-tight-gap-chunks.test.ts
 sandbox/

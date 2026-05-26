@@ -11,23 +11,6 @@
       "title": "ネイティブの発音はこう聞こえる！『in order to live the lives that we say we want to live』の秘密",
       "meta_description": "英語が「ライ・ゼ」や「ワナ」に聞こえる理由を解説。ネイティブ特有の音の脱落や連結（リエゾン）をマスターして、リスニング力を飛躍的に向上させましょう。",
       "katakana_weak_strong": "〈イン オーダー〉 〈トゥ〉 【リヴ】 【ライ】 〈ゼ〉 【ウィ】 【セイ】 【ウィ】 【ワナ】 【リヴ】",
-      "kugiri_eng": "in order to / live / ＜the＞ lives that / we / say / we / want to / live",
-      "kugiri_jp": "〈イン オーダー〉 〈トゥ〉 / 【リヴ】 / 【ライ】 〈ゼ〉 / 【ウィ】 / 【セイ】 / 【ウィ】 / 【ワナ】 / 【リヴ】",
-      "translated": "私たちが送りたいと言っている人生を送るために。",
-      "tsukkomi": [
-        {
-          "question": "in order to は イン オーダー トゥ の トゥの音が聴こえにくい !?",
-          "answer": "in order toの「to」は、機能語として非常に弱く発音されるためです。特に直後に動詞（live）が続く場合、toの母音がシュワ音（あいまい母音）になり、さらに前のorderの末尾とつながることで「トゥ」というはっきりした音ではなく、軽く添えるだけの音になるため聴こえにくくなります。"
-        },
-        {
-          "question": "the lives that は ザ ライブ ザット じゃなくて ライ ゼ!?",
-          "answer": "これは「音の脱落」と「連結」が同時に起きているためです。livesの末尾の[v][z]とthatの[th]が連続すると、発音の効率化のためにlivesの[v]がほぼ消え、thatの[th]も弱化します。結果として「ライブ ザット」ではなく、前の音とつながって「ライ ゼ」のように聞こえる現象が起こります。"
-        },
-        {
-          "question": "want to は ウォント トゥ じゃなくて ワナ!?",
-          "answer": "want toが「wanna（ワナ）」になるのは、英語の口語表現で最も頻繁に起こる変化の一つです。wantの語尾のtとtoのtが重なり、さらにtoが弱化して「a」の音になることで、2つの単語が完全に融合して一つの「wanna」という音に変化します。"
-        }
-      ],
       "image_sections": [
         {
           "label": "in order to live the lives",
@@ -103,6 +86,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"in order to live the lives\",\"time\":\"918\",\"url\":\"TWEET_ID:2002058947948392593\"},{\"label\":\"that we say\",\"time\":\"919.3\",\"url\":\"TWEET_ID:2002058977161666638\"},{\"label\":\"we want to live\",\"time\":\"920\",\"url\":\"TWEET_ID:2002059180778402086\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "in order to live the lives",
@@ -122,8 +106,7 @@
     ],
     "kugiri_eng": "in order to / live / ＜the＞ lives that / we / say / we / want to / live",
     "kugiri_jp": "〈イン オーダー〉 〈トゥ〉 / 【リヴ】 / 【ライ】 〈ゼ〉 / 【ウィ】 / 【セイ】 / 【ウィ】 / 【ワナ】 / 【リヴ】",
-    "translated": "私たちが送りたいと言っている人生を送るために。",
-    "remember": "「in order to」(〜するために)は、目的をはっきりと伝える時に非常に便利な表現です。例：I study hard in order to pass the exam.（試験に合格するために一生懸命勉強しています。）\n\n「want to (wanna)」(〜したい)は、自分の願望を伝える日常会話の超必須フレーズです。例：I wanna go to Hawaii someday.（いつかハワイに行きたいな。）"
+    "translated": "私たちが送りたいと言っている人生を送るために。"
   },
   {
     "id": 37,
@@ -137,31 +120,6 @@
       "title": "ネイティブの発音はこう聞こえる！「you do not want to mess with...」の秘密",
       "meta_description": "カバやサイ、水牛には手を出すな！ネイティブが話す「you do not want to...」の自然な発音変化を詳しく解説。want toが「ワタ」に、waterが「ワタ」に聞こえる理由とは？",
       "katakana_weak_strong": "【ユ】 〈ドゥ〉 【ノ】 【ワタ】 【メスザ】 【ヒッポオ】 〈オア〉 【ライノ】 〈オア〉 【ワタバッファロー】",
-      "kugiri_eng": "you do / not / want to / mess with a / hippo / or a / rhino / or a / water / buffalo.",
-      "kugiri_jp": "【ユ】 〈ドゥ〉 / 【ノ】 / 【ワタ】 / 【メスザ】 / 【ヒッポオ】 / 〈オア〉 / 【ライノ】 / 〈オア〉 / 【ワタ】 / 【バッファロー】",
-      "translated": "カバやサイ、あるいは水牛を怒らせるような真似はしたくないはずだ（＝手を出すべきではない）。",
-      "tsukkomi": [
-        {
-          "question": "not は ノット じゃなくて ノ!?",
-          "answer": "notの語尾の[t]は「ストップT」と呼ばれ、舌を上の歯の付け根に当てて息を止めた状態で終わることが多いため、カタカナの「ト」の音は聞こえず「ノ」のように聞こえます。"
-        },
-        {
-          "question": "want to は ウォント トゥ じゃなくて ワタ!?",
-          "answer": "want toは口語でしばしばwanna（ワナ）のように発音されますが、ここではさらに弱化して「ワタ」のように聞こえています。tの音がフラップ化（ラ行に近い音に変化）し、toの母音が曖昧になるためです。"
-        },
-        {
-          "question": "mess with a は メス ウィズ ザ じゃなくて メスザ!?",
-          "answer": "messとwith、そしてaがすべて連結（リエゾン）しています。withのth音と冠詞のaが混ざり合い、全体として「メスザ」という一つの塊のような音に変化しています。"
-        },
-        {
-          "question": "water は ウォーター じゃなくて ワタ!?",
-          "answer": "アメリカ英語では、母音に挟まれたtがdやrに近い音になる「フラップT」現象が起きます。さらに語尾のerが弱く発音されるため、日本人には「ワタ」に近い響きで聞こえるのです。"
-        },
-        {
-          "question": "or a は オア ア じゃなくて オア!?",
-          "answer": "orとaが連結して一つの音になっています。orの語尾のr音とaがスムーズにつながるため、「オア・ア」と区切らずに「オア」と流れるように発音されます。"
-        }
-      ],
       "image_sections": [
         {
           "label": "you do not want to mess with",
@@ -253,6 +211,7 @@
       }
     ],
     "image_learn": "[{\"label\":\"you do not want to mess with\",\"time\":\"472\",\"url\":\"TWEET_ID:2002069887632748819\"},{\"label\":\"a hippo\",\"time\":\"473.3\",\"url\":\"TWEET_ID:2002069932138463500\"},{\"label\":\"or a rhino\",\"time\":\"474\",\"url\":\"TWEET_ID:2002069967483892142\"},{\"label\":\"or a water buffalo.\",\"time\":\"475.2\",\"url\":\"TWEET_ID:2002070006872617303\"}]",
+    "chunk_timestamps": null,
     "image_sections": [
       {
         "label": "you do not want to mess with",
@@ -277,7 +236,6 @@
     ],
     "kugiri_eng": "you do / not / want to / mess with a / hippo / or a / rhino / or a / water / buffalo.",
     "kugiri_jp": "【ユ】 〈ドゥ〉 / 【ノ】 / 【ワタ】 / 【メスザ】 / 【ヒッポオ】 / 〈オア〉 / 【ライノ】 / 〈オア〉 / 【ワタ】 / 【バッファロー】",
-    "translated": "カバやサイ、あるいは水牛を怒らせるような真似はしたくないはずだ（＝手を出すべきではない）。",
-    "remember": "「you do not want to...」(〜しないほうがいいよ)は、相手に忠告や警告を与える時に使われる非常に強い表現です。直訳の「〜したくない」よりも「〜すべきではない」という意味合いが強くなります。例：You do not want to be late for this meeting.（この会議には遅れないほうがいいですよ）\n\n「mess with...」(〜に手を出す、〜を怒らせる)は、厄介な人や危険なものに関わってトラブルになる状況で使われます。例：Don't mess with him.（彼を怒らせるなよ）"
+    "translated": "カバやサイ、あるいは水牛を怒らせるような真似はしたくないはずだ（＝手を出すべきではない）。"
   }
 ]
