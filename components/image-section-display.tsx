@@ -1,6 +1,8 @@
 "use client";
 
 import { MarkdownContent } from "@/components/markdown-content";
+import { MediaDisplay } from "@/components/ui/media-display";
+import { classifyUrl, parseIframeHtml } from "@/lib/media/classify-url";
 import React, { useMemo } from "react";
 import { Tweet } from "react-tweet";
 
@@ -15,94 +17,6 @@ interface ImageSectionData {
   image_display_instruction?: string;
   description?: string;
   image_suggestion?: string;
-}
-
-// iframe HTMLからsrc/height/widthを抽出
-function parseIframeHtml(html: string) {
-  const srcMatch = html.match(/src=["']([^"']+)["']/);
-  const heightMatch = html.match(/height=["']([^"']+)["']/);
-  const widthMatch = html.match(/width=["']([^"']+)["']/);
-  return {
-    src: srcMatch?.[1] || "",
-    height: heightMatch?.[1] || "445",
-    width: widthMatch?.[1] || "345",
-  };
-}
-
-// URLの種別を判定
-function classifyUrl(url?: string) {
-  if (!url) return { tweetId: null, isInstagram: false, isIframe: false };
-  return {
-    tweetId: url.match(/TWEET_ID:(\d+)/)?.[1] ?? null,
-    isInstagram: url.includes("instagram-media"),
-    isIframe: url.trim().startsWith("<iframe"),
-  };
-}
-
-// ========================
-// 安定したiframeレンダラー (React.memoで再レンダリング防止)
-// ========================
-
-const StableIframe = React.memo(function StableIframe({
-  src,
-  height,
-  width,
-}: {
-  src: string;
-  height: string;
-  width: string;
-}) {
-  return (
-    <div className="mb-4">
-      <iframe
-        src={src}
-        height={height}
-        width={width}
-        frameBorder="0"
-        scrolling="no"
-        style={{ maxWidth: "100%" }}
-      />
-    </div>
-  );
-});
-
-// ========================
-// 単一セクションのメディア表示
-// ========================
-
-interface MediaDisplayProps {
-  url?: string;
-  animationClass?: string;
-}
-
-function MediaDisplay({ url, animationClass }: MediaDisplayProps) {
-  const { tweetId, isInstagram, isIframe } = classifyUrl(url);
-
-  if (tweetId && !isInstagram && !isIframe) {
-    return (
-      <div className={`mb-4 ${animationClass ?? ""}`}>
-        <Tweet id={tweetId} />
-      </div>
-    );
-  }
-
-  if (isInstagram && url) {
-    return (
-      <div
-        className={`mb-4 ${animationClass ?? ""}`}
-        dangerouslySetInnerHTML={{ __html: url }}
-      />
-    );
-  }
-
-  if (isIframe && url) {
-    const attrs = parseIframeHtml(url);
-    return (
-      <StableIframe src={attrs.src} height={attrs.height} width={attrs.width} />
-    );
-  }
-
-  return null;
 }
 
 // ========================
@@ -343,7 +257,10 @@ export function TimeSyncedImageSections({
         {/* ====== Tweet (非iframe時のみ表示) ====== */}
         {!hasAnyIframe && currentMeta.tweetId && !currentMeta.isInstagram && (
           <div className="mb-4">
-            <Tweet id={currentMeta.tweetId} />
+            <Tweet
+              id={currentMeta.tweetId}
+              apiUrl={`/api/tweet/${currentMeta.tweetId}`}
+            />
           </div>
         )}
 
