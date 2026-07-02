@@ -526,7 +526,13 @@ export const YouTubePlayer = forwardRef<YouTubePlayerHandle, YouTubePlayerProps>
               </Button>
             </div>
           )}
-          <div ref={containerRef} className="w-full h-full" />
+          {/* Stable wrapper: YouTube's YT.Player replaces the inner node with
+              an <iframe>, detaching it from React's fiber tree. Keeping a
+              React-owned wrapper means sibling toggles (spinner / resume
+              overlay) never run insertBefore against the replaced node. */}
+          <div className="w-full h-full">
+            <div ref={containerRef} className="w-full h-full" />
+          </div>
         </div>
 
         {/* Static Progress Bar and Controls - shown when in viewport */}
