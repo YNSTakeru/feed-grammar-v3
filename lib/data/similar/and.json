@@ -1,0 +1,1340 @@
+[
+  {
+    "id": 79,
+    "url": "https://www.youtube.com/watch?v=JW8dqT90BLs",
+    "start_time": "47.8",
+    "end_time": "51.8",
+    "updated_at": "2026-06-05T09:22:22.550Z",
+    "question": "by Kevin Kelly called The Fifth and Sixth Discontinuities,",
+    "question_katakana": "バイ ケヴィン ケリィ コゥ ダ フィフ アン シックス ディスコンティニュイディーズ",
+    "article_text": {
+      "title": "ケヴィン・ケリー著『第5・第6の不連続性』で学ぶ！ネイティブ流の英語発音テクニック",
+      "meta_description": "ケヴィン・ケリーの著作『The Fifth and Sixth Discontinuities』を例に、ネイティブが実践する音の脱落（エリジョン）や連結（リンキング）の仕組みをプロが解説。英語の発音を劇的に改善するコツを掴みましょう。",
+      "introduction": "英語を話す際、「単語は知っているのに、なぜかネイティブのように聞こえない」と悩んでいませんか？それは、単語単体ではなく「音のつながり」や「音の省略」が重要だからです。今回は著名な思想家、ケヴィン・ケリーの著作タイトルを題材に、実践的な発音のコツを解説します。",
+      "section_1": {
+        "heading": "Kevin Kellyの自然なつなげ方",
+        "content": "『by Kevin Kelly』の発音では、Kevinの「n」の音とKellyの「K」の音の間に、過度な間を置かないのがポイントです。ネイティブの耳には、nの音が柔らかく響き、スムーズにKへと移行します。カタカナで「ケヴィン ケリィ」と意識しつつも、実際には「ケヴィンケリィ」と一息で発音するように練習しましょう。"
+      },
+      "section_2": {
+        "heading": "called The Fifthの「l」はどこへ消えた？",
+        "content": "多くの学習者が苦労する『called The Fifth』ですが、実はネイティブはcalledの「l」をほとんど発音しません。これは「エリジョン（音の脱落）」という現象です。calledは「コゥ（ld）」のように省略され、続くtheとつながって「コゥダ」という響きになります。複雑に聞こえるフレーズも、不要な音を削ぎ落とせば驚くほどシンプルになります。"
+      },
+      "section_3": {
+        "heading": "and Sixthにおける「th」の省略術",
+        "content": "『and Sixth』は、andの「d」とSixthの「th」が重なる難所です。ここでも「エリジョン」が活躍します。Sixthの「th」は、直後の単語とのつながりで非常に聞こえにくくなります。andを「アン」と軽く発音し、そのままsの音へと滑り込ませることで、流暢さを保ちながら正確に相手に伝えることが可能になります。"
+      },
+      "section_4": {
+        "heading": "DiscontinuitiesのTをDにする理由",
+        "content": "最後に『Discontinuities』の発音です。ここでの「t」は、前後の母音に挟まれることで、日本語の「ラ行」に近い「D」の音（フラップT）に変化します。この変化を意識することで、カタカナ英語特有の「トゥ」という硬い音から解放され、より英語らしく、リズミカルな発音を手に入れることができます。"
+      },
+      "conclusion": "ケヴィン・ケリーの著作タイトルという短いフレーズの中にも、英語発音の重要なルールがいくつも隠されていました。音の省略や連結を意識するだけで、リスニング能力もスピーキング能力も一段階アップします。まずは今回学んだフレーズを、何度も声に出して練習してみてください。",
+      "remember": "「音の省略（エリジョン）」と「音の連結（リンキング）」を意識することで、難解に聞こえる英語もシンプルで滑らかな発音に変わります。特にcalledやandなどの機能語は、弱く短く発音するのがネイティブの流儀です。",
+      "keywords": [
+        "英語発音",
+        "エリジョン",
+        "リンキング",
+        "ケヴィン・ケリー",
+        "英語学習",
+        "発音矯正"
+      ],
+      "chunks": [
+        {
+          "en": "by Kevin Kelly",
+          "ipa_citation": "baɪ ˈkɛvɪn ˈkɛli",
+          "ipa_connected": "baɪ ˈkɛvən ˈkɛli",
+          "kana": "バイ ケヴィン ケリィ",
+          "reduction_type": "None",
+          "start_time": 47.8,
+          "end_time": 48.87
+        },
+        {
+          "en": "called The Fifth",
+          "ipa_citation": "kɔld ðə fɪfθ",
+          "ipa_connected": "kɔʊdə fɪf",
+          "kana": "コゥ ダ フィフ",
+          "reduction_type": "Elision+Reduction",
+          "start_time": 48.88,
+          "end_time": 49.69
+        },
+        {
+          "en": "and Sixth Discontinuities,",
+          "ipa_citation": "ænd sɪksθ dɪskɑntɪˈnuɪtiz",
+          "ipa_connected": "ən sɪks dɪskɑntɪˈnuɪdiz",
+          "kana": "アン シックス ディスコンティニュイディーズ",
+          "reduction_type": "Elision+Reduction",
+          "start_time": 49.7,
+          "end_time": 51.8
+        }
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/JW8dqT90BLs/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/JW8dqT90BLs/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/JW8dqT90BLs/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/JW8dqT90BLs/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/JW8dqT90BLs/maxresdefault.jpg\"}",
+    "theme": "and",
+    "noIndex": 0,
+    "is_similar": 1,
+    "pron_memo": "called the は コゥダ に聴こえる。\nfifth は フィフ に聴こえる\nand は アン に聴こえる\n",
+    "tsukkomi": [
+      {
+        "question": "なぜcalledの「l」を省略するのですか？",
+        "answer": "ネイティブにとって、子音が連続する場所で特定の音（この場合はl）を落とす方が、口の動きが効率的で発音しやすくなるからです。"
+      },
+      {
+        "question": "エリジョンを多用すると相手に伝わらなくなりますか？",
+        "answer": "いいえ、むしろ逆です。正しいエリジョンを習得することで、リズムが整い、ネイティブが聞き取りやすい自然な英語になるため、コミュニケーションはより円滑になります。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"by Kevin Kelly called\",\"time\":\"47.8\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547794954\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"The Fifth and Sixth Discontinuities,\",\"time\":\"49.1\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547794957\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"}]",
+    "image_sections": [
+      {
+        "label": "by Kevin Kelly called",
+        "time": "47.8",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547794954\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "The Fifth and Sixth Discontinuities,",
+        "time": "49.1",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547794957\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      }
+    ],
+    "chunks": [
+      {
+        "en": "by Kevin Kelly",
+        "ipa_citation": "baɪ ˈkɛvɪn ˈkɛli",
+        "ipa_connected": "baɪ ˈkɛvən ˈkɛli",
+        "kana": "バイ ケヴィン ケリィ",
+        "reduction_type": "None",
+        "start_time": 47.8,
+        "end_time": 48.87
+      },
+      {
+        "en": "called The Fifth",
+        "ipa_citation": "kɔld ðə fɪfθ",
+        "ipa_connected": "kɔʊdə fɪf",
+        "kana": "コゥ ダ フィフ",
+        "reduction_type": "Elision+Reduction",
+        "start_time": 48.88,
+        "end_time": 49.69
+      },
+      {
+        "en": "and Sixth Discontinuities,",
+        "ipa_citation": "ænd sɪksθ dɪskɑntɪˈnuɪtiz",
+        "ipa_connected": "ən sɪks dɪskɑntɪˈnuɪdiz",
+        "kana": "アン シックス ディスコンティニュイディーズ",
+        "reduction_type": "Elision+Reduction",
+        "start_time": 49.7,
+        "end_time": 51.8
+      }
+    ],
+    "translated": "ケヴィン・ケリーによって書かれた「第5および第6の不連続性」というタイトルの書籍について。"
+  },
+  {
+    "id": 80,
+    "url": "https://www.youtube.com/watch?v=C-GrRIgdmW8",
+    "start_time": "59.8",
+    "end_time": "65",
+    "updated_at": "2026-06-04T03:33:42.788Z",
+    "question": "try to do, and that is try to make anything that happens",
+    "question_katakana": "トライダドゥ　アンダッドイズ　トライダメイ　エニスィンザッ　ハァポンツ",
+    "article_text": {
+      "title": "「Try to do, and that is...」ネイティブ流の英語発音をマスターする「脱落」と「連結」のコツ",
+      "meta_description": "英語フレーズ「Try to do, and that is try to make anything that happens」を題材に、ネイティブ特有の音の連結・脱落を徹底解説。カタカナ発音から卒業し、滑らかに話すための実践ガイドです。",
+      "introduction": "英語を話すとき、教科書通りの一言一句を丁寧に出そうとしていませんか？実はネイティブスピーカーは、音を繋げたり（連結）、あえて省略したり（脱落）することで、スムーズに会話を進めています。今回は「Try to do, and that is try to make anything that happens」というフレーズを使い、なぜ彼らの英語が流暢に聞こえるのか、その仕組みを解説します。",
+      "section_1": {
+        "heading": "Try to doが「トライダドゥ」に聞こえる理由",
+        "content": "多くの日本人は「Try to do」をそのまま「トライ・トゥ・ドゥ」と発音しがちです。しかし、英語では「to」が前後の単語とつながる際、「ダ」に近い音に変化します。これを「リエゾン（連結）」と呼びます。単語ごとに区切らず、一つの塊として「トライダドゥ」と発音することで、一気にネイティブらしいリズムが生まれます。"
+      },
+      "section_2": {
+        "heading": "And that isの連結でリズムを整える",
+        "content": "「And that is」も同様に連結の宝庫です。「And」の末尾の「d」と「that」が滑らかにつながり、「アンダッドイズ」という響きになります。特に母音に挟まれた「t」の音が「ラ行」のように変化する現象が起きるため、英語特有の滑らかさが実現されます。流暢に話すコツは、単語の境界を意識しすぎないことです。"
+      },
+      "section_3": {
+        "heading": "Try to makeで繰り返される「弱形」の魔法",
+        "content": "先ほどの「Try to do」と同様に、「Try to make」も「トライダメイ」となります。「to」は文中で強調されないことが多く、このように「ダ」のように弱く発音されます。この「弱形」をマスターすることは、英語のスピードについていくために不可欠です。あえて強く発音しようとせず、軽く添えるように「ダ」と鳴らすのがポイントです。"
+      },
+      "section_4": {
+        "heading": "Anything that happensの脱落（エリジョン）を理解する",
+        "content": "最後に「Anything that happens」を見てみましょう。ここでは「anything that」の「that」の末尾にある「t」の音が、次の単語とつながる過程でほとんど発音されなくなる「脱落（エリジョン）」が発生します。結果として「エニスィンザッ」と聞こえるようになります。音を消すことで、かえって次の単語への移行がスムーズになるのです。"
+      },
+      "conclusion": "今回紹介した「連結」と「脱落」は、英語を自然に話すための重要なテクニックです。最初は違和感があるかもしれませんが、実際に口に出して「トライダドゥ」「アンダッドイズ」と練習してみてください。これらの音の変化を意識するだけで、あなたの英語は劇的に聞き取りやすく、そして話しやすくなるはずです。",
+      "remember": "英語は単語の羅列ではなく、音の連なりです。今回練習したフレーズのように、音の連結と脱落を意識して発音することで、より自然で伝わりやすい英語を目指しましょう。",
+      "keywords": [
+        "英語発音",
+        "リエゾン",
+        "リダクション",
+        "エリジョン",
+        "英会話練習"
+      ],
+      "chunks": [
+        {
+          "en": "try to do,",
+          "ipa_citation": "traɪ tu du",
+          "ipa_connected": "traɪdədʊ",
+          "kana": "トライダドゥ",
+          "reduction_type": "Reduction",
+          "start_time": 59.8,
+          "end_time": 60.39
+        },
+        {
+          "en": "and that is",
+          "ipa_citation": "ænd ðæt ɪz",
+          "ipa_connected": "əndæɾɪz",
+          "kana": "アンダッドイズ",
+          "reduction_type": "Reduction",
+          "start_time": 60.4,
+          "end_time": 61.59
+        },
+        {
+          "en": "try to make",
+          "ipa_citation": "traɪ tu meɪk",
+          "ipa_connected": "traɪdəmeɪk",
+          "kana": "トライダメイ",
+          "reduction_type": "Reduction",
+          "start_time": 61.6,
+          "end_time": 62.29
+        },
+        {
+          "en": "anything that",
+          "ipa_citation": "ˈɛniθɪŋ ðæt",
+          "ipa_connected": "ˈɛniθɪŋðə",
+          "kana": "エニスィンザッ",
+          "reduction_type": "Elision",
+          "start_time": 62.3,
+          "end_time": 62.98
+        },
+        {
+          "en": "happens",
+          "ipa_citation": "ˈhæpənz",
+          "ipa_connected": "ˈhæpənz",
+          "kana": "ハァポンツ",
+          "reduction_type": "None",
+          "start_time": 62.99,
+          "end_time": 63.69
+        }
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/C-GrRIgdmW8/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/C-GrRIgdmW8/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/C-GrRIgdmW8/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/C-GrRIgdmW8/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/C-GrRIgdmW8/maxresdefault.jpg\"}",
+    "theme": "and",
+    "noIndex": 0,
+    "is_similar": 1,
+    "pron_memo": "try to do は トライダドゥ に聴こえる\nand that is は アンダッドイズ に聴こえる\ntry to make は トライダ メイ に聴こえる\nanything that は エニスィンザッ に聴こえる",
+    "tsukkomi": [
+      {
+        "question": "なぜ「to」を「da」と読むのですか？",
+        "answer": "英語の会話において「to」は重要な意味を持たない限り、弱く素早く発音される「弱形」と呼ばれる形態をとるためです。"
+      },
+      {
+        "question": "すべての単語の脱落を覚えないといけませんか？",
+        "answer": "すべてを暗記する必要はありません。まずは「ネイティブは音をつなげたり、消したりしている」という概念を理解し、耳を慣らすことから始めてください。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"try to do,\",\"time\":\"59.8\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547821719\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"and that is\",\"time\":\"60.4\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547821724\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"try to make anything that happens\",\"time\":\"61.6\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547821732\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"}]",
+    "image_sections": [
+      {
+        "label": "try to do,",
+        "time": "59.8",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547821719\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "and that is",
+        "time": "60.4",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547821724\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "try to make anything that happens",
+        "time": "61.6",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547821732\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      }
+    ],
+    "chunks": [
+      {
+        "en": "try to do,",
+        "ipa_citation": "traɪ tu du",
+        "ipa_connected": "traɪdədʊ",
+        "kana": "トライダドゥ",
+        "reduction_type": "Reduction",
+        "start_time": 59.8,
+        "end_time": 60.39
+      },
+      {
+        "en": "and that is",
+        "ipa_citation": "ænd ðæt ɪz",
+        "ipa_connected": "əndæɾɪz",
+        "kana": "アンダッドイズ",
+        "reduction_type": "Reduction",
+        "start_time": 60.4,
+        "end_time": 61.59
+      },
+      {
+        "en": "try to make",
+        "ipa_citation": "traɪ tu meɪk",
+        "ipa_connected": "traɪdəmeɪk",
+        "kana": "トライダメイ",
+        "reduction_type": "Reduction",
+        "start_time": 61.6,
+        "end_time": 62.29
+      },
+      {
+        "en": "anything that",
+        "ipa_citation": "ˈɛniθɪŋ ðæt",
+        "ipa_connected": "ˈɛniθɪŋðə",
+        "kana": "エニスィンザッ",
+        "reduction_type": "Elision",
+        "start_time": 62.3,
+        "end_time": 62.98
+      },
+      {
+        "en": "happens",
+        "ipa_citation": "ˈhæpənz",
+        "ipa_connected": "ˈhæpənz",
+        "kana": "ハァポンツ",
+        "reduction_type": "None",
+        "start_time": 62.99,
+        "end_time": 63.69
+      }
+    ],
+    "translated": "やってみること、つまり、何が起ころうとも成し遂げようとすることです。"
+  },
+  {
+    "id": 81,
+    "url": "https://www.youtube.com/watch?v=td7Dcsco-WY",
+    "start_time": "523.7",
+    "end_time": "527.39",
+    "updated_at": "2026-06-04T03:56:16.402Z",
+    "question": "find their own way.And we can help them but we can't do it for them.",
+    "question_katakana": "ファインドゥ ゼァ オウンウェイ ヨゥ ウィキャン ヘルポム バッ ウィ キャン ドゥ フォー",
+    "article_text": {
+      "title": "英語の「自然な発音」を習得する：find their own way. And we can help them...を攻略",
+      "meta_description": "英語を流暢に話すための「音声変化」の技術。今回は「find their own way. And we can help them but we can't do it for them.」を題材に、ネイティブのような発音のコツを解説します。",
+      "introduction": "英語のフレーズをテキスト通りに読んでも、ネイティブには伝わりにくいと感じたことはありませんか？実は、英語は単語を単独で発音するのではなく、繋げて発音する「音声変化」が重要です。本記事では、「find their own way. And we can help them but we can't do it for them.」という一文を例に、具体的な発音テクニックを紐解いていきます。",
+      "section_1": {
+        "heading": "「find their own way」を滑らかに繋ぐ連結（Linking）",
+        "content": "まずは「find their own way」です。ここでは「Linking（連結）」の技術を使います。「find」の「d」と「their」の「th」が繋がり、「find their」が一つに聞こえます。一語ずつ区切って発音せず、単語の終わりと始まりをシームレスに繋げるのがポイントです。カタカナでは「ファインドゥ ゼァ」と表記しますが、実際には「d」と「th」の境目を意識せず、一つのリズムとして繋げて発音してみましょう。"
+      },
+      "section_2": {
+        "heading": "「help them」の音を落とすリダクション（Reduction）",
+        "content": "次に「And we can help them」です。ここで重要なのが「Reduction（リダクション）」です。「them」の「th」は非常に弱く発音されるため、前の「help」の「p」とくっついて「ヘルポム」のように聞こえます。完全に「them」と一音ずつ発音しようとせず、音を軽く落とす意識を持つと、一気に英語らしい響きに近づきます。"
+      },
+      "section_3": {
+        "heading": "「t」の音を消す「Elision（脱落）」の技術",
+        "content": "「but we can't do it」では、「Elision（脱落）」が活躍します。「can't」の「t」は、直後に子音の「d」が来るため、ほとんど発音されません。また「but」の「t」も同様です。あえて音を消すことで、次にくる単語にスムーズに移行できるのです。「バッ ウィ キャン ドゥ」と、あえて「t」を飲み込むような感覚で練習してみましょう。"
+      },
+      "section_4": {
+        "heading": "「for them」を自然に繋ぐコツ",
+        "content": "最後の「for them」もElisionが働きます。「them」の「th」は再び弱化し、前の「for」と融合して「フォー」という響きに近づきます。重要なのは、全ての音を一語ずつ丁寧に発音しようとしないことです。弱めるべき音は思い切って弱める、それがネイティブのような発音への近道となります。"
+      },
+      "conclusion": "今回紹介したLinking、Reduction、Elisionは、英語の発音を劇的に変えるスパイスです。フレーズ全体の流れを意識し、少しずつ口を慣らしていきましょう。継続的な練習が、あなたの英語を「伝わる英語」へと変えていきます。",
+      "remember": "英語の発音において重要なのは「すべての音を鳴らすこと」ではありません。音を繋げる（Linking）、弱める（Reduction）、消す（Elision）ことで、英語特有のメロディとリズムが生まれます。今回練習したフレーズで、その感覚をぜひ体感してください。",
+      "keywords": [
+        "英語発音",
+        "リエゾン",
+        "リダクション",
+        "エリジョン",
+        "英語スピーキング",
+        "英語学習"
+      ],
+      "chunks": [
+        {
+          "en": "find their own way.",
+          "ipa_citation": "faɪnd ðɛər oʊn weɪ",
+          "ipa_connected": "faɪndðəroʊnweɪ",
+          "kana": "ファインドゥ ゼァ オウンウェイ",
+          "reduction_type": "Linking",
+          "start_time": 523.7,
+          "end_time": 525.19
+        },
+        {
+          "en": "And we can help them",
+          "ipa_citation": "ænd wi kæn hɛlp ðɛm",
+          "ipa_connected": "jəwi kæn hɛlpəm",
+          "kana": "ヨゥ ウィキャン ヘルポム",
+          "reduction_type": "Reduction",
+          "start_time": 525.2,
+          "end_time": 526.29
+        },
+        {
+          "en": "but we can't do it",
+          "ipa_citation": "bʌt wi kænt du ɪt",
+          "ipa_connected": "bʌwi kæn du",
+          "kana": "バッ ウィ キャン ドゥ",
+          "reduction_type": "Elision",
+          "start_time": 526.3,
+          "end_time": 527.09
+        },
+        {
+          "en": "for them.",
+          "ipa_citation": "fɔːr ðɛm",
+          "ipa_connected": "fɔː",
+          "kana": "フォー",
+          "reduction_type": "Elision",
+          "start_time": 527.1,
+          "end_time": 527.39
+        }
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/td7Dcsco-WY/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/td7Dcsco-WY/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/td7Dcsco-WY/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/td7Dcsco-WY/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/td7Dcsco-WY/maxresdefault.jpg\"}",
+    "theme": "and",
+    "noIndex": 0,
+    "is_similar": 1,
+    "pron_memo": "find their は ファインドゥ ゼァ に聴こえる\nway. And は ウェイ ヨゥ に聴こえる\nhelp them は ヘルポム に聴こえる\nfor them は フォー に聴こえる",
+    "tsukkomi": [
+      {
+        "question": "なぜ「t」を発音してはいけないのですか？",
+        "answer": "英語には「効率よく話す」という文化があるためです。連続する子音を完全に発音するとリズムが悪くなるため、ネイティブは自然と音を消したり繋げたりして、言いやすく調整しています。"
+      },
+      {
+        "question": "カタカナ通りに読むだけで良いのでしょうか？",
+        "answer": "カタカナはあくまで音のイメージを掴むためのガイドです。カタカナを参考にしつつ、実際にネイティブの音声を繰り返し聴いて、口の筋肉を英語の動きに慣らすことが大切です。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"find their own way.\",\"time\":\"523.7\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547821719\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"And we can help them\",\"time\":\"525.2\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547823623\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\"},{\"label\":\"but we can't do it for them.\",\"time\":\"526.3\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547823627\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"}]",
+    "image_sections": [
+      {
+        "label": "find their own way.",
+        "time": "523.7",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547821719\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "And we can help them",
+        "time": "525.2",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547823623\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n"
+      },
+      {
+        "label": "but we can't do it for them.",
+        "time": "526.3",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547823627\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      }
+    ],
+    "chunks": [
+      {
+        "en": "find their own way.",
+        "ipa_citation": "faɪnd ðɛər oʊn weɪ",
+        "ipa_connected": "faɪndðəroʊnweɪ",
+        "kana": "ファインドゥ ゼァ オウンウェイ",
+        "reduction_type": "Linking",
+        "start_time": 523.7,
+        "end_time": 525.19
+      },
+      {
+        "en": "And we can help them",
+        "ipa_citation": "ænd wi kæn hɛlp ðɛm",
+        "ipa_connected": "jəwi kæn hɛlpəm",
+        "kana": "ヨゥ ウィキャン ヘルポム",
+        "reduction_type": "Reduction",
+        "start_time": 525.2,
+        "end_time": 526.29
+      },
+      {
+        "en": "but we can't do it",
+        "ipa_citation": "bʌt wi kænt du ɪt",
+        "ipa_connected": "bʌwi kæn du",
+        "kana": "バッ ウィ キャン ドゥ",
+        "reduction_type": "Elision",
+        "start_time": 526.3,
+        "end_time": 527.09
+      },
+      {
+        "en": "for them.",
+        "ipa_citation": "fɔːr ðɛm",
+        "ipa_connected": "fɔː",
+        "kana": "フォー",
+        "reduction_type": "Elision",
+        "start_time": 527.1,
+        "end_time": 527.39
+      }
+    ],
+    "translated": "彼ら自身の道を見つける。私たちは彼らを助けることはできるが、代わりにやってあげることはできない。"
+  },
+  {
+    "id": 82,
+    "url": "https://www.youtube.com/watch?v=7n9IOH0NvyY",
+    "start_time": "532.9",
+    "end_time": "537",
+    "updated_at": "2026-05-26T01:38:09.368Z",
+    "question": "Research by Catalyst and others has shown conclusively",
+    "question_katakana": "リサァチバイ キャドレッセン アザァズヘズ アン ショウケンクルッセヴリィ",
+    "article_text": {
+      "title": "ネイティブ発音の壁を突破！「Research by Catalyst...」のリンキングと弱化を徹底解説",
+      "meta_description": "「Catalyst and」がなぜ「キャドレッセン」に聞こえるのか？英語のネイティブ発音における「脱落」と「弱化」のメカメカニズムをプロがわかりやすく解説します。",
+      "introduction": "英語のニュースやビジネスシーンで「知っている単語のはずなのに、なぜか聞き取れない」と感じたことはありませんか？それは、単語と単語が繋がるときに音が変化する「音声変化（リンキング）」が起きているからです。今回は「Research by Catalyst and others has shown conclusively」という一文を題材に、ネイティブが自然に行っている発音の裏側を解き明かします。音の「省略」や「弱化」のルールを知ることで、リスニング力もスピーキング力も劇的に向上しますよ！",
+      "section_1": {
+        "heading": "1. 「Catalyst and」が「キャドレッセン」に化ける理由",
+        "content": "「Catalyst and」を文字通り「カタリスト アンド」と発音していては、ネイティブのスピードにはついていけません。ここでは2つの重要な変化が起きています。まず、Catalystの語尾の「t」が、次に続くandの母音と結びつき、さらにアメリカ英語特有の「フラップD（ラ行のような音）」へと変化して「d」の音になります。さらにandの「d」の音が脱落（Elision）し、母音も弱化（Reduction）するため、結果として「【キャ】ドレッセン」という一つの滑らかな塊になるのです。"
+      },
+      "section_2": {
+        "heading": "2. 「shown」の前に聞こえる「アン」の正体とは？",
+        "content": "チャンクデータを見ると、shownの発音表記が「アン【ショウ】」となっています。なぜ手前に「アン」という音が現れるのでしょうか。これは、直前にある現在完了形の助動詞「has」が極限まで弱音化（Reduction）した結果です。hasの「h」が脱落し、さらに母音が曖昧（あいまい）な音になることで、前の「others」の語尾や、後ろの「shown」の頭音と滑らかに融合します。英語では、助動詞は強調したい時以外は非常に短く発音されるため、このように前後の単語に吸収されることがよくあります。"
+      },
+      "section_3": {
+        "heading": "3. 英語らしいリズムを作る「強弱のメリハリ」",
+        "content": "英語は「ストレスタイム言語」と呼ばれ、意味を持つ重要な単語（内容語）を強く長く、文法的な単語（機能語）を弱く短く発音する特徴があります。この文では、「Research」「Catalyst」「others」「shown」「conclusively」という重要なキーワードのアクセント部分（【サァ】【キャ】【ア】【ショウ】【クルッ】）だけがポンと前に押し出され、それ以外の「by」「has」「and」などは驚くほど素早く処理されます。このメリハリを意識するだけで、ネイティブ特有の「波のようなリズム」が生まれます。"
+      },
+      "section_4": {
+        "heading": "4. 長い単語「conclusively」をきれいに発音するコツ",
+        "content": "「conclusively（決定的に）」のような長い副詞は、カタカナで「コンクルーシブリー」と均等に発音してしまいがちですが、これでは英語らしく聞こえません。ネイティブは最初の「con-」を「ケン」のようにあいまいに弱く発音します。そして、最も重要なアクセントがある「-clu-」の部分を「【クルッ】」と強く引き伸ばし、後半の「-sively」を流れるように「セヴリィ」と落とし込みます。最初の音をあえて「弱く入る」ことが、全体のバランスを保つコツです。"
+      },
+      "conclusion": "英語のリスニングやスピーキング上達の近道は、単語を一つずつ切り離して覚えるのではなく、今回のように「チャンク（塊）」として音がどう変化しているかを理解することです。ネイティブの「省エネ発音」の法則が分かれば、今まで雑音に聞こえていた英語が、意味を持ったクリアな言葉として耳に飛び込んでくるようになります。ぜひ、アクセントの位置（強）と音声変化（弱）の波を意識して、声に出して練習してみてください！",
+      "remember": "英語は「すべての単語をはっきり発音しない」のがネイティブの鉄則。重要なアクセント（強）と、リンキングや弱化する部分（弱）のコントラストを意識して、チャンクごとに発音する練習を重ねましょう！",
+      "keywords": [
+        "英語発音",
+        "リンキング",
+        "音声変化",
+        "リスニング上達",
+        "チャンク発音",
+        "弱化",
+        "脱落"
+      ],
+      "chunks": [
+        {
+          "en": "Research by",
+          "ipa_citation": "ɹiˈsɜːɹtʃ baɪ",
+          "ipa_connected": "ɹiˈsɜːɹtʃ baɪ",
+          "kana": "リ【サァ】チバイ",
+          "reduction_type": "None",
+          "start_time": 532.9,
+          "end_time": 533.5
+        },
+        {
+          "en": "Catalyst and",
+          "ipa_citation": "ˈkætəlɪst ænd",
+          "ipa_connected": "ˈkædəlɪsən",
+          "kana": "【キャ】ドレッセン",
+          "reduction_type": "Elision+Reduction",
+          "start_time": 533.51,
+          "end_time": 534.19
+        },
+        {
+          "en": "others has",
+          "ipa_citation": "ˈʌðəɹz hæz",
+          "ipa_connected": "ˈʌðəɹz hæz",
+          "kana": "【ア】ザァズヘズ",
+          "reduction_type": "None",
+          "start_time": 534.2,
+          "end_time": 535.09
+        },
+        {
+          "en": "shown",
+          "ipa_citation": "ʃoʊn",
+          "ipa_connected": "ən ʃoʊ",
+          "kana": "アン【ショウ】",
+          "reduction_type": "Reduction"
+        },
+        {
+          "en": "conclusively",
+          "ipa_citation": "kənˈkluːsɪvli",
+          "ipa_connected": "kənˈkluːsɪvli",
+          "kana": "ケン【クルッ】セヴリィ",
+          "reduction_type": "None"
+        }
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/7n9IOH0NvyY/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/7n9IOH0NvyY/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/7n9IOH0NvyY/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/7n9IOH0NvyY/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/7n9IOH0NvyY/maxresdefault.jpg\"}",
+    "theme": "and",
+    "noIndex": 0,
+    "is_similar": 1,
+    "pron_memo": "Catalyst and は キャドレッセン に聴こえる\nothers has は アザァズヘズ アン に聴こえる\nshown conclusively は ショウケンクルッセヴリィ に聴こえる",
+    "tsukkomi": [
+      {
+        "question": "「Catalyst and」の「and」は、常に「セン」や「アン」のように弱くなるのですか？",
+        "answer": "日常会話やビジネスシーンの標準的なスピードでは、「and」は「アン」や「ン」のように弱化することがほとんどです。今回のように直前の単語の語尾とリンキングすることで、元の「アンド」とはまったく異なる「キャドレッセン」のような音が生まれます。"
+      },
+      {
+        "question": "リスニング時に、弱化された「has」を聞き取るためのコツはありますか？",
+        "answer": "「has」そのものの音を耳で探そうとしないことが大切です。文脈から「現在完了形（has + 過去分詞）」が来ると予測し、shownの手前に聞こえる「アン」という微小な音の残骸から、脳内で「has」の存在を補完するスキルを磨くのが効率的です。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"Research\",\"time\":\"532.9\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547855259\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\"by Catalyst and others\",\"time\":\"533.3\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547855266\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\" has shown\",\"time\":\"534.5\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547855268\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\"conclusively\",\"time\":\"535.3\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547855271\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"}]",
+    "chunk_timestamps": "[{\"text\":\"Research by\",\"start_time\":532.9,\"end_time\":533.5},{\"text\":\"Catalyst and\",\"start_time\":533.51,\"end_time\":534.19},{\"text\":\"others has\",\"start_time\":534.2,\"end_time\":535.09},{\"text\":\"shown conclusively\",\"start_time\":535.1,\"end_time\":536.19}]",
+    "image_sections": [
+      {
+        "label": "Research",
+        "time": "532.9",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547855259\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": "by Catalyst and others",
+        "time": "533.3",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547855266\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": " has shown",
+        "time": "534.5",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547855268\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": "conclusively",
+        "time": "535.3",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547855271\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      }
+    ],
+    "chunks": [
+      {
+        "en": "Research by",
+        "ipa_citation": "ɹiˈsɜːɹtʃ baɪ",
+        "ipa_connected": "ɹiˈsɜːɹtʃ baɪ",
+        "kana": "リ【サァ】チバイ",
+        "reduction_type": "None",
+        "start_time": 532.9,
+        "end_time": 533.5
+      },
+      {
+        "en": "Catalyst and",
+        "ipa_citation": "ˈkætəlɪst ænd",
+        "ipa_connected": "ˈkædəlɪsən",
+        "kana": "【キャ】ドレッセン",
+        "reduction_type": "Elision+Reduction",
+        "start_time": 533.51,
+        "end_time": 534.19
+      },
+      {
+        "en": "others has",
+        "ipa_citation": "ˈʌðəɹz hæz",
+        "ipa_connected": "ˈʌðəɹz hæz",
+        "kana": "【ア】ザァズヘズ",
+        "reduction_type": "None",
+        "start_time": 534.2,
+        "end_time": 535.09
+      },
+      {
+        "en": "shown",
+        "ipa_citation": "ʃoʊn",
+        "ipa_connected": "ən ʃoʊ",
+        "kana": "アン【ショウ】",
+        "reduction_type": "Reduction"
+      },
+      {
+        "en": "conclusively",
+        "ipa_citation": "kənˈkluːsɪvli",
+        "ipa_connected": "kənˈkluːsɪvli",
+        "kana": "ケン【クルッ】セヴリィ",
+        "reduction_type": "None"
+      }
+    ],
+    "translated": "カタリスト社などによる調査で、決定的な事実が示されています。"
+  },
+  {
+    "id": 83,
+    "url": "https://www.youtube.com/watch?v=8HfoKd873HY",
+    "start_time": "117.3",
+    "end_time": "119.99",
+    "updated_at": "2026-06-05T09:07:52.516Z",
+    "question": "and my work has been to extend the human lifespan indefinitely.",
+    "question_katakana": "エン マイワークズ ビン トゥ エクセンディ ヒューマン ライフスパン ニンダフナリィ",
+    "article_text": {
+      "title": "ネイティブのような英語へ！「and my work has been to extend the human lifespan indefinitely」の発音攻略法",
+      "meta_description": "「and my work has been to extend the human lifespan indefinitely」を題材に、ネイティブ特有のリエゾン（連結）、同化、脱落（エリジョン）のポイントを徹底解説。英語発音の壁を越えるためのヒントが満載です。",
+      "introduction": "英語学習で壁にぶつかりやすいのが「単語はわかるのに、繋がると聞き取れない・話せない」という現象です。今回は「and my work has been to extend the human lifespan indefinitely」という一文を例に、ネイティブが音をどのように変化させているのか、そのメカニズムを紐解いていきます。",
+      "section_1": {
+        "heading": "「and my work has been」の連結（リエゾン）",
+        "content": "このフレーズの冒頭では「and」の「d」音が非常に弱くなり、次の「my」と滑らかに繋がります。「エン・マイワークズ・ビン」とカタカナで表記するように、単語の区切りを意識せず、一つの音の塊として捉えるのが重要です。「work has been」の部分では、音同士が重なり合い、非常に素早く通り過ぎるような感覚で発音されます。"
+      },
+      "section_2": {
+        "heading": "「to extend the human」における同化現象",
+        "content": "ここでは「to」の「t」音が「extend」の「e」と結合し、「トゥ・エクセンディ」のように流れる「同化」が起きています。さらに「the human」と繋がる際、舌を固くせずリラックスした状態で、力を抜いて発音することがポイントです。この脱力感こそが、ネイティブらしい自然な響きを生む鍵となります。"
+      },
+      "section_3": {
+        "heading": "「lifespan indefinitely」の脱落（エリジョン）",
+        "content": "「lifespan」の「n」と「indefinitely」の「i」が繋がる箇所では、音が省略される「脱落（エリジョン）」が見られます。「ニンダフナリィ」という音の変化に注目してください。「indefinitely」の「d」や「t」の音が非常に弱くなり、リズムを維持するために省略されることで、スピード感のある自然な発音が生まれます。"
+      },
+      "section_4": {
+        "heading": "自然なリズムを習得する練習法",
+        "content": "英語は「強弱リズム」の言語です。今回紹介した3つのポイントを意識しながら、まずはゆっくりと繋げて発音してみてください。一度にすべてを完璧にするのではなく、リエゾンしている箇所を指でなぞりながら、音が流れる感覚を体感するのが上達の近道です。毎日10回、声に出して音読を繰り返しましょう。"
+      },
+      "conclusion": "リエゾンやエリジョンを理解すると、英語を聞く・話す際の負担が驚くほど減ります。「and my work has been to extend the human lifespan indefinitely」という難易度の高いフレーズも、今回学んだメカニズムを当てはめれば、驚くほど滑らかに発音できるようになるはずです。ぜひ今日から取り入れてみてください。",
+      "remember": "英語は単語の羅列ではなく「音の連結・同化・脱落」によって作られるリズムです。一語ずつ発音せず、フレーズ全体を一つの塊として捉える練習を続けましょう。",
+      "keywords": [
+        "英語発音",
+        "連結",
+        "リエゾン",
+        "短縮",
+        "lifespan",
+        "シャドーイング"
+      ],
+      "chunks": [
+        {
+          "en": "and my work has been",
+          "ipa_citation": "ænd maɪ wɜrk hæz bin",
+          "ipa_connected": "ən maɪ ˈwɜrksbɪn",
+          "kana": "エン マイワークズ ビン",
+          "reduction_type": "Linking",
+          "start_time": 117.3,
+          "end_time": 118.09
+        },
+        {
+          "en": "to extend the human",
+          "ipa_citation": "tu ɪkˈstɛnd ðə ˈhjumən",
+          "ipa_connected": "tə ɪkˈstɛndi ˈhjumən",
+          "kana": "トゥ エクセンディ ヒューマン",
+          "reduction_type": "Assimilation",
+          "start_time": 118.1,
+          "end_time": 118.8
+        },
+        {
+          "en": "lifespan indefinitely.",
+          "ipa_citation": "ˈlaɪfspæn ˌɪndəˈfɪnətli",
+          "ipa_connected": "ˈlaɪfspæn ˌɪndəˈfɪnli",
+          "kana": "ライフスパン ニンダフナリィ",
+          "reduction_type": "Elision+Reduction",
+          "start_time": 118.81,
+          "end_time": 119.99
+        }
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/8HfoKd873HY/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/8HfoKd873HY/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/8HfoKd873HY/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/8HfoKd873HY/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/8HfoKd873HY/maxresdefault.jpg\"}",
+    "theme": "and",
+    "noIndex": 0,
+    "is_similar": 1,
+    "pron_memo": "and は エン に聴こえる\nwork has は ワークズ に聴こえる\nextend the は エクステンディ に聴こえる\nlifespan indefinitely. は ライフスパン　ニンダフナリィ に聴こえる\n",
+    "tsukkomi": [
+      {
+        "question": "どうしてもカタカナ英語っぽさが抜けないのですが、どうすればいいですか？",
+        "answer": "カタカナの母音（特に「ア」や「イ」）を強調しすぎず、音の繋がりを優先させてみてください。喉をリラックスさせ、音をぶつ切りにしない意識を持つだけで改善されます。"
+      },
+      {
+        "question": "エリジョン（脱落）は無視しても通じますか？",
+        "answer": "無視しても意味は通じますが、省略することで話すスピードが劇的に上がり、ネイティブ特有の「英語らしいリズム」が身につくため、習得することをお勧めします。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"and my work has been\",\"time\":\"117\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547918824\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\"to extend the human lifespan\",\"time\":\"118.1\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547918831\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\"indefinitely.\",\"time\":\"119.12\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547918834\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"}]",
+    "image_sections": [
+      {
+        "label": "and my work has been",
+        "time": "117",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547918824\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": "to extend the human lifespan",
+        "time": "118.1",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547918831\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": "indefinitely.",
+        "time": "119.12",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547918834\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      }
+    ],
+    "chunks": [
+      {
+        "en": "and my work has been",
+        "ipa_citation": "ænd maɪ wɜrk hæz bin",
+        "ipa_connected": "ən maɪ ˈwɜrksbɪn",
+        "kana": "エン マイワークズ ビン",
+        "reduction_type": "Linking",
+        "start_time": 117.3,
+        "end_time": 118.09
+      },
+      {
+        "en": "to extend the human",
+        "ipa_citation": "tu ɪkˈstɛnd ðə ˈhjumən",
+        "ipa_connected": "tə ɪkˈstɛndi ˈhjumən",
+        "kana": "トゥ エクセンディ ヒューマン",
+        "reduction_type": "Assimilation",
+        "start_time": 118.1,
+        "end_time": 118.8
+      },
+      {
+        "en": "lifespan indefinitely.",
+        "ipa_citation": "ˈlaɪfspæn ˌɪndəˈfɪnətli",
+        "ipa_connected": "ˈlaɪfspæn ˌɪndəˈfɪnli",
+        "kana": "ライフスパン ニンダフナリィ",
+        "reduction_type": "Elision+Reduction",
+        "start_time": 118.81,
+        "end_time": 119.99
+      }
+    ],
+    "translated": "そして、私の仕事は人間の寿命を無期限に延ばすことでした。"
+  },
+  {
+    "id": 84,
+    "url": "https://www.youtube.com/watch?v=P-lBlZ3hqKc",
+    "start_time": "858.5",
+    "end_time": "861.79",
+    "updated_at": "2026-06-05T07:21:20.673Z",
+    "question": "and they are making a difference by shared best practices.\n",
+    "question_katakana": "アン ゼイ アー メイキンガ ディファレンス バイ シェアー ベス プラァティシイズ",
+    "article_text": {
+      "title": "「and they are making a difference by shared best practices」をネイティブらしく発音するコツ",
+      "meta_description": "「and they are making a difference by shared best practices」を例に、ネイティブが多用するリンキング、リダクション、エリジョンの発音テクニックを徹底解説。英語特有の滑らかなリズムを習得しましょう。",
+      "introduction": "英語の発音には、単語単体では聞こえない「音の変化」が数多く存在します。特に「and they are making a difference by shared best practices」のような文章は、ネイティブが話す際に音の脱落や連結が起こりやすく、聞き取りや発声が難しい箇所です。本記事では、この一文を題材に、正しい発音のメカニズムをステップバイステップで解説します。",
+      "section_1": {
+        "heading": "「and they are」のリダクション（音の弱化）",
+        "content": "冒頭の「and they are」は、一つずつ丁寧に発音すると不自然に聞こえます。ここでは「and」の「d」の音がリダクション（弱化・脱落）し、「アン・ゼイ・アー」と流れるように繋がります。特に「and」は「アン」と短くし、次にくる「they」へ滑らかに移行するのがポイントです。"
+      },
+      "section_2": {
+        "heading": "「making a difference」のリンキング（連結）",
+        "content": "「making a」の部分では、語尾の「g」と次の「a」がくっついて「メイキンガ」のように発音されるリンキングが起こります。これを意識するだけで、単語の区切りが曖昧になり、よりネイティブに近いリズムが生まれます。「difference」もしっかりと「ディファレンス」と繋げて発音しましょう。"
+      },
+      "section_3": {
+        "heading": "「by shared best」のエリジョン（音の消失）",
+        "content": "「shared」の語尾にある「d」の音は、その直後に「b（best）」という破裂音が来るため、エリジョン（音の消失）を起こします。舌を「d」の位置につけはしますが、音として鳴らさずにすぐに「b」の音へと移ることで、スムーズな移行が可能になります。「シェアー・ベス」と、あえて「d」を言わずに繋げる練習が有効です。"
+      },
+      "section_4": {
+        "heading": "「practices.」の複数形と語尾の発音",
+        "content": "最後の「practices」は「プラァティシイズ」と発音します。複数形の「s」が「iz」のような音に変化するため、語尾がしっかりと響くようにしましょう。文章の最後であるため、文全体のトーンを落ち着かせつつ、最後まで明瞭に発音するのがコツです。"
+      },
+      "conclusion": "今回解説した「リダクション」「リンキング」「エリジョン」は、英語を流暢に話すための必須スキルです。「and they are making a difference by shared best practices」という文章を通じて、一つひとつの音を丁寧につなぎ、滑らかに話す練習を繰り返してみてください。これらを意識するだけで、あなたの英語は驚くほど自然に聞こえるようになります。",
+      "remember": "英語の発音は「単語の羅列」ではなく「音の繋がり」です。今回紹介した3つのテクニックを意識するだけで、あなたのリスニング力とスピーキング力は格段に向上します。",
+      "keywords": [
+        "英語発音",
+        "リスニング練習",
+        "リンキング",
+        "リダクション",
+        "エリジョン"
+      ],
+      "chunks": [
+        {
+          "en": "and they are",
+          "ipa_citation": "ænd ðeɪ ɑr",
+          "ipa_connected": "ən ðeɪ ˈɑr",
+          "kana": "アン ゼイ 【アー】",
+          "reduction_type": "Reduction",
+          "start_time": 858.5,
+          "end_time": 859.19
+        },
+        {
+          "en": "making a difference",
+          "ipa_citation": "ˈmeɪkɪŋ ə ˈdɪfrəns",
+          "ipa_connected": "ˈmeɪkɪŋə ˈdɪfərəns",
+          "kana": "【メイ】キンガ ディ【ファ】レンス",
+          "reduction_type": "Linking",
+          "start_time": 859.2,
+          "end_time": 860.19
+        },
+        {
+          "en": "by shared best",
+          "ipa_citation": "baɪ ʃɛrd bɛst",
+          "ipa_connected": "baɪ ʃeər bɛst",
+          "kana": "バイ 【シェ】アー 【ベ】ス",
+          "reduction_type": "Elision",
+          "start_time": 860.2,
+          "end_time": 860.99
+        },
+        {
+          "en": "practices.",
+          "ipa_citation": "ˈpræktɪsəz",
+          "ipa_connected": "ˈpræktɪsiz",
+          "kana": "【プラ】ァティシイズ",
+          "reduction_type": "None",
+          "start_time": 861,
+          "end_time": 861.79
+        }
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/P-lBlZ3hqKc/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/P-lBlZ3hqKc/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/P-lBlZ3hqKc/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/P-lBlZ3hqKc/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/P-lBlZ3hqKc/maxresdefault.jpg\"}",
+    "theme": "and",
+    "noIndex": 0,
+    "is_similar": 1,
+    "pron_memo": "and は アン に聴こえる\nmaking a は メイキンガ に聴こえる\nsheared best は シェア ベス に聴こえる\npractices は プラァティシイズ に聴こえる",
+    "tsukkomi": [
+      {
+        "question": "なぜ「and」は発音されないのですか？",
+        "answer": "「and」は会話の中で重要な意味を持たない機能語であるため、強く発音されず、前後の単語と一体化して弱く発音されることが一般的です。"
+      },
+      {
+        "question": "エリジョンをマスターするための練習方法はありますか？",
+        "answer": "音を完全に発音しようとせず、舌の形だけその音の位置に置き、すぐに次の音へ移行する「サイレント・スイッチ」を意識して練習してみてください。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"and they\",\"time\":\"858.5\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547924452\\\" height=\\\"293\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"are making a difference\",\"time\":\"858.9\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547924455\\\" height=\\\"293\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"by shared best practices.\",\"time\":\"860.2\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547924458\\\" height=\\\"293\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\"}]",
+    "image_sections": [
+      {
+        "label": "and they",
+        "time": "858.5",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547924452\" height=\"293\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "are making a difference",
+        "time": "858.9",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547924455\" height=\"293\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "by shared best practices.",
+        "time": "860.2",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547924458\" height=\"293\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n"
+      }
+    ],
+    "chunks": [
+      {
+        "en": "and they are",
+        "ipa_citation": "ænd ðeɪ ɑr",
+        "ipa_connected": "ən ðeɪ ˈɑr",
+        "kana": "アン ゼイ 【アー】",
+        "reduction_type": "Reduction",
+        "start_time": 858.5,
+        "end_time": 859.19
+      },
+      {
+        "en": "making a difference",
+        "ipa_citation": "ˈmeɪkɪŋ ə ˈdɪfrəns",
+        "ipa_connected": "ˈmeɪkɪŋə ˈdɪfərəns",
+        "kana": "【メイ】キンガ ディ【ファ】レンス",
+        "reduction_type": "Linking",
+        "start_time": 859.2,
+        "end_time": 860.19
+      },
+      {
+        "en": "by shared best",
+        "ipa_citation": "baɪ ʃɛrd bɛst",
+        "ipa_connected": "baɪ ʃeər bɛst",
+        "kana": "バイ 【シェ】アー 【ベ】ス",
+        "reduction_type": "Elision",
+        "start_time": 860.2,
+        "end_time": 860.99
+      },
+      {
+        "en": "practices.",
+        "ipa_citation": "ˈpræktɪsəz",
+        "ipa_connected": "ˈpræktɪsiz",
+        "kana": "【プラ】ァティシイズ",
+        "reduction_type": "None",
+        "start_time": 861,
+        "end_time": 861.79
+      }
+    ],
+    "translated": "彼らは共有されたベストプラクティスを通じて、変化をもたらしています。"
+  },
+  {
+    "id": 85,
+    "url": "https://www.youtube.com/watch?v=o1Z4F4e2Bw4",
+    "start_time": "419.7",
+    "end_time": "423.19",
+    "updated_at": "2026-06-05T08:00:14.846Z",
+    "question": "And there you see the tail of that great beast wrapping around me.",
+    "question_katakana": "アナァユゥ スィ ザ テアオライ グレイ ビース ラッピナ ラウン ミィ",
+    "article_text": {
+      "title": "ネイティブ発音の核心！「And there you see the tail of that great beast wrapping around me」を攻略",
+      "meta_description": "「And there you see the tail of that great beast wrapping around me」という難易度の高い一文を例に、ネイティブが日常的に行っているリンキング（連結）やエリジョン（消失）のルールを分かりやすく解説します。英語リスニング力とスピーキング力を劇的に向上させましょう。",
+      "introduction": "英語を学んでいて「教科書通りに読んでいるのにネイティブには通じない」「速すぎて聞き取れない」と感じたことはありませんか？その原因の多くは、単語同士の『音の繋がり』や『消失』にあります。今回は「And there you see the tail of that great beast wrapping around me」という一文を題材に、ネイティブが実際にどう発音しているのか、その秘密を紐解いていきましょう。",
+      "section_1": {
+        "heading": "音の連結（リンキング）の基本「And there you see the」",
+        "content": "最初のポイントは「And there you see the」です。ここでは、単語の境界線が曖昧になるリンキングが発生しています。Andの『d』の音が弱まり、次の『there』と滑らかに繋がって『アナァ』のような響きになります。さらに『you see the』も一息で発音されるため、カタカナ表記では「アナァユゥ スィ ザ」となり、一つ一つの単語を独立させず、流れるようなリズムで発音するのがコツです。"
+      },
+      "section_2": {
+        "heading": "「of」の音を消す？「tail of that」の法則",
+        "content": "次に「tail of that」を見てみましょう。ここで重要なのは『of』の扱いです。ネイティブは『of』を強く発音することはほとんどありません。実際には弱形化（Reduction）が起こり、曖昧な母音『ə（シュワ）』のように響きます。そのため、『tail of that』は『テアオライ』のように聞こえ、まるで『of』が存在しないかのように滑らかに接続されます。"
+      },
+      "section_3": {
+        "heading": "Tの音はどこへ？「great beast」のエリジョン",
+        "content": "続いて「great beast」です。ここにはエリジョン（音の消失）という現象が隠れています。本来『great』の末尾は『t』ですが、直後に『b』という破裂音が来るため、前の『t』の音を飲み込んで発音しません。これをTストップと言います。結果として『グレイ ビース』という響きになり、次へ繋ぐためのエネルギーを節約するネイティブ特有の省エネ発音が生まれます。"
+      },
+      "section_4": {
+        "heading": "ingはinに！「wrapping around me」の省エネ発音",
+        "content": "最後は「wrapping around me」です。ここでも重要なポイントが2つあります。まず『wrapping』の『-ing』は、会話では『in』と発音されることが多いため『ラッピナ』となります。次に『around』の『d』も同様に弱まり、『ラウン ミィ』のように接続されます。これらの連結と消失を意識するだけで、あなたの発音は驚くほどネイティブに近づきます。"
+      },
+      "conclusion": "「And there you see the tail of that great beast wrapping around me」というフレーズを分析すると、英語は一つ一つの単語を丁寧に発音するのではなく、音を繋げ、時には消すことで、リズムを作っていることが分かります。最初から完璧を目指す必要はありません。まずは今回紹介したリズムを真似て、口に出してみることから始めてみましょう。",
+      "remember": "英語発音の極意は『単語ごとに区切らない』こと。リンキングとエリジョンを意識して、音と音を滑らかに繋ぐ練習を繰り返せば、あなたのリスニング力は必ず向上します。",
+      "keywords": [
+        "英語発音",
+        "リエゾン",
+        "リンキング",
+        "エリジョン",
+        "英語リスニング",
+        "英会話",
+        "独学"
+      ],
+      "chunks": [
+        {
+          "en": "And there you see the",
+          "ipa_citation": "ænd ðer ju si ðə",
+          "ipa_connected": "ənðɛrju siðə",
+          "kana": "アナァユゥ スィ ザ",
+          "reduction_type": "Linking",
+          "start_time": 419.7,
+          "end_time": 420.39
+        },
+        {
+          "en": "tail of that",
+          "ipa_citation": "teɪl əv ðæt",
+          "ipa_connected": "teɪləðæt",
+          "kana": "テアオライ",
+          "reduction_type": "Reduction",
+          "start_time": 420.4,
+          "end_time": 421
+        },
+        {
+          "en": "great beast",
+          "ipa_citation": "ɡreɪt biːst",
+          "ipa_connected": "ɡreɪbiːst",
+          "kana": "グレイ ビース",
+          "reduction_type": "Elision",
+          "start_time": 421.2,
+          "end_time": 422.09
+        },
+        {
+          "en": "wrapping around me.",
+          "ipa_citation": "ˈræpɪŋ əˈraʊnd miː",
+          "ipa_connected": "ˈræpɪn əˈraʊn miː",
+          "kana": "ラッピナ ラウン ミィ",
+          "reduction_type": "Elision+Reduction",
+          "start_time": 422.1,
+          "end_time": 423.19
+        }
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/o1Z4F4e2Bw4/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/o1Z4F4e2Bw4/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/o1Z4F4e2Bw4/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/o1Z4F4e2Bw4/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/o1Z4F4e2Bw4/maxresdefault.jpg\"}",
+    "theme": "and",
+    "noIndex": 0,
+    "is_similar": 1,
+    "pron_memo": "And there you は アナユゥ に聴こえる\ntail of that は テアオライ に聴こえる\ngreat beast は グレイビース に聴こえる\nwrapping around me は ラッピナ ラウン ミィ に聴こえる",
+    "tsukkomi": [
+      {
+        "question": "なぜネイティブは音を繋げたり消したりするのですか？",
+        "answer": "それは、最小限のエネルギーで効率よく話すためです。人間は楽に発音できる方向へ自然と音を変化させる習性があるため、無駄な音を省いて流れるように話すのが英語の基本です。"
+      },
+      {
+        "question": "カタカナ表記を真似するだけで本当に発音は良くなりますか？",
+        "answer": "はい、非常に効果的です。特に今回の『リンキング』や『エリジョン』を意識したカタカナ表記をガイドにすることで、単語単位のブツ切り発音を脱却し、英語らしいリズムを体感しやすくなります。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"And there you see\",\"time\":\"419.7\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547925262\\\" height=\\\"293\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"the tail of that great beast\",\"time\":\"420.26\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547925267\\\" height=\\\"293\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"wrapping around me\",\"time\":\"422.1\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547925269\\\" height=\\\"293\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"}]",
+    "image_sections": [
+      {
+        "label": "And there you see",
+        "time": "419.7",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547925262\" height=\"293\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "the tail of that great beast",
+        "time": "420.26",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547925267\" height=\"293\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "wrapping around me",
+        "time": "422.1",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547925269\" height=\"293\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      }
+    ],
+    "chunks": [
+      {
+        "en": "And there you see the",
+        "ipa_citation": "ænd ðer ju si ðə",
+        "ipa_connected": "ənðɛrju siðə",
+        "kana": "アナァユゥ スィ ザ",
+        "reduction_type": "Linking",
+        "start_time": 419.7,
+        "end_time": 420.39
+      },
+      {
+        "en": "tail of that",
+        "ipa_citation": "teɪl əv ðæt",
+        "ipa_connected": "teɪləðæt",
+        "kana": "テアオライ",
+        "reduction_type": "Reduction",
+        "start_time": 420.4,
+        "end_time": 421
+      },
+      {
+        "en": "great beast",
+        "ipa_citation": "ɡreɪt biːst",
+        "ipa_connected": "ɡreɪbiːst",
+        "kana": "グレイ ビース",
+        "reduction_type": "Elision",
+        "start_time": 421.2,
+        "end_time": 422.09
+      },
+      {
+        "en": "wrapping around me.",
+        "ipa_citation": "ˈræpɪŋ əˈraʊnd miː",
+        "ipa_connected": "ˈræpɪn əˈraʊn miː",
+        "kana": "ラッピナ ラウン ミィ",
+        "reduction_type": "Elision+Reduction",
+        "start_time": 422.1,
+        "end_time": 423.19
+      }
+    ],
+    "translated": "そして、その巨大な獣の尻尾が私に巻き付いているのが見えるでしょう。"
+  },
+  {
+    "id": 86,
+    "url": "https://www.youtube.com/watch?v=7oUCSfeM9PY",
+    "start_time": "757",
+    "end_time": "761.69",
+    "updated_at": "2026-06-05T08:04:26.453Z",
+    "question": "And one of the reasons is that it's not just an economic evolution.",
+    "question_katakana": "アンワナザ リーズンズ イズ ザッディッツ ノッ ジャアストゥ アン エコノミック エヴォリューション",
+    "article_text": {
+      "title": "ネイティブのような英語へ！「リンキング」と「脱落」で変わる発音の魔法",
+      "meta_description": "「And one of the reasons is that it's not just an economic evolution.」を題材に、ネイティブが実践する「リンキング（連結）」と「脱落（エリジョン）」のルールを徹底解説。カタカナ英語を卒業して、滑らかな英語を手に入れましょう。",
+      "introduction": "「英語を話しているのに、なぜかネイティブに聞き返される…」そんな悩みはありませんか？その原因は、単語を一つずつ切り離して発音しているからかもしれません。英語のプロが実践する、音の「つながり（リンキング）」と「消える音（脱落）」を理解すれば、あなたの英語は劇的に聞き取りやすく、そして話しやすくなります。今回は「And one of the reasons is that it's not just an economic evolution.」というフレーズを例に、そのコツを学びましょう。",
+      "section_1": {
+        "heading": "「And one of the reasons」のつながり",
+        "content": "まずは前半の「And one of the reasons」に注目しましょう。ここでは「And one」が繋がり、「アンワナ（an-wʌn）」という一つのリズムになります。ポイントは「And」の末尾にある「d」の音を強く出しすぎず、次の「one」の「o」に滑らかに吸い込ませることです。このように単語同士を繋げて読むことで、英語らしい流暢なリズムが生まれます。"
+      },
+      "section_2": {
+        "heading": "難所を突破！「is that it's not」の脱落",
+        "content": "この文章の最大のポイントは「is that it's not」の部分です。ここでは、音が滑らかに繋がるだけでなく、いくつかの音が省略される「脱落（エリジョン）」が起きます。実際には「イズ ザッディッツ ノッ」と発音され、「that」の「t」と「it」が連結することで一つのリズムとなります。ネイティブはこの部分を非常に短く発音するため、単語一つひとつを丁寧に発音しようとせず、塊として捉えるのがコツです。"
+      },
+      "section_3": {
+        "heading": "自然な流れを作る「just an」",
+        "content": "次に「just an economic」の部分を見ていきましょう。ここでは「just」の「t」が後ろの「an」と結びつき、「ジャアストゥ アン」と聞こえるようになります。この「just an」のつながりがスムーズになると、その後の「economic evolution」まで一息で言えるようになります。強調したいキーワードである「economic」に向かって、音を止めることなく流す意識を持ちましょう。"
+      },
+      "section_4": {
+        "heading": "今日からできる練習法",
+        "content": "これらの音の変化をマスターするためには、まずは「カタカナ表記」を参考にして、ゆっくりと音読することから始めましょう。いきなり速く話そうとせず、まずは「音の連結箇所」を意識して、口を大きく動かします。慣れてきたら、少しずつスピードを上げ、フレーズ全体を一つの呼吸で言えるように練習してみてください。"
+      },
+      "conclusion": "「And one of the reasons is that it's not just an economic evolution.」というフレーズ一つとっても、英語には多くのリンキングや脱落が隠されています。これらのルールを少し意識するだけで、あなたの発音は驚くほどネイティブに近づくはずです。ぜひ今日から、お気に入りの英語フレーズで「音の繋がり」を探してみてください。",
+      "remember": "英語の発音は、単語単位ではなく「音の塊」で捉えるのが正解です。リンキング（連結）と脱落を意識して口に出すだけで、あなたの英語は驚くほど自然で、力強いものに変わります。",
+      "keywords": [
+        "英語発音",
+        "リンキング",
+        "脱落",
+        "英会話学習",
+        "英語リズム"
+      ],
+      "chunks": [
+        {
+          "en": "And one of the reasons",
+          "ipa_citation": "ænd wʌn əv ðə ˈriːzənz",
+          "ipa_connected": "ənwʌnəðə ˈriːzənz",
+          "kana": "アンワナザ リーズンズ",
+          "reduction_type": "Linking",
+          "start_time": 757,
+          "end_time": 758.09
+        },
+        {
+          "en": "is that it's not",
+          "ipa_citation": "ɪz ðæt ɪts nɑt",
+          "ipa_connected": "ɪz zəˈdɪts nɑ",
+          "kana": "イズ ザッディッツ ノッ",
+          "reduction_type": "Elision",
+          "start_time": 758.1,
+          "end_time": 758.95
+        },
+        {
+          "en": "just an economic evolution.",
+          "ipa_citation": "dʒʌst ən ˌiːkəˈnɑmɪk ˌɛvəˈluːʃən",
+          "ipa_connected": "dʒʌstən ˌiːkəˈnɑmɪk ˌɛvəˈluːʃən",
+          "kana": "ジャアストゥ アン エコノミック エヴォリューション",
+          "reduction_type": "Linking",
+          "start_time": 758.96,
+          "end_time": 761.69
+        }
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/7oUCSfeM9PY/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/7oUCSfeM9PY/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/7oUCSfeM9PY/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/7oUCSfeM9PY/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/7oUCSfeM9PY/maxresdefault.jpg\"}",
+    "theme": "and",
+    "noIndex": 0,
+    "is_similar": 1,
+    "pron_memo": "And one of the は アンワナザ に聴こえる\nis that it's not は イズ ザッディッツ ノッ に聴こえる\n",
+    "tsukkomi": [
+      {
+        "question": "なぜ「that」が「ディッツ」のように聞こえるのですか？",
+        "answer": "「that」の末尾の「t」と、続く「it's」の「i」が連結し、さらに「it's」の「s」が続くことで、音が短縮・変形するためです。これを「音の同化」や「脱落」と呼びます。"
+      },
+      {
+        "question": "リンキングを練習するメリットは何ですか？",
+        "answer": "リンキングを習得すると、ネイティブが話す「速い英語」を聞き取れるようになるだけでなく、自身が話す際にも、より少ない労力で滑らかに英語を話せるようになります。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"And one of the reasons is that\",\"time\":\"757\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547926589\\\" height=\\\"293\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\"it's not just.\",\"time\":\"758.4\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547926601\\\" height=\\\"293\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\"an economic evolution.\",\"time\":\"759.5\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547926592\\\" height=\\\"293\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"}]",
+    "image_sections": [
+      {
+        "label": "And one of the reasons is that",
+        "time": "757",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547926589\" height=\"293\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": "it's not just.",
+        "time": "758.4",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547926601\" height=\"293\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      },
+      {
+        "label": "an economic evolution.",
+        "time": "759.5",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547926592\" height=\"293\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      }
+    ],
+    "chunks": [
+      {
+        "en": "And one of the reasons",
+        "ipa_citation": "ænd wʌn əv ðə ˈriːzənz",
+        "ipa_connected": "ənwʌnəðə ˈriːzənz",
+        "kana": "アンワナザ リーズンズ",
+        "reduction_type": "Linking",
+        "start_time": 757,
+        "end_time": 758.09
+      },
+      {
+        "en": "is that it's not",
+        "ipa_citation": "ɪz ðæt ɪts nɑt",
+        "ipa_connected": "ɪz zəˈdɪts nɑ",
+        "kana": "イズ ザッディッツ ノッ",
+        "reduction_type": "Elision",
+        "start_time": 758.1,
+        "end_time": 758.95
+      },
+      {
+        "en": "just an economic evolution.",
+        "ipa_citation": "dʒʌst ən ˌiːkəˈnɑmɪk ˌɛvəˈluːʃən",
+        "ipa_connected": "dʒʌstən ˌiːkəˈnɑmɪk ˌɛvəˈluːʃən",
+        "kana": "ジャアストゥ アン エコノミック エヴォリューション",
+        "reduction_type": "Linking",
+        "start_time": 758.96,
+        "end_time": 761.69
+      }
+    ],
+    "translated": "その理由の一つは、それが単なる経済的な進化ではないということです。"
+  },
+  {
+    "id": 87,
+    "url": "https://www.youtube.com/watch?v=7LPJrzZaoZg",
+    "start_time": "391.4",
+    "end_time": "394.89",
+    "updated_at": "2026-06-05T08:08:38.028Z",
+    "question": "It's how I train my mind to be unconventional and to be creative",
+    "question_katakana": "イッツ ハウァ トレイン マイ マイン トゥ ビィ アンコンヴェンショナウ アン トゥ ビィ クリエイディブ",
+    "article_text": {
+      "title": "「It's how I train...」で学ぶ！ネイティブの自然な発音とリズムの極意",
+      "meta_description": "ネイティブのように「It's how I train my mind to be unconventional and to be creative」を自然に発音するためのポイントを徹底解説。リンキング、エリジョン、リダクションを学び、英語のリスニングとスピーキング力を向上させましょう。",
+      "introduction": "英語を話す際、単語を一つずつ丁寧に発音していませんか？実は、ネイティブスピーカーは単語同士をつなげたり、一部の音をあえて省略したりして、流暢かつ効率的に話しています。今回は「It's how I train my mind to be unconventional and to be creative」というフレーズを題材に、ネイティブ特有の音の変化を学び、あなたの英語をより自然な響きに近づけましょう。",
+      "section_1": {
+        "heading": "It's how I train - 音の連結（Linking）",
+        "content": "冒頭の「how I」に注目してください。ネイティブはここを「ハウ・アイ」と区切らず、wの音とIの母音が繋がり「ハウァ」と滑らかに発音します。この『リンキング』を意識するだけで、文全体のスピード感が格段に向上し、リズムが生まれます。"
+      },
+      "section_2": {
+        "heading": "my mind - 音の脱落（Elision）",
+        "content": "「mind」の最後の「d」の音は、強調する場合を除き、ほとんど発音されません。舌を歯茎につけて音を止めるだけの「エリジョン（脱落）」によって、音が消える現象です。これにより、次の単語へ非常にスムーズに移行することができます。"
+      },
+      "section_3": {
+        "heading": "to be unconventional - 母音の弱化（Reduction）",
+        "content": "前置詞の「to」は、文中で強く読まれることはありません。曖昧な母音「ə」に弱化させて「タ（またはテ）」のように軽く響かせるのがコツです。続く「unconventional」も、リズムを保つために「トゥ」ではなくリダクションを意識してみましょう。"
+      },
+      "section_4": {
+        "heading": "and to be creative - 複数の変化をマスター",
+        "content": "「and to」は「アン・トゥ」とは発音されず、音が結合して「アンタ」のように変化します。さらに「creative」の「t」はフラップT（軽く舌を弾く音）になりやすく、非常に早いリズムが生まれます。ここを攻略すると、一気にネイティブらしい響きになります。"
+      },
+      "conclusion": "今回のフレーズは、リンキング、エリジョン、リダクションが詰まった素晴らしい練習教材です。これらを意識的に練習することで、あなたの英語はより自然な響きに近づきます。まずは各チャンクをゆっくり正確に、慣れてきたら全体のメロディを真似して声に出してみてください。",
+      "remember": "英語は単語の羅列ではなく「音のつながり」です。一つひとつの音を丁寧に出すことよりも、文全体のメロディとリズムを真似ることに意識を向けるのが、上達への近道です。",
+      "keywords": [
+        "英語発音",
+        "リスニング",
+        "ネイティブ発音",
+        "リンキング",
+        "エリジョン",
+        "英語学習"
+      ],
+      "chunks": [
+        {
+          "en": "It's how I train",
+          "ipa_citation": "ɪts haʊ aɪ treɪn",
+          "ipa_connected": "ɪts haʊə treɪn",
+          "kana": "イッツ ハウァ トレイン",
+          "reduction_type": "Linking",
+          "start_time": 391.4,
+          "end_time": 392.08
+        },
+        {
+          "en": "my mind",
+          "ipa_citation": "maɪ maɪnd",
+          "ipa_connected": "maɪ maɪn",
+          "kana": "マイ マイン",
+          "reduction_type": "Elision",
+          "start_time": 392.09,
+          "end_time": 392.54
+        },
+        {
+          "en": "to be unconventional",
+          "ipa_citation": "tu bi ˌʌnkənˈvenʃənl",
+          "ipa_connected": "tə bi ˌʌnkənˈvenʃənə",
+          "kana": "トゥ ビィ アンコンヴェンショナウ",
+          "reduction_type": "Reduction",
+          "start_time": 392.55,
+          "end_time": 393.79
+        },
+        {
+          "en": "and to be creative",
+          "ipa_citation": "ænd tu bi kriˈeɪtɪv",
+          "ipa_connected": "ən tə bi kriˈeɪɾɪv",
+          "kana": "アン トゥ ビィ クリエイディブ",
+          "reduction_type": "Elision+Reduction",
+          "start_time": 393.8,
+          "end_time": 394.89
+        }
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/7LPJrzZaoZg/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/7LPJrzZaoZg/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/7LPJrzZaoZg/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/7LPJrzZaoZg/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/7LPJrzZaoZg/maxresdefault.jpg\"}",
+    "theme": "and",
+    "noIndex": 0,
+    "is_similar": 1,
+    "pron_memo": "how I は ハウァ に聴こえる\nand は アン に聴こえる\n",
+    "tsukkomi": [
+      {
+        "question": "「d」の音を完全に落としても意味は伝わりますか？",
+        "answer": "はい、問題ありません。文脈が明確であれば、むしろ音を落として滑らかにつなげるほうが、ネイティブに近い自然な響きとして相手に伝わります。"
+      },
+      {
+        "question": "スピードが速すぎてついていけません。どうすればいいですか？",
+        "answer": "まずは各塊（チャンク）ごとに区切って、ゆっくりと正確に発音する練習から始めましょう。全体のスピードよりも、音の変化（リンキングなど）を正しく再現することを優先してください。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"It's\",\"time\":\"391.4\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547963816\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\" how I train  my mind\",\"time\":\"391.6\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547963833\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"to be unconventional\",\"time\":\"392.55\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547963901\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"and to be creative\",\"time\":\"393.7\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547963907\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"}]",
+    "image_sections": [
+      {
+        "label": "It's",
+        "time": "391.4",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547963816\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": " how I train  my mind",
+        "time": "391.6",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547963833\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "to be unconventional",
+        "time": "392.55",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547963901\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "and to be creative",
+        "time": "393.7",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547963907\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      }
+    ],
+    "chunks": [
+      {
+        "en": "It's how I train",
+        "ipa_citation": "ɪts haʊ aɪ treɪn",
+        "ipa_connected": "ɪts haʊə treɪn",
+        "kana": "イッツ ハウァ トレイン",
+        "reduction_type": "Linking",
+        "start_time": 391.4,
+        "end_time": 392.08
+      },
+      {
+        "en": "my mind",
+        "ipa_citation": "maɪ maɪnd",
+        "ipa_connected": "maɪ maɪn",
+        "kana": "マイ マイン",
+        "reduction_type": "Elision",
+        "start_time": 392.09,
+        "end_time": 392.54
+      },
+      {
+        "en": "to be unconventional",
+        "ipa_citation": "tu bi ˌʌnkənˈvenʃənl",
+        "ipa_connected": "tə bi ˌʌnkənˈvenʃənə",
+        "kana": "トゥ ビィ アンコンヴェンショナウ",
+        "reduction_type": "Reduction",
+        "start_time": 392.55,
+        "end_time": 393.79
+      },
+      {
+        "en": "and to be creative",
+        "ipa_citation": "ænd tu bi kriˈeɪtɪv",
+        "ipa_connected": "ən tə bi kriˈeɪɾɪv",
+        "kana": "アン トゥ ビィ クリエイディブ",
+        "reduction_type": "Elision+Reduction",
+        "start_time": 393.8,
+        "end_time": 394.89
+      }
+    ],
+    "translated": "それが、私が型破りで創造的な人間であるために、どのように思考を鍛えているのかという方法です。"
+  }
+]

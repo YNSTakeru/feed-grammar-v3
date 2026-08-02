@@ -1,0 +1,2 @@
+# Codex instruction discovery fallback for this repository
+project_doc_fallback_filenames = ["CLAUDE.md"]

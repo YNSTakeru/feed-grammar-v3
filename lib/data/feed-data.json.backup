@@ -4,99 +4,37 @@
     "url": "https://www.youtube.com/watch?v=Ij1o5zGDCeE",
     "start_time": "8",
     "end_time": "11",
-    "updated_at": "2026-05-16T18:21:47.396Z",
+    "updated_at": "2026-06-04T01:42:56.721Z",
     "question": "Some of us don’t want to think back to our childhoods",
-    "question_katakana": "【サマ】〈ヴァス〉 【ドン】 【モア (モナ)】 【スィンク】 【バック】 〈ワ〉 【チャイルドウッズ】",
+    "question_katakana": "【サマ】〈ヴァス〉 【ドン】 【モア】 【スィンク】 【バッコ】【チャイルドウッズ】",
     "article_text": {
-      "title": "ネイティブの「Some of us don’t want to...」を攻略！自然な英語発音のコツ",
-      "meta_description": "英語の発音で「Some of us don’t want to」が聞き取れない・言えない悩みを解決！リンキングや脱落（エリジョン）を詳しく解説します。",
-      "introduction": "英語を話すとき、単語ひとつひとつを丁寧に発音しすぎて、逆に「不自然」に聞こえてしまった経験はありませんか？実は、ネイティブスピーカーは特定の音を繋げたり、消したりすることでスムーズなリズムを作っています。今回は「Some of us don’t want to think back to our childhoods」という一文を題材に、流暢に見せるテクニックを学びましょう。",
+      "title": "ネイティブ発音の極意：Some of us don’t want to think back to our childhoodsを攻略する",
+      "meta_description": "「Some of us don’t want to think back to our childhoods」を滑らかに発音するコツを解説。リンキング、エリジョン、アシミレーションをマスターして、ネイティブらしい英語の音の繋がりを身につけましょう。",
+      "introduction": "英語の文章を読んでいて、「なぜネイティブはこんなに短く、速く話すのか」と疑問に思ったことはありませんか？実は、単語単体ではなく、音と音が混ざり合うルールが存在するからです。今回は「Some of us don’t want to think back to our childhoods」というセンテンスを通して、ネイティブが日常的に行っている音の変化を解き明かします。",
       "section_1": {
-        "heading": "「Some of us」のリンキング：サマ・ヴァス",
-        "content": "最初の難関は「Some of us」です。Someの最後の音（m）と、ofの最初の音（vの前の曖昧母音）が繋がり、「サマ」のように聞こえます。さらにofの「v」とusの「u」が繋がり「ヴァス」となります。単語を分断せず、一つの単語のように一気に発音するのがコツです。"
+        "heading": "「Some of us」のリンキング（連結）",
+        "content": "「Some of us」は単語ごとに区切って読むのではなく、ひとまとまりの音として発音します。語尾の「m」や「s」が次の単語の母音と連結するリンキングのルールにより、【サマ】〈ヴァス〉と流れるように繋がるのが特徴です。この連結を意識するだけで、単語の羅列ではない「英語のリズム」が生まれます。"
       },
       "section_2": {
-        "heading": "「don’t want to」の劇的な変化：ドン・モア",
-        "content": "ここは最もネイティブらしさが出るポイントです。don’tの「t」は脱落し、want toは短縮されて「wanna（ワナ）」のような響きになります。今回のカタカナ表記「モア」は、鼻音のnの影響でwの音が変化した非常にリアルな響きを再現しています。tをきれいに発音しようとしないことが大切です。"
+        "heading": "「don’t」と「think」のエリジョン（脱落）",
+        "content": "ネイティブは語尾の破裂音（t, kなど）をあえて発音しないことがあります。これがエリジョンです。「don’t」は【ドン】と最後を飲み込み、「think」も【スィン】とKの音を軽く触れる程度にするか省略することで、リズムを止めずに次のフレーズへスムーズに移行できます。"
       },
       "section_3": {
-        "heading": "「to our」は一瞬で通り過ぎる：〈ワ〉",
-        "content": "to ourの部分を「トゥ・アワー」とハッキリ言ってしまうとリズムが崩れます。ここは弱形（Reduction）が起こり、さらにリンキングが重なって、極めて短い「ワ」のような音に凝縮されます。主役である「childhoods」を引き立てるために、ここは影のように短く添えましょう。"
+        "heading": "「want to」のアシミレーション（同化）",
+        "content": "「want to」は英語で最も頻繁に音が変化するフレーズの一つです。ここでは単語同士の音が融合する「アシミレーション」が発生し、テキスト通りの読み方ではなく【モア】に近い音へと変化します。この変化を覚えておくと、リスニングの際に「一体何を言ったのか？」と迷うことが少なくなります。"
       },
       "section_4": {
-        "heading": "強調すべきは「think back」と「childhoods」",
-        "content": "機能語（of, to, ourなど）を弱く発音する一方で、意味を持つ内容語（think, back, childhoods）はしっかりと発音します。この強弱のコントラストが、英語特有の心地よいリズムを生み出します。特にchildhoodsは最後を「ウッズ」としっかり着地させましょう。"
+        "heading": "「back to our」でリズムを完成させる",
+        "content": "「back to our」も同様に、音を繋げる重要ポイントです。「back」のKの音と「to」が結びつき、【バッコ】という音に変化します。このフレーズを通す際は、音の隙間を埋めるように発声練習を繰り返しましょう。単語単位ではなく、「音の塊」で捉えるのがコツです。"
       },
-      "conclusion": "英語の発音向上には、単語単体の音だけでなく「音の繋がり（リンキング）」と「音の消失（エリジョン）」への理解が不可欠です。今回学んだ「サマ・ヴァス」「モア」といった塊（チャンク）を意識して、何度も口に出して練習してみてください。気づけば、あなたの英語は驚くほどネイティブに近いリズムになっているはずです。",
-      "remember": "「繋げる音」と「消える音」を意識するだけで、リスニング力も飛躍的にアップします！",
+      "conclusion": "今回紹介した音の変化を意識するだけで、あなたの英語は劇的に「ネイティブらしく」聞こえるようになります。まずはゆっくりとチャンクごとに練習し、徐々にスピードを上げてみてください。ネイティブの速い英語も、こうした音のルールの積み重ねで成り立っています。",
+      "remember": "ネイティブの英語は単語の羅列ではなく、音が繋がったり消えたりする「音の塊」です。カタカナ通りの音にこだわりすぎず、全体の流れを意識して発音することで、リスニングとスピーキングの両方が向上します。",
       "keywords": [
         "英語発音",
         "リンキング",
-        "リスニング向上",
-        "want to 発音",
-        "音の変化",
-        "ネイティブ英語"
-      ],
-      "chunks": [
-        {
-          "en": "Some of us",
-          "ipa_citation": "sʌm əv ʌs",
-          "ipa_connected": "sʌməvəs",
-          "kana": "【サマ】〈ヴァス〉",
-          "reduction_type": "Linking",
-          "start_time": 8,
-          "end_time": 8.69
-        },
-        {
-          "en": "don’t",
-          "ipa_citation": "doʊnt",
-          "ipa_connected": "doʊn",
-          "kana": "【ドン】",
-          "reduction_type": "Elision",
-          "start_time": 8.7,
-          "end_time": 9.01
-        },
-        {
-          "en": "want to",
-          "ipa_citation": "wɑnt tu",
-          "ipa_connected": "wɑnə",
-          "kana": "【モア (モナ)】",
-          "reduction_type": "Elision+Reduction",
-          "start_time": 9.1,
-          "end_time": 9.39
-        },
-        {
-          "en": "think",
-          "ipa_citation": "θɪŋk",
-          "ipa_connected": "θɪŋk",
-          "kana": "【スィンク】",
-          "reduction_type": "None",
-          "start_time": 9.4,
-          "end_time": 9.59
-        },
-        {
-          "en": "back",
-          "ipa_citation": "bæk",
-          "ipa_connected": "bæk",
-          "kana": "【バック】",
-          "reduction_type": "None"
-        },
-        {
-          "en": "to our",
-          "ipa_citation": "tu aʊər",
-          "ipa_connected": "təwər",
-          "kana": "〈ワ〉",
-          "reduction_type": "Linking+Reduction"
-        },
-        {
-          "en": "childhoods",
-          "ipa_citation": "ˈtʃaɪldhʊdz",
-          "ipa_connected": "ˈtʃaɪldhʊdz",
-          "kana": "【チャイルドウッズ】",
-          "reduction_type": "None",
-          "start_time": 9.91,
-          "end_time": 11
-        }
+        "エリジョン",
+        "英語学習",
+        "リスニング練習"
       ]
     },
     "category": "最初の30フレーズ",
@@ -104,19 +42,19 @@
     "theme": "want to",
     "noIndex": 0,
     "is_similar": 0,
-    "pron_memo": "Some of us は サマヴァス に聴こえる。 don't は ドン に聴こえる。 want to は モア (モナ) に聴こえる。 to ourのto の音が聴こえない。 our　は ワ に聴こえる。",
+    "pron_memo": "Some of us は サマヴァス に聴こえる。 don't は ドン に聴こえる。 want to は モア に聴こえる。 to ourのto の音が聴こえない。 back our は バッコ に聴こえる",
     "tsukkomi": [
       {
-        "question": "「don’t」のTは絶対に発音しちゃダメなの？",
-        "answer": "絶対にダメというわけではありませんが、会話のスピードが上がると「t」を止める「ストップT」の状態になるか、完全に消えるのが一般的です。発音しない方がスムーズに次の単語へ繋がります。"
+        "question": "「don't」のTを省略しても意味は通じますか？",
+        "answer": "はい、全く問題ありません。むしろTをしっかり発音するよりも、あえて飲み込むほうがネイティブの発音に近く、より自然な響きになります。"
       },
       {
-        "question": "「wanna」と書いていないのに「モア」と聞こえるのはなぜ？",
-        "answer": "「want to」が「wanna」に変化するのは口語では非常に一般的です。その際、nの音が強く残るため、日本語の感覚では「ワナ」や、前後の繋がりで「モア」のように聞こえることがあります。"
+        "question": "なぜ「want to」が「モア」のように聞こえるのですか？",
+        "answer": "早口で話す際に単語同士の音が変化・融合する「アシミレーション」が起こるためです。特に頻出するフレーズでは、このように音が短縮・変化することが一般的です。"
       }
     ],
     "image_learn": "[{\"label\":\"some of us\",\"time\":\"8\",\"url\":\"TWEET_ID:1996959664760869004\"},{\"label\":\"don't want to think back\",\"time\":\"8.6\",\"url\":\"TWEET_ID:1996959723535622457\"},{\"label\":\"to our childhoods\",\"time\":\"9.72\",\"url\":\"TWEET_ID:2002615597704913023\"}]",
-    "chunk_timestamps": "[{\"text\":\"Some of us\",\"start_time\":8,\"end_time\":8.69},{\"text\":\"don’t\",\"start_time\":8.7,\"end_time\":9.01},{\"text\":\"want to\",\"start_time\":9.1,\"end_time\":9.39},{\"text\":\"think\",\"start_time\":9.4,\"end_time\":9.59},{\"text\":\"back to our\",\"start_time\":9.6,\"end_time\":9.9},{\"text\":\"childhoods\",\"start_time\":9.91,\"end_time\":11}]",
+    "chunk_timestamps": "[{\"text\":\"Some of us\",\"start_time\":8,\"end_time\":8.69,\"kana\":\"サマヴァス\"},{\"text\":\"don’t\",\"start_time\":8.7,\"end_time\":9.01,\"kana\":\"ドン\"},{\"text\":\"want to\",\"start_time\":9.1,\"end_time\":9.39,\"kana\":\"モア\"},{\"text\":\"think\",\"start_time\":9.4,\"end_time\":9.59,\"kana\":\"スィン\"},{\"text\":\"back to our\",\"start_time\":9.6,\"end_time\":9.95,\"kana\":\"バッコ\"},{\"text\":\"childhoods\",\"start_time\":9.96,\"end_time\":11,\"kana\":\"チャイルドフッズ\"}]",
     "image_sections": [
       {
         "label": "some of us",
@@ -134,68 +72,7 @@
         "url": "TWEET_ID:2002615597704913023"
       }
     ],
-    "chunks": [
-      {
-        "en": "Some of us",
-        "ipa_citation": "sʌm əv ʌs",
-        "ipa_connected": "sʌməvəs",
-        "kana": "【サマ】〈ヴァス〉",
-        "reduction_type": "Linking",
-        "start_time": 8,
-        "end_time": 8.69
-      },
-      {
-        "en": "don’t",
-        "ipa_citation": "doʊnt",
-        "ipa_connected": "doʊn",
-        "kana": "【ドン】",
-        "reduction_type": "Elision",
-        "start_time": 8.7,
-        "end_time": 9.01
-      },
-      {
-        "en": "want to",
-        "ipa_citation": "wɑnt tu",
-        "ipa_connected": "wɑnə",
-        "kana": "【モア (モナ)】",
-        "reduction_type": "Elision+Reduction",
-        "start_time": 9.1,
-        "end_time": 9.39
-      },
-      {
-        "en": "think",
-        "ipa_citation": "θɪŋk",
-        "ipa_connected": "θɪŋk",
-        "kana": "【スィンク】",
-        "reduction_type": "None",
-        "start_time": 9.4,
-        "end_time": 9.59
-      },
-      {
-        "en": "back",
-        "ipa_citation": "bæk",
-        "ipa_connected": "bæk",
-        "kana": "【バック】",
-        "reduction_type": "None"
-      },
-      {
-        "en": "to our",
-        "ipa_citation": "tu aʊər",
-        "ipa_connected": "təwər",
-        "kana": "〈ワ〉",
-        "reduction_type": "Linking+Reduction"
-      },
-      {
-        "en": "childhoods",
-        "ipa_citation": "ˈtʃaɪldhʊdz",
-        "ipa_connected": "ˈtʃaɪldhʊdz",
-        "kana": "【チャイルドウッズ】",
-        "reduction_type": "None",
-        "start_time": 9.91,
-        "end_time": 11
-      }
-    ],
-    "translated": "私たちの中には、子供時代を振り返りたくない人もいます。"
+    "translated": "私たちの中には、子供時代を振り返りたくないという人もいます。"
   },
   {
     "id": 2,
@@ -4653,109 +4530,580 @@
     "id": 77,
     "url": "https://www.youtube.com/watch?v=GrHzffja4Qs",
     "start_time": "1242",
-    "end_time": "1245",
-    "updated_at": "2026-03-12T04:26:42.347Z",
+    "end_time": "1244.9",
+    "updated_at": "2026-05-29T05:52:27.358Z",
     "question": "Those of you who have been with us before",
-    "question_katakana": "ワッウォ スターティン トゥ ワナスタン イズゼレッタ モゥスト プライマリィ レボゥ",
+    "question_katakana": "ゾーズビューワ ベンヲダス ビフォアァ",
     "article_text": {
-      "title": "ネイティブの発音はこう聞こえる！「what we're starting to understand...」の秘密",
-      "meta_description": "「what we're」が「ワッウォ」に聞こえる！？ネイティブ特有の音の変化「リエゾン」や「弱化」を詳しく解説。例文「what we're starting to understand is that at the most primary level,」を使って、リスニングのコツを掴みましょう。",
-      "katakana_weak_strong": "〈ワッウォ〉 【スターティン】 〈トゥ〉 【ワナスタン】 【イズ】〈ゼレッタ〉 【モゥスト】 【プライマリィ】 【レボゥ】",
-      "image_sections": [
-        {
-          "label": "what we're starting to understand ",
-          "time": "85.6",
-          "image_display_instruction": "【ここにwhat_we're_starting_to_understand_の画像を表示】",
-          "description": "「私たちが理解し始めていること」という意味です。霧が晴れて物事の全体像が見え始めてくるような、知的な発見のプロセスを表します。",
-          "image_suggestion": "パズルのピースが組み合わさり始め、一つの絵が見えてきそうな瞬間のイメージ。",
-          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975022\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
-        },
-        {
-          "label": "is that",
-          "time": "87.3",
-          "image_display_instruction": "【ここにis_thatの画像を表示】",
-          "description": "「それは～だ」と、結論を導き出すためのつなぎの言葉です。ここから重要な情報を話すぞ、という合図の役割を果たします。",
-          "image_suggestion": "プレゼンテーターが指を差し、次の重要なポイントを示しているシーン。",
-          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975023\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
-        },
-        {
-          "label": " at the most primary level,",
-          "time": "87.65",
-          "image_display_instruction": "【ここにat_the_most_primary_level,の画像を表示】",
-          "description": "「最も根本的な（基礎的な）レベルで」という意味です。物事の表面ではなく、一番土台となる部分に焦点を当てる表現です。",
-          "image_suggestion": "大きな木の根っこや、建物のしっかりとした土台部分を強調した図解。",
-          "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975027\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
-        }
-      ],
-      "remember": "「starting to」(〜し始めている)は、何かの変化が始まったことを伝えるのに便利です。例：I'm starting to like natto. (納豆を好きになり始めている)\n\n「primary level」(根本的なレベル、初等レベル)は、物事の基本を説明する際によく使われます。例：We need to solve the problem at a primary level. (根本的なレベルで問題を解決する必要がある)",
-      "introduction": "「単語は知っているのに、ネイティブが話すと全く聞き取れない…」そんな経験はありませんか？実は英語には、文字通りには発音されない「音のルール」がたくさん隠れています。今回は、科学的な説明やプレゼンでよく使われるフレーズを題材に、驚きの音の変化を解き明かしていきましょう。",
+      "title": "ネイティブが教える「Those of you who have been with us before」自然な発音のコツ",
+      "meta_description": "「Those of you who have been with us before」を英語らしく発音する方法を解説。リエゾンやリダクションの仕組みを理解して、リスニングとスピーキングをレベルアップさせましょう。",
+      "introduction": "英語の発音で、文章を一つずつ単語で区切って読んでいませんか？ネイティブスピーカーは、音を繋げたり（リエゾン）、弱めたり（リダクション）して話しています。今回は、会議の冒頭などでよく使われるこのフレーズを例に、滑らかな英語を話すためのポイントを解説します。",
       "section_1": {
-        "heading": "例文と意味",
-        "content": "今回の例文は「what we're starting to understand is that at the most primary level,」です。これは「私たちが理解し始めているのは、最も根本的なレベルにおいて、……」という意味になります。何か新しい発見や、物事の本質について説明を始める時に非常に便利な、知的な響きを持つフレーズです。"
+        "heading": "「Those of you」を滑らかにつなぐ",
+        "content": "最初の「Those of you」は、単語ごとに区切ると硬くなってしまいます。ネイティブは「ゾーザヴヤ」のようなリズムで音を繋げます。ここでは「of」の母音が弱まり、「you」と繋がることで滑らかな音の変化（リエゾンと脱落）が起こります。"
       },
       "section_2": {
-        "heading": "発音のポイント",
-        "content": "カタカナ表記を見ると「ワッウォ」「ワナスタン」「ゼレッタ」と、元の綴りからは想像もつかない音になっていますよね。「what we're」が「ワッウォ」になるのは、wの音が連続して重なるためです。また、「understand」が「ワナスタン」に聞こえる現象は、前の「to」から滑らかに音が繋がっている証拠です。これらは決してデタラメに発音されているわけではなく、英語特有のリズムが生み出す自然な変化なのです。"
+        "heading": "「who have been」のリダクション",
+        "content": "「have」の発音に注目です。文中で強調されない「have」は、弱形となり「アヴ」のように変化します。これによって「フーアヴビン」とリズムよく繋がります。一語ずつ発音しようとせず、小さな音として捉えるのがコツです。"
       },
       "section_3": {
-        "heading": "なぜそう聞こえるの？",
-        "content": "この劇的な音の変化の理由は「機能語の弱化」と「フラップT」にあります。that, at, the といった文法的な役割を持つ語（機能語）は、会話の中では極限まで短く、弱く発音されます。さらに、that at the のように母音に挟まれた T の音が日本語のラ行のように変化する「フラップT」現象が起きることで、「ゼレッタ」という繋がった音になります。英語は、重要な単語（内容語）を強調し、それ以外を繋げて発音することで、独特の波のようなリズムを作っているのです。"
+        "heading": "「with us」の連結（リエゾン）",
+        "content": "「with」の終わりの「th」音と「us」の母音が繋がり「ウィズアス」となります。この部分は比較的シンプルですが、音を止めずに滑らかに繋げることで、英語らしいリズム感が生まれます。"
       },
       "section_4": {
-        "heading": "学習のコツ",
-        "content": "まずは「ワッウォ」「ワナスタン」「ゼレッタ」と、聞こえたままの音を口に出して真似してみてください。スペルを意識しすぎると、どうしても「トゥー・アンダー・スタンド」と一音ずつ区切ってしまい、ネイティブのリズムから遠ざかってしまいます。カタカナの強弱記号を参考に、息を止めずに一気に一息で発音する練習（シャドーイング）を取り入れるのが、リスニング力向上の最短ルートです。"
+        "heading": "締めくくりの「before」",
+        "content": "最後の「before」は、ここまでの流れを落ち着かせる重要なパートです。強くアクセントを置き「ビ【フォ】ア」と明瞭に発音することで、フレーズ全体にメリハリがつき、相手に伝わりやすい英語になります。"
       },
-      "conclusion": "英語の音の変化は、最初は呪文のように聞こえるかもしれませんが、ルールを知ればパズルを解くような楽しさに変わります。耳が「繋がった音」に慣れてくると、リスニングの世界がガラッと変わりますよ！",
+      "conclusion": "いかがでしたか？英語は単語を羅列するのではなく、音を繋げて一つの波を作る意識が大切です。今回学んだ「Those of you who have been with us before」を、ぜひ音読してリズムを体感してみてください。",
+      "remember": "英語のリズムは「音の連結」と「弱形」の活用で決まります。単語単位ではなく、フレーズをひとまとまりの音として捉えて練習しましょう。",
       "keywords": [
-        "英語発音",
+        "英語 発音",
         "リエゾン",
-        "リスニング",
-        "英語学習",
-        "what we're",
-        "音声変化"
+        "リダクション",
+        "英語 リズム",
+        "Those of you"
+      ],
+      "chunks": [
+        {
+          "en": "Those of you",
+          "ipa_citation": "/ðoʊz əv ju/",
+          "ipa_connected": "/ðoʊzəvjə/",
+          "kana": "【ゾ】ーザヴヤ",
+          "reduction_type": "Elision+Reduction"
+        },
+        {
+          "en": "who have been",
+          "ipa_citation": "/hu hæv bɪn/",
+          "ipa_connected": "/huːəvbɪn/",
+          "kana": "フーアヴ【ビ】ン",
+          "reduction_type": "Reduction"
+        },
+        {
+          "en": "with us",
+          "ipa_citation": "/wɪð ʌs/",
+          "ipa_connected": "/wɪðəs/",
+          "kana": "【ウィ】ズアス",
+          "reduction_type": "Linking"
+        },
+        {
+          "en": "before",
+          "ipa_citation": "/bɪfɔːr/",
+          "ipa_connected": "/bɪfɔːr/",
+          "kana": "ビ【フォ】ア",
+          "reduction_type": "None",
+          "start_time": 1244.2,
+          "end_time": 1244.9
+        }
       ]
     },
-    "category": "大学",
+    "category": "バラエティ",
     "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/GrHzffja4Qs/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/GrHzffja4Qs/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/GrHzffja4Qs/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/GrHzffja4Qs/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/GrHzffja4Qs/maxresdefault.jpg\"}",
-    "theme": "understand",
+    "theme": "Those of you who",
     "noIndex": 0,
     "is_similar": 0,
-    "pron_memo": "what we're はワッウォ に聴こえる。\nto understand は トゥ ワナスタン に聴こえる\nthat at the は ゼレッタ に聴こえる。",
+    "pron_memo": "Those of you who は ゾーズビューワ に聴こえる\nhave been with us は ベンヲダス に聴こえる\nbefore は　ビフォア　に聴こえる",
     "tsukkomi": [
       {
-        "question": "what we're は ワッウォ！？",
-        "answer": "whatの語尾のtが脱落（または非常に弱いストップ音）し、we'reのw音とつながることで「ワッウォ」のように聞こえます。we'reも弱く発音されるため、カタカナの「ウィアー」とは程遠い、一瞬の音になります。"
+        "question": "なぜ 'have' を「ハヴ」とはっきり発音してはいけないのですか？",
+        "answer": "文脈の中で「have」は弱形として扱われ、音を最小限に抑えることで他の重要な単語が強調されるからです。はっきり発音しすぎるとリズムが崩れ、不自然に聞こえてしまいます。"
       },
       {
-        "question": "to understand は ワナスタン！？ アンダーじゃないの！？",
-        "answer": "toの母音が弱化して「トゥ」や「タ」に、そしてunderstandの最初のunが「アン」ではなく、前の語とつながりながら「ワ」に近い音で飲み込まれるように発音されるためです。さらに、dの音が消失し、語尾のdも脱落することで「ワナスタン」という独特の響きになります。"
-      },
-      {
-        "question": "that at the は ゼレッタ !? レの音はどこから？",
-        "answer": "thatの末尾のtとatの母音がつながり（連結）、さらにatのtとtheが重なることで、日本語の「ラ行」に近い「弾き音（フラップT）」が発生します。その結果、「ザッアットザ」ではなく「ゼレッタ」という滑らかな一つの塊として聞こえるのです。"
+        "question": "リエゾンやリダクションを意識すると早口になりそうで心配です。",
+        "answer": "実は逆で、音を繋げることで口の移動距離が減り、逆にゆっくり余裕を持って話せるようになります。まずは音を繋げる感覚を優先してみてください。"
       }
     ],
-    "image_learn": "[{\"label\":\"what we're starting to understand \",\"time\":\"85.6\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544975022\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"},{\"label\":\"is that\",\"time\":\"87.3\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544975023\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\" at the most primary level,\",\"time\":\"87.65\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395544975027\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"}]",
-    "chunk_timestamps": null,
+    "image_learn": "[{\"label\":\"Those of you\",\"time\":\"1243\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547957586\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"who have been with us\",\"time\":\"1243.5\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547957592\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"before\",\"time\":\"1244.2\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547957597\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"}]",
+    "chunk_timestamps": "[{\"text\":\"Those of you who\",\"start_time\":1243,\"end_time\":1243.59},{\"text\":\"have been with us\",\"start_time\":1243.6,\"end_time\":1244.19},{\"text\":\"before\",\"start_time\":1244.2,\"end_time\":1244.9}]",
     "image_sections": [
       {
-        "label": "what we're starting to understand ",
-        "time": "85.6",
-        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975022\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+        "label": "Those of you",
+        "time": "1243",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547957586\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
       },
       {
-        "label": "is that",
-        "time": "87.3",
-        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975023\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+        "label": "who have been with us",
+        "time": "1243.5",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547957592\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
       },
       {
-        "label": " at the most primary level,",
-        "time": "87.65",
-        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395544975027\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+        "label": "before",
+        "time": "1244.2",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547957597\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
       }
     ],
-    "kugiri_eng": "what we're / starting / to understand / is / that at the / most / primary / level,",
-    "kugiri_jp": "〈ワッウォ〉 / 【スターティン】 / 〈トゥ〉 【ワナスタン】 / 【イズ】 / 〈ゼレッタ〉 / 【モゥスト】 / 【プライマリィ】 / 【レボゥ】",
-    "translated": "私たちが理解し始めていることは、最も根本的なレベルにおいて、ということです。"
+    "chunks": [
+      {
+        "en": "Those of you",
+        "ipa_citation": "/ðoʊz əv ju/",
+        "ipa_connected": "/ðoʊzəvjə/",
+        "kana": "【ゾ】ーザヴヤ",
+        "reduction_type": "Elision+Reduction"
+      },
+      {
+        "en": "who have been",
+        "ipa_citation": "/hu hæv bɪn/",
+        "ipa_connected": "/huːəvbɪn/",
+        "kana": "フーアヴ【ビ】ン",
+        "reduction_type": "Reduction"
+      },
+      {
+        "en": "with us",
+        "ipa_citation": "/wɪð ʌs/",
+        "ipa_connected": "/wɪðəs/",
+        "kana": "【ウィ】ズアス",
+        "reduction_type": "Linking"
+      },
+      {
+        "en": "before",
+        "ipa_citation": "/bɪfɔːr/",
+        "ipa_connected": "/bɪfɔːr/",
+        "kana": "ビ【フォ】ア",
+        "reduction_type": "None",
+        "start_time": 1244.2,
+        "end_time": 1244.9
+      }
+    ],
+    "translated": "以前から私たちと関わりのある方々へ"
+  },
+  {
+    "id": 78,
+    "url": "https://www.youtube.com/watch?v=Ij1o5zGDCeE",
+    "start_time": "70.7",
+    "end_time": "74.4",
+    "updated_at": "2026-06-04T01:56:54.585Z",
+    "question": "and often commits great harm in the present in order to get there.",
+    "question_katakana": "エノッフン コミッツ グレイ ハーミンデ プレゼント イノーギ ゲッ ゼア",
+    "article_text": {
+      "title": "英語の「and often」をネイティブらしく発音するコツ！連結と省略のルールを解説",
+      "meta_description": "英語フレーズ「and often commits great harm in the present in order to get there」の正しい発音とリズムを解説。リンキング、リダクション、エリジョンを学び、ネイティブのような滑らかな英語を手に入れましょう。",
+      "introduction": "英語学習において、単語を一つずつ丁寧に発音しても、なぜかネイティブのように聞こえないと悩んでいませんか？それは「音の連結」や「消失」が起きていないからかもしれません。今回は、長く複雑に感じるフレーズを例に、効率的な発音のテクニックを伝授します。",
+      "section_1": {
+        "heading": "And often：音の省略と脱落",
+        "content": "フレーズの冒頭『and often』では、まず『and』の末尾の'd'が脱落します。さらに『often』の't'もサイレントになることが多く、これらが合わさることで『エノッフン』のように一つの塊として聞こえるようになります。無理に全ての音を出そうとせず、滑らかに繋げることがリズムの秘訣です。"
+      },
+      "section_2": {
+        "heading": "Commits great harm in the：子音の連結を意識",
+        "content": "『commits great』の's'と'g'の繋がり、そして『harm in』の鼻音化と『in the』の繋がりがポイントです。個々の音を切り離して発音せず、一つの息の流れに乗せて『コミッツ・グレイ・ハーミンデ』と発音しましょう。特に'th'の音は弱く短く処理するのがコツです。"
+      },
+      "section_3": {
+        "heading": "Present：母音のエリジョン（消失）",
+        "content": "『present』の中央の母音「e」は、非常に弱く発音されるか、あるいは完全に消失（エリジョン）して『プレズント』のように聞こえます。母音を詰めすぎず、子音を主役にして発音することで、ネイティブらしいスピード感と軽やかさが生まれます。"
+      },
+      "section_4": {
+        "heading": "In order to get there：同化とリズム",
+        "content": "『in order to』は、全体が同化して『イノーギ』に近い響きになります。最後の『get there』は、't'の音が次の'th'に引っ張られて消失し、滑らかに繋がります。音を省略する勇気を持つことで、フレーズ全体が格段に話しやすくなります。"
+      },
+      "conclusion": "英語発音は、個々の単語を完璧に発音することよりも、「単語同士がどう繋がるか」が鍵です。今回紹介した4つのポイント、特にリダクション（音の省略）を意識して、何度も声に出して練習してみてください。繰り返すことで自然と口が馴染んできます。",
+      "remember": "英語の発音は「足し算」ではなく「引き算」です。強める部分以外は徹底的に脱力し、音を繋げて滑らかに発音することを心がけましょう。",
+      "keywords": [
+        "英語発音",
+        "リンキング",
+        "リダクション",
+        "英語学習",
+        "ネイティブ発音"
+      ],
+      "chunks": [
+        {
+          "en": "and often",
+          "ipa_citation": "ænd ˈɔːfən",
+          "ipa_connected": "ən ˈɒfn",
+          "kana": "エノッフン",
+          "reduction_type": "Reduction",
+          "start_time": 70.7,
+          "end_time": 71.29
+        },
+        {
+          "en": "commits great harm in the",
+          "ipa_citation": "kəˈmɪts ɡreɪt hɑːrm ɪn ðə",
+          "ipa_connected": "kəˈmɪts ɡreɪ ˈhɑːrmɪnðə",
+          "kana": "コミッツ グレイ ハーミンデ",
+          "reduction_type": "Linking",
+          "start_time": 71.3,
+          "end_time": 72.59
+        },
+        {
+          "en": "present",
+          "ipa_citation": "ˈprɛzənt",
+          "ipa_connected": "ˈprɛznt",
+          "kana": "プレゼント",
+          "reduction_type": "Elision",
+          "start_time": 72.6,
+          "end_time": 73.19
+        },
+        {
+          "en": "in order to get there",
+          "ipa_citation": "ɪn ˈɔːrdər tu ɡet ðer",
+          "ipa_connected": "ɪˈnɔːrə ˈɡeʔðer",
+          "kana": "イノーギ ゲッ ゼア",
+          "reduction_type": "Assimilation",
+          "start_time": 73.2,
+          "end_time": 74.2
+        }
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/Ij1o5zGDCeE/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/Ij1o5zGDCeE/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/Ij1o5zGDCeE/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/Ij1o5zGDCeE/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/Ij1o5zGDCeE/maxresdefault.jpg\"}",
+    "theme": "and",
+    "noIndex": 0,
+    "is_similar": 0,
+    "pron_memo": "and often は エノッフン に聴こえる\ngreat は グレイに聴こえる\nharm in the は ハーミンデ に聴こえる\nin onder to はイノーギ に聴こえる\nget there は ゲッゼァ に聴こえる",
+    "tsukkomi": [
+      {
+        "question": "どうしてネイティブはわざと音を消すのですか？",
+        "answer": "英語はアクセントのある重要な音を強調し、それ以外の音を弱めたり省略したりする性質があるためです。効率的に情報を伝えるための自然な言語現象と言えます。"
+      },
+      {
+        "question": "全ての単語をはっきり発音してはいけませんか？",
+        "answer": "はっきり発音しても通じますが、リズムが平坦になり、ネイティブには硬い印象を与えます。リダクションを取り入れることで、聞き取りやすく、洗練された響きに変わります。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"and often commits great harm\",\"time\":\"70\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547793398\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"in the present\",\"time\":\"72.4\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547793400\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"in order to get there\",\"time\":\"73.2\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547793408\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\\n\\n\"}]",
+    "image_sections": [
+      {
+        "label": "and often commits great harm",
+        "time": "70",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547793398\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "in the present",
+        "time": "72.4",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547793400\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "in order to get there",
+        "time": "73.2",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547793408\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>\n\n"
+      }
+    ],
+    "chunks": [
+      {
+        "en": "and often",
+        "ipa_citation": "ænd ˈɔːfən",
+        "ipa_connected": "ən ˈɒfn",
+        "kana": "エノッフン",
+        "reduction_type": "Reduction",
+        "start_time": 70.7,
+        "end_time": 71.29
+      },
+      {
+        "en": "commits great harm in the",
+        "ipa_citation": "kəˈmɪts ɡreɪt hɑːrm ɪn ðə",
+        "ipa_connected": "kəˈmɪts ɡreɪ ˈhɑːrmɪnðə",
+        "kana": "コミッツ グレイ ハーミンデ",
+        "reduction_type": "Linking",
+        "start_time": 71.3,
+        "end_time": 72.59
+      },
+      {
+        "en": "present",
+        "ipa_citation": "ˈprɛzənt",
+        "ipa_connected": "ˈprɛznt",
+        "kana": "プレゼント",
+        "reduction_type": "Elision",
+        "start_time": 72.6,
+        "end_time": 73.19
+      },
+      {
+        "en": "in order to get there",
+        "ipa_citation": "ɪn ˈɔːrdər tu ɡet ðer",
+        "ipa_connected": "ɪˈnɔːrə ˈɡeʔðer",
+        "kana": "イノーギ ゲッ ゼア",
+        "reduction_type": "Assimilation",
+        "start_time": 73.2,
+        "end_time": 74.2
+      }
+    ],
+    "translated": "そして、そこに到達するために、現在において多大な害悪を及ぼすことが多い。"
+  },
+  {
+    "id": 88,
+    "url": "https://www.youtube.com/watch?v=Yzoj18RNxlQ",
+    "start_time": "27",
+    "end_time": "30.8",
+    "updated_at": "2026-06-05T08:15:31.901Z",
+    "question": "you know, maybe writers or producers.And then suddenly, there were studio heads that were women.",
+    "question_katakana": "ヨゥ メイビュウ  ライダー ソ　プロデューサーズン エン サァゼィンゼ ワ スチューディオ　ヘッズ ザワ ウィメン",
+    "article_text": {
+      "title": "ネイティブの英語が速く聞こえる理由は？「Linking」と「Reduction」を徹底解説",
+      "meta_description": "英語の聞き取りが苦手な方必見！ネイティブが話す時の音声変化「Linking」と「Reduction」の仕組みを、実際の会話フレーズを例にわかりやすく解説します。",
+      "introduction": "「ネイティブの英語は単語がつながっていて聞き取れない」と感じたことはありませんか？英語には、単語と単語が滑らかにつながる「Linking（連結）」と、音が短く弱まる「Reduction（弱化）」という現象があります。本記事では、実際の会話文を例に、これらの音声変化のルールを紐解いていきましょう。",
+      "section_1": {
+        "heading": "Linking（連結）で滑らかな発音を身につける",
+        "content": "Linkingとは、単語の語尾の音と次の単語の語頭の音がつながり、一つの単語のように発音される現象です。今回のフレーズ「writers or」では、「writers（ライターズ）」のsの音と「or（オー）」が繋がり、「ライダーソー」のように聞こえます。このように音を切らずに滑らかに繋げることで、英語特有のリズムが生まれます。"
+      },
+      "section_2": {
+        "heading": "Reduction（弱化）で音が消える・変わる仕組み",
+        "content": "Reductionは、文中で重要度の低い単語が弱く短く発音される現象です。特に「And」や「that」などは非常に短く弱化します。「producers. And」では「プロデューサーズン」のように「And」の音が極限まで省略されます。また、「then suddenly」のように「then」の母音が消失し、子音だけが残るケースも一般的です。"
+      },
+      "section_3": {
+        "heading": "ターゲット文を詳しく分解してみよう",
+        "content": "今回の文「you know, maybe writers or producers. And then suddenly, there were studio heads that were women.」には音声変化が凝縮されています。特に「were studio heads that were」の部分では、「were」の「r」の音が弱化し、「wuh」のような響きに変化します。この変化を理解することで、リスニングの解像度が格段に上がります。"
+      },
+      "section_4": {
+        "heading": "シャドーイングによる実践トレーニング",
+        "content": "理論を理解したら、次は口に出す練習です。まずはゆっくりと、「プロデューサーズン」や「ザワ（that were）」といった音の変化を意識して発音してみましょう。慣れてきたら、ネイティブのスピードに合わせてシャドーイングを行います。音が消える場所とつながる場所を意識するだけで、発音のクオリティが大きく変わります。"
+      },
+      "conclusion": "LinkingとReductionを理解することは、リスニング力の向上だけでなく、自分のスピーキング力をネイティブに近づける鍵となります。今回学んだポイントを意識して、日々の学習で耳を慣らしていきましょう。継続こそが上達への唯一の近道です。",
+      "remember": "英語は単語単位の集合ではなく、音の連続体です。Linking（連結）で音をつなぎ、Reduction（弱化）で不要な音を省くリズムを意識しましょう。",
+      "keywords": [
+        "英語発音",
+        "Linking",
+        "Reduction",
+        "リスニング",
+        "シャドーイング",
+        "音声変化"
+      ],
+      "chunks": [
+        {
+          "en": "you know, maybe writers or",
+          "ipa_citation": "ju noʊ ˈmeɪbi ˈraɪtərz ɔːr",
+          "ipa_connected": "jənoʊ ˈmeɪbi ˈraɪɾɚzɔ",
+          "kana": "ヨゥ メイビュウ ライダー ソ",
+          "reduction_type": "Linking",
+          "start_time": 27,
+          "end_time": 27.99
+        },
+        {
+          "en": "producers.And",
+          "ipa_citation": "prəˈduːsərz ænd",
+          "ipa_connected": "prəˈduːsɚzən",
+          "kana": "プロデューサーズン",
+          "reduction_type": "Linking",
+          "start_time": 28,
+          "end_time": 28.8
+        },
+        {
+          "en": "then suddenly, there",
+          "ipa_citation": "ðen ˈsʌdənli ðer",
+          "ipa_connected": "ən ˈsʌdnli ðer",
+          "kana": "エン サァゼィンゼ",
+          "reduction_type": "Elision+Reduction",
+          "start_time": 28.81,
+          "end_time": 29.49
+        },
+        {
+          "en": "were studio heads that were",
+          "ipa_citation": "wɜːr ˈstuːdioʊ hedz ðæt wɜːr",
+          "ipa_connected": "wɚ ˈstuːdiˌoʊ hedz ðəwɚ",
+          "kana": "ワ スチューディオ ヘッズ ザワ",
+          "reduction_type": "Reduction",
+          "start_time": 29.5,
+          "end_time": 30.45
+        },
+        {
+          "en": "women.",
+          "ipa_citation": "ˈwɪmɪn",
+          "ipa_connected": "ˈwɪmɪn",
+          "kana": "ウィメン",
+          "reduction_type": "None",
+          "start_time": 30.46,
+          "end_time": 30.8
+        }
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/Yzoj18RNxlQ/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/Yzoj18RNxlQ/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/Yzoj18RNxlQ/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/Yzoj18RNxlQ/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/Yzoj18RNxlQ/maxresdefault.jpg\"}",
+    "theme": "and",
+    "noIndex": 0,
+    "is_similar": 0,
+    "pron_memo": "you know maybe は ヨゥ メイビュウ に聴こえる\nwriters or は ライダー ソ に聴こえる\nproducers. And は プロデューサーズン に聴こえる\nthen は エン に聴こえる\nsuddenly は サァゼィン",
+    "tsukkomi": [
+      {
+        "question": "なぜ「And」が「ン」としか聞こえないのですか？",
+        "answer": "「And」は文中で強調されない単語であるため、母音の「a」が弱化して消失し、語尾の「nd」のうち「d」まで省略されることが多いためです。"
+      },
+      {
+        "question": "全ての単語をきっちり発音してはいけませんか？",
+        "answer": "ゆっくり話す際には発音しても構いませんが、ネイティブの自然な速度では必ずと言っていいほど省略や連結が起こります。聞き取りにはこれらのルールを知っておく必要があります。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"you know, maybe writers or producers.\",\"time\":\"27\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547798198\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"And then suddenly, there were studio heads that were women.\",\"time\":\"28.7\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395547798203\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"}]",
+    "image_sections": [
+      {
+        "label": "you know, maybe writers or producers.",
+        "time": "27",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547798198\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "And then suddenly, there were studio heads that were women.",
+        "time": "28.7",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395547798203\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      }
+    ],
+    "chunks": [
+      {
+        "en": "you know, maybe writers or",
+        "ipa_citation": "ju noʊ ˈmeɪbi ˈraɪtərz ɔːr",
+        "ipa_connected": "jənoʊ ˈmeɪbi ˈraɪɾɚzɔ",
+        "kana": "ヨゥ メイビュウ ライダー ソ",
+        "reduction_type": "Linking",
+        "start_time": 27,
+        "end_time": 27.99
+      },
+      {
+        "en": "producers.And",
+        "ipa_citation": "prəˈduːsərz ænd",
+        "ipa_connected": "prəˈduːsɚzən",
+        "kana": "プロデューサーズン",
+        "reduction_type": "Linking",
+        "start_time": 28,
+        "end_time": 28.8
+      },
+      {
+        "en": "then suddenly, there",
+        "ipa_citation": "ðen ˈsʌdənli ðer",
+        "ipa_connected": "ən ˈsʌdnli ðer",
+        "kana": "エン サァゼィンゼ",
+        "reduction_type": "Elision+Reduction",
+        "start_time": 28.81,
+        "end_time": 29.49
+      },
+      {
+        "en": "were studio heads that were",
+        "ipa_citation": "wɜːr ˈstuːdioʊ hedz ðæt wɜːr",
+        "ipa_connected": "wɚ ˈstuːdiˌoʊ hedz ðəwɚ",
+        "kana": "ワ スチューディオ ヘッズ ザワ",
+        "reduction_type": "Reduction",
+        "start_time": 29.5,
+        "end_time": 30.45
+      },
+      {
+        "en": "women.",
+        "ipa_citation": "ˈwɪmɪn",
+        "ipa_connected": "ˈwɪmɪn",
+        "kana": "ウィメン",
+        "reduction_type": "None",
+        "start_time": 30.46,
+        "end_time": 30.8
+      }
+    ],
+    "translated": "知っての通り、脚本家やプロデューサーのような存在かもしれません。そして突然、女性のスタジオ責任者が現れたのです。"
+  },
+  {
+    "id": 89,
+    "url": "https://www.youtube.com/watch?v=SEAIQ62rydI",
+    "start_time": "162.7",
+    "end_time": "165.9",
+    "updated_at": "2026-05-30T20:20:09.465Z",
+    "question": "I want to put it in a broader context.",
+    "question_katakana": "アイン　プデュンニャ　ブォーダァ コンテクストゥ",
+    "article_text": {
+      "title": "「I want to put it in a broader context」をネイティブのように発音するコツ",
+      "meta_description": "「I want to put it in a broader context」の発音を徹底解説。ネイティブが使う「つながる音」と「弱まる音」をマスターして、スムーズな英会話を目指しましょう。",
+      "introduction": "英語の発音において、単語一つひとつを丁寧に発音することは大切ですが、会話をスムーズにするためには「フレーズの繋がり」が欠かせません。今回は「I want to put it in a broader context」というフレーズを題材に、ネイティブが実践している発音のテクニックを学びます。",
+      "section_1": {
+        "heading": "「I want to」の弱化とリズム",
+        "content": "最初の「I want to」は、そのまま発音すると堅い響きになりがちです。ここでは「aɪwʌn」という音の変化を意識してみましょう。英語では機能語が弱まり、母音が短縮される傾向があります。ここでのポイントは、あえて「want to」を強調せず、次の単語へ流れるように「アイン」というリズムで発音することです。"
+      },
+      "section_2": {
+        "heading": "「put it in a」の連続リンキング",
+        "content": "次に「put it in a」の箇所を見てみましょう。ここでは複数のリンキング（連結）が発生します。「put」のtが「it」のiと繋がり、さらに「it」のtが「in」と繋がることで、全体が「プデュンニャ (pʊɾɪɾɪnə)」のように一つの塊として発音されます。一つひとつの単語を区切らず、なめらかに繋げることが流暢さへの近道です。"
+      },
+      "section_3": {
+        "heading": "「broader context」を正確に響かせる",
+        "content": "「broader context」は、情報の核心となる部分です。ここではリンキングを意識しすぎず、クリアに発音しましょう。「ブォーダァ」のRの音と「コンテクストゥ」の各音節をはっきりと響かせることで、文全体の意味が相手に伝わりやすくなります。"
+      },
+      "section_4": {
+        "heading": "全体を通してリズムを作る練習法",
+        "content": "最後に、これらの要素を組み合わせて練習します。「アイン」→「プデュンニャ」→「ブォーダァ コンテクストゥ」と繋げてみてください。最初はゆっくりで構いません。ポイントは、音の強弱をつけながら、息を止めずに最後まで一気に言い切る感覚を掴むことです。"
+      },
+      "conclusion": "今回学んだ「I want to put it in a broader context」の発音は、日常会話で非常に役立つパターンです。単語の境界を意識的に繋げるだけで、あなたの英語は驚くほど自然に聞こえるようになります。ぜひ何度も口に出して練習してみてください。",
+      "remember": "英語は単語単位の集合体ではなく、フレーズ単位で「音の繋がり」と「弱化」を意識することが、スムーズに話すための最も重要な鍵となります。",
+      "keywords": [
+        "英語発音",
+        "リンキング",
+        "リエゾン",
+        "I want to",
+        "英会話練習"
+      ],
+      "chunks": [
+        {
+          "en": "I want to",
+          "ipa_citation": "aɪ wɑnt tu",
+          "ipa_connected": "aɪwʌn",
+          "kana": "アイン",
+          "reduction_type": "Reduction",
+          "start_time": 162.7,
+          "end_time": 163.09
+        },
+        {
+          "en": "put it in a",
+          "ipa_citation": "pʊt ɪt ɪn ə",
+          "ipa_connected": "pʊɾɪɾɪnə",
+          "kana": "プデュンニャ",
+          "reduction_type": "Linking",
+          "start_time": 163.1,
+          "end_time": 163.69
+        },
+        {
+          "en": "broader context.",
+          "ipa_citation": "ˈbrɔːdər ˈkɑntekst",
+          "ipa_connected": "ˈbrɔːdɚ ˈkɑntekst",
+          "kana": "ブォーダァ コンテクストゥ",
+          "reduction_type": "None",
+          "start_time": 163.7,
+          "end_time": 165.89
+        }
+      ]
+    },
+    "category": "中学2年",
+    "thumbnail": "{\"default\":\"https://i.ytimg.com/vi/SEAIQ62rydI/default.jpg\",\"medium\":\"https://i.ytimg.com/vi/SEAIQ62rydI/mqdefault.jpg\",\"high\":\"https://i.ytimg.com/vi/SEAIQ62rydI/hqdefault.jpg\",\"standard\":\"https://i.ytimg.com/vi/SEAIQ62rydI/sddefault.jpg\",\"maxres\":\"https://i.ytimg.com/vi/SEAIQ62rydI/maxresdefault.jpg\"}",
+    "theme": "want to",
+    "noIndex": 0,
+    "is_similar": 0,
+    "pron_memo": "I want to が アイン　に聴こえる\nput it in a が プデュンニャ に聴こえる\n",
+    "tsukkomi": [
+      {
+        "question": "「I want to」がなぜ「アイン」になるのですか？",
+        "answer": "英語では頻出するフレーズが弱化し、短く素早く発音されることが多いためです。ネイティブのリズムに合わせるために「want to」を「wʌn」のように短縮します。"
+      },
+      {
+        "question": "リンキングは本当に意識して練習する必要があるのでしょうか？",
+        "answer": "はい、必須です。リンキングを練習することで単語間の境界が滑らかになり、結果としてネイティブ特有のリズムや流暢さが生まれます。"
+      }
+    ],
+    "image_learn": "[{\"label\":\"I want to put it in a\",\"time\":\"162.7\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395548018415\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"},{\"label\":\"in a broader context.\",\"time\":\"163.35\",\"url\":\"<iframe src=\\\"https://assets.pinterest.com/ext/embed.html?id=884957395548018421\\\" height=\\\"295\\\" width=\\\"345\\\" frameborder=\\\"0\\\" scrolling=\\\"no\\\" ></iframe>\"}]",
+    "image_sections": [
+      {
+        "label": "I want to put it in a",
+        "time": "162.7",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395548018415\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      },
+      {
+        "label": "in a broader context.",
+        "time": "163.35",
+        "url": "<iframe src=\"https://assets.pinterest.com/ext/embed.html?id=884957395548018421\" height=\"295\" width=\"345\" frameborder=\"0\" scrolling=\"no\" ></iframe>"
+      }
+    ],
+    "chunks": [
+      {
+        "en": "I want to",
+        "ipa_citation": "aɪ wɑnt tu",
+        "ipa_connected": "aɪwʌn",
+        "kana": "アイン",
+        "reduction_type": "Reduction",
+        "start_time": 162.7,
+        "end_time": 163.09
+      },
+      {
+        "en": "put it in a",
+        "ipa_citation": "pʊt ɪt ɪn ə",
+        "ipa_connected": "pʊɾɪɾɪnə",
+        "kana": "プデュンニャ",
+        "reduction_type": "Linking",
+        "start_time": 163.1,
+        "end_time": 163.69
+      },
+      {
+        "en": "broader context.",
+        "ipa_citation": "ˈbrɔːdər ˈkɑntekst",
+        "ipa_connected": "ˈbrɔːdɚ ˈkɑntekst",
+        "kana": "ブォーダァ コンテクストゥ",
+        "reduction_type": "None",
+        "start_time": 163.7,
+        "end_time": 165.89
+      }
+    ],
+    "translated": "このフレーズは「もっと広い文脈で捉えたい」という意味です。"
   }
 ]
